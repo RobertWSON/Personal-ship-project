@@ -26,7 +26,12 @@
     ]
   },
   "dependencies": {
-    "express": "^4.16.2"
+    "adds": "^1.2.2",
+    "dependencies": "^0.0.1",
+    "express": "^4.16.3",
+    "knex": "^0.15.2",
+    "sqlite3": "^4.0.2",
+    "yarn": "^1.9.4"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -39,6 +44,7 @@
     "jest": "^22.1.4",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-router-dom": "^4.3.1",
     "webpack": "^3.10.0",
     "webpack-dev-server": "^2.11.1"
   }
