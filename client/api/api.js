@@ -1,6 +1,6 @@
 import request from 'superagent'
 
-export function getShips () {
+export function getAllShips () {
     return request
         .get('/v1/cruiselines')
         .then(res => {
