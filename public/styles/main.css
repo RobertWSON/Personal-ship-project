@@ -1,6 +1,48 @@
-.nav link   {
+/* .nav link   {
     display: block;
     color: blue;
     text-align: center;
     text-decoration: none
+} */
+
+.body {
+    background-color: antiquewhite;
+    font-family: 'Work Sans', sans-serif;
+    }
+
+
+div.title-image img{
+    width: 400px;    
+}
+    
+.slide img {
+   margin: 0 auto;
+}
+
+img {
+    max-height: auto;
+    max-width: 800px;
+}
+
+.background-appear {
+    opacity: 0.01;
+    position: fixed;
+    transform: translate(100%);
+}
+    
+.background-appear.background-appear-active {
+    position: fixed;
+    opacity: 1;
+    transition: position 3s ease-in;
+    transform: translate(0%);
+    transition: transform 1000ms ease-in-out;
+}
+
+.navmenu    {
+    display: inline-block;
+    align-content: center;
+    
+    padding: 0.35%;
+    text-decoration: none;
+    font-size: 1.13em;
 }
