@@ -7,7 +7,7 @@ class Review extends React.Component {
     super(props)
     
     this.state = {
-      room:{}
+      ship:{}
     }
     this.setUpShip = this.setUpShip.bind(this)
   }
@@ -20,7 +20,7 @@ class Review extends React.Component {
     getShip(this.props.match.params.id)
     .then(res =>{
       this.setState({
-        room: res
+        ship: res
       })
     })
   }
@@ -29,17 +29,39 @@ render(){
   return(
    <React.Fragment>
    {console.log(this.state.ship)}
-      <h2>{this.state.room.room_name}</h2>
-      <p>{this.state.room.description}</p>
-      <h5>Capacity: {this.state.room.capacity}</h5>
-      <button onClick={()=> alert('Well done, good booking, proud of you')}>BOOK</button>
-      <button><Link to='/'>Back to home</Link></button>
-      <p></p>
-      <img src={this.state.room.img} />
+
+    <div class="title">
+      <h1>Review</h1>
+      <button onClick={()=> alert('Well done, you are on your way to a fantastic cruise')}>Book Cruise</button>
+      <button><Link to='/'>Back to Cruise Lines</Link></button>
+    </div>
+
+    <div class="reviewphoto">
+      <h2>{this.state.ship.ship_name}</h2>
+      <img src={this.state.ship.img}/>
+    </div>
+
+    <div class="shipdetails">
+      <h2>Details of Ship</h2>  
+      <p>Gross Tonnage: {this.state.ship.Gross_Tonnage}</p>
+      <p>Passenger Capacity (Full): {Passenger_Full_Capacity}</p>  
+      <p>Passenger Capacity (Double Occupancy): {Double_Occupancy_Passenger_Capacity}</p>
+      <p>Length: {Length}</p>
+      <p>Beam: {Beam}</p>  
+      <p>Draft: {Draft}</p>
+      <p>Height: {Height}</p>
+      <p>Loaded Displacement: {Loaded_Displacement}</p>
+      <p>Deadweight: {Deadweight}</p>    
+    </div>  
+
+    <div class="Review">
+        <h2>Review</h2>  
+        <p>{this.state.ship.ship_description}</p>
+    </div>
+
     </React.Fragment>
   )
+}  
 }
 
-  
-}
-export default Home
+export default Review

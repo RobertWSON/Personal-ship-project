@@ -8,7 +8,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 1,
           ship_name: "Symphony of the Seas",
-          img: ,
+          img: "Symphone-of-the-Seas-heading-left-OU2.jpg",
           Gross_Tonnage: 228081,
           Passenger_Full_Capacity: 6680,
           Double_Occupancy_Passenger_Capacity: 5518,

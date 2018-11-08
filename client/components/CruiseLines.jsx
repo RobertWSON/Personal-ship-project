@@ -2,26 +2,6 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 import Slider from "react-slick";
 
-// export const EvolutionPart1 = () => {
-//     return (
-//         <div>
-//             <div className = 'container'>
-//                 <h1>Evolution of Cruise Ships</h1>
-//             </div>
-//                 <Link className="navmenu" to="/Nav" >Home</Link>
-//                 <Link className="navmenu" to="/Nav" >Evolution (Part 1)</Link>
-//                 <Link className="navmenu" to="/Nav" >Evolution (Part 2)</Link>
-//                 <Link className="navmenu" to="/Nav" >Cruise Lines</Link>
-//             </div>  
-//             // <div>
-                
-//             // </div>   
-            
-            
-        
-//     )
-// }
-
 class CruiseLines extends React.Component  {
     constructor(props)  {
         super(props)    
@@ -85,3 +65,7 @@ class CruiseLines extends React.Component  {
 }
 
 export default CruiseLines
+
+
+
+
