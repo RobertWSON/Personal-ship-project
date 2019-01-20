@@ -64,7 +64,7 @@ class Home extends React.Component  {
                 <div className='paragraph'>
                     <p>If you want to learn about the evolution of cruise ships of how they started off and have become the global force today in terms
                         of holiday travel, then you have come to the right place. 
-                        <br/>You are also welcome to review our class of luxury cruise ships we have on offer.
+                        <br/>You are also welcome to review our class of luxury cruise ships we have on offer, from the cruiselines.
                     </p>    
                 </div>     
             </div>         

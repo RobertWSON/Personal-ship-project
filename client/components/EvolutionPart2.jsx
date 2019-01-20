@@ -52,7 +52,7 @@ class EvolutionPart2 extends React.Component    {
                            The modern cruise ships have greater Gross Tonnage or interior space, than the older ships because of this. <br/>1 Gross Ton is equal to 2.83m^3 or 100 cubic feet and is a a measure of the total internal volume of a ship,
                            which is used for charging ships at port or going through canals like Panama Canal. <br/>
                            With extra space modern cruise ships have there is room for more amenities or activities to do than cassic liners like rock climbing, water slides and tennis courts.
-                           Whatever you decided is totally your preference.      
+                           Whatever you decide is totally your preference.      
                            More details on this ship can be found here <a href ="https://en.wikipedia.org/wiki/MS_Allure_of_the_Seas">Allure of the Seas</a>.
                         </p>    
                     </div>

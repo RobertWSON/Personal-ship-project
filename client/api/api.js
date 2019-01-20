@@ -2,9 +2,11 @@ import request from 'superagent'
 
 export function getAllShips () {
     return request
-        .get('/v1/cruiselines')
+        .get('/v1/review')
+        //.get('/v1/cruiselines')
         .then(res => {
             const ships = res.body
+            console.log(res)
             return ships
         })
         .catch(() => {
@@ -13,7 +15,8 @@ export function getAllShips () {
 }  
 
 export function getShip (id)    {
-    return request.get(`/v1/cruiselines/${id}`)
+    return request.get(`/v1/review/${id}`)
+    //return request.get(`/v1/cruiselines/${id}`)
     .then(res => {
         console.log(res.body)
 
