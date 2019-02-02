@@ -14,10 +14,14 @@ router.get('/', (req, res) => {
 router.get('/:id', (req,res) => {
     let id = req.params.id
     db.getShipFromId(id)
-    .then (ships =>
-        res.json(ships))
+    .then (ship =>
+        res.json(ship))
 })
 
+router.put('/:id', (req, res) =>    {
+    let id = req.params.id
+    db.updateShipAv (id)
+})
 // router.put('/:id', (req, res) => {
 //     let id = req.params.id
 //     db.updateShipAv (id)

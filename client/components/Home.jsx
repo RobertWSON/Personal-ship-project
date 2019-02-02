@@ -41,6 +41,7 @@ class Home extends React.Component  {
         return (
             <div>
                 <div className = 'container'>
+
                     <h1>Cruise Shipin</h1>
                 </div>
 

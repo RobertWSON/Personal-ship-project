@@ -1,15 +1,16 @@
 import React from 'react'
-import {HashRouter as Router, Route, Link} from 'react-router-dom'
+import {HashRouter as Router, Route} from 'react-router-dom'
+//import {HashRouter as Router, Route, Link} from 'react-router-dom'
 import Nav from './Nav'
 import Home from './Home'
 import EvolutionPart1 from './EvolutionPart1'
 import EvolutionPart2 from './EvolutionPart2' 
 import CruiseLines from './CruiseLines'
 import Review from './Review'
-import ListofShips from './CruiseLines'
+import ListofShips from './ListofShips'
 
 // import MovingShip from './MovingShip'
-// import Porthole from './Porthole'
+// import Porthole from '.`/Porthole'
 
 
 class App extends React.Component {
@@ -34,6 +35,7 @@ class App extends React.Component {
               <Route exact path='/evolutionpart1' component={EvolutionPart1}/>
               <Route exact path='/evolutionpart2' component={EvolutionPart2}/>
               <Route exact path='/cruiselines' component={CruiseLines}/>
+              <Route path = "ship/:id" component={Review}/>
 
               {/* <Route path="/ship/:id" component={Review}/>
 
@@ -49,4 +51,3 @@ class App extends React.Component {
 
 
 export default App
-

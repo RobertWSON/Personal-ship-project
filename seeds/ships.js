@@ -1,10 +1,12 @@
 
 exports.seed = function(knex, Promise) {
   // Deletes ALL existing entries
-  return knex('table_name').del()
+  //return knex('table_name').del()
+  return knex('Ships').del()  
     .then(function () {
       // Inserts seed entries
-      return knex('table_name').insert([
+      //return knex('table_name').insert([
+      return knex('Ships').insert([  
         {
           id: 1,
           cruise_line: "Royal Caribbean",
@@ -69,7 +71,8 @@ exports.seed = function(knex, Promise) {
           Height: 61.26,
           Loaded_Displacement: 57000,
           Deadweight: 10852,
-          Review: ''
+          Review: 'I did a recent cruise on Star Princess from Los Angeles to Santiago. I found that the Staff were very friendly and looked after you well. When I was on the cruise and forgot to get some water when I was eating from the buffet, this was absolutely no problem, as staff would approach me straight away to ask if I wanted some water and a coffee. The only exception, which we were not happy about was the room attendant, who frequently did not update our room with things like toilet paper, soap and making beds, so we had to tell another room attendant to get it sorted. Great range of activities to do on board at sea with lots of shows, quizzes, learning spanish and basketball free throw competition to name a few. The Italian captain is one of the funniest captains I have every seen and had a great sense of humour every time he talked on the mic. The ports of call were very unique and different with mostly great tours. The only tours I found disappointing were the day time tour in Lima, as we did not get to see much of the coast and did mostly a market tour. Also the tour in La Serena was a bit disappointing as it was scheduled to go to a Museum, but that never happened and instead we took a view from a Library to look out to La Serena. So choose your tours wisely or just do your own thing. Overall a great cruise and good value for money.' 
+
         },
         {
           id: 5,

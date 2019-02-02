@@ -27,10 +27,18 @@ class Review extends React.Component {
 
 render(){
   return(
-   <React.Fragment>
-   {console.log(this.state.ship)}
+    <React.Fragment>
+      {console.log(this.state.ship)}
+        <h2>{this.state.cruise_line}</h2>
+        <h2>{this.state.ship.ship_name}</h2>
+        <p>(this.state.ship.review</p>
+        <h5>Passenger Capacity (Full): {this.state.ship.passenger_full_capacity}</h5>    
+        <h5>Passenger Capacity (Double Occupancy): {this.state.ship.double_occupancy_passenger_capacity}</h5> 
+        <button><Link to = '/'>Back to Cruise Lines</Link></button>
 
-    <div class="title">
+        <img src={this.state.ship.img} /> 
+          
+   {/* (Comment this for now 21st Jan 19) <div class="title">
       <h1>Review</h1>
       <button onClick={()=> alert('Well done, you are on your way to a fantastic cruise')}>Book Cruise</button>
       <button><Link to='/'>Back to Cruise Lines</Link></button>
@@ -57,7 +65,7 @@ render(){
     <div class="Review">
         <h2>Review</h2>  
         <p>{this.state.ship.ship_description}</p>
-    </div>
+    </div>(Comment this for now 21st Jan 19)  */}
 
     </React.Fragment>
   )

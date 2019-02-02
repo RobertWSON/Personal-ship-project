@@ -14,7 +14,17 @@ function getShipFromId(id, testConn)    {
     .first()
 }
 
+function updateShipAv (id, testConn)    {
+    const conn = testConn || db
+    return conn ('Ships')
+    .where ('id', id)
+    .update({
+        available: false
+    })
+}
+
 module.exports = {
     getAllShips,
     getShipFromId,
+    updateShipAv
 }
