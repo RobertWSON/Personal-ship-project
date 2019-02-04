@@ -3,7 +3,7 @@ const config = require('../../knexfile')[environment]
 const db = require('knex')(config)
 
 function getAllShips(testConn)  {
-    const conn  = testConb || db
+    const conn  = testConn || db
     return conn('Ships').select()
 }
 

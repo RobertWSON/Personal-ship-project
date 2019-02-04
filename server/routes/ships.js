@@ -6,7 +6,7 @@ router.use(express.json())
 
 
 router.get('/', (req, res) => {
-    db.getAllships()
+    db.getAllShips()
     .then(ships => 
         res.json(ships))
     })

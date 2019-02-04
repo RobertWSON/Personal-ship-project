@@ -1,4 +1,5 @@
-// Update with your config settings.
+ /*Update with your config settings. 
+ I have added useNullAsDefault: true under development*/
 
 module.exports = {
 
@@ -6,7 +7,8 @@ module.exports = {
     client: 'sqlite3',
     connection: {
       filename: './dev.sqlite3'
-    }
+    },
+    useNullAsDefault: true
   },
 
   staging: {
