@@ -13,7 +13,7 @@ server.use('/v1/*', (req, res) => res.sendStatus(404))
 //server.use('api/ships', require ('./routes/review'))
 
 server.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, './public/index.html'))
+    res.sendFile(path.join(__dirname, '../public/index.html'))
 })
 
 // server.use('v1/cruiselines', ships)

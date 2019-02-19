@@ -88,7 +88,7 @@ class CruiseLines extends React.Component {
                 </div>
                 {/* <div className = "cruiselinescontainer"> */}
                     <div>
-                        <ShipShots/>
+                        <ShipShots/><br></br>
                         <ListofShips/>
                     </div>    
                 {/* </div> */}

@@ -13,6 +13,7 @@ class Review extends React.Component {
   }
   
   componentDidMount(){
+    console.log('cdm')
     this.setUpShip()
   }
 
@@ -27,14 +28,14 @@ class Review extends React.Component {
 
 render(){
   return(
-    <React.Fragment>
+    <React.Fragment key = {ship.id}>
       {console.log(this.state.ship)}
         <h2>{this.state.cruise_line}</h2>
         <h2>{this.state.ship.ship_name}</h2>
         <p>(this.state.ship.review</p>
         <h5>Passenger Capacity (Full): {this.state.ship.passenger_full_capacity}</h5>    
         <h5>Passenger Capacity (Double Occupancy): {this.state.ship.double_occupancy_passenger_capacity}</h5> 
-        <button><Link to = '/'>Back to Cruise Lines</Link></button>
+        <button><Link to = '/cruiselines'>Back to Cruise Lines</Link></button>
 
         <img src={this.state.ship.img} /> 
           

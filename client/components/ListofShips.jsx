@@ -1,11 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import {getAllShips} from '../api/api'
-//import {getAllShips, getShip} from '../api/api'
-
-// (Comment this for now 21st Jan 19) const initialState = {
-// } (Comment this for now 21st Jan 19) down to here
-
 
 class ListofShips extends React.Component {
     constructor(props){
@@ -13,40 +8,52 @@ class ListofShips extends React.Component {
   
       this.state = {
         shipList: []  
-        //shipList:[]
       }
       this.setUpShips = this.setUpShips.bind(this)
-      //this.setUpShips = this.setUpShips.bind(this)
     }
     
     componentDidMount(){
+      console.log('cdm')
       this.setUpShips()
-      //this.setUpShips()
     }
   
     setUpShips() {
-    //setUpShips(){
+      console.log('getallships')
       getAllShips()  
-      //getAllShips()
       .then(res =>{
         
         this.setState({
           shipList: res  
-          //shipList: res
 
         })
       })
     }
+
+    buildShipName(ship) {
+      return ship.cruise_line ? (ship.cruise_line + ': ' + ship.ship_name) : ship.ship_name
+    }
+
+    // giveShipName()  {
+    //   return ship.cruise_line
+    // }
   
   render()  {
     return  (
-
-      // <div>
     
      <React.Fragment>
+        
+        {/* this.state.shipList.map((cruiseline, ship) =>  { */}
+          {/* console.log(ship.ship_name) */}
+
         {this.state.shipList.map(ship => {
-          // console.log(ship.ship_name)
-          return  <li key={ship.cruise_line.ship_name}><Link to={`/ship/${ship.id}`} >{ship.cruise_line.ship_name}</Link></li>            
+          
+          //return  <li key={ship.cruise_line + '-' + ship.ship_name}><link to={`/ship/${ship.id}`}> {cruise_line.id}</link></li>
+          
+          //return  <li key={ship.cruise_line + '-' + ship.ship_name}><link to={`/ship/${ship.id}`} >{ship.cruise_line}: {ship.ship_name}</link></li> 
+          //return  <li key={ship.ship_name + '-' + ship.ship_name}><link to={`/ship/${ship.id}`} >{ship.cruise_line}: {ship.ship_name}</link></li> 
+        
+          return  <li className="shipsList" key={ship.cruise_line + '-' + ship.ship_name}><Link to={`/ship/${ship.id}`} >{this.buildShipName(ship)}</Link></li>  
+
                 // <div>
                 //   <p>Cruise Line</p>
                   // <table>
