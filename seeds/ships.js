@@ -9,8 +9,8 @@ exports.seed = function(knex, Promise) {
       return knex('Ships').insert([  
         {
           id: 1,
-          cruise_line: "Royal Caribbean",
-          ship_name: "Symphony of the Seas",
+          cruise_line: "Royal Caribbean",    
+          ship_name: 'Symphony of the Seas',
           img: "/images/Symphone-of-the-Seas-heading-left-OU2.jpg",
           Year: 2018,
           Gross_Tonnage: 228081,
@@ -26,7 +26,7 @@ exports.seed = function(knex, Promise) {
         },
         {
           id: 2,
-          cruise_line: "Marella",
+          cruise_line: "Marella Cruises",      
           ship_name: 'Marella Celebration',
           img: "/images/611-62cc245f1327.jpg",
           Year: 1984,
@@ -44,7 +44,7 @@ exports.seed = function(knex, Promise) {
         },
         {
           id: 3,
-          cruise_line: "Cunard",
+          cruise_line: "Cunard",    
           ship_name: 'Queen Mary 2',
           img: "cunard_cruise_line_queen_mary_2QM.jpg",
           Year: 2003,
@@ -62,7 +62,7 @@ exports.seed = function(knex, Promise) {
         },
         {
           id: 4,
-          cruise_line: "Princess",
+          cruise_line: "Princess",    
           ship_name: 'Star Princess',
           img: "/images/_i4509460.jpg",
           Year: 2002,
@@ -80,7 +80,7 @@ exports.seed = function(knex, Promise) {
         },
         {
           id: 5,
-          cruise_line: "Fred Olsen",
+          cruise_line: "Fred Olsen",     
           ship_name: "Boudicca",
           img: "/imagwes/Boudicca_at_Funchal_2016_(bigger).jpg",
           Year: 1973,
@@ -97,7 +97,7 @@ exports.seed = function(knex, Promise) {
         },
         {
           id: 6,
-          cruise_line: "Fred Olsen",
+          cruise_line: "Fred Olsen",      
           ship_name: "Black Watch",
           img: '',
           Year: 1972,
@@ -114,7 +114,7 @@ exports.seed = function(knex, Promise) {
         },
         {
           id: 7,
-          cruise_line: "Phoenix Reisen",
+          cruise_line: "Phoenix Reisen",   
           ship_name: "Amadea",
           img: '',
           Year: 1990,
@@ -131,7 +131,7 @@ exports.seed = function(knex, Promise) {
         },
         {
           id: 8,
-          cruise_line: "Princess",
+          cruise_line: "Princess",   
           ship_name: "Majestic Princess",
           img:'',
           Year: 2017,
@@ -148,7 +148,7 @@ exports.seed = function(knex, Promise) {
         },
         {
           id: 9,
-          cruise_line: "Viking Ocean Cruises",
+          cruise_line: "Viking Ocean Cruises",   
           ship_name: "Viking Sun",
           img: '',
           Year: 2017,
@@ -165,7 +165,7 @@ exports.seed = function(knex, Promise) {
         },
         {
           id: 10,
-          cruise_line: "Royal Caribbean",
+          cruise_line: "Royal Caribbean",   
           ship_name: "Radiance of The Seas",
           img: "",
           Year: 2001,
@@ -182,7 +182,7 @@ exports.seed = function(knex, Promise) {
         },
         {
           id: 11,
-          cruise_line: "Marella Cruisess",
+          cruise_line: "Marella Cruises",     
           ship_name: "Marella Discovery 2 (ex Legend of The Seas)",
           img: '',
           Year: 1995,
@@ -199,7 +199,7 @@ exports.seed = function(knex, Promise) {
         },
         {
           id: 12,
-          cruise_line: "",
+          cruise_line: "",      
           ship_name: "Le Laperouse",
           img: '',
           Year: 2018,
@@ -216,7 +216,7 @@ exports.seed = function(knex, Promise) {
         },
         {
           id: 13,
-          cruise_line: "Carnival",
+          cruise_line: "Carnival",    
           ship_name: "Carnival Legend",
           img: '',
           Year: 2002,
@@ -233,7 +233,7 @@ exports.seed = function(knex, Promise) {
         },
         {
           id: 14,
-          cruise_line: "Carnival",
+          cruise_line: "Carnival",     
           ship_name: "Carnival Vista",
           img: '',
           Year: 2016,
@@ -250,7 +250,7 @@ exports.seed = function(knex, Promise) {
         },
         {
           id: 15,
-          cruise_line: "Royal Caribbean",
+          cruise_line: "Royal Caribbean",   
           ship_name: "Allure of The Seas",
           img: '',
           Year: 2010,
@@ -267,7 +267,7 @@ exports.seed = function(knex, Promise) {
         },
         {
           id: 16,
-          cruise_line: "Royal Caribbean",
+          cruise_line: "Royal Caribbean",   
           ship_name: "Anthem of The Seas",
           img: '',
           Year: 2015,
@@ -284,7 +284,7 @@ exports.seed = function(knex, Promise) {
         },
         {
           id: 17,
-          cruise_line: "Crystal Cruises",
+          cruise_line: "Crystal Cruises",      
           ship_name: "Crystal Serenity",
           img: '',
           Year: 2003,
@@ -301,7 +301,7 @@ exports.seed = function(knex, Promise) {
         },
         {
           id: 18,
-          cruise_line: "Crystal Cruises",
+          cruise_line: "Crystal Cruises",   
           ship_name: "Crystal Symphony",
           img: '',
           Year: 1995,
@@ -318,7 +318,7 @@ exports.seed = function(knex, Promise) {
         },
         {
           id: 19,
-          cruise_line: "Semester at Sea",
+          cruise_line: "Semester at Sea",    
           ship_name: "World Odyssey",
           img: '',
           Year: 1998,
@@ -335,7 +335,7 @@ exports.seed = function(knex, Promise) {
         },
         {
           id: 20,
-          cruise_line: "Celestyal Cruises",
+          cruise_line: "Celestyal Cruises",    
           ship_name: "Celestyal Crystal",
           img: '',
           Year: 1980,
@@ -352,7 +352,7 @@ exports.seed = function(knex, Promise) {
         },
         {
           id: 21,
-          cruise_line: "Celestyal Cruises",
+          cruise_line: "Celestyal Cruises",    
           ship_name: "Celestyal Olympia",
           img: '',
           Year: 1992,
@@ -369,7 +369,7 @@ exports.seed = function(knex, Promise) {
         },
         {
           id: 22,
-          cruise_line: "Star Cruises",
+          cruise_line: "Star Cruises",    
           ship_name: "SuperStar Virgo",
           img: '',
           Year: 1999,
@@ -386,7 +386,7 @@ exports.seed = function(knex, Promise) {
         },
         {
           id: 23,
-          cruise_line: "Norwegian Cruises",
+          cruise_line: "Norwegian Cruises",    
           ship_name: "Norwegian Spirit",
           img: '',
           Year: 1998,

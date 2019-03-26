@@ -40,8 +40,8 @@ class Home extends React.Component  {
         // console.log("home")
         return (
             <div>
-                <div className = 'container'>
-
+                {/* <div className = 'container'> */}
+                <div className = "header">
                     <h1>Cruise Shipin</h1>
                 </div>
 
