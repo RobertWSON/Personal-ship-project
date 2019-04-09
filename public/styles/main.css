@@ -41,9 +41,14 @@ img {
     font-size: 1.13em;
 }
 
-ul.list {
-    list-style: none;
+.shipsList li {
+    color: blue;
+    text-decoration: none !important
 }
+
+/* ul.list {
+    list-style: none;
+} This is not working */
 
 /* css for Evolution of Ships */
 

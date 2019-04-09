@@ -31,8 +31,8 @@ class ListofShips extends React.Component {
     }
 
     buildShipName(ship) {
-      return ship.cruise_line + ":" + ship.ship_name 
-      // ? (ship.cruise_line + ":" + ship.ship_name) : ship.ship_name  
+      return ship.cruise_line + ":" + " " + " " + " " + " " + " " + " " + " " + ship.ship_name 
+       //? (ship.cruise_line + ":" + ship.ship_name) : ship.ship_name  
     }
   
   render()  {
@@ -42,7 +42,7 @@ class ListofShips extends React.Component {
 
         {this.state.shipList.map (ship => {  
             
-          return  <li className="shipsList" key={ship.cruise_line + "-" + ship.ship_name}><Link to={`/ship/${ship.id}`} >{this.buildShipName(ship)}</Link></li>
+            return  <li className="shipsList" key={ship.cruise_line + "-" + ship.ship_name}><Link to={`/ship/${ship.id}`} >{this.buildShipName(ship)}</Link></li>
 
           //This displays cruise line , : and then cruise ship name to right of this. 
           //The cruise lines are only displayed for Queen Mary 2 and Marella Celebration ships, but this hasn't worked for the other ships. 
