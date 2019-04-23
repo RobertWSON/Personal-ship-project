@@ -41,7 +41,7 @@ img {
     font-size: 1.13em;
 }
 
-.shipsList li {
+.shipsLists li {
     color: blue;
     text-decoration: none !important
 }
@@ -79,6 +79,8 @@ img {
 .right p  {
     margin-left: 2%;
     flex:   100%;
+    float: right;
     max-width: 100%;
-    max-height: auto; 
+    max-height: auto;
+     
 }

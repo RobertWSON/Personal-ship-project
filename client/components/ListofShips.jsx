@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import {getAllShips} from '../api/api'
+import {getShips, getCruiseLine, getCruiselines} from '../api/api'
 //import { HashLink as Link } from 'react-router-hash-link'
 
 class ListofShips extends React.Component {
@@ -10,39 +10,71 @@ class ListofShips extends React.Component {
       this.state = {
         shipList: []  
       }
+
+      this.setUpCruiseLines = this.setUpCruiseLines.bind(this)
+      this.handleClick = this.handleClick.bind(this)
       this.setUpShips = this.setUpShips.bind(this)
+
     }
     
     componentDidMount(){
       console.log('cdm')
+      this.setUpCruiseLines
       this.setUpShips()
     }
   
+    setUpCruiseLines () {
+      console.log('getcruiselines')
+      getCruiselines()
+      .then(res =>  {
+
+        this,setState({
+          shipLists: res
+          
+        })
+      })
+    }
+
     setUpShips() {
-      console.log('getallships')
-      getAllShips()  
+      console.log('getships')
+      getShips()  
       .then(res =>{
         
         this.setState({
-          shipList: res  
+          shipLists: res  
 
         })
       })
     }
 
-    buildShipName(ship) {
-      return ship.cruise_line + ":" + " " + " " + " " + " " + " " + " " + " " + ship.ship_name 
-       //? (ship.cruise_line + ":" + ship.ship_name) : ship.ship_name  
+    handleClick()  {
+      this.props.shipList(this.props.cruise_line)
     }
-  
+
+    findShipNames(cruise_line) {
+    //This function helps display the Cruise Ships based on the Cruise Line
+      
+    // Example Code
+      // For Cruiseline === "Carnival"
+
+      //Ships.Displayed = 
+
+      //You have to group the cruise lines by there corresponding ships, somehow
+
+      return ship.ship_names 
+
+      //this returns the Ship Names based on there Cruise Lines  
+      
+    }
+    
   render()  {
     return  (
     
      <React.Fragment>
 
-        {this.state.shipList.map (ship => {  
+        {this.state.shipLists.map (ship => {  
             
-            return  <li className="shipsList" key={ship.cruise_line + "-" + ship.ship_name}><Link to={`/ship/${ship.id}`} >{this.buildShipName(ship)}</Link></li>
+            return  <li className="shipsLists" key={ship.cruise_line} handleClick="this.handleClick"><Link to={`/cruiselines/cruise_line#ship_name`} >{this.findShipNames(cruise_line)}</Link></li>
 
           //This displays cruise line , : and then cruise ship name to right of this. 
           //The cruise lines are only displayed for Queen Mary 2 and Marella Celebration ships, but this hasn't worked for the other ships. 
