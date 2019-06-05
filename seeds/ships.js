@@ -346,7 +346,7 @@ exports.seed = function(knex, Promise) {
           Height: 38,
           Loaded_Displacement: 13300,
           Deadweight: 1703,
-          Review: 'I have been on this ship on my Contiki tour, when it was cruising for Louis Cruise Lines. It visited some lovely destinations of Greece like mykonos and highly recommended for younger travellers who want to have a good time.', 
+          Review: 'I have been on this ship on my Contiki tour, when it was cruising for Louis Cruise Lines. It visited some lovely destinations of Greece like Mykonos and highly recommended for younger travellers who want to have a good time.', 
         },
         {
           id: 21,

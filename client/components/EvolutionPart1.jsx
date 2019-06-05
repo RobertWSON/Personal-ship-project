@@ -11,10 +11,8 @@ class EvolutionPart1 extends React.Component    {
         super(props)
     }    
 
-
     render()    { 
-        
-
+          
         return (
             <div>
                 <div className = "header">

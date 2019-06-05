@@ -1,9 +1,9 @@
 
 .body {
-    background-color: antiquewhite;
+    background-color: antiquewhite; 
     font-family: 'Work Sans', sans-serif;
     }
-
+    
 
 div.title-image img{
     width: 400px;    
@@ -41,7 +41,7 @@ img {
     font-size: 1.13em;
 }
 
-.shipsLists li {
+.shipList li {
     color: blue;
     text-decoration: none !important
 }
