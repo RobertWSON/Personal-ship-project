@@ -33,7 +33,11 @@ class EvolutionPart1 extends React.Component    {
                         <br/>
                         <img src={"/images/ss-canberra.jpg"}/>
                         <br/>
+                        <img src={"/images/669382709-612x612.jpg"}/>
+                        <br/>
                         <img src={"/images/003410.jpg"}/>
+                        <br/>
+                        <img src={"/images/lb0101.JPG"}/>
                     </div>
 
                     <div className = "right">
