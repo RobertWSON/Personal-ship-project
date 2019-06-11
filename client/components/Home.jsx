@@ -13,7 +13,7 @@ class Home extends React.Component  {
             "/images/2017-05-14-Ullapool-Cruise-Ship-Boudicca-8373_2000x.jpg",
             "/images/2668001.jpg",
             "/images/article-2294399-18B4F28B000005DC-307_964x621.jpg",
-            "/images/carnival-blimp-02.gif",
+            "/images/Carnival/carnival-blimp-02.gif",
             "/images/Ecstacy-Liner.jpg",
             "/images/GetImage.jpeg",
             "/images/massadam.jpg",
@@ -21,8 +21,7 @@ class Home extends React.Component  {
             "/images/ship-in-Koper-Slovenia-_picmonkeyed.jpg",   
             ],
         }                
-    }    
-    
+    }      
 
     render()    {
         const settings = {
