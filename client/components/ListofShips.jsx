@@ -20,7 +20,7 @@ class ListofShips extends React.Component {
     }
 
     setUpShips() {
-      console.log('getallships')
+      console.log('getAllShips')
       getAllShips()  
       .then(res =>  {
         
@@ -42,7 +42,7 @@ class ListofShips extends React.Component {
         <ol>
         {this.state.shipList.map (ship => {  
             
-          return <li className = "shipList" key = {ship.ship_name}><link to = {'/ship/${ship.id}'}>{ship.ship_name}</link></li>
+          return <li className = "shipList" key = {ship.ship_name}><Link to = {`/ship/${ship.id}`}>{ship.ship_name}</Link></li>
         })
         }
         </ol> 
