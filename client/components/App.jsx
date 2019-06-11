@@ -35,7 +35,7 @@ class App extends React.Component {
               <Route exact path='/evolutionpart1' component={EvolutionPart1}/>
               <Route exact path='/evolutionpart2' component={EvolutionPart2}/>
               <Route exact path='/cruiselines' component={CruiseLines}/>
-              <Route path = "/ship/id" component={Review}/>
+              <Route path = "/ship/:id" component={Review}/>
 
               {/* <Route path="/ship/:id" component={Review}/>
 

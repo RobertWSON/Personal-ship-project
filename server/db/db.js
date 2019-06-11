@@ -5,6 +5,7 @@ const db = require('knex')(config)
 function getAllShips(testConn)  {
     const conn = testConn || db
     return conn('Ships').select()
+    .orderBy("ship_name")
 } 
 
 function getShipFromId(id, testConn)    {
