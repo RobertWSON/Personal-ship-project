@@ -26,7 +26,7 @@ class App extends React.Component {
             {/* <div>
                 <h1>Cruise Shipin</h1> 
             </div> */}
-            {/* <div> */}
+            
               <Route path='/' component={Nav}/>
             
               <Route exact path='/' component={Home}/>
@@ -36,11 +36,8 @@ class App extends React.Component {
               <Route exact path='/evolutionpart2' component={EvolutionPart2}/>
               <Route exact path='/cruiselines' component={CruiseLines}/>
               <Route path = "/ship/:id" component={Review}/>
-
-              {/* <Route path="/ship/:id" component={Review}/>
-
-              {/* <Route exact path="/cruiselines" component={ListofShips}/>
-              <Route path="/ship/:id" component={Review}/> */}
+              {/* <Route path = "/cruiselines/:id" component = {Review}/> */}
+              
             {/* </div> */}
           </div>  
         {/* </React.Fragment>   */}

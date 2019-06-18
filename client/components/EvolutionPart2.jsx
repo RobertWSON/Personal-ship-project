@@ -54,7 +54,7 @@ class EvolutionPart2 extends React.Component    {
                         <div className = "right">
                             <p>The photo on the left shows Fairstar, which was built in 1957 and is an example of an older style cruise ship. You can clearly see how these older ships had a lot of open deck space.  
                             On the open deck space you were able to go for a swim, play table tennis or catch up on some sun on the deck chairs. 
-                            It is an interesting type of older cruise ship because it was originally used as a troop ship and got converted for cruising in 1965. It was the most popular cruise ship under P & O during the late 80's and 90's
+                            It is an interesting type of older cruise ship because it was originally used as a troop ship and got converted for cruising in 1965. It was the most popular cruise ship under P & O (Peninsular and Steam Navigation) during the late 80's and 90's
                             out of Sydney Harbour. 
                             More details on this ship can be found here <a href ="https://en.wikipedia.org/wiki/TSS_Fairstar">Fairstar</a>.
                             </p>

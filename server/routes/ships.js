@@ -16,6 +16,8 @@ router.get('/:id', (req,res) => {
     db.getShipFromId(id)
     .then (ship =>
         res.json(ship))
+    // .then (cruiselines =>
+    //     res.json(cruiselines))
 })
 
 router.put('/:id', (req, res) =>    {
