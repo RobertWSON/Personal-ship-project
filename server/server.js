@@ -17,10 +17,6 @@ server.get('*', (req, res) => {
 })
 
 // server.use('v1/cruiselines', ships)
-// server.use('v1/*', (req, res) => res.sendStatus(404))
-
-// server.get('*', (req, res) => {
-//     res.sendFile(path.join(_dirname, './public/index.html'))
 // })
 
 module.exports = server

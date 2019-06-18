@@ -30,6 +30,10 @@ class ListofShips extends React.Component {
         })
       })
     }
+
+    buildShipName(ship) {
+      return ship.cruise_line ? (ship.cruise_line + ":" + ship.ship_name) : ship.ship_name    
+    }
     
   render()  {
 
@@ -37,15 +41,13 @@ class ListofShips extends React.Component {
     
       <React.Fragment>
 
-        <h3>Testing Cruise Line</h3>
+        <h3>Testing Cruise Line - (Princess)</h3>
 
-        <ol>
         {this.state.shipList.map (ship => {  
             
-          return <li className = "shipList" key = {ship.ship_name}><Link to = {`/ship/${ship.id}`}>{ship.ship_name}</Link></li>
+          return <li className = "shipList" key = {ship.cruise_line + "-" + ship.ship_name}><Link to = {`/ship/${ship.id}`}>{this.buildShipName(ship)}</Link></li>
         })
         }
-        </ol> 
 
       </React.Fragment>
     )  
