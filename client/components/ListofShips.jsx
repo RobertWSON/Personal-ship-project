@@ -32,7 +32,8 @@ class ListofShips extends React.Component {
     }
 
     buildShipName(ship) {
-      return ship.cruise_line ? (ship.cruise_line + ":" + ship.ship_name) : ship.ship_name    
+      return ship.cruise_line ? (ship.cruise_line + ":" + " " + ship.ship_name) 
+      : ship.ship_name    
     }
     
   render()  {
