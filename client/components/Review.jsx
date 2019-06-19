@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import {getShip} from '../api/api'
+import {getCruiseLine, getCruiseLines, getShips} from '../api/api'
 
 class Review extends React.Component {
   constructor(props){
@@ -9,17 +9,27 @@ class Review extends React.Component {
     this.state = {
       ship:{}
     }
-    this.setUpShip = this.setUpShip.bind(this)
+    this.setUpCruiseLine = this.setUpCruiseLines.bind(this)
 
   }
   
   componentDidMount() {
     console.log('cdm')
-    this.setUpShip()
+    this.setUpCruiseLine()
+    this.setUpShips()
   }
 
-  setUpShip()  {
-    getShip(this.props.match.params.id)
+  setUpCruiseLine() {
+    getCruiseLine(this.props.match.params.id.ship_names/cruise_line)
+    .then(res =>  {
+      this.setState({
+        cruiseline: res
+      })
+    })
+  }
+
+  setUpShips()  {
+    getShip(this.props.match.params.id.ship_names)
     .then(res =>  {
       this.setState({
         ship: res

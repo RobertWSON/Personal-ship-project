@@ -9,30 +9,64 @@ class ListofShips extends React.Component {
   
       this.state = {
         //initialize shipList as an empty array
-        shipList: []  
+        shipsLists: []  
       }
+      this.setUpCruiseLines = this.setUpCruiseLines.bind(this)
+      this.handleClick = this.handleClick.bind(this)
       this.setUpShips = this.setUpShips.bind(this)
     }
     
     componentDidMount(){
       console.log('cdm')
+      this.setUpCruiseLines()
       this.setUpShips()
     }
 
-    setUpShips() {
-      console.log('getAllShips')
-      getAllShips()  
+    setUpCruiseLines()  {
+      console.log('getcruiselines')
+      getCruiseLines()
       .then(res =>  {
-        
-        this.setState({
-          shipList: res  
 
+        this.setState({
+          shipsLists: res
         })
       })
     }
 
-    buildShipName(ship) {
-      return ship.cruise_line ? (ship.cruise_line + ":" + ship.ship_name) : ship.ship_name    
+    setUpShips() {
+      console.log('getAllShips')
+      getShips()  
+      .then(res =>  {
+        
+        this.setState({
+          shipsLists: res  
+        })
+      })
+    }
+
+    handleClick() {
+      this.props.shipsLists(this.props.cruise_line)
+
+      this.setState = ({
+
+      })
+    }
+
+    findShipNames(cruise_line) {
+
+      // This function helps display the Cruise Ships based on the Cruise Line
+      
+      // Example Code
+      //   For Cruise_line === "Carnival"
+
+      //   Ships Displayed =
+
+      //   You have to group the Cruise Lines by their corresponding Ships, somehow
+
+      //   return ship.ship_names
+
+      //   this returns the Ship Names based on there Cruise Lines
+
     }
     
   render()  {
@@ -41,11 +75,12 @@ class ListofShips extends React.Component {
     
       <React.Fragment>
 
-        <h3>Testing Cruise Line - (Princess)</h3>
+        {/* <h3>Testing Cruise Line - (Princess)</h3> */}
 
         {this.state.shipList.map (ship => {  
             
-          return <li className = "shipList" key = {ship.cruise_line + "-" + ship.ship_name}><Link to = {`/ship/${ship.id}`}>{this.buildShipName(ship)}</Link></li>
+          return  <h3 onClick = "this.handleClick">{cruise_line}</h3> 
+                  <li className = "shipList" key = {ship.cruise_line}><Link to = {`/cruiselines/${cruise_line#ship_name}`}>{this.findShipName(cruise_line)}</Link></li>
         })
         }
 
