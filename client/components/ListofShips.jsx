@@ -42,7 +42,7 @@ class ListofShips extends React.Component {
     
       <React.Fragment>
 
-        <h3>Testing Cruise Line - (Fred Olsen)</h3>
+        <h3>Testing Cruise Line - (Crystal Cruises)</h3>
 
         <ol>
         {this.state.shipList.map (ship => {  
