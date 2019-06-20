@@ -45,6 +45,10 @@ class ListofShips extends React.Component {
     }
 
     handleClick() {
+        {/* There will be Headings for all the Cruise Lines.
+        When a Cruise Line Heading is clicked, the Ships List opens up for that Heading.
+        When user clicks on a Cruise Line Heading, when a Ships List is open, the Ships List Collapses.*/}
+
       this.props.shipsLists(this.props.cruise_line)
 
       this.setState = ({
@@ -79,11 +83,16 @@ class ListofShips extends React.Component {
         When a Cruise Line Heading is clicked, the Ships List opens up for that Heading.
         When user clicks on a Cruise Line Heading, when a Ships List is open, the Ships List Collapses.  
            */}
-        <h3 onClick = "this.handleClick">{cruise_line}</h3>
+        <h3><button onClick = "this.handleClick">{cruise_line}</button></h3>
 
         {this.state.shipList.map (ship => {  
             
-          return   <li className = "shipList" key = {ship.cruise_line}><Link to = {`/cruiselines/${cruise_line#ship_name}`}>{this.findShipName(cruise_line)}</Link></li>
+          return   (
+            <div>
+              <li className = "shipList" key = {ship.cruise_line}><Link to = {`/cruiselines/${cruise_line}#${ship_name}`}>{this.findShipName(cruise_line)}</Link></li>
+              <p>{ship.cruise_line}</p>
+            </div>
+          )
           
           // I have to find a key that can display each ship name for each Headings Ships List.
           // The Link will be an Anchor Link to that specific ship, on it's Cruise Line Page.
