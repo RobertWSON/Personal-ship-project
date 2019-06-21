@@ -1,7 +1,7 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+// import {Link} from 'react-router-dom'
 import {getAllShips} from '../api/api'
-//import { HashLink as Link } from 'react-router-hash-link'
+import { HashLink as Link} from 'react-router-hash-link'
 
 class ListofShips extends React.Component {
     constructor(props){
@@ -89,7 +89,7 @@ class ListofShips extends React.Component {
             
           return   (
             <div>
-              <li className = "shipList" key = {ship.cruise_line}><Link to = {`/cruiselines/${cruise_line}#${ship_name}`}>{this.findShipName(cruise_line)}</Link></li>
+              <li className = "shipList" key = {ship.cruise_line}><Link smooth to = {`/cruiselines/${cruise_line}#${ship_name}`}>{this.findShipName(cruise_line)}</Link></li>
               <p>{ship.cruise_line}</p>
             </div>
           )
