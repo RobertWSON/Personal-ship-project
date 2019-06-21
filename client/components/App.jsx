@@ -7,7 +7,7 @@ import EvolutionPart1 from './EvolutionPart1'
 import EvolutionPart2 from './EvolutionPart2' 
 import CruiseLines from './CruiseLines'
 import Review from './Review'
-import ListofShips from './ListofShips'
+//import ListofShips from './ListofShips'
 
 // import MovingShip from './MovingShip'
 // import Porthole from '.`/Porthole'

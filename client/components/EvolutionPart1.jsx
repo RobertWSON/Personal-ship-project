@@ -22,7 +22,6 @@ class EvolutionPart1 extends React.Component    {
                     <Link className="navmenu" to="/Nav" >Evolution (Part 1)</Link>
                     <Link className="navmenu" to="/Nav" >Evolution (Part 2)</Link>
                     <Link className="navmenu" to="/Nav" >Cruise Lines</Link>
-
                     <div>  */}
             
                 <div className = "evoships">  
