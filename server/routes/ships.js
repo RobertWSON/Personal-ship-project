@@ -1,6 +1,7 @@
 // var router = require('express').Router()
 const express = require('express')
-const db = require('../db/db')
+const db = require('../db/dbcruises')
+const db = require('../db/dbships')
 const router = express.Router()
 router.use(express.json())
 
