@@ -1,6 +1,7 @@
 import React from 'react'
 // import {Link} from 'react-router-dom'
-import {getAllShips} from '../api/api'
+import {getShips} from '../api/api'
+import {getCruiseLines} from '../api/api' 
 import { HashLink as Link} from 'react-router-hash-link'
 
 class ListofShips extends React.Component {
@@ -8,7 +9,7 @@ class ListofShips extends React.Component {
       super(props)
   
       this.state = {
-        //initialize shipList as an empty array
+        //initialize shipList sas an empty array
         shipsLists: []  
       }
       this.setUpCruiseLines = this.setUpCruiseLines.bind(this)
