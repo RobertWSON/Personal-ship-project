@@ -1,77 +1,45 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import {getCruiseLine, getCruiseLines, getShips} from '../api/api'
-// import { HashLink as Link } from 'react-router-hash-link'
+import {getShip} from '../api/api'
 
 class Review extends React.Component {
   constructor(props){
     super(props)
     
     this.state = {
-      ship:{}
+      room:{}
     }
-    this.setUpCruiseLine = this.setUpCruiseLines.bind(this)
-
+    this.setUpShip = this.setUpShip.bind(this)
   }
   
-  componentDidMount() {
-    console.log('cdm')
-    this.setUpCruiseLine()
-    this.setUpShips()
+  componentDidMount(){
+    this.setUpShip()
   }
 
-  setUpCruiseLine() {
-    getCruiseLine(this.props.match.params.id.ship_names/cruise_line)
-    .then(res =>  {
+  setUpShip(){
+    getShip(this.props.match.params.id)
+    .then(res =>{
       this.setState({
-        cruiseline: res
+        room: res
       })
     })
   }
-
-  setUpShips()  {
-    getShip(this.props.match.params.id.ship_names)
-    .then(res =>  {
-      this.setState({
-        ship: res
-      })
-    })
-  }  
 
 render(){
   return(
-    <React.Fragment>
-    {/* <React.Fragment key = {cruise_line}>  */}
-    {/* <React.Fragment key = {ship.id}> */}
-      {console.log(this.state.ship)}
-        <h1>{this.state.ship.cruise_line}</h1>
-        <h2 id = "{ship_name}">{this.state.ship.ship_name}</h2>
-        
-        <img src={this.state.ship.img} />
-
-        <div className ="ShipDetails">
-          <h4>Year: {this.state.ship.Year}</h4>  
-          <h4>Passenger Capacity (Full): {this.state.ship.Passenger_Full_Capacity}</h4>    
-          <h4>Passenger Capacity (Double Occupancy): {this.state.ship.Double_Occupancy_Passenger_Capacity}</h4>
-          <h4>Gross Tonnnage: {this.state.ship.Gross_Tonnage}</h4>
-          <h4>Length: {this.state.ship.Length}</h4>
-          <h4>Beam: {this.state.ship.Beam}</h4>
-          <h4>Draft: {this.state.ship.Draft}</h4>
-          <h4>Height: {this.state.ship.Height}</h4>
-          <h4>Deadweight: {this.state.ship.Deadweight}</h4>
-          <h4>Loaded Displacement: {this.state.ship.Loaded_Displacement}</h4>
-        </div>
-
-        <h3>Reviews:</h3><br/>
-        <p>{this.state.ship.Review}</p>
-        
-        <button><Link to = '/cruiselines'>Back to Cruise Lines</Link></button>
-
-         
-          
+   <React.Fragment>
+   {console.log(this.state.ship)}
+      <h2>{this.state.room.room_name}</h2>
+      <p>{this.state.room.description}</p>
+      <h5>Capacity: {this.state.room.capacity}</h5>
+      <button onClick={()=> alert('Well done, good booking, proud of you')}>BOOK</button>
+      <button><Link to='/'>Back to home</Link></button>
+      <p></p>
+      <img src={this.state.room.img} />
     </React.Fragment>
   )
-}  
 }
 
-export default Review
+  
+}
+export default Home

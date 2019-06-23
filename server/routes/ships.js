@@ -1,19 +1,19 @@
 // var router = require('express').Router()
 const express = require('express')
-const db = require('../db/dbships')
+const db = require('../db/db')
 const router = express.Router()
 router.use(express.json())
 
 
 router.get('/', (req, res) => {
-    db.getShips()
+    db.getAllShips()
     .then(ships => 
         res.json(ships))
     })
 
 router.get('/:id', (req,res) => {
     let id = req.params.id
-    db.getShip(id)
+    db.getShipFromId(id)
     .then (ship =>
         res.json(ship))
 })

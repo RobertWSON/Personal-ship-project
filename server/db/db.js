@@ -2,19 +2,18 @@ const environment = process.env.NODE_ENV || 'development'
 const config = require('../../knexfile')[environment]
 const db = require('knex')(config)
 
-function getShip(id, cruiseLine, testConn)  {
+function getAllShips(testConn)  {
     const conn = testConn || db
-    
-    return conn ('Ships')
-    .where('id', cruiseLine)
-    .first()
+    return conn('Ships').select()
+    .orderBy("cruise_line")
+    .orderBy("ship_name")
 } 
 
-function getShips(cruiseLine, testConn)    {
+function getShipFromId(id, testConn)    {
     const conn = testConn || db 
-    
-    return conn('Ships').select()
-    .orderBy("ship_name")
+    return conn ('Ships')
+    .where('id', id)
+    .first()
 }
 
 function updateShipAv (id, testConn)    {
@@ -27,7 +26,7 @@ function updateShipAv (id, testConn)    {
 }
 
 module.exports = {
-    getShip,
-    getShips,
+    getAllShips,
+    getShipFromId,
     updateShipAv
 }
