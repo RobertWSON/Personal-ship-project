@@ -9,16 +9,20 @@
 div.title-image img{
     width: 400px;    
 }
-    
-.slide img {
+ 
+
+div.slide img {
    margin: 0 auto;
+   max-height: 450px
 }
 
+/* Img Code below may not need to be necessary */
 img {
     max-height: auto;
     max-width: 800px;
 }
 
+/* I think this code is for animation */
 .background-appear {
     opacity: 0.01;
     position: fixed;
@@ -34,17 +38,21 @@ img {
 }
 
 /* Page Navigation Menu */
-div.navmenu h1 {
+/* div.navmenu h2 {
     display: inline-block;
     text-align: center;
     
     padding: 0.35%;
     text-decoration: none;
-    /* font-size: 1.13em; */
+    font-size: 1.13em;
+} */
+h2.top-links    {
+    display: inline-block;
+    text-align: center
 }
 
 /* Ships List on Cruise lines Page */
-.shipList li {
+ol.shipList {
     color: blue;
     text-decoration: none !important
 }
@@ -62,9 +70,15 @@ h1.cruises  {
     color: blue
 }
 
+h2.ship {
+    color: darkcyan;
+    
+}
+
 div.ShipDetails {
     float: right;
-    align-content: left
+    /* align-content: left */
+    justify-content: left
 }
 
 div.ShipDetails h4  {

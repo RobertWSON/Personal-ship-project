@@ -32,8 +32,8 @@ render(){
     <React.Fragment>
     {/* <React.Fragment key = {ship.id}> */}
       {console.log(this.state.ship)}
-        <h1 class="cruises">{this.state.ship.cruise_line}</h1>
-        <h2>{this.state.ship.ship_name}</h2>
+        <h1 className="cruises">{this.state.ship.cruise_line}</h1>
+        <h2 className="ship">{this.state.ship.ship_name}</h2>
         
         <img src={this.state.ship.img} />
 
