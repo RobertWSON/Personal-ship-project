@@ -32,7 +32,7 @@ img {
     transition: transform 1000ms ease-in-out;
 }
 
-.navmenu    {
+div.navmenu {
     display: inline-block;
     align-content: center;
     
@@ -46,10 +46,19 @@ img {
     text-decoration: none !important
 }
 
+/* Reviews Page CSS */
+
 div.ShipDetails {
     float: right;
-    align-content: left
+    align-content: lefts
 }
+
+div.ShipDetails h4  {
+    color: brown
+
+}
+
+
 
 /* ul.list {
     list-style: none;
