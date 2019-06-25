@@ -53,10 +53,8 @@ render(){
         <h3>Reviews:</h3><br/>
         <p>{this.state.ship.Review}</p>
         
-        <button classname="Back"><Link to = '/cruiselines'>Back to Cruise Lines</Link></button>
+        <button classname="button"><Link to = '/cruiselines'>Back to Cruise Lines</Link></button>
 
-         
-          
     </React.Fragment>
   )
 }  

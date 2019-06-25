@@ -58,7 +58,11 @@ div.ShipDetails h4  {
 
 }
 
-
+.button {
+    background: gold;
+    border-radius: 8px;
+    color: beige
+}
 
 /* ul.list {
     list-style: none;
