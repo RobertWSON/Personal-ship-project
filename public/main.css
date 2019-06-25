@@ -38,18 +38,18 @@ img {
 }
 
 /* Page Navigation Menu */
-/* div.navmenu h2 {
+div.navmenu h2 {
     display: inline-block;
     text-align: center;
     
     padding: 0.35%;
     text-decoration: none;
     font-size: 1.13em;
-} */
-h2.top-links    {
+}
+/* h2.top-links    {
     display: inline-block;
     text-align: center
-}
+} */
 
 /* Ships List on Cruise lines Page */
 ol.shipList {
@@ -109,9 +109,10 @@ div.ShipDetails h4  {
     display: flex;
 }
 
-.left   {
+div.left  img {
     float:  left;
     flex:   100%;
+    max-height: 5000px
 }
 
 /* trying to adjust image size, so they are even and image is on left and paragraphs on right*/
