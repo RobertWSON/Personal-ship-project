@@ -1,4 +1,5 @@
 
+/* Page styles */
 .body {
     background-color: antiquewhite; 
     font-family: 'Work Sans', sans-serif;
@@ -32,25 +33,38 @@ img {
     transition: transform 1000ms ease-in-out;
 }
 
-div.navmenu {
+/* Page Navigation Menu */
+div.navmenu h1 {
     display: inline-block;
-    align-content: center;
+    text-align: center;
     
     padding: 0.35%;
     text-decoration: none;
-    font-size: 1.13em;
+    /* font-size: 1.13em; */
 }
 
+/* Ships List on Cruise lines Page */
 .shipList li {
     color: blue;
     text-decoration: none !important
 }
 
+/* Page Main Headings */
+div.header h1 {
+    text-align: center;
+    color:blue
+}
+
 /* Reviews Page CSS */
+
+h1.cruises  {
+    text-align: center;
+    color: blue
+}
 
 div.ShipDetails {
     float: right;
-    align-content: lefts
+    align-content: left
 }
 
 div.ShipDetails h4  {

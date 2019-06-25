@@ -13,7 +13,7 @@ class CruiseLines extends React.Component {
     render()    {
         return  (
             <div>
-                <div>
+                <div className="header">
                     <h1>Cruise Lines</h1>    
                 </div>
             
