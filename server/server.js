@@ -1,6 +1,6 @@
 const path = require('path')
 const express = require('express')
-//const ships = require('../routes/cruises')
+//const cruiselines = require('../routes/cruises')
 const ships = require('./routes/ships')
 
 const server = express()
