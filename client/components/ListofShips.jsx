@@ -84,7 +84,7 @@ class ListofShips extends React.Component {
         When a Cruise Line Heading is clicked, the Ships List opens up for that Heading.
         When user clicks on a Cruise Line Heading, when a Ships List is open, the Ships List Collapses.  
            */}
-        <h3><button onClick = "this.handleClick">{cruise_line}</button></h3>
+        <Cruiseheader/>
 
         {this.state.shipList.map (ship => {  
             
