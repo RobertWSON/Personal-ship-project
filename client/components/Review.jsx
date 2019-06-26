@@ -1,6 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import {getShip} from '../api/api'
+import {getCruiseLine, getCruiseLines, getShips} from '../api/api'
+// import { HashLink as Link } from 'react-router-hash-link'
 
 class Review extends React.Component {
   constructor(props){
@@ -9,17 +10,27 @@ class Review extends React.Component {
     this.state = {
       ship:{}
     }
-    this.setUpShip = this.setUpShip.bind(this)
+    this.setUpCruiseLine = this.setUpCruiseLines.bind(this)
 
   }
   
   componentDidMount() {
     console.log('cdm')
-    this.setUpShip()
+    this.setUpCruiseLine()
+    this.setUpShips()
   }
 
-  setUpShip()  {
-    getShip(this.props.match.params.id)
+  setUpCruiseLine() {
+    getCruiseLine(this.props.match.params.id.ship_names/cruise_line)
+    .then(res =>  {
+      this.setState({
+        cruiseline: res
+      })
+    })
+  }
+
+  setUpShips()  {
+    getShip(this.props.match.params.id.ship_names)
     .then(res =>  {
       this.setState({
         ship: res
@@ -30,10 +41,11 @@ class Review extends React.Component {
 render(){
   return(
     <React.Fragment>
+    {/* <React.Fragment key = {cruise_line}>  */}
     {/* <React.Fragment key = {ship.id}> */}
       {console.log(this.state.ship)}
-        <h1 className="cruises">{this.state.ship.cruise_line}</h1>
-        <h2 className="ship">{this.state.ship.ship_name}</h2>
+        <h1>{this.state.ship.cruise_line}</h1>
+        <h2 id = "{ship_name}">{this.state.ship.ship_name}</h2>
         
         <img src={this.state.ship.img} />
 
@@ -53,8 +65,10 @@ render(){
         <h3>Reviews:</h3><br/>
         <p>{this.state.ship.Review}</p>
         
-        <button classname="button"><Link to = '/cruiselines'>Back to Cruise Lines</Link></button>
+        <button><Link to = '/cruiselines'>Back to Cruise Lines</Link></button>
 
+         
+          
     </React.Fragment>
   )
 }  

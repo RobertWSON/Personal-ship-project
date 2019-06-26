@@ -1,26 +1,26 @@
 // var router = require('express').Router()
 const express = require('express')
-const db = require('../db/dbships')
+const db = require('../db/dbcruises')
 const router = express.Router()
 router.use(express.json())
 
 
 router.get('/', (req, res) => {
-    db.getShips()
-    .then(ships => 
-        res.json(ships))
+    db.getCruiseLines()
+    .then(cruiselines => 
+        res.json(cruiselines))
     })
 
 router.get('/:id', (req,res) => {
     let id = req.params.id
-    db.getShip(id)
-    .then (ship =>
-        res.json(ship))
+    db.getCruiseLine(ship, id)
+    .then (cruiseline =>
+        res.json(cruiseline))
 })
 
 router.put('/:id', (req, res) =>    {
     let id = req.params.id
-    db.updateShipAv (id)
+    db.updateCruiseLineAv (ship, id)
 })
 
 module.exports = router

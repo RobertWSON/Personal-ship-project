@@ -8,6 +8,7 @@ import EvolutionPart2 from './EvolutionPart2'
 import CruiseLines from './CruiseLines'
 import Review from './Review'
 import ListofShips from './ListofShips'
+import { HashLink as Link } from 'react-router-hash-link'
 
 // import MovingShip from './MovingShip'
 // import Porthole from '.`/Porthole'
@@ -28,15 +29,16 @@ class App extends React.Component {
             </div> */}
             {/* <div> */}
               <Route path='/' component={Nav}/>
-            
               <Route exact path='/' component={Home}/>
             
             {/* <Route exact path='/' component={MovingShip}/> */}
               <Route exact path='/evolutionpart1' component={EvolutionPart1}/>
               <Route exact path='/evolutionpart2' component={EvolutionPart2}/>
               <Route exact path='/cruiselines' component={CruiseLines}/>
-              <Route path = "/ship/:id" component={Review}/>
-              {/* <Route exact path = "/cruiselines" component = {ListofShips}/> */}
+              <Route path = "/cruiselines/:cruise_line#ship_name" component={Review}/>
+
+              {/* <Route path = "/ship/:id" component = {"Review"}/>
+              <Route exact path = "/cruiselines" component = {ListofShips}/> */}
               
             {/* </div> */}
           </div>  

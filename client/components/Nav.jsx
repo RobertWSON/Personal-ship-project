@@ -14,12 +14,13 @@ const Nav = () => {
             <h3><Link to="/cruise-lines" className={'navoptions'}>Cruise Lines</Link></h3>
             <h3><Link to="Reviews" className={'navoptions'}>Reviews</Link></h3> */}
 
-            <h2 className ="top-links"><Link to={"/"}>Home</Link>
+            <h3><Link to={"/"}>Home</Link>
                 <Link to={"/evolutionpart1"}>Evolution (Part 1)</Link>
                 <Link to={"/evolutionpart2"}>Evolution (Part2)</Link>
                 <Link to={"/cruiselines"}>Cruise Lines</Link>
                 {/* <Link to={"Reviews"}>Reviews</Link> */}
-            </h2>
+            </h3>
+
 
         </div>
     //</div>

@@ -2,43 +2,70 @@ import request from 'superagent'
 //import Review from '../components/Review';
 
 
-export function getAllShips () {
-    console.log('api getAllShips')
+export function getShip (id, cruiseline) {
+    console.log('api getShip')
 
     return request
-        //.get('v1/listofships')
-        .get('/v1/review')
-        //.get('/v1/cruiselines')
+        
+        .get('/v1/review/cruiseLine#ship_name${id}')
         .then(res => {
             const review = res.body
             console.log(res)
-            return review
-            //return ships
+            return Review
         })
         .catch(() => {
-            throw Error('you need to implement an API route for /v1/listofships')
+            throw Error('you need to implement an API route for /v1/review')
             .catch(console.error)
-            //throw Error('you need to implement an API route for /v1/review')
-            //throw Error('you need to implement an API route for /v1/cruiselines')
         })
 }  
 
-export function getShip (id)    {
-    return request.get(`/v1/review/${id}`)
-    //return request.get('/v1/ship/${id}')
-    //return request.get(`/v1/cruiselines/${id}`)
-    
-    .then(res => {
-        console.log(res.body)
+export function getShips (cruiseLine)   {
+    console.log('api getShips')
 
-        //const ship = res.body
+    return request
+    
+    .get(`/v1/cruise_line/ship_names`)
+    .then(res => {
         const review = res.body
-        return review
-        //return ship
+        console.log(res)
+        return Review
+    })
+    .catch (() => {
+        throw Error('you need to implement an API route for /v1/ListofShips')  
+        .catch(console.error)  
+    })
+}
+
+export function getCruiseLine (ships, id)   {
+    console.log('api getCruiseLine')
+
+    return request
+    
+    .get(`/v1/review/cruise_line`)
+    .then(res => {
+        const review = res.body
+        console.log(res)
+        return Review
     })
     .catch (() => {
         throw Error('you need to implement an API route for /v1/review')  
         .catch(console.error)  
-        //throw Error('You need to implement an API route for /v1/cruiselines')
     })
+}
+
+export function getCruiseLines (ships)  {
+    console.log('getCruiseLines')
+    
+    return request
+
+    .get(`/v1/review/ListofShips`)
+    .then(res => {
+        const review = res.body
+        console.log(res)
+        return Review
+    })
+    .catch (() => {
+        throw Error('you need to implement an API route for /v1/ListofShips')
+        .catch(console.error)
+    }) 
 }
