@@ -3,20 +3,22 @@ import React from 'react'
 import {getShips} from '../api/api'
 import {getCruiseLines} from '../api/api' 
 import { HashLink as Link} from 'react-router-hash-link'
+import CruiseListHeader from './CruiseListHeader' 
 
 class ListofShips extends React.Component {
     constructor(props){
       super(props)
   
       this.state = {
-        //initialize shipList sas an empty array
-        shipsLists: []  
+        //initialize Cruise Line Header and shipList as an empty array
+        CruiseLineHeader: [],
+        shipsList: []
+         
       }
       this.setUpCruiseLines = this.setUpCruiseLines.bind(this)
-      this.handleClick = this.handleClick.bind(this)
       this.setUpShips = this.setUpShips.bind(this)
     }
-    
+   
     componentDidMount(){
       console.log('cdm')
       this.setUpCruiseLines()
@@ -29,7 +31,7 @@ class ListofShips extends React.Component {
       .then(res =>  {
 
         this.setState({
-          shipsLists: res
+          CruiseLineHeader: res
         })
       })
     }
@@ -40,24 +42,16 @@ class ListofShips extends React.Component {
       .then(res =>  {
         
         this.setState({
-          shipsLists: res  
+          shipsLists: {isOpen:false}  
         })
       })
     }
 
-    handleClick() {
-        {/* There will be Headings for all the Cruise Lines.
-        When a Cruise Line Heading is clicked, the Ships List opens up for that Heading.
-        When user clicks on a Cruise Line Heading, when a Ships List is open, the Ships List Collapses.*/}
+    findShipNames(ship) {
 
-      this.props.shipsLists(this.props.cruise_line)
+      ship.cruise_line.id = ship.ship_name.id
 
-      this.setState = ({
-
-      })
-    }
-
-    findShipNames(cruise_line) {
+      return ship.ship_name
 
       // This function helps display the Cruise Ships based on the Cruise Line
       
@@ -70,7 +64,7 @@ class ListofShips extends React.Component {
 
       //   return ship.ship_names
 
-      //   this returns the Ship Names based on there Cruise Lines
+      //   this returns the Ship Names based on there Cruise Lines                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
 
     }
     
@@ -84,15 +78,13 @@ class ListofShips extends React.Component {
         When a Cruise Line Heading is clicked, the Ships List opens up for that Heading.
         When user clicks on a Cruise Line Heading, when a Ships List is open, the Ships List Collapses.  
            */}
-        <Cruiseheader/>
+        <CruiseListHeader/>
 
-        {this.state.shipList.map (ship => {  
+        {this.state.shipsList.map (ship => {  
             
           return   (
-            <div>
-              <li className = "shipList" key = {ship.cruise_line}><Link smooth to = {`/cruiselines/${cruise_line}#${ship_name}`}>{this.findShipName(cruise_line)}</Link></li>
-              <p>{ship.cruise_line}</p>
-            </div>
+              <li className = "shipList" key = {ship.cruise_line}><Link smooth to = {`/cruiselines/${ship.cruise_line}#${ship.ship_name}`}>{this.findShipName(ship)}</Link></li>
+    
           )
           
           // I have to find a key that can display each ship name for each Headings Ships List.
