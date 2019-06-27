@@ -47,7 +47,8 @@ class ListofShips extends React.Component {
         <ol>
         {this.state.shipList.map (ship => {  
             
-          return <li className = "shipList" key = {ship.cruise_line + "-" + ship.ship_name}><Link to = {`/ship/${ship.id}`}>{this.findShipName(ship)}</Link></li>
+          //return <li className = "shipList" key = {ship.cruise_line + "-" + ship.ship_name}><Link to = {`/ship/${ship.id}`}>{this.findShipName(ship)}</Link></li>
+          return <li key = {ship.cruise_line + "-" + ship.ship_name}><Link className="shipList" to = {`/ship/${ship.id}`}>{this.findShipName(ship)}</Link></li>
         })
         }
         </ol>

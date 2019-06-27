@@ -36,6 +36,9 @@ class App extends React.Component {
               <Route exact path='/evolutionpart2' component={EvolutionPart2}/>
               <Route exact path='/cruiselines' component={CruiseLines}/>
               <Route path = "/ship/:id" component={Review}/>
+
+              {/* Comment code below because it is not working
+              <Route path ="/ship/:id/shipterms" component={ShipTerms} */}
               {/* <Route exact path = "/cruiselines" component = {ListofShips}/> */}
               
             {/* </div> */}

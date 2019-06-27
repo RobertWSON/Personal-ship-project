@@ -16,16 +16,20 @@ const Nav = () => {
             <h3><Link to="Reviews" className={'navoptions'}>Reviews</Link></h3> */}
 
             {/* <h2 className ="top-links"> */}
-            <h2>
+            {/* <h2> */}
+
+            <li>
                 <Link to={"/"}>Home</Link>
                 <Link to={"/evolutionpart1"}>Evolution (Part 1)</Link>
                 <Link to={"/evolutionpart2"}>Evolution (Part2)</Link>
                 <Link to={"/cruiselines"}>Cruise Lines</Link>
+                
                 {/* <Link to={"Reviews"}>Reviews</Link> */}
-            </h2>
-
+            {/* </h2> */}
+            </li>
         </div>
     //</div>
     )
 }
+
 export default Nav

@@ -31,14 +31,26 @@ render(){
   return(
     <React.Fragment>
     {/* <React.Fragment key = {ship.id}> */}
-      {console.log(this.state.ship)}
+      {console.log(this.state.ship)}  
+        
         <h1 className="cruises">{this.state.ship.cruise_line}</h1>
         <h2 className="ship">{this.state.ship.ship_name}</h2>
         
+        {/* Comment code below because it is not working */}
+        {/* <p>
+          If you are interested and want to find out more about what these ship terms actually mean,
+          then click <button><Link className="shipterms" to = {`/ship/${ship.id}/shipterms`}>Here</Link></button> 
+        
+        </p> */}
+
         <img src={this.state.ship.img} />
 
+
         <div className ="ShipDetails">
-          <h4>Year: {this.state.ship.Year}</h4>  
+
+          <h3>Ship Details</h3>
+
+          <h4>Year: {this.state.ship.Year}</h4> 
           <h4>Passenger Capacity (Full): {this.state.ship.Passenger_Full_Capacity}</h4>    
           <h4>Passenger Capacity (Double Occupancy): {this.state.ship.Double_Occupancy_Passenger_Capacity}</h4>
           <h4>Gross Tonnnage: {this.state.ship.Gross_Tonnage}</h4>

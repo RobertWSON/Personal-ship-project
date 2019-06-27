@@ -38,23 +38,41 @@ img {
 }
 
 /* Page Navigation Menu */
-div.navmenu h2 {
+
+/* div.navmenu h2 { */
+div.navmenu li   {    
     display: inline-block;
     text-align: center;
-    
+    /* text-decoration: none;
+    color: blue; */
+    background-color: azure;
     padding: 0.35%;
-    text-decoration: none;
-    font-size: 1.13em;
+    font-size: 1.5em
 }
+
 /* h2.top-links    {
     display: inline-block;
     text-align: center
 } */
 
 /* Ships List on Cruise lines Page */
-ol.shipList {
-    color: blue;
-    text-decoration: none !important
+.shipList:link   {
+    color: burlywood;
+    text-decoration: none;
+    font-size: 1.15em
+}
+
+.shipList:active    {
+    color: cornflowerblue
+}
+
+.shipList:hover {
+    color: brown
+ 
+}
+
+.shiplist:visited   {
+    color: cadetblue
 }
 
 /* Page Main Headings */
@@ -78,12 +96,18 @@ h2.ship {
 div.ShipDetails {
     float: right;
     /* align-content: left */
-    justify-content: left
+    /* justify-content: left */
+    position: relative
 }
 
 div.ShipDetails h4  {
-    color: brown
+    color: black
 
+}
+
+div.ShipDetails p   {
+    color: slategrey;
+    
 }
 
 .button {
