@@ -9,6 +9,9 @@
   "scripts": {
     "start": "webpack && node server",
     "dev": "node server & webpack --watch",
+    "watch": "concurrently 'npm run backend' 'npm run frontend'",
+    "backend": "nodemon server",
+    "frontend": "webpack-dev-server --devtool inline-source-map --hot",
     "test": "jest --watchAll"
   },
   "babel": {
@@ -27,9 +30,11 @@
   },
   "dependencies": {
     "adds": "^1.2.7",
+    "concurrently": "^4.1.1",
     "dependencies": "^0.0.1",
     "express": "^4.17.1",
     "knex": "^0.18.1",
+    "nodemon": "^1.19.1",
     "react-slick": "^0.24.0",
     "sqlite3": "^4.0.9",
     "webpack-cli": "^3.3.5",
