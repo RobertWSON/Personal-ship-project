@@ -10,8 +10,8 @@
     "start": "webpack && node server",
     "dev": "node server & webpack --watch",
     "watch": "concurrently 'npm run backend' 'npm run frontend'",
-    "backend": "nodemon server",
-    "frontend": "webpack-dev-server --devtool inline-source-map --hot",
+    "backend": "PORT=3030 nodemon server",
+    "frontend": "webpack-dev-server --port 3000 --devtool inline-source-map --hot",
     "test": "jest --watchAll"
   },
   "babel": {

@@ -19,5 +19,14 @@ module.exports = {
   resolve: {
     extensions: [".js", ".jsx"]
   },
-  devtool: "source-map"
+  devtool: "source-map",
+  devServer: {
+    contentBase: path.join(__dirname, "public"),
+    proxy: [
+      {
+        path: "/v1/",
+        target: "http://localhost:3030"
+      }
+    ]
+  }
 };
