@@ -11,11 +11,10 @@ export function getShip (id, cruiseline) {
         .then(res => {
             const review = res.body
             console.log(res)
-            return Review
+            return review
         })
         .catch(() => {
             throw Error('you need to implement an API route for /v1/review')
-            .catch(console.error)
         })
 }  
 
@@ -28,11 +27,10 @@ export function getShips (cruiseLine)   {
     .then(res => {
         const review = res.body
         console.log(res)
-        return Review
+        return review
     })
     .catch (() => {
-        throw Error('you need to implement an API route for /v1/ListofShips')  
-        .catch(console.error)  
+        throw Error('you need to implement an API route for /v1/ListofShips')   
     })
 }
 
@@ -45,11 +43,10 @@ export function getCruiseLine (ships, id)   {
     .then(res => {
         const review = res.body
         console.log(res)
-        return Review
+        return review
     })
     .catch (() => {
-        throw Error('you need to implement an API route for /v1/review')  
-        .catch(console.error)  
+        throw Error('you need to implement an API route for /v1/review')   
     })
 }
 
@@ -62,10 +59,9 @@ export function getCruiseLines (ships)  {
     .then(res => {
         const review = res.body
         console.log(res)
-        return Review
+        return review
     })
     .catch (() => {
         throw Error('you need to implement an API route for /v1/ListofShips')
-        .catch(console.error)
     }) 
 }
