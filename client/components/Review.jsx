@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import {getCruiseLine, getCruiseLines, getShips} from '../api/api'
+import {getCruiseLine, getShip} from '../api/api'
 // import { HashLink as Link } from 'react-router-hash-link'
 
 class Review extends React.Component {
