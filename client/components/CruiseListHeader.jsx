@@ -36,13 +36,12 @@ class CruiseListHeader extends React.Component {
         When user clicks on a Cruise Line Heading, when a Ships List is open, the Ships List Collapses.*/
     handleCick(event)   {
 
-
     // Maybe do a ternary operator here before open and close functions
-        
+    this.state.shipsList === isOpen ? OpenShipsList : CloseshipsList     
 
         OpenshipsList(event) {
 
-            this.setState = {shipsList: {isOpen:false}}
+            this.setState = {shipsList: {isOpen:true}}
 
             return 
                 <div>
@@ -51,10 +50,10 @@ class CruiseListHeader extends React.Component {
         }
 
 
-        CloseShipsList(event)   {
+        CloseshipsList(event)   {
 
-            this.setState = {shipsList: {isOpen: true}}
-            this.render()
+            this.setState = {shipsList: {isOpen: false}}
+            render()
         }
 
     }
