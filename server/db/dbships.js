@@ -22,9 +22,12 @@ function getShip(id, cruiseLine, testConn)  {
 function getListofShips(cruiseLine, testConn)   {
     const conn = testConn || db
 
-    return conn ('Ships')
-    .where('id', cruiseLine)
-    .first()
+    return conn('ships').select()
+    .orderBy("ship_name")    
+    
+    // return conn ('Ships')
+    // .where('id', cruiseLine)
+    // .first()
 }
 
 function updateShipAv (id, testConn)    {
