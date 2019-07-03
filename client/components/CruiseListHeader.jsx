@@ -5,10 +5,11 @@ class CruiseListHeader extends React.Component {
     constructor(props)  {
         super(props)
 
+        //setting intial state for cruise heading and shipsList and initialize cruiseHeaders as an empty array
         this.state = {
-            cruiseHeaders: []
+            cruiseHeaders: [],
+            shipsList: {isOpen:false}
         } 
-        //this.state.shipsList = {isOpen: false}
         
         //binding methods for Cruise Line Headers and Handle Click Function
         this.setUpCruiseLines = this.setUpCruiseLines.bind(this),
@@ -30,25 +31,35 @@ class CruiseListHeader extends React.Component {
                 })
             })
     }
-
-
-    //handleClick(event)    {
-        /* There will be Headings for all the Cruise Lines.
+    /* There will be Headings for all the Cruise Lines.
         When a Cruise Line Heading is clicked, it goes to ListofShips Component and the Ships List opens up for that Heading.
         When user clicks on a Cruise Line Heading, when a Ships List is open, the Ships List Collapses.*/
-
-    //     this.setState = {
-    //         cruiseHeaders: 
-    //     }
-
-    //     return  (   
-    //         <div>    
-    //             <ListofShips/>
-    //         </div>
-    //         )
+    handleCick(event)   {
 
 
-    // }
+    // Maybe do a ternary operator here before open and close functions
+        
+
+        OpenshipsList(event) {
+
+            this.setState = {shipsList: {isOpen:false}}
+
+            return 
+                <div>
+                    <ListofShips/>
+                </div>
+        }
+
+
+        CloseShipsList(event)   {
+
+            this.setState = {shipsList: {isOpen: true}}
+            this.render()
+        }
+
+    }
+
+    // This renders at the start when the page loads and also when you close a list
 
     render()    {
         return  (
