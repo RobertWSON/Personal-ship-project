@@ -34,7 +34,7 @@ class CruiseListHeader extends React.Component {
     /* There will be Headings for all the Cruise Lines.
         When a Cruise Line Heading is clicked, it goes to ListofShips Component and the Ships List opens up for that Heading.
         When user clicks on a Cruise Line Heading, when a Ships List is open, the Ships List Collapses.*/
-    handleCick(event)   {
+    handleClick(event)   {
 
     // Maybe do a ternary operator here before open and close functions
     this.state.shipsList === isOpen ? OpenShipsList : CloseshipsList     

@@ -14,6 +14,7 @@ class ListofShips extends React.Component {
          
       }
       this.setUpShips = this.setUpShips.bind(this)
+      //this.onHover = this.onHover.bind(this)
     }
    
     componentDidMount(){
@@ -30,6 +31,14 @@ class ListofShips extends React.Component {
           shipsList: res  
         })
       })
+    }
+
+    //This is an onMouseOver event for when you run your mouse over ship in it's list
+    onHover(event)  {
+
+      getInitialState
+      
+      this.setState = {}
     }
 
     findShipNames(ship) {
@@ -63,6 +72,7 @@ class ListofShips extends React.Component {
         {this.state.shipsList.map (ship => {  
             
           return   (
+              // <li className = "shipsList" key = {ship.cruise_line} onMouseOver={this.onHover}><link smooth to = {`/cruiselines/${ship.cruise_line}#${ship.ship_name}`}>{this.findShipName(ship)}</link></li>
               <li className = "shipsList" key = {ship.cruise_line}><Link smooth to = {`/cruiselines/${ship.cruise_line}#${ship.ship_name}`}>{this.findShipName(ship)}</Link></li>
     
           )
