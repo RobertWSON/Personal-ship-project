@@ -18,8 +18,12 @@ export function getShip (id, cruiseline) {
         })
 }  
 
-export function getShips (cruiseLine)   {
-    console.log('api getShips')
+//Maybe this should be get getListofShips, instead of getShips
+
+export function getListofShips(cruiseline)  {
+    console.log('api getListofShips')
+// export function getShips (cruiseLine)   {
+//     console.log('api getShips')
 
     return request
     
