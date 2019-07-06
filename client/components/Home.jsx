@@ -1,6 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import Slider from "react-slick";
+import Slider from "react-slick"
+import ReactPlayer from 'react-player'
 
 // export const home = () => {
 
@@ -60,6 +61,21 @@ class Home extends React.Component  {
                     )}
                 
                 </Slider>
+
+                <div className = "player-wrapper">
+                    <br/>
+                    <br/>
+                    <ReactPlayer 
+                        url ="https://www.youtube.com/watch?v=O0ulkoTuE3Is" 
+                        className="react-player"
+                        height="20%"
+                        width="30%"
+                        playing="false"
+                        controls="true"
+                        muted="false"
+                        />
+                        <Link to="/https://www.youtube.com/watch?v=O0ulkoTuE3Is">Berlina V8 - 2019 Mt Vic Hill Climb</Link>
+                </div>
 
                 <div className='paragraph'>
                     <p>If you want to learn about the evolution of cruise ships of how they started off and have become the global force today in terms
