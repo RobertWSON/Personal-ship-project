@@ -9,6 +9,9 @@
   "scripts": {
     "start": "webpack && node server",
     "dev": "node server & webpack --watch",
+    "watch": "concurrently 'npm run backend' 'npm run frontend'",
+    "backend": "PORT=3030 nodemon server",
+    "frontend": "webpack-dev-server --port 3000 --devtool inline-source-map --hot",
     "test": "jest --watchAll"
   },
   "babel": {
@@ -26,28 +29,30 @@
     ]
   },
   "dependencies": {
-    "adds": "^1.2.2",
+    "adds": "^1.2.7",
+    "concurrently": "^4.1.1",
     "dependencies": "^0.0.1",
-    "express": "^4.16.3",
-    "knex": "^0.15.2",
-    "react-slick": "^0.23.1",
-    "sqlite3": "^4.0.2",
-    "superagent": "^4.0.0-beta.5",
-    "yarn": "^1.9.4"
+    "express": "^4.17.1",
+    "knex": "^0.18.1",
+    "nodemon": "^1.19.1",
+    "react-slick": "^0.24.0",
+    "sqlite3": "^4.0.9",
+    "webpack-cli": "^3.3.5",
+    "yarn": "^1.16.0"
   },
   "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
     "babel-plugin-transform-class-properties": "^6.24.1",
-    "babel-preset-env": "^1.6.1",
+    "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
-    "enzyme": "^3.3.0",
-    "enzyme-adapter-react-16": "^1.1.1",
-    "jest": "^22.1.4",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "react-router-dom": "^4.3.1",
-    "webpack": "^3.10.0",
-    "webpack-dev-server": "^2.11.1"
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "jest": "^24.8.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.1",
+    "webpack": "^4.35.2",
+    "webpack-dev-server": "^3.7.2"
   }
 }
