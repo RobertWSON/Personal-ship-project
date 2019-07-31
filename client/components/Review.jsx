@@ -62,7 +62,14 @@ render(){
           <h4>Loaded Displacement: {this.state.ship.Loaded_Displacement}</h4>
         </div>
 
-        <h3>Reviews:</h3><br/>
+        <p className="ShipTerms">
+          <b>Ship terms</b>
+          <br/><br/>
+          If you are interested and want to find out more about what these ship terms actually mean,
+          then click <Link to = '/cruiselines/shipterms'>Here</Link>
+        </p>
+
+        <h3>Reviews:</h3>
         <p>{this.state.ship.Review}</p>
         
         <button classname="button"><Link to = '/cruiselines'>Back to Cruise Lines</Link></button>

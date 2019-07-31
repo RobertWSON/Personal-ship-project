@@ -36,6 +36,7 @@ class App extends React.Component {
               <Route exact path='/evolutionpart2' component={EvolutionPart2}/>
               <Route exact path='/cruiselines' component={CruiseLines}/>
               <Route path = "/ship/:id" component={Review}/>
+              <Route exact path = '/cruiselines/shipterms' component={ShipTerms}/>
 
               {/* Comment code below because it is not working
               <Route path ="/ship/:id/shipterms" component={ShipTerms} */}
