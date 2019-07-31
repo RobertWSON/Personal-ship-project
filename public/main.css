@@ -109,8 +109,13 @@ div.ShipDetails p   {
     
 }
 
-p.ShipTerms {
-    text-align: right;
+div.ShipTerms {
+    float: right;
+    text-align: left
+}
+
+div.ShipTermsIntro  {
+    float: right;
 }
 
 .button {

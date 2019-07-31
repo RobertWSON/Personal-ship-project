@@ -62,13 +62,14 @@ render(){
           <h4>Loaded Displacement: {this.state.ship.Loaded_Displacement}</h4>
         </div>
 
-        <p className="ShipTerms">
+      <div className="ShipTermsIntro"> 
+        <p>
           <b>Ship terms</b>
           <br/><br/>
           If you are interested and want to find out more about what these ship terms actually mean,
           then click <Link to = '/cruiselines/shipterms'>Here</Link>
         </p>
-
+        </div>  
         <h3>Reviews:</h3>
         <p>{this.state.ship.Review}</p>
         
