@@ -54,28 +54,35 @@ class CruiseListHeader extends React.Component {
         //destructive declaration for isOpen from inside shipsList in the state.
         const {shipsList: {isOpen}} = this.state;
 
+       // {this.state.cruiseHeaders.map (cruiseHeaders =>  {
+
         return  (
 
             <React.Fragment>
 
-                this.state.cruiseHeaders.map (cruiseHeaders =>  {
+                {this.state.cruiseHeaders.map (cruiseHeaders =>  {
                 
                 return  (
-                    <h3 key = {ship.cruise_line}><button onClick = {this.handleClick}>{ship.cruise_line}</button></h3>
-                )
+                    <div>
+                        <h3 key = {ship.cruise_line}><button onClick = {this.handleClick}>{ship.cruise_line}</button></h3>
+                
+                        {
+                        //Usually modals are shown at the bottom of the render return.
+                        //It's better to use ternary 'val ? component : null' rather than: (val && component)
+                        //React accepts a component, or a null as return value, the second will return false if val was false.
+                        isOpen ? <ListofShips/> : null 
+                        }
 
-                {
-                    //Usually modals are shown at the bottom of the render return.
-                 //It's better to use ternary 'val ? component : null' rather than: (val && component)
-                 //React accepts a component, or a null as return value, the second will return false if val was false.
-                    isOpen ? <ListofShips/> : null 
-                } 
+                    </div>
 
-                })  
-              
-            </React.Fragment>    
+                    )
+
+                    })
+                }  
+
+            </React.Fragment> 
         )
     }
-}
+} 
 
 export default CruiseListHeader

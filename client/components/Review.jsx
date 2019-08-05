@@ -8,9 +8,11 @@ class Review extends React.Component {
     super(props)
     
     this.state = {
-      ship:{}
+      cruiseline:{},
+      ships:{}
     }
-    this.setUpCruiseLine = this.setUpCruiseLines.bind(this)
+    this.setUpCruiseLine = this.setUpCruiseLine.bind(this),
+    this.setUpShips = this.setUpShips.bind(this)
 
   }
   
@@ -33,13 +35,16 @@ class Review extends React.Component {
     getShip(this.props.match.params.id.ship_names)
     .then(res =>  {
       this.setState({
-        ship: res
+        ships: res
       })
     })
   }  
 
 render(){
-  return(
+
+  {this.state.cruiseline.map (cruiseline =>{ 
+
+  return  (
     <React.Fragment>
     {/* <React.Fragment key = {cruise_line}>  */}
     {/* <React.Fragment key = {ship.id}> */}
@@ -65,13 +70,15 @@ render(){
         <h3>Reviews:</h3><br/>
         <p>{this.state.ship.Review}</p>
         
-        <button><Link to = '/cruiselines'>Back to Cruise Lines</Link></button>
-
-         
+        <button><Link to = '/cruiselines'>Back to Cruise Lines</Link></button>       
           
     </React.Fragment>
   )
-}  
-}
+
+})//end brackets for ships  
+} //end bracket for this.state.cruiseline.map 
+
+} //end bracket for render  
+} //end bracket for Review Component
 
 export default Review
