@@ -42,10 +42,9 @@ class CruiseListHeader extends React.Component {
         this.setState(prevState =>  ({
             shipsList:  {
                 //will reverse prevState of isOpen.
-                isOpen: !prevState.shipslist.isOpen,
+                isOpen: !prevState.shipsList.isOpen,
             }
-        }));
-
+        }))
     }
 
     // This renders at the start when the page loads and also when you close a list
@@ -59,15 +58,20 @@ class CruiseListHeader extends React.Component {
 
             <React.Fragment>
 
-                <h3>
-                    <button onClick = {this.handleClick}>{ship.cruise_line}</button>
-                </h3>
+                this.state.cruiseHeaders.map (cruiseHeaders =>  {
+                
+                return  (
+                    <h3 key = {ship.cruise_line}><button onClick = {this.handleClick}>{ship.cruise_line}</button></h3>
+                )
+
                 {
                     //Usually modals are shown at the bottom of the render return.
-                    //It's better to use ternary 'val ? component : null' rather than: (val && component)
-                    //React accepts a component, or a null as return value, the second will return false if val was false.
+                 //It's better to use ternary 'val ? component : null' rather than: (val && component)
+                 //React accepts a component, or a null as return value, the second will return false if val was false.
                     isOpen ? <ListofShips/> : null 
-                }    
+                } 
+
+                })  
               
             </React.Fragment>    
         )

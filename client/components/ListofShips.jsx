@@ -23,8 +23,11 @@ class ListofShips extends React.Component {
     }
 
     setUpShips() {
-      console.log('getShips')
-      getShips()  
+      //console.log('getShips')
+      console.log('getListofShips')
+      //getShips()
+      getListofShips()
+      
       .then(res =>  {
         
         this.setState({
