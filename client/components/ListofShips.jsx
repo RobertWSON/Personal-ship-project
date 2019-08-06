@@ -1,6 +1,6 @@
 import React from 'react'
 // import {Link} from 'react-router-dom'
-import {getShips} from '../api/api'
+import {getListofShips} from '../api/api'
 import { HashLink as Link} from 'react-router-hash-link'
 import CruiseListHeader from './CruiseListHeader' 
 
@@ -37,12 +37,12 @@ class ListofShips extends React.Component {
     }
 
     //This is an onMouseOver event for when you run your mouse over ship in it's list
-    onHover(event)  {
+    // onHover(event)  {
 
-      getInitialState
+    //   getInitialState
       
-      this.setState = {}
-    }
+    //   this.setState = {}
+    // }
 
     findShipNames(ship) {
 
