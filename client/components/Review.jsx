@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import {getCruiseLine, getShip} from '../api/api'
+import {getCruiseLine, getShips} from '../api/api' 
 // import { HashLink as Link } from 'react-router-hash-link'
 
 class Review extends React.Component {
@@ -32,7 +32,7 @@ class Review extends React.Component {
   }
 
   setUpShips()  {
-    getShip(this.props.match.params.id.ship_names)
+    getShips(this.props.match.params.id.ship_names)
     .then(res =>  {
       this.setState({
         ships: res
