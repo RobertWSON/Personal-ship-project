@@ -1,48 +1,48 @@
 import request from 'superagent'
 
 
-//This is api for when Cruise Line Headings appear on Cruise lines Page.
-export function getCruiseLines (ships)  {
+//This is api for when Cruise Line Headings appear on Cruise Lines Page.
+export function getCruiseLines (cruise_line)  {
     console.log('getCruiseLines')
     
     return request
 
-    .get(`/v1/review/ListofShips`)
+    .get(`/#/cruiselines`)
     .then(res => {
-        const review = res.body
+        const cruiselines = res.body
         console.log(res)
-        return review
+        return cruiselines
     })
     .catch (() => {
-        throw Error('you need to implement an API route for /v1/ListofShips')
+        throw Error('you need to implement an API route for /#/cruiselines')
     }) 
 }
 
 //This is api for when user Clicks on Cruise Line Heading and a List of Ships appears for that Cruise Line on Cruise Lines Page.
-export function getListofShips(cruiseline)  {
+export function getListofShips(cruise_line, ship_name)  {
     console.log('api getListofShips')
 
     return request
     
-    .get(`/v1/cruise_line/ship_names`)
+    .get(`/#/cruiselines`)
     .then(res => {
-        const review = res.body
+        const cruiselines = res.body
         console.log(res)
-        return review
+        return cruiselines
     })
     .catch (() => {
-        throw Error('you need to implement an API route for /v1/ListofShips')   
+        throw Error('you need to implement an API route for /#/cruiselines')   
     })
 }
 
 //This is api for when user clicks on a ship from the List of Ships.
 //The Hash Link for the ship is linked to it's correct ship, within it's Cruise Line Page eg cruiselines/princess#star-princess.
-export function getShip (id, cruiseline) {
+export function getShip (cruise_line, id) {
     console.log('api getShip')
 
     return request
         
-        .get('/v1/review/cruise_line#ship_name${id}')
+        .get('/v1/review/cruise_line#ship_name')
         .then(res => {
             const review = res.body
             console.log(res)
@@ -54,7 +54,7 @@ export function getShip (id, cruiseline) {
 }  
 
 //This api gets the correct Cruise Line when the user clicks on a Hash Link for a ship from the List of ships eg cruiselines/princess.
-export function getCruiseLine (ships, id)   {
+export function getCruiseLine (cruise_line, ship_name, id)   {
     console.log('api getCruiseLine')
 
     return request
@@ -71,7 +71,7 @@ export function getCruiseLine (ships, id)   {
 }
 
 //This api gets the correct ships for the Cruise Line. For example correct ships for Princess Cruise Line etc.
-export function getShips(cruiseline)    {
+export function getShips(cruise_line)    {
     console.log('api getShips')
 
     return request
