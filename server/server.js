@@ -8,17 +8,17 @@ const server = express()
 server.use(express.json())
 server.use(express.static(path.join(__dirname, '../public')))
 
-server.use('/v1/review', ships)
-server.use('v1/review', cruiseline)
+//Lines below sorts out, which v1 express route will handle, which request
+server.use('/v1/ships', ships)
+server.use('v1/cruiselines', cruiseline)
+
+//The line below sorts out 404 error, if page does not display
 server.use('/v1/*', (req, res) => res.sendStatus(404))
 
-//server.use('api/ships', require ('./routes/review'))
-
+//Line below gets index html file from public folder. 
+//This index html file takes us to the app component, which handles the routes from there.
 server.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, '../public/index.html'))
 })
-
-// server.use('v1/cruiselines', ships)
-// })
 
 module.exports = server
