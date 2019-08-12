@@ -9,11 +9,20 @@ function getCruiseLine(ships, testConn)  {
     .where('ships', id)
 } 
 
-function getCruiseLines (ships, testConn)    {
-    const conn = testConn || db 
-    
-    return conn('CruiseLines').select()
-    .orderBy("cruise_line")
+function getCruiseLines (testConn)  {
+    const conn = testConn || db
+    console.log('server/db/dbcruises.js getCruiseLines called!')
+
+    //Line below connects Ships table
+    return conn('ships')
+    //Line below selects cruise_line from each ship. It uses distinct(), instead of select(), because that does not repeat Cruise Line Headings. 
+    .distinct('cruise_line')
+    //Line below puts Cruise Line Headings in Alphabetical Order.
+    .orderBy('cruise_line')
+    .then(dbResult  =>  {
+        console.log('dbcruises.js - GOT CRUISE LINES:',dbResult)
+        return dbResult
+    })
 }
 
 function updateCruiseLineAv (CruiseLine, testConn)    {
