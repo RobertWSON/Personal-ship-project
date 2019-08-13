@@ -37,7 +37,7 @@ class CruiseListHeader extends React.Component {
         When user clicks on a Cruise Line Heading, when a Ships List is open, the Ships List Collapses.*/
 
     handleClick(event)   {
-        //this handleClick function should only handle the 'isOpen' vlaue in the state.
+        //this handleClick function should only handle the 'isOpen' value in the state.
         //any renders supposedly to be made on the 'render' method instead.
         this.setState(prevState =>  ({
             shipsList:  {
@@ -54,24 +54,23 @@ class CruiseListHeader extends React.Component {
         //destructive declaration for isOpen from inside shipsList in the state.
         const {shipsList: {isOpen}} = this.state;
 
-       // {this.state.cruiseHeaders.map (cruiseHeaders =>  {
-
         return  (
 
             <React.Fragment>
 
-                {this.state.cruiseHeaders.map (cruiseHeaders =>  {
+                {/* map the Cruiseline Headings to display them on the page */}
+                {this.state.cruiseHeaders.map (cruiseline =>  {
                 
                 return  (
                     <div>
-                        <h3 key = {ship.cruise_line}><button onClick = {this.handleClick}>{ship.cruise_line}</button></h3>
-                
                         {
-                        //Usually modals are shown at the bottom of the render return.
-                        //It's better to use ternary 'val ? component : null' rather than: (val && component)
-                        //React accepts a component, or a null as return value, the second will return false if val was false.
-                        isOpen ? <ListofShips/> : null 
+                            //Ternary Operator that checks if ShipsList is Open. If we click on Cruise Line Heading, then a shipsList is Opened 
+                            //and we go to ListofShips Component, else if we click on Cruise Line Heading when shipsList is Open then just the 
+                            //Cruise Line Heading is shown. 
+                            isOpen ? <ListofShips/> : cruiseline 
                         }
+                        
+                        <h3 key = {ship.cruise_line}><button onClick = {this.handleClick}>{ship.cruise_line}</button></h3>
 
                     </div>
 
