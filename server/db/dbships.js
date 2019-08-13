@@ -10,22 +10,12 @@ function getShip(id, cruiseLine, testConn)  {
     .first()
 } 
 
-// function getShips(cruiseLine, testConn)    {
-//     const conn = testConn || db 
-    
-//     return conn('Ships').select()
-//     .orderBy("ship_name")
-// }
-// Code below is more becoming correct, as getShips should be getListofShips
-
-
 function getListofShips(cruiseLine, testConn)   {
     const conn = testConn || db
 
-    return conn('ships').select()
+    return conn('Ships').select()
     .orderBy("ship_name")    
     
-    // return conn ('Ships')
     // .where('id', cruiseLine)
     // .first()
 }

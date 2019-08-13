@@ -5,7 +5,7 @@ const db = require('knex')(config)
 function getCruiseLine(ships, testConn)  {
     const conn = testConn || db
     
-    return conn ('CruiseLine')
+    return conn ('Ships')
     .where('ships', id)
 } 
 
@@ -14,7 +14,7 @@ function getCruiseLines (testConn)  {
     console.log('server/db/dbcruises.js getCruiseLines called!')
 
     //Line below connects Ships table
-    return conn('ships')
+    return conn('Ships')
     //Line below selects cruise_line from each ship. It uses distinct(), instead of select(), because that does not repeat Cruise Line Headings. 
     .distinct('cruise_line')
     //Line below puts Cruise Line Headings in Alphabetical Order.
@@ -27,7 +27,7 @@ function getCruiseLines (testConn)  {
 
 function updateCruiseLineAv (CruiseLine, testConn)    {
     const conn = testConn || db
-    return conn ('CruiseLine')
+    return conn ('Ships')
     .where ('CruiseLine', Ship)
     .update({
         available: false
