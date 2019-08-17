@@ -10,7 +10,7 @@ server.use(express.static(path.join(__dirname, '../public')))
 
 //Lines below sorts out, which v1 express route will handle, which request
 server.use('/v1/ships', ships)
-server.use('v1/cruiselines', cruiseline)
+server.use('/v1/cruiselines', cruiseline)
 
 //The line below sorts out 404 error, if page does not display
 server.use('/v1/*', (req, res) => res.sendStatus(404))

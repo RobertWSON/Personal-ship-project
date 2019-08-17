@@ -15,8 +15,8 @@ function getCruiseLines (testConn)  {
 
     //Line below connects Ships table
     return conn('Ships')
-    //Line below selects cruise_line from each ship. It uses distinct(), instead of select(), because that does not repeat Cruise Line Headings. 
-    .distinct('cruise_line')
+    //Line below selects cruise_line from Ships Database
+    .select('cruise_line')
     //Line below puts Cruise Line Headings in Alphabetical Order.
     .orderBy('cruise_line')
     .then(dbResult  =>  {
