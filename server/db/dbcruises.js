@@ -15,8 +15,8 @@ function getCruiseLines (testConn)  {
 
     //Line below connects Ships table
     return conn('Ships')
-    //Line below selects cruise_line from Ships Database
-    .select('cruise_line')
+    //Line below picks out each distinct Cruise Line (only once) from Ships Database
+    .distinct('cruise_line')
     //Line below puts Cruise Line Headings in Alphabetical Order.
     .orderBy('cruise_line')
     .then(dbResult  =>  {
