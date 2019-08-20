@@ -5,10 +5,10 @@ class CruiseListHeader extends React.Component {
     constructor(props)  {
         super(props)
 
-        //setting intial state for cruise heading and shipsList and initialize cruiseHeaders as an empty array
+        //setting intial state for Cruise Heading and shipsList and initialize cruiseHeaders as an empty array
         this.state = {
             cruiseHeaders: [],
-            shipsList: {isOpen:false}
+            shipsList: {isOpen: false}
         } 
         
         //binding methods for Cruise Line Headers and Handle Click Function
@@ -35,8 +35,12 @@ class CruiseListHeader extends React.Component {
     /* There will be Headings for all the Cruise Lines.
         When a Cruise Line Heading is clicked, it goes to ListofShips Component and the Ships List opens up for that Heading.
         When user clicks on a Cruise Line Heading, when a Ships List is open, the Ships List Collapses.*/
+        // If we click on Cruise Line Heading, then a shipsList is Opened and we go to ListofShips Component, 
+        // else if we click on Cruise Line Heading when shipsList is Open then just the Cruise Line Heading is shown. 
 
     handleClick(event)   {
+        //This handleClick sorts out the changing of state, when Cruise Heading is clicked
+
         //this handleClick function should only handle the 'isOpen' value in the state.
         //any renders supposedly to be made on the 'render' method instead.
         this.setState(prevState =>  ({
@@ -52,22 +56,23 @@ class CruiseListHeader extends React.Component {
     //We can handle the way you render the component that depends on the this.state.shipsList.isOpen this way.  
     render()    {
         //destructive declaration for isOpen from inside shipsList in the state.
-        const {shipsList: {isOpen}} = this.state;
+        const {shipsList: {isOpen}} = this.state
 
         return  (
 
             <React.Fragment>
 
-                {/* map the Cruiseline Headings to display them on the page */}
-                {this.state.cruiseHeaders.map (cruiseline =>  {
+                {/* Map the Cruiseline Headings for each Cruise Line to display them on the page
+                I am currently get all Cruise Lines for each Ship. I only want each Cruise Line appear once and
+                I want to map ship because I need each ship displayed in a List for a Cruise Line when isOpen is True. */}
+                {this.state.cruiseHeaders.map (ship =>  {
                 
                 return  (
                     <div>
                         {
-                            //Ternary Operator that checks if ShipsList is Open. If we click on Cruise Line Heading, then a shipsList is Opened 
-                            //and we go to ListofShips Component, else if we click on Cruise Line Heading when shipsList is Open then just the 
-                            //Cruise Line Heading is shown. 
-                            isOpen ? <ListofShips/> : cruiseline 
+                            //Line below has Conditonal Operator that displays ShipsList when isOpen is True. 
+                            //isOpen && <ListofShips />
+                            isOpen == true && <ListofShips/>
                         }
                         
                         <h3 key = {ship.cruise_line}><button onClick = {this.handleClick}>{ship.cruise_line}</button></h3>
