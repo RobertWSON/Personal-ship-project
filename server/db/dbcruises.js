@@ -13,7 +13,7 @@ function getCruiseLines (testConn)  {
     const conn = testConn || db
     console.log('server/db/dbcruises.js getCruiseLines called!')
 
-    //Line below connects Ships table
+    //Line below connects to Ships Table
     return conn('Ships')
     //Line below picks out each distinct Cruise Line (only once) from Ships Database
     .distinct('cruise_line')

@@ -12,10 +12,10 @@ router.use(express.json())
 //     })
 // Code below I think is more correct than this one    
 
-router.get('v1/review/ListofShips', (req,res)   =>  {
+router.get('/', (req,res)   =>  {
     db.getListofShips()
-        .then(ships =>  
-            res.json(ships))
+        .then(listofships =>  
+            res.json(listofships))
 })   
 
 router.get('/:id', (req,res) => {

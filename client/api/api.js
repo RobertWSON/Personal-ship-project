@@ -18,17 +18,19 @@ export function getCruiseLines ()  {
 }
 
 //This is api for when user Clicks on Cruise Line Heading and a List of Ships appears for that Cruise Line on Cruise Lines Page.
-export function getListofShips(cruise_line, ship_name)  {
-    console.log('api getListofShips')
+//Trying to attempt to get Ships based on their Cruise Line.
+export function getListofShips()  {
+    console.log('client/api/api.js getListofShips called')
 
-    return request.get(`/#/cruiselines`)
+    return request.get(`/v1/listofships`)
         .then(res => {
-            const cruiselines = res.body
-            console.log(res)
-            return cruiselines
+            const listofships = res.body
+            console.log('Got listofships! client/api/api.js')
+            return listofships
         })
-        .catch (() => {
-            throw Error('you need to implement an API route for /#/cruiselines')   
+        .catch (error => {
+            //This logs any errors caught, while debugging.
+            console.log('caught error in client/api/api.js getListofShips', error)   
         })
 }
 
