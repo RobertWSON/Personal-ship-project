@@ -1,7 +1,8 @@
 import React from 'react'
 // import {Link} from 'react-router-dom'
 import {getListofShips} from '../api/api'
-import { HashLink as Link} from 'react-router-hash-link'
+import {HashLink as Link} from 'react-router-hash-link'
+import {ListofShips} from './ListofShips'
 
 
 class ListofShips extends React.Component {
