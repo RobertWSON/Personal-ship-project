@@ -1,6 +1,5 @@
 import React from 'react'
-// import {Link} from 'react-router-dom'
-import {getListofShips} from '../api/api'
+import {getShipsList} from '../api/api'
 import {HashLink as Link} from 'react-router-hash-link'
 import {ListofShips} from './ListofShips'
 
@@ -14,8 +13,8 @@ class ListofShips extends React.Component {
         shipsList: []
          
       }
+      //binding method for Ships in their List for their Cruise Line
       this.setUpShips = this.setUpShips.bind(this)
-      //this.onHover = this.onHover.bind(this)
     }
    
     componentDidMount(){
@@ -24,10 +23,8 @@ class ListofShips extends React.Component {
     }
 
     setUpShips() {
-      //console.log('getShips')
-      console.log('getListofShips')
-      //getShips()
-      getListofShips()
+      console.log('getShipsList')
+      getShipsList()
       
       .then(res =>  {
         
@@ -37,33 +34,13 @@ class ListofShips extends React.Component {
       })
     }
 
-    //This is an onMouseOver event for when you run your mouse over ship in it's list
-    // onHover(event)  {
-
-    //   getInitialState
-      
-    //   this.setState = {}
-    // }
 
     findShipNames(ship) {
 
-      ship.cruise_line.id = ship.ship_name.id
-
       return ship.ship_name
 
-      // This function helps display the Cruise Ships based on the Cruise Line
-      
-      // Example Code
-      //   For Cruise_line === "Carnival"
-
-      //   Ships Displayed =
-
-      //   You have to group the Cruise Lines by their corresponding Ships, somehow
-
-      //   return ship.ship_names
-
-      //   this returns the Ship Names based on there Cruise Lines                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
-
+      //This function helps display relevant Cruise Ships when user clicks on their Cruise Line
+      //In my backend I have let the database find the relevant Cruise Ships from their Cruise Line, so we just return it here
     }
     
   render()  {
@@ -76,17 +53,14 @@ class ListofShips extends React.Component {
         {this.state.shipsList.map (ship => {  
             
           return   (
-              // <li className = "shipsList" key = {ship.cruise_line} onMouseOver={this.onHover}><link smooth to = {`/cruiselines/${ship.cruise_line}#${ship.ship_name}`}>{this.findShipName(ship)}</link></li>
               <li className = "shipsList" key = {ship.cruise_line}><Link smooth to = {`/cruiselines/${ship.cruise_line}#${ship.ship_name}`}>{this.findShipName(ship)}</Link></li>
     
           )
-          
-          // I have to find a key that can display each ship name for each Headings Ships List.
-          // The Link will be an Anchor Link to that specific ship, on it's Cruise Line Page.
+          //This List has a className, because I want to style fonts using CSS for CruiseShip names 
+          //The key is used to get correct ship names for the Ships List, when a Cruise Line Heading is clicked.
+          //The Link will be an Anchor Link to a specific ship, on it's Cruise Line Page. 
+          //The Link will have a smooth feature, so it scrolls to the correct ship on it's Cruise Line Page. 
           // Note: The Cruise Line Page, can have a Review for more than one ship and will be a Review Component.   
-
-            // I would like to do a onMouse Hover function, so that when you run your mouse over ship in list a corresponding image appears
-
         })
         }
       </ol>
