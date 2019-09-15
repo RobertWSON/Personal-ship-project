@@ -26,7 +26,7 @@ export function getShipsList()  {
         .then(res => {
             const shipslist = res.body
             console.log('Got shipslist! client/api/api.js')
-            return shipsList
+            return shipslist
         })
         .catch (error => {
             //This logs any errors caught, while debugging.

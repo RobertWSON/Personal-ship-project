@@ -1,5 +1,9 @@
 import React from 'react'
-import {HashRouter as Router, Route} from 'react-router-dom'
+//import {HashRouter as Router, Route} from 'react-router-dom'
+
+//I will change to BrowserRouter because I think that this only works with Hash Link
+import {BrowserRouter, Route} from 'react-router-dom'
+
 //import {HashRouter as Router, Route, Link} from 'react-router-dom'
 import Nav from './Nav'
 import Home from './Home'
@@ -21,7 +25,8 @@ class App extends React.Component {
 
   render () {
     return (
-      <Router>
+      <BrowserRouter>
+      {/* <Router> */}
         {/* <React.Fragment> */}
           <div>
             {/* <div>
@@ -43,7 +48,8 @@ class App extends React.Component {
             {/* </div> */}
           </div>  
         {/* </React.Fragment>   */}
-      </Router>  
+      {/* </Router>  */}
+      </BrowserRouter>
     )
   }
 }
