@@ -11,5 +11,11 @@ router.get('/', (req, res) => {
         res.json(cruiselines))
     })
 
+//These routes are used for getting Cruise Line on Review Page
+router.get('/', (req,res)   =>  {
+    db.getCruiseLine()
+        .then(cruiseline =>
+            res.json(cruiseline))
+})
 
 module.exports = router

@@ -11,5 +11,17 @@ router.get('/', (req,res)   =>  {
             res.json(shipslist))
 })   
 
+//These routes are used for getting Ships on Review Page
+router.get('/', (req,res)   =>  {
+    db.getShips()
+        .then(ships =>
+            res.json(ships))
+})
+
+router.get('/', (req,res)   =>  {
+    db.getShip()
+        .then(ship =>
+            res.json(ship))
+})
 
 module.exports = router

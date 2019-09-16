@@ -21,6 +21,23 @@ function getShipsList(testConn)   {
     })
 }
 
+//The Functions below are used for getting Ships on Review Page
+function getShips(testConn) {
+    const conn = testConn || db
+    console.log('server/db/dbships.js getShips called!')
+
+    //Line below connects to Ships Table
+    return conn('Ships')
+    //Line below 
+}
+
+function getShip(testConn)  {
+    const conn = testConn || db
+    console.log('server/db/dbships.js getShip called!')
+
+    //Line below connects to Ships Table
+    return conn('Ships')
+}
 
 module.exports = {
     getShipsList
