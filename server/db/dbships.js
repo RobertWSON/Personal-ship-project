@@ -12,7 +12,7 @@ function getShipsList(testConn)   {
     //Line below picks out each Cruise Line to get the Ships from  
     .distinct('cruise_line')
     //Line below picks out the Ships to display for each Cruise Line
-    .select('ship_name')
+    .select('id','cruise_line','ship_name')
     //Line below puts Ships in Alphabetical Order.
     .orderBy("ship_name")    
     .then(dbResult  =>  {

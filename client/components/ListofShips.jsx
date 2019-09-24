@@ -53,7 +53,7 @@ class ListofShips extends React.Component {
         {this.state.shipsList.map (ship => {  
             
           return   (
-              <li className = "shipsList" key = {ship.cruise_line}><Link smooth to = {`/cruiselines/${ship.cruise_line}#${ship.ship_name}`}>{this.findShipNames(ship)}</Link></li>
+              <li className = "shipsList" key = {ship.id}><Link smooth to = {`/cruiselines/${ship.cruise_line}#${ship.ship_name}`}>{this.findShipNames(ship)}</Link></li>
     
           )
           //This List has a className, because I want to style fonts using CSS for CruiseShip names 
