@@ -68,21 +68,19 @@ class CruiseListHeader extends React.Component {
                 {/* Map the Cruiseline Headings for each Ship to display them on the page
                 I want to map ship because I need each ship displayed in a List for a Cruise Line when isOpen is True.
                 Each different Cruise line is showing, so that is good, but not opening Ships List.*/}
-                {this.state.cruiseHeaders.map (ship =>  {
+                {this.state.cruiseHeaders.map (ship =>  (
                 
-                return  (
-                    <div>
-                        {
-                            //Line below is a Conditonal Operator that displays ShipsList when isOpen is True
-                            isOpen == true && <ListofShips/>
-                        }
+                    <div key={ship.cruise_line}>
                         
-                        <h3 key = {ship.cruise_line}><button onClick = {this.handleClick}>{ship.cruise_line}</button></h3>
+                            {/* Line below is a Conditonal Operator that displays ShipsList when isOpen is True */}
+                            {isOpen == true && <ListofShips/>}
+                        
+                        <h3>
+                            <button onClick = {this.handleClick}>{ship.cruise_line}</button>
+                        </h3>
                     </div>
 
-                    )
-
-                    })
+                ))
                 }  
 
             </React.Fragment> 

@@ -52,12 +52,13 @@ class Home extends React.Component  {
                 </div> */}
 
                 <Slider {...settings}>
-                    {this.state.images.map(image => {
-                        return (
-                            <div className="slide"><img key = {image} src = {image}/></div>
-                        )
+                    {
+                        this.state.images.map((image, index) => (
+                            <div className="slide" key={index}>
+                                <img key = {image} src = {image}/>
+                            </div>
+                        ))
                     }
-                    )}
                 
                 </Slider>
 

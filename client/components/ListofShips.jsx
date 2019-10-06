@@ -51,16 +51,17 @@ class ListofShips extends React.Component {
 
       <ol>
         {this.state.shipsList.map (ship => {  
-            
           return   (
-              <li className = "shipsList" key = {ship.id}><Link smooth to = {`/cruiselines/${ship.cruise_line}#${ship.ship_name}`}>{this.findShipNames(ship)}</Link></li>
-    
-          )
+              <li className = "shipsList" key = {ship.ship_name}><Link smooth to = {`/cruiselines/${ship.cruise_line}#${ship.ship_name}`}>{this.findShipNames(ship)}</Link></li>
+          )  
+
           //This List has a className, because I want to style fonts using CSS for CruiseShip names 
           //The key is used to get correct ship names for the Ships List, when a Cruise Line Heading is clicked.
           //The Link will be an Anchor Link to a specific ship, on it's Cruise Line Page. 
           //The Link will have a smooth feature, so it scrolls to the correct ship on it's Cruise Line Page. 
           // Note: The Cruise Line Page, can have a Review for more than one ship and will be a Review Component.   
+        
+        
         })
         }
       </ol>
