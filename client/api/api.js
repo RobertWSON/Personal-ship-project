@@ -2,7 +2,7 @@ import request from 'superagent'
 
 
 //This is api for when Cruise Line Headings appear on Cruise Lines Page.
-export function getCruiseLines ()  {
+export function getCruiseLines()  {
     console.log('client/api/api.js getCruiseLines called')
     
     return request.get(`/v1/cruiselines`)
@@ -19,10 +19,10 @@ export function getCruiseLines ()  {
 
 //This is api for when User Clicks on Cruise Line Heading and a List of Ships appears for that Cruise Line on Cruise Lines Page.
 //Trying to attempt to get Ships based on their Cruise Line.
-export function getShipsList()  {
+export function getShipsList(cruise_line)  {
     console.log('client/api/api.js getShipsList called')
 
-    return request.get(`/v1/shipslist`)
+    return request.get(`/v1/shipslist/${cruise_line}`)
         .then(res => {
             const shipslist = res.body
             console.log('Got shipslist! client/api/api.js')
