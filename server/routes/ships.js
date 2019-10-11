@@ -5,8 +5,8 @@ const router = express.Router()
 router.use(express.json())
 
 
-router.get('/', (req,res)   =>  {
-    db.getShipsList()
+router.get('/:cruise_line', (req,res)   =>  {
+    db.getShipsList(req.params.cruise_line)
         .then(shipslist =>  
             res.json(shipslist))
 })   
