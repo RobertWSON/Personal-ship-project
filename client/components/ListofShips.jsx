@@ -47,8 +47,6 @@ class ListofShips extends React.Component {
     handleClick() {
    
     //This handleClick sorts out the changing of state between Shipslist being open or not, when a Cruise Line Heading is clicked.
-    
-    //HandleClick function should only handle 'isOpen' value in the state
 
       //This if statement finds out if the shipsList has been visited and if it has, it uses hasFetched to find Ships for List.
       if(!this.state.hasFetched)  {
