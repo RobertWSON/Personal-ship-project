@@ -36,7 +36,7 @@ export function getShipsList(cruise_line)  {
 
 //This is api for when User Clicks on a Ship from the Ships List and it goes to the correct Cruise Line. 
 export function getCruiseLine()   {
-    console.log('client/api/api.js getCruiseLines called')
+    console.log('client/api/api.js getCruiseLine called')
 
     return request.get('/v1/cruiseline')
         .then(res   =>  {
