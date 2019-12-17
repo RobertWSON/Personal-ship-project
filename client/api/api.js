@@ -25,7 +25,7 @@ export function getShipsList(cruise_line)  {
     return request.get(`/v1/shipslist/${cruise_line}`)
         .then(res => {
             const shipslist = res.body
-            console.log('Got shipslist! client/api/api.js')
+            console.log('Got shipslist! client/api/api.js', shipslist)
             return shipslist
         })
         .catch (error => {
