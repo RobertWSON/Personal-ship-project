@@ -91,7 +91,7 @@ class ListofShips extends React.Component {
                 //We only need to find the id for each ship, because the api is doing the rest of the work for us by finding the 
                 //correct Cruise line to match the id. 
                 <li className = "shipsList" key = {ship.id}>
-                  <Link smooth to = {`/cruiselines/${ship.cruise_line}#${ship.ship_name.replace(/\s+/g, "-")}`}>{this.findShipNames(ship)}</Link>
+                  <Link smooth to = {`/cruiselines/${ship.cruise_line.replace(/\s+/g, "_")}#${ship.ship_name.replace(/\s+/g, "_")}`}>{this.findShipNames(ship)}</Link>
                 </li>
               )  
 

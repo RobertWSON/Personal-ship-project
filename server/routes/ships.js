@@ -11,9 +11,9 @@ router.get('/:cruise_line', (req,res)   =>  {
             res.json(shipslist))
 })   
 
-//These routes are used for getting Ships on Review Page
+//This route is used for getting Ships on Review Page
 router.get('/', (req,res)   =>  {
-    db.getShips()
+    db.getShips(req.params.cruise_line)
         .then(ships =>
             res.json(ships))
 })

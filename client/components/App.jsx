@@ -41,13 +41,14 @@ class App extends React.Component {
               <Route exact path='/evolutionpart1' component={EvolutionPart1}/>
               <Route exact path='/evolutionpart2' component={EvolutionPart2}/>
               <Route exact path='/cruiselines' component={CruiseLines}/>
-              <Route path = '/cruiselines/cruise_line#ship_name' component={Review}/>
+
+              <Route path = '/cruiselines/:cruise_line#ship_name' component={Review}/>
+              {/* Route below is recommended by Ricky Sullivan from slack, as it passes a param.
+              The problem is that it just doesn't work at this stage, probably because the backend and api needs to be sorted. 
+              <Route path = '/cruiselines/:cruise_line' component={Review}/> */}
 
               {/* Ship Term Route Added */}
               <Route exact path = '/cruiselines/shipterms' component={ShipTerms}/>
-
-              {/* <Route path = "/ship/:id" component = {"Review"}/>
-              <Route exact path = "/cruiselines" component = {ListofShips}/> */}
               
             {/* </div> */}
           </div>  
