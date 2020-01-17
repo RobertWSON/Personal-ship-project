@@ -23,7 +23,9 @@ img {
 }
 
 /* I think this code is for animation */
-.background-appear {
+/* Commented because I don't think this works and we don't need it */
+
+/* .background-appear {
     opacity: 0.01;
     position: fixed;
     transform: translate(100%);
@@ -35,7 +37,7 @@ img {
     transition: position 3s ease-in;
     transform: translate(0%);
     transition: transform 1000ms ease-in-out;
-}
+} */
 
 /* Page Navigation Menu */
 
