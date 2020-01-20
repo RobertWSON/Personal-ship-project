@@ -1,32 +1,32 @@
-const path = require('path')
-const express = require('express')
-const cruiselines = require('./routes/cruises')
-const shipslist = require('./routes/ships')
-const cruiseline = require('./routes/cruises')
-const ships = require('./routes/ships')
-const ship = require('./routes/ships')
+const path = require('path');
+const express = require('express');
+const cruiselines = require('./routes/cruises');
+const shipslist = require('./routes/ships');
+const cruiseline = require('./routes/cruises');
+const ships = require('./routes/ships');
+const ship = require('./routes/ships');
 
-const server = express()
+const server = express();
 
-server.use(express.json())
-server.use(express.static(path.join(__dirname, '../public')))
+server.use(express.json());
+server.use(express.static(path.join(__dirname, '../public')));
 
 //Lines below sorts out, which v1 express route will handle, which request
-server.use('/v1/cruiselines', cruiselines)
-server.use('/v1/shipslist', shipslist)
+server.use('/v1/cruiselines', cruiselines);
+server.use('/v1/shipslist', shipslist);
 
 //These routes are used for getting Review Page
-server.use('/v1/cruiseline', cruiseline)
-server.use('/v1/ships', ships)
-server.use('/v1/ship', ship)
+server.use('/v1/cruiseline', cruiseline);
+server.use('/v1/ships', ships);
+server.use('/v1/ship', ship);
 
 //The line below sorts out 404 error, if page does not display
-server.use('/v1/*', (req, res) => res.sendStatus(404))
+server.use('/v1/*', (req, res) => res.sendStatus(404));
 
-//Code below gets index html file from public folder. 
+//Code below gets index html file from public folder.
 //This index html file takes us to the app component, which handles the routes from there.
 server.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../public/index.html'))
-})
+  res.sendFile(path.join(__dirname, '../public/index.html'));
+});
 
-module.exports = server
+module.exports = server;
