@@ -47,6 +47,10 @@ class App extends React.Component {
               The problem is that it just doesn't work at this stage, probably because the backend and api needs to be sorted. 
               <Route path = '/cruiselines/:cruise_line' component={Review}/> */}
 
+              {/* Route for Ship Component that controls the details we are getting for the ship
+              and then returns Cruise Line and Correct Ships in Review Component. */}
+              <Route path = '/cruiselines/:cruise_line#ship_name' component={Ship}/>
+
               {/* Ship Term Route Added */}
               <Route exact path = '/cruiselines/shipterms' component={ShipTerms}/>
               
