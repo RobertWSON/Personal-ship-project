@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import {getCruiseLine, getShips, getShip} from '../api/api' 
-// import { HashLink as Link } from 'react-router-hash-link'
+//import { HashLink as Link } from 'react-router-hash-link'
 
 class Review extends React.Component {
   constructor(props){
@@ -51,23 +51,21 @@ class Review extends React.Component {
     })
   }
 
-render(){
+render()  {
 
   {this.state.cruiseline.map (ship =>{ 
 
   return  (
     <React.Fragment>
-    {/* <React.Fragment key = {cruise_line}>  */}
-    {/* <React.Fragment key = {ship.id}> */}
-      
 
-        <h1 key = {ship.cruise_line}>{this.state.ship.cruise_line}</h1>
-        {console.log(this.state.ship)}
+        <h1 key = {ship.cruise_line}>{props.match.params.cruise_line}</h1>
+    
         
-        <h2 key = {ship.ship_name} id = "{ship_name}">{this.state.ship.ship_name}</h2>
-        {console.log(this.state.ship)}
+        <h2 key = {ship.ship_name} id = "{ship_name}">{props.match.params.cruise_line}</h2>
+
 
         <img src={this.state.ship.img} />
+     
 
         <div className ="ShipDetails">
 
@@ -98,14 +96,14 @@ render(){
         <p>{this.state.ship.Review}</p>
         
         <button><Link to = '/cruiselines'>Back to Cruise Lines</Link></button>       
-          
+
     </React.Fragment>
-  )
+    )
 
-})//end brackets for ships  
-} //end bracket for this.state.cruiseline.map 
+    }) //end brackets for ships
+   } //end bracket for this.state.cruiseline.map
 
-} //end bracket for render  
+  } //end bracket for render    
 } //end bracket for Review Component
 
 export default Review
