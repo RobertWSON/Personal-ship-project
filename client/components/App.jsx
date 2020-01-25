@@ -49,7 +49,9 @@ class App extends React.Component {
 
               {/* Route for Ship Component that controls the details we are getting for the ship
               and then returns Cruise Line and Correct Ships in Review Component. */}
-              <Route path = '/cruiselines/:cruise_line' component={Ship}/>
+
+              {/* Commented out because this Ship route does not work */}
+              {/* <Route path = '/cruiselines/:cruise_line' component={Ship}/> */}
 
               {/* Ship Term Route Added */}
               <Route exact path = '/cruiselines/shipterms' component={ShipTerms}/>

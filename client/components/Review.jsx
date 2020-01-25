@@ -35,7 +35,7 @@ class Review extends React.Component  {
       <React.Fragment>
 
         <h1>{this.state.cruiseline}</h1>
-        {this.state.ship.map  (ship =>  {
+        {this.state.ships.map  (ship =>  {
           return  <Ship key={ship.id} {...ship}/>
 
         } // end bracket for ship =>  {

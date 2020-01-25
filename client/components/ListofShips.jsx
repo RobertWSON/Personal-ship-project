@@ -91,7 +91,11 @@ class ListofShips extends React.Component {
                 //We only need to find the id for each ship, because the api is doing the rest of the work for us by finding the 
                 //correct Cruise line to match the id. 
                 <li className = "shipsList" key = {ship.id}>
+                  {/* Comment this below, so I can get all Review Pages showing. Still have to find a way to have underscore and hash in link
+                  as well as displaying page. */}
                   <Link smooth to = {`/cruiselines/${ship.cruise_line.replace(/\s+/g, "_")}#${ship.ship_name.replace(/\s+/g, "_")}`}>{this.findShipNames(ship)}</Link>
+                  
+                  {/* <Link smooth to = {`/cruiselines/${ship.cruise_line}#${ship.ship_name}`}>{this.findShipNames(ship)}</Link> */}
                 </li>
               )  
 

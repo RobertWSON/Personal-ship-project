@@ -19,10 +19,6 @@ function getCruiseLines (testConn)  {
     })
 }
 
-//The Function below is used for getting Cruise Line on Review Page
-function getCruiseLine(testConn)    {
-    
-}
 
 module.exports = {
     getCruiseLines
