@@ -6,9 +6,10 @@ import { getShipsList } from '../api/api';
 class Review extends React.Component {
   constructor(props) {
     super(props);
+    const decodeCruiseline = props.match.params.cruise_line.replace(/_/g, ' ');
 
     this.state = {
-      cruiseline: props.match.params.cruise_line,
+      cruiseline: decodeCruiseline,
       ships: []
     };
     this.setUpShips = this.setUpShips.bind(this);
