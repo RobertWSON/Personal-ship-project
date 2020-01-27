@@ -1,14 +1,8 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
-class Ship extends React.Component  {
-    constructor(props)  {
-        super(props)
-
-    }    
-
-    render()    {
-
+export const Ship = props =>    {
+    
         const   {
             ship_name,
             img,
@@ -23,7 +17,7 @@ class Ship extends React.Component  {
             Loaded_Displacement,
             Deadweight,
             Review
-        } = this.props
+        } = props
 
     return  (
         <React.Fragment>
@@ -71,8 +65,5 @@ class Ship extends React.Component  {
 
         </React.Fragment>
 
-    ) // bracket to end return  ( before <React.Fragment>
-} // bracket to end render()    {
-} // bracket to end Component 
-
-export default Ship
+    )
+}    
