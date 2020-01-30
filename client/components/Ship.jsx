@@ -24,10 +24,12 @@ class Ship extends React.Component  {
             Review
         } = this.props
 
+        const encodedShipName = ship_name.replace(/\s/g, '_')
+
     return  (
         <React.Fragment>
 
-            <h2 id ={ship_name}>{ship_name}</h2>
+            <h2 id ={encodedShipName}>{ship_name}</h2>
 
             <img src ={img}/>
 

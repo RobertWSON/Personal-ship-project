@@ -86,7 +86,11 @@ class ListofShips extends React.Component {
     
           {/* When Ships List is about to be opened, we will use map to find the correct Ships for the List.*/}
           {this.state.isOpen == true && 
-            this.state.shipsList.map (ship => {  
+            this.state.shipsList.map (ship => { 
+              
+              const encodedCruiseline = ship.cruise_line.replace(/\s/g, '_')
+              const encodedShipName = ship.ship_name.replace(/\s/g, '_')
+              
               return   (
                 //We only need to find the id for each ship, because the api is doing the rest of the work for us by finding the 
                 //correct Cruise line to match the id. 
@@ -95,7 +99,7 @@ class ListofShips extends React.Component {
                   as well as displaying page. */}
                   {/* <Link smooth to = {`/cruiselines/${ship.cruise_line.replace(/\s+/g, "_")}#${ship.ship_name.replace(/\s+/g, "_")}`}>{this.findShipNames(ship)}</Link> */}
                   
-                  <Link smooth to = {`/cruiselines/${ship.cruise_line}#${ship.ship_name}`}>{this.findShipNames(ship)}</Link>
+                  <Link smooth to = {`/cruiselines/${encodedCruiseline}#${encodedShipName}`}>{this.findShipNames(ship)}</Link>
                 </li>
               )  
 
