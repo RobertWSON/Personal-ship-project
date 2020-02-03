@@ -24,11 +24,15 @@ class Ship extends React.Component  {
             Review
         } = this.props
 
+        // The ShipName constant is used to reference to a Ship Name Heading on the Cruise Line Review Page. 
+        // Please note: It is not used to replace all spaces in the url with an underscore "_"
         const encodedShipName = ship_name.replace(/\s/g, '_')
 
     return  (
         <React.Fragment>
 
+            {/* The id in the Ship Name Heading is used as a reference to the url for a specific ship name that a 
+            user is reviewing.   */}
             <h2 id ={encodedShipName}>{ship_name}</h2>
 
             <img src ={img}/>
