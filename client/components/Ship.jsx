@@ -33,7 +33,7 @@ class Ship extends React.Component  {
 
             {/* The id in the Ship Name Heading is used as a reference to the url for a specific ship name that a 
             user is reviewing.   */}
-            <h2 id ={encodedShipName}>{ship_name}</h2>
+            <h2 className = "ship" id ={encodedShipName}>{ship_name}</h2>
 
             <img src ={img}/>
 

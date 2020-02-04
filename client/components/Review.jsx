@@ -41,7 +41,7 @@ class Review extends React.Component  {
     return  (
       <React.Fragment>
 
-        <h1>{this.state.cruiseline}</h1>
+        <h1 className = "cruiseLine">{this.state.cruiseline}</h1>
         {this.state.ships.map  (ship =>  {
           return  (
             

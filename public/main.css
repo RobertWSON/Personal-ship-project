@@ -1,6 +1,7 @@
 
 /* Page styles */
 .body {
+    display: flex;
     background-color: antiquewhite; 
     font-family: 'Work Sans', sans-serif;
     }
@@ -47,16 +48,22 @@ div.navmenu li  {
     font-size: 1.15em
 }
 
-.shipsList:active   {
+/* .shipsList:active   {
     color: cornflowerblue
-}
+} */
 
-.shipsList:hover    {
-    color:brown
-}
+/* .shipsList:hover    {
+    /* color:brown}*/
 
 .shipsList:visited  {
     color: cadetblue
+}
+
+/* Cruise Button CSS on Cruise Lines Page */
+.cruiseButton   {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 /* Page Main Headings */
@@ -67,7 +74,7 @@ div.header h1 {
 
 /* Reviews Page CSS */
 
-h1.cruises  {
+h1.cruiseLine  {
     text-align: center;
     color: blue
 }

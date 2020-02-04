@@ -109,7 +109,9 @@ class ListofShips extends React.Component {
                   
                   {/* Link in Cruise Lines Page to Review Page now works, because we have used encoding referenced from constants above. 
                   So we now have a HashLink with a hash and underscore in it.   */}
-                  <Link className = "shipsList" smooth to = {`/cruiselines/${encodedCruiseline}#${encodedShipName}`}>{this.findShipNames(ship)}</Link>
+                  <Link className = "shipsList" smooth to = {`/cruiselines/${encodedCruiseline}#${encodedShipName}`}>
+                    {this.findShipNames(ship)}
+                  </Link>
                 </li>
               )  
 
