@@ -1,9 +1,7 @@
 import React from 'react'
-//import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 
-//export const EvolutionPart1 = () => {
 
-    
 class EvolutionPart1 extends React.Component    {
     
     constructor(props)  {
@@ -13,7 +11,7 @@ class EvolutionPart1 extends React.Component    {
 
     render()    { 
           
-        return (
+        return  (
             <div>
                 <div className = "header">
                     <h1>Evolution of Cruise Ships</h1> 
@@ -26,22 +24,69 @@ class EvolutionPart1 extends React.Component    {
             
                 <div className = "evoships">  
                     <div className = "left">
-                        <img src={"/images/titaniccover.jpg"}/> 
+
+                        <h3>Titanic</h3>
+                        <Link to = "/evolutionpart1/titanic" alt="Titanic">
+                            <img src={"/images/titaniccover.jpg"}/>
+                        </Link>
                         <br/>
-                        <img src={"/images/oriana15.jpg"}/>
+                        <p>Find out more on Titanic, Click on Image</p>
                         <br/>
-                        <img src={"/images/ss-canberra.jpg"}/>
+                        <p>Titanic Ship Horn</p>
+                        
+                        <h3>Oriana</h3>
+                        <Link to = "/evolutionpart1/oriana">
+                            <img src={"/images/oriana15.jpg"}/>
+                        </Link>
                         <br/>
-                        <img src={"/images/669382709-612x612.jpg"}/>
+                        <p>Find out more on Oriana, Click on Image</p>
                         <br/>
-                        <img src={"/images/003410.jpg"}/>
+                        <p>Oriana Ship Horn</p>
+
+                        <h3>Canberra</h3>
+                        <Link to = "/evolutionpart1/canberra">
+                            <img src={"/images/ss-canberra.jpg"}/>
+                        </Link>
                         <br/>
-                        <img src={"/images/lb0101.JPG"}/>
+                        <p>Find out more on Canberra, Click on Image</p>
+                        <br/>
+                        <p>Canberra Ship Horn</p>
+                        <br/>
+
+                        <h3>France</h3>
+                        <Link to = "/evolutionpart1/france">
+                            <img src={"/images/Evolution/France/france_1961_1.jpg"}/>
+                        </Link>
+                        <br/>
+                        <p>Find out more on France, Click on Image</p>
+                        <br/>
+                        <p>France Ship Horn</p>
+                        <br/>
+
+                        <h3>Galileo Galilei</h3>
+                        <Link to = "/evolutionpart1/GalileoGalilei">
+                            <img src={"/images/Evolution/Galileo Galilei/Galileo03.jpg"}/>
+                        </Link>
+                        <br/>
+                        <p>Find out more on Galileo Galilei, Click on Image</p>
+                        <br/>
+                        <p>Galileo Galilei Ship Horn</p>
+                        <br/>
+
+                        <h3>Pacific Princess</h3>
+                        <Link to = "/evolutionpart1/pacificprincess">
+                            <img src={"/images/003410.jpg"}/>
+                        </Link>
+                        <br/>
+                        <p>Find out more on Pacific Princess, Click on Image</p>
+                        <br/>
+                        <p>Pacific Princess Ship Horn</p>
+
                     </div>
 
                     <div className = "right">
                         <p>We have come along way since passenger liner days of Titanic. Passenger safety in terms of lifeboats was underestimated when the titanic was built 
-                           and as a result there was only about enough lifeboats for 2/3 the passengers. The Titanic was though of as unsinkable at the time, but several factors    
+                           and as a result there was only about enough lifeboats for 2/3 the passengers. The Titanic was thought of as unsinkable at the time, but several factors    
                            caused the sinking. The iron rivets at the bow were brittle and not up to standard and the way that the watertight compartments were arranged caused                          
                            water to spill over the top of one and then flow into another compartment, eventually caused it to sink from flooding. Since the Titanic steel hulls    
                            have been created to help strengthen ships, rivets have been strengthened and watertight compartments are now in place for modern ships, so now we can 
@@ -66,11 +111,7 @@ class EvolutionPart1 extends React.Component    {
                     </div>
 
                 </div>    
-            </div>  
-            
-             
-
-           
+            </div>     
 
         )
     }

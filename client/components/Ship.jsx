@@ -44,7 +44,7 @@ class Ship extends React.Component  {
                 <h4>Year: {Year}</h4>
                 <h4>Passenger Capacity (Full): {Passenger_Full_Capacity}</h4>
                 <h4>
-                    Passenger Capacity (Double Occupancy):('')
+                    Passenger Capacity (Double Occupancy):
                     {Double_Occupancy_Passenger_Capacity}
                 </h4>
                 <h4>Gross Tonnage: {Gross_Tonnage}</h4>

@@ -37,18 +37,67 @@ class EvolutionPart2 extends React.Component    {
                     
                     <div className = "evoships">  
                         <div className = "left">
-                            <img src={"/images/Fairstar-RG-Photopage-Ships-Layout.jpg"}/>
+
+                            <h3>Fairstar</h3>
+                            <Link to = "/evolutionpart2/fairstar">
+                            <img src={"/images/Evolution/Fairstar/Fairstar01.jpg"}/>
+                            </Link>
                             <br/>
-                            <img src={"/images/UFRPU.jpg"}/>
+                            <p>Find out more on Fairstar, Click on Image</p>
                             <br/>
-                            <img src={"/images/b5ac2c1fe37dee95a51c61cd713f42dc.jpg"}/>
+                            <p>Fairstar Ship Horn</p>
                             <br/>
+
+                            <h3>Michelangelo</h3>
+                            <Link to = "evolutionpart2/michelangelo">
+                            <img src={"/images/Evolution/Michelangelo/michelangelo_1965_1.jpg"}/>
+                            </Link>
+                            <br/>
+                            <p>Find out more on Michelangelo, Click on Image</p>
+                            <br/>
+                            <p>Michelangelo Ship Horn</p>
+                            <br/>
+
+                            <h3>Qe2</h3>
+                            <Link to = "evolutionpart2/qe2">
+                            <img src={"/images/Evolution/Qe2/5148955_orig.jpg"}/>
+                            </Link>
+                            <br/>
+                            <p>Find out more on Qe2, Click on Image</p>
+                            <br/>
+                            <p>Qe2 Ship Horn</p>
+                            <br/>
+
+                            <h3>Song of Norway</h3>
+                            <Link to = "evolutionpart2/songofnorway">
                             <img src={"/images/image_manager__rex_thumbnail_images_song_of_norway_08.06.1994.jpg"}/>
+                            </Link>
                             <br/>
+                            <p>Find out more on Song of Norway, Click on Image</p>
+                            <br/>
+                            <p>Song of Norway Ship Horn</p>
+                            <br/>
+
+                            <h3>Royal Viking Sky</h3>
+                            <Link to = "/evolutionpart2/royalvikingsky">
                             <img src={"/images/1757063.jpg"}/>
+                            </Link>
                             <br/>
-                            <img src={"/images/2017-05-14-Ullapool-Cruise-Ship-Boudicca-8373_2000x.jpg"}/>
+                            <p>Find out more on Royal Viking Sky, Click on Image</p>
                             <br/>
+                            <p>Royal Viking Sky Ship Horn</p>
+                            <br/>
+
+                            <h3>Allure of the Seas</h3>
+                            <Link to = "/evolutionpart2/allureoftheseas">
+                            <img src={"/images/UFRPU.jpg"}/>
+                            </Link>
+                            <br/>
+                            <p>Find out more on Allure of the Seas, Click on Image</p>
+                            <br/>
+                            <p>Allure of the Seas Ship Horn</p>
+                            <br/>
+
                         </div>
 
                         <div className = "right">
@@ -59,6 +108,25 @@ class EvolutionPart2 extends React.Component    {
                             More details on this ship can be found here <a href ="https://en.wikipedia.org/wiki/TSS_Fairstar">Fairstar</a>.
                             </p>
                             <br/>
+                            
+                            <p>The photo on the left shows the Song of Norway, built in 1970, when it was being lengthened. Due to to demand of cruises in the 70's cruise ship lengthening started and this was the first cruise ship ever to be 
+                            lengthened in 1978. It was lengthening by 85 feet and the passenger capacity increased from 724 to 1024 people. She is now scrapped and more info can be found here <a href ="https://en.wikipedia.org/wiki/MS_Formosa_Queen">Song of Norway</a>  
+                            </p>
+                            <br/>
+                            <p>Here she is as Song of Norway, sailing through the panama Canal in 1994.
+                            </p>
+                            <br/>
+
+                            <p>The photo on the left or above shows the Royal Viking Sky, built in 1973 and seen here arriving in Picton. 
+                            This ship was lengthened by the popular 85 feet in 1991 and renamed Birka Queen. It originally had a passenger capacity of 536 and increased to 900 after lengthening. 
+                            More details on this ship can be found here <a href ="https://en.wikipedia.org/wiki/MV_Boudicca">Royal Viking Sky</a>
+                            </p>
+                            
+                            <p>The amazing thing about Royal Viking Sky, is that she is one of the survivors of cruise ships built in the 1970's. Here she can now be seen sailing as Boudicca in Ullapool, Scotland.
+                            <br/>She is still cruising today as Boudicca under <a href ="https://www.fredolsencruises.com/our-ships/boudicca">Fred Olsen Cruises</a>.   
+                            </p>
+                            <br/>
+
                             <p>The photo on the left shows Allure of the Seas, a modern cruise ship built in 2010, which has a more boxed shaped.
                             These modern cruise ships don't have as much deck space for the same size of ship as the older classic cruise liners. 
                             From the photo you can see that passengers are on the deck above the bow, whereas in the older cruise ships there was no deck space for passengers.
@@ -70,22 +138,7 @@ class EvolutionPart2 extends React.Component    {
                             More details on this ship can be found here <a href ="https://en.wikipedia.org/wiki/MS_Allure_of_the_Seas">Allure of the Seas</a>.
                             </p>
                             <br/>
-                            <p>The photo on the left shows the Song of Norway, built in 1970, when it was being lengthened. Due to to demand of cruises in the 70's cruise ship lengthening started and this was the first cruise ship ever to be 
-                            lengthened in 1978. It was lengthening by 85 feet and the passenger capacity increased from 724 to 1024 people. She is now scrapped and more info can be found here <a href ="https://en.wikipedia.org/wiki/MS_Formosa_Queen">Song of Norway</a>  
-                            </p>
-                            <br/>
-                            <p>Here she is as Song of Norway, sailing through the panama Canal in 1994.
-                            </p>
-                            <br/>
-                            <p>The photo on the left or above shows the Royal Viking Sky, built in 1973 and seen here arriving in Picton. 
-                            This ship was lengthened by the popular 85 feet in 1991 and renamed Birka Queen. It originally had a passenger capacity of 536 and increased to 900 after lengthening. 
-                            More details on this ship can be found here <a href ="https://en.wikipedia.org/wiki/MV_Boudicca">Royal Viking Sky</a>
-                            </p>
-                            <br/>
-                            <p>The amazing thing about Royal Viking Sky, is that she is one of the survivors of cruise ships built in the 1970's. Here she can now be seen sailing as Boudicca in Ullapool, Scotland.
-                            <br/>She is still cruising today as Boudicca under <a href ="https://www.fredolsencruises.com/our-ships/boudicca">Fred Olsen Cruises</a>.   
-                            </p>
-                            <br/>
+
                         </div>
         
                     </div>       
