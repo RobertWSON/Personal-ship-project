@@ -1,6 +1,7 @@
 import React from 'react'
 import {getShipsList} from '../api/api'
 import {HashLink as Link} from 'react-router-hash-link'
+// import HandleClick from './HandleClick'
 
 
 class ListofShips extends React.Component {
@@ -81,7 +82,10 @@ class ListofShips extends React.Component {
 
         {/*This is the button for each Cruise line Heading and the state of it will be controlled by the handleClick function.*/}
         {/*What is displayed is the result of the CruiseLine parameter passed as a property from the api*/}
+
+        {/* <HandleClick /> */}
         <button className = "cruiseButton"onClick={this.handleClick}>{this.props.cruise_line}</button>
+
         <ol>
     
           {/* When Ships List is about to be opened, we will use map to find the correct Ships for the List.*/}
