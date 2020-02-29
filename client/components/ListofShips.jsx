@@ -1,7 +1,6 @@
 import React from 'react'
 import {getShipsList} from '../api/api'
 import {HashLink as Link} from 'react-router-hash-link'
-// import HandleClick from './HandleClick'
 
 
 class ListofShips extends React.Component {

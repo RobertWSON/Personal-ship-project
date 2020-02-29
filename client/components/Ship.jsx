@@ -23,7 +23,7 @@ class Ship extends React.Component  {
             Deadweight,
             Review
         } = this.props
-
+        
         // The ShipName constant is used to reference to a Ship Name Heading on the Cruise Line Review Page. 
         // Please note: It is not used to replace all spaces in the url with an underscore "_"
         const encodedShipName = ship_name.replace(/\s/g, '_')

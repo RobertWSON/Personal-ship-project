@@ -1,11 +1,20 @@
 // import React from 'react'
-// import ListofShips from './ListofShips' 
+// // import ListofShips from './ListofShips' 
 
 
 // class HandleClick extends React.Component   {
 //     constructor(props)  {
 //         super(props)
 
+//         this.state = {
+//             //initialize shipsList as an empty array
+//             shipsList: [],
+//             //This is false because the shipList is not initially open.
+//             isOpen: false,
+//             //This is initially false because we have not visited shipsList yet. 
+//             hasfetched: false 
+//         }
+//         // binding method for HandClick function, which controls clicking on a Cruise Line Heading
 //         this.handleClick = this.handleClick.bind.this
 //     }
 
