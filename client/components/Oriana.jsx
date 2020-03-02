@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import {HashLink as Link} from 'react-router-hash-link'
 
 class Oriana extends React.Component   {
     constructor(props)  {
@@ -11,6 +11,12 @@ class Oriana extends React.Component   {
         return  (
             <React.Fragment>
                 <h2 className = "ship">Oriana</h2>
+
+                <h3>Contents</h3>
+                <Link className = "Contents" smooth to = {`/evolutionpart1/oriana/#${History}`}>
+                    History
+                </Link>
+                <br/>
 
                 <img src = {"/images/oriana15.jpg"}/>
 
@@ -30,7 +36,7 @@ class Oriana extends React.Component   {
                     <h4>Loaded Displacement (Maximum):  38235 Tonnes</h4>
                 </div>
 
-                <h3>History or Background</h3>
+                <h3 id = {History}>History or Background</h3>
                 <br/>
                 <p>The Oriana is the start of where cruising began.
                    She was able to travel through Panama Canal and so it was able to travel to lots of different locations.

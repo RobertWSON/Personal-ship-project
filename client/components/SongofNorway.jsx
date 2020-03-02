@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import {HashLink as Link} from 'react-router-hash-link'
 
 class SongofNorway extends React.Component   {
     constructor(props)  {
@@ -11,6 +11,12 @@ class SongofNorway extends React.Component   {
         return  (
             <React.Fragment>
                 <h2 className = "ship">Song of Norway</h2>
+
+                <h3>Contents</h3>
+                <Link className = "Contents" smooth to = {`/evolutionpart1/songofnorway/#${History}`}>
+                    History
+                </Link>
+                <br/>
 
                 <img src={"/images/image_manager__rex_thumbnail_images_song_of_norway_08.06.1994.jpg"}/>
 
@@ -50,7 +56,7 @@ class SongofNorway extends React.Component   {
                     </div>
                 </div>
 
-                <h3>History or Background</h3>
+                <h3 id ={History}>History or Background</h3>
                 <br/>
                 <p>The Song of Norway operated with Royal Caribbean Cruise Line from 1970 to 1997.
                    <br/><br/><strong>Above</strong> she can be seen cruising through the panama Canal in 1994.

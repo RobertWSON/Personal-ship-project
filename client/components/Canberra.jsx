@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import {HashLink as Link} from 'react-router-hash-link'
 
 class Canberra extends React.Component   {
     constructor(props)  {
@@ -11,6 +11,12 @@ class Canberra extends React.Component   {
         return  (
             <React.Fragment>
                 <h2 className = "ship">Canberra</h2>
+
+                <h3>Contents</h3>
+                <Link className = "Contents" smooth to = {`/evolutionpart1/canberra/#${History}`}>
+                    History
+                </Link>
+                <br/>
 
                 <img src = {"/images/ss-canberra.jpg"}/>
 
@@ -30,7 +36,7 @@ class Canberra extends React.Component   {
                     <h4>Loaded Displacement (Maximum):  42579 Tons</h4>
                 </div>
 
-                <h3>History or Background</h3>
+                <h3 id = {History}>History or Background</h3>
                 <br/>
                 <p>The Canberra along with the Oriana are the first ships to start off the famous P & O cruise line.
                    The P & O Line started off as P & O Orient Line, but soon was changed to just P & O.

@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import {HashLink as Link} from 'react-router-hash-link'
 
 class RoyalVikingSky extends React.Component   {
     constructor(props)  {
@@ -11,6 +11,12 @@ class RoyalVikingSky extends React.Component   {
         return  (
             <React.Fragment>
                 <h2 className = "ship">Royal Viking Sky</h2>
+
+                <h3>Contents</h3>
+                <Link className = "Contents" smooth to = {`/evolutionpart1/royalvikingsky/#${History}`}>
+                    History
+                </Link>
+                <br/>
 
                 <img src={"/images/1757063.jpg"}/>
 
@@ -63,7 +69,7 @@ class RoyalVikingSky extends React.Component   {
 
                 </div>
 
-                <h3>History or Background</h3>
+                <h3 id ={History}>History or Background</h3>
                 <br/>
                 <p>The Royal Viking Sky operated with Royal Viking Cruise Line from 1973 to 1991.
                    She was the second ship in history to be lengthened.  

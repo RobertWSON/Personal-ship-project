@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import {HashLink as Link} from 'react-router-hash-link'
 
 class Fairstar extends React.Component   {
     constructor(props)  {
@@ -11,6 +11,12 @@ class Fairstar extends React.Component   {
         return  (
             <React.Fragment>
                 <h2 className = "ship">Fairstar</h2>
+
+                <h3>Contents</h3>
+                <Link className = "Contents" smooth to = {`/evolutionpart1/fairstar/#${History}`}>
+                    History
+                </Link>
+                <br/>
 
                 <img src = {"/images/Evolution/Fairstar/Fairstar01.jpg"}/>
 
@@ -50,7 +56,7 @@ class Fairstar extends React.Component   {
                     </div>
                 </div>
 
-                <h3>History or Background</h3>
+                <h3 id = {History}>History or Background</h3>
                 <br/>
                 <p>The Fairstar in the mid to late 80's and 90's was the most popular cruise ship in Australia to depart from Sydney on Pacific Island Cruises.
                    <br/>She operated under P & O with the Sitmar Line throughout here whole cruise life from 1964 to 1997. 

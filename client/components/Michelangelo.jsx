@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import {HashLink as Link} from 'react-router-hash-link'
 
 class Michelangelo extends React.Component   {
     constructor(props)  {
@@ -11,6 +11,12 @@ class Michelangelo extends React.Component   {
         return  (
             <React.Fragment>
                 <h2 className = "ship">Michelangelo</h2>
+
+                <h3>Contents</h3>
+                <Link className = "Contents" smooth to = {`/evolutionpart1/michelangelo/#${History}`}>
+                    History
+                </Link>
+                <br/>
 
                 <img src = {"/images/Evolution/Michelangelo/michelangelo_1965_1.jpg"}/>
 
@@ -30,7 +36,7 @@ class Michelangelo extends React.Component   {
                     <h4>Loaded Displacement (Maximum):  44322 Tonnes</h4>
                 </div>
 
-                <h3>History or Background</h3>
+                <h3 id = {History}>History or Background</h3>
                 <br/>
                 <p>The Michelangelo was an Italian built cruise ship that operated between Europe (usually Genoa and Canary Islands) and New York, USA.
                    <br/>

@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import {HashLink as Link} from 'react-router-hash-link'
 
 class GalileoGalilei extends React.Component   {
     constructor(props)  {
@@ -11,6 +11,12 @@ class GalileoGalilei extends React.Component   {
         return  (
             <React.Fragment>
                 <h2 className = "ship">Galileo Galilei</h2>
+
+                <h3>Contents</h3>
+                <Link className = "Contents" smooth to = {`/evolutionpart1/galileogalilei/#${History}`}>
+                    History
+                </Link>
+                <br/>
 
                 <img src = {"/images/Evolution/Galileo Galilei/Galileo03.jpg"}/>
 
@@ -30,7 +36,7 @@ class GalileoGalilei extends React.Component   {
                     <h4>Loaded Displacement (Maximum):  28516 Tonnes</h4>
                 </div>
 
-                <h3>History or Background</h3>
+                <h3 id = {History}>History or Background</h3>
                 <br/>
                 <p>The Galileo Galilei is an Italian built ship, exclusively meant for cruising all the way through it's career. 
 

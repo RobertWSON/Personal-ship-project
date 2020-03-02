@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import {HashLink as Link} from 'react-router-hash-link'
 
 class AllureoftheSeas extends React.Component   {
     constructor(props)  {
@@ -11,6 +11,12 @@ class AllureoftheSeas extends React.Component   {
         return  (
             <React.Fragment>
                 <h2 className = "ship">Allure of the Seas</h2>
+
+                <h3>Contents</h3>
+                <Link className = "Contents" smooth to = {`/evolutionpart1/allureoftheseas/#${History}`}>
+                    History
+                </Link>
+                <br/>
 
                 <img src={"/images/UFRPU.jpg"}/>
 
@@ -30,7 +36,7 @@ class AllureoftheSeas extends React.Component   {
                     <h4>Loaded Displacement (Maximum):  80250 Tonnes</h4>
                 </div>
 
-                <h3>History or Background</h3>
+                <h3 id = {History}>History or Background</h3>
                 <br/>
                 <p>The Allure of the Seas has operated with Royal Caribbean Cruise Line for it's entire cruise life so far.
                    Allure of the Seas is classified as an oasis class cruise ship and is the first of it's type along with Oasis of the Seas.

@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import {HashLink as Link} from 'react-router-hash-link'
 
 class France extends React.Component   {
     constructor(props)  {
@@ -11,6 +11,12 @@ class France extends React.Component   {
         return  (
             <React.Fragment>
                 <h2 className = "ship">France</h2>
+
+                <h3>Contents</h3>
+                <Link className = "Contents" smooth to = {`/evolutionpart1/france/#${History}`}>
+                    History
+                </Link>
+                <br/>
 
                 <img src = {"/images/Evolution/France/france_1961_1.jpg"}/>
 
@@ -51,7 +57,7 @@ class France extends React.Component   {
 
                 </div>
 
-                <h3>History or Background</h3>
+                <h3 id ={History}>History or Background</h3>
                 <br/>
                 <p>The SS France was a steam ship, hence the intials SS, that originally operated for the French Line.
                    <br/>As can be seen in the photo above she originally had a black and white hull (this is the main structure of the ship).

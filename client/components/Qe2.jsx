@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import{HashLink as Link} from 'react-router-hash-link'
 
 class Qe2 extends React.Component   {
     constructor(props)  {
@@ -11,6 +11,12 @@ class Qe2 extends React.Component   {
         return  (
             <React.Fragment>
                 <h2 className = "ship">Queen Elizabeth 2</h2>
+
+                <h3>Contents</h3>
+                <Link className = "Contents" smooth to = {`/evolutionpart1/qe2/#${History}`}>
+                    History
+                </Link>
+                <br/>
 
                 <img src = {"/images/Evolution/Qe2/5148955_orig.jpg"}/>
 
@@ -30,7 +36,7 @@ class Qe2 extends React.Component   {
                     <h4>Loaded Displacement (Maximum):  49738 Tonnes</h4>
                 </div>
 
-                <h3>History or Background</h3>
+                <h3 id ={History}>History or Background</h3>
                 <br/>
                 <p>The Qe2 or more formally known as Queen Elizabeth 2, is the first of the Cunard Liners. 
                 </p>
@@ -40,7 +46,7 @@ class Qe2 extends React.Component   {
                    The photograph below shows her docked in Wellington in the 1980's.
                 </p>
 
-                <img src = {"/images/Evolution/GalileoGalilei/Galileo06E.jpg"}/>
+                {/* <img src = {"/images/Evolution/GalileoGalilei/Galileo06E.jpg"}/> */}
 
                 <br/><br/>
 
