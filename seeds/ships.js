@@ -414,6 +414,23 @@ exports.seed = function(knex, Promise) {
           Loaded_Displacement: 45612,
           Deadweight: 7500,
           Review: ''
+        },
+        {
+          id: 25,
+          cruise_line: "Norwegian Cruises",
+          ship_name: "Norwegian Dawn",
+          img: '/images/Norwegian Cruises/1280px-Norwegian_Dawn_Leaving_Boston_Harbor_(cropped).jpg',
+          Year: 2002,
+          Gross_Tonnage: 92250,
+          Passenger_Full_Capacity: 2808,
+          Double_Occupancy_Passenger_Capacity: 2340,
+          Length: 294.00,
+          Beam: 32.20,
+          Draft: 8.50,
+          Height: 59.50,
+          Loaded_Displacement: 48200,
+          Deadweight: 7500,
+          Review: 'I did a cruise on Norwegian Dawn in November 2019. The main great part of the cruise was that there was 9 ports calls on a 15 day cruise, so it was great to see that many beautiful places. The highlights were Curaco and Aruba. The main negative part of the cruise was that smoking was allowed in one of the lounges inside the ship and also in the casino, so for non smokers, the smoke smell was there when you were close to these parts of the ship. Food wise, the meat was very tender during dinner meals, so we were happy with that, but sometimes there not enough fruit.'
         }
       ]);
     });
