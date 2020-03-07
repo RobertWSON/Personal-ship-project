@@ -79,7 +79,7 @@ class ListofShips extends React.Component {
               //correct Cruise line to match the id. 
               <li key = {ship.id}>
                             
-                <HoverList encodedCruiseline={cruise_line} encodedShipName={ship_name}/>
+                <HoverList cruise_line={encodedCruiseline} ship_name={encodedShipName}/>
 
               </li>
                         )                
