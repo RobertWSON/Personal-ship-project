@@ -431,6 +431,57 @@ exports.seed = function(knex, Promise) {
           Loaded_Displacement: 48200,
           Deadweight: 7500,
           Review: 'I did a cruise on Norwegian Dawn in November 2019. The main great part of the cruise was that there was 9 ports calls on a 15 day cruise, so it was great to see that many beautiful places. The highlights were Curaco and Aruba. The main negative part of the cruise was that smoking was allowed in one of the lounges inside the ship and also in the casino, so for non smokers, the smoke smell was there when you were close to these parts of the ship. Food wise, the meat was very tender during dinner meals, so we were happy with that, but sometimes there not enough fruit.'
+        },
+        {
+          id: 26,
+          cruise_line: "P & O Cruises",
+          ship_name: "Pacific Aria",
+          img: '/images/P & O Cruises/pacific-aria-po-australia-151464.jpg',
+          Year: 1994,
+          Gross_Tonnage: 55819,
+          Passenger_Full_Capacity: 1500,
+          Double_Occupancy_Passenger_Capacity: 1258,
+          Length: 219.40,
+          Beam: 30.80,
+          Draft: 7.71,
+          Height: 51.50,
+          Loaded_Displacement: 24906,
+          Deadweight: 5709,
+          Review: ''
+        },
+        {
+          id: 27,
+          cruise_line: "P & O Cruises",
+          ship_name: "Pacific Dawn",
+          img: '/images/P & O Cruises/image_1000x500_21.webp',
+          Year: 1991,
+          Gross_Tonnage: 70285,
+          Passenger_Full_Capacity: 2020,
+          Double_Occupancy_Passenger_Capacity: 1546,
+          Length: 245.06,
+          Beam: 32.20,
+          Draft: 8.218,
+          Height: 56.00,
+          Loaded_Displacement: 36275,
+          Deadweight: 6715,
+          Review: ''
+        },
+        {
+          id: 28,
+          cruise_line: "P & O Cruises",
+          ship_name: "Pacific Explorer",
+          img: '/images/P & O Cruises/PACEXP.jpg',
+          Year: 1997,
+          Gross_Tonnage: 77441,
+          Passenger_Full_Capacity: 2395,
+          Double_Occupancy_Passenger_Capacity: 1998,
+          Length: 261.00,
+          Beam: 32.20,
+          Draft: 8.20,
+          Height: 59.70,
+          Loaded_Displacement: 39997,
+          Deadweight: 8293,
+          Review: ''
         }
       ]);
     });
