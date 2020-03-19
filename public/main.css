@@ -42,11 +42,11 @@ div.navmenu li  {
 } */
 
 /* Ships List on Cruise lines Page */
-.shipsList:link {
+/* .shipsList:link {
     color: burlywood;
     text-decoration: none;
     font-size: 1.15em
-}
+} */
 
 /* .shipsList:active   {
     color: cornflowerblue
@@ -55,9 +55,29 @@ div.navmenu li  {
 /* .shipsList:hover    {
     /* color:brown}*/
 
-.shipsList:visited  {
+/* .shipsList:visited  {
     color: cadetblue
-}
+} */
+
+.shipsList > .ship {
+    position: relative;
+    max-width: 300px;
+  }
+  .shipsList > .ship > img {
+    width: 135px;
+    height: 100px;
+    position: absolute;
+    top: -50px;
+    right: 0;
+    display: none;
+    z-index: 2;
+  }
+  .shipsList:hover > .ship > span {
+    color: blue;
+  }
+  .shipsList:hover > .ship > img {
+    display: block;
+  }
 
 /* Cruise Button CSS on Cruise Lines Page */
 .cruiseButton   {
