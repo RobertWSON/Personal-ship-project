@@ -6,6 +6,12 @@
     font-family: 'Work Sans', sans-serif;
     }
     
+.container  {
+    display: flex;
+    /* flex-direction: column; */
+    width:900px;
+    margin: auto; 
+}    
 
 div.title-image img{
     width: 400px;    
@@ -26,7 +32,7 @@ img {
 /* Page Navigation Menu */
 
 /*div.navmenu h2 {*/
-div.navmenu li  {    
+div.navmenu > li  {    
     display: inline-block;
     text-align: center;
     /* text-decoration:none;
@@ -72,6 +78,14 @@ div.navmenu li  {
     display: none;
     z-index: 2;
   }
+
+  .shipsList > .ship > span {
+    text-decoration: none; 
+    color:burlywood;
+    size: 25px;
+     
+  }
+
   .shipsList:hover > .ship > span {
     color: blue;
   }
@@ -81,9 +95,20 @@ div.navmenu li  {
 
 /* Cruise Button CSS on Cruise Lines Page */
 .cruiseButton   {
-    display: flex;
+    /* display: flex; */
     flex-direction: row;
     flex-wrap: wrap;
+    width: 150px;
+    height: 35px;
+    border: 1px solid burlywood;
+    border-radius: 15px;
+    color: chocolate;
+    background-color: blanchedalmond;
+}
+
+.cruiseButton > font    {
+    size: 30px;
+    text-align: center;
 }
 
 /* Page Main Headings */

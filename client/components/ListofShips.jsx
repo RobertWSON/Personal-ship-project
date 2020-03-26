@@ -181,7 +181,7 @@ class ListofShips extends React.Component {
 
         {/*This is the button for each Cruise line Heading and the state of it will be controlled by the handleClick function.*/}
         {/*What is displayed is the result of the CruiseLine parameter passed as a property from the api*/}
-        <button className = "cruiseButton" onClick={this.handleClick}>{this.props.cruise_line}</button>
+        <button className = "cruiseButton" onClick={this.handleClick}><font>{this.props.cruise_line}</font></button>
         <ol>
     
           {/* When Ships List is about to be opened, we will use map to find the correct Ships for the List.*/}
