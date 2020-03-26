@@ -1,6 +1,4 @@
 import React from 'react'
-//import {Link} from 'react-router-dom'
-import Slider from "react-slick";
 import ShipShots from './ShipShots'
 import CruiseListHeader from './CruiseListHeader' 
 
@@ -11,7 +9,7 @@ class CruiseLines extends React.Component {
 
     render()    {
         return  (
-            <div>
+            <div className = "Container">
                 <div className = "header">
                     <h1>Cruise Lines</h1>    
                 </div>
