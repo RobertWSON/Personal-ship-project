@@ -8,7 +8,7 @@
     
 .container  {
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: column; 
     width:900px;
     margin: auto; 
 }    
@@ -79,16 +79,16 @@ div.navmenu > li  {
     z-index: 2;
   }
 
-  .shipsList > .ship > span {
-    text-decoration: none; 
-    color:burlywood;
-    size: 25px;
-     
+  .shipsList {
+    text-decoration: none;
+    color: burlywood;
+    font-size: 20px;
   }
 
   .shipsList:hover > .ship > span {
     color: blue;
   }
+
   .shipsList:hover > .ship > img {
     display: block;
   }
@@ -98,16 +98,13 @@ div.navmenu > li  {
     /* display: flex; */
     flex-direction: row;
     flex-wrap: wrap;
-    width: 150px;
-    height: 35px;
+    width: 160px;
+    height: 50px;
     border: 1px solid burlywood;
-    border-radius: 15px;
+    border-radius: 20px;
     color: chocolate;
     background-color: blanchedalmond;
-}
-
-.cruiseButton > font    {
-    size: 30px;
+    font-size: 15px;
     text-align: center;
 }
 

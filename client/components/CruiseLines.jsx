@@ -9,7 +9,8 @@ class CruiseLines extends React.Component {
 
     render()    {
         return  (
-            <div className = "Container">
+            <div className = "container">
+            {/* <div className = "Container"> */}
                 <div className = "header">
                     <h1>Cruise Lines</h1>    
                 </div>
