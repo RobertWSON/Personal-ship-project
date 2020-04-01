@@ -9,7 +9,8 @@
 .container  {
     display: flex;
     flex-direction: column; 
-    width:900px;
+    max-width: 1500px;
+    /* width:900px; */
     margin: auto; 
 }    
 
