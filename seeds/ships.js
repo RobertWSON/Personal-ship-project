@@ -180,7 +180,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 11,
           cruise_line: "Marella Cruises",     
-          ship_name: "Marella Discovery 2 (ex Legend of The Seas)",
+          ship_name: "Marella Discovery 2",
           img: '/images/image_manager__rex_carousel_images_marella_discovery_2_auslaufend_havanna_23.02.2018_07.jpg',
           Year: 1995,
           Gross_Tonnage: 69,
