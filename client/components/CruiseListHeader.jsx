@@ -43,6 +43,9 @@ class CruiseListHeader extends React.Component {
                 I want to map ship, because I need each ship displayed in a List, when Cruise Line Heading is clicked.
                 Each different Cruise line is showing, so that is excellent. 
                 I just have to get it displaying in rows across the page now.*/}
+
+            <div className = "cruiseContainer">
+
                 {this.state.cruiseHeaders.map (ship =>  {
                 
                     return (
@@ -57,7 +60,9 @@ class CruiseListHeader extends React.Component {
                     </div>
                     )
 
-                })}  
+                })}
+
+            </div>      
 
             </React.Fragment> 
         )
