@@ -70,9 +70,9 @@ div.navmenu > li  {
 .shipsList > .ship {
     position: relative;
     max-width: 310px;
-    text-align: left;
-  }
-  .shipsList > .ship > img {
+}
+
+.shipsList > .ship > img {
     width: 150px;
     height: 120px;
     /* width: 135px;
@@ -82,21 +82,21 @@ div.navmenu > li  {
     right: 0;
     display: none;
     z-index: 2;
-  }
+}
 
-  .shipsList {
+.shipsList { 
     text-decoration: none;
     color: burlywood;
     font-size: 20px;
-  }
+}
 
-  .shipsList:hover > .ship > span {
+.shipsList:hover > .ship > span {
     color: blue;
-  }
+}
 
-  .shipsList:hover > .ship > img {
+.shipsList:hover > .ship > img {
     display: block;
-  }
+}
 
 /* Cruise Button CSS on Cruise Lines Page */
 .cruiseButton   {
@@ -160,6 +160,41 @@ div.ShipTermsIntro  {
     text-align: centre;
 } */
 
+
+.evoContainer   {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    max-width: 1500px;
+    padding: 1em;
+    margin: auto; 
+}  
+
+.evoShips   {
+    width: 400px;
+    height: 340px;
+    background-color: blanchedalmond;
+    /* Experiment to try border */
+    border: 1px solid burlywood;
+    border-radius: 20px;
+    margin: 0   30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.evoShips   img {
+    width: 300px;
+    height: 200px;
+    /* align-items: center; */
+    /* justify-content: center; */
+    text-align: center;
+}
+
+.evoShips   h3 {
+   text-align: center; 
+}
+
+/* All Evolution Pages CSS below commented because we are now showing Ships across page in rows
 .evoships   {
     width: 95%;
     margin: auto;
@@ -171,11 +206,11 @@ div.left img    {
     float:  left;
     flex:   100%;
     max-height: 5000px
-}
+} */
 
 /* trying to adjust image size, so they are even and image is on left and paragraphs on right*/
 
-.left img   {
+/* .left img   {
     max-width: 100%;
     max-height: auto;
     flex: 50%;
@@ -187,4 +222,4 @@ div.left img    {
     float: right;
     max-width: 100%;
     max-height: auto
-}
+} */

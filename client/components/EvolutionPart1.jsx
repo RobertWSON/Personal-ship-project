@@ -21,10 +21,10 @@ class EvolutionPart1 extends React.Component    {
                     <Link className="navmenu" to="/Nav" >Evolution (Part 2)</Link>
                     <Link className="navmenu" to="/Nav" >Cruise Lines</Link>
                     <div>  */}
-            
-                <div className = "evoships">  
-                    <div className = "left">
 
+                <div className = "evoContainer">   
+                    <div className = "evoShips">  
+                    {/* <div className = "left"> */}
                         <h3>Titanic</h3>
                         <Link to = "/evolutionpart1/titanic" alt="Titanic">
                             <img src={"/images/titaniccover.jpg"}/>
@@ -33,7 +33,9 @@ class EvolutionPart1 extends React.Component    {
                         <p>Find out more on Titanic, Click on Image</p>
                         <br/>
                         <p>Titanic Ship Horn</p>
-                        
+                    </div>    
+
+                    <div className = "evoShips">
                         <h3>Oriana</h3>
                         <Link to = "/evolutionpart1/oriana">
                             <img src={"/images/oriana15.jpg"}/>
@@ -42,7 +44,9 @@ class EvolutionPart1 extends React.Component    {
                         <p>Find out more on Oriana, Click on Image</p>
                         <br/>
                         <p>Oriana Ship Horn</p>
+                    </div>    
 
+                    <div className = "evoShips">
                         <h3>Canberra</h3>
                         <Link to = "/evolutionpart1/canberra">
                             <img src={"/images/ss-canberra.jpg"}/>
@@ -52,7 +56,9 @@ class EvolutionPart1 extends React.Component    {
                         <br/>
                         <p>Canberra Ship Horn</p>
                         <br/>
+                    </div>    
 
+                    <div className = "evoShips">
                         <h3>France</h3>
                         <Link to = "/evolutionpart1/france">
                             <img src={"/images/Evolution/France/france_1961_1.jpg"}/>
@@ -62,7 +68,9 @@ class EvolutionPart1 extends React.Component    {
                         <br/>
                         <p>France Ship Horn</p>
                         <br/>
+                    </div>   
 
+                    <div className = "evoShips"> 
                         <h3>Galileo Galilei</h3>
                         <Link to = "/evolutionpart1/GalileoGalilei">
                             <img src={"/images/Evolution/Galileo Galilei/Galileo03.jpg"}/>
@@ -72,7 +80,9 @@ class EvolutionPart1 extends React.Component    {
                         <br/>
                         <p>Galileo Galilei Ship Horn</p>
                         <br/>
+                    </div>    
 
+                    <div className = "evoShips">
                         <h3>Pacific Princess</h3>
                         <Link to = "/evolutionpart1/pacificprincess">
                             <img src={"/images/003410.jpg"}/>
@@ -81,10 +91,10 @@ class EvolutionPart1 extends React.Component    {
                         <p>Find out more on Pacific Princess, Click on Image</p>
                         <br/>
                         <p>Pacific Princess Ship Horn</p>
-
                     </div>
+                    {/* </div> */}
 
-                    <div className = "right">
+                    <div className = "evoIntro">
                         <p>We have come along way since passenger liner days of Titanic. Passenger safety in terms of lifeboats was underestimated when the titanic was built 
                            and as a result there was only about enough lifeboats for 2/3 the passengers. The Titanic was thought of as unsinkable at the time, but several factors    
                            caused the sinking. The iron rivets at the bow were brittle and not up to standard and the way that the watertight compartments were arranged caused                          
@@ -109,10 +119,8 @@ class EvolutionPart1 extends React.Component    {
                            Instead it is controlled by an internal combustion engine, just like a car and was more easier to maintain.
                         </p>
                     </div>
-
                 </div>    
             </div>     
-
         )
     }
 }
