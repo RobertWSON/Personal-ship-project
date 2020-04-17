@@ -34,15 +34,78 @@ img {
 /* Page Navigation Menu */
 
 /*div.navmenu h2 {*/
-div.navmenu > li  {    
+
+/* CSS for List within React Fragment */
+/* .navMenu    {
     display: inline-block;
-    text-align: center;
-    /* text-decoration:none;
-    color: blue;*/
+    text-align: centre;
+    padding-top: 35px;
+    padding-bottom: 20px;
+}
+
+.navmenu  >  .Home  {
+    font-size: 30px;
     background-color: azure;
-    padding: 0.35%;
-    font-size: 1.13em;
+}    
+
+.navmenu  >  .evo1  {
+    font-size: 30px;
+    color: brown;
+    background-color: cornsilk;
+}
+
+.navmenu  >  .evo2  {
+    font-size: 30px;
+    color: brown;
+    background-color: tomato;
+}
+
+.navmenu  >  .cruises  {
+    font-size: 30px;
+    color: brown;
+    background-color: darksalmon;
+} */
+
+/* End of CSS for List within React Fragment */
+
+/* CSS for Change to make a List instead of a Heading     */
+.navmenu    {
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 20px;
+    border-width: 2px;
+    border-color: darkblue;
+    border-radius: 4px; 
+    /* text-decoration: none; */
+}
+
+.navmenu li  {    
+    display: inline-block;
+    /* text-align: center;  
+    text-decoration: none;  
+    color: blue;  */
+    background-color: azure;
+    font-size: 30px; 
+    /* padding: 0.35%; */
+    /* font-size: 1.13em; */
 } 
+
+/* Code below that didn't work */
+/* .navmenu  li  Link {
+    text-decoration: none;
+    color: burlywood;
+}
+/* End of Code below that didn't work  */
+
+.mainNav    {
+    font-family: sans-serif;
+    text-decoration: none;
+    color: burlywood;
+    padding-right: 25px;
+}
+
+/* End of CSS for Change to make a List instead of a Heading */
+
 
 /* h2.top-links    {
     display: inline-block;
@@ -69,7 +132,8 @@ div.navmenu > li  {
 
 .shipsList > .ship {
     position: relative;
-    max-width: 310px;
+    /* max-width: 310px; */
+    max-width: 325px;
 }
 
 .shipsList > .ship > img {
