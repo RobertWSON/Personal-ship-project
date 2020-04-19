@@ -68,27 +68,101 @@ img {
 
 /* End of CSS for List within React Fragment */
 
-/* CSS for Change to make a List instead of a Heading     */
+/* CSS for individually styled Links within navmenu div */
 .navmenu    {
+    text-align: center;
+}
+
+.navmenu  li    {
+    display: inline-block;
+    font-family: sans-serif;
+    padding-top: 35px;
+    padding-bottom: 20px;
+    border-width: 2px;
+    border-color: darkblue;
+    border-radius: 4px;
+}
+
+.navmenu  li  >  .home  {
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: 30px;
+    text-decoration: none;
+    color: chocolate;
+    background-color: azure;    
+}
+
+.navmenu  li  >  .home:hover  {
+    color: cadetblue;
+    background-color: aliceblue;
+}    
+
+.navmenu  li  >  .evo1  {
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: 30px;
+    text-decoration: none;
+    color: brown;
+    background-color: beige;  
+}
+
+.navmenu  li  >  .evo1:hover  {
+    color: yellow;
+    background-color: coral;
+}
+
+.navmenu  li  >  .evo2  {
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+    background-color: cornsilk;
+}
+
+.navmenu  li  >  .evo2:hover  {
+    color: teal;
+    background-color: wheat;
+}
+
+.navmenu  li  >  .cruises   {
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: 30px;
+    text-decoration: none;
+    color: crimson;
+    background-color: bisque;
+}
+
+.navmenu  li  >  .cruises:hover  {
+    color: ghostwhite;
+    background-color: gold;
+}
+
+/*  End of CSS for individually styled Links within navmenu div */
+
+
+/* CSS for Change to make a List instead of a Heading     */
+/* .navmenu    {
     text-align: center;
     padding-top: 35px;
     padding-bottom: 20px;
     border-width: 2px;
     border-color: darkblue;
-    border-radius: 4px; 
+    border-radius: 4px;  */
     /* text-decoration: none; */
-}
+/* } */
 
-.navmenu li  {    
-    display: inline-block;
+/* .navmenu li  {    
+    display: inline-block; */
     /* text-align: center;  
     text-decoration: none;  
     color: blue;  */
-    background-color: azure;
-    font-size: 30px; 
+    /* background-color: azure;
+    font-size: 30px;  */
     /* padding: 0.35%; */
     /* font-size: 1.13em; */
-} 
+/* }  */
 
 /* Code below that didn't work */
 /* .navmenu  li  Link {
@@ -97,12 +171,12 @@ img {
 }
 /* End of Code below that didn't work  */
 
-.mainNav    {
+/* .mainNav    {
     font-family: sans-serif;
     text-decoration: none;
     color: burlywood;
     padding-right: 25px;
-}
+} */
 
 /* End of CSS for Change to make a List instead of a Heading */
 

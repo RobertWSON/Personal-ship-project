@@ -26,10 +26,14 @@ const Nav = () => {
         <div className = 'navmenu'> 
 
             <li>
-                <Link className = "mainNav" to = {"/"}>Home</Link>
-                <Link className = "mainNav" to = {"/evolutionpart1"}>Evolution (Part 1)</Link>
-                <Link className = "mainNav" to = {"/evolutionpart2"}>Evolution (Part 2)</Link>
-                <Link className = "mainNav" to = {"/cruiselines"}>Cruise Lines</Link>    
+                {/* <Link className = "mainNav" to = {"/"}>Home</Link> */}
+                <Link className = "home" to = {"/"}>Home</Link>
+                {/* <Link className = "mainNav" to = {"/evolutionpart1"}>Evolution (Part 1)</Link> */}
+                <Link className = "evo1" to = {"/evolutionpart1"}>Evolution (Part 1)</Link>
+                {/* <Link className = "mainNav" to = {"/evolutionpart2"}>Evolution (Part 2)</Link> */}
+                <Link className = "evo2" to = {"/evolutionpart2"}>Evolution (Part 2)</Link>
+                {/* <Link className = "mainNav" to = {"/cruiselines"}>Cruise Lines</Link>  */}
+                <Link className = "cruises" to = {"/cruiselines"}>Cruise Lines</Link>    
             </li>
     {/* End of Change List to Heading          */}
          
