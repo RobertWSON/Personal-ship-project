@@ -68,8 +68,88 @@ img {
 
 /* End of CSS for List within React Fragment */
 
+/* CSS for Unordered List within React Fragment */
+
+ul  {
+    /* max-width: 880px; */
+    text-align: center;
+}
+
+.navmenu     {
+    /* text-align: center;  */
+    /* max-width: 880px; */
+    display: inline-block;
+    font-family: sans-serif;
+    padding-top: 35px;
+    padding-bottom: 20px;
+    border: solid;
+    border-width: 2px;
+    border-color: darkblue;
+    border-radius: 6px;
+}
+
+.navmenu  >  .home  {
+    /* max-width: 300px; */
+    max-height: 50spx;
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: 30px;
+    text-decoration: none;
+    color: chocolate;
+    background-color: azure;    
+}
+
+.navmenu  >  .home:hover  {
+    color: cadetblue;
+    background-color: aliceblue;
+}    
+
+.navmenu   >  .evo1  {
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: 30px;
+    text-decoration: none;
+    color: brown;
+    background-color: beige;  
+}
+
+.navmenu   >  .evo1:hover  { 
+    color: yellow;
+    background-color: coral;
+}
+
+.navmenu  >  .evo2  {
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+    background-color: cornsilk;
+}
+
+.navmenu  >  .evo2:hover  {
+    color: teal;
+    background-color: wheat;
+}
+
+.navmenu   >  .cruises   {
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: 30px;
+    text-decoration: none;
+    color: crimson;
+    background-color: bisque;
+}
+
+.navmenu   >  .cruises:hover  {
+    color: ghostwhite;
+    background-color: gold;
+}
+
+/* End of CSS for Unordered List within React Fragment */
+
 /* CSS for individually styled Links within navmenu div */
-.navmenu    {
+/* .navmenu    {
     text-align: center;
 }
 
@@ -137,7 +217,7 @@ img {
 .navmenu  li  >  .cruises:hover  {
     color: ghostwhite;
     background-color: gold;
-}
+} */
 
 /*  End of CSS for individually styled Links within navmenu div */
 
@@ -323,9 +403,7 @@ div.ShipTermsIntro  {
 .evoShips   img {
     width: 300px;
     height: 200px;
-    /* align-items: center; */
-    /* justify-content: center; */
-    text-align: center;
+    /* text-align: center; */
 }
 
 .evoShips   h3 {
