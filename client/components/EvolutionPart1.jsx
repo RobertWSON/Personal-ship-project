@@ -16,22 +16,14 @@ class EvolutionPart1 extends React.Component    {
                 <div className = "header">
                     <h1>Evolution of Cruise Ships</h1> 
                 </div>
-                    {/* <Link className="navmenu" to="/Nav" >Home</Link>
-                    <Link className="navmenu" to="/Nav" >Evolution (Part 1)</Link>
-                    <Link className="navmenu" to="/Nav" >Evolution (Part 2)</Link>
-                    <Link className="navmenu" to="/Nav" >Cruise Lines</Link>
-                    <div>  */}
 
                 <div className = "evoContainer">   
                     <div className = "evoShips">  
-                    {/* <div className = "left"> */}
                         <h3>Titanic</h3>
                         <Link to = "/evolutionpart1/titanic" alt="Titanic">
-                            <img src={"/images/titaniccover.jpg"}/>
+                            <img src={"/images/titaniccover.jpg"} />
                         </Link>
-                        <br/>
                         <p>Find out more on Titanic, Click on Image</p>
-                        <br/>
                         <p>Titanic Ship Horn</p>
                     </div>    
 
