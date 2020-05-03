@@ -23,7 +23,9 @@ class EvolutionPart1 extends React.Component    {
                         <Link to = "/evolutionpart1/titanic" alt="Titanic">
                             <img src={"/images/titaniccover.jpg"} />
                         </Link>
+                        {/* <br/> */}
                         <p>Find out more on Titanic, Click on Image</p>
+                        {/* <br/> */}
                         <p>Titanic Ship Horn</p>
                     </div>    
 
@@ -32,9 +34,7 @@ class EvolutionPart1 extends React.Component    {
                         <Link to = "/evolutionpart1/oriana">
                             <img src={"/images/oriana15.jpg"}/>
                         </Link>
-                        <br/>
                         <p>Find out more on Oriana, Click on Image</p>
-                        <br/>
                         <p>Oriana Ship Horn</p>
                     </div>    
 
@@ -43,9 +43,7 @@ class EvolutionPart1 extends React.Component    {
                         <Link to = "/evolutionpart1/canberra">
                             <img src={"/images/ss-canberra.jpg"}/>
                         </Link>
-                        <br/>
                         <p>Find out more on Canberra, Click on Image</p>
-                        <br/>
                         <p>Canberra Ship Horn</p>
                         <br/>
                     </div>    
@@ -54,10 +52,8 @@ class EvolutionPart1 extends React.Component    {
                         <h3>France</h3>
                         <Link to = "/evolutionpart1/france">
                             <img src={"/images/Evolution/France/france_1961_1.jpg"}/>
-                        </Link>
-                        <br/>
-                        <p>Find out more on France, Click on Image</p>
-                        <br/>
+                        </Link>                       
+                        <p>Find out more on France, Click on Image</p>                        
                         <p>France Ship Horn</p>
                         <br/>
                     </div>   
@@ -67,9 +63,7 @@ class EvolutionPart1 extends React.Component    {
                         <Link to = "/evolutionpart1/GalileoGalilei">
                             <img src={"/images/Evolution/Galileo Galilei/Galileo03.jpg"}/>
                         </Link>
-                        <br/>
                         <p>Find out more on Galileo Galilei, Click on Image</p>
-                        <br/>
                         <p>Galileo Galilei Ship Horn</p>
                         <br/>
                     </div>    
@@ -78,13 +72,10 @@ class EvolutionPart1 extends React.Component    {
                         <h3>Pacific Princess</h3>
                         <Link to = "/evolutionpart1/pacificprincess">
                             <img src={"/images/003410.jpg"}/>
-                        </Link>
-                        <br/>
-                        <p>Find out more on Pacific Princess, Click on Image</p>
-                        <br/>
+                        </Link>                
+                        <p>Find out more on Pacific Princess, Click on Image</p>                    
                         <p>Pacific Princess Ship Horn</p>
                     </div>
-                    {/* </div> */}
 
                     <div className = "evoIntro">
                         <p>We have come along way since passenger liner days of Titanic. Passenger safety in terms of lifeboats was underestimated when the titanic was built 

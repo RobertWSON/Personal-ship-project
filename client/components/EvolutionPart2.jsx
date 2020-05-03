@@ -25,9 +25,9 @@ class EvolutionPart2 extends React.Component    {
                         <Link to = "/evolutionpart2/fairstar">
                             <img src={"/images/Evolution/Fairstar/Fairstar01.jpg"}/>
                         </Link>
-                        <br/>
+                        {/* <br/> */}
                         <p>Find out more on Fairstar, Click on Image</p>
-                        <br/>
+                        {/* <br/> */}
                         <p>Fairstar Ship Horn</p>
                         <br/>
                     </div>    
@@ -36,24 +36,18 @@ class EvolutionPart2 extends React.Component    {
                         <h3>Michelangelo</h3>
                         <Link to = "evolutionpart2/michelangelo">
                             <img src={"/images/Evolution/Michelangelo/michelangelo_1965_1.jpg"}/>
-                        </Link>
-                        <br/>
-                        <p>Find out more on Michelangelo, Click on Image</p>
-                        <br/>
+                        </Link>                        
+                        <p>Find out more on Michelangelo, Click on Image</p>                    
                         <p>Michelangelo Ship Horn</p>
-                        <br/>
                     </div>    
 
                     <div className = "evoShips">
                         <h3>Qe2</h3>
                         <Link to = "evolutionpart2/qe2">
                             <img src={"/images/Evolution/Qe2/5148955_orig.jpg"}/>
-                        </Link>
-                        <br/>
-                        <p>Find out more on Qe2, Click on Image</p>
-                        <br/>
+                        </Link>                   
+                        <p>Find out more on Qe2, Click on Image</p>                        
                         <p>Qe2 Ship Horn</p>
-                        <br/>
                     </div>
 
                     <div className = "evoShips">    
@@ -61,11 +55,8 @@ class EvolutionPart2 extends React.Component    {
                         <Link to = "evolutionpart2/songofnorway">
                             <img src={"/images/image_manager__rex_thumbnail_images_song_of_norway_08.06.1994.jpg"}/>
                         </Link>
-                        <br/>
                         <p>Find out more on Song of Norway, Click on Image</p>
-                        <br/>
                         <p>Song of Norway Ship Horn</p>
-                        <br/>
                     </div>    
 
                     <div className = "evoShips">
@@ -73,11 +64,8 @@ class EvolutionPart2 extends React.Component    {
                         <Link to = "/evolutionpart2/royalvikingsky">
                             <img src={"/images/1757063.jpg"}/>
                         </Link>
-                        <br/>
                         <p>Find out more on Royal Viking Sky, Click on Image</p>
-                        <br/>
                         <p>Royal Viking Sky Ship Horn</p>
-                        <br/>
                     </div>
 
                     <div className = "evoShips">
@@ -85,11 +73,8 @@ class EvolutionPart2 extends React.Component    {
                         <Link to = "/evolutionpart2/allureoftheseas">
                             <img src={"/images/UFRPU.jpg"}/>
                         </Link>
-                        <br/>
                         <p>Find out more on Allure of the Seas, Click on Image</p>
-                        <br/>
-                        <p>Allure of the Seas Ship Horn</p>
-                        <br/>
+                        <p>Allure of the Seas Ship Horn</p>                        
                     </div>
 
                     <div className = "evoIntro">
