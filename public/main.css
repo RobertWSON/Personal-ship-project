@@ -35,36 +35,34 @@ img {
 
 /* Using nav tag for Main Page Navigation   */
 
-.navmenu     {
-    /* text-align: center;  */
-    /* max-width: 880px; */
+.navContainer   {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* justify-content: center; */
-    
-    /* max-width does work for width of navigation  */
-    max-width: 832px; 
-    text-align: center;
-    /* display: inline-block; */
-    font-family: sans-serif;
+    justify-content: center;
     padding-top: 35px;
     padding-bottom: 20px;
+}
+
+.navmenu     {
+    max-width: 832px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     border: solid;
     border-width: 2px;
     border-color: darkblue;
-    border-radius: 6px;
+    border-radius: 10px;
 }
 
 .navmenu  >  .home  {
-    /* max-width: 300px; */
-    max-height: 50px;
     padding-right: 15px;
     padding-left: 15px;
     font-size: 30px;
     text-decoration: none;
     color: chocolate;
-    background-color: azure;    
+    background-color: azure;
+    border-right: solid; 
+    border-width: 2px;
+    border-color: darkblue;   
 }
 
 .navmenu  >  .home:hover  {
@@ -78,7 +76,10 @@ img {
     font-size: 30px;
     text-decoration: none;
     color: brown;
-    background-color: beige;  
+    background-color: beige;
+    border-right: solid; 
+    border-width: 2px;
+    border-color: darkblue;  
 }
 
 .navmenu   >  .evo1:hover  { 
@@ -93,6 +94,9 @@ img {
     text-decoration: none;
     color: black;
     background-color: cornsilk;
+    border-right: solid; 
+    border-width: 2px;
+    border-color: darkblue;
 }
 
 .navmenu  >  .evo2:hover  {
@@ -103,7 +107,8 @@ img {
 .navmenu   >  .cruises   {
     padding-right: 15px;
     padding-left: 15px;
-    font-size: 30px;
+    font-size: 30px; 
+    /* font-size: 2em; */
     text-decoration: none;
     color: crimson;
     background-color: bisque;
@@ -215,25 +220,30 @@ div.ShipTermsIntro  {
     flex-wrap: wrap; 
     max-width: 1500px;
     padding: 1em;
-    margin: auto; 
+    margin: auto 0; 
+    border: 1px solid burlywood;
+    border-radius: 20px;
 }  
 
 .evoShips   {
     width: 400px;
     height: 340px;
     background-color: blanchedalmond;
-    /* Experiment to try border */
+    /* justify-content: center; */
+    /* Experiment to try border, it works */
     border: 1px solid burlywood;
     border-radius: 20px;
     margin: 0   30px;
     margin-top: 30px;
     margin-bottom: 30px;
+    justify-content: center;
 }
 
 .evoShips   img {
     width: 300px;
     height: 200px;
     /* text-align: center; */
+    
 }
 
 .evoShips   h3 {
