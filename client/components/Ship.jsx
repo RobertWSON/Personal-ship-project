@@ -31,11 +31,17 @@ class Ship extends React.Component  {
     return  (
         <React.Fragment>
 
-            {/* The id in the Ship Name Heading is used as a reference to the url for a specific ship name that a 
-            user is reviewing.   */}
-            <h2 className = "ship" id ={encodedShipName}>{ship_name}</h2>
 
-            <img src ={img}/>
+          {/* <div className = "reviewContainer"> */}
+
+            <div className = "cruiseShip">  
+                {/* The id in the Ship Name Heading is used as a reference to the url for a specific ship name that a 
+                user is reviewing.   */}
+                <h2 className = "ship" id ={encodedShipName}>{ship_name}</h2>
+
+                <img src ={img}/>
+
+            </div>
 
             <div className="ShipDetails">
                 
@@ -55,7 +61,7 @@ class Ship extends React.Component  {
                 <h4>Deadweight: {Deadweight}</h4>
                 <h4>Loaded Displacement: {Loaded_Displacement}</h4>
             </div>
-
+            
             <div className="ShipTermsIntro">
                 <p>
                     <b>Ship Terms</b>
@@ -66,13 +72,19 @@ class Ship extends React.Component  {
                 </p>
             </div>
 
-            <h3>Reviews:</h3>
-            <br/>
-            <p>{Review}</p>
+            {/* <div className = "backButton">     */}
+                <button>
+                    <Link to="/cruiselines">Back to Cruise Lines</Link>
+                </button>
+            {/* </div> */}    
 
-            <button>
-                <Link to="/cruiselines">Back to Cruise Lines</Link>
-            </button>
+            <div className = "Review">
+                <h3>Reviews:</h3>
+                <br/>
+                <p>{Review}</p>
+            </div>
+            
+          {/* </div> */}
 
         </React.Fragment>
         )

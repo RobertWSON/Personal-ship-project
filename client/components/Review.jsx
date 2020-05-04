@@ -41,6 +41,8 @@ class Review extends React.Component  {
     return  (
       <React.Fragment>
 
+        {/* <div className = "reviewContainer"> */}
+
         <h1 className = "cruiseLine">{this.state.cruiseline}</h1>
         {this.state.ships.map  (ship =>  {
           return  (
@@ -51,6 +53,8 @@ class Review extends React.Component  {
             } // end bracket for ship =>  {
           ) // end bracket for (ship
         } {/* end bracket for {this.state.ship.map  */}
+
+        {/* </div> */}
 
       </React.Fragment>
     ) // end bracket for return  (

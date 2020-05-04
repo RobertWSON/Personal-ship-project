@@ -175,9 +175,42 @@ div.header h1 {
 
 /* Reviews Page CSS */
 
-h1.cruiseLine  {
+/* h1.cruiseLine  {
     text-align: center;
-    color: blue
+    color: blue; */
+    /* padding: 1em; */
+/* } */
+
+.cruiseLine {
+    text-align: center;
+    color: blue;
+}
+
+/* .reviewContainer    {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    max-width: 1500px;
+    padding: 1em;
+    margin: auto 0;
+    padding: 1em;  
+} */
+
+.cruiseShip {
+    float: left;
+    padding: 1.5em;
+    border: 1px solid burlywood;
+    border-radius: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+/* .backButton {
+    float: left;
+} */
+
+.Review {
+    float: left;
 }
 
 h2.ship {
@@ -188,11 +221,19 @@ div.ShipDetails {
     float: right;
     /* align-content: left; 
     justify-content: left */
-    position: relative
+    /* position: absolute; */
+    position: relative; 
+    padding: 1.5em;
+    border: solid;
+    border-width: 2px;
+    border-color: darkblue;
+    border-radius: 10px;
+    background-color: aliceblue;
 }
 
 div.ShipDetails h4  {
     color: black
+
 }
 
 div.ShipDetails p   {
