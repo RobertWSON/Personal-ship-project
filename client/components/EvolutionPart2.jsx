@@ -23,7 +23,8 @@ class EvolutionPart2 extends React.Component    {
                     <div className = "evoShips">  
                         <h3>Fairstar</h3>
                         <Link to = "/evolutionpart2/fairstar">
-                            <img src={"/images/Evolution/Fairstar/Fairstar01.jpg"}/>
+                            <img src={"/images/Evolution/Fairstar/Fairstar01.jpg"}
+                            title = "Fairstar cruising off Pacific Islands in early 90's"/>
                         </Link>
                         {/* <br/> */}
                         <p>Find out more on Fairstar, Click on Image</p>
@@ -35,7 +36,8 @@ class EvolutionPart2 extends React.Component    {
                     <div className = "evoShips">
                         <h3>Michelangelo</h3>
                         <Link to = "evolutionpart2/michelangelo">
-                            <img src={"/images/Evolution/Michelangelo/michelangelo_1965_1.jpg"}/>
+                            <img src={"/images/Evolution/Michelangelo/michelangelo_1965_1.jpg"}
+                            title = "Michelangelo cruising off Canary Islands in 1965"/>
                         </Link>                        
                         <p>Find out more on Michelangelo, Click on Image</p>                    
                         <p>Michelangelo Ship Horn</p>
@@ -44,7 +46,8 @@ class EvolutionPart2 extends React.Component    {
                     <div className = "evoShips">
                         <h3>Qe2</h3>
                         <Link to = "evolutionpart2/qe2">
-                            <img src={"/images/Evolution/Qe2/5148955_orig.jpg"}/>
+                            <img src={"/images/Evolution/Qe2/5148955_orig.jpg"}
+                            title = " Queen Elizabeth 2 in original colours, cruising off Canary Isles "/>
                         </Link>                   
                         <p>Find out more on Qe2, Click on Image</p>                        
                         <p>Qe2 Ship Horn</p>
@@ -53,7 +56,8 @@ class EvolutionPart2 extends React.Component    {
                     <div className = "evoShips">    
                         <h3>Song of Norway</h3>
                         <Link to = "evolutionpart2/songofnorway">
-                            <img src={"/images/image_manager__rex_thumbnail_images_song_of_norway_08.06.1994.jpg"}/>
+                            <img src={"/images/image_manager__rex_thumbnail_images_song_of_norway_08.06.1994.jpg"}
+                            title = "Song of Norway in Panama Canal 1994"/>
                         </Link>
                         <p>Find out more on Song of Norway, Click on Image</p>
                         <p>Song of Norway Ship Horn</p>
@@ -62,7 +66,8 @@ class EvolutionPart2 extends React.Component    {
                     <div className = "evoShips">
                         <h3>Royal Viking Sky</h3>
                         <Link to = "/evolutionpart2/royalvikingsky">
-                            <img src={"/images/1757063.jpg"}/>
+                            <img src={"/images/1757063.jpg"}
+                            title = "Royal Viking Sky in Picton, New Zealand, March 1982"/>
                         </Link>
                         <p>Find out more on Royal Viking Sky, Click on Image</p>
                         <p>Royal Viking Sky Ship Horn</p>
@@ -71,7 +76,8 @@ class EvolutionPart2 extends React.Component    {
                     <div className = "evoShips">
                         <h3>Allure of the Seas</h3>
                         <Link to = "/evolutionpart2/allureoftheseas">
-                            <img src={"/images/UFRPU.jpg"}/>
+                            <img src={"/images/UFRPU.jpg"}
+                            title = "Allure of the Seas maiden voyage celebration"/>
                         </Link>
                         <p>Find out more on Allure of the Seas, Click on Image</p>
                         <p>Allure of the Seas Ship Horn</p>                        

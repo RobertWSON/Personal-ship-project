@@ -20,8 +20,10 @@ class EvolutionPart1 extends React.Component    {
                 <div className = "evoContainer">   
                     <div className = "evoShips">  
                         <h3>Titanic</h3>
-                        <Link to = "/evolutionpart1/titanic" alt="Titanic">
-                            <img src={"/images/titaniccover.jpg"} />
+                        <Link to = "/evolutionpart1/titanic" >
+                            <img src={"/images/titaniccover.jpg"} 
+                            title = "Titanic in Southampton" />
+                            {/* alt="Titanic" /> */}
                         </Link>
                         {/* <br/> */}
                         <p>Find out more on Titanic, Click on Image</p>
@@ -32,7 +34,7 @@ class EvolutionPart1 extends React.Component    {
                     <div className = "evoShips">
                         <h3>Oriana</h3>
                         <Link to = "/evolutionpart1/oriana">
-                            <img src={"/images/oriana15.jpg"}/>
+                            <img src={"/images/oriana15.jpg"} title = "Oriana in Panama Canal during 1960's"/>
                         </Link>
                         <p>Find out more on Oriana, Click on Image</p>
                         <p>Oriana Ship Horn</p>
@@ -41,7 +43,8 @@ class EvolutionPart1 extends React.Component    {
                     <div className = "evoShips">
                         <h3>Canberra</h3>
                         <Link to = "/evolutionpart1/canberra">
-                            <img src={"/images/ss-canberra.jpg"}/>
+                            <img src={"/images/ss-canberra.jpg"}
+                            title = "Canberra at Sea during the good times"/>
                         </Link>
                         <p>Find out more on Canberra, Click on Image</p>
                         <p>Canberra Ship Horn</p>
@@ -51,7 +54,8 @@ class EvolutionPart1 extends React.Component    {
                     <div className = "evoShips">
                         <h3>France</h3>
                         <Link to = "/evolutionpart1/france">
-                            <img src={"/images/Evolution/France/france_1961_1.jpg"}/>
+                            <img src={"/images/Evolution/France/france_1961_1.jpg"}
+                            title = "France in Home Port for the first time in 1961"/>
                         </Link>                       
                         <p>Find out more on France, Click on Image</p>                        
                         <p>France Ship Horn</p>
@@ -61,7 +65,8 @@ class EvolutionPart1 extends React.Component    {
                     <div className = "evoShips"> 
                         <h3>Galileo Galilei</h3>
                         <Link to = "/evolutionpart1/GalileoGalilei">
-                            <img src={"/images/Evolution/Galileo Galilei/Galileo03.jpg"}/>
+                            <img src={"/images/Evolution/Galileo Galilei/Galileo03.jpg"}
+                            title = "Original Galileo Gallilei at Sea"/>
                         </Link>
                         <p>Find out more on Galileo Galilei, Click on Image</p>
                         <p>Galileo Galilei Ship Horn</p>
@@ -71,7 +76,8 @@ class EvolutionPart1 extends React.Component    {
                     <div className = "evoShips">
                         <h3>Pacific Princess</h3>
                         <Link to = "/evolutionpart1/pacificprincess">
-                            <img src={"/images/003410.jpg"}/>
+                            <img src={"/images/003410.jpg"}
+                            title = "Love Boat Pacific Princess at Sea"/>
                         </Link>                
                         <p>Find out more on Pacific Princess, Click on Image</p>                    
                         <p>Pacific Princess Ship Horn</p>
