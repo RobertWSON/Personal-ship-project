@@ -71,7 +71,10 @@ img {
     background-color: azure;
     border-right: solid; 
     border-width: 2px;
-    border-color: darkblue;   
+    border-color: darkblue; 
+    /* I have added this for border radius after I have pushed work to Github */
+    border-radius: inherit; 
+    /* overflow: hidden;  */
 }
 
 .navmenu  >  .home:hover  {
@@ -121,6 +124,7 @@ img {
     text-decoration: none;
     color: crimson;
     background-color: bisque;
+    border-radius: inherit; 
 }
 
 .navmenu   >  .cruises:hover  {
