@@ -1,5 +1,8 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import AddReview from './AddReview'
+import InitialReview from './InitialReview'
+
 
 class Ship extends React.Component  {
     constructor(props)  {
@@ -27,6 +30,8 @@ class Ship extends React.Component  {
         // The ShipName constant is used to reference to a Ship Name Heading on the Cruise Line Review Page. 
         // Please note: It is not used to replace all spaces in the url with an underscore "_"
         const encodedShipName = ship_name.replace(/\s/g, '_')
+
+
 
     return  (
         <React.Fragment>
@@ -72,16 +77,53 @@ class Ship extends React.Component  {
                 </p>
             </div>
 
-            {/* <div className = "backButton">     */}
+            <div className = "backButton">
                 <button>
                     <Link to="/cruiselines">Back to Cruise Lines</Link>
                 </button>
-            {/* </div> */}    
+            </div>    
 
-            <div className = "Review">
+            <div className = "review">
                 <h3>Reviews:</h3>
-                <br/>
-                <p>{Review}</p>
+                <br/> 
+
+                {/* This is the initial Review taken from my Ship.js seeds file */}
+                {/* <div key = {ship.Review}> */}
+                
+                {/* I think we have to sort out the showing and hiding of the Reviews in Initial Review component 
+                and then return <textarea></textarea> as a React Fragment in this Ship component.
+                I think this is the only way to do this because you can only access the Review prop through 
+                this Ship Component. */}
+
+                <textarea className = "initial">
+                    {Review}
+                </textarea>
+                
+                {/* <div key = {this.props.Review}>    
+                    <InitialReview Review = {Review}/>
+                </div> */}
+                
+                {/* <textarea className = "initial">{Review}</textarea>    */}
+
+                {/* <div>
+                    <initialReview/>
+                </div> */}
+
+                {/* We need to go to another component (AddReview), so we can add a Review. */}
+                        
+                {/* <div className = "makeReview"> */}
+                {/* <div className = "Review"> */}
+                <div>    
+                    <AddReview/>
+                </div>    
+                {/* </div> */}
+
+                {/* <button className = "AddReview">
+                    Make a Review
+                </button> */}
+                {/* <textarea></textarea> */}
+
+                
             </div>
             
           {/* </div> */}

@@ -312,3 +312,25 @@ div.ShipTermsIntro  {
 /* .evoShips   h3 {
    text-align: center; 
 } */
+
+/* CSS for Adding Reviews to a Cruise Ship Review page */
+
+/* .review > .initial  {
+    height: 200px;
+    max-width: 200px;
+}
+
+.makeReview  >  .writeReview    {
+    height: 200px;
+    max-width: 200px;
+} */
+
+.review > .initial  {
+    height: 200px;
+    max-width: 200px;
+}
+
+.makeReview  >  .writeReview    {
+    height: 200px;
+    max-width: 200px;
+}
