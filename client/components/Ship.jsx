@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import AddReview from './AddReview'
+// import AddReview from './AddReview'
 import InitialReview from './InitialReview'
 
 
@@ -37,14 +37,14 @@ class Ship extends React.Component  {
         <React.Fragment>
 
 
-          {/* <div className = "reviewContainer"> */}
+          <div className = "reviewContainer">
 
             <div className = "cruiseShip">  
                 {/* The id in the Ship Name Heading is used as a reference to the url for a specific ship name that a 
                 user is reviewing.   */}
                 <h2 className = "ship" id ={encodedShipName}>{ship_name}</h2>
 
-                <img src ={img}/>
+                <img src ={img} title = {ship_name}/>
 
             </div>
 
@@ -67,67 +67,55 @@ class Ship extends React.Component  {
                 <h4>Loaded Displacement: {Loaded_Displacement}</h4>
             </div>
             
+            {/* <div className="ShipTermsIntro">
+                <p>
+                    <b>Ship Terms</b>
+                    <br/>
+                    <br/>
+                    If you are interested and want to find out more about
+                    <br/>what these ship terms actually mean, then click {' '} 
+                    <Link to="/cruiselines/shipterms">Here</Link>
+                </p>
+            </div> */}
+
+            <div className = "backButton">
+                <button class = "Button">
+                    <Link className = "backLink" to="/cruiselines">Back to Cruise Lines</Link>
+                </button>
+            </div>    
+
+            <div className = "Review">
+                <h3>Reviews:</h3>
+                <br/> 
+
+                
+                <textarea className = "initial">
+                    {Boolean(Review) && <InitialReview/>}
+                </textarea>
+            
+                {/* <div className ="makeReview">    
+                    <AddReview/>
+                </div>  */}
+
+                <button className = "addReview">
+                    Make a Review
+                </button>   
+                
+            </div>
+
             <div className="ShipTermsIntro">
                 <p>
                     <b>Ship Terms</b>
                     <br/>
                     <br/>
-                    If you are interested and want to find out more about what these ship terms actually mean, then click{''}
+                    If you are interested and want to find out more about
+                    <br/>what these ship terms actually mean, then click {' '} 
                     <Link to="/cruiselines/shipterms">Here</Link>
                 </p>
             </div>
 
-            <div className = "backButton">
-                <button>
-                    <Link to="/cruiselines">Back to Cruise Lines</Link>
-                </button>
-            </div>    
-
-            <div className = "review">
-                <h3>Reviews:</h3>
-                <br/> 
-
-                {/* This is the initial Review taken from my Ship.js seeds file */}
-                {/* <div key = {ship.Review}> */}
-                
-                {/* I think we have to sort out the showing and hiding of the Reviews in Initial Review component 
-                and then return <textarea></textarea> as a React Fragment in this Ship component.
-                I think this is the only way to do this because you can only access the Review prop through 
-                this Ship Component. */}
-
-                <textarea className = "initial">
-                    {Review}
-                </textarea>
-                
-                {/* <div key = {this.props.Review}>    
-                    <InitialReview Review = {Review}/>
-                </div> */}
-                
-                {/* <textarea className = "initial">{Review}</textarea>    */}
-
-                {/* <div>
-                    <initialReview/>
-                </div> */}
-
-                {/* We need to go to another component (AddReview), so we can add a Review. */}
-                        
-                {/* <div className = "makeReview"> */}
-                {/* <div className = "Review"> */}
-                <div>    
-                    <AddReview/>
-                </div>    
-                {/* </div> */}
-
-                {/* <button className = "AddReview">
-                    Make a Review
-                </button> */}
-                {/* <textarea></textarea> */}
-
-                
-            </div>
+        </div>     
             
-          {/* </div> */}
-
         </React.Fragment>
         )
     } 

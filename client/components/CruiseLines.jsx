@@ -15,7 +15,7 @@ class CruiseLines extends React.Component {
                 </div>
             
                 <div>
-                    <ShipShots/><br></br>
+                    <ShipShots/>
                     <CruiseListHeader/>
                 </div>
             </div>       

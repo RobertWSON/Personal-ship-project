@@ -199,23 +199,35 @@ div.header h1 {
     color: blue;
 }
 
-/* .reviewContainer    {
+.reviewContainer    {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap; 
-    max-width: 1500px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-shrink: inherit;
+    /* align-items: flex-start;
+    align-items: flex-end; */
+    max-width: 1350px;
     padding: 1em;
     margin: auto 0;
     padding: 1em;  
-} */
+}
 
 .cruiseShip {
+    /* Hopefully this flex-start helps with alignment of elements */
+    /* align-items: flex-start; */
     float: left;
     padding: 1.5em;
     border: 1px solid burlywood;
     border-radius: 20px;
     text-align: center;
     justify-content: center;
+    max-width: 850px;
+}
+
+h2.ship {
+    color: darkcyan;
+    size: 1em; 
 }
 
 /* .backButton {
@@ -223,18 +235,17 @@ div.header h1 {
 } */
 
 .Review {
-    float: left;
+    align-self: auto;
+    /* float: left; */
 }
 
-h2.ship {
-    color: darkcyan 
-}
 
 div.ShipDetails {
     float: right;
     /* align-content: left; 
     justify-content: left */
     /* position: absolute; */
+    max-width: 500px;
     position: relative; 
     padding: 1.5em;
     border: solid;
@@ -259,7 +270,54 @@ div.ShipTerms   {
 }
 
 div.ShipTermsIntro  {
-    float: right
+    /* last Elements ends the flexing for the flexbox */
+    /* align-items: flex-end; */
+    float: right;
+    border: solid;
+    border-width: 2px;
+    border-color: peru;
+    border-radius: 10px;
+    background-color: beige;
+    padding: 1em;
+}
+
+/* .makeReview  >  .addReview  {
+    float: right;
+    background-color: deepskyblue;
+    color: whitesmoke; */
+    /* max-width: 400px */
+/* } */
+
+.addReview  {
+    float: right;
+    background-color: deepskyblue;
+    color: whitesmoke;
+    font-size: 1.1em;
+    /* max-width: 250px; */
+    padding: 0.4em;
+    border-radius: 6px;
+    border-width: 2px;
+    border-color: midnightblue;
+}
+
+.backButton > .Button {
+    float: left;
+    background-color: yellow;
+    border-radius: 6px;
+    border-width: 2px;
+    border-color: midnightblue;
+    padding: 0.4em;
+}
+
+.backButton > .Button > .backLink {
+    float: left;
+    color: peru;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+.Review {
+    align-content: flex-start;
 }
 
 /* css for Evolution of Ships */
@@ -267,6 +325,8 @@ div.ShipTermsIntro  {
 /* .header  {
     text-align: centre;
 } */
+
+
 
 .evoContainer   {
     display: flex;
@@ -326,8 +386,8 @@ div.ShipTermsIntro  {
 } */
 
 .review > .initial  {
-    height: 200px;
-    max-width: 200px;
+    height: 400px;
+    max-width: 400px;
 }
 
 .makeReview  >  .writeReview    {

@@ -35,7 +35,7 @@ class ShipShots extends React.Component  {
             autoplay: true,
             autoplaySpeed: 3500,
             centerMode: true,
-            adaptiveHeight: true
+            adaptiveHeight: true,
         }
     
         return (
@@ -45,7 +45,7 @@ class ShipShots extends React.Component  {
                     {
                         this.state.images.map((image, index) => (
                             <div className="slide" key={index}>
-                                <img key = {image} src = {image}/>
+                                <img key = {image} src = {image} title = {image}/>
                             </div>
                         ))
                     }

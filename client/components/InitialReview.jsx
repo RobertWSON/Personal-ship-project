@@ -5,12 +5,13 @@ import React from 'react'
 // then the Textbox with it's Review should be displayed or Shown. 
 // If there is no Review in the seeds file, then the Textbox should be Hidden. 
 
-
 class InitialReview extends React.Component {
     constructor(props)  {
         super(props)
 
-
+        this.state = {
+            
+        }
 
         // this.state = {
         //     isClicked: false
@@ -31,6 +32,8 @@ class InitialReview extends React.Component {
 
                 {/* This is the initial Review taken from my Ship.js seeds file  */}
                 {/* <textarea className = "initial">{Review}</textarea>     */}
+
+            {/* this.state.map */}
 
                 <Ship/>
             {/* </div> */}
