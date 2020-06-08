@@ -9,19 +9,19 @@ class InitialReview extends React.Component {
     constructor(props)  {
         super(props)
 
-        this.state = {
+        // this.state = {
             
-        }
+        // }
 
         // this.state = {
         //     isClicked: false
         // }
 
         // this.handleClick = this.handleClick.bind(this)
-    }
+    // }
 
     // handleClick()   {    
-    // }
+    }
 
     render()    {        
         return  (

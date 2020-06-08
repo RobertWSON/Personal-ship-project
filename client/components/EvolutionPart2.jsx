@@ -84,43 +84,19 @@ class EvolutionPart2 extends React.Component    {
                     </div>
 
                     <div className = "evoIntro">
-                        <p>The photo on the left shows Fairstar, which was built in 1957 and is an example of an older style cruise ship. You can clearly see how these older ships had a lot of open deck space.  
-                        On the open deck space you were able to go for a swim, play table tennis or catch up on some sun on the deck chairs. 
-                        It is an interesting type of older cruise ship because it was originally used as a troop ship and got converted for cruising in 1965. It was the most popular cruise ship under P & O (Peninsular and Steam Navigation) during the late 80's and 90's
-                        out of Sydney Harbour. 
-                        More details on this ship can be found here <a href ="https://en.wikipedia.org/wiki/TSS_Fairstar">Fairstar</a>.
-                        </p>
-                        <br/>
-                            
-                        <p>The photo on the left shows the Song of Norway, built in 1970, when it was being lengthened. Due to to demand of cruises in the 70's cruise ship lengthening started and this was the first cruise ship ever to be 
-                        lengthened in 1978. It was lengthening by 85 feet and the passenger capacity increased from 724 to 1024 people. She is now scrapped and more info can be found here <a href ="https://en.wikipedia.org/wiki/MS_Formosa_Queen">Song of Norway</a>  
-                        </p>
-                        <br/>
-                        <p>Here she is as Song of Norway, sailing through the panama Canal in 1994.
-                        </p>
-                        <br/>
-
-                        <p>The photo on the left or above shows the Royal Viking Sky, built in 1973 and seen here arriving in Picton. 
-                        This ship was lengthened by the popular 85 feet in 1991 and renamed Birka Queen. It originally had a passenger capacity of 536 and increased to 900 after lengthening. 
-                        More details on this ship can be found here <a href ="https://en.wikipedia.org/wiki/MV_Boudicca">Royal Viking Sky</a>
-                        </p>
-                            
-                        <p>The amazing thing about Royal Viking Sky, is that she is one of the survivors of cruise ships built in the 1970's. Here she can now be seen sailing as Boudicca in Ullapool, Scotland.
-                        <br/>She is still cruising today as Boudicca under <a href ="https://www.fredolsencruises.com/our-ships/boudicca">Fred Olsen Cruises</a>.   
-                        </p>
-                        <br/>
-
-                        <p>The photo on the left shows Allure of the Seas, a modern cruise ship built in 2010, which has a more boxed shaped.
-                        These modern cruise ships don't have as much deck space for the same size of ship as the older classic cruise liners. 
-                        From the photo you can see that passengers are on the deck above the bow, whereas in the older cruise ships there was no deck space for passengers.
-                        In the older cruise ships there was a lot more deck space by the funnel, mast and the back of the ship, than the modern cruise ships, which don't have much.
-                        The modern cruise ships have greater Gross Tonnage or interior space, than the older ships because of this. <br/>1 Gross Ton is equal to 2.83m^3 or 100 cubic feet and is a a measure of the total internal volume of a ship,
-                        which is used for charging ships at port or going through canals like Panama Canal. <br/>
-                        With extra space modern cruise ships have, there is room for more amenities or activities to do than classic liners, like rock climbing, water slides and tennis courts.
-                        Whatever you decide is totally your preference.      
-                        More details on this ship can be found here <a href ="https://en.wikipedia.org/wiki/MS_Allure_of_the_Seas">Allure of the Seas</a>.
-                        </p>
-                        <br/>
+                    <h3 class = "Endings">History (Last of the Classics)</h3>
+                        <p>The start of this <b>evolution (Part 2)</b> treats you to a real classic Fairstar, that was originally 
+                        operated as a troopship and got converted completely to a cruise ship. <br/>I am fortunate enough to have been on this ship during the 90's, when I was a young lad.
+                        <br/><br/>The Michelangelo was an Italian classic liner, which is earns it classic because of it's capped laticed funnels. 
+                        <br/><br/>QE2 or as it is more formally known Queen Elizabeth 2, named after the queen is one of the most well known cruise ships of all time.
+                        Operated under Cunard it's entire career, she is now still around, but as a floating hotel in Dubai.
+                        <br/><br/>Song of Norway goes down as the first of the classic liners ever to be lengthend to allow more passengers.
+                        Song of Norway has had lots of differents name during it's career, is scrapped now, but will be rememembered as a great cruise ship. 
+                        <br/><br/>Royal Viking Sky is another classic cruise ship that got lengthened, but it is still in operation today and can be seen on my Cruise Lines page for Fred Olsen cruises.
+                        <br/><br/>Lastly Allure of the Seas is a different type of cruise ship from the other classic ones I have in the evolution pages.
+                        Being the box shape it is, it is designed to carry more passengers and is a lot larger than the other ships.
+                        It is also available for cruises on my Cruise Lines page for Royal Caribbean cruises. 
+                        </p>    
                     </div>
                 </div>       
             </div>            

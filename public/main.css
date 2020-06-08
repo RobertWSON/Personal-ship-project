@@ -369,6 +369,22 @@ div.ShipTermsIntro  {
     /* text-align: center; */
 }
 
+.evoIntro   {
+    justify-content: center;
+    align-items: left;
+    width: 1350px;
+    background-color: lightyellow;
+    border: 2px solid burlywood;
+    border-radius: 20px;
+    margin: 0   30px;
+    margin-top: 15px;
+    margin-bottom: 15px;    
+}
+
+.evoIntro   >   .beginnings  {
+    align-self: center;
+    color: brown;
+}
 /* .evoShips   h3 {
    text-align: center; 
 } */

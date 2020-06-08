@@ -84,28 +84,22 @@ class EvolutionPart1 extends React.Component    {
                     </div>
 
                     <div className = "evoIntro">
-                        <p>We have come along way since passenger liner days of Titanic. Passenger safety in terms of lifeboats was underestimated when the titanic was built 
-                           and as a result there was only about enough lifeboats for 2/3 the passengers. The Titanic was thought of as unsinkable at the time, but several factors    
-                           caused the sinking. The iron rivets at the bow were brittle and not up to standard and the way that the watertight compartments were arranged caused                          
-                           water to spill over the top of one and then flow into another compartment, eventually caused it to sink from flooding. Since the Titanic steel hulls    
-                           have been created to help strengthen ships, rivets have been strengthened and watertight compartments are now in place for modern ships, so now we can 
-                           feel much safer. 
-                        </p>
-                        <br/>
-                        <p>The SS Oriana on the left was an example of a steam ship that was powered by steam and built in 1959. It was mostly used to     
-                           start with on long distance travel, but over the years became popular, cruising with P & O (Peninsular & Oriental Steamship Navigation) cruise line.
-                           SS Oriana was one of the ships that started to make cruising popular. It wasn't too big and so could navigate through the Panama Canal.  
-                        </p>
-                        <br/>
-                        <p>The SS Canberra on the left is again another example of a steam ship built in 1960. It again was with P & O, was well known in its day and made cruising popular.
-                           It operated a lot in the South Pacific and was often a frequent visitor to Sydney Harbour.  
-                        </p>    
-                        <br/>
-                        <p>The MV Pacific Princess is the ultimate cruise ship though, back in the day that was repsonsible for making the cruise ship industry what it is today.
-                           Back in the late 70's till the mid 80's, it featured on a television series called the Love Boat and because of this it made the idea of cruising fun. 
-                           The idea that you could meet someone, that you can fall in love with on a ship, attracted people to go cruising.
-                           With it's initial MV, it was an example of a motor vessel ship that didn't need to rely on steam or coal to get it moving.
-                           Instead it is controlled by an internal combustion engine, just like a car and was more easier to maintain.
+                        <h3 class = "Beginnings">History (Early Beginnings)</h3>
+                        <p>The start of this <b>evolution (Part 1)</b> takes you from the beginning of (when)where passenger liners as they called them back then began.
+                           <br/>The Titanic stands out as the main passenger liner for long distance travel, when people in large numbers on a ship began.
+                           <br/><br/>The ships, Oriana and Canberra began there careers as passenger liners, and then got converted to cruise ships for shorter travel in holiday places.
+                           <br/>They were owned by P & O (Peninsular and Oriental Steam navigation Company), which is one of the most well known cruise companies of all time. 
+                           Throughout their career the Oriana and Canberra's appearance and colour had not changed and you can call this type of ship a classic original.
+                           <br/><br/>Next we have the largest ship so far (France) which was originally owned by the French Line.
+                           France suffered from a problem in the 70's when ship travel was more expensive than air travel and was consequently laid up during the mid 70's. 
+                           <br/>She made a comeback though, had a complete change in appearance and colour and operated as Norway under Norwegian Cruise Lines.
+                           Norway continued as a great success through her career and will be remembered as a classic liner in a different way (lasting a long time).
+                           <br/><br/>We can't start this adventure, if we don't have an Italian ship and Gallileo Galiliei is the first of our classic Italian Liners.
+                           Galileo Galilei is the first ship here, that operated as a cruise ship throughout her entire career.
+                           Unfortunately like Titanic she had a sad ending and sank. <br/>
+                           Still she will be remembered though as a classic Italian cruise ship with good open deck space to enjoy holiday travel.  
+                           <br/><br/>We will end the beginnings with a beautiful cruise ship, Pacific Princess (or as it was called "Love Boat") that made the cruise ship industry what it is today.
+                           <br/>It made you believe that cruising on a ship it's size, will give you a great opportunity to meet the love of your life.   
                         </p>
                     </div>
                 </div>    

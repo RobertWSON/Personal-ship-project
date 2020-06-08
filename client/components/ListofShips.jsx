@@ -213,7 +213,7 @@ class ListofShips extends React.Component {
                   <Link className = "shipsList" smooth to = {`/cruiselines/${encodedCruiseline}#${encodedShipName}`}>
                     <div className = "ship">  
                       <span>{this.findShipNames(ship)}</span>
-                      <img src ={ship.img}/>
+                      <img src ={ship.img} title = {ship.ship_name}/>
                     </div>  
                   </Link>
                 </li>
