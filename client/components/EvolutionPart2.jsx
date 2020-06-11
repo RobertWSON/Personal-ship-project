@@ -87,7 +87,7 @@ class EvolutionPart2 extends React.Component    {
                     <h3 class = "Endings">History (Last of the Classics)</h3>
                         <p>The start of this <b>evolution (Part 2)</b> treats you to a real classic Fairstar, that was originally 
                         operated as a troopship and got converted completely to a cruise ship. <br/>I am fortunate enough to have been on this ship during the 90's, when I was a young lad.
-                        <br/><br/>The Michelangelo was an Italian classic liner, which is earns it classic because of it's capped laticed funnels. 
+                        <br/><br/>The Michelangelo was an Italian classic liner, which earns it classic because of it's capped laticed funnels. 
                         <br/><br/>QE2 or as it is more formally known Queen Elizabeth 2, named after the queen is one of the most well known cruise ships of all time.
                         Operated under Cunard it's entire career, she is now still around, but as a floating hotel in Dubai.
                         <br/><br/>Song of Norway goes down as the first of the classic liners ever to be lengthend to allow more passengers.

@@ -86,7 +86,8 @@ class EvolutionPart1 extends React.Component    {
                     <div className = "evoIntro">
                         <h3 class = "Beginnings">History (Early Beginnings)</h3>
                         <p>The start of this <b>evolution (Part 1)</b> takes you from the beginning of (when)where passenger liners as they called them back then began.
-                           <br/>The Titanic stands out as the main passenger liner for long distance travel, when people in large numbers on a ship began.
+                           <br/>The Titanic stands out as a main passenger liner for long distance travel, when people in large numbers on a ship began.
+
                            <br/><br/>The ships, Oriana and Canberra began there careers as passenger liners, and then got converted to cruise ships for shorter travel in holiday places.
                            <br/>They were owned by P & O (Peninsular and Oriental Steam navigation Company), which is one of the most well known cruise companies of all time. 
                            Throughout their career the Oriana and Canberra's appearance and colour had not changed and you can call this type of ship a classic original.

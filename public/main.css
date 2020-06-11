@@ -6,6 +6,21 @@
     font-family: 'Work Sans', sans-serif;
     }
     
+/* Home page styles */
+.siteIntro  {
+    justify-content: center;
+    align-items: left;
+    width: 1350px;
+    background-color: skyblue;
+    border: 2px solid darkblue;
+    border-radius: 20px;
+    margin: 0   30px;
+    margin-top: 15px;
+    margin-bottom: 15px; 
+}
+
+/* End of Home page Styles */
+
 .cruiseContainer  {
     display: flex;
     flex-direction: row;
@@ -339,7 +354,7 @@ div.ShipTermsIntro  {
     border-radius: 20px;
 }  
 
-.evoShips   {
+.evoShips  {
     /* display: inline-block;
     flex-direction: column; */
     /* align-content: center; */

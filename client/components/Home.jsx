@@ -3,7 +3,6 @@ import {Link} from 'react-router-dom'
 import Slider from "react-slick"
 import ReactPlayer from 'react-player'
 
-// export const home = () => {
 
 class Home extends React.Component  {
     constructor(props)  {
@@ -37,20 +36,12 @@ class Home extends React.Component  {
             adaptiveHeight: true
         }
     
-        // console.log("home")
         return (
             <div>
                 {/* <div className = 'container'> */}
                 <div className = "header">
                     <h1>Cruise Shipin</h1>
                 </div>
-
-                {/* <div>
-                    <Link className="navmenu" to="/Nav" >Home</Link>
-                    <Link className="navmenu" to="/Nav" >Evolution (Part 1)</Link>
-                    <Link className="navmenu" to="/Nav" >Evolution (Part 2)</Link>
-                    <Link className="navmenu" to="/Nav" >Cruise Lines</Link>
-                </div> */}
 
                 <Slider {...settings}>
                     {
@@ -62,14 +53,7 @@ class Home extends React.Component  {
                     }
                 
                 </Slider>
-
-                <div className='paragraph'>
-                    <p>If you want to learn about the evolution of cruise ships of how they started off and have become the global force today in terms
-                        of holiday travel, then you have come to the right place. 
-                        <br/>You are also welcome to review our class of luxury cruise ships we have on offer, from the cruiselines.
-                    </p>    
-                </div> 
-
+                
                 <div className = "player-wrapper">
                     <br/>
                     <br/>
@@ -83,6 +67,33 @@ class Home extends React.Component  {
                         muted="false"
                         />
                         <Link to="/https://www.youtube.com/watch?v=O0ulkoTuE3Is">Berlina V8 - 2019 Mt Vic Hill Climb</Link>
+                </div>
+
+                <div className = "siteIntro">
+                    <h3 class = "Intro">Site Introduction</h3>
+                        <p>I have a keen interest in ships and enjoy going cruising when I can.<br/><br/>
+                           I have visited lots of cruise ship websites over my time, but haven't really found one, where everything is all together as one.<br/>
+                           This site is different and has been put together with the intention of giving a brief history  for those interested, as well as reviews for current cruise ships.
+                           <br/><br/> 
+                           If you want to learn about the evolution of cruise ships, of how they started off and have become the global force today in terms
+                           of holiday travel, then you have come to the right place.
+                           <br/> 
+                           Mostly though this is a review site for a range of cruise lines and this can be very hard to find on a lot of other websites.<br/><br/>
+                           You are welcome to review our class of luxury cruise ships we have on offer, from the cruiselines.<br/>  
+                           If you are interested in going on holiday on a particular ship, this site directs you to a website where you can book.
+                            <br/><br/>
+                           Please note post covid that all our ships have very strict measures to make sure that all our passengers are safe and enjoy their journey.
+                           <br/>
+                           If you book a trip your health condition will be of utmost importance and you will be asked some question on your health state.
+                           <br/> 
+                           Everyone gets checked with a medical statement before they go on the ship as a swab will be taken from your local doctor before you travel.
+                           <br/><br/> 
+                           Information about what to do, will be listed when you book the cruise and there will be a contact if you have any questions.<br/>
+                           Everyone has to be patient in this time and don't stress about the process, just think that it will be better in the long run.
+                           <br/><br/>
+                           Enjoy the journey, relive the memories and happy cruising.
+
+                        </p>
                 </div>
 
             </div>         
