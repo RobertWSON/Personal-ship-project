@@ -43,7 +43,7 @@ class Home extends React.Component  {
                     <h1>Cruise Shipin</h1>
                 </div>
 
-                <Slider {...settings}>
+                <Slider className = "home-slider" {...settings}>
                     {
                         this.state.images.map((image, index) => (
                             <div className="slide" key={index}>
@@ -90,7 +90,7 @@ class Home extends React.Component  {
                         width = "440px"
                         // height="20%"
                         // width="30%"
-                        align = "center" 
+                        // align = "center" 
                         playing="false"
                         controls="true"
                         muted="false"

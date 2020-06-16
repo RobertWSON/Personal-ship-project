@@ -7,7 +7,24 @@
     }
     
 /* Home page styles */
+
+.home-slider    {
+    padding: 20px;
+    justify-content: center;
+    /* align-items: center; */
+    border: 2px solid darkblue;
+    border-radius: 20px; 
+    /* width: 1050px; */
+    min-height: 500px;
+}
+
+.home-slider    >   .slide  {
+    max-width: 1000px;
+    max-height: 600px;
+}
+
 .siteIntro  {
+    float: left;
     justify-content: center;
     align-items: left;
     width: 900px;
@@ -22,6 +39,7 @@
 
 .player-wrapper {
     float: right;
+    /* float: right; */
     background-color: lightblue;
     width: 500px;
     border: 2px solid   darkblue;
@@ -30,9 +48,12 @@
 }
 
 .react-player   {
+    align-self: center;
     position: relative;
+
     /* align-content: center; */
-    top: 0;
+    /* align-content: center; */
+    top: 15px;
     left: 0;
 }
 
