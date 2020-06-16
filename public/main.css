@@ -10,13 +10,30 @@
 .siteIntro  {
     justify-content: center;
     align-items: left;
-    width: 1350px;
+    width: 900px;
     background-color: skyblue;
     border: 2px solid darkblue;
     border-radius: 20px;
     margin: 0   30px;
     margin-top: 15px;
     margin-bottom: 15px; 
+    padding: 15px;
+}
+
+.player-wrapper {
+    float: right;
+    background-color: lightblue;
+    width: 500px;
+    border: 2px solid   darkblue;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.react-player   {
+    position: relative;
+    /* align-content: center; */
+    top: 0;
+    left: 0;
 }
 
 /* End of Home page Styles */

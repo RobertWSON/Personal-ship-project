@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+// import {Link} from 'react-router-dom'
 import Slider from "react-slick"
 import ReactPlayer from 'react-player'
 
@@ -54,21 +54,6 @@ class Home extends React.Component  {
                 
                 </Slider>
                 
-                <div className = "player-wrapper">
-                    <br/>
-                    <br/>
-                    <ReactPlayer 
-                        url ="https://www.youtube.com/watch?v=O0ulkoTuE3Is" 
-                        className="react-player"
-                        height="20%"
-                        width="30%"
-                        playing="false"
-                        controls="true"
-                        muted="false"
-                        />
-                        <Link to="/https://www.youtube.com/watch?v=O0ulkoTuE3Is">Berlina V8 - 2019 Mt Vic Hill Climb</Link>
-                </div>
-
                 <div className = "siteIntro">
                     <h3 class = "Intro">Site Introduction</h3>
                         <p>I have a keen interest in ships and enjoy going cruising when I can.<br/><br/>
@@ -95,6 +80,25 @@ class Home extends React.Component  {
 
                         </p>
                 </div>
+
+                <div className = "player-wrapper">
+                   
+                    <ReactPlayer 
+                        url ="https://www.youtube.com/watch?v=O0ulkoTuE3Is" 
+                        className="react-player"
+                        height = "400px"
+                        width = "440px"
+                        // height="20%"
+                        // width="30%"
+                        align = "center" 
+                        playing="false"
+                        controls="true"
+                        muted="false"
+                        />
+                        {/* <Link to="/https://www.youtube.com/watch?v=O0ulkoTuE3Is">Berlina V8 - 2019 Mt Vic Hill Climb</Link> */}
+                </div>
+
+                
 
             </div>         
         )
