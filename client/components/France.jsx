@@ -9,16 +9,23 @@ class France extends React.Component   {
     render()    {
 
         return  (
-            <React.Fragment>
-                <h2 className = "ship">France</h2>
+            <React.Fragment>              
 
-                <h3>Contents</h3>
-                <Link className = "Contents" smooth to = {`/evolutionpart1/france/#${History}`}>
-                    History
-                </Link>
-                <br/>
+                <h2 className = "shipTitle">France</h2>
 
-                <img src = {"/images/Evolution/France/france_1961_1.jpg"}/>
+                <div className = "contents">
+
+                    <h3>Contents</h3>
+                    <Link className = "Contents" smooth to = {`/evolutionpart1/france/#${History}`}>
+                        History
+                    </Link>
+                    <br/>
+                </div>
+
+                <div className = "classicShip">
+                    {/* <h2 className = "ship">France</h2> */}
+                    <img src = {"/images/Evolution/France/france_1961_1.jpg"}/>
+                </div>
 
                 <div className = "ShipDetails">
                     <h3>France</h3>
@@ -57,48 +64,55 @@ class France extends React.Component   {
 
                 </div>
 
-                <h3 id ={History}>History or Background</h3>
-                <br/>
-                <p>The SS France was a steam ship, hence the intials SS, that originally operated for the French Line.
-                   <br/>As can be seen in the photo above she originally had a black and white hull (this is the main structure of the ship).
-                   <br/>
-                   <br/>The <strong>above</strong> photo was taken when she was entering her home port of Le Havre, France for the very first time on 23rd of November 1961.
-                </p>
+                <div className = "classic-backgound">
 
-                <p>Her hull colour had changed to <strong>green</strong> during the mid to late 1960's and this rare photo below,
-                   shows her departing from Southhampton with her green hull.
-                </p>
+                    <h3 id ={History}>History or Background</h3>
+                    <br/>
+                    <p>The SS France was a steam ship, hence the intials SS, that originally operated for the French Line.
+                    <br/>As can be seen in the photo above she originally had a black and white hull (this is the main structure of the ship).
+                    <br/>
+                    <br/>The <strong>above</strong> photo was taken when she was entering her home port of Le Havre, France for the very first time on 23rd of November 1961.
+                    </p>
 
-                {/* <img src = {""}/> */}
+                    <p>Her hull colour had changed to <strong>green</strong> during the mid to late 1960's and this rare photo below,
+                    shows her departing from Southhampton with her green hull.
+                    </p>
 
-                <p>You can see here leaving Le Havre her home Port in France, probably during the early 1970's 
-                </p>
-                <br/>
+                    {/* <img src = {""}/> */}
 
-                <img src = {"/images/Evolution/France/france_1961_2.jpg"}/>
+                    <p>You can see here leaving Le Havre her home Port in France, probably during the early 1970's 
+                    </p>
+                    <br/>
 
-                <p>
+                    <img src = {"/images/Evolution/France/france_1961_2.jpg"}/>
 
-                </p>
+                    {/* <p></p> */}
 
 
-                <p>The photograph below shows France laid up in .
-                   It was out of service between October 1974 to 1980. 
-                </p>
+                    <p>The photograph below shows France laid up in .
+                    It was out of service between October 1974 to 1980. 
+                    </p>
+                    {/* <img src = {"/images/Evolution/France/"}/> */}
+s
+                </div>
 
-                {/* <img src = {"/images/Evolution/France/"}/> */}
+                <div className = "plans">
 
-                <br/><br/>
-                <p>Here are the deck plans of France below.
-                </p>
+                    <br/><br/>
+                    <p>Here are the deck plans of France below.
+                    </p>
 
-                {/* <img src = {"/images/Evolution/France/"}/> */}
+                    {/* <img src = {"/images/Evolution/France/"}/> */}
 
-                <br/><br/>
+                    <br/><br/>
 
-                <button>
-                <Link to="/evolutionpart1">Back to Evolution (Part 1)</Link>
-            </button>
+                </div>
+
+                <div className = "evo1Button">
+                    <button class = "Button">
+                        <Link className = "backLink" to="/evolutionpart1">Back to Evolution (Part 1)</Link>
+                    </button>
+                </div>    
 
             </React.Fragment>
         )

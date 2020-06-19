@@ -442,6 +442,69 @@ div.ShipTermsIntro  {
    text-align: center; 
 } */
 
+/* Evolution Ship Pages
+    France */
+.shipTitle  {
+    text-align: center;
+    color: darkred;
+    font-size: 2.3em;
+}
+
+.contents   {
+    /* float: left; */
+    padding: 1.5em;
+    border: 1px solid burlywood;
+    border-radius: 20px;
+    text-align: center;
+    justify-content: center;
+    max-width: 300px;
+}
+
+.classicShip    {
+    float: left;
+    padding: 1.5em;
+    border: 1px solid burlywood;
+    border-radius: 20px;
+    text-align: center;
+    justify-content: center;
+    max-width: 1000px;
+}
+
+.classic-background {
+    /* float: left; */
+    padding: 1.5em;
+    border: 1px solid burlywood;
+    border-radius: 20px;
+    max-width: 1000px;
+}
+
+.plans  {
+    float: left;
+    padding: 1.5em;
+    border: 1px solid burlywood;
+    border-radius: 20px;
+    max-width: 1000px;    
+}
+
+/* Back button to Evolution (Part 1) page */
+.evo1Button > .Button {
+    float: left;
+    background-color: bisque;
+    border-radius: 6px;
+    border-width: 2px;
+    border-color: midnightblue;
+    padding: 0.4em;
+}
+
+.evo1Button > .Button > .backLink {
+    float: left;
+    color: darkred;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+/* Back button to Evolution (Part 1) page */
+
 /* CSS for Adding Reviews to a Cruise Ship Review page */
 
 /* .review > .initial  {
