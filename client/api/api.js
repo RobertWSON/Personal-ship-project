@@ -33,3 +33,19 @@ export function getShipsList(cruise_line)  {
             console.log('caught error in client/api/api.js getShipsList', error)   
         })
 }
+
+// this is api for classic ships to be displayed on Evolution Part 1 and 2 (pages)
+export function getClassics()   {
+    console.log('client/api/api.js getClassics called')
+
+    return request.get('/v1/classics')
+        .then(res => {
+            const classics = res.body
+            console.log('Got classics! client/api/api.js', classics)
+            return classics
+        })
+        .catch (error => {
+            //This logs any errors caught, while debugging.
+            console.log('Caught error in client/api/api.js getClassics', error)
+        })
+}
