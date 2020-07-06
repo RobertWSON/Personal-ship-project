@@ -2,6 +2,7 @@ const path = require('path')
 const express = require('express')
 const cruiselines = require('./routes/cruises')
 const shipslist = require('./routes/ships')
+const classics = require('./routes/classics')
 
 const server = express()
 
@@ -12,6 +13,10 @@ server.use(express.static(path.join(__dirname, '../public')))
 //and is also used for helping display the Review Page
 server.use('/v1/cruiselines', cruiselines)
 server.use('/v1/shipslist', shipslist)
+
+// Line below sorts out, which v1 express route will handle which request.
+// It is used for helping display classic ships on the evolution pages.
+server.use('/v1/classics', classics)
 
 
 //The line below sorts out 404 error, if page does not display
