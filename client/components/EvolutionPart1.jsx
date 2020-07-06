@@ -1,13 +1,35 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+// import {Link} from 'react-router-dom'
 
 
 class EvolutionPart1 extends React.Component    {
     
     constructor(props)  {
-        
         super(props)
+
+        this.state = {
+            //initialize shipsList as an empty array
+            classicShips: []
+        }
+        this.setUpClassics = this.setUpClassics.bind(this)
     }    
+
+    componentDidMount() {
+        console.log('cdm')
+        this.setUpClassics()
+    }
+
+    setUpClassics() {
+        console.log('getClassics')
+        getClassics()
+
+        .then(res =>    {
+
+            this.setState({
+                classicShips: res
+            })
+        })
+    }
 
     render()    { 
           
@@ -17,72 +39,22 @@ class EvolutionPart1 extends React.Component    {
                     <h1>Evolution of Cruise Ships</h1> 
                 </div>
 
-                <div className = "evoContainer">   
-                    <div className = "evoShips">  
-                        <h3>Titanic</h3>
-                        <Link to = "/evolutionpart1/titanic" >
-                            <img src={"/images/titaniccover.jpg"} 
-                            title = "Titanic in Southampton" />
-                            {/* alt="Titanic" /> */}
-                        </Link>
-                        {/* <br/> */}
-                        <p>Find out more on Titanic, Click on Image</p>
-                        {/* <br/> */}
-                        <p>Titanic Ship Horn</p>
-                    </div>    
+                <div className = "evoContainer">
+                    {this.state.classicShips.map(ship =>    {
 
-                    <div className = "evoShips">
-                        <h3>Oriana</h3>
-                        <Link to = "/evolutionpart1/oriana">
-                            <img src={"/images/oriana15.jpg"} title = "Oriana in Panama Canal during 1960's"/>
-                        </Link>
-                        <p>Find out more on Oriana, Click on Image</p>
-                        <p>Oriana Ship Horn</p>
-                    </div>    
-
-                    <div className = "evoShips">
-                        <h3>Canberra</h3>
-                        <Link to = "/evolutionpart1/canberra">
-                            <img src={"/images/ss-canberra.jpg"}
-                            title = "Canberra at Sea during the good times"/>
-                        </Link>
-                        <p>Find out more on Canberra, Click on Image</p>
-                        <p>Canberra Ship Horn</p>
-                        <br/>
-                    </div>    
-
-                    <div className = "evoShips">
-                        <h3>France</h3>
-                        <Link to = "/evolutionpart1/france">
-                            <img src={"/images/Evolution/France/france_1961_1.jpg"}
-                            title = "France in Home Port for the first time in 1961"/>
-                        </Link>                       
-                        <p>Find out more on France, Click on Image</p>                        
-                        <p>France Ship Horn</p>
-                        <br/>
-                    </div>   
-
-                    <div className = "evoShips"> 
-                        <h3>Galileo Galilei</h3>
-                        <Link to = "/evolutionpart1/GalileoGalilei">
-                            <img src={"/images/Evolution/Galileo Galilei/Galileo03.jpg"}
-                            title = "Original Galileo Gallilei at Sea"/>
-                        </Link>
-                        <p>Find out more on Galileo Galilei, Click on Image</p>
-                        <p>Galileo Galilei Ship Horn</p>
-                        <br/>
-                    </div>    
-
-                    <div className = "evoShips">
-                        <h3>Pacific Princess</h3>
-                        <Link to = "/evolutionpart1/pacificprincess">
-                            <img src={"/images/003410.jpg"}
-                            title = "Love Boat Pacific Princess at Sea"/>
-                        </Link>                
-                        <p>Find out more on Pacific Princess, Click on Image</p>                    
-                        <p>Pacific Princess Ship Horn</p>
-                    </div>
-
+                    return  ( 
+                        
+                    <div className = "evosShips" key = {ship.id}>
+                        <h3>{ship.ship_name}</h3>
+                        <img src = {ship.img} title = {ship.img_title} />
+                        <p>Find out more on {ship.ship_name} , Click on image</p>
+                        <p>{ship.ship_name} Ship Horn</p>       
+                    </div> 
+                    
+                    )           
+                    })
+                    }
+                                          
                     <div className = "evoIntro">
                         <h3 class = "Beginnings">History (Early Beginnings)</h3>
                         <p>The start of this <b>evolution (Part 1)</b> takes you from the beginning of (when)where passenger liners as they called them back then began.
@@ -103,7 +75,7 @@ class EvolutionPart1 extends React.Component    {
                            <br/>It made you believe that cruising on a ship it's size, will give you a great opportunity to meet the love of your life.   
                         </p>
                     </div>
-                </div>    
+                </div>
             </div>     
         )
     }
