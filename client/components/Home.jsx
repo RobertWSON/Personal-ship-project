@@ -55,7 +55,7 @@ class Home extends React.Component  {
                 </Slider>
                 
                 <div className = "siteIntro">
-                    <h3 class = "Intro">Site Introduction</h3>
+                    <h3 className = "Intro">Site Introduction</h3>
                         <p>I have a keen interest in ships and enjoy going cruising when I can.<br/><br/>
                            I have visited lots of cruise ship websites over my time, but haven't really found one, where everything is all together as one.<br/>
                            This site is different and has been put together with the intention of giving a brief history  for those interested, as well as reviews for current cruise ships.
