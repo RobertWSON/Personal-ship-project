@@ -6,8 +6,10 @@ router.use(express.json())
 
 router.get('/', (req, res) => {
     db.getClassics()
-    .then(classics => 
-        res.json(classics))
+    // .then(classics => 
+    .then(classicships =>
+        // res.json(classics))
+        res.json(classicships))
     })
 
 module.exports = router

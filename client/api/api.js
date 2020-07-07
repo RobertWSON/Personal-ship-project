@@ -38,11 +38,16 @@ export function getShipsList(cruise_line)  {
 export function getClassics()   {
     console.log('client/api/api.js getClassics called')
 
-    return request.get(`/v1/classics`)
+    return request.get(`/v1/classicships`)
+    // return request.get(`/v1/classics`)
         .then(res => {
-            const classics = res.body
-            console.log('Got classics! client/api/api.js', classics)
-            return classics
+
+            // const classics = res.body
+            const classicships = res.body
+            console.log('Got classicships! client/api/api.js', classicships)
+            // console.log('Got classics! client/api/api.js', classics)
+            // return classics
+            return classicships
         })
         .catch (error => {
             //This logs any errors caught, while debugging.
