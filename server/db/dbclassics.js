@@ -7,10 +7,10 @@ function getClassics (testConn)  {
     const conn = testConn || db
     console.log('server/db/dbclassics.js getClassics called!')
 
-    //Line below connects to Ships Table
+    //Line below connects to Evo1 Table
     return conn('Evo1')
     // Line below picks out ships to display from Evo1 Database.
-    .select()
+    .select(id)
     //Line below displays classic ships in id order.
     .orderBy('id')
     .then(dbResult  =>  {

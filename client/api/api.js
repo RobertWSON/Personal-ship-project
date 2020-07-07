@@ -34,11 +34,11 @@ export function getShipsList(cruise_line)  {
         })
 }
 
-// this is api for classic ships to be displayed on Evolution Part 1 and 2 (pages)
+//This is api for classic ships to be displayed on Evolution Part 1 and 2 (pages)
 export function getClassics()   {
     console.log('client/api/api.js getClassics called')
 
-    return request.get('/v1/classics')
+    return request.get(`/v1/classics`)
         .then(res => {
             const classics = res.body
             console.log('Got classics! client/api/api.js', classics)
