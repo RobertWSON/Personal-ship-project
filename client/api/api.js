@@ -35,10 +35,16 @@ export function getShipsList(cruise_line)  {
 }
 
 //This is api for classic ships to be displayed on Evolution Part 1 and 2 (pages)
-export function getClassics()   {
+// export function getClassics()   {
+// export function getClassics(id)   {
+//Did not work with id will try ship_name  
+export function getClassics(ship_name)  {  
+
     console.log('client/api/api.js getClassics called')
 
-    return request.get(`/v1/classicships`)
+    return request.get (`/v1/classicships/${ship_name}`)
+    // return request.get(`/v1/classicships/${id}`) 
+    // return request.get(`/v1/classicships`)
     // return request.get(`/v1/classics`)
         .then(res => {
 
