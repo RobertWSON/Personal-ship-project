@@ -41,20 +41,15 @@ class EvolutionPart1 extends React.Component    {
                 </div>
 
                 <div className = "evoContainer">
-                    {this.state.classicShips.map(ship =>    {
-
-                    return  ( 
-                        
-                    <div className = "evosShips" key = {ship.id}>
-                        <h3>{ship.ship_name}</h3>
-                        <img src = {ship.img} title = {ship.img_title} />
-                        <p>Find out more on {ship.ship_name} , Click on image</p>
-                        <p>{ship.ship_name} Ship Horn</p>       
-                    </div> 
-                    
-                    )           
-                    })
+                    {this.state.evo1.map (ship =>  {
+                    // {this.state.ships.map (ship =>  { 
+                        return  (
+                             
+                            <ClassicShips key={ship.id} {...ship}/>
+                
+                        )
                     }
+                    )}
                                           
                     <div className = "evoIntro">
                         <h3 className = "Beginnings">History (Early Beginnings)</h3>
