@@ -114,6 +114,12 @@ class Ship extends React.Component  {
                 </p>
             </div>
 
+            <div className = "bookButton">
+                <button className = "Button">
+                    <Link className = "bookLink" to = "/booking">Make a Booking</Link> 
+                </button>
+            </div>
+
         </div>     
             
         </React.Fragment>

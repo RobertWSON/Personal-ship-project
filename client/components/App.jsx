@@ -88,6 +88,8 @@ class App extends React.Component {
 
               {/* Ship Term Route Added */}
               <Route path = '/cruiselines/:cruise_line/shipterms' component={ShipTerms}/>
+
+              {/* <Route exact path='/booking' component={Booking}/> */}
               
             {/* </div> */}
           </div>  

@@ -365,13 +365,45 @@ div.ShipTermsIntro  {
 .backButton > .Button > .backLink {
     float: left;
     color: peru;
-    font-size: 1.2em;
+    /* font-size: 1.2em; */
+    font-size: 1.5em;
     text-decoration: none;
 }
 
 .Review {
     align-content: flex-start;
 }
+
+/* CSS for Booking Button */
+.bookButton  >  .Button   {
+    float: right;
+    background-color: lightyellow;
+    border-radius: 6px;
+    border-width: 2px;
+    border-color: firebrick;
+    padding: 0.4em;
+}
+
+.bookButton > .Button > .bookLink   {
+    float: right;
+    color: goldenrod;
+    font-size: 1.5em;
+    text-decoration: none;
+}  
+
+.bookButton:hover > .Button  {
+    background-color: darkblue;
+}
+
+.bookButton:hover > .Button > .bookLink    {
+    color: white;
+}
+
+/* End of CSS for Booking Button */
+
+/* CSS on Booking Page */
+
+/* End of CSS for Booking Page */
 
 /* css for Evolution of Ships */
 
