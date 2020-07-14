@@ -24,7 +24,8 @@ class Ship extends React.Component  {
             Height,
             Loaded_Displacement,
             Deadweight,
-            Review
+            Review,
+            Booking
         } = this.props
         
         // The ShipName constant is used to reference to a Ship Name Heading on the Cruise Line Review Page. 
@@ -116,7 +117,7 @@ class Ship extends React.Component  {
 
             <div className = "bookButton">
                 <button className = "Button">
-                    <Link className = "bookLink" to = "/booking">Make a Booking</Link> 
+                    <Link className = "bookLink" to = {`${Booking}`}>Make a Booking</Link> 
                 </button>
             </div>
 
