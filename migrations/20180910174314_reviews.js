@@ -17,6 +17,7 @@ exports.up = function(knex, Promise) {
         table.integer('Loaded_Displacement')
         table.integer('Deadweight')
         table.string('Review')
+        table.string('Booking')
     })
 };
 

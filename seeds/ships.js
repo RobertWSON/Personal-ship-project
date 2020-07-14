@@ -40,7 +40,7 @@ exports.seed = function(knex, Promise) {
           Height: 46,
           Loaded_Displacement: 21000,
           Deadweight: 4243,
-          Review: 'This ship has been sailing for Marella Cruises owned by UK company called TUI. Since covid it is in retirement and is looking for a company to be sold to, so that it can continue cruising. When you click make a boking for this ship, the website tells you about what is happening with the ship.',
+          Review: 'This ship has been sailing for Marella Cruises owned by UK company TUI. Since covid it is in retirement and is looking for a company to be sold to, so that it can continue cruising. When you click make a boking for this ship, the website tells you about what is happening with this ship.',
           Booking: 'https://cruisearabiaonline.com/2020/04/29/marella-celebration-to-be-sold-dubai-cruise-season-cancelled/'
         },
         {

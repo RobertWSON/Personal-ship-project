@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+// import{ExternalLink} from 'react-external-link'
 // import AddReview from './AddReview'
 import InitialReview from './InitialReview'
 
@@ -117,7 +118,8 @@ class Ship extends React.Component  {
 
             <div className = "bookButton">
                 <button className = "Button">
-                    <Link className = "bookLink" to = {`${Booking}`}>Make a Booking</Link> 
+                    <Link className = "bookLink" to = {`${Booking}`}>Make a Booking</Link>
+                    {/* <ExternalLink className = "bookLink" to = {`${Booking}`}>Make a Booking</ExternalLink>  */}
                 </button>
             </div>
 
