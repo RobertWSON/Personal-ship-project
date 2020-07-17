@@ -178,7 +178,7 @@ exports.seed = function(knex, Promise) {
           norway_fuel_capacity: '4424 Tonnes',
           norway_fuel_consume: '250 Tons per day (254.012 Tonnes) or </br>250 Tonnes per day',
           norway_fresh_water: '2555 Tons (2596 Tonnes)</br> or 2596000 Litres',
-          speed: 'Service: 17.8 Knots (32.97 km/h), </br> Maximum: 25 Knots (46.3 km/h)',
+          norway_speed: 'Service: 17.8 Knots (32.97 km/h), </br> Maximum: 25 Knots (46.3 km/h)',
           norway_passenger_decks: '1980: 13 decks </br> 1990: 15 decks',
         
           //This space is where I have show more text, for when user wants to see more
