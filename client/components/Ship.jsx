@@ -116,12 +116,23 @@ class Ship extends React.Component  {
                 </p>
             </div>
 
-            <div className = "bookButton">
+            <div className = "Booking">    
+            <a href = {Booking} 
+                className = "bookLink" 
+                rel = "noopener noreferrer"
+                target= "_blank">
+                {/* <button className = "Button"> */}
+                    Make a Booking
+                {/* </button> */}
+            </a>  
+            </div>    
+            {/* <div className = "bookButton">
                 <button className = "Button">
-                    <Link className = "bookLink" to = {`${Booking}`}>Make a Booking</Link>
+                    <a href = {Booking} className = "bookLink" rel = "noopener noreferrer">Make a Booking</a> */}
+                    {/* <Link className = "bookLink" to = {`${Booking}`}>Make a Booking</Link> */}
                     {/* <ExternalLink className = "bookLink" to = {`${Booking}`}>Make a Booking</ExternalLink>  */}
-                </button>
-            </div>
+                {/* </button>
+            </div> */}
 
         </div>     
             

@@ -375,7 +375,7 @@ div.ShipTermsIntro  {
 }
 
 /* CSS for Booking Button */
-.bookButton  >  .Button   {
+/* .bookButton  >  .Button   {
     float: right;
     background-color: lightyellow;
     border-radius: 6px;
@@ -397,7 +397,32 @@ div.ShipTermsIntro  {
 
 .bookButton:hover > .Button > .bookLink    {
     color: white;
+} */
+
+/* Trying Button inside of Link for Booking button */
+/* .Booking  >  .bookLink  {
+    float: right;
+    color: goldenrod;
+    font-size: 1.5em;
+    text-decoration: none;   
 }
+
+.Booking  >  .bookLink  >  .Button  {
+    float: right;
+    background-color: lightyellow;
+    border-radius: 6px;
+    border-width: 2px;
+    border-color: firebrick;
+    padding: 0.4em;    
+}
+
+.Booking  >  .bookLink  >  .Button  {
+    background-color: darkblue;
+}
+
+.Booking:hover  >  .bookLink  {
+    background-color: white;
+}   */
 
 /* End of CSS for Booking Button */
 
