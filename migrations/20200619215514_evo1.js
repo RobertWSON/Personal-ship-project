@@ -23,6 +23,7 @@ exports.up = function(knex, Promise) {
         table.string('lightship')
         table.string('loaded_displacement')
         table.string('power')
+        table.string('power_rpm')
         table.string('fuel_type')
         table.string('fuel_capacity')
         table.string('fuel_consumption')
@@ -66,7 +67,7 @@ exports.up = function(knex, Promise) {
         table.integer('galileo_passenger_capacity')
         //Galielo Galilei as Meridian
         table.string('meridian_name')
-        table.string('meridin_years')
+        table.string('meridian_years')
         table.string('meridian_gt')
         table.integer('meridian_passenger_capacity')
         //Galielo Galilei as Sun Vista
@@ -80,7 +81,6 @@ exports.up = function(knex, Promise) {
         table.string('early_years')
         table.string('pacific_princess_years')
         table.string('pacific_years')
-        table.integer('final_year')
     })
 };
 

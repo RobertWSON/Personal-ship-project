@@ -1,4 +1,3 @@
-
 exports.seed = function(knex, Promise) {
   // Deletes ALL existing entries
   return knex('Evo1').del()
@@ -11,6 +10,20 @@ exports.seed = function(knex, Promise) {
           img: '/images/titaniccover.jpg',
           img_title: "Titanic in Southampton",
           service_years: '1912',
+
+          // To make this work I have to have all the same variables for each id. 
+          // Here is the extra variable from Norway Cruise Ship.
+          france_service_years: '',
+          // Here is the extra variable from Galileo Galilei Cruise Ship.
+          early_service_years: '',
+          //Here are extra variables from Pacific Princess (Love Boat) Cruise Ship.
+          original_name: '',
+          early_years: '',
+          pacific_princess_years: '',
+          pacific_years: '',
+          final_year: '',
+
+          //Titanic info continued
           build_yard: 'Harland and Wolff, Belfast, Northern Ireland, UK',
           operator: 'White Star line',
           registry_port: 'Liverpool, England, UK',
@@ -23,6 +36,8 @@ exports.seed = function(knex, Promise) {
           beam: '28.2 m (92 feet 6 inches)',
           draft: '10.54 m (34 feet 7 inches)',
           height: '53.34 m (175 feet) </br> (Keel to top of funnels)',
+          // Here is the extra variable from Galileo Galilei Cruise Ship. 
+          funnel_height: '',
 
           //This space is where I have show more text, for when user wants to see more
           speed: 'Maximum 23 knots (43 km/ hr, 26 mph) </br> Cruising: 21 knots (39 km/ hr, 24 mph)',
@@ -30,6 +45,7 @@ exports.seed = function(knex, Promise) {
           lightship: '38760 Tons(39380 Tonnes)',
           loaded_displacement: '52310 Tons(53147 Tonnes)',
           power: '46000 Horsepower Imperial (34302.235 kW)',
+          power_rpm: '',
           fuel_type: 'coal',
           fuel_capacity: '6611 Tons with an extra 1201 Tons for emergencies or 8000 Tons of Coal',
           fuel_consumption: '825 Tons per day or 600 Tons',
@@ -41,10 +57,47 @@ exports.seed = function(knex, Promise) {
           decks: '10',
           accessible_decks: '8',
           bridge_height: '104 feet (31.2 m) Top of bridge to Keel',
-          bridge_water: '60 feet 6 inches (18.44 m)',
+          bridge_water: '60 feet 6 inches (18.44 m)', 
           shelter_deck: '51 feet (15.54 m) above waterline',
           bow_bridge: '196 feet 3 inches (59.817 m)',
-          bow_height: '24.70 m (81 feet 0.34 inches) or 25.662 m (84 feet 2.3 inches)'
+          bow_height: '24.70 m (81 feet 0.34 inches) or 25.662 m (84 feet 2.3 inches)',
+
+          // To make this work I have to have all the same variables for each id. 
+          // Here are the extra variables from Norway Cruise Ship. 
+          new_ship_name: '',
+          norway_years: '',
+          norway_operator: '',
+          conversion_cost: '',
+          norway_passengers: '',
+          norway_crew: '',
+          norway_gt: '', 
+          norway_fuel_capacity: '',
+          norway_fuel_consume: '',
+          norway_fresh_water: '',
+          norway_speed: '',
+          norway_passenger_decks: '',
+          //This space is where I have show more text, for when user wants to see more, does not apply here though.
+          last_name: '',          
+          final_year: '',
+          final_gt: '',
+
+          // Name changes after Galileo Galilei
+          galileo_name: '',
+          galileo_years: '',
+          galileo_gt: '',
+          galileo_passenger_capacity: '',
+          // As Meridian Cruise ship
+          meridian_name: '',
+          meridian_years: '',
+          meridian_gt: '',
+          meridian_passenger_capacity: '',
+          // As Sun Vista Cruise Ship
+          last_name: '',
+          sunvista_years: '',
+          sunvista_gt: '',
+          sunvista_passenger_capacity: ''
+
+          
         },
         {
           id: 2, 
@@ -52,6 +105,20 @@ exports.seed = function(knex, Promise) {
           img: '/images/oriana15.jpg',
           img_title: "Oriana in Panama Canal during 1960's",
           service_years: '1959 to 2005',
+
+          // To make this work I have to have all the same variables for each id. 
+          // Here is the extra variable from Norway Cruise Ship.
+          france_service_years: '',
+          // Here is the extra variable from Galileo Galilei Cruise Ship.
+          early_service_years: '',
+          //Here are extra variables from Pacific Princess (Love Boat) Cruise Ship.
+          original_name: '',
+          early_years: '',
+          pacific_princess_years: '',
+          pacific_years: '',
+          final_year: '',
+
+          //Oriana info continued
           build_yard: 'Vickers-Armstrongs, Barrow-in-Furness, Cumbria, England',
           operator: 'Orient Line and P & O',
           registry_port: 'London, England, UK',
@@ -64,6 +131,8 @@ exports.seed = function(knex, Promise) {
           beam: '29.61 m (97 feet)',
           draft: '9.75 m (32 feet)',
           height: '51.09 m (165 feet)',
+          // Here is the extra variable from Galileo Galilei Cruise Ship. 
+          funnel_height: '',
 
           //This space is where I have show more text, for when user wants to see more
           speed: ' Maximum 30.64 knots (56.74 km/ hr, 35.26 mph) </br> Cruising (Service): 27.5 knots (50.93 km/ hr, 31.65 mph)',
@@ -84,8 +153,46 @@ exports.seed = function(knex, Promise) {
           accessible_decks: '11',
           bridge_height: '36.935 m (121 feet 2 inch)',
           bridge_water: '27.18 m (89 feet 2 inches)',
+          //Shelter Deck from Titanic, need it here with nothing as a variable to make thi work.
+          shelter_deck: '',
           bow_bridge: '101.689 m (333 feet 7.5 inches)',
-          bow_height: '25.289 m (82 feet 11.6 inches)'
+          bow_height: '25.289 m (82 feet 11.6 inches)',
+
+          // To make this work I have to have all the same variables for each id. 
+          // Here are the extra variables from Norway Cruise Ship. 
+          new_ship_name: '',
+          norway_years: '',
+          norway_operator: '',
+          conversion_cost: '',
+          norway_passengers: '',
+          norway_crew: '',
+          norway_gt: '', 
+          norway_fuel_capacity: '',
+          norway_fuel_consume: '',
+          norway_fresh_water: '',
+          norway_speed: '',
+          norway_passenger_decks: '',
+          //This space is where I have show more text, for when user wants to see more, does not apply here though.
+          last_name: '',          
+          final_year: '',
+          final_gt: '',
+
+          // Name changes after Galileo Galilei
+          galileo_name: '',
+          galileo_years: '',
+          galileo_gt: '',
+          galileo_passenger_capacity: '',
+          // As Meridian Cruise ship
+          meridian_name: '',
+          meridian_years: '',
+          meridian_gt: '',
+          meridian_passenger_capacity: '',
+          // As Sun Vista Cruise Ship
+          last_name: '',
+          sunvista_years: '',
+          sunvista_gt: '',
+          sunvista_passenger_capacity: ''
+
         },
         {
           id: 3,
@@ -93,6 +200,20 @@ exports.seed = function(knex, Promise) {
           img: '/images/ss-canberra.jpg',
           img_title: "Canberra at sea during the good times",
           service_years: '1961 to 1997',
+
+          // To make this work I have to have all the same variables for each id. 
+          // Here is the extra variable from Norway Cruise Ship.
+          france_service_years: '',
+          // Here is the extra variable from Galileo Galilei Cruise Ship.
+          early_service_years: '',
+          //Here are extra variables from Pacific Princess (Love Boat) Cruise Ship.
+          original_name: '',
+          early_years: '',
+          pacific_princess_years: '',
+          pacific_years: '',
+          final_year: '',
+
+          //Canberra info continued
           build_yard: 'Harland and Wolff, Belfast, Northern Ireland, UK',
           operator: 'P & O',  
           registry_port: 'London, England, UK',
@@ -105,13 +226,16 @@ exports.seed = function(knex, Promise) {
           beam: '31.09 m (102 feet)',
           draft: '10.0 m (32 feet 9.7 inches)',
           height: '55.9 m (183 feet 6 inches) </br> (Keel to top of mast)',
+          // Here are the is the extra variable from Galileo Galilei Cruise Ship. 
+          funnel_height: '',
 
           //This space is where I have show more text, for when user wants to see more
           speed: 'Trials: 29.27 knots (54.2 km/h) </br> Service Speeds 1961–73: 27.5 knots (50.9 km/h) </br> 1973–97: 23.50 knots (43.5 km/h)',
           deadweight: '1961 - 1968: 9910, </br> 1968 - 1982: 9754, </br> 1982 - 1997: 8775',
           lightship: '32605 Tons (33128.24 Tonnes) (excluding permanent ballast)', 
-          loaded_dispacement: '1961 - 1968: 42515 Tons (43197.24 Tonnes), </br> 1968 - 1982: 42359 Tons (43038.782 Tonnes), </br> 1982 - 1997: 41380 Tons (42044.071 Tonnes)',
-          power:'85000 Horsepower Imperial (as built) </br>1973 Onwards: 56000 Horsepower Imperial',
+          loaded_displacement: '1961 - 1968: 42515 Tons (43197.24 Tonnes), </br> 1968 - 1982: 42359 Tons (43038.782 Tonnes), </br> 1982 - 1997: 41380 Tons (42044.071 Tonnes)',
+          power: '85000 Horsepower Imperial (as built) </br>1973 Onwards: 56000 Horsepower Imperial',
+          power_rpm: '',
           fuel_type:'Marine Oil',
           fuel_capacity: '5150 Tonnes',
           fuel_consumption: '250 to 300 Tonnes per day',
@@ -124,15 +248,68 @@ exports.seed = function(knex, Promise) {
           accessible_decks: '',
           bridge_height: '31.7 m (104 feet)',
           bridge_water: '41.7 m (136 feet 9.7 inches)',
+          //Shelter Deck from Titanic, need it here with nothing as a variable to make thi work.
+          shelter_deck: '',
           bow_bridge: '82.22 m (269 feet 9 inches)',
-          bow_height: '27.66 m (90 feet 9 inches)'
+          bow_height: '27.66 m (90 feet 9 inches)',
+
+          // To make this work I have to have all the same variables for each id. 
+          // Here are the extra variables from Norway Cruise Ship. 
+          new_ship_name: '',
+          norway_years: '',
+          norway_operator: '',
+          conversion_cost: '',
+          norway_passengers: '',
+          norway_crew: '',
+          norway_gt: '', 
+          norway_fuel_capacity: '',
+          norway_fuel_consume: '',
+          norway_fresh_water: '',
+          norway_speed: '',
+          norway_passenger_decks: '',
+          //This space is where I have show more text, for when user wants to see more, does not apply here though.
+          last_name: '',          
+          final_year: '',
+          final_gt: '',
+
+          // Name changes after Galileo Galilei
+          galileo_name: '',
+          galileo_years: '',
+          galileo_gt: '',
+          galileo_passenger_capacity: '',
+          // As Meridian Cruise ship
+          meridian_name: '',
+          meridian_years: '',
+          meridian_gt: '',
+          meridian_passenger_capacity: '',
+          // As Sun Vista Cruise Ship
+          last_name: '',
+          sunvista_years: '',
+          sunvista_gt: '',
+          sunvista_passenger_capacity: ''
+
         },
         {
           id: 4,
           ship_name: 'France',
           img: '/images/Evolution/France/france_1961_1.jpg',
           img_title: "France in Home port for the first time in 1961",
+
+          //Service Years for other ships, no data her though because France has it's own.
+          service_years: '',    
+          //France info 
           france_service_years: '1961 to 1974 </br> (laid up 1974 to 1979)',
+          // To make this work I have to have all the same variables for each id. 
+          // Here is the extra variable from Galileo Galilei Cruise Ship.
+          early_service_years: '',
+          //Here are extra variables from Pacific Princess (Love Boat) Cruise Ship.
+          original_name: '',
+          early_years: '',
+          pacific_princess_years: '',
+          pacific_years: '',
+          final_year: '',
+
+          //France info continued
           build_yard: 'Chantiers de l Atlantique, Saint-Nazaire, France', 
           operator: 'French Line (Compagnie Generale Transatlantique',
           registry_port: 'Le Havre, France',
@@ -144,14 +321,17 @@ exports.seed = function(knex, Promise) {
           length: '315.51 m (1035 feet)',
           beam: '33.7 m (110 feet 7 inches)',
           draft: '10.49 m (34 feet 5 inches)',
-          height: '67.66 m (222 feet)',  
+          height: '67.66 m (222 feet)', 
+          // Here is the extra variable from Galileo Galilei Cruise Ship. 
+          funnel_height: '', 
 
           //This space is where I have show more text, for when user wants to see more
           speed: 'Trails Maximum: 35 Knots (64.82 km/h), </br> Service Speed: 30 Knots (55.56 km/h)',
           deadweight: '13760 Tons (13980.822 Tonnes)',
-          ligtship: '43847 Tons (44543.549 Tonnes)',
+          lightship: '43847 Tons (44543.549 Tonnes)',
           loaded_displacement: '57607 Tons (58524.37 Tonnes)',
           power: '160000 Horsepower Imperial (119312 kW)',
+          power_rpm: '',
           fuel_type: 'Marine Oil',
           fuel_capacity: '8000 Tons (8128.385 Tonnes) or maybe 9000 Tons',
           fuel_consumption: '800 Tons per day (812.838 Tonnes) </br>or 750 Tonnes per day',
@@ -164,6 +344,8 @@ exports.seed = function(knex, Promise) {
           accessible_decks: '12',
           bridge_height: '',
           bridge_water: '',
+          //Shelter Deck from Titanic, need it here with nothing as a variable to make thi work.
+          shelter_deck: '',
           bow_bridge: '75 m (246 feet)',
           bow_height: '',      
           
@@ -185,14 +367,46 @@ exports.seed = function(knex, Promise) {
           last_name: 'Blue Lady',          
           // changed_name: 'Blue Lady',
           final_year: '2004',
-          final_gt: '76049'
+          final_gt: '76049',
+
+          // Name changes after Galileo Galilei
+          galileo_name: '',
+          galileo_years: '',
+          galileo_gt: '',
+          galileo_passenger_capacity: '',
+          // As Meridian Cruise ship
+          meridian_name: '',
+          meridian_years: '',
+          meridian_gt: '',
+          meridian_passenger_capacity: '',
+          // As Sun Vista Cruise Ship
+          last_name: '',
+          sunvista_years: '',
+          sunvista_gt: '',
+          sunvista_passenger_capacity: ''
+
         },
         {
           id: 5,
           ship_name: 'Galileo Galilei',
           img: '/images/Evolution/Galileo Galilei/Galileo03.jpg',
           img_title: "Original Galileo Galilei at sea",
+
+          //Service Years for other ships, no data her though because Galileo Galilei has it's own.
+          service_years: '',
+          // To make this work I have to have all the same variables for each id. 
+          // Here is the extra variable from Norway Cruise Ship.
+          france_service_years: '',
+          //Galileo Galilei own info
           early_service_years: '1963 to 1984',
+          //Here are extra variables from Pacific Princess (Love Boat) Cruise Ship.
+          original_name: '',
+          early_years: '',
+          pacific_princess_years: '',
+          pacific_years: '',
+          final_year: '',
+
+          //Galileo Galilei continued
           build_yard: '	Cantieri Riuniti dell Adriatico, Monfalcone, Italy', 
           operator: '1963-1979: Lloyd Triestino </br> 1979-1983: Italia Crociere </br> 1983-1990: Chandris Cruises </br> 1990-1997: Fantasy Cruises </br> 1997-1999: Sun Cruises',
           registry_port: '1963-1983:  Genoa, Italy </br> 1983-1990: Panama City, Panama </br> 1990-1999: Nassau, Bahamas',
@@ -206,7 +420,6 @@ exports.seed = function(knex, Promise) {
           draft: '8.60 m (28 feet 3 inches)',
           height: '54.05 m (177 feet 4 inches) </br> (Keel to top of mast)',
           funnel_height: '45.11 m (148 feet) </br>to top of solid structure',
-          
 
           //This space is where I have show more text, for when user wants to see more
           speed: 'Trials: 27.4 Knots (50.74 kn/h)</br> Service: 25 Knots (46.30 km/h) or 25.5 knots (47.23 km/h)',
@@ -214,6 +427,7 @@ exports.seed = function(knex, Promise) {
           lightship: 'Maybe 19045, as sister ship Costa Riviera is 19028',
           loaded_displacement: '',
           power: '44000 Horsepower Imperial (32810.833 kW)',
+          power_rpm: '',
           fuel_type: 'Marine Oil',
           fuel_capacity: '',
           fuel_consumption: '',
@@ -226,8 +440,29 @@ exports.seed = function(knex, Promise) {
           accessible_decks: '',
           bridge_height: '31.707 m (104 feet 0.3 inches)',
           bridge_water: '23.107 m (75 feet 9.7 inches)',
+          //Shelter Deck from Titanic, need it here with nothing as a variable to make thi work.
+          shelter_deck: '',
           bow_bridge: '63.839 m (209 feet 5.4 inches)',
           bow_height: '23.833 m (78 feet 2.3 inches)',
+
+          // To make this work I have to have all the same variables for each id. 
+          // Here are the extra variables from Norway Cruise Ship. 
+          new_ship_name: '',
+          norway_years: '',
+          norway_operator: '',
+          conversion_cost: '',
+          norway_passengers: '',
+          norway_crew: '',
+          norway_gt: '', 
+          norway_fuel_capacity: '',
+          norway_fuel_consume: '',
+          norway_fresh_water: '',
+          norway_speed: '',
+          norway_passenger_decks: '',
+          //This space is where I have show more text, for when user wants to see more, does not apply here though.
+          last_name: '',          
+          final_year: '',
+          final_gt: '',
 
           //This space is where I have show more text, for when user wants to see more
 
@@ -254,6 +489,16 @@ exports.seed = function(knex, Promise) {
           ship_name: 'Pacific Princess',
           img: '/images/003410.jpg',
           img_title: "Love Boat Pacific Princess at sea",
+
+          //Service Years for other ships, no data her though because Pacific Princess has it's own.
+          service_years: '',
+          // To make this work I have to have all the same variables for each id. 
+          // Here is the extra variable from Norway Cruise Ship.
+          france_service_years: '',
+          // Here is the extra variable from Galileo Galilei Cruise Ship.
+          early_service_years: '',
+
+          //Pacific Princess info
           original_name: 'Sea Venture',
           early_years: '1971 to 1975',
           pacific_princess_years: '1975 to 2002',
@@ -271,6 +516,8 @@ exports.seed = function(knex, Promise) {
           beam: '24.59 m (80 feet 8 inches)',
           draft: '7.70 m (25 feet 3 inches)',
           height: '46.53 m (151 feet 10 inches) </br> (Keel to top of mast)',
+          // Here is the extra variable from Galileo Galilei Cruise Ship. 
+          funnel_height: '',
 
           //This space is where I have show more text, for when user wants to see more
           speed: 'Maximum 19 knots (35.2 km/ hr, 21.86 mph) </br> Cruising: 18 knots (33.34 km/ hr, 20.71 mph)',
@@ -278,6 +525,7 @@ exports.seed = function(knex, Promise) {
           lightship: '12880 Tons (13086.70 Tonnes) or 13595 Tonnes',
           loaded_displacement: '16270 Tons (16531.10 Tonnes)',
           power: '18000 Horsepower Imperial (13240 kW)',
+          power_rpm: '',
           fuel_type: 'Marine Oil',
           fuel_capacity: '1977 Tons (2008.727 Tonnes)',
           fresh_water: '1113 Tons (1130.862 Tonnes)</br> or 1130862 Litres',
@@ -289,8 +537,46 @@ exports.seed = function(knex, Promise) {
           accessible_decks: '7',
           bridge_height: '80 feet 3 inches (24.463 m) Bottom of bridge to Keel',
           bridge_water: '55 feet (16.767 m)',
+          //Shelter Deck from Titanic, need it here with nothing as a variable to make thi work.
+          shelter_deck: '',
           bow_bridge: '41.906 m (137 feet 5.8 inches)',
-          bow_height: '18.87 m (61 feet 11.1 inches)'
+          bow_height: '18.87 m (61 feet 11.1 inches)',
+          
+          // To make this work I have to have all the same variables for each id. 
+          // Here are the extra variables from Norway Cruise Ship. 
+          new_ship_name: '',
+          norway_years: '',
+          norway_operator: '',
+          conversion_cost: '',
+          norway_passengers: '',
+          norway_crew: '',
+          norway_gt: '', 
+          norway_fuel_capacity: '',
+          norway_fuel_consume: '',
+          norway_fresh_water: '',
+          norway_speed: '',
+          norway_passenger_decks: '',
+          //This space is where I have show more text, for when user wants to see more, does not apply here though.
+          last_name: '',          
+          final_year: '',
+          final_gt: '',
+
+          // Name changes after Galileo Galilei
+          galileo_name: '',
+          galileo_years: '',
+          galileo_gt: '',
+          galileo_passenger_capacity: '',
+          // As Meridian Cruise ship
+          meridian_name: '',
+          meridian_years: '',
+          meridian_gt: '',
+          meridian_passenger_capacity: '',
+          // As Sun Vista Cruise Ship
+          last_name: '',
+          sunvista_years: '',
+          sunvista_gt: '',
+          sunvista_passenger_capacity: ''
+
         }
       ]);
     });
