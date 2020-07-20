@@ -56,6 +56,10 @@ class App extends React.Component {
 
               {/* Routes for Evolution pages and associated ships */}
               <Route exact path='/evolutionpart1' component={EvolutionPart1}/>
+
+              {/* ClassicShips doesn't work here. */}
+              {/* <Route exact path='/evolutionpart1' component={ClassicShips}/> */}
+
               <Route exact path='/evolutionpart1/titanic' component={Titanic}/>
               <Route exact path='/evolutionpart1/oriana' component={Oriana}/>
               <Route exact path='/evolutionpart1/canberra' component={Canberra}/>

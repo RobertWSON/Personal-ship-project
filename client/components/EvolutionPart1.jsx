@@ -1,6 +1,7 @@
 import React from 'react'
 import {getClassics} from '../api/api'
 // import {Link} from 'react-router-dom'
+import ClassicShips from './ClassicShips'
 
 
 class EvolutionPart1 extends React.Component    {
@@ -9,8 +10,8 @@ class EvolutionPart1 extends React.Component    {
         super(props)
 
         this.state = {
-            //initialize shipsList as an empty array
-            classicShips: []
+            //initialize classicShips as an array from evo1 table.
+            classicShips: ['evo1']
         }
         this.setUpClassics = this.setUpClassics.bind(this)
     }    
@@ -41,9 +42,9 @@ class EvolutionPart1 extends React.Component    {
                 </div>
 
                 <div className = "evoContainer">
-                    {/* {this.state.evo1.map (evo1 =>  { */}
-                    {this.state.evo1.map (ship =>  {
-                    {/* {this.state.ships.map (ship =>  {  */}
+    
+                    {this.state.classicShips.map (ship =>  {
+                    
                         return  (
                              
                             <ClassicShips key={ship.id} {...ship}/>
