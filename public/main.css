@@ -449,31 +449,54 @@ div.ShipTermsIntro  {
     border-radius: 20px;
 }  
 
-.evoShips  {
-    /* display: inline-block;
-    flex-direction: column; */
-    /* align-content: center; */
+/* Tried this for the styling of ClassicShips component. It did not work */
+/* .evoContainer  >  .evoShips  {
     justify-content: center;
     align-items: center;
     width: 400px;
     height: 360px;
     background-color: blanchedalmond;
+    border: 1px solid burlywood;
+    border-radius: 20px;
+    margin: 0  30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.evoContainer  >  .evoShips  >  img {
+    width: 300px;
+    height: 200px;
+} */
+
+.evoShips  {
+    /* display: inline-block;
+    flex-direction: column; */
+    /* align-content: center; */
+
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 360px;
+    background-color: blanchedalmond;
+
     /* justify-content: center; */
     /* Experiment to try border, it works */
+
     border: 1px solid burlywood;
     border-radius: 20px;
     margin: 0   30px;
     margin-top: 30px;
     margin-bottom: 30px;
 
-    
+    margin-left: 40px;
+    margin-left: 40px;
     /* justify-content: center;  */
-
 }
 
 .evoShips   img {
     width: 300px;
     height: 200px;
+
     /* justify-content: center; */
     /* align-items: center; */
     /* text-align: center; */
@@ -488,7 +511,10 @@ div.ShipTermsIntro  {
     border-radius: 20px;
     margin: 0   30px;
     margin-top: 15px;
-    margin-bottom: 15px;    
+    margin-bottom: 15px;  
+    
+    margin-left: 40px;
+    margin-left: 40px
 }
 
 .evoIntro   >   .beginnings  {

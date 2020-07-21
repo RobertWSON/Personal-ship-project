@@ -42,16 +42,21 @@ class EvolutionPart1 extends React.Component    {
                 </div>
 
                 <div className = "evoContainer">
-    
+                
+                    
                     {this.state.classicShips.map (ship =>  {
                     
                         return  (
                              
-                            <ClassicShips key={ship.id} {...ship}/>
-                
+                            <div className = "evoShips">    
+                                <ClassicShips 
+                                // className = "evoShips" 
+                                key={ship.id} {...ship}/>
+                            </div>
                         )
                     }
                     )}
+                
                                           
                     <div className = "evoIntro">
                         <h3 className = "Beginnings">History (Early Beginnings)</h3>
