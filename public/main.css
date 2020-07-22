@@ -447,7 +447,7 @@ div.ShipTermsIntro  {
     flex-direction: column;
     align-items: center;
     width: 400px;
-    height: 360px;
+    height: 370px;
     background-color: blanchedalmond;
     border: 1px solid burlywood;
     border-radius: 20px;
@@ -461,6 +461,16 @@ div.ShipTermsIntro  {
 .evoShips   img {
     width: 300px;
     height: 200px;
+}
+
+.evoShips  h3  {
+    font-size: 1.5em;
+    color: cadetblue;
+}
+
+.evoShips  p  {
+    font-size: 1.05em;
+    color: darkred;
 }
 
 .evoIntro   {
@@ -477,9 +487,23 @@ div.ShipTermsIntro  {
     margin-right: 35px
 }
 
-.evoIntro   >   .beginnings  {
+/* .evoIntro   >   .beginnings  {
     align-self: center;
     color: brown;
+} */
+
+.evoIntro  h3  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: peru;
+    font-size: 1.8em;
+}
+
+.evoIntro  p  {
+    font-size: 1.15em;
+    color: darkred;
+    padding: 20px;
 }
 
 /* Evolution Ship Pages

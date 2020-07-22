@@ -59,8 +59,9 @@ class EvolutionPart1 extends React.Component    {
                 
                                           
                     <div className = "evoIntro">
-                        <h3 className = "Beginnings">History (Early Beginnings)</h3>
-                        <p>The start of this <b>evolution (Part 1)</b> takes you from the beginning of (when)where passenger liners as they called them back then began.
+                        {/* <h3 className = "Beginnings">History (Early Beginnings)</h3> */}
+                        <h3>Early Beginnings</h3>
+                        <p>The start of this <b>evolution (Part 1)</b> takes you from the beginning of when passenger liners as they called them back then began.
                            <br/>The Titanic stands out as a main passenger liner for long distance travel, when people in large numbers on a ship began.
 
                            <br/><br/>The ships, Oriana and Canberra began there careers as passenger liners, and then got converted to cruise ships for shorter travel in holiday places.

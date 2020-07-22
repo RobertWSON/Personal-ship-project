@@ -84,7 +84,8 @@ class EvolutionPart2 extends React.Component    {
                     </div>
 
                     <div className = "evoIntro">
-                    <h3 className = "Endings">History (Last of the Classics)</h3>
+                    {/* <h3 className = "Endings">History (Last of the Classics)</h3> */}
+                        <h3>Last of the Classics</h3>
                         <p>The start of this <b>evolution (Part 2)</b> treats you to a real classic Fairstar, that was originally 
                         operated as a troopship and got converted completely to a cruise ship. <br/>I am fortunate enough to have been on this ship during the 90's, when I was a young lad.
                         <br/><br/>The Michelangelo was an Italian classic liner, which earns it classic because of it's capped laticed funnels. 

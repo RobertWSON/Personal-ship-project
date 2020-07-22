@@ -22,8 +22,11 @@ render()    {
                 <h3>{ship_name}</h3>
                 <img src = {img} 
                      title = {img_title} />
-                <p>Find out more on {ship_name} , Click on image</p> 
-                <p>{ship_name} Ship Horn</p>    
+                <p>Find out more on {ship_name} , Click on image
+                <br/><br/>
+                {/* </p> 
+                <p> */}
+                    {ship_name} Ship Horn</p>    
             {/* </div> */}
 
         </React.Fragment>
