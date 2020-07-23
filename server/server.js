@@ -2,8 +2,8 @@ const path = require('path')
 const express = require('express')
 const cruiselines = require('./routes/cruises')
 const shipslist = require('./routes/ships')
-// const classics = require('./routes/classics')
 const classicships = require('./routes/classics')
+const classicship = require('./routes/classic')
 
 const server = express()
 
@@ -15,10 +15,11 @@ server.use(express.static(path.join(__dirname, '../public')))
 server.use('/v1/cruiselines', cruiselines)
 server.use('/v1/shipslist', shipslist)
 
-// Line below sorts out, which v1 express route will handle which request.
-// It is used for helping display classic ships on the evolution pages.
-// server.use('/v1/classics', classics)
+// Line below is used for helping display classic ships in their boxes on evolution pages.
 server.use('/v1/classicships', classicships)
+
+//Line below is used for making the image link for classic ships on evolution page go to the correct classic ship.
+server.use('/v1/classicship', classicship)
 
 //The line below sorts out 404 error, if page does not display
 server.use('/v1/*', (req, res) => res.sendStatus(404))
