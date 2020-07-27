@@ -45,7 +45,7 @@ class EvolutionPart1 extends React.Component    {
                 
                     
                     {this.state.classicShips.map (ship =>  {
-                    
+
                         return  (
                              
                             <div className = "evoShips">    
