@@ -18,7 +18,8 @@ class MakeClassic extends React.Component   {
             norway_crew, norway_gt, norway_fuel_capacity, norway_fuel_consume, norway_fresh_water, norway_speed, 
             norway_passenger_decks, last_name, final_year, final_gt, galileo_name, galileo_years, galileo_gt, 
             galileo_passenger_capacity, meridian_name, meridian_years, meridian_gt, meridian_passenger_capacity, 
-            last_name, sunvista_years, sunvista_gt, sunvista_passenger_capacity
+            // last_name
+             sunvista_years, sunvista_gt, sunvista_passenger_capacity
         } = this.props
 
         // Commented below constant because we want to see how it works without encoding to start with
@@ -113,7 +114,7 @@ class MakeClassic extends React.Component   {
                 <h4>Years as Meridian: {meridian_years}</h4>
                 <h4>Meridian Gross Tonnage: {meridian_gt}</h4>
                 <h4>Meridian Maximum Passengers: {meridian_passenger_capacity}</h4>
-                <h4>Galileo Galilei's Last Name{last_name}</h4>
+                {/* <h4>Galileo Galilei's Last Name{last_name}</h4> */}
                 <h4>Years as Sun Vista: {sunvista_years}</h4>
                 <h4>Sun Vista Gross Tonnage: {sunvista_gt}</h4>
                 <h4>Sun Vista Maximum Passengers: {sunvista_passenger_capacity}</h4>
