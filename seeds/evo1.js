@@ -21,7 +21,7 @@ exports.seed = function(knex, Promise) {
           early_years: '',
           pacific_princess_years: '',
           pacific_years: '',
-          final_year: '',
+          loveboat_final_year: '',
 
           //Titanic info continued
           build_yard: 'Harland and Wolff, Belfast, Northern Ireland, UK',
@@ -64,7 +64,7 @@ exports.seed = function(knex, Promise) {
 
           // To make this work I have to have all the same variables for each id. 
           // Here are the extra variables from Norway Cruise Ship. 
-          new_ship_name: '',
+          cruise_ship_name: '',
           norway_years: '',
           norway_operator: '',
           conversion_cost: '',
@@ -77,9 +77,9 @@ exports.seed = function(knex, Promise) {
           norway_speed: '',
           norway_passenger_decks: '',
           //This space is where I have show more text, for when user wants to see more, does not apply here though.
-          last_name: '',          
-          final_year: '',
-          final_gt: '',
+          norway_last_name: '',          
+          norway_final_year: '',
+          norway_final_gt: '',
 
           // Name changes after Galileo Galilei
           galileo_name: '',
@@ -92,7 +92,7 @@ exports.seed = function(knex, Promise) {
           meridian_gt: '',
           meridian_passenger_capacity: '',
           // As Sun Vista Cruise Ship
-          last_name: '',
+          gg_last_name: '',
           sunvista_years: '',
           sunvista_gt: '',
           sunvista_passenger_capacity: ''
@@ -116,7 +116,7 @@ exports.seed = function(knex, Promise) {
           early_years: '',
           pacific_princess_years: '',
           pacific_years: '',
-          final_year: '',
+          loveboat_final_year: '',
 
           //Oriana info continued
           build_yard: 'Vickers-Armstrongs, Barrow-in-Furness, Cumbria, England',
@@ -160,7 +160,7 @@ exports.seed = function(knex, Promise) {
 
           // To make this work I have to have all the same variables for each id. 
           // Here are the extra variables from Norway Cruise Ship. 
-          new_ship_name: '',
+          cruise_ship_name: '',
           norway_years: '',
           norway_operator: '',
           conversion_cost: '',
@@ -173,9 +173,9 @@ exports.seed = function(knex, Promise) {
           norway_speed: '',
           norway_passenger_decks: '',
           //This space is where I have show more text, for when user wants to see more, does not apply here though.
-          last_name: '',          
-          final_year: '',
-          final_gt: '',
+          norway_last_name: '',          
+          norway_final_year: '',
+          norway_final_gt: '',
 
           // Name changes after Galileo Galilei
           galileo_name: '',
@@ -188,7 +188,7 @@ exports.seed = function(knex, Promise) {
           meridian_gt: '',
           meridian_passenger_capacity: '',
           // As Sun Vista Cruise Ship
-          last_name: '',
+          gg_last_name: '',
           sunvista_years: '',
           sunvista_gt: '',
           sunvista_passenger_capacity: ''
@@ -211,7 +211,7 @@ exports.seed = function(knex, Promise) {
           early_years: '',
           pacific_princess_years: '',
           pacific_years: '',
-          final_year: '',
+          loveboat_final_year: '',
 
           //Canberra info continued
           build_yard: 'Harland and Wolff, Belfast, Northern Ireland, UK',
@@ -255,7 +255,7 @@ exports.seed = function(knex, Promise) {
 
           // To make this work I have to have all the same variables for each id. 
           // Here are the extra variables from Norway Cruise Ship. 
-          new_ship_name: '',
+          cruise_ship_name: '',
           norway_years: '',
           norway_operator: '',
           conversion_cost: '',
@@ -268,9 +268,9 @@ exports.seed = function(knex, Promise) {
           norway_speed: '',
           norway_passenger_decks: '',
           //This space is where I have show more text, for when user wants to see more, does not apply here though.
-          last_name: '',          
-          final_year: '',
-          final_gt: '',
+          norway_last_name: '',          
+          norway_final_year: '',
+          norway_final_gt: '',
 
           // Name changes after Galileo Galilei
           galileo_name: '',
@@ -283,7 +283,7 @@ exports.seed = function(knex, Promise) {
           meridian_gt: '',
           meridian_passenger_capacity: '',
           // As Sun Vista Cruise Ship
-          last_name: '',
+          gg_last_name: '',
           sunvista_years: '',
           sunvista_gt: '',
           sunvista_passenger_capacity: ''
@@ -307,7 +307,7 @@ exports.seed = function(knex, Promise) {
           early_years: '',
           pacific_princess_years: '',
           pacific_years: '',
-          final_year: '',
+          loveboat_final_year: '',
 
           //France info continued
           build_yard: 'Chantiers de l Atlantique, Saint-Nazaire, France', 
@@ -350,7 +350,7 @@ exports.seed = function(knex, Promise) {
           bow_height: '',      
           
           //This space is where I have show more text, for when user wants to see more
-          new_ship_name: 'Norway',
+          cruise_ship_name: 'Norway',
           norway_years: '1980 to 2003',
           norway_operator: 'Norwegian Cruise Line',
           conversion_cost: 'US $150 Million',
@@ -364,10 +364,10 @@ exports.seed = function(knex, Promise) {
           norway_passenger_decks: '1980: 13 decks </br> 1990: 15 decks',
         
           //This space is where I have show more text, for when user wants to see more
-          last_name: 'Blue Lady',          
+          norway_last_name: 'Blue Lady',          
           // changed_name: 'Blue Lady',
-          final_year: '2004',
-          final_gt: '76049',
+          norway_final_year: '2004',
+          norway_final_gt: '76049',
 
           // Name changes after Galileo Galilei
           galileo_name: '',
@@ -380,7 +380,7 @@ exports.seed = function(knex, Promise) {
           meridian_gt: '',
           meridian_passenger_capacity: '',
           // As Sun Vista Cruise Ship
-          last_name: '',
+          gg_last_name: '',
           sunvista_years: '',
           sunvista_gt: '',
           sunvista_passenger_capacity: ''
@@ -404,7 +404,7 @@ exports.seed = function(knex, Promise) {
           early_years: '',
           pacific_princess_years: '',
           pacific_years: '',
-          final_year: '',
+          loveboat_final_year: '',
 
           //Galileo Galilei continued
           build_yard: '	Cantieri Riuniti dell Adriatico, Monfalcone, Italy', 
@@ -447,7 +447,7 @@ exports.seed = function(knex, Promise) {
 
           // To make this work I have to have all the same variables for each id. 
           // Here are the extra variables from Norway Cruise Ship. 
-          new_ship_name: '',
+          cruise_ship_name: '',
           norway_years: '',
           norway_operator: '',
           conversion_cost: '',
@@ -460,9 +460,9 @@ exports.seed = function(knex, Promise) {
           norway_speed: '',
           norway_passenger_decks: '',
           //This space is where I have show more text, for when user wants to see more, does not apply here though.
-          last_name: '',          
-          final_year: '',
-          final_gt: '',
+          norway_last_name: '',          
+          norway_final_year: '',
+          norway_final_gt: '',
 
           //This space is where I have show more text, for when user wants to see more
 
@@ -478,7 +478,7 @@ exports.seed = function(knex, Promise) {
           meridian_gt: '30440',
           meridian_passenger_capacity: '1428',
 
-          last_name: 'Sun Vista',
+          gg_last_name: 'Sun Vista',
           sunvista_years: '1997 to 1999',
           sunvista_gt: '30440',
           sunvista_passenger_capacity: '1428'
@@ -503,7 +503,7 @@ exports.seed = function(knex, Promise) {
           early_years: '1971 to 1975',
           pacific_princess_years: '1975 to 2002',
           pacific_years: '2002 to 2013',
-          final_year: '2013',
+          loveboat_final_year: '2013',
           build_yard: 'Nordseewerke, emden, West Germany',
           operator: '1971-1975: Flagship Cruises, </br> 1975-2002: Princess Cruises, </br> 2002-2008: Pullmantur, </br> 2008-2013: Quail Cruises',
           registry_port: '1971-1975: Oslo, Norway, </br> 1975-2002: London, UK, </br>, 2002-2012: Nassau, Bahamas, </br> 2012-2013: Lome, Togo',
@@ -528,6 +528,7 @@ exports.seed = function(knex, Promise) {
           power_rpm: '',
           fuel_type: 'Marine Oil',
           fuel_capacity: '1977 Tons (2008.727 Tonnes)',
+          fuel_consumption: '100 Tonnes per day',
           fresh_water: '1113 Tons (1130.862 Tonnes)</br> or 1130862 Litres',
           propellors: 'Two controllable pitch propellors',
           propellor_size: '12 feet 11.4 inches (3.947 m) diameter each',
@@ -544,7 +545,7 @@ exports.seed = function(knex, Promise) {
           
           // To make this work I have to have all the same variables for each id. 
           // Here are the extra variables from Norway Cruise Ship. 
-          new_ship_name: '',
+          cruise_ship_name: '',
           norway_years: '',
           norway_operator: '',
           conversion_cost: '',
@@ -557,9 +558,9 @@ exports.seed = function(knex, Promise) {
           norway_speed: '',
           norway_passenger_decks: '',
           //This space is where I have show more text, for when user wants to see more, does not apply here though.
-          last_name: '',          
-          final_year: '',
-          final_gt: '',
+          norway_last_name: '',          
+          norway_final_year: '',
+          norway_final_gt: '',
 
           // Name changes after Galileo Galilei
           galileo_name: '',
@@ -572,7 +573,7 @@ exports.seed = function(knex, Promise) {
           meridian_gt: '',
           meridian_passenger_capacity: '',
           // As Sun Vista Cruise Ship
-          last_name: '',
+          gg_last_name: '',
           sunvista_years: '',
           sunvista_gt: '',
           sunvista_passenger_capacity: ''

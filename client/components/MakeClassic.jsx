@@ -10,16 +10,15 @@ class MakeClassic extends React.Component   {
 
         const   {
             ship_name, img, img_title, service_years, france_service_years, early_service_years, original_name, early_years,
-            pacific_princess_years, pacific_years, final_year, build_yard, operator, registry_port, cost, imo, passenger_capacity_full, 
-            crew_capacity, gross_tonnage, length, beam, draft, height, funnel_height, speed, deadweight, lightship, 
-            loaded_displacement, power, power_rpm, fuel_type, fuel_capacity, fuel_consumption, fresh_water, propellors,
+            pacific_princess_years, pacific_years, loveboat_final_year, build_yard, operator, registry_port, cost, imo, 
+            passenger_capacity_full, crew_capacity, gross_tonnage, length, beam, draft, height, funnel_height, speed, deadweight, 
+            lightship, loaded_displacement, power, power_rpm, fuel_type, fuel_capacity, fuel_consumption, fresh_water, propellors,
             propellor_size, rudder, rudder_size, decks, accessible_decks, bridge_height, bridge_water, shelter_deck, 
-            bow_bridge, bow_height, new_ship_name, norway_years, norway_operator, conversion_cost, norway_passengers, 
+            bow_bridge, bow_height, cruise_ship_name, norway_years, norway_operator, conversion_cost, norway_passengers, 
             norway_crew, norway_gt, norway_fuel_capacity, norway_fuel_consume, norway_fresh_water, norway_speed, 
-            norway_passenger_decks, last_name, final_year, final_gt, galileo_name, galileo_years, galileo_gt, 
-            galileo_passenger_capacity, meridian_name, meridian_years, meridian_gt, meridian_passenger_capacity, 
-            // last_name
-             sunvista_years, sunvista_gt, sunvista_passenger_capacity
+            norway_passenger_decks, norway_last_name, norway_final_year, norway_final_gt, galileo_name, galileo_years, galileo_gt, 
+            galileo_passenger_capacity, meridian_name, meridian_years, meridian_gt, meridian_passenger_capacity, gg_last_name,
+            sunvista_years, sunvista_gt, sunvista_passenger_capacity
         } = this.props
 
         // Commented below constant because we want to see how it works without encoding to start with
@@ -56,7 +55,7 @@ class MakeClassic extends React.Component   {
                 <h4>Years as Sea Venture: {early_years}</h4>
                 <h4>Years as Pacific Princess: {pacific_princess_years}</h4>
                 <h4>Years as Pacific: {pacific_years}</h4>
-                <h4>Love Boat's Final Year: {final_year}</h4>
+                <h4>Love Boat's Final Year: {loveboat_final_year}</h4>
                 <h4>Builder: {build_yard}</h4>
                 <h4>Operator: {operator}</h4>
                 <h4>Port of Registry: {registry_port}</h4>
@@ -91,7 +90,7 @@ class MakeClassic extends React.Component   {
                 <h4>Shelter Deck: {shelter_deck}</h4>
                 <h4>Bow to Bridge Length: {bow_bridge}</h4>
                 <h4>Bow Height: {bow_height}</h4>
-                <h4>France Liner New Name: {new_ship_name}</h4>
+                <h4>France Liner New Name: {cruise_ship_name}</h4>
                 <h4>Years as Norway: {norway_years}</h4>
                 <h4>Operator: {norway_operator}</h4>
                 <h4>France to Norway Conversion Cost:{conversion_cost}</h4>
@@ -103,9 +102,9 @@ class MakeClassic extends React.Component   {
                 <h4>Norway Fresh Water Capacity: {norway_fresh_water}</h4>
                 <h4>Norway Speed: {norway_speed}</h4>
                 <h4>Norway Passenger Decks: {norway_passenger_decks}</h4>
-                <h4>France's Last Name: {last_name}</h4>
-                <h4>France's Final Year: {final_year}</h4>
-                <h4>France's Final Gross Tonnage:{final_gt}</h4>
+                <h4>France's Last Name: {norway_last_name}</h4>
+                <h4>France's Final Year: {norway_final_year}</h4>
+                <h4>France's Final Gross Tonnage:{norway_final_gt}</h4>
                 <h4>Galileo Galilei's 1st New Name: {galileo_name}</h4>
                 <h4>Years as Galileo: {galileo_years}</h4>
                 <h4>Galileo Gross Tonnage: {galileo_gt}</h4>
@@ -114,7 +113,7 @@ class MakeClassic extends React.Component   {
                 <h4>Years as Meridian: {meridian_years}</h4>
                 <h4>Meridian Gross Tonnage: {meridian_gt}</h4>
                 <h4>Meridian Maximum Passengers: {meridian_passenger_capacity}</h4>
-                {/* <h4>Galileo Galilei's Last Name{last_name}</h4> */}
+                <h4>Galileo Galilei's Last Name{gg_last_name}</h4> 
                 <h4>Years as Sun Vista: {sunvista_years}</h4>
                 <h4>Sun Vista Gross Tonnage: {sunvista_gt}</h4>
                 <h4>Sun Vista Maximum Passengers: {sunvista_passenger_capacity}</h4>

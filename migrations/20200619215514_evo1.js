@@ -42,7 +42,7 @@ exports.up = function(knex, Promise) {
 
         //France liner details. In 1980 she changed her name to Norway and has a few new details because of this.
         table.string('france_service_years')
-        table.string('new_ship_name')
+        table.string('cruise_ship_name')
         table.string('norway_years')
         table.string('norway_operator')
         table.string('conversion_cost')
@@ -54,9 +54,9 @@ exports.up = function(knex, Promise) {
         table.string('norway_fresh_water')
         table.string('norway_speed')
         table.string('norway_passenger_decks')
-        table.string('last_name')
-        table.integer('final_year')
-        table.integer('final_gt')
+        table.string('norway_last_name')
+        table.integer('norway_final_year')
+        table.integer('norway_final_gt')
 
         //Galileo Galilei details. She changed her name several times and has a few new details because of this.
         table.string('early_service_years')
@@ -71,7 +71,7 @@ exports.up = function(knex, Promise) {
         table.string('meridian_gt')
         table.integer('meridian_passenger_capacity')
         //Galielo Galilei as Sun Vista
-        table.string('sunvista_name')
+        table.string('gg_last_name')
         table.string('sunvista_years')
         table.string('sunvista_gt')
         table.integer('sunvista_passenger_capacity')
@@ -81,6 +81,7 @@ exports.up = function(knex, Promise) {
         table.string('early_years')
         table.string('pacific_princess_years')
         table.string('pacific_years')
+        table.integer('loveboat_final_year')
     })
 };
 
