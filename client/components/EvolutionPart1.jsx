@@ -1,6 +1,5 @@
 import React from 'react'
 import {getClassics} from '../api/api'
-// import {Link} from 'react-router-dom'
 import ClassicShips from './ClassicShips'
 
 
@@ -10,8 +9,16 @@ class EvolutionPart1 extends React.Component    {
         super(props)
 
         this.state = {
-            //initialize classicShips as an array from evo1 table.
+            //initialize classicShips as an array from evo1 table. This works
             classicShips: ['evo1']
+            // classicships:[{ id:1, ship_name:"", img:"" , img_title:""},
+            //                { id:2, ship_name:"", img:"" , img_title:""},
+            //                { id:3, ship_name:"" , img:"" , img_title:""},  
+            //                { id:4, ship_name:"" , img:"" , img_title:""},  
+            //                { id:5, ship_name:"", img:"" , img_title:""},
+            //                { id:6, ship_name:"", img:"" , img_title:""}
+            //              ]
+            //Tried id 1 to 6 array, but it did not work
         }
         this.setUpClassics = this.setUpClassics.bind(this)
     }    
@@ -43,15 +50,12 @@ class EvolutionPart1 extends React.Component    {
 
                 <div className = "evoContainer">
                 
-                    
                     {this.state.classicShips.map (ship =>  {
 
                         return  (
-                             
-                            <div className = "evoShips">    
-                                <ClassicShips 
-                                // className = "evoShips" 
-                                key={ship.id} {...ship}/>
+
+                            <div key = {ship.id} className = "evoShips">     
+                                <ClassicShips {...ship} />
                             </div>
                         )
                     }

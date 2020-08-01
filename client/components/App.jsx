@@ -1,22 +1,13 @@
 import React from 'react'
-//import {HashRouter as Router, Route} from 'react-router-dom'
 
 //I will change to BrowserRouter because I think that this only works with Hash Link
 import {BrowserRouter, Route} from 'react-router-dom'
-
-//import {HashRouter as Router, Route, Link} from 'react-router-dom'
 import Nav from './Nav'
 import Home from './Home'
 // Evolution pages (Part1)
 import EvolutionPart1 from './EvolutionPart1'
-
 import FindClassic from './FindClassic'
-// import Titanic from './Titanic'
-// import Oriana from './Oriana'
-// import Canberra from './Canberra'
-// import France from './France'
-// import GalileoGalilei from './GalileoGalilei'
-// import PacificPrincess from './PacificPrincess'
+
 // Evolution pages (Part2)
 import EvolutionPart2 from './EvolutionPart2'
 import Michelangelo from './Michelangelo'
@@ -28,13 +19,7 @@ import AllureoftheSeas from './AllureoftheSeas'
 
 import CruiseLines from './CruiseLines'
 import Review from './Review'
-//import ListofShips from './ListofShips'
-//import { HashLink as Link } from 'react-router-hash-link'
 import ShipTerms from './ShipTerms'
-
-// import MovingShip from './MovingShip'
-// import Porthole from '.`/Porthole'
-
 
 class App extends React.Component {
   constructor(props)  {
@@ -44,33 +29,15 @@ class App extends React.Component {
   render () {
     return (
       <BrowserRouter>
-      {/* <Router> */}
-        {/* <React.Fragment> */}
+    
           <div>
-            {/* <div>
-                <h1>Cruise Shipin</h1> 
-            </div> */}
-            {/* <div> */}
+            
               <Route path='/' component={Nav}/>
               <Route exact path='/' component={Home}/>
-            
-            {/* <Route exact path='/' component={MovingShip}/> */}
 
               {/* Routes for Evolution pages and associated ships */}
               <Route exact path='/evolutionpart1' component={EvolutionPart1}/>
-
               <Route path = '/evolutionpart1/:ship_name' component={FindClassic}/>
-
-              {/* ClassicShips doesn't work here. */}
-              {/* <Route exact path='/evolutionpart1' component={ClassicShips}/> */}
-
-              {/* Comment these routes, so that I can get page working through */}
-              {/* <Route exact path='/evolutionpart1/titanic' component={Titanic}/>
-              <Route exact path='/evolutionpart1/oriana' component={Oriana}/>
-              <Route exact path='/evolutionpart1/canberra' component={Canberra}/>
-              <Route exact path='/evolutionpart1/france' component={France}/>
-              <Route exact path='/evolutionpart1/galileogalilei' component={GalileoGalilei}/>
-              <Route exact path='/evolutionpart1/pacificprincess' component={PacificPrincess}/> */}
 
               <Route exact path='/evolutionpart2' component={EvolutionPart2}/>
               <Route exact path='/evolutionpart2/michelangelo' component={Michelangelo}/>

@@ -21,11 +21,6 @@ class MakeClassic extends React.Component   {
             sunvista_years, sunvista_gt, sunvista_passenger_capacity
         } = this.props
 
-        // Commented below constant because we want to see how it works without encoding to start with
-        // Constant below is used, so that the ship name title for a specific ship replaces underscores with a space 
-        // withnin the ship name. 
-        // const encodedClassicship = ship_name.replace(/\s/g, '_')
-
     return  (
         <React.Fragment>
 
