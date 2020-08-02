@@ -16,7 +16,7 @@ class FindClassic extends React.Component {
     if (location.state) {
       this.setState({ classicship: location.state })
     } else {
-      this.setUpClassic(match.params.shipname)
+      this.setUpClassic(match.params.ship_name)
     }
   }
 
