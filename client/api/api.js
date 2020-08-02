@@ -67,7 +67,8 @@ export function getClassic(ship_name)   {
 
     return request.get(`/v1/classicship/${ship_name}`)
         .then(res =>  {
-            const classicship = res.body
+            const classicship = ship
+            // res.body
             console.log('Got classicship! client/api/api.js', classicship)
             return classicship
         })

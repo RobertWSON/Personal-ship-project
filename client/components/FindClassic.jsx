@@ -10,42 +10,38 @@ class FindClassic extends React.Component   {
         this.state = {
             
             //initialize classicShip as an array from evo1 table.
-            classicship: ['evo1']
+            // classicship: ['evo1']
+            classicship: null
         }
         this.setUpClassic = this.setUpClassic.bind(this)
     }
     
     componentDidMount() {
-        console.log('cdm')
-        this.setUpClassic()
+        const { location, match} = this.props
+        if (location.state) {
+            this.setState({ classicship: location.state})
+        }   else    {
+            this.setUpClassic(match.params.ship_name)
+        }
     }
 
-    setUpClassic()  {
-        getClassic(this.state.classicship)
+    setUpClassic(ShipName)  {
+        getClassic(ShipName)
 
-        .then(res =>    {
+        .then(ship =>    {
             this.setState({
-                classicship: res
+                classicship: ship
             })
         })
     }
 
     render()    {
 
-        return  (
-            <React.Fragment>
+        if (!this.state.classicship) 
+        
+        return <div>Loading...</div>// Create your loading component
+        return <MakeClassic {...this.state.ClassicShip} />
 
-            {this.state.classicship.map (ship => {
-                return  (
-
-                    <MakeClassic key = {ship.id} {...ship}/>
-                   
-                )
-            }
-            )}
-
-            </React.Fragment>
-        )
     }
 }
 

@@ -13,6 +13,9 @@ function getClassic(ship_name, testConn)    {
     // .distinct('ship_name')
     // I have a feeling that distinct may not be correct to use here
      
+    // .first() method returns only the first result, which is an object not an Array.
+    .first()
+
     // I am going to give where a try, it may work
     .where('ship_name', ship_name)
     //Line below picks out ship names in alphabetical order by id
