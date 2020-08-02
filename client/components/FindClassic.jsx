@@ -1,52 +1,38 @@
 import React from 'react'
 import MakeClassic from './MakeClassic'
-import {getClassic} from '../api/api'
+import { getClassic } from '../api/api'
 
-class FindClassic extends React.Component   {
-
-    constructor(props)  {
-        super(props)
-
-        this.state = {
-            
-            //initialize classicShip as an array from evo1 table.
-            classicship: ['evo1']
-        }
-        this.setUpClassic = this.setUpClassic.bind(this)
+class FindClassic extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      classicship: null
     }
-    
-    componentDidMount() {
-        console.log('cdm')
-        this.setUpClassic()
+    this.setUpClassic = this.setUpClassic.bind(this)
+  }
+
+  componentDidMount() {
+    const { location, match } = this.props
+    if (location.state) {
+      this.setState({ classicship: location.state })
+    } else {
+      this.setUpClassic(match.params.ship_name)
     }
+  }
 
-    setUpClassic()  {
-        getClassic(this.state.classicship)
-
-        .then(res =>    {
-            this.setState({
-                classicship: res
-            })
+  setUpClassic(shipName) {
+    getClassic(shipName)
+      .then(ship => {
+        this.setState({
+          classicship: ship
         })
-    }
+      })
+  }
 
-    render()    {
-
-        return  (
-            <React.Fragment>
-
-            {this.state.classicship.map (ship => {
-                return  (
-
-                    <MakeClassic key = {ship.id} {...ship}/>
-                   
-                )
-            }
-            )}
-
-            </React.Fragment>
-        )
-    }
+  render() {
+    if (!this.state.classicship) return <div>Loading...</div> //Create your loading component
+    return <MakeClassic {...this.state.classicship} />
+  }
 }
 
 export default FindClassic

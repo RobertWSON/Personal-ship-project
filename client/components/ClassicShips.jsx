@@ -22,7 +22,10 @@ render()    {
 
                 <ul>     
                     <li>       
-                    <Link to = {`/evolutionpart1/${ship_name}`}>
+                    <Link  to={{
+                              pathname: `/evolutionpart1/${ship_name}`,
+                              state: this.props
+                            }}>
                         <img src = {img} title = {img_title} />
                     </Link> 
                     </li>
