@@ -17,6 +17,7 @@ class FindClassic extends React.Component   {
     }
     
     componentDidMount() {
+        console.log(this.props)
         const { location, match} = this.props
         if (location.state) {
             this.setState({ classicship: location.state})
@@ -37,9 +38,7 @@ class FindClassic extends React.Component   {
 
     render()    {
 
-        if (!this.state.classicship) 
-        
-        return <div>Loading...</div>// Create your loading component
+        if (!this.state.classicship) return <div>Loading...</div>// Create your loading component
         return <MakeClassic {...this.state.ClassicShip} />
 
     }

@@ -18,18 +18,18 @@ render()    {
     return  (
         <React.Fragment>
        
-                <h3>{ship_name}</h3>
+                <h3>{ship_name}</h3> 
 
                 {/* <ul>     
                     <li>        */}
-                    <Link to = {{
+                    <Link key = {ship.id} to = {{ 
                             pathname: `/evolutionpart1/${ship_name}`,
                             state: this.props
                             }}>
                         <img src = {img} title = {img_title} />
                     </Link> 
                     {/* </li>
-                </ul>        */}
+                </ul>         */}
 
                 <p>Find out more on {ship_name} , Click on image
                 <br/><br/>
