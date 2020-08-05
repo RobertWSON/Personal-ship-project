@@ -206,11 +206,11 @@ class ListofShips extends React.Component {
               return   (
                 //We only need to find the id for each ship, because the api is doing the rest of the work for us by finding the 
                 //correct Cruise line to match the id. 
-                <li key = {ship.id}>
+                <li>
                   
                   {/* Link in Cruise Lines Page to Review Page now works, because we have used encoding referenced from constants above. 
                   So we now have a HashLink with a hash and underscore in it.   */}
-                  <Link className = "shipsList" smooth to = {`/cruiselines/${encodedCruiseline}#${encodedShipName}`}>
+                  <Link className="shipsList" smooth to={`/cruiselines/${encodedCruiseline}#${encodedShipName}`}>
                     <div className = "ship">  
                       <span>{this.findShipNames(ship)}</span>
                       <img src ={ship.img} title = {ship.ship_name}/>

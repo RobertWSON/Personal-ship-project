@@ -8,38 +8,42 @@ class FindClassic extends React.Component   {
         super(props)
 
         this.state = {
-            
-            //initialize classicShip as an array from evo1 table.
-            // classicship: ['evo1']
+            //Initializing classicships array to allow for no data coming through.
             classicship: null
         }
         this.setUpClassic = this.setUpClassic.bind(this)
     }
     
     componentDidMount() {
-        console.log(this.props)
-        const { location, match} = this.props
-        if (location.state) {
-            this.setState({ classicship: location.state})
+        //  The if statement below checks to see if the Link path has been picked up when FindClassic component mounts, 
+        // in it's initial state. It is the inital finding of the Link.  
+        if (this.props.location.state) {
+            this.setState({ classicship: this.props.location.state})
+            //This else part matches the state property in the Link with ship_name and this is what helps display a ship page.  
         }   else    {
-            this.setUpClassic(match.params.ship_name)
+            this.setUpClassic(this.props.match.params.ship_name)
         }
     }
 
-    setUpClassic(ShipName)  {
-        getClassic(ShipName)
-
-        .then(ship =>    {
+    // This function is for the set up of the classic ship and it has been given a temporary name for the parameter (classic name). 
+    setUpClassic(ClassicName)  {
+        // initially searches getClassic api to find the classic ship.
+        getClassic(ClassicName)
+        // .then gets data from database
+        .then(ship => {
             this.setState({
+                //Line  below finds a classic ship
                 classicship: ship
             })
         })
     }
 
     render()    {
-
-        if (!this.state.classicship) return <div>Loading...</div>// Create your loading component
-        return <MakeClassic {...this.state.ClassicShip} />
+        // Line below allows for classicships being null or having no data appearing, so it says Loading... in browser.
+        if (this.state.classicship === null) return <div>Loading...</div>
+        // We do not need to map for a ship because we have already picked up the ship by a key id in Evolution Part 1.
+        // We now have the correct ship, so we can Create our own loading component.
+        return <MakeClassic {...this.state.classicship} />
 
     }
 }

@@ -108,7 +108,7 @@ class MakeClassic extends React.Component   {
                 <h4>Years as Meridian: {meridian_years}</h4>
                 <h4>Meridian Gross Tonnage: {meridian_gt}</h4>
                 <h4>Meridian Maximum Passengers: {meridian_passenger_capacity}</h4>
-                <h4>Galileo Galilei's Last Name{gg_last_name}</h4> 
+                <h4>Galileo Galilei's Last Name: {gg_last_name}</h4> 
                 <h4>Years as Sun Vista: {sunvista_years}</h4>
                 <h4>Sun Vista Gross Tonnage: {sunvista_gt}</h4>
                 <h4>Sun Vista Maximum Passengers: {sunvista_passenger_capacity}</h4>
