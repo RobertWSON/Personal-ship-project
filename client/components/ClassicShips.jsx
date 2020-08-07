@@ -9,7 +9,8 @@ class ClassicShips extends React.Component  {
     const   {
         ship_name,
         img,
-        img_title
+        img_title, 
+        ship_horn
     } = this.props   
 
     return  (
@@ -25,9 +26,18 @@ class ClassicShips extends React.Component  {
                     }}>                    
                 <img src = {img} title = {img_title} />
             </Link> 
-            <p>Find out more on {ship_name} , Click on image
+            <p> Find out more on {ship_name} , Click on Image
             <br/><br/>
-                {ship_name} Ship Horn</p>
+                Experience {ship_name}</p>
+
+            {/* Trying to get Text ship Horn Link to open a mp4 file for the ship horn.     */}
+            <Link to={{ 
+                    source: {ship_horn},
+                    // pathname: `/${ship_horn}`,
+                    // pathname: `/evolutionpart1/${ship_horn}`,
+                    state: this.props 
+                    }}>Ship Horn
+            </Link>    
 
         </React.Fragment>                
     )

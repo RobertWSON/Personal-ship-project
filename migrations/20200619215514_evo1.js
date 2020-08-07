@@ -82,6 +82,8 @@ exports.up = function(knex, Promise) {
         table.string('pacific_princess_years')
         table.string('pacific_years')
         table.integer('loveboat_final_year')
+        table.string('ship_horn')
+        table.string("first_para")
     })
 };
 

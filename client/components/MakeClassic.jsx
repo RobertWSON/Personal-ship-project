@@ -18,7 +18,7 @@ class MakeClassic extends React.Component   {
             norway_crew, norway_gt, norway_fuel_capacity, norway_fuel_consume, norway_fresh_water, norway_speed, 
             norway_passenger_decks, norway_last_name, norway_final_year, norway_final_gt, galileo_name, galileo_years, galileo_gt, 
             galileo_passenger_capacity, meridian_name, meridian_years, meridian_gt, meridian_passenger_capacity, gg_last_name,
-            sunvista_years, sunvista_gt, sunvista_passenger_capacity
+            sunvista_years, sunvista_gt, sunvista_passenger_capacity, first_para
         } = this.props
 
     return  (
@@ -112,6 +112,28 @@ class MakeClassic extends React.Component   {
                 <h4>Years as Sun Vista: {sunvista_years}</h4>
                 <h4>Sun Vista Gross Tonnage: {sunvista_gt}</h4>
                 <h4>Sun Vista Maximum Passengers: {sunvista_passenger_capacity}</h4>
+            </div>
+
+            <div className = "classic-background">
+                <h3>Early Life</h3>
+                <br/><br/>
+                <p>{first_para}</p>
+            </div>
+
+            <div>
+                <h3>As a Cruise Ship</h3>
+            </div>
+
+            <div>
+                <h3>Memorable Moments</h3>
+            </div>
+
+            <div>
+                <h3>Final Years</h3>
+            </div>
+
+            <div>
+                <h3>Recent Times</h3>
             </div>
 
         </React.Fragment>
