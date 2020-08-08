@@ -84,6 +84,7 @@ exports.up = function(knex, Promise) {
         table.integer('loveboat_final_year')
         table.string('ship_horn')
         table.string("first_para")
+        table.string("second_para")
     })
 };
 

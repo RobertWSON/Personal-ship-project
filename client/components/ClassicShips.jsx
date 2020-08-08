@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import {ShipHorn} from './ShipHorn'
 
 
 class ClassicShips extends React.Component  {
@@ -30,14 +31,21 @@ class ClassicShips extends React.Component  {
             <br/><br/>
                 Experience {ship_name}</p>
 
+            {/* Going to try a show/hide for a sound video file when Ship Horn is clicked, instead of opening new url.*/}
+            {/* Commented for now because not working.  */}
+             {/* <div>  */}
+             {/* key = {ship_horn}> */}
+                {/* <ShipHorn />
+            </div>        */}
+                    
             {/* Trying to get Text ship Horn Link to open a mp4 file for the ship horn.     */}
-            <Link to={{ 
-                    source: {ship_horn},
-                    // pathname: `/${ship_horn}`,
-                    // pathname: `/evolutionpart1/${ship_horn}`,
-                    state: this.props 
+            {/* <Link to={{ 
+                    source: {ship_horn}, */}
+                    {/* pathname: `/${ship_horn}`, */}
+                    {/* pathname: `/evolutionpart1/${ship_horn}`, */}
+                    {/* state: this.props 
                     }}>Ship Horn
-            </Link>    
+            </Link>     */}
 
         </React.Fragment>                
     )

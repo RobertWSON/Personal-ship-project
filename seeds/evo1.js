@@ -97,7 +97,8 @@ exports.seed = function(knex, Promise) {
           sunvista_gt: '',
           sunvista_passenger_capacity: '',
           ship_horn: '',
-          first_para: "The Titanic is the start of where it all begin with travelling in large numbers. The ship was built in Belfast, Northern Ireland and one of the sister ships of the RMS Line, which stands for Royal Mail Steam Line. At the time it was one of the largest passenger ships. Unfortunately it did not end well for it though. On it's maiden voyage travelling from Southhampton to New York it sailed for 10 days and then unfortunately hit an iceberg and that was the start of the disaster."
+          first_para: "The Titanic is the start of where it all begin with travelling in large numbers. The ship was built in Belfast, Northern Ireland and one of the sister ships of the RMS Line, which stands for Royal Mail Steam Line. At the time it was one of the largest passenger ships. Unfortunately it did not end well for it though. On it's maiden voyage travelling from Southhampton to New York it sailed for 10 days and then unfortunately hit an iceberg and that was the start of the disaster.",
+          second_para: "However there is a twist to the above theory of why it sank.<br/> It is believed that at the beginning of its voyage, there was a fire that started at the bottom of the ship. The crew who are responsible usually for filling the boilers up with coal, had a new challenge and they were trying to get rid of the fire. The fire caused a distinctive dark mark on the outside hull and it is believed that the bulkheads inside had been weakened by the fire."
           
         },
         {
@@ -194,7 +195,8 @@ exports.seed = function(knex, Promise) {
           sunvista_gt: '',
           sunvista_passenger_capacity: '',
           ship_horn: '',
-          first_para: "The Oriana is the start of where cruising began. </br> She was able to travel through Panama Canal and so it was able to travel to lots of different locations. Because of her deep draft, like a lot of the older cruise ships had, she had to tender in some ports like Pacific Islands. Tender are boats used on the side of a ship to take passenger to a port when the draft on a ship is to deep to go into a port."
+          first_para: "The Oriana is the start of where cruising began. </br> She was able to travel through Panama Canal and so it was able to travel to lots of different locations. Because of her deep draft, like a lot of the older cruise ships had, she had to tender in some ports like Pacific Islands. Tender are boats used on the side of a ship to take passenger to a port when the draft on a ship is to deep to go into a port. She was the fastest ship in the P & O (Peninsular and Oriental) fleet and achieved 30.64 knots durinf sea trials in November 1960.",
+          second_para: "Oriana's maiden voyage was in December 1960, from Southampton, UK to Sydney, Australia and arrived in Sydney on December 30th 1960. She also visited New Zealand and was a regular on that service for "
 
         },
         {
@@ -291,7 +293,8 @@ exports.seed = function(knex, Promise) {
           sunvista_gt: '',
           sunvista_passenger_capacity: '',
           ship_horn: '',
-          first_para: "The Canberra along with the Oriana are the first ships to start off the famous P & O cruise line. The P & O Line started off as P & O Orient Line, but soon was changed to just P & O. At first Canberra was just a passenger ship used to carry passenger from one country to another. It wasn't until 1973, that she began year round cruising between UK and Australia. In 1982 it took on a different operation and was used by the British government to carry troops to the Falkland Islands. After this Canberra was used as a cruise ship again in Australia and the Pacific Islands until she retired in 1997."
+          first_para: "The Canberra along with the Oriana are the first ships to start off the famous P & O cruise line. The P & O Line started off as P & O Orient Line, but soon was changed to just P & O. At first Canberra was just a passenger ship used to carry passenger from one country to another. It wasn't until 1973, that she began year round cruising between UK and Australia. In 1982 it took on a different operation and was used by the British government to carry troops to the Falkland Islands. After this Canberra was used as a cruise ship again in Australia and the Pacific Islands until she retired in 1997.",
+          second_para: ""
 
         },
         {
@@ -390,7 +393,8 @@ exports.seed = function(knex, Promise) {
           sunvista_gt: '',
           sunvista_passenger_capacity: '',
           ship_horn: '',
-          first_para: "The SS France was a steam ship, hence the intials SS, that originally operated for the French Line. <br/>As can be seen in the photo above she originally had a black and white hull (this is the main structure of the ship). <br/> <br/>The <strong>above</strong> photo was taken when she was entering her home port of Le Havre, France for the very first time on 23rd of November 1961. <br>Her hull colour had changed to <strong>green</strong> during the mid to late 1960's and this rare photo below, shows her departing from Southhampton with her green hull."
+          first_para: "The SS France was a steam ship, hence the intials SS, that originally operated for the French Line. <br/>As can be seen in the photo above she originally had a black and white hull (this is the main structure of the ship). <br/> <br/>The <strong>above</strong> photo was taken when she was entering her home port of Le Havre, France for the very first time on 23rd of November 1961. <br>Her hull colour had changed to <strong>green</strong> during the mid to late 1960's and this rare photo below, shows her departing from Southhampton with her green hull.",
+          second_para: ""
 
         },
         {
@@ -490,7 +494,8 @@ exports.seed = function(knex, Promise) {
           sunvista_gt: '30440',
           sunvista_passenger_capacity: '1428',
           ship_horn: '',
-          first_para: "The Galileo Galilei is an Italian built ship, exclusively meant for cruising all the way through it's career."
+          first_para: "The Galileo Galilei is an Italian built ship, exclusively meant for cruising all the way through it's career.",
+          second_para: ""
 
         },
         {
@@ -587,7 +592,8 @@ exports.seed = function(knex, Promise) {
           sunvista_gt: '',
           sunvista_passenger_capacity: '',
           ship_horn: '/videos/classics/Pacific Princess/Bermuda-PacificPrincess(ex-Love Boat)ShipsWhistle.mp4',
-          first_para: "The Pacific Princess is one of the longest serving cruise ships from 1970's, having latest 43 years. <br/>She was originally built as Sea Venture and changed her name to Pacific Princess in 1975, in time before the TV show Love Boat, that aired in 1977."
+          first_para: "The Pacific Princess is one of the longest serving cruise ships from 1970's, having latest 43 years. <br/>She was originally built as Sea Venture and changed her name to Pacific Princess in 1975, in time before the TV show Love Boat, that aired in 1977.",
+          second_para: ""
         }
       ]);
     });

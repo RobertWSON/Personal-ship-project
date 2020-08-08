@@ -18,7 +18,7 @@ class MakeClassic extends React.Component   {
             norway_crew, norway_gt, norway_fuel_capacity, norway_fuel_consume, norway_fresh_water, norway_speed, 
             norway_passenger_decks, norway_last_name, norway_final_year, norway_final_gt, galileo_name, galileo_years, galileo_gt, 
             galileo_passenger_capacity, meridian_name, meridian_years, meridian_gt, meridian_passenger_capacity, gg_last_name,
-            sunvista_years, sunvista_gt, sunvista_passenger_capacity, first_para
+            sunvista_years, sunvista_gt, sunvista_passenger_capacity, first_para, second_para
         } = this.props
 
     return  (
@@ -122,6 +122,8 @@ class MakeClassic extends React.Component   {
 
             <div>
                 <h3>As a Cruise Ship</h3>
+                <br/><br/>
+                <p>{second_para}</p>    
             </div>
 
             <div>
