@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import {ShipHorn} from './ShipHorn'
+import ShipHorn from './ShipHorn'
 
 
 class ClassicShips extends React.Component  {
@@ -28,10 +28,16 @@ class ClassicShips extends React.Component  {
                 <img src = {img} title = {img_title} />
             </Link> 
             <p> Find out more on {ship_name} , Click on Image
-            <br/><br/>
+            <br/>
+            <br/> 
                 Experience {ship_name}</p>
 
             {/* Going to try a show/hide for a sound video file when Ship Horn is clicked, instead of opening new url.*/}
+            <div className = "ShipHorn">
+                <ShipHorn  shipHorn={ship_horn} /> 
+            </div>            
+
+
             {/* Commented for now because not working.  */}
              {/* <div>  */}
              {/* key = {ship_horn}> */}

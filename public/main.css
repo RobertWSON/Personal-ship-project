@@ -473,6 +473,24 @@ div.ShipTermsIntro  {
     color: darkred;
 }
 
+/* Getting some styling for the Ship horn  */
+.evoShips  >   .ShipHorn  > .video  {
+    display: flex;
+    /* flex-direction: row; */
+    flex-direction: column;
+    /* align-items: initial; */
+
+
+    background-color: moccasin;
+    color: brown;
+    font-size: 0.9em;
+    border-radius: 2px;
+    border-width: 2px; 
+    border-color: darkslateblue;
+    padding: 0.3em;
+}  
+/* End of styling for Ship Horn */
+
 .evoIntro   {
     justify-content: center;
     align-items: left;
