@@ -9,7 +9,7 @@ class ClassicShips extends React.Component  {
 
     const   {
         ship_name,
-        img,
+        img, 
         img_title, 
         ship_horn
     } = this.props   
@@ -27,16 +27,18 @@ class ClassicShips extends React.Component  {
                     }}>                    
                 <img src = {img} title = {img_title} />
             </Link> 
-            <p> Find out more on {ship_name} , Click on Image
-            <br/>
-            <br/> 
+
+            <div className = "hornContainer">         
+                <p> Find out more on {ship_name} , Click on Image
+                <br/><br/>
                 Experience {ship_name}</p>
 
-            {/* Going to try a show/hide for a sound video file when Ship Horn is clicked, instead of opening new url.*/}
-            <div className = "ShipHorn">
-                <ShipHorn  shipHorn={ship_horn} /> 
-            </div>            
+                {/* Going to try a show/hide for a sound video file when Ship Horn is clicked, instead of opening new url.*/}
+                <div className = "shipHorn">
+                    <ShipHorn  shipHorn={ship_horn} /> 
+                </div>            
 
+            </div>        
 
             {/* Commented for now because not working.  */}
              {/* <div>  */}

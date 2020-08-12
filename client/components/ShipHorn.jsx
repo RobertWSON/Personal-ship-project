@@ -30,7 +30,7 @@ class ShipHorn extends React.Component  {
         return  (
             <React.Fragment>
                 
-                <button class = "video" type = "button" onClick = {this.toggleVideo}>
+                <button className = "video" type = "button" onClick = {this.toggleVideo}>
                     Ship Horn
                 </button>
                 {this.state.showVideo &&    (

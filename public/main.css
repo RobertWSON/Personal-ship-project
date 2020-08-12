@@ -445,7 +445,7 @@ div.ShipTermsIntro  {
 .evoShips  {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; 
     width: 400px;
     height: 370px;
     background-color: blanchedalmond;
@@ -459,27 +459,45 @@ div.ShipTermsIntro  {
 }
 
 .evoShips   img {
+    /* align-self: center; */
     width: 300px;
     height: 200px;
 }
 
 .evoShips  h3  {
+    /* align-self: center; */
     font-size: 1.5em;
     color: cadetblue;
 }
 
-.evoShips  p  {
+
+/* .evoShips  p  { */
+    /* align-self: center; */
+    /* font-size: 1.05em;
+    color: darkred;
+} */
+
+/* Trying a container for ship horn  */
+.evoShips  >  .hornContainer  {
+    display: flex;
+}
+
+.evoShips  >  .hornContainer  >  p  {
     font-size: 1.05em;
     color: darkred;
 }
 
 /* Getting some styling for the Ship horn  */
-.evoShips  >   .ShipHorn  > .video  {
-    display: flex;
-    /* flex-direction: row; */
-    flex-direction: column;
+/* .evoShips  >   .shipHorn  > .video  { */
+    /* display: flex; */
+    /* flex-direction: row;  */
+    /* flex-direction: column;  */
     /* align-items: initial; */
+    /* align-self: flex-start; */
+    /* float: right;  */
+    /* align-self: flex-end; */
 
+    /* text-align: right;
 
     background-color: moccasin;
     color: brown;
@@ -488,7 +506,18 @@ div.ShipTermsIntro  {
     border-width: 2px; 
     border-color: darkslateblue;
     padding: 0.3em;
-}  
+}*/
+
+.evoShips  >  .hornContainer  >  .shipHorn  >  .video {
+    background-color: moccasin;
+    color: brown;
+    font-size: 0.9em;
+    border-radius: 2px;
+    border-width: 2px; 
+    border-color: darkslateblue;
+    padding: 0.3em;    
+}
+
 /* End of styling for Ship Horn */
 
 .evoIntro   {
