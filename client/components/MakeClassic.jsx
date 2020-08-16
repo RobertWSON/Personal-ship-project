@@ -18,7 +18,8 @@ class MakeClassic extends React.Component   {
             norway_crew, norway_gt, norway_fuel_capacity, norway_fuel_consume, norway_fresh_water, norway_speed, 
             norway_passenger_decks, norway_last_name, norway_final_year, norway_final_gt, galileo_name, galileo_years, galileo_gt, 
             galileo_passenger_capacity, meridian_name, meridian_years, meridian_gt, meridian_passenger_capacity, gg_last_name,
-            sunvista_years, sunvista_gt, sunvista_passenger_capacity, first_para, second_para
+            sunvista_years, sunvista_gt, sunvista_passenger_capacity, early_1st_para, early_2nd_para, cruise_1st_para, ship_plans, 
+            img_trials, img_trials_title, img_early, img_early_title, img_1stcruise, img_1stcruise_title, early_video, mem_video
         } = this.props
 
     return  (
@@ -31,16 +32,21 @@ class MakeClassic extends React.Component   {
                 <h4>Early Life</h4>
                 <h4>As a Cruise Ship</h4>
                 <h4>Memorable Moments</h4>
+                <h4>Ship Plans</h4>
                 <h4>Final Years </h4>
-                <h4>Recent Times</h4>
+                {/* Commented because these ships in Part 1 are not in service now.  */}
+                {/* <h4>Recent Times</h4> */}
             </div>
+
+            <div className = "classicContainer">
 
             <div className = "classicShip">
                 <img src = {img}
                      title = {img_title}/>
             </div>
 
-            <div className = "ShipDetails">
+            <div className = "classicDetails">
+            {/* <div className = "ShipDetails"> */}
                 <h3>{ship_name}</h3>
                 <h3>Ship Specifications</h3>
                 <h4>Years in Service: {service_years}</h4>
@@ -117,25 +123,62 @@ class MakeClassic extends React.Component   {
             <div className = "classic-background">
                 <h3>Early Life</h3>
                 <br/><br/>
-                <p>{first_para}</p>
+                {/* <p>{first_para}</p> */}
+                <p>{early_1st_para}</p>
+
+                <img src = {img_trials}
+                     title = {img_trials_title}/>
+
+                <p>{early_2nd_para}</p>    
+
+                <img src = {img_early}
+                     title = {img_early_title}/>
+
+                <video controls width = "500">
+                    <source
+                        src = {early_video}
+                        type = "video/mp4"
+                    />    
+                </video>     
             </div>
 
-            <div>
+            <div className = "cruise">
                 <h3>As a Cruise Ship</h3>
                 <br/><br/>
-                <p>{second_para}</p>    
+                {/* <p>{second_para}</p>  */}
+                <p>{cruise_1st_para}</p>
+
+                <img src = {img_1stcruise}
+                    title = {img_1stcruise_title}/>
             </div>
 
-            <div>
+            <div className = "memories">
                 <h3>Memorable Moments</h3>
+
+                <video controls width = "500">
+                    <source
+                        src = {mem_video}
+                        type = "video/mp4"
+                    />    
+                </video>
+
             </div>
 
-            <div>
+            <div className = "plans">
+                <h3>{ship_name} Ship Plans</h3> 
+                <br/><br/>
+                <img src = {ship_plans} />           
+            </div>    
+
+            <div className = "final">
                 <h3>Final Years</h3>
             </div>
 
-            <div>
+            {/* Commented because these ships in Part 1 are not in service now. */}
+            {/* <div className = "recent">
                 <h3>Recent Times</h3>
+            </div> */}
+
             </div>
 
         </React.Fragment>

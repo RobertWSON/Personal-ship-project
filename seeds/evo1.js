@@ -9,6 +9,12 @@ exports.seed = function(knex, Promise) {
           ship_name: 'Titanic',
           img: '/images/titaniccover.jpg',
           img_title: "Titanic in Southampton",
+          img_trials: '/images/Evolution/Titanic/sea-trials.jpg',
+          img_trials_title: 'Titanic sea trials at Belfast, Northern Ireland April 2, 1912',
+          img_early: '/images/Evolution/Titanic/titanic-sinking-photos.jpg',
+          img_early_title: 'Titanic near dock at Belfast, Northern Ireland soon before starting its maiden voyage',
+          img_1stcruise: '/images/Evolution/Titanic/titanic-dock.jpg',
+          img_1stcruise_title: 'Titanic departing Southampton, England on April 10, 1912',
           service_years: '1912',
 
           // To make this work I have to have all the same variables for each id. 
@@ -97,15 +103,30 @@ exports.seed = function(knex, Promise) {
           sunvista_gt: '',
           sunvista_passenger_capacity: '',
           ship_horn: '/videos/classics/Titanic/Titanic_horn.mp4',
-          first_para: "The Titanic is the start of where it all begin with travelling in large numbers. The ship was built in Belfast, Northern Ireland and one of the sister ships of the RMS Line, which stands for Royal Mail Steam Line. At the time it was one of the largest passenger ships. Unfortunately it did not end well for it though. On it's maiden voyage travelling from Southhampton to New York it sailed for 10 days and then unfortunately hit an iceberg and that was the start of the disaster.",
-          second_para: "However there is a twist to the above theory of why it sank.<br/> It is believed that at the beginning of its voyage, there was a fire that started at the bottom of the ship. The crew who are responsible usually for filling the boilers up with coal, had a new challenge and they were trying to get rid of the fire. The fire caused a distinctive dark mark on the outside hull and it is believed that the bulkheads inside had been weakened by the fire."
+          early_1st_para: "The Titanic is the start of where it all begin with travelling in large numbers. The ship was built in Belfast, Northern Ireland and one of the sister ships of the RMS Line, which stands for Royal Mail Steam Line. At the time it was one of the largest passenger ships. Unfortunately it did not end well for it though. On it's maiden voyage travelling from Southhampton to New York it sailed for 10 days and then unfortunately hit an iceberg and that was the start of the disaster.  Below Titanic is doing her sea trials which were delayed by a day due to bad weather and she attained a maximum speed of 23 knots (43 km/ hr or 26 mph). Her sea trials began at 6am on Tuesday, April 2nd 1912 lasting 12 hours, two days after her fitting out was finished and eight days before leaving Southampton on the one and only maiden voyage.",
+          early_2nd_para: "After Titanics sea trials, she berthed near her dock in Belfast for a few days.",
+          cruise_1st_para: "However there is a twist to the above theory of why it sank.<br/> It is believed that in getting ready to sail, there was a fire that started at the bottom of the ship. The crew who are responsible usually for filling the boilers up with coal, had a new challenge and they were frantically trying to get rid of the fire. The fire caused a distinctive dark mark on the outside hull and it is believed that the bulkheads inside had been weakened by the fire. Titanic then set sail from Belfast to Southampton and the crew were still getting rid of the fire before her maiden voyage, which they did. The photo below shows her leaving Southampton on her maiden voyage and this photo gives you great memories of the segment from the movie when she left Southampton. You may have noticed that this is about an evolution of cruise ships and there were no cruise ships during when the Titanic was around in 1912, back then the were called passenger liners. I feel that it is an important ship in history because it has the beginnings of the idea that lots of passenger can travel on a ship a long distance",
+
+          // cruise_1st_para: "It is believed that in getting her ready to sail a fire had started near the boiler rooms and the crew hafd to frantically get rid of it. Titanic then set sail from Belfast to Southampton and the crew were still getting rid of the fire before her maiden voyage,which they did. The photo below shows her leaving Southampton on her maiden voyage and this photo gives you great memories of the segment from the movie when she left Southampton.",
+          // first_para: "The Titanic is the start of where it all begin with travelling in large numbers. The ship was built in Belfast, Northern Ireland and one of the sister ships of the RMS Line, which stands for Royal Mail Steam Line. At the time it was one of the largest passenger ships. Unfortunately it did not end well for it though. On it's maiden voyage travelling from Southhampton to New York it sailed for 10 days and then unfortunately hit an iceberg and that was the start of the disaster.",
+          // second_para: "However there is a twist to the above theory of why it sank.<br/> It is believed that at the beginning of its voyage, there was a fire that started at the bottom of the ship. The crew who are responsible usually for filling the boilers up with coal, had a new challenge and they were trying to get rid of the fire. The fire caused a distinctive dark mark on the outside hull and it is believed that the bulkheads inside had been weakened by the fire.",
           
+          ship_plans: '/images/Evolution/Titanic/d1my6c8-6d48eae7-255d-4e4d-bc8a-ff9ba1b0c417.jpg',
+          early_video: '', 
+          mem_video: '/videos/classics/Titanic/Deconstructing Titanic History.mp4'
+        
         },
         {
           id: 2, 
           ship_name: 'Oriana',
           img: '/images/oriana15.jpg',
           img_title: "Oriana in Panama Canal during 1960's",
+          img_trials: '',
+          img_trials_title: '',
+          img_early: '',
+          img_early_title: '',
+          img_1stcruise: '',
+          img_1stcruise_title: '',
           service_years: '1959 to 2005',
 
           // To make this work I have to have all the same variables for each id. 
@@ -195,8 +216,14 @@ exports.seed = function(knex, Promise) {
           sunvista_gt: '',
           sunvista_passenger_capacity: '',
           ship_horn: '/videos/classics/Oriana/Oriana_last_cruise_departure_from_under_Sydney_Harbour_Bridge.mp4',
-          first_para: "The Oriana is the start of where cruising began. </br> She was able to travel through Panama Canal and so it was able to travel to lots of different locations. Because of her deep draft, like a lot of the older cruise ships had, she had to tender in some ports like Pacific Islands. Tender are boats used on the side of a ship to take passenger to a port when the draft on a ship is to deep to go into a port. She was the fastest ship in the P & O (Peninsular and Oriental) fleet and achieved 30.64 knots durinf sea trials in November 1960.",
-          second_para: "Oriana's maiden voyage was in December 1960, from Southampton, UK to Sydney, Australia and arrived in Sydney on December 30th 1960. She also visited New Zealand and was a regular on that service for "
+          //originally first_para:
+          early_1st_para: "The Oriana is the start of where cruising began. </br> She was able to travel through Panama Canal and so it was able to travel to lots of different locations. Because of her deep draft, like a lot of the older cruise ships had, she had to tender in some ports like Pacific Islands. Tender are boats used on the side of a ship to take passenger to a port when the draft on a ship is to deep to go into a port. She was the fastest ship in the P & O (Peninsular and Oriental) fleet and achieved 30.64 knots during sea trials in November 1960.",
+          //originally second_para:
+          early_2nd_para: "Oriana's maiden voyage was in December 1960, from Southampton, UK to Sydney, Australia and arrived in Sydney on December 30th 1960. She also visited New Zealand and was a regular on that service for ",
+          cruise_1st_para: "",
+          ship_plans: '',
+          early_video: '/videos/classics/Oriana/The Building of ss Oriana.mp4',
+          mem_video: ''
 
         },
         {
@@ -204,6 +231,12 @@ exports.seed = function(knex, Promise) {
           ship_name: 'Canberra',
           img: '/images/ss-canberra.jpg',
           img_title: "Canberra at sea during the good times",
+          img_trials: '',
+          img_trials_title: '',
+          img_early: '',
+          img_early_title: '',
+          img_1stcruise: '',
+          img_1stcruise_title: '',
           service_years: '1961 to 1997',
 
           // To make this work I have to have all the same variables for each id. 
@@ -234,7 +267,7 @@ exports.seed = function(knex, Promise) {
           // Here are the is the extra variable from Galileo Galilei Cruise Ship. 
           funnel_height: '',
 
-          //This space is where I have show more text, for when user wants to see more
+          //This space is wh ere I have show more text, for when user wants to see more
           speed: 'Trials: 29.27 knots (54.2 km/h) </br> Service Speeds 1961–73: 27.5 knots (50.9 km/h) </br> 1973–97: 23.50 knots (43.5 km/h)',
           deadweight: '1961 - 1968: 9910, </br> 1968 - 1982: 9754, </br> 1982 - 1997: 8775',
           lightship: '32605 Tons (33128.24 Tonnes) (excluding permanent ballast)', 
@@ -293,8 +326,15 @@ exports.seed = function(knex, Promise) {
           sunvista_gt: '',
           sunvista_passenger_capacity: '',
           ship_horn: '/videos/classics/Canberra/Canberra_Leaving_Southampton.mp4',
-          first_para: "The Canberra along with the Oriana are the first ships to start off the famous P & O cruise line. The P & O Line started off as P & O Orient Line, but soon was changed to just P & O. At first Canberra was just a passenger ship used to carry passenger from one country to another. It wasn't until 1973, that she began year round cruising between UK and Australia. In 1982 it took on a different operation and was used by the British government to carry troops to the Falkland Islands. After this Canberra was used as a cruise ship again in Australia and the Pacific Islands until she retired in 1997.",
-          second_para: ""
+          //originally first_para:
+          early_1st_para: "The Canberra along with the Oriana are the first ships to start off the famous P & O cruise line. The P & O Line started off as P & O Orient Line, but soon was changed to just P & O. At first Canberra was just a passenger ship used to carry passenger from one country to another. It wasn't until 1973, that she began year round cruising between UK and Australia. In 1982 it took on a different operation and was used by the British government to carry troops to the Falkland Islands. After this Canberra was used as a cruise ship again in Australia and the Pacific Islands until she retired in 1997.",
+          //originally second_para:
+          early_2nd_para: '',
+          cruise_1st_para: "",
+          
+          ship_plans: '',
+          early_video: '',
+          mem_video: '/videos/classics/Canberra/Holiday on P&O Canberra 1988.mp4'
 
         },
         {
@@ -302,6 +342,12 @@ exports.seed = function(knex, Promise) {
           ship_name: 'France',
           img: '/images/Evolution/France/france_1961_1.jpg',
           img_title: "France in Home port for the first time in 1961",
+          img_trials: '',
+          img_trials_title: '',
+          img_early: '',
+          img_early_title: '',
+          img_1stcruise: '',
+          img_1stcruise_title: '',
 
           //Service Years for other ships, no data her though because France has it's own.
           service_years: '',    
@@ -393,8 +439,15 @@ exports.seed = function(knex, Promise) {
           sunvista_gt: '',
           sunvista_passenger_capacity: '',
           ship_horn: '/videos/classics/France/SS_Norway_horns.mp4',
-          first_para: "The SS France was a steam ship, hence the intials SS, that originally operated for the French Line. <br/>As can be seen in the photo above she originally had a black and white hull (this is the main structure of the ship). <br/> <br/>The <strong>above</strong> photo was taken when she was entering her home port of Le Havre, France for the very first time on 23rd of November 1961. <br>Her hull colour had changed to <strong>green</strong> during the mid to late 1960's and this rare photo below, shows her departing from Southhampton with her green hull.",
-          second_para: ""
+          early_1st_para: "The SS France was a steam ship, hence the intials SS, that originally operated for the French Line. <br/>As can be seen in the photo above she originally had a black and white hull (this is the main structure of the ship). <br/> <br/>The <strong>above</strong> photo was taken when she was entering her home port of Le Havre, France for the very first time on 23rd of November 1961. <br>Her hull colour had changed to <strong>green</strong> during the mid to late 1960's and this rare photo below, shows her departing from Southhampton with her green hull.",
+          //originally first_para:
+          //Newly added early_2nd_para
+          early_2nd_para: '',
+          cruise_1st_para: "",
+          // originally second_para:
+          ship_plans: '',
+          early_video: '/videos/classics/France/SS France At New York (1962).mp4',
+          mem_video: ''
 
         },
         {
@@ -402,6 +455,12 @@ exports.seed = function(knex, Promise) {
           ship_name: 'Galileo Galilei',
           img: '/images/Evolution/Galileo Galilei/Galileo03.jpg',
           img_title: "Original Galileo Galilei at sea",
+          img_trials: '',
+          img_trials_title: '',
+          img_early: '',
+          img_early_title: '',
+          img_1stcruise: '',
+          img_1stcruise_title: '',
 
           //Service Years for other ships, no data her though because Galileo Galilei has it's own.
           service_years: '',
@@ -494,15 +553,28 @@ exports.seed = function(knex, Promise) {
           sunvista_gt: '30440',
           sunvista_passenger_capacity: '1428',
           ship_horn: '/videos/classics/Galileo Galilei/MERIDIAN.mp4',
-          first_para: "The Galileo Galilei is an Italian built ship, exclusively meant for cruising all the way through it's career.",
-          second_para: ""
-
+          early_1st_para: "The Galileo Galilei is an Italian built ship, exclusively meant for cruising all the way through it's career.",
+          //originally first_para:
+          //Newly added early_2nd_para
+          early_2nd_para: '',
+          cruise_1st_para: "",
+          // originally second_para:
+          ship_plans: '',
+          early_video: '',
+          mem_video: ''
+          
         },
         {
           id: 6,
           ship_name: 'Pacific Princess',
           img: '/images/003410.jpg',
           img_title: "Love Boat Pacific Princess at sea",
+          img_trials: '',
+          img_trials_title: '',
+          img_early: '',
+          img_early_title: '',
+          img_1stcruise: '',
+          img_1stcruise_title: '',
 
           //Service Years for other ships, no data her though because Pacific Princess has it's own.
           service_years: '',
@@ -592,8 +664,18 @@ exports.seed = function(knex, Promise) {
           sunvista_gt: '',
           sunvista_passenger_capacity: '',
           ship_horn: '/videos/classics/Pacific Princess/Bermuda-PacificPrincess(ex-Love Boat)ShipsWhistle.mp4',
-          first_para: "The Pacific Princess is one of the longest serving cruise ships from 1970's, having latest 43 years. <br/>She was originally built as Sea Venture and changed her name to Pacific Princess in 1975, in time before the TV show Love Boat, that aired in 1977.",
-          second_para: ""
+          // early_1st_para: "The Pacific Princess is one of the longest serving cruise ships from 1970's, having latest 43 years. <br/>She was originally built as Sea Venture and changed her name to Pacific Princess in 1975, in time before the TV show Love Boat, that aired in 1977.",
+          // changing early_1st_para to this below
+          early_1st_para: "The Pacific Princess originally was built as Sea Venture in 1971 at the  shipyard in Emden, Germany for a cost of US$25 Million. During her early part of her career she operated under Flagship Cruises, which was a Norwegian cruise company from June 1971 to October 1974. The cruises that she did back then was usually a week long cruise from New York City to Bermuda. Sea venture had an awesome moment in April 1974, when she had to perform a rescue operation. Queen Elizabeth 2 ship owned by Cunard, had lost all of her power about 250 miles off Bermuda coast. Sea Venture received QE2's Mayday call and left Hamilton, where she was docked during a cruise, to help out. She picked up all 1,650 passengers from the QE2 using her lifeboats, carried them back to Hamilton and the QE2 was towed to Bermuda for repairs. All ships including cruise ships have a prefix before the start of their name and this is to classify what type of ship it is and in the case of the Sea Venture it is ms Sea Venture. The ms part stands for motor ship and this is a ship that is propelled by an internal combustion engine.",
+          // originally first_para:
+          //Newly added early_2nd_para
+          early_2nd_para: '',
+          cruise_1st_para: "The Pacific Princess is unique because it operated as a cruise ship throughout her entire career. As I have already mentioned she started off as Sea Venture and then changed to Pacific Princess in 1975 operating under Princess Cruises. This was in time before the TV Show Love boat which started in 1977.",
+          // originally second_para:
+          ship_plans: '',
+          early_video: '',
+          mem_video: '/videos/classics/Pacific Princess/The Love Boat 1977 - 1986 Opening and Closing Theme.mp4'
+
         }
       ]);
     });

@@ -30,14 +30,16 @@ class ClassicShips extends React.Component  {
 
             <div className = "hornContainer">         
                 <p> Find out more on {ship_name} , Click on Image
-                <br/><br/>
-                Experience {ship_name}</p>
+                <br/><br/>        
+                Experience {ship_name}
+                {/* </p>  */}
 
                 {/* Going to try a show/hide for a sound video file when Ship Horn is clicked, instead of opening new url.*/}
                 <div className = "shipHorn">
                     <ShipHorn  shipHorn={ship_horn} /> 
-                </div>            
-
+                </div>
+                </p>             
+                
             </div>        
 
             {/* Commented for now because not working.  */}

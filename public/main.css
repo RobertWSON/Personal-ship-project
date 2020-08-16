@@ -480,6 +480,8 @@ div.ShipTermsIntro  {
 /* Trying a container for ship horn  */
 .evoShips  >  .hornContainer  {
     display: flex;
+    justify-content: flex-end;
+    align-content: inherit;
 }
 
 .evoShips  >  .hornContainer  >  p  {
@@ -508,7 +510,8 @@ div.ShipTermsIntro  {
     padding: 0.3em;
 }*/
 
-.evoShips  >  .hornContainer  >  .shipHorn  >  .video {
+/* Added the p element because I think we may need Ship Horn div in <p>*/
+.evoShips  >  .hornContainer  >  p  >  .shipHorn  >  .video {
     background-color: moccasin;
     color: brown;
     font-size: 0.9em;
@@ -561,40 +564,269 @@ div.ShipTermsIntro  {
     font-size: 2.3em;
 }
 
+/* .evoIntro   {
+    justify-content: center;
+    align-items: left;
+    width: 1350px;
+    background-color: lightyellow;
+    border: 2px solid burlywood;
+    border-radius: 20px;
+    margin: 0   30px;
+    margin-top: 15px;
+    margin-bottom: 15px;  
+    margin-left: 35px;
+    margin-right: 35px
+} */
+
+/* Styling for contents on each classic ship page */
 .contents   {
     /* float: left; */
-    padding: 1.5em;
-    border: 1px solid burlywood;
+    /* justify-content: left; */
+    align-content: center;
+    /* justify-content: center; */
+    background-color: azure;
+    padding: 1.2em;
+    border: 2px solid burlywood;
     border-radius: 20px;
-    text-align: center;
-    justify-content: center;
-    max-width: 300px;
+    text-align: left;
+    
+    max-width: 170px;
+    margin-left: 40px;
+    /* margin-top: 10px; */
+    margin-bottom: 25px;
 }
 
+.contents   h3  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.8em;
+    color: darkslategrey;
+    margin-top: 10px;
+    padding-bottom: 0.5em;
+    /* padding: 10px; */
+}
+
+.contents   h4  {
+    align-items: left;
+    font-size: 1.15em;
+    color: sienna;
+    padding-bottom: 10px;
+    /* padding: 10px; */
+}
+
+.classicContainer   {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    max-width: 1500px;
+    margin: auto 0; 
+    border: 1px solid burlywood;
+    border-radius: 20px;
+    padding: 20px;
+}    
+
 .classicShip    {
+    display: flex;
+    flex-direction: column;
     float: left;
     padding: 1.5em;
     border: 1px solid burlywood;
     border-radius: 20px;
     text-align: center;
     justify-content: center;
-    max-width: 1000px;
+    max-width: 800px;
+    /* max-width: 1000px; */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.classicDetails {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    /* align-content: left; 
+    justify-content: left */
+    /* position: absolute; */
+    /* max-width: 500px; */
+    max-width: 480px;
+    position: relative; 
+    padding: 1.5em;
+    border: solid;
+    border-width: 2px;
+    border-color: darkblue;
+    border-radius: 10px;
+    background-color: aliceblue;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .classic-background {
-    /* float: left; */
+    float: left;
     padding: 1.5em;
-    border: 1px solid burlywood;
+    border: 2px solid burlywood;
     border-radius: 20px;
-    max-width: 1000px;
+    background-color: ivory;
+    max-width: 750px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
+.classic-background  h3  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 1.6em;
+    color: brown;
+}
+
+.classic-background  p  {
+    font-size: 1.15em;
+    color: darkred;
+    padding: 20px;
+}
+
+.cruise {
+    float: left;
+    padding: 1.5em;
+    border: 2px solid green;
+    border-radius: 20px;
+    background-color: ghostwhite;
+    max-width: 750px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.cruise h3  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 1.6em;
+    color: steelblue;
+}
+
+.cruise  p  {
+    font-size: 1.15em;
+    color: seagreen;
+}
+
+.memories {
+    float: left;
+    padding: 1.5em;
+    border: 2px solid lightgoldenrodyellow;
+    border-radius: 20px;
+    background-color: honeydew;
+    max-width: 750px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.memories h3  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 1.6em;
+    color: peru;
+}
+
+.memories  p  {
+    font-size: 1.15em;
+    color: olive;
+}
+
+/* Ship plans not in place yet on Evolution Part 1 classic ship pages. */
 .plans  {
     float: left;
     padding: 1.5em;
     border: 1px solid burlywood;
     border-radius: 20px;
-    max-width: 1000px;    
+    /* max-width: 1000px;*/
+    background-color: white;
+    /* max-width: 750px; */
+    max-width: 1000px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.plans  h3  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 1.6em;
+    color: sienna;
+}
+
+
+
+.final {
+    float: left;
+    padding: 1.5em;
+    border: 2px solid blanchedalmond;
+    border-radius: 20px;
+    background-color: lightyellow;
+    max-width: 750px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.final h3  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 1.6em;
+    color: olive;
+}
+
+.final  p  {
+    font-size: 1.15em;
+    color: olive;
+}
+
+.recent  {
+    float: left;
+    padding: 1.5em;
+    border: 2px solid green;
+    border-radius: 20px;
+    background-color: lightcyan;
+    max-width: 750px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.recent  h3  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 1.6em;
+    color: navy;
+}
+
+.recent  p  {
+    font-size: 1.15em;
+    color: olivedrab;
 }
 
 /* Back button to Evolution (Part 1) page */
