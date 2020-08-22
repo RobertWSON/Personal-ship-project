@@ -88,6 +88,13 @@ exports.up = function(knex, Promise) {
         table.string('early_1st_para')
         table.string('early_2nd_para')
         table.string('cruise_1st_para')
+        table.string('cruise_2nd_para')
+        table.string('mem_1st_para')
+        table.string('mem_2nd_para')
+        table.string('plans_para')
+        table.string('final_1st_para')
+        table.string('final_2nd_para')
+
         table.string('ship_plans')
         table.string('img_trials')
         table.string('img_trials_title')

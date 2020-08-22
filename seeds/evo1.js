@@ -46,7 +46,16 @@ exports.seed = function(knex, Promise) {
           funnel_height: '',
 
           //This space is where I have show more text, for when user wants to see more
-          speed: 'Maximum 23 knots (43 km/ hr, 26 mph) </br> Cruising: 21 knots (39 km/ hr, 24 mph)',
+          /*
+          speed: {
+            maximum: 23 knots (43 km/ hr, 26 mph),
+            cruising: 21 knots (39 km/ hr, 24 mph)
+          }
+
+          const newResult = speed.split('|')
+          newResult = ['Maximum 23 knots (43 km/ hr, 26 mph)', '21 knots (39 km/ hr, 24 mph)']
+          */
+          speed: 'Maximum 23 knots (43 km/ hr, 26 mph) | Cruising: 21 knots (39 km/ hr, 24 mph)',
           deadweight: '13550 Tons (13767 Tonnes)',
           lightship: '38760 Tons(39380 Tonnes)',
           loaded_displacement: '52310 Tons(53147 Tonnes)',
@@ -104,8 +113,14 @@ exports.seed = function(knex, Promise) {
           sunvista_passenger_capacity: '',
           ship_horn: '/videos/classics/Titanic/Titanic_horn.mp4',
           early_1st_para: "The Titanic is the start of where it all begin with travelling in large numbers. The ship was built in Belfast, Northern Ireland and one of the sister ships of the RMS Line, which stands for Royal Mail Steam Line. At the time it was one of the largest passenger ships. Unfortunately it did not end well for it though. On it's maiden voyage travelling from Southhampton to New York it sailed for 10 days and then unfortunately hit an iceberg and that was the start of the disaster.  Below Titanic is doing her sea trials which were delayed by a day due to bad weather and she attained a maximum speed of 23 knots (43 km/ hr or 26 mph). Her sea trials began at 6am on Tuesday, April 2nd 1912 lasting 12 hours, two days after her fitting out was finished and eight days before leaving Southampton on the one and only maiden voyage.",
-          early_2nd_para: "After Titanics sea trials, she berthed near her dock in Belfast for a few days.",
+          early_2nd_para: "After Titanics sea trials, she berthed near her dock in Belfast, as can be seen in the photo below.",
           cruise_1st_para: "However there is a twist to the above theory of why it sank.<br/> It is believed that in getting ready to sail, there was a fire that started at the bottom of the ship. The crew who are responsible usually for filling the boilers up with coal, had a new challenge and they were frantically trying to get rid of the fire. The fire caused a distinctive dark mark on the outside hull and it is believed that the bulkheads inside had been weakened by the fire. Titanic then set sail from Belfast to Southampton and the crew were still getting rid of the fire before her maiden voyage, which they did. The photo below shows her leaving Southampton on her maiden voyage and this photo gives you great memories of the segment from the movie when she left Southampton. You may have noticed that this is about an evolution of cruise ships and there were no cruise ships during when the Titanic was around in 1912, back then the were called passenger liners. I feel that it is an important ship in history because it has the beginnings of the idea that lots of passenger can travel on a ship a long distance",
+          cruise_2nd_para: '',
+          mem_1st_para: '',
+          mem_2nd_para: '',
+          plans_para: '',
+          final_1st_para: 'As much as we would have liked it to, the Titanic did not unfortunately have a very good ending. It sank within 2 hour 40 minutes with 1500 people losing there lives and survivors. As can be seen in the video below the survivial rate was First Class Passengers 60%, Second Class Passengers 42%, Third Class Passengers 25% and less than 25% of the crew.',
+          final_2nd_para:'The rivets to hold the hull plates together was made of steel that was not the strongest it should have been at the time. Also the bulkheads were not built tall enough to make them completely water tight. When the disaster happened, the water filled up in the bulkhead compartment (this is the room between bulkheads) and the water flowed over one bulkhead into another compartment. When several compartments were filled the weight of the water pushed the bow further down in the water. Eventually the front section by the bow broke because of the stress from the water, along with the front funnel falling off and the stern section sank afterwards. On a positive side a lot was learnt from the disaster in terms of building ships. Ships no longer have rivets to hold steel plates for the hull together, they are now welded and bolted together. The hull for the Titanic was a single hull, now you can have ships that have a double hull, so there are two plates and this provides more protection against collisions. A lot of ships get recorded as being scrapped at the end of their service, but Titanic like the minority is recorded as being a Total Loss. She really is a total loss because she is 3.8 km (2.37 miles or 12,500 feet) under water, with both sections being about 600m or a third of a mile apart. Even though the ship failed in terms of here crossing to get to New York City, she is still a great legendary ship that is is to be remembered well and set up good things to come in terms of cruise shipping.',
 
           // cruise_1st_para: "It is believed that in getting her ready to sail a fire had started near the boiler rooms and the crew hafd to frantically get rid of it. Titanic then set sail from Belfast to Southampton and the crew were still getting rid of the fire before her maiden voyage,which they did. The photo below shows her leaving Southampton on her maiden voyage and this photo gives you great memories of the segment from the movie when she left Southampton.",
           // first_para: "The Titanic is the start of where it all begin with travelling in large numbers. The ship was built in Belfast, Northern Ireland and one of the sister ships of the RMS Line, which stands for Royal Mail Steam Line. At the time it was one of the largest passenger ships. Unfortunately it did not end well for it though. On it's maiden voyage travelling from Southhampton to New York it sailed for 10 days and then unfortunately hit an iceberg and that was the start of the disaster.",
@@ -221,6 +236,13 @@ exports.seed = function(knex, Promise) {
           //originally second_para:
           early_2nd_para: "Oriana's maiden voyage was in December 1960, from Southampton, UK to Sydney, Australia and arrived in Sydney on December 30th 1960. She also visited New Zealand and was a regular on that service for ",
           cruise_1st_para: "",
+          cruise_2nd_para: '',
+          mem_1st_para: '',
+          mem_2nd_para: '',
+          plans_para: '',
+          final_1st_para: '',
+          final_2nd_para:'',
+
           ship_plans: '',
           early_video: '/videos/classics/Oriana/The Building of ss Oriana.mp4',
           mem_video: ''
@@ -331,6 +353,12 @@ exports.seed = function(knex, Promise) {
           //originally second_para:
           early_2nd_para: '',
           cruise_1st_para: "",
+          cruise_2nd_para: '',
+          mem_1st_para: '',
+          mem_2nd_para: '',
+          plans_para: '',
+          final_1st_para: '',
+          final_2nd_para:'',
           
           ship_plans: '',
           early_video: '',
@@ -443,8 +471,15 @@ exports.seed = function(knex, Promise) {
           //originally first_para:
           //Newly added early_2nd_para
           early_2nd_para: '',
-          cruise_1st_para: "",
+          cruise_1st_para: "In 1979 SS France was sold to Knut Kloster, the owner of Norwegian Caribbean Line for $18 million. to be converted into largest cruise ship at that time. In August 1979 she was moved to Lloyd shipyards in Bremerhaven, Germany and would undergo renovations costing $80 million to be converted to a cruise ship. She was renamed SS Norway and on 14th April 1980 was finished and christened with the bottle of champagne, ready to start cruising",
           // originally second_para:
+          cruise_2nd_para: '',
+          mem_1st_para: '',
+          mem_2nd_para: '',
+          plans_para: '',
+          final_1st_para: '',
+          final_2nd_para:'',
+
           ship_plans: '',
           early_video: '/videos/classics/France/SS France At New York (1962).mp4',
           mem_video: ''
@@ -556,9 +591,16 @@ exports.seed = function(knex, Promise) {
           early_1st_para: "The Galileo Galilei is an Italian built ship, exclusively meant for cruising all the way through it's career.",
           //originally first_para:
           //Newly added early_2nd_para
-          early_2nd_para: '',
-          cruise_1st_para: "",
+          early_2nd_para: ' Galileo Galilei struck a reef off the coast of West Africa on 13th January 1975 and had to be repaired in Genoa, Italy her home port at the time. She coninued to operate on the Italy to Australia service until April 1977 when she was was taken out of service and laid up for 6 months.',
+          cruise_1st_para: "Galileo Galilei arrived at the Cantieri Navali Riuniti ship yard in Palermo, Sicily, Italy to be converted into a one class cruise ship on October 21, 1977. The lengthy reconstruction lasted until March 1979 and on 24th March 1979 she started service as an official cruise ship with Italia Crociere Line for Mediterranean cruising. The start of her cruise ship career was shorted lived and she was again laid up in Genoa, Italy on 29th September 1979. After her layup which lasted a few months, she did on and off services in the Mediterranean. On 22nd October 1983, she was sold to Chandris Lines, renamed Galileo and rebuilt with additional cabins on her forward deck. in 1984 with a new passenger capacity of 1,262 she did cruises to the Caribbean from New York with Chandris owned Fantasy Cruises fleet. She continued with this cruise line doing these cruises until October 1989.  ",
           // originally second_para:
+          cruise_2nd_para: "In October 1989 Galileo was sent to Lloyd Werft, Bremerhaven, Germany for a $45 million rebuild was lasted through to February 1990. Most of her interiors were rebuiilt, with her charming 1960's retro linoleum, Formica and wooden Italian interiors being replaced with stunning and vibrant fittings and externally her rear superstructure was enlarged. She was sold to Celebrity Cruises on 22nd February 1990 with a new passenger capacity of 1,428. On 1st March 1990 she was now a new very sylish SS Meridian for Celebrity Cruises, cruising on a Caribbean and Boston/ New York - Bermuda service.",
+          mem_1st_para: '',
+          mem_2nd_para: '',
+          plans_para: '',
+          final_1st_para: '',
+          final_2nd_para:'',
+
           ship_plans: '',
           early_video: '',
           mem_video: ''
@@ -666,12 +708,19 @@ exports.seed = function(knex, Promise) {
           ship_horn: '/videos/classics/Pacific Princess/Bermuda-PacificPrincess(ex-Love Boat)ShipsWhistle.mp4',
           // early_1st_para: "The Pacific Princess is one of the longest serving cruise ships from 1970's, having latest 43 years. <br/>She was originally built as Sea Venture and changed her name to Pacific Princess in 1975, in time before the TV show Love Boat, that aired in 1977.",
           // changing early_1st_para to this below
-          early_1st_para: "The Pacific Princess originally was built as Sea Venture in 1971 at the  shipyard in Emden, Germany for a cost of US$25 Million. During her early part of her career she operated under Flagship Cruises, which was a Norwegian cruise company from June 1971 to October 1974. The cruises that she did back then was usually a week long cruise from New York City to Bermuda. Sea venture had an awesome moment in April 1974, when she had to perform a rescue operation. Queen Elizabeth 2 ship owned by Cunard, had lost all of her power about 250 miles off Bermuda coast. Sea Venture received QE2's Mayday call and left Hamilton, where she was docked during a cruise, to help out. She picked up all 1,650 passengers from the QE2 using her lifeboats, carried them back to Hamilton and the QE2 was towed to Bermuda for repairs. All ships including cruise ships have a prefix before the start of their name and this is to classify what type of ship it is and in the case of the Sea Venture it is ms Sea Venture. The ms part stands for motor ship and this is a ship that is propelled by an internal combustion engine.",
+          early_1st_para: "The Pacific Princess originally was built as Sea Venture in 1971 at the  shipyard in Emden, Germany for a cost of US$25 Million. During her early part of her career she operated under Flagship Cruises, which was a Norwegian cruise company from June 1971 to October 1974 and her registered port was Oslo, Norway. The cruises that she did back then was usually a week long cruise from New York City to Bermuda. Sea venture had an awesome moment in April 1974, when she had to perform a rescue operation. Queen Elizabeth 2 ship owned by Cunard, had lost all of her power about 250 miles off Bermuda coast. Sea Venture received QE2's Mayday call and left Hamilton, where she was docked during a cruise, to help out. She picked up all 1,650 passengers from the QE2 using her lifeboats, carried them back to Hamilton and the QE2 was towed to Bermuda for repairs. All ships including cruise ships have a prefix before the start of their name and this is to classify what type of ship it is and in the case of the Sea Venture it is ms Sea Venture. The ms part stands for motor ship and this is a ship that is propelled by an internal combustion engine. She had this ms prefix sthroughout her entire time of her service.",
           // originally first_para:
           //Newly added early_2nd_para
           early_2nd_para: '',
-          cruise_1st_para: "The Pacific Princess is unique because it operated as a cruise ship throughout her entire career. As I have already mentioned she started off as Sea Venture and then changed to Pacific Princess in 1975 operating under Princess Cruises. This was in time before the TV Show Love boat which started in 1977.",
+          cruise_1st_para: "The Pacific Princess is unique because it operated as a cruise ship throughout her entire career. As I have already mentioned she started off as Sea Venture and then changed to Pacific Princess in 1975 operating under Princess Cruises. This was in time before the TV Show Love boat, which started in 1977. The Love Boat TV Show ran from 1977 to 1986 and the idea was that if you went on a cruise you could meet the love of your life. During her lifespan from 1971 to 2013, she was called Pacific Princess from 1975 to 2002 and was with Princess Cruises during that entire time having her port of registry in London, UK. You don't get many cruise ships that have stayed the same name and with the same cruise line for a length of time, so that is another factor that makes this her a legendary ship.",
           // originally second_para:
+          cruise_2nd_para: 'In 2002 she as sold to a Brazil based company called Viagens CVC, was renamed Pacific and operated with Pullmantur Cruises. Pacific did cruises from to   with Pullmunter from 2002 to 2008.',
+          mem_1st_para: '',
+          mem_2nd_para: '',
+          plans_para: '',
+          final_1st_para: 'In 2013 she ended her career as a cruise ship and was finally name Acif before she was scrapped.',
+          final_2nd_para:'When Acif was being towed to Aliaga, Turkey for scrapping, she took on water and was a lean. However she did make it to Aliaga and sadly this great ship that has a lot of great memories got scrapped. ',
+
           ship_plans: '',
           early_video: '',
           mem_video: '/videos/classics/Pacific Princess/The Love Boat 1977 - 1986 Opening and Closing Theme.mp4'

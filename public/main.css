@@ -27,7 +27,8 @@
     float: left;
     justify-content: center;
     align-items: left;
-    width: 900px;
+    width: 780px; 
+    /* width: 900px;  */
     background-color: skyblue;
     border: 2px solid darkblue;
     border-radius: 20px;
@@ -265,7 +266,7 @@ div.header h1 {
     margin: auto 0;
     padding: 1em;  
 }
-
+ 
 .cruiseShip {
     /* Hopefully this flex-start helps with alignment of elements */
     /* align-items: flex-start; */
@@ -480,8 +481,11 @@ div.ShipTermsIntro  {
 /* Trying a container for ship horn  */
 .evoShips  >  .hornContainer  {
     display: flex;
-    justify-content: flex-end;
-    align-content: inherit;
+    /* justify-content: flex-end;
+    align-content: inherit; */
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .evoShips  >  .hornContainer  >  p  {
@@ -510,8 +514,9 @@ div.ShipTermsIntro  {
     padding: 0.3em;
 }*/
 
+.evoShips   >   .hornContainer  >   .shipHorn   >   .video  {
 /* Added the p element because I think we may need Ship Horn div in <p>*/
-.evoShips  >  .hornContainer  >  p  >  .shipHorn  >  .video {
+/* .evoShips  >  .hornContainer  >  p  >  .shipHorn  >  .video { */
     background-color: moccasin;
     color: brown;
     font-size: 0.9em;
@@ -558,27 +563,15 @@ div.ShipTermsIntro  {
 
 /* Evolution Ship Pages
     France */
-.shipTitle  {
+/* .classicContainer   >   .shipTitle  { */
+.shipTitle  { 
     text-align: center;
     color: darkred;
     font-size: 2.3em;
 }
 
-/* .evoIntro   {
-    justify-content: center;
-    align-items: left;
-    width: 1350px;
-    background-color: lightyellow;
-    border: 2px solid burlywood;
-    border-radius: 20px;
-    margin: 0   30px;
-    margin-top: 15px;
-    margin-bottom: 15px;  
-    margin-left: 35px;
-    margin-right: 35px
-} */
-
 /* Styling for contents on each classic ship page */
+/* .classicContainer   >   .contents   { */
 .contents   {
     /* float: left; */
     /* justify-content: left; */
@@ -596,7 +589,8 @@ div.ShipTermsIntro  {
     margin-bottom: 25px;
 }
 
-.contents   h3  {
+/* .classicContainer   >   .contents   h3  { */
+.contents   h3  { 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -607,7 +601,8 @@ div.ShipTermsIntro  {
     /* padding: 10px; */
 }
 
-.contents   h4  {
+/* .classicContainer   >   .contents   h4  { */
+.contents   h4  {    
     align-items: left;
     font-size: 1.15em;
     color: sienna;
@@ -643,15 +638,81 @@ div.ShipTermsIntro  {
     margin-right: 20px;
 }
 
+
+/* Trying overall div with separate ones for cruise ship like France and Galileo Galilei */
 .classicDetails {
     display: flex;
     flex-direction: column;
     float: right;
+    max-width: 480px;
+    position: relative;
+    padding: 1.5em;
+    border: solid;
+    border-width: 2px;
+    border-color: aliceblue;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+} 
+
+.classicDetails >  .initialDetails  {
+    display: flex;
+    flex-direction: column;
+    max-width: 480px;
+    position: relative;
+    border-bottom-width: 2px;
+    border-color: aliceblue;
+    background-color: aliceblue;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.classicDetails >  .norwayDetails  {
+    display: flex;
+    flex-direction: column;
+    max-width: 480px;
+    position: relative;
+    border-bottom-width: 2px;
+    border-color: aliceblue;
+    background-color: blue;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.classicDetails >  .galileoDetails  {
+    display: flex;
+    flex-direction: column;
+    max-width: 480px;
+    position: relative;
+    border-bottom-width: 2px;
+    border-color: aliceblue;
+    background-color: blue;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* End of Trying overall div with separate ones for cruise ship like France and Galileo Galilei */
+
+/* Comment .classicDetails for now because trying it as overall div for ones inside */
+/* .classicDetails {
+    display: flex;
+    flex-direction: column;
+    float: right;  */
+    
     /* align-content: left; 
     justify-content: left */
     /* position: absolute; */
     /* max-width: 500px; */
-    max-width: 480px;
+
+    /* max-width: 480px;
     position: relative; 
     padding: 1.5em;
     border: solid;
@@ -663,7 +724,7 @@ div.ShipTermsIntro  {
     margin-bottom: 20px;
     margin-left: 20px;
     margin-right: 20px;
-}
+} */
 
 .classic-background {
     float: left;

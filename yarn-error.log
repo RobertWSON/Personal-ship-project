@@ -1,5 +1,5 @@
 Arguments: 
-  /Users/robert/.nvm/versions/node/v8.11.3/bin/node /usr/local/Cellar/yarn/1.9.4/libexec/bin/yarn.js add react-player v2.5.0
+  /Users/robert/.nvm/versions/node/v8.11.3/bin/node /usr/local/Cellar/yarn/1.9.4/libexec/bin/yarn.js upgrade
 
 PATH: 
   /Users/robert/.nvm/versions/node/v8.11.3/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
@@ -14,17 +14,11 @@ Platform:
   darwin x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/v2.5.0: Not found
-      at Request.params.callback [as _callback] (/usr/local/Cellar/yarn/1.9.4/libexec/lib/cli.js:64202:18)
-      at Request.self.callback (/usr/local/Cellar/yarn/1.9.4/libexec/lib/cli.js:137468:22)
-      at emitTwo (events.js:126:13)
-      at Request.emit (events.js:214:7)
-      at Request.<anonymous> (/usr/local/Cellar/yarn/1.9.4/libexec/lib/cli.js:138440:10)
-      at emitOne (events.js:116:13)
-      at Request.emit (events.js:211:7)
-      at IncomingMessage.<anonymous> (/usr/local/Cellar/yarn/1.9.4/libexec/lib/cli.js:138362:12)
-      at Object.onceWrapper (events.js:313:30)
-      at emitNone (events.js:111:20)
+  Error: https://registry.yarnpkg.com/dependencies: ETIMEDOUT
+      at Timeout._onTimeout (/usr/local/Cellar/yarn/1.9.4/libexec/lib/cli.js:138128:19)
+      at ontimeout (timers.js:498:11)
+      at tryOnTimeout (timers.js:323:5)
+      at Timer.listOnTimeout (timers.js:290:5)
 
 npm manifest: 
   {
@@ -59,8 +53,7 @@ npm manifest:
       "dependencies": "^0.0.1",
       "express": "^4.16.3",
       "knex": "^0.15.2",
-      "react-external-link": "^1.1.1",
-      "react-player": "^2.5.0",
+      "react-player": "2.5.0",
       "react-router-hash-link": "^1.2.1",
       "react-slick": "^0.23.1",
       "sqlite3": "^4.0.2",
@@ -4929,10 +4922,6 @@ Lockfile:
       object-assign "^4.1.1"
       prop-types "^15.6.0"
   
-  react-external-link@^1.1.1:
-    version "1.1.1"
-    resolved "https://registry.yarnpkg.com/react-external-link/-/react-external-link-1.1.1.tgz#1caaa0f359d4a04b3052d98b67410c7877fe2f3d"
-  
   react-fast-compare@^3.0.1:
     version "3.2.0"
     resolved "https://registry.yarnpkg.com/react-fast-compare/-/react-fast-compare-3.2.0.tgz#641a9da81b6a6320f270e89724fb45a0b39e43bb"
@@ -4941,7 +4930,7 @@ Lockfile:
     version "16.13.1"
     resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   
-  react-player@^2.5.0:
+  react-player@2.5.0:
     version "2.5.0"
     resolved "https://registry.yarnpkg.com/react-player/-/react-player-2.5.0.tgz#7b3e3351cc3436b175b92295ac9ca4cdaeae4cab"
     dependencies:

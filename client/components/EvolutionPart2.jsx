@@ -27,7 +27,9 @@ class EvolutionPart2 extends React.Component    {
                             title = "Fairstar cruising off Pacific Islands in early 90's"/>
                         </Link>
                         {/* <br/> */}
-                        <p>Find out more on Fairstar, Click on Image</p>
+                        {/* <p> */}
+                        <h4>Find out more on Fairstar, Click on Image</h4>
+                        {/* </p> */}
                         {/* <br/> */}
                         <p>Fairstar Ship Horn</p>
                         <br/>

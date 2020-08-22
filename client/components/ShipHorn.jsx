@@ -30,16 +30,29 @@ class ShipHorn extends React.Component  {
         return  (
             <React.Fragment>
                 
-                <button className = "video" type = "button" onClick = {this.toggleVideo}>
+                <button 
+                    style={{
+                        backgroundColor: 'moccasin',
+                        color: 'brown',
+                        fontSize: '0.9em',
+                        borderRadius: 15,
+                        borderWidth: 2,
+                        borderColor: 'darkslateblue',
+                        padding: '0.3em'
+                    }}
+                    type = "button" 
+                    onClick = {this.toggleVideo}>
                     Ship Horn
                 </button>
                 {this.state.showVideo &&    (
+                    <div>
                     <video controls width = "250">
                         <source
                             src = {this.props.shipHorn}
                             type = "video/mp4"
                         />    
                     </video>
+                    </div>
                 )}
             </React.Fragment>
         )
