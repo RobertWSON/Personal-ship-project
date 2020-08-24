@@ -671,6 +671,24 @@ div.ShipTermsIntro  {
     margin-right: 20px;
 }
 
+.classicDetails  >  .initialDetails  h2 {
+    /* display: flex;
+    flex-direction: column; */
+    /* align-items: center;  */
+    text-align: center; 
+    font-size: 1.6em;
+    color: darkslategrey;
+}
+
+.classicDetails  >  .initialDetails  h4 {
+    /* display: flex;
+    flex-direction: column; */
+    /* align-items: center;  */
+    /* text-align: left;  */
+    font-size: 1em;
+    color: mediumblue;
+}
+
 .classicDetails >  .norwayDetails  {
     display: flex;
     flex-direction: column;
@@ -678,11 +696,22 @@ div.ShipTermsIntro  {
     position: relative;
     border-bottom-width: 2px;
     border-color: aliceblue;
-    background-color: blue;
+    background-color: lightblue;
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 20px;
     margin-right: 20px;
+}
+
+.classicDetails  >  .norwayDetails  h2 {
+    text-align: center; 
+    font-size: 1.6em;
+    color: midnightblue;
+}
+
+.classicDetails  >  .norwayDetails  h4 {
+    font-size: 1em;
+    color: olive;
 }
 
 .classicDetails >  .galileoDetails  {
@@ -692,11 +721,22 @@ div.ShipTermsIntro  {
     position: relative;
     border-bottom-width: 2px;
     border-color: aliceblue;
-    background-color: blue;
+    background-color: lightyellow;
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 20px;
     margin-right: 20px;
+}
+
+.classicDetails  >  .galileoDetails  h2 {
+    text-align: center; 
+    font-size: 1.6em;
+    color: black;
+}
+
+.classicDetails  >  .galileoDetails  h4 {
+    font-size: 1em;
+    color: chocolate;
 }
 
 /* End of Trying overall div with separate ones for cruise ship like France and Galileo Galilei */

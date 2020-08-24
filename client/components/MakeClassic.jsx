@@ -1,6 +1,7 @@
 import React from 'react'
 // Show More Text commented for now, because not working
 // import ShowMoreText from 'react-show-more-text'
+import {HashLink as Link} from 'react-router-hash-Link'
 
 
 class MakeClassic extends React.Component   {
@@ -43,11 +44,16 @@ class MakeClassic extends React.Component   {
 
             <div className = "contents">
                 <h3>Contents</h3>
-                <h4>Early Life</h4>
+                <ol>
+                    <li><Link smooth to = {`/evolutionpart1/${ship_name}/#early`}>Early Life</Link></li>
+                </ol>
+
+                {/* Headings below commented because I need Links */}
+                {/* <h4>Early Life</h4>
                 <h4>As a Cruise Ship</h4>
                 <h4>Memorable Moments</h4>
                 <h4>Ship Plans</h4>
-                <h4>Final Years </h4>
+                <h4>Final Years </h4>  */}
                 {/* Commented because these ships in Part 1 are not in service now.  */}
                 {/* <h4>Recent Times</h4> */}
             </div>
@@ -64,9 +70,8 @@ class MakeClassic extends React.Component   {
 
                 {/* Maybe have a div hear that handles inital specifications for the ship */}
               <div className = "initialDetails">
-                <h2>{ship_name}</h2>
-                {/* <h2>{ship_name}</h2> */}
-                <h3>Ship Specifications</h3>
+                <h2>{ship_name} Ship Specifications</h2>
+                {/* <h3>Ship Specifications</h3> */}
                 {service_years !== '' && <h4>Years in Service: {service_years}</h4>}
                 {france_service_years !== '' && <h4>Service Years as France: {france_service_years}</h4>}
                 {early_service_years !== '' && <h4>Service Years as Galileo Galilei: {early_service_years}</h4>}
@@ -130,8 +135,10 @@ class MakeClassic extends React.Component   {
 
                 {/* Possibly a div hear that handles changed names for the ship, maybe have different background colour  */}
               <div className = "norwayDetails">
-
-                {cruise_ship_name !== '' && <h4>{cruise_ship_name} as a Cruise Ship</h4>}
+                {/* {ship_name !== '' && <h2>{ship_name} as a Cruise Ship</h2>} */}
+                {cruise_ship_name !== '' && <h2>{cruise_ship_name} as a Cruise Ship</h2>}
+                {/* <h2>France as a Cruise Ship</h2> */}
+                {/* {cruise_ship_name !== '' && <h4>{cruise_ship_name} as a Cruise Ship</h4>} */}
 
                 {cruise_ship_name !== '' && <h4>France Liner New Name: {cruise_ship_name}</h4>}
                 {norway_years !== '' && <h4>Years as Norway: {norway_years}</h4>}
@@ -152,8 +159,10 @@ class MakeClassic extends React.Component   {
 
               {/* A div for Galileo Galilei as a cruise ship    */}
               <div className = "galileoDetails">    
-
-                {galileo_name !== '' && <h4>{galileo_name} as a Cruise Ship</h4>} 
+                {/* {ship_name !== '' && <h2>{ship_name} as a Cruise Ship</h2>} */}
+                {galileo_name !== '' && <h2>{galileo_name} as a Cruise Ship</h2>}
+                {/* <h2>Galileo Galilei as a Cruise Ship</h2> */}
+                {/* {galileo_name !== '' && <h4>{galileo_name} as a Cruise Ship</h4>}  */}
 
                 {galileo_name !== '' && <h4>Galileo Galilei's 1st New Name: {galileo_name}</h4>}
                 {galileo_years !== '' && <h4>Years as Galileo: {galileo_years}</h4>}
@@ -177,7 +186,8 @@ class MakeClassic extends React.Component   {
             </div>
 
             <div className = "classic-background">
-                <h3>Early Life</h3>
+                <h3 id = "early">Early Life</h3> 
+                {/* <h3>Early Life</h3> */}
                 <br/><br/>
                 {/* <p>{first_para}</p> */}
                 <p>{early_1st_para}</p>
@@ -199,6 +209,7 @@ class MakeClassic extends React.Component   {
             </div>
 
             <div className = "cruise">
+                {/* <h3 id = "#cruise">As a Cruise Ship</h3> */}
                 <h3>As a Cruise Ship</h3>
                 <br/><br/>
                 {/* <p>{second_para}</p>  */}
@@ -211,6 +222,7 @@ class MakeClassic extends React.Component   {
             </div>
 
             <div className = "memories">
+                {/* <h3 id = "#mem">Memorable Moments</h3> */}
                 <h3>Memorable Moments</h3>
 
                 <p>{mem_1st_para}</p>
@@ -227,6 +239,7 @@ class MakeClassic extends React.Component   {
             </div>
 
             <div className = "plans">
+                {/* <h3 id = "#plans">Ship Plans</h3> */}
                 <h3>{ship_name} Ship Plans</h3> 
                 <br/><br/>
 
@@ -235,6 +248,7 @@ class MakeClassic extends React.Component   {
             </div>    
 
             <div className = "final">
+                {/* <h3 id = "#final">Final Years</h3> */}
                 <h3>Final Years</h3>
 
                 <p>{final_1st_para}</p>
