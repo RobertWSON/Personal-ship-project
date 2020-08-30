@@ -43,10 +43,25 @@ class MakeClassic extends React.Component   {
             <h2 className = "shipTitle">{ship_name}</h2>
 
             <div className = "contents">
-                <h3>Contents</h3>
-                <ol>
-                    <li><Link smooth to = {`/evolutionpart1/${ship_name}/#early`}>Early Life</Link></li>
-                </ol>
+
+                <div className = "contentsHead">
+                    <h3>Contents</h3>
+                </div>
+
+                <div className = "contentsMenu">
+                    <ol>
+                        <li><Link className = "early" smooth to = {`/evolutionpart1/${ship_name}/#early`}>Early Life</Link></li>
+                        <li><Link className = "cruise" smooth to = {`/evolutionpart1/${ship_name}/#cruise`}>As a Cruise Ship</Link></li>
+                        <li><Link className = "mem" smooth to = {`/evolutionpart1/${ship_name}/#mem`}>Memorable Moments</Link></li>
+                        <li><Link className = "plans" smooth to = {`/evolutionpart1/${ship_name}/#plans`}>Ship Plans</Link></li>
+                        <li><Link className = "final" smooth to = {`/evolutionpart1/${ship_name}/#final`}>Final Years</Link></li> 
+                        {/* <li><Link smooth to = {`/evolutionpart1/${ship_name}/#early`}>Early Life</Link></li>
+                        <li><Link smooth to = {`/evolutionpart1/${ship_name}/#cruise`}>As a Cruise Ship</Link></li>
+                        <li><Link smooth to = {`/evolutionpart1/${ship_name}/#mem`}>Memorable Moments</Link></li>
+                        <li><Link smooth to = {`/evolutionpart1/${ship_name}/#plans`}>Ship Plans</Link></li>
+                        <li><Link smooth to = {`/evolutionpart1/${ship_name}/#final`}>Final Years</Link></li> */}
+                    </ol>
+                </div>        
 
                 {/* Headings below commented because I need Links */}
                 {/* <h4>Early Life</h4>
@@ -185,11 +200,9 @@ class MakeClassic extends React.Component   {
 
             </div>
 
-            <div className = "classic-background">
-                <h3 id = "early">Early Life</h3> 
-                {/* <h3>Early Life</h3> */}
+            <div id = "early">     
+                <h3>Early Life</h3>    
                 <br/><br/>
-                {/* <p>{first_para}</p> */}
                 <p>{early_1st_para}</p>
 
                 <img src = {img_trials}
@@ -208,11 +221,9 @@ class MakeClassic extends React.Component   {
                 </video>     
             </div>
 
-            <div className = "cruise">
-                {/* <h3 id = "#cruise">As a Cruise Ship</h3> */}
-                <h3>As a Cruise Ship</h3>
+            <div id = "cruise">
+                <h3>As a Cruise Ship</h3>    
                 <br/><br/>
-                {/* <p>{second_para}</p>  */}
                 <p>{cruise_1st_para}</p>
 
                 <img src = {img_1stcruise}
@@ -221,8 +232,7 @@ class MakeClassic extends React.Component   {
                 <p>{cruise_2nd_para}</p>    
             </div>
 
-            <div className = "memories">
-                {/* <h3 id = "#mem">Memorable Moments</h3> */}
+            <div id = "mem">     
                 <h3>Memorable Moments</h3>
 
                 <p>{mem_1st_para}</p>
@@ -238,25 +248,23 @@ class MakeClassic extends React.Component   {
 
             </div>
 
-            <div className = "plans">
-                {/* <h3 id = "#plans">Ship Plans</h3> */}
-                <h3>{ship_name} Ship Plans</h3> 
+            <div id = "plans">    
+                <h3>{ship_name} Ship Plans</h3>  
                 <br/><br/>
 
                 <p>{plans_para}</p>
                 <img src = {ship_plans} />           
             </div>    
 
-            <div className = "final">
-                {/* <h3 id = "#final">Final Years</h3> */}
-                <h3>Final Years</h3>
+            <div id = "final">    
+                <h3>Final Years</h3> 
 
                 <p>{final_1st_para}</p>
                 <p>{final_2nd_para}</p>
 
             </div>
 
-            {/* Commented because these ships in Part 1 are not in service now. */}
+            {/* Commented because these ships in Part 1 are not in service now. Will need this is Part 2. */}
             {/* <div className = "recent">
                 <h3>Recent Times</h3>
             </div> */}

@@ -13,7 +13,8 @@ class Michelangelo extends React.Component   {
                 <h2 className = "ship">Michelangelo</h2>
 
                 <h3>Contents</h3>
-                <Link className = "Contents" smooth to = {`/evolutionpart1/michelangelo/#${History}`}>
+                <Link className = "Contents" smooth to = {`/evolutionpart1/michelangelo/#history`}>
+                {/* <Link className = "Contents" smooth to = {`/evolutionpart1/michelangelo/#${History}`}> */}
                     History
                 </Link>
                 <br/>
@@ -36,7 +37,8 @@ class Michelangelo extends React.Component   {
                     <h4>Loaded Displacement (Maximum):  44322 Tonnes</h4>
                 </div>
 
-                <h3 id = {History}>History or Background</h3>
+                <h3 id = "history">History or Background</h3>
+                {/* <h3 id = {History}>History or Background</h3> */}
                 <br/>
                 <p>The Michelangelo was an Italian built cruise ship that operated between Europe (usually Genoa and Canary Islands) and New York, USA.
                    <br/>
