@@ -644,13 +644,17 @@ div.ShipTermsIntro  {
     color: peru;    
 } */
 
+
+/* Trying to use before to get ordered list styled
+.contents   >   .contentsMenu   ol  li.early    ::before    { */
 .contents   >   .contentsMenu   ol  li:nth-child(1) {
     background-color: beige;
     padding-top: 7px; 
     padding-bottom: 7px; 
 }
-
-.contents   >   .contentsMenu  > ol > li  > .early  {
+/* Maybe I can have this for styling early class */
+/* .contents   >   .contentsMenu  > ol > .early  >   link    { */
+.contents   >   .contentsMenu  > ol > li  > .early  { 
     font-size: 1.3em;
     text-decoration: none;
     color: peru;
@@ -836,32 +840,63 @@ div.ShipTermsIntro  {
     flex-direction: column;
 
     float: left;
-    padding: 1.5em;
-    border: 1px solid burlywood;
-    border-radius: 20px;
-    text-align: center;
-    justify-content: center;
-    max-width: 800px;
+    /* padding: 1.5em; */
+
+    /* border: 1px solid burlywood;
+    border-radius: 20px; */
+
+    /* I don't think I need text-align and justify */
+    /* text-align: center;
+    justify-content: center; */
+    
+    /* align-items: flex-start; */
+    
+    /* align-self: center; */
+    /* align-items: center; */
+    /* position: relative; */
+
+    /* max-width: 800px; */
     /* max-width: 1000px; */
 
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 20px;
-    margin-right: 20px;
+    /* margin-right commented so that there is space between image and ship specs */
+    /* margin-right: 20px; */
+    margin-right: 70px; 
     
-    background-color: azure;
+    /* background-color: azure; */
 }
 
+.classicShip    >   .shipImage  {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    /* align-items: center; */
+    max-width: 800px;
+    background-color: azure;
+    padding: 1.5em;
+    border: 1px solid burlywood;
+    border-radius: 20px; 
+}
+
+/* Commented below because this does not make a difference */
+.classicShip    >   .shipImage  >  img  {
+    max-width: 800px;
+    height: auto;
+}
 
 /* Trying overall div with separate ones for cruise ship like France and Galileo Galilei */
 .classicDetails {
     /* display: flex;
     flex-direction: column; */
     float: right;
-    max-width: 480px;
+    /* max-width: 480px; */
+    /* Maybe need to make wider because of Pacific Princess name */
+    max-width: 600px;
     position: relative;
     
-    padding: 1.5em; 
+    /* padding: 1.5em;  */
     border: solid;
     border-width: 2px;
     border-color: aliceblue;
@@ -883,7 +918,7 @@ div.ShipTermsIntro  {
     border-color: aliceblue;
     background-color: aliceblue;
 
-    padding: 1.5em;
+    padding: 2.6em;  
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 20px;
@@ -916,6 +951,8 @@ div.ShipTermsIntro  {
     border-bottom-width: 2px;
     border-color: aliceblue;
     background-color: lightblue;
+    /* padding: 2.6em;  */
+
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 20px;
@@ -941,6 +978,8 @@ div.ShipTermsIntro  {
     border-bottom-width: 2px;
     border-color: aliceblue;
     background-color: lightyellow;
+    /* padding: 1.8em; */
+
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 20px;

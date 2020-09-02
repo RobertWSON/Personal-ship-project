@@ -127,7 +127,9 @@ exports.seed = function(knex, Promise) {
           // second_para: "However there is a twist to the above theory of why it sank.<br/> It is believed that at the beginning of its voyage, there was a fire that started at the bottom of the ship. The crew who are responsible usually for filling the boilers up with coal, had a new challenge and they were trying to get rid of the fire. The fire caused a distinctive dark mark on the outside hull and it is believed that the bulkheads inside had been weakened by the fire.",
           
           ship_plans: '/images/Evolution/Titanic/d1my6c8-6d48eae7-255d-4e4d-bc8a-ff9ba1b0c417.jpg',
-          early_video: '', 
+          ship_plans_cont: '',
+          early_video: '/videos/classics/Titanic/The Sea Trials of the R.M.S. Titanic.mp4', 
+          cruise_video: '',
           mem_video: '/videos/classics/Titanic/Deconstructing Titanic History.mp4'
         
         },
@@ -138,7 +140,7 @@ exports.seed = function(knex, Promise) {
           img_title: "Oriana in Panama Canal during 1960's",
           img_trials: '',
           img_trials_title: '',
-          img_early: '',
+          img_early: '/images/oriana15.jpg',
           img_early_title: '',
           img_1stcruise: '',
           img_1stcruise_title: '',
@@ -234,17 +236,19 @@ exports.seed = function(knex, Promise) {
           //originally first_para:
           early_1st_para: "The Oriana is the start of where cruising began. </br> She was able to travel through Panama Canal and so it was able to travel to lots of different locations. Because of her deep draft, like a lot of the older cruise ships had, she had to tender in some ports like Pacific Islands. Tender are boats used on the side of a ship to take passenger to a port when the draft on a ship is to deep to go into a port. She was the fastest ship in the P & O (Peninsular and Oriental) fleet and achieved 30.64 knots during sea trials in November 1960.",
           //originally second_para:
-          early_2nd_para: "Oriana's maiden voyage was in December 1960, from Southampton, UK to Sydney, Australia and arrived in Sydney on December 30th 1960. She also visited New Zealand and was a regular on that service for ",
-          cruise_1st_para: "",
-          cruise_2nd_para: '',
+          early_2nd_para: "Oriana's maiden voyage was in December 1960, from Southampton, UK to Sydney, Australia and arrived in Sydney on December 30th 1960. She also visited New Zealand and was a regular on that service for most of her career. In 1961 on June 9th at 5pm Oriana departed Auckland to go to Sydney and set a trans tasman record of 47 hours 30 minutes at 27 knots. Oriana can be seen in the photo below, oassing through Panama Canal for the very first time in June 31st 1961 on a return trip to Southampton from Sydney. At that time she was the largest liner to pass through Panama Canal since the German liner Bremen in 1938.",
+          cruise_1st_para: "Oriana was faced with unprofitable around-the-world passenger routes, so in 1973 she was converted to operate as a one class cruise ship. Oriana operated with P & O Cruise Line and took a maximum of 1750 passengers and 780 crew.",
+          cruise_2nd_para: 'From 1981 until March 1986, Oriana was based at Sydney, Australia. She operated within Pacific Ocean and South East Asian ports.',
           mem_1st_para: '',
           mem_2nd_para: '',
           plans_para: '',
-          final_1st_para: '',
-          final_2nd_para:'',
+          final_1st_para: "When Oriana retired from being a cruise ship in March 1986 because she was a surplus to P & O's requirements, she was sold to become a floating hotel and tourist attraction. She operated as this firstly in Japan and then in China.",
+          final_2nd_para:'In 2004 Oriana was damaged due to a severe storm in Dalian, China. Repairs were too costly, so sadly the end was in sight and she was towed to  “Wayou Breakers” ship breakers yard at Zhangiagang China. Our beloved SS Oriana the ship that was once “The Queen of The Sea” was sadly broken up, aged 45 years since her maiden voyage.',
 
-          ship_plans: '',
+          ship_plans: '/images/Evolution/Oriana/SS-Oriana-1960-Plans-1.jpg',
+          ship_plans_cont: '/images/Evolution/Oriana/SS-Oriana-1960-Plans-2.jpg',
           early_video: '/videos/classics/Oriana/The Building of ss Oriana.mp4',
+          cruise_video: '',
           mem_video: ''
 
         },
@@ -360,9 +364,11 @@ exports.seed = function(knex, Promise) {
           final_1st_para: '',
           final_2nd_para:'',
           
-          ship_plans: '',
+          ship_plans: '/images/Evolution/Canberra/plan-ga-all.jpg',
+          ship_plans_cont: '',
           early_video: '',
-          mem_video: '/videos/classics/Canberra/Holiday on P&O Canberra 1988.mp4'
+          cruise_video: '/videos/classics/Canberra/Holiday on P&O Canberra 1988.mp4',
+          mem_video: '/videos/classics/Canberra/SS Canberra - First Lady of the P&O.mp4'
 
         },
         {
@@ -372,10 +378,10 @@ exports.seed = function(knex, Promise) {
           img_title: "France in Home port for the first time in 1961",
           img_trials: '',
           img_trials_title: '',
-          img_early: '',
-          img_early_title: '',
-          img_1stcruise: '',
-          img_1stcruise_title: '',
+          img_early: '/images/Evolution/France/QuayofForgotten_800x567.jpg',
+          img_early_title: "SS France laid up at at the 'Pier of the Forgotton in 1974.'",
+          img_1stcruise: '/images/Evolution/France/GermanyDrydock_755x600.jpg',
+          img_1stcruise_title: 'Converted to SS Norway in Bremerhaven, Germany drydock in 1979',
 
           //Service Years for other ships, no data her though because France has it's own.
           service_years: '',    
@@ -470,18 +476,20 @@ exports.seed = function(knex, Promise) {
           early_1st_para: "The SS France was a steam ship, hence the intials SS, that originally operated for the French Line. <br/>As can be seen in the photo above she originally had a black and white hull (this is the main structure of the ship). <br/> <br/>The <strong>above</strong> photo was taken when she was entering her home port of Le Havre, France for the very first time on 23rd of November 1961. <br>Her hull colour had changed to <strong>green</strong> during the mid to late 1960's and this rare photo below, shows her departing from Southhampton with her green hull.",
           //originally first_para:
           //Newly added early_2nd_para
-          early_2nd_para: '',
-          cruise_1st_para: "In 1979 SS France was sold to Knut Kloster, the owner of Norwegian Caribbean Line for $18 million. to be converted into largest cruise ship at that time. In August 1979 she was moved to Lloyd shipyards in Bremerhaven, Germany and would undergo renovations costing $80 million to be converted to a cruise ship. She was renamed SS Norway and on 14th April 1980 was finished and christened with the bottle of champagne, ready to start cruising",
+          early_2nd_para: "As the new decade wore on, the FRANCE was struggling like never before - largely due to passenger traffic taking to the skies. It was reported in 1973-74 that less than 2% of the travelers seeking passage over the Atlantic were aboard an actual ocean liner. With the price of oil jumping to $95 a ton, a fuel saving measure called for a reduction in speed to a maximium of 24-25 knots. This reduced speed imposed extending the crossing for an extra day as 5-day crossing became six, as 30 knot crossings became a thing of the past. In 1974 SS France career as a classic liner unfortunately came to an end and she was laid up in Le Haver at what is called the Pier of the Forgotten. She was laid up for 5 years from 1974 to 1979. The end seemed in sight, but fortunately though in 1977 a Saudi Arabian man purchased her for $24 million",
+          cruise_1st_para: "In 1979 SS France was sold to Knut Kloster, the owner of Norwegian Caribbean Line for $18 million to be converted into the largest cruise ship at that time. In August 1979 she was moved to Lloyd shipyards in Bremerhaven, Germany as can be seen in the below photo and would undergo renovations costing $80 million to be converted to a cruise ship.",
           // originally second_para:
-          cruise_2nd_para: '',
+          cruise_2nd_para: 'SS France was now renamed SS Norway and on 14th April 1980 was finished and christened with the bottle of champagne, ready to start cruising. For her maiden voyage she sailed from Bremerhaven, Germany to Southampton and then on to New York City. In here early days she did cruises from ',
           mem_1st_para: '',
           mem_2nd_para: '',
           plans_para: '',
           final_1st_para: '',
           final_2nd_para:'',
 
-          ship_plans: '',
+          ship_plans: '/images/Evolution/France/Norway2002-1.gif',
+          ship_plans_cont: '/images/Evolution/France/Norway2002-2.gif',
           early_video: '/videos/classics/France/SS France At New York (1962).mp4',
+          cruise_video: '',
           mem_video: ''
 
         },
@@ -598,11 +606,13 @@ exports.seed = function(knex, Promise) {
           mem_1st_para: '',
           mem_2nd_para: '',
           plans_para: '',
-          final_1st_para: '',
-          final_2nd_para:'',
+          final_1st_para: 'In 1999 she operated as SS Sun vista and on May 20th, she suffered an engine room fire. ',
+          final_2nd_para:'Sun Vista end happened on  pm when she sank. Luckily though there was no loss of lives ',
 
           ship_plans: '',
+          ship_plans_cont: '',
           early_video: '',
+          cruise_video: '',
           mem_video: ''
           
         },
@@ -722,7 +732,9 @@ exports.seed = function(knex, Promise) {
           final_2nd_para:'When Acif was being towed to Aliaga, Turkey for scrapping, she took on water and was a lean. However she did make it to Aliaga and sadly this great ship that has a lot of great memories got scrapped. ',
 
           ship_plans: '',
+          ship_plans_cont: '',
           early_video: '',
+          cruise_video: '',
           mem_video: '/videos/classics/Pacific Princess/The Love Boat 1977 - 1986 Opening and Closing Theme.mp4'
 
         }

@@ -96,6 +96,7 @@ exports.up = function(knex, Promise) {
         table.string('final_2nd_para')
 
         table.string('ship_plans')
+        table.string('ship_plans_cont')
         table.string('img_trials')
         table.string('img_trials_title')
         table.string('img_early')
@@ -103,6 +104,7 @@ exports.up = function(knex, Promise) {
         table.string('img_1stcruise')
         table.string('img_1stcruise_title')
         table.string('early_video')
+        table.string('cruise_video')
         table.string('mem_video')
     })
 };

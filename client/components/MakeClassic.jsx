@@ -27,8 +27,8 @@ class MakeClassic extends React.Component   {
             norway_passenger_decks, norway_last_name, norway_final_year, norway_final_gt, galileo_name, galileo_years, galileo_gt, 
             galileo_passenger_capacity, meridian_name, meridian_years, meridian_gt, meridian_passenger_capacity, gg_last_name,
             sunvista_years, sunvista_gt, sunvista_passenger_capacity, early_1st_para, early_2nd_para, cruise_1st_para, ship_plans, 
-            img_trials, img_trials_title, img_early, img_early_title, img_1stcruise, img_1stcruise_title, early_video, mem_video,
-            cruise_2nd_para, mem_1st_para, mem_2nd_para, plans_para, final_1st_para, final_2nd_para
+            ship_plans_cont, img_trials, img_trials_title, img_early, img_early_title, img_1stcruise, img_1stcruise_title, 
+            early_video, cruise_video, mem_video, cruise_2nd_para, mem_1st_para, mem_2nd_para, plans_para, final_1st_para, final_2nd_para
         } = this.props
 
         // const newResult = speed.split('|')
@@ -50,7 +50,9 @@ class MakeClassic extends React.Component   {
 
                 <div className = "contentsMenu">
                     <ol>
-                        <li><Link className = "early" smooth to = {`/evolutionpart1/${ship_name}/#early`}>Early Life</Link></li>
+                    {/* <li className = "early">< Link smooth to = {`/evolutionpart1/${ship_name}/#early`}>Early Life</Link></li> */}
+                        <li><Link className = "early" smooth to = {`/evolutionpart1/${ship_name}/#early`}>Early Life</Link></li> 
+                        
                         <li><Link className = "cruise" smooth to = {`/evolutionpart1/${ship_name}/#cruise`}>As a Cruise Ship</Link></li>
                         <li><Link className = "mem" smooth to = {`/evolutionpart1/${ship_name}/#mem`}>Memorable Moments</Link></li>
                         <li><Link className = "plans" smooth to = {`/evolutionpart1/${ship_name}/#plans`}>Ship Plans</Link></li>
@@ -76,8 +78,11 @@ class MakeClassic extends React.Component   {
             <div className = "classicContainer"> 
 
             <div className = "classicShip">
+
+                <div className = "shipImage">
                 <img src = {img}
                      title = {img_title}/>
+                </div>
             </div>
 
             <div className = "classicDetails">
@@ -205,6 +210,13 @@ class MakeClassic extends React.Component   {
                 <br/><br/>
                 <p>{early_1st_para}</p>
 
+                <video controls width = "500">
+                    <source
+                        src = {early_video}
+                        type = "video/mp4"
+                    />    
+                </video>
+
                 <img src = {img_trials}
                      title = {img_trials_title}/>
 
@@ -213,12 +225,12 @@ class MakeClassic extends React.Component   {
                 <img src = {img_early}
                      title = {img_early_title}/>
 
-                <video controls width = "500">
+                {/* <video controls width = "500">
                     <source
                         src = {early_video}
                         type = "video/mp4"
                     />    
-                </video>     
+                </video>      */}
             </div>
 
             <div id = "cruise">
@@ -229,7 +241,15 @@ class MakeClassic extends React.Component   {
                 <img src = {img_1stcruise}
                     title = {img_1stcruise_title}/>
 
-                <p>{cruise_2nd_para}</p>    
+                <p>{cruise_2nd_para}</p>
+
+                 <video controls width = "500">
+                    <source
+                        src = {cruise_video}
+                        type = "video/mp4"
+                    />    
+                </video>
+   
             </div>
 
             <div id = "mem">     
@@ -253,7 +273,8 @@ class MakeClassic extends React.Component   {
                 <br/><br/>
 
                 <p>{plans_para}</p>
-                <img src = {ship_plans} />           
+                <img src = {ship_plans} />
+                <img src = {ship_plans_cont} />           
             </div>    
 
             <div id = "final">    
