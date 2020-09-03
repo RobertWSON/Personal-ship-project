@@ -1,6 +1,7 @@
 import React from 'react'
 // Show More Text commented for now, because not working
 // import ShowMoreText from 'react-show-more-text'
+// HashLink commented because it is in HoverContents component
 import {HashLink as Link} from 'react-router-hash-Link'
 
 
@@ -44,35 +45,26 @@ class MakeClassic extends React.Component   {
 
             <div className = "contents">
 
+                {/* Hover Component does not work yet, so commented */}
+                {/* <HoverContents classicName = {ship_name} /> */}
+                {/* <HoverContents classicPage = {ship_name} /> */}
+
                 <div className = "contentsHead">
                     <h3>Contents</h3>
-                </div>
+                </div> 
 
                 <div className = "contentsMenu">
-                    <ol>
+                    <ol> 
+
                     {/* <li className = "early">< Link smooth to = {`/evolutionpart1/${ship_name}/#early`}>Early Life</Link></li> */}
                         <li><Link className = "early" smooth to = {`/evolutionpart1/${ship_name}/#early`}>Early Life</Link></li> 
-                        
                         <li><Link className = "cruise" smooth to = {`/evolutionpart1/${ship_name}/#cruise`}>As a Cruise Ship</Link></li>
                         <li><Link className = "mem" smooth to = {`/evolutionpart1/${ship_name}/#mem`}>Memorable Moments</Link></li>
                         <li><Link className = "plans" smooth to = {`/evolutionpart1/${ship_name}/#plans`}>Ship Plans</Link></li>
                         <li><Link className = "final" smooth to = {`/evolutionpart1/${ship_name}/#final`}>Final Years</Link></li> 
-                        {/* <li><Link smooth to = {`/evolutionpart1/${ship_name}/#early`}>Early Life</Link></li>
-                        <li><Link smooth to = {`/evolutionpart1/${ship_name}/#cruise`}>As a Cruise Ship</Link></li>
-                        <li><Link smooth to = {`/evolutionpart1/${ship_name}/#mem`}>Memorable Moments</Link></li>
-                        <li><Link smooth to = {`/evolutionpart1/${ship_name}/#plans`}>Ship Plans</Link></li>
-                        <li><Link smooth to = {`/evolutionpart1/${ship_name}/#final`}>Final Years</Link></li> */}
                     </ol>
-                </div>        
+                </div>         
 
-                {/* Headings below commented because I need Links */}
-                {/* <h4>Early Life</h4>
-                <h4>As a Cruise Ship</h4>
-                <h4>Memorable Moments</h4>
-                <h4>Ship Plans</h4>
-                <h4>Final Years </h4>  */}
-                {/* Commented because these ships in Part 1 are not in service now.  */}
-                {/* <h4>Recent Times</h4> */}
             </div>
 
             <div className = "classicContainer"> 

@@ -860,10 +860,11 @@ div.ShipTermsIntro  {
 
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-left: 20px;
+    margin-left: 0px;
     /* margin-right commented so that there is space between image and ship specs */
     /* margin-right: 20px; */
-    margin-right: 70px; 
+    margin-right: 20px;
+    /* margin-right: 70px;  */
     
     /* background-color: azure; */
 }
@@ -873,7 +874,8 @@ div.ShipTermsIntro  {
     flex-direction: column;
     align-self: center;
     /* align-items: center; */
-    max-width: 800px;
+    width: 680px; 
+    /* max-width: 800px;  */
     background-color: azure;
     padding: 1.5em;
     border: 1px solid burlywood;
@@ -882,8 +884,9 @@ div.ShipTermsIntro  {
 
 /* Commented below because this does not make a difference */
 .classicShip    >   .shipImage  >  img  {
-    max-width: 800px;
-    height: auto;
+    width: 100%;
+    /* max-width: 800px; */
+    height: auto; 
 }
 
 /* Trying overall div with separate ones for cruise ship like France and Galileo Galilei */
@@ -1031,7 +1034,7 @@ div.ShipTermsIntro  {
     border-radius: 20px;
     background-color: ivory;
     max-width: 750px;
-    padding: 20px;
+    /* padding: 20px; */
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 20px;
