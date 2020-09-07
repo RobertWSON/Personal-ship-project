@@ -264,25 +264,80 @@ div.header h1 {
     max-width: 1350px;
     padding: 1em;
     margin: auto 0;
-    padding: 1em;  
+    padding: 1em; 
+    /* Added this for temporary border and margin for reviewContainer */
+    margin: 15px;
+    /* margin: auto 0;  */
+    border: 2px solid burlywood;
+    border-radius: 20px;
 }
  
 .cruiseShip {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    padding: 1.5em;
+    /* padding: 1em; */
+    border: 2px solid burlywood;
+    border-radius: 25px;
+    justify-content: center;
+    width: 50%; 
+    max-width: 850px;
+    min-width: 40%;
+    height: auto;
+}
+
+/* .cruiseShip >   h2.ship     { */
+.cruiseShip >   .ship   {
+    color: darkcyan;
+    text-align: center;
+    size: 1em;
+} 
+
+/* .cruiseShip >   .ship  >  img   {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    width: 600px;
+    height: auto;
+}  */
+
+.cruiseShip >   .ship   >   .cruiseImage    {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    max-width: 780px;
+    min-width: 40%;
+}
+
+.cruiseShip >   .ship   >   .cruiseImage    img    {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    width: 780px;
+    height: auto;
+}
+
+/* .cruiseShip { */
+
     /* Hopefully this flex-start helps with alignment of elements */
     /* align-items: flex-start; */
-    float: left;
+
+    /* Commented this .cruiseShip code below because I am putting new code above */
+    /* float: left;
     padding: 1.5em;
     border: 1px solid burlywood;
     border-radius: 20px;
     text-align: center;
     justify-content: center;
     max-width: 850px;
-}
+}*/
 
-h2.ship {
+/* h2.ship {
     color: darkcyan;
     size: 1em; 
-}
+}  */
+/* End of commented code for .cruiseShip */
 
 /* .backButton {
     float: left;

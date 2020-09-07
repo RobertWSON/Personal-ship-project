@@ -46,7 +46,9 @@ class Ship extends React.Component  {
                 user is reviewing.   */}
                 <h2 className = "ship" id ={encodedShipName}>{ship_name}</h2>
 
-                <img src ={img} title = {ship_name}/>
+                <div className = "cruiseImage">
+                    <img src ={img} title = {ship_name}/>
+                </div>
 
             </div>
 

@@ -609,8 +609,8 @@ exports.seed = function(knex, Promise) {
           final_1st_para: 'In 1999 she operated as SS Sun vista and on May 20th, she suffered an engine room fire. ',
           final_2nd_para:'Sun Vista end happened on  pm when she sank. Luckily though there was no loss of lives ',
 
-          ship_plans: '',
-          ship_plans_cont: '',
+          ship_plans: '/images/Evolution/Galileo Galilei/Galileo Galilei Ship Plans (pg 1).png',
+          ship_plans_cont: '/images/Evolution/Galileo Galilei/Galileo Galilei Ship Plans (pg 2).png',
           early_video: '',
           cruise_video: '',
           mem_video: ''
@@ -731,7 +731,7 @@ exports.seed = function(knex, Promise) {
           final_1st_para: 'In 2013 she ended her career as a cruise ship and was finally name Acif before she was scrapped.',
           final_2nd_para:'When Acif was being towed to Aliaga, Turkey for scrapping, she took on water and was a lean. However she did make it to Aliaga and sadly this great ship that has a lot of great memories got scrapped. ',
 
-          ship_plans: '',
+          ship_plans: '/images/Evolution/Pacific Princess/MS-Pacific-Princess-Deck-Plan.jpg',
           ship_plans_cont: '',
           early_video: '',
           cruise_video: '',

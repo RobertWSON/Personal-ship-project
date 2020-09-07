@@ -194,7 +194,7 @@ class MakeClassic extends React.Component   {
                 {/* End of show more text within classicDetails div */}
 
                 {/* Possibly end of div that handles changed names for the ship with maybe different background colour */}
-
+                
             </div>
 
             <div id = "early">     
