@@ -707,6 +707,30 @@ div.ShipTermsIntro  {
     padding-top: 7px; 
     padding-bottom: 7px; 
 }
+
+
+
+/* Trying to style first child ordered list number */
+/* .contents   >   .contentsMenu   ol  li:nth-child(1)::before {
+    background-color: beige;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-size: 1.3em;
+    color: peru;
+}
+
+ul > li:before {  
+    content: counter(index, decimal);
+    counter-increment:index;
+}
+li:first-child {
+    counter-reset:index;
+} */
+/* This above has not worked unfortunately */
+
+
+
+
 /* Maybe I can have this for styling early class */
 /* .contents   >   .contentsMenu  > ol > .early  >   link    { */
 .contents   >   .contentsMenu  > ol > li  > .early  { 
@@ -890,58 +914,55 @@ div.ShipTermsIntro  {
     padding: 20px;
 }    
 
-.classicShip    {
+/* Anthony McGrath Method */
+/* .classicShip    {
     display: flex;
     flex-direction: column;
-
     float: left;
-    /* padding: 1.5em; */
-
-    /* border: 1px solid burlywood;
-    border-radius: 20px; */
-
-    /* I don't think I need text-align and justify */
-    /* text-align: center;
-    justify-content: center; */
-    
-    /* align-items: flex-start; */
-    
-    /* align-self: center; */
-    /* align-items: center; */
-    /* position: relative; */
-
-    /* max-width: 680px;  */
-    /* max-width: 1000px; */
-    max-width: 680px;
-    /* min-width 100% centre image on page and ship specs are below   */
-    min-width: 40%; 
-    /* min-width 50% places ship image on left and floats ship specs to the right  */
-    /* min-width: 50%; */
-    /* Width at a percentage keeps that image at 40% of screen size when responsive */
-    /* width: 40%; */
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 0px;
-    /* margin-right commented so that there is space between image and ship specs */
-    /* margin-right: 20px; */
     margin-right: 20px;
-    /* margin-right: 70px;  */
-    
-    /* background-color: azure; */
+    width: 50%; 
+    max-width: 680px;
+    min-width: 200px;  
 }
 
 .classicShip    >   .shipImage  {
     display: flex;
     flex-direction: column;
     align-self: center;
-    /* align-items: center; */
-    /* This makes the image have a maximum width and scales it down responsively to 50% when smaller screen */
-    /* max-width: 680px; */
-    /* width: 50%; */
+    width: 100%;  
+    background-color: azure;
+    padding: 1.5em;
+    border: 1px solid burlywood;
+    border-radius: 20px; 
+} */
 
-    /* width: 680px;    */
+/* Commented below because this does not make a difference */
+/* .classicShip    >   .shipImage  >  img  {
+    width: 100%; 
+    height: auto;  
+} */
+/* End of Anthony McGrath Method */
 
-    /* max-width: 800px;  */
+/* My (Rob Wilkinson) Original Method, but responsive from 65% screen width*/
+.classicShip    {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    margin-right: 20px; 
+    max-width: 680px;
+    min-width: 50%;  
+}
+
+.classicShip    >   .shipImage  {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
     background-color: azure;
     padding: 1.5em;
     border: 1px solid burlywood;
@@ -952,16 +973,11 @@ div.ShipTermsIntro  {
 .classicShip    >   .shipImage  >  img  {
     display: flex;
     flex-direction: column;
-    /* max-width: 680px; */
-    /* width: 680px;   */
     max-width: 100%;
     width: 680px; 
-    /* max-width: 100%;   */
-
-    /* max-width: 800px; */
-
     height: auto;  
 }
+/* End of my (Rob Wilkinson) Original Method */
 
 /* Trying overall div with separate ones for cruise ship like France and Galileo Galilei */
 .classicDetails {

@@ -72,7 +72,7 @@ class MakeClassic extends React.Component   {
             <div className = "classicShip">
 
                 <div className = "shipImage">
-                <img src = {img}
+                    <img src = {img}
                      title = {img_title}/>
                 </div>
             </div>
