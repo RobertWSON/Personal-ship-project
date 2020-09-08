@@ -80,6 +80,16 @@ class Michelangelo extends React.Component   {
                 <Link to="/evolutionpart1">Back to Evolution (Part 1)</Link>
             </button>
 
+            {/* Temporarily Putting in Michelangelo Ship Plans */}
+            <div id = "plans">    
+                <h3>Michelangelo Ship Plans</h3>  
+                <br/><br/>
+
+                <p></p>
+                <img src =  />
+                {/* <img src = {ship_plans_cont} />            */}
+            </div>
+
             </React.Fragment>
         )
     }    
