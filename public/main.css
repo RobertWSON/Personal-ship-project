@@ -979,6 +979,11 @@ li:first-child {
 }
 /* End of my (Rob Wilkinson) Original Method */
 
+/* Trying using this method of having className for <img/> */
+
+
+/* End of Trying using this method of having className for <img/> */
+
 /* Trying overall div with separate ones for cruise ship like France and Galileo Galilei */
 .classicDetails {
     /* display: flex;
