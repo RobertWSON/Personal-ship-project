@@ -58,7 +58,15 @@ class Qe2 extends React.Component   {
                 <br/><br/>
                 <br/>
 
-                
+                <div id = "plans">    
+                    <h3>Qe2 Ship Plans</h3>  
+                    <br/><br/>
+
+                    <p></p>
+                    <img src = {'/images/Evolution/Michelangelo/Michangelo_Side_View_Plan.jpeg'} />
+                    <img src = {'/images/Evolution/Michelangelo/Michelangelo_Full_Ship_Plans.jpg'} />
+                {/* <img src = {ship_plans_cont} />            */}
+                </div>
                 
 
                 <button>

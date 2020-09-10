@@ -61,6 +61,15 @@ class AllureoftheSeas extends React.Component   {
 
                 <br/><br/>
                 
+                <div id = "plans">    
+                    <h3>Allure of the Seas Ship Plans</h3>  
+                    <br/><br/>
+
+                    <p></p>
+                    <img src = {'/images/Evolution/Michelangelo/Michangelo_Side_View_Plan.jpeg'} />
+                    <img src = {'/images/Evolution/Michelangelo/Michelangelo_Full_Ship_Plans.jpg'} />
+                {/* <img src = {ship_plans_cont} />            */}
+                </div>
 
                 <button>
                 <Link to="/evolutionpart1">Back to Evolution (Part 1)</Link>

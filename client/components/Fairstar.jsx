@@ -91,6 +91,16 @@ class Fairstar extends React.Component   {
                 <img src = {"/images/Evolution/Fairstar/Oxfordshire_Malacca_Str_4.jpg"}/>
                 <br/>
 
+                <div id = "plans">    
+                    <h3>Fairstar or Oxfordshire Ship Plans</h3>  
+                    <br/><br/>
+
+                    <p></p>
+                    <img src = {'/images/Evolution/Michelangelo/Michangelo_Side_View_Plan.jpeg'} />
+                    <img src = {'/images/Evolution/Michelangelo/Michelangelo_Full_Ship_Plans.jpg'} />
+                {/* <img src = {ship_plans_cont} />            */}
+                </div>
+
                 <button>
                 <Link to="/evolutionpart2">Back to Evolution (Part 2)</Link>
             </button>
