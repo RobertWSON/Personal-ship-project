@@ -54,15 +54,17 @@ class MakeClassic extends React.Component   {
                 </div> 
 
                 <div className = "contentsMenu">
-                    <ol> 
-
-                    {/* <li className = "early">< Link smooth to = {`/evolutionpart1/${ship_name}/#early`}>Early Life</Link></li> */}
-                        <li><Link className = "early" smooth to = {`/evolutionpart1/${ship_name}/#early`}>Early Life</Link></li> 
-                        <li><Link className = "cruise" smooth to = {`/evolutionpart1/${ship_name}/#cruise`}>As a Cruise Ship</Link></li>
-                        <li><Link className = "mem" smooth to = {`/evolutionpart1/${ship_name}/#mem`}>Memorable Moments</Link></li>
-                        <li><Link className = "plans" smooth to = {`/evolutionpart1/${ship_name}/#plans`}>Ship Plans</Link></li>
-                        <li><Link className = "final" smooth to = {`/evolutionpart1/${ship_name}/#final`}>Final Years</Link></li> 
-                    </ol>
+                    
+                    {/* Comment list className to try Natew way from slack */}
+                    {/* <div className = "list">  */}
+                        <ol> 
+                            <li><Link className = "early" smooth to = {`/evolutionpart1/${ship_name}/#early`}>Early Life</Link></li> 
+                            <li><Link className = "cruise" smooth to = {`/evolutionpart1/${ship_name}/#cruise`}>As a Cruise Ship</Link></li>
+                            <li><Link className = "mem" smooth to = {`/evolutionpart1/${ship_name}/#mem`}>Memorable Moments</Link></li>
+                            <li><Link className = "plans" smooth to = {`/evolutionpart1/${ship_name}/#plans`}>Ship Plans</Link></li>
+                            <li><Link className = "final" smooth to = {`/evolutionpart1/${ship_name}/#final`}>Final Years</Link></li> 
+                        </ol>
+                    {/* </div> */}
                 </div>         
 
             </div>
@@ -110,7 +112,7 @@ class MakeClassic extends React.Component   {
                 {/* To start with I am going to do show more text within classicDetails div  */}
                 {/* <ShowMoreText
                        Default options 
-                    lines={48}
+                   l  lines={48}
                     more='Show more'
                     less='Show less'
                     anchorClass=''

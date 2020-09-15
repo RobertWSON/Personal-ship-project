@@ -9,7 +9,8 @@ class CruiseLines extends React.Component {
 
     render()    {
         return  (
-            <div>
+            // <div>
+            <React.Fragment>    
                 <div className = "header">
                     <h1>Cruise Lines</h1>    
                 </div>
@@ -18,7 +19,8 @@ class CruiseLines extends React.Component {
                     <ShipShots/>
                     <CruiseListHeader/>
                 </div>
-            </div>       
+            </React.Fragment>    
+            // </div>        
         )
     }
 }

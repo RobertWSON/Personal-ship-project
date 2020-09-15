@@ -626,48 +626,22 @@ div.ShipTermsIntro  {
 }
 
 /* Styling for contents on each classic ship page */
-/* .classicContainer   >   .contents   { */
 .contents   {
     display: flex;
     flex-direction: column;
-    /* float: left; */
-    /* justify-content: left; */
     align-content: center; 
-    /* justify-content: center; */
-
-    /* background-color: azure;  */
-    /* padding: 1.2em; */
-
     border: 2px solid burlywood;
     border-radius: 20px;
     text-align: left;
     max-width: 230px;
-    /* max-width: 170px; */
     margin-left: 40px; 
-    /* margin-top: 10px; */
     margin-bottom: 25px; 
 }
 
-/* .classicContainer   >   .contents   h3  { */
-/* .contents   h3  {  */
-    /* display: flex;
-    flex-direction: column; */
-    
-    /* align-items: center;
-    font-size: 1.8em;
-    color: darkslategrey;
-    margin-top: 10px;
-    padding-bottom: 0.5em;  */
-    
-    /* padding: 10px; */
-
-/* } */
-
-/* Contents heading */
+/* Contents heading div */
 .contents   >   .contentsHead   {
     display: flex;
     flex-direction: column;
-    /* background-color: azure; */
     background-color: cyan;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -675,233 +649,112 @@ div.ShipTermsIntro  {
     padding: 0.5em; 
 }
 
+/* Actual Contents Heading */
 .contents   >   .contentsHead   h3  {
-    /* align-items: center; */
     font-size: 1.8em;
     color: darkslategrey;
     margin-top: 10px;
     margin-bottom: 10px; 
-    /* padding-bottom: 0.5em; */
 }
 /* End of Contents Heading */
 
 /* Start of In Page Links for Contents */
-/* .contents   >   .contentsMenu   ol  li  {
-    font-size: 1.3em;
-    background-color: beige;
+div.contentsMenu   {    
+    counter-reset: list-number; 
+    padding: 7px;
+}
+
+div.contentsMenu  a::before   {
+    counter-increment: list-number;
+    content: counter(list-number, decimal);
+    padding-bottom: 7px;
+    margin-top: 10px;
+    font-size: 1.2em;
+    margin-right: 10px; 
+    height: auto;
+    display: inline-flex;
+    align-items: left;
+    justify-content: left;
+    margin-left: 10px;
+}
+
+.contents  >   .contentsMenu   >  ol  >  li  .early  {
+    /* background-color: beige;  commented because in nth child */
     color: peru;
-} */
-
-
-/* .contents   >   .contentsMenu   ol  #earlyNum   {
+    text-decoration: none;
     font-size: 1.3em;
-    background-color: beige;
-    color: peru;    
-} */
+}
 
-
-/* Trying to use before to get ordered list styled
-.contents   >   .contentsMenu   ol  li.early    ::before    { */
-.contents   >   .contentsMenu   ol  li:nth-child(1) {
-    background-color: beige;
+/* Trying :nth-child() to get backgound-color to extend */
+.contents   >   .contentsMenu  >  ol  >  li:nth-child(1) { 
+    background-color: beige; 
     padding-top: 7px; 
     padding-bottom: 7px; 
 }
 
-
-
-/* Trying to style first child ordered list number */
-/* .contents   >   .contentsMenu   ol  li:nth-child(1)::before {
-    background-color: beige;
-    padding-top: 7px;
-    padding-bottom: 7px;
-    font-size: 1.3em;
-    color: peru;
-}
-
-ul > li:before {  
-    content: counter(index, decimal);
-    counter-increment:index;
-}
-li:first-child {
-    counter-reset:index;
-} */
-/* This above has not worked unfortunately */
-
-
-
-
-/* Maybe I can have this for styling early class */
-/* .contents   >   .contentsMenu  > ol > .early  >   link    { */
-.contents   >   .contentsMenu  > ol > li  > .early  { 
-    font-size: 1.3em;
+.contents  >   .contentsMenu   >  ol  >  li  .cruise  {
+    /* background-color: azure;   commented because in nth child */
+    color: blue;
     text-decoration: none;
-    color: peru;
-    /* background-color: beige; */
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
+    font-size: 1.3em;
+}  
 
-.contents   >   .contentsMenu   ol > li:nth-child(2) {
-    /* background-color: cyan; */
+/* Trying :nth-child() to get backgound-color to extend */
+.contents   >   .contentsMenu  >  ol  >  li:nth-child(2) {
     background-color: azure;
-    padding-top: 7px;
+    padding-top: 7px; 
     padding-bottom: 7px; 
 }
 
-.contents   >   .contentsMenu   >   ol > li > .cruise {
-    font-size: 1.3em;
-    text-decoration: none;
-    color: blue;
-}
-
-.contents   >   .contentsMenu   >   ol  >   li:nth-child(3) {
-    background-color: lightyellow;
-    padding-top: 7px;
-    padding-bottom: 7px;
-}
-
-.contents   >   .contentsMenu   >   ol  >   li  >   .mem    {
-    font-size: 1.3em;
-    text-decoration: none;
+.contents  >   .contentsMenu   >  ol  >  li  .mem  {
+    /* background-color: lightyellow;  commented because in nth child */
     color: saddlebrown;
-}  
-
-.contents   >   .contentsMenu   >   ol  >   li:nth-child(4) {
-    background-color: paleturquoise;
-    /* background-color: powderblue; */
-    padding-top: 7px;
-    padding-bottom: 7px;
+    text-decoration: none;
+    font-size: 1.3em;
 }
 
-.contents   >   .contentsMenu   >   ol  >   li  >   .plans  {
-    font-size: 1.3em;
-    text-decoration: none;
+/* Trying :nth-child() to get backgound-color to extend */
+.contents   >   .contentsMenu  >  ol  >  li:nth-child(3) {
+    background-color: lightyellow;  
+    padding-top: 7px; 
+    padding-bottom: 7px; 
+}
+
+.contents  >   .contentsMenu  >  ol  >  li  .plans  {
+    /* background-color: paleturquoise;   commented because in nth child */
     color: teal;
-}
-
-.contents   >   .contentsMenu   >   ol  >   li:nth-child(5)    {
-    background-color: honeydew;
-    padding-top: 7px;
-    padding-bottom: 7px;
-    /* border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px; */
-}
-
-.contents   >   .contentsMenu   >   ol  >   li  >   .final  {
-    font-size: 1.3em;
     text-decoration: none;
+    font-size: 1.3em;
+}
+
+/* Trying :nth-child() to get backgound-color to extend */
+.contents   >   .contentsMenu  >  ol  >  li:nth-child(4) {
+    background-color: paleturquoise;
+    padding-top: 7px; 
+    padding-bottom: 7px; 
+}
+
+.contents  >   .contentsMenu  >   ol  >  li  .final  {
+    /* background-color: honeydew;  commented because in nth child */
     color: olivedrab;
+    text-decoration: none;
+    font-size: 1.3em;
+}
+
+/* Trying :nth-child() to get backgound-color to extend */
+.contents   >   .contentsMenu  >  ol  >  li:nth-child(5) {
+    background-color: azure;
+    padding-top: 7px; 
+    padding-bottom: 7px; 
 }
 
 /* Now trying hovering effects for these Links. Reverse colors */
-/* Early Life Link */
-.contents   >   .contentsMenu   >   ol  >   li  >   .early:hover    {
-    /* color: lightslategrey; */
-    color: beige;
-}
 
-.contents   >   .contentsMenu   >   ol  >   li:nth-child(1):hover    {
-    /* color: white; */
-    /* background-color: gold; */
-    background-color: peru;
-} 
+/* End of Hover Effects on Links */
 
-/* As a Cruise Ship Link */
-.contents   >   .contentsMenu   >   ol  >   li  >   .cruise:hover    {
-    color: azure;
-}
-
-.contents   >   .contentsMenu   >   ol  >   li:nth-child(2):hover    {
-    /* color: white; */
-    background-color: blue;
-}
-
-/* Memorable Moments Link */
-.contents   >   .contentsMenu   >   ol  >   li  >   .mem:hover    {
-    color: lightyellow;
-}
-
-.contents   >   .contentsMenu   >   ol  >   li:nth-child(3):hover    {
-    background-color: saddlebrown;
-}
-
-/* Ship Plans Link */
-.contents   >   .contentsMenu   >   ol  >   li  >   .plans:hover  {
-    color: paleturquoise;
-}
-
-.contents   >   .contentsMenu   >   ol  >   li:nth-child(4):hover {
-    background-color: teal;
-}
-
-/* Final Years Link */
-.contents   >   .contentsMenu   >   ol  >   li  >   .final:hover  {
-    color: honeydew;
-}
-
-.contents   >   .contentsMenu   >   ol  >   li:nth-child(5):hover    {
-    background-color:olivedrab;
-}
 
 /* End of In Page Links for Contents */
 
-/* .classicContainer   >   .contents   h4  { */
-
-/* .contents   h4  {    
-    align-items: left;
-    font-size: 1.15em;
-    color: sienna;
-    padding-bottom: 10px;  */
-
-    /* padding: 10px; */
-/* } */
-
-/* .contents   >   li  >   .early  {
-    text-decoration: none;
-} */
-
-/* Styling each Link for different styles */
-/* .early  {
-    text-decoration: none;
-    color: peru; */
-    
-    /* background-color: cornflowerblue; */
-
-    /* font-size: 1.3em;
-} */
-
-/* .cruise {
-    text-decoration: none;
-    color: teal;
-    font-size: 1.3em;
-}
-
-.mem    {
-    text-decoration: none;
-    color: steelblue;
-    font-size: 1.3em;
-}
-
-.plans  {
-    text-decoration: none;
-    color: royalblue;
-    font-size: 1.3em;
-}
-
-.final  {
-    text-decoration: none;
-    color: goldenrod;
-    font-size: 1.3em;
-} */
-/* End of Styling each Link for different styles */
-
-
-
-/*  .early:hover  {
-    color: gold;
-    text-decoration: none;
-}   */
 
 .classicContainer   {
     display: flex;

@@ -37,7 +37,8 @@ class Home extends React.Component  {
         }
     
         return (
-            <div>
+            // <div>
+            <React.Fragment>    
                 {/* <div className = 'container'> */}
                 <div className = "header">
                     <h1>Cruise Shipin</h1>
@@ -99,8 +100,8 @@ class Home extends React.Component  {
                 </div>
 
                 
-
-            </div>         
+            </React.Fragment>        
+            // </div>         
         )
 
     }
