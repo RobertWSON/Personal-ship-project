@@ -8,20 +8,49 @@
     
 /* Home page styles */
 
+/* React Slick Slider */
 .home-slider    {
+    display: flex;
+    flex-direction: column;
     padding: 20px;
-    justify-content: center;
-    /* align-items: center; */
+    /* justify-content: center; */
+    /* align-items: center;  */
     border: 2px solid darkblue;
     border-radius: 20px; 
     /* width: 1050px; */
-    min-height: 500px;
-}
+    /* width: 100%; */
+    /* max-height: 600px; */
+    height: 500px;
+    width: 1500px;
+    /* max-height: 500px;
+    max-width: 1500px; */
+    /* min-width: 200px; */
+    min-width: 50%;
+}    
 
 .home-slider    >   .slide  {
-    max-width: 1000px;
-    max-height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 40%;
+    /* max-width: 100%; */
+    height: 680px;
 }
+
+.home-slider    >   .slide   img   {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    /* width: 40%; */
+    /* width: 600px; */
+    /* max-width: 100%; */
+    height: 460px; 
+    /* height: 680px; */
+}
+
+
+
+/* End fof Styling for React Slick Slider */
 
 .siteIntro  {
     float: left;
@@ -635,7 +664,10 @@ div.ShipTermsIntro  {
     text-align: left;
     max-width: 230px;
     margin-left: 40px; 
-    margin-bottom: 25px; 
+    margin-bottom: 25px;
+    overflow: hidden;
+    /* padding: 10px;   */
+    /* background-clip: padding-box; */
 }
 
 /* Contents heading div */
@@ -659,14 +691,35 @@ div.ShipTermsIntro  {
 /* End of Contents Heading */
 
 /* Start of In Page Links for Contents */
+
+.contentsMenu   ol  {
+    /* Using flexbox to get background colour to extend to border */
+    display: flex;
+    flex-direction: column;
+
+    /* This will hide numbers that get added by default */
+    list-style: none;  
+    /* This padding will remove the default indentation that the items have */
+    padding: 0;   
+    /* Trying to make background-colors of Contents Heading and Early Life Link meet */
+    margin-top: 3px;  
+    /* To extend Final years background-color to bottom border 
+    , but it does not extend fully*/
+    margin-bottom: 7px;   
+}
+
 div.contentsMenu   {    
-    counter-reset: list-number; 
-    padding: 7px;
+    counter-reset: list-number;
+    /* Removing padding takes background-color to border  */
+    /* padding: 7px; */
 }
 
 div.contentsMenu  a::before   {
     counter-increment: list-number;
-    content: counter(list-number, decimal);
+
+    /* content: counter(list-number, decimal); */
+    content: counter(list-number) '.';
+
     padding-bottom: 7px;
     margin-top: 10px;
     font-size: 1.2em;
@@ -687,9 +740,11 @@ div.contentsMenu  a::before   {
 
 /* Trying :nth-child() to get backgound-color to extend */
 .contents   >   .contentsMenu  >  ol  >  li:nth-child(1) { 
-    background-color: beige; 
-    padding-top: 7px; 
-    padding-bottom: 7px; 
+    background-color: beige;
+    padding-top: 14px; 
+    /* padding-top: 7px;  */
+    padding-bottom: 7px;
+    margin-top: 0px; 
 }
 
 .contents  >   .contentsMenu   >  ol  >  li  .cruise  {
@@ -739,13 +794,15 @@ div.contentsMenu  a::before   {
     color: olivedrab;
     text-decoration: none;
     font-size: 1.3em;
+    /* background-clip: padding-box; */
 }
 
 /* Trying :nth-child() to get backgound-color to extend */
 .contents   >   .contentsMenu  >  ol  >  li:nth-child(5) {
     background-color: azure;
     padding-top: 7px; 
-    padding-bottom: 7px; 
+    padding-bottom: 7px;
+      
 }
 
 /* Now trying hovering effects for these Links. Reverse colors */

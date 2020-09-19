@@ -18,14 +18,16 @@ class Home extends React.Component  {
             "/images/GetImage.jpeg",
             "/images/massadam.jpg",
             "/images/radiance--e1411774013140.jpg",
-            "/images/ship-in-Koper-Slovenia-_picmonkeyed.jpg",   
-            ],
+            "/images/ship-in-Koper-Slovenia-_picmonkeyed.jpg",      
+        ],
         }                
     }      
 
     render()    {
         const settings = {
             dots: true,
+            // dots: false,
+            // arrows: true,
             infinite: true,
             speed: 500,
             slidestoShow: 1,
@@ -33,7 +35,9 @@ class Home extends React.Component  {
             autoplay: true,
             autoplaySpeed: 3500,
             centerMode: true,
-            adaptiveHeight: true
+            adaptiveHeight: true,
+            // Trying pause to see what happens
+            pauseOnHover: true
         }
     
         return (
