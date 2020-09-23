@@ -44,9 +44,10 @@ class Home extends React.Component  {
             // <div>
             <React.Fragment>    
                 {/* <div className = 'container'> */}
-                <div className = "header">
+                {/* Comment heading on Home page, may not need it, because logo takes care of this*/}
+                {/* <div className = "header">
                     <h1>Cruise Shipin</h1>
-                </div>
+                </div> */}
 
                 <Slider className = "home-slider" {...settings}>
                     {
