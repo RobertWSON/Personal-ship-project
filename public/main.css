@@ -16,6 +16,8 @@
     padding: 20px;
     /* justify-content: center; */
     /* align-items: center;  */
+    /* background color for padding around image and before outside border */
+    background-color: lightskyblue;
     border: 2px solid darkblue;
     border-radius: 20px; 
     /* width: 1050px; */
