@@ -41,7 +41,7 @@ class ShipShots extends React.Component  {
         return (
             <div>
 
-                <Slider {...settings}>
+                <Slider className = "cruise-slider" {...settings}>
                     {
                         this.state.images.map((image, index) => (
                             <div className="slide" key={index}>

@@ -64,8 +64,6 @@
     /* height: 680px; */
 }
 
-
-
 /* End fof Styling for React Slick Slider */
 
 .siteIntro  {
@@ -261,6 +259,95 @@ img {
 }
 
 /* End of Using nav tag for Main Page Navigation   */
+
+/* Cruise Lines Page React Slick Slider */
+/* Commented */
+.cruise-slider  {
+    display: flex;
+    flex-direction: column;
+    padding: 1.2em;
+    /* Put 3 lines below with .slide code */
+    background-color: azure;
+    border: 2px solid darkblue;
+    border-radius: 20px;
+
+    /* width: auto;  */
+    /* End of commented */
+
+    /* width: 100%; */
+
+    /* Commented */
+    /* max-height: 500px; */
+    max-height: 480;
+    /* min-height: 220px;  */
+    min-height: 50%;
+    width: auto;
+    /* End of commented */
+
+    /* Commented below because width needs to adjust for height */
+    /* max-width: 1500px;
+    min-width: 660px; */
+
+/* Commented bracket     */
+} 
+
+/* Commented */
+.cruise-slider  >   .slide  {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    height: 100%;
+    /* width: 50%; */
+    max-height: 480px;
+    min-height: 200px;
+}
+
+.cruise-slider  .slide   img {
+/* End of Commented */
+
+    display: flex;
+    flex-direction: column;
+
+/* Commented   */
+    width: auto;
+    height: 480px;
+}
+/* End of Commented */
+
+/* Trying the method I used for the Classic Ship Image from before */
+
+/* .cruise-slider    {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    margin-right: 20px; 
+    max-height: 480px;
+    min-height: 50%;  
+}
+
+.cruise-slider    >   .slider  {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    background-color: azure;
+    padding: 1.5em;
+    border: 2px solid burlywood;
+    border-radius: 20px; 
+}
+
+.cruise-slider    >   .slider  >  img  {
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+    height: 480px; 
+    width: auto;  
+} */
+
+/* End of Trying the method I used for the Classic Ship Image from before */
+
+/* End of Cruise Lines Page React Slick Slider */
 
 /* Ships List on Cruise lines Page */
 
