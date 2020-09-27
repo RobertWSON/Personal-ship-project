@@ -809,10 +809,12 @@ div.ShipTermsIntro  {
     display: flex;
     flex-direction: column;
     background-color: cyan;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    /* Trying to get background-color to extend to border, but taking this out  */
+    /* border-top-left-radius: 20px;
+    border-top-right-radius: 20px; */
+
     align-items: center;
-    padding: 0.5em; 
+    padding: 0.5em;  
 }
 
 /* Actual Contents Heading */
@@ -820,7 +822,7 @@ div.ShipTermsIntro  {
     font-size: 1.8em;
     color: darkslategrey;
     margin-top: 10px;
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
 }
 /* End of Contents Heading */
 
@@ -836,10 +838,16 @@ div.ShipTermsIntro  {
     /* This padding will remove the default indentation that the items have */
     padding: 0;   
     /* Trying to make background-colors of Contents Heading and Early Life Link meet */
-    margin-top: 3px;  
+    /* margin-top: 3px;    */
     /* To extend Final years background-color to bottom border 
     , but it does not extend fully*/
-    margin-bottom: 7px;   
+    /* margin-bottom: 7px;  */
+    /* margin-top: 0;
+    margin-bottom: 0; */
+    margin: 0;
+    /* Giving the ordered list a font-size declaration to balance visual design */
+    /* font-size: 1.56em; */
+    font-size: 1em;
 }
 
 div.contentsMenu   {    
@@ -856,7 +864,11 @@ div.contentsMenu  a::before   {
 
     padding-bottom: 7px;
     margin-top: 10px;
-    font-size: 1.2em;
+    /* Trying to use font-size 1.2 x 1.3em = 1.56em, based on what MileHDev told me on discordapp Reactiflux */
+    /* Doesn't work */
+    /* font-size: 1.56em; */
+
+    /* font-size: 1.2em; */
     margin-right: 10px; 
     height: auto;
     display: inline-flex;
@@ -869,7 +881,8 @@ div.contentsMenu  a::before   {
     /* background-color: beige;  commented because in nth child */
     color: peru;
     text-decoration: none;
-    font-size: 1.3em;
+
+    font-size: 1.3em; 
 }
 
 /* Trying :nth-child() to get backgound-color to extend */
@@ -885,7 +898,7 @@ div.contentsMenu  a::before   {
     /* background-color: azure;   commented because in nth child */
     color: blue;
     text-decoration: none;
-    font-size: 1.3em;
+    font-size: 1.3em;  
 }  
 
 /* Trying :nth-child() to get backgound-color to extend */
@@ -899,7 +912,7 @@ div.contentsMenu  a::before   {
     /* background-color: lightyellow;  commented because in nth child */
     color: saddlebrown;
     text-decoration: none;
-    font-size: 1.3em;
+    font-size: 1.3em;  
 }
 
 /* Trying :nth-child() to get backgound-color to extend */
@@ -913,7 +926,7 @@ div.contentsMenu  a::before   {
     /* background-color: paleturquoise;   commented because in nth child */
     color: teal;
     text-decoration: none;
-    font-size: 1.3em;
+    font-size: 1.3em; 
 }
 
 /* Trying :nth-child() to get backgound-color to extend */
@@ -927,7 +940,7 @@ div.contentsMenu  a::before   {
     /* background-color: honeydew;  commented because in nth child */
     color: olivedrab;
     text-decoration: none;
-    font-size: 1.3em;
+    font-size: 1.3em;  
     /* background-clip: padding-box; */
 }
 
@@ -939,14 +952,58 @@ div.contentsMenu  a::before   {
       
 }
 
-/* Now trying hovering effects for these Links. Reverse colors */
+/* Now trying hovering effects for these Links. Reverse colors (Working)*/
+/* Early Life Link */
+.contents   >   .contentsMenu   >  ol   >   li  >   .early:hover    {
+    color: beige;
+} 
+
+.contents   >   .contentsMenu   >  ol   >   li:nth-child(1):hover    {
+    background-color: peru;
+}
+
+/* As a Cruise Ship Link */
+.contents   >   .contentsMenu   >  ol   >   li  >   .cruise:hover    {
+    color: azure;
+} 
+
+.contents   >   .contentsMenu   >  ol   >   li:nth-child(2):hover    {
+    background-color: blue;
+}
+
+/* Memorable Moments Link */
+.contents   >   .contentsMenu   >  ol   >   li  >   .mem:hover    {
+    color: lightyellow;
+} 
+
+.contents   >   .contentsMenu   >  ol   >   li:nth-child(3):hover    {
+    background-color: saddlebrown;
+}
+
+/* Ship Plans Link */
+.contents   >   .contentsMenu   >  ol   >   li  >   .plans:hover    {
+    color: paleturquoise;
+} 
+
+.contents   >   .contentsMenu   >  ol   >   li:nth-child(4):hover    {
+    background-color: teal;
+}
+
+/* Final Years Link */
+.contents   >   .contentsMenu   >  ol   >   li  >   .final:hover    {
+    color: honeydew;
+} 
+
+.contents   >   .contentsMenu   >  ol   >   li:nth-child(5):hover    {
+    background-color: olivedrab;
+}
 
 /* End of Hover Effects on Links */
-
 
 /* End of In Page Links for Contents */
 
 
+/* Container for Classic Ship page */
 .classicContainer   {
     display: flex;
     flex-direction: row;

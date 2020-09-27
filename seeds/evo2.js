@@ -181,7 +181,8 @@ exports.seed = function(knex, Promise) {
 
         {id: 3, 
           cruise_ship_name: 'Queen Elizabeth 2',
-          original_ship_name: 'Queen Elizabeth 2 (1969 to present)',
+          // Queen Elizabeth 2 (1969 to present)
+          original_ship_name: '',
           name_after_lengthening: '',
           first_name_change: '',
           second_name_change: '',
@@ -304,7 +305,7 @@ exports.seed = function(knex, Promise) {
           cruise_crew_max: '',
 
           // Ship Names after lengthening
-          name_after_lengthening: 'Song of Norway (1978 tp 1997)',
+          name_after_lengthening: 'Song of Norway (1978 tpo 1997)',
           first_name_change: 'Sundream (1997 to 2004)',
           second_name_change: 'Dream Princess (2004 to 2006)',
           third_name_change: 'Dream (2006 to 2007)',
@@ -325,7 +326,7 @@ exports.seed = function(knex, Promise) {
           // 9th_name_change: ''
 
           // Ship Specifications after lengthening
-          lengthened_service_yrs: '',
+          lengthened_service_yrs: '1978 to present',
           lengthened_passengers: '',
           lengthened_crew: '',
           lengthened_gt: '',
