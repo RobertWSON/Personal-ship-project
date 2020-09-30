@@ -64,10 +64,11 @@ class MakeClassicPt2 extends React.Component   {
                 {cruise_ship_name !== '' && <h4>{cruise_ship_name} Original</h4>}
                 {/* Original Name for specs that are needed when the ship started differently or got lengthened 
                 eg Fairstar, Song of Norway and Royal Viking Sky */}
-                {original_ship_name !== '' && <h4>Original Ship Name: {original_ship_name}</h4>}
+                {original_ship_name !== '' && <h3>Original Ship Name: {original_ship_name}</h3>}
 
 
-                {/* Now we can go with below data for original ship or ship that has same name throughout career */}
+                {/*  Maybe I put ship that has same name throughout career in cruiseDetails div
+                Now we can go with below data for original ship */}
                 {service_years !== '' && <h4>Years in Service: {service_years}</h4>}
                 {build_yard !== '' && <h4>Builder: {build_yard}</h4>}
                 {original_operator !== '' && <h4>Operator: {original_operator}</h4>}
@@ -115,47 +116,81 @@ class MakeClassicPt2 extends React.Component   {
 
                 {/* Possibly a div hear that handles changed names for the ship, maybe have different background colour  */}
               <div className = "lengthenedDetails">
-                {/* {ship_name !== '' && <h2>{ship_name} as a Cruise Ship</h2>} */}
-                {cruise_ship_name !== '' && <h2>{cruise_ship_name} as a Cruise Ship</h2>}
-                {/* <h2>France as a Cruise Ship</h2> */}
-                {/* {cruise_ship_name !== '' && <h4>{cruise_ship_name} as a Cruise Ship</h4>} */}
+                
+                <h2>{cruise_ship_name} after Lengthening</h2>
+                
+                {name_after_lengthening !== '' && <h2>Ship Name Changes:{name_after_lengthening} </h2>}
+                {first_name_change !== '' && <h2 class = "NameChange">{first_name_change} </h2>}    
+                {second_name_change !== '' && <h2 class = "NameChange">{second_name_change} </h2>}
+                {third_name_change !== '' && <h2 class = "NameChange">{third_name_change} </h2>}
+                {fourth_name_change !== '' && <h2 class = "NameChange">{fourth_name_change} </h2>}
+                {fifth_name_change !== '' && <h2 class = "NameChange">{fifth_name_change} </h2>}
+                {sixth_name_change !== '' && <h2 class = "NameChange">{sixth_name_change} </h2>}
+                {seventh_name_change !== '' && <h2 class = "NameChange">{seventh_name_change} </h2>}
+                {eighth_name_change !== '' && <h2 class = "NameChange">{eighth_name_change} </h2>}
+                {ninth_name_change !== '' && <h2 class = "NameChange">{ninth_name_change} </h2>}
 
-                {/* {cruise_ship_name !== '' && <h4>France Liner New Name: {cruise_ship_name}</h4>}
-                {norway_years !== '' && <h4>Years as Norway: {norway_years}</h4>}
-                {norway_operator !== '' && <h4>Operator: {norway_operator}</h4>}
-                {conversion_cost !== '' && <h4>France to Norway Conversion Cost:{conversion_cost}</h4>}
-                {norway_passengers !== '' && <h4>Norway Maximum Passenger: {norway_passengers}</h4>}
-                {norway_crew !== '' && <h4>Norway Maximum Crew: {norway_crew}</h4>}
-                {norway_gt !== '' && <h4>Norway Gross Tonnage: {norway_gt}</h4>}
-                {norway_fuel_capacity !== '' && <h4>Norway Fuel Capacity: {norway_fuel_capacity}</h4>}
-                {norway_fuel_consume !== '' && <h4>Norway Fuel Consumption: {norway_fuel_consume}</h4>}
-                {norway_fresh_water !== '' && <h4>Norway Fresh Water Capacity: {norway_fresh_water}</h4>}
-                {norway_speed !== '' && <h4>Norway Speed: {norway_speed}</h4>}
-                {norway_passenger_decks !== '' && <h4>Norway Passenger Decks: {norway_passenger_decks}</h4>}
-                {norway_last_name !== '' && <h4>France's Last Name: {norway_last_name}</h4>}
-                {norway_final_year !== '' && <h4>France's Final Year: {norway_final_year}</h4>}
-                {norway_final_gt !== '' && <h4>France's Final Gross Tonnage:{norway_final_gt}</h4>} */}
+                {lengthened_service_yrs !== '' && <h2>Years in Service:{lengthened_service_yrs} </h2>}
+                {operator !== '' && <h4>Operator: {operator}</h4>}
+                
+                {lengthened_passengers !== '' && <h2>Passengers (Maximum):{lengthened_passengers} </h2>}
+                {lengthened_crew !== '' && <h2>Crew (Maximum): {lengthened_crew}</h2>}
+                {lengthened_gt !== '' && <h2>Gross Tonnage: {lengthened_gt}</h2>}
+                {lengthened_length !== '' && <h2>Length: {lengthened_length}</h2>}
+                {lengthened_beam !== '' && <h2>Beam: {lengthened_beam}</h2>}
+                {lengthened_draft !== '' && <h2>Draft (Maximum): {lengthened_draft}</h2>}
+                {lengthened_deadweight !== '' && <h2>Deadweight (Maximum): {lengthened_deadweight}</h2>}
+                {lengthened_lightship !== '' && <h2>Lightship Displacement: {lengthened_lightship}</h2>}
+                {lengthened_displacement !== '' && <h2>Loaded Displacement (Maximum):{lengthened_displacement}</h2>}
+
               </div>
 
-              {/* A div for Galileo Galilei as a cruise ship    */}
+              {/* A div for when in was operating as a cruise ship    */}
               <div className = "cruiseDetails">    
-                {/* {ship_name !== '' && <h2>{ship_name} as a Cruise Ship</h2>} */}
-                {galileo_name !== '' && <h2>{galileo_name} as a Cruise Ship</h2>}
-                {/* <h2>Galileo Galilei as a Cruise Ship</h2> */}
-                {/* {galileo_name !== '' && <h4>{galileo_name} as a Cruise Ship</h4>}  */}
+            
+                {cruise_ship_name !== '' && <h2>{cruise_ship__name} as a Cruise Ship</h2>}
 
-                {galileo_name !== '' && <h4>Galileo Galilei's 1st New Name: {galileo_name}</h4>}
-                {galileo_years !== '' && <h4>Years as Galileo: {galileo_years}</h4>}
-                {galileo_gt !== '' && <h4>Galileo Gross Tonnage: {galileo_gt}</h4>}
-                {galileo_passenger_capacity !== '' && <h4>Galileo Maximum Passengers: {galileo_passenger_capacity}</h4>}
-                {meridian_name !== '' && <h4>Galileo Galilei's 2nd New Name: {meridian_name}</h4>}
-                {meridian_years !== '' && <h4>Years as Meridian: {meridian_years}</h4>}
-                {meridian_gt !== '' && <h4>Meridian Gross Tonnage: {meridian_gt}</h4>}
-                {meridian_passenger_capacity !== '' && <h4>Meridian Maximum Passengers: {meridian_passenger_capacity}</h4>}
-                {gg_last_name !== '' && <h4>Galileo Galilei's Last Name: {gg_last_name}</h4>} 
-                {sunvista_years !== '' &&<h4>Years as Sun Vista: {sunvista_years}</h4>}
-                {sunvista_gt !== '' && <h4>Sun Vista Gross Tonnage: {sunvista_gt}</h4>}
-                {sunvista_passenger_capacity !== '' && <h4>Sun Vista Maximum Passengers: {sunvista_passenger_capacity}</h4>}
+                {/* Probably don't need all the specs below because they are in initialDetails for the original
+                Maybe I should have cruise and variable name eg cruise_service_yrs */}
+                {service_years !== '' && <h4>Years in Service: {service_years}</h4>}
+                {operator !== '' && <h4>Operator: {operator}</h4>}
+                {registry_port !== '' && <h4>Port of Registry: {registry_port}</h4>}
+                {cost !== '' && <h4>Cost: {cost}</h4>}
+                {imo !== '' && <h4>IMO Number: {imo}</h4>}
+                {passenger_capacity_full !== '' && <h4>Maximum Passenger: {passenger_capacity_full}</h4>}
+                {crew_capacity !== '' && <h4>Maximum Crew: {crew_capacity}</h4>}
+                {gross_tonnage !== '' && <h4>Gross Tonnage: {gross_tonnage}</h4>}
+                {length !== '' && <h4>Length: {length}</h4>}
+                {beam !== '' && <h4>Beam: {beam}</h4>}
+                {draft !== '' && <h4>Draft: {draft}</h4>}
+                {height !== '' && <h4>Ship Height: {height}</h4>}
+                {funnel_height !== '' && <h4>Ship Height to Funnel Top: {funnel_height}</h4>}
+                {/* This space is where I have show more text, for when user wants to see more */}
+                {/* To start with I am going to do show more text within classicDetails div  */}
+
+                {speed !== '' && <h4>Speed: {speed}</h4>}
+                {/* <h4>Maximum speed: {newResult[0]}</h4>}
+                <h4>Cruising speed: {newResult[1]}</h4>} */}
+                {deadweight !== '' && <h4>Deadweight: {deadweight}</h4>}
+                {lightship !== '' && <h4>Lightship: {lightship}</h4>}
+                {loaded_displacement !== '' && <h4>Loaded Displacement: {loaded_displacement}</h4>}
+                {power !== '' && <h4>Power: {power}</h4>}
+                {power_rpm !== '' && <h4>Propellor RPM: {power_rpm}</h4>}
+                {fuel_type !== '' && <h4>Type of Fuel: {fuel_type}</h4>}
+                {fuel_capacity !== '' && <h4>Fuel Capacity: {fuel_capacity}</h4>}
+                {fuel_consumption !== '' && <h4>Fuel Consumption: {fuel_consumption}</h4>}
+                {fresh_water !== '' && <h4>Fresh Water Capacity: {fresh_water}</h4>}
+                {propellors !== '' && <h4>Propellor Type: {propellors}</h4>}
+                {propellor_size !== '' && <h4>Propellor Size: {propellor_size}</h4>}
+                {rudder !== '' && <h4>Rudder Type: {rudder}</h4>}
+                {rudder_size !== '' && <h4>Rudder Size: {rudder_size}</h4>}
+                {decks !== '' && <h4>Decks: {decks}</h4>}
+                {accessible_decks !== '' && <h4>Passenger Decks: {accessible_decks}</h4>}
+                {bridge_height !== '' && <h4>Bridge Height: {bridge_height}</h4>}
+                {bridge_water !== '' && <h4>Bridge Height above Water: {bridge_water}</h4>}
+                {shelter_deck !== '' && <h4>Shelter Deck: {shelter_deck}</h4>}
+                {bow_bridge !== '' && <h4>Bow to Bridge Length: {bow_bridge}</h4>}
+                {bow_height !== '' && <h4>Bow Height: {bow_height}</h4>}
 
               </div>    
                 {/* </ShowMoreText> */}

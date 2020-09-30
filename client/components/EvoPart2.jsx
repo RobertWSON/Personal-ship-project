@@ -57,7 +57,7 @@ class EvoPart2 extends React.Component    {
 
                             // Returning a div for each classic ship based on id and in id order
                             <div key = {ship.id} className = "evoShips">     
-                                <ClassicShips {...ship} />
+                                <ClassicShips2 {...ship} />
                             </div>
                         )
                     }

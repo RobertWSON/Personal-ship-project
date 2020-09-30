@@ -23,7 +23,10 @@ class RoyalVikingSky extends React.Component   {
                 <div className = "ShipDetails">
                     <h3>Royal Viking Sky Original</h3>
                     <div className = "RoyalVikigSky">
+
+                        {/* Original Specs is a placed comment below */}
                         {/* Original Specs */}
+
                         <h3>Ship Specifications</h3>
                         <h4>Years in Service:               1973 to 1982</h4>
                         <h4>Passenger Capacity (Full):      536</h4>
@@ -40,7 +43,10 @@ class RoyalVikingSky extends React.Component   {
 
                     <h3>Royal Viking Sky after Lengthening</h3>
                     <div className = "Boudicca">
+
+                        {/* Changed Specs is a placed comment below */}
                         {/* Changed Specs */}
+
                         <h3>Ship Specifications</h3>
                         <h4>Ship Name Changes:              Royal Viking Sky (1982 to 1991)
                                                        <br/>Sunward (1991 to 1992)
@@ -69,7 +75,17 @@ class RoyalVikingSky extends React.Component   {
 
                 </div>
 
-                <h3 id ={History}>History or Background</h3>
+                {/* This is below
+                Warning: Invalid value for prop `id` on <h3> tag. Either remove it from the element, or pass a string or number value to keep it in the DOM. For details, see https://fb.me/react-attribute-behavior
+                    in h3 (created by RoyalVikingSky)
+                    in RoyalVikingSky (created by Route)
+                    in Route (created by App)
+                    in div (created by App)
+                    in Router (created by BrowserRouter)
+                    in BrowserRouter (created by App)
+                    in App */}
+                {/* <h3 id ={History}>History or Background</h3> */}
+                
                 <br/>
                 <p>The Royal Viking Sky operated with Royal Viking Cruise Line from 1973 to 1991.
                    She was the second ship in history to be lengthened.  
@@ -83,6 +99,7 @@ class RoyalVikingSky extends React.Component   {
                 <p>
                 </p>
 
+                {/* img src is a placed comment below */}
                 {/* <img src = {""}/> */}
 
                 <br/><br/>
@@ -100,7 +117,10 @@ class RoyalVikingSky extends React.Component   {
                     <p></p>
                     <img src = {'/images/Evolution/Michelangelo/Michangelo_Side_View_Plan.jpeg'} />
                     <img src = {'/images/Evolution/Michelangelo/Michelangelo_Full_Ship_Plans.jpg'} />
+
+                {/* img src is a placed comment below */}
                 {/* <img src = {ship_plans_cont} />            */}
+
                 </div>
 
                 <button>

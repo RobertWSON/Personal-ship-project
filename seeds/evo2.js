@@ -6,6 +6,7 @@ exports.seed = function(knex, Promise) {
       // Inserts seed entries
       return knex('table_name').insert([
         {id: 1, 
+          cruise_ship_name: 'Fairstar',
           original_ship_name: 'Oxfordshire',
           img: '',
           img_title: '',
@@ -28,6 +29,8 @@ exports.seed = function(knex, Promise) {
           draft: '',
           height: '',
           funnel_height: '',
+
+          //This space is where I have show more text, for when user wants to see more
           speed: '',
           deadweight: '',
           lightship: '',
@@ -38,7 +41,19 @@ exports.seed = function(knex, Promise) {
           fresh_water: '',
           propellors: '',
 
-          cruise_ship_name: 'Fairstar',
+          propellor_size: '',
+          rudder: '',
+          rudder_size: '',
+          decks: '',
+          accessible_decks: '',
+          bridge_height: '',
+          bridge_water: '', 
+          shelter_deck: '',
+          bow_bridge: '',
+          bow_height: '',
+
+
+          //Cruise Ship Information
           cruise_passengers_max: '',
           cruise_crew_max: '',
           // 1st_name_change: '',
@@ -134,6 +149,8 @@ exports.seed = function(knex, Promise) {
           draft: '',
           height: '',
           funnel_height: '',
+
+          //This space is where I have show more text, for when user wants to see more
           speed: '',
           deadweight: '',
           lightship: '',
@@ -143,7 +160,18 @@ exports.seed = function(knex, Promise) {
           fuel_consumption: '',
           fresh_water: '',
           propellors: '',
+          propellor_size: '',
+          rudder: '',
+          rudder_size: '',
+          decks: '',
+          accessible_decks: '',
+          bridge_height: '',
+          bridge_water: '', 
+          shelter_deck: '',
+          bow_bridge: '',
+          bow_height: '',
 
+          //Cruise Ship Information
           cruise_ship_name: '',
           cruise_passengers_max: '',
           cruise_crew_max: '',
@@ -222,6 +250,8 @@ exports.seed = function(knex, Promise) {
           draft: '',
           height: '',
           funnel_height: '',
+
+          //This space is where I have show more text, for when user wants to see more
           speed: '',
           deadweight: '',
           lightship: '',
@@ -231,8 +261,18 @@ exports.seed = function(knex, Promise) {
           fuel_consumption: '',
           fresh_water: '',
           propellors: '',
+          propellor_size: '',
+          rudder: '',
+          rudder_size: '',
+          decks: '',
+          accessible_decks: '',
+          bridge_height: '',
+          bridge_water: '', 
+          shelter_deck: '',
+          bow_bridge: '',
+          bow_height: '',
 
-          cruise_ship_name: '',
+          // cruise_ship_name: '',
           cruise_passengers_max: '',
           cruise_crew_max: '',          
 
@@ -290,6 +330,8 @@ exports.seed = function(knex, Promise) {
           draft: '',
           height: '',
           funnel_height: '',
+
+          //This space is where I have show more text, for when user wants to see more
           speed: '',
           deadweight: '',
           lightship: '',
@@ -299,8 +341,18 @@ exports.seed = function(knex, Promise) {
           fuel_consumption: '',
           fresh_water: '',
           propellors: '',
+          propellor_size: '',
+          rudder: '',
+          rudder_size: '',
+          decks: '',
+          accessible_decks: '',
+          bridge_height: '',
+          bridge_water: '', 
+          shelter_deck: '',
+          bow_bridge: '',
+          bow_height: '',
 
-          cruise_ship_name: '',
+          //Cruise Ship Information
           cruise_passengers_max: '',
           cruise_crew_max: '',
 
@@ -379,6 +431,8 @@ exports.seed = function(knex, Promise) {
           draft: '',
           height: '',
           funnel_height: '',
+
+          //This space is where I have show more text, for when user wants to see more
           speed: '',
           deadweight: '',
           lightship: '',
@@ -388,6 +442,16 @@ exports.seed = function(knex, Promise) {
           fuel_consumption: '',
           fresh_water: '',
           propellors: '',
+          propellor_size: '',
+          rudder: '',
+          rudder_size: '',
+          decks: '',
+          accessible_decks: '',
+          bridge_height: '',
+          bridge_water: '', 
+          shelter_deck: '',
+          bow_bridge: '',
+          bow_height: '',
 
           cruise_ship_name: '',
           cruise_passengers_max: '',
@@ -487,6 +551,8 @@ exports.seed = function(knex, Promise) {
           draft: '',
           height: '',
           funnel_height: '',
+
+          //This space is where I have show more text, for when user wants to see more
           speed: '',
           deadweight: '',
           lightship: '',
@@ -496,6 +562,16 @@ exports.seed = function(knex, Promise) {
           fuel_consumption: '',
           fresh_water: '',
           propellors: '',
+          propellor_size: '',
+          rudder: '',
+          rudder_size: '',
+          decks: '',
+          accessible_decks: '',
+          bridge_height: '',
+          bridge_water: '', 
+          shelter_deck: '',
+          bow_bridge: '',
+          bow_height: '',
 
           // Ship Specifications after lengthening
           lengthened_service_yrs: '',

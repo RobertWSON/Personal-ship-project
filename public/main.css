@@ -796,6 +796,7 @@ div.ShipTermsIntro  {
     border: 2px solid burlywood;
     border-radius: 20px;
     text-align: left;
+    /* max-width: 230px; */
     max-width: 230px;
     margin-left: 40px; 
     margin-bottom: 25px;
@@ -812,7 +813,6 @@ div.ShipTermsIntro  {
     /* Trying to get background-color to extend to border, but taking this out  */
     /* border-top-left-radius: 20px;
     border-top-right-radius: 20px; */
-
     align-items: center;
     padding: 0.5em;  
 }
@@ -847,7 +847,13 @@ div.ShipTermsIntro  {
     margin: 0;
     /* Giving the ordered list a font-size declaration to balance visual design */
     /* font-size: 1.56em; */
-    font-size: 1em;
+
+    /* Commenting 1.3em below because it's put in li below */
+    /* font-size: 1em; originall used to balance text and list number*/
+}
+
+.contentsMenu   ol  li  {
+    font-size: 1.3em;
 }
 
 div.contentsMenu   {    
@@ -881,8 +887,9 @@ div.contentsMenu  a::before   {
     /* background-color: beige;  commented because in nth child */
     color: peru;
     text-decoration: none;
-
-    font-size: 1.3em; 
+    /* Comment font-size because .contentsMenu > ol > li {
+        above handles it  */
+    /* font-size: 1.3em; */ 
 }
 
 /* Trying :nth-child() to get backgound-color to extend */
@@ -898,7 +905,9 @@ div.contentsMenu  a::before   {
     /* background-color: azure;   commented because in nth child */
     color: blue;
     text-decoration: none;
-    font-size: 1.3em;  
+    /* Comment font-size because .contentsMenu > ol > li {
+       above handles it  */
+    /* font-size: 1.3em; */ 
 }  
 
 /* Trying :nth-child() to get backgound-color to extend */
@@ -912,7 +921,9 @@ div.contentsMenu  a::before   {
     /* background-color: lightyellow;  commented because in nth child */
     color: saddlebrown;
     text-decoration: none;
-    font-size: 1.3em;  
+    /* Comment font-size because .contentsMenu > ol > li {
+       above handles it  */
+    /* font-size: 1.3em; */  
 }
 
 /* Trying :nth-child() to get backgound-color to extend */
@@ -926,7 +937,9 @@ div.contentsMenu  a::before   {
     /* background-color: paleturquoise;   commented because in nth child */
     color: teal;
     text-decoration: none;
-    font-size: 1.3em; 
+    /* Comment font-size because .contentsMenu > ol > li {
+       above handles it  */
+    /* font-size: 1.3em; */
 }
 
 /* Trying :nth-child() to get backgound-color to extend */
@@ -940,7 +953,9 @@ div.contentsMenu  a::before   {
     /* background-color: honeydew;  commented because in nth child */
     color: olivedrab;
     text-decoration: none;
-    font-size: 1.3em;  
+    /* Comment font-size because .contentsMenu > ol > li {
+       above handles it  */
+    /* font-size: 1.3em; */ 
     /* background-clip: padding-box; */
 }
 
@@ -954,49 +969,121 @@ div.contentsMenu  a::before   {
 
 /* Now trying hovering effects for these Links. Reverse colors (Working)*/
 /* Early Life Link */
-.contents   >   .contentsMenu   >  ol   >   li  >   .early:hover    {
+
+/* Suggested hover effects to use by Euge from JavaScript slack channel. 
+Hovering behaves like it should this way with font showing even when you hover on background-color outside of a Link. */
+.contents > .contentsMenu > ol > li:nth-child(1):hover {
+    background-color: peru;
+  }
+  .contents > .contentsMenu > ol > li:nth-child(1):hover a {
+
+    color: beige;
+  }
+
+/* End of suggested hover effects suggested from Euge. */
+
+/* My original Hover Effects, which worked on the background-color good, but only 
+worked on text for Links when hovering on it. When you hover on background-color text for Links doesn't show. */
+/* .contents   >   .contentsMenu   >  ol   >   li  >   .early:hover    {
     color: beige;
 } 
 
 .contents   >   .contentsMenu   >  ol   >   li:nth-child(1):hover    {
     background-color: peru;
-}
+} */
 
 /* As a Cruise Ship Link */
-.contents   >   .contentsMenu   >  ol   >   li  >   .cruise:hover    {
+
+/* Suggested hover effects to use by Euge from JavaScript slack channel. 
+Hovering behaves like it should this way with font showing even when you hover on background-color outside of a Link. */
+.contents > .contentsMenu > ol > li:nth-child(2):hover {
+    background-color: blue;
+  }
+  .contents > .contentsMenu > ol > li:nth-child(2):hover a {
+    color: azure;
+  }
+
+/* End of suggested hover effects suggested from Euge. */
+
+/* My original Hover Effects, which worked on the background-color good, but only 
+worked on text for Links when hovering on it. When you hover on background-color text for Links doesn't show. */
+/* .contents   >   .contentsMenu   >  ol   >   li  >   .cruise:hover    {
     color: azure;
 } 
 
 .contents   >   .contentsMenu   >  ol   >   li:nth-child(2):hover    {
     background-color: blue;
-}
+} */
 
 /* Memorable Moments Link */
-.contents   >   .contentsMenu   >  ol   >   li  >   .mem:hover    {
+
+/* Suggested hover effects to use by Euge from JavaScript slack channel. 
+Hovering behaves like it should this way with font showing even when you hover on background-color outside of a Link. */
+.contents > .contentsMenu > ol > li:nth-child(3):hover {
+    background-color: saddlebrown;
+  }
+  .contents > .contentsMenu > ol > li:nth-child(3):hover a {
+    color: lightyellow;
+  }
+
+/* End of suggested hover effects suggested from Euge. */
+
+/* My original Hover Effects, which worked on the background-color good, but only 
+worked on text for Links when hovering on it. When you hover on background-color text for Links doesn't show. */
+/* .contents   >   .contentsMenu   >  ol   >   li  >   .mem:hover    {
     color: lightyellow;
 } 
 
 .contents   >   .contentsMenu   >  ol   >   li:nth-child(3):hover    {
     background-color: saddlebrown;
-}
+} */
 
 /* Ship Plans Link */
-.contents   >   .contentsMenu   >  ol   >   li  >   .plans:hover    {
+
+/* Suggested hover effects to use by Euge from JavaScript slack channel. 
+Hovering behaves like it should this way with font showing even when you hover on background-color outside of a Link. */
+.contents > .contentsMenu > ol > li:nth-child(4):hover {
+    background-color: teal;
+  }
+  .contents > .contentsMenu > ol > li:nth-child(4):hover a {
+    color: paleturquoise;
+  }
+
+/* End of suggested hover effects suggested from Euge. */
+
+/* My original Hover Effects, which worked on the background-color good, but only 
+worked on text for Links when hovering on it. When you hover on background-color text for Links doesn't show. */
+/* .contents   >   .contentsMenu   >  ol   >   li  >   .plans:hover    {
     color: paleturquoise;
 } 
 
 .contents   >   .contentsMenu   >  ol   >   li:nth-child(4):hover    {
     background-color: teal;
-}
+} */
 
 /* Final Years Link */
-.contents   >   .contentsMenu   >  ol   >   li  >   .final:hover    {
+
+/* Suggested hover effects to use by Euge from JavaScript slack channel. 
+Hovering behaves like it should this way with font showing even when you hover on background-color outside of a Link. */
+.contents > .contentsMenu > ol > li:nth-child(5):hover {
+    background-color: olivedrab;
+  }
+  .contents > .contentsMenu > ol > li:nth-child(5):hover a {
+    color: honeydew;
+  }
+
+/* End of suggested hover effects suggested from Euge. */
+
+/* My original Hover Effects, which worked on the background-color good, but only 
+worked on text for Links when hovering on it. When you hover on background-color text for Links doesn't show. */
+
+/* .contents   >   .contentsMenu   >  ol   >   li  >   .final:hover    {
     color: honeydew;
 } 
 
 .contents   >   .contentsMenu   >  ol   >   li:nth-child(5):hover    {
     background-color: olivedrab;
-}
+} */
 
 /* End of Hover Effects on Links */
 
