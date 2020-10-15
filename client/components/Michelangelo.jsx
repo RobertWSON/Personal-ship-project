@@ -1,21 +1,21 @@
-import React from 'react'
-import {HashLink as Link} from 'react-router-hash-link'
+// import React from 'react'
+// import {HashLink as Link} from 'react-router-hash-link'
 
-class Michelangelo extends React.Component   {
-    constructor(props)  {
-        super(props)
-    }
+// class Michelangelo extends React.Component   {
+//     constructor(props)  {
+//         super(props)
+//     }
 
-    render()    {
+//     render()    {
 
-        return  (
-            <React.Fragment>
-                <h2 className = "ship">Michelangelo</h2>
+//         return  (
+//             <React.Fragment>
+//                 <h2 className = "ship">Michelangelo</h2>
 
-                <h3>Contents</h3>
-                <Link className = "Contents" smooth to = {`/evolutionpart1/michelangelo/#history`}>
-                {/* <Link className = "Contents" smooth to = {`/evolutionpart1/michelangelo/#${History}`}> */}
-                    History
+//                 <h3>Contents</h3>
+//                 <Link className = "Contents" smooth to = {`/evolutionpart1/michelangelo/#history`}>
+                /* <Link className = "Contents" smooth to = {`/evolutionpart1/michelangelo/#${History}`}> */
+                    /* History
                 </Link>
                 <br/>
 
@@ -37,9 +37,9 @@ class Michelangelo extends React.Component   {
                     <h4>Loaded Displacement (Maximum):  44322 Tonnes</h4>
                 </div>
 
-                <h3 id = "history">History or Background</h3>
-                {/* <h3 id = {History}>History or Background</h3> */}
-                <br/>
+                <h3 id = "history">History or Background</h3> */
+                /* <h3 id = {History}>History or Background</h3> */
+                /* <br/>
                 <p>The Michelangelo was an Italian built cruise ship that operated between Europe (usually Genoa and Canary Islands) and New York, USA.
                    <br/>
                    Quite simply enough she operated for the Italian Line throughout her whole career.   
@@ -69,23 +69,23 @@ class Michelangelo extends React.Component   {
                 <br/><br/>
 
                 <p>Here are the deck plans of michelangelo below.
-                </p>
+                </p> */
 
-                {/* <img src = {"/images/Evolution/Michelangelo/"}/> */}
+                /* <img src = {"/images/Evolution/Michelangelo/"}/> */
 
-                <br/><br/>
-                <br/>
+                /* <br/><br/>
+                <br/> */
 
-                {/* Temporarily Putting in Michelangelo Ship Plans */}
-                <div id = "plans">    
+                /* Temporarily Putting in Michelangelo Ship Plans */
+                /* <div id = "plans">    
                     <h3>Michelangelo Ship Plans</h3>  
                     <br/><br/>
 
                     <p></p>
                     <img src = {'/images/Evolution/Michelangelo/Michangelo_Side_View_Plan.jpeg'} />
-                    <img src = {'/images/Evolution/Michelangelo/Michelangelo_Full_Ship_Plans.jpg'} />
-                {/* <img src = {ship_plans_cont} />            */}
-                </div>
+                    <img src = {'/images/Evolution/Michelangelo/Michelangelo_Full_Ship_Plans.jpg'} /> */
+                /* <img src = {ship_plans_cont} />            */
+                /* </div>
 
                 <button>
                 <Link to="/evolutionpart1">Back to Evolution (Part 1)</Link>
@@ -96,4 +96,4 @@ class Michelangelo extends React.Component   {
     }    
 }
 
-export default Michelangelo
+export default Michelangelo */}

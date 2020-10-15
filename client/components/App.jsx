@@ -10,12 +10,12 @@ import FindClassic from './FindClassic'
 
 // Evolution pages (Part2)
 import EvolutionPart2 from './EvolutionPart2'
-import Michelangelo from './Michelangelo'
-import Qe2 from './Qe2'
-import Fairstar from './Fairstar'
-import SongofNorway from './SongofNorway'
-import RoyalVikingSky from './RoyalVikingSky'
-import AllureoftheSeas from './AllureoftheSeas'
+// import Michelangelo from './Michelangelo'
+// import Qe2 from './Qe2'
+// import Fairstar from './Fairstar'
+// import SongofNorway from './SongofNorway'
+// import RoyalVikingSky from './RoyalVikingSky'
+// import AllureoftheSeas from './AllureoftheSeas'
 
 import CruiseLines from './CruiseLines'
 import Review from './Review'
@@ -40,12 +40,12 @@ class App extends React.Component {
               <Route path = '/evolutionpart1/:ship_name' component={FindClassic}/>
 
               <Route exact path='/evolutionpart2' component={EvolutionPart2}/>
-              <Route exact path='/evolutionpart2/michelangelo' component={Michelangelo}/>
-              <Route exact path='/evolutionpart2/qe2' component={Qe2}/>
-              <Route exact path='/evolutionpart2/fairstar' component={Fairstar}/>
-              <Route exact path='/evolutionpart2/songofnorway' component={SongofNorway}/>
-              <Route exact path='/evolutionpart2/royalvikingsky' component={RoyalVikingSky}/>
-              <Route exact path='/evolutionpart2/allureoftheseas' component={AllureoftheSeas}/>
+              {/* <Route exact path='/evolutionpart2/michelangelo' component={Michelangelo}/> */}
+              {/* <Route exact path='/evolutionpart2/qe2' component={Qe2}/> */}
+              {/* <Route exact path='/evolutionpart2/fairstar' component={Fairstar}/> */}
+              {/* <Route exact path='/evolutionpart2/songofnorway' component={SongofNorway}/> */}
+              {/* <Route exact path='/evolutionpart2/royalvikingsky' component={RoyalVikingSky}/> */}
+              {/* <Route exact path='/evolutionpart2/allureoftheseas' component={AllureoftheSeas}/> */}
 
               {/* Route for Cruise Lines page */}
               <Route exact path='/cruiselines' component={CruiseLines}/>

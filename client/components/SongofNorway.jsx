@@ -1,30 +1,30 @@
-import React from 'react'
-import {HashLink as Link} from 'react-router-hash-link'
+// import React from 'react'
+// import {HashLink as Link} from 'react-router-hash-link'
 
-class SongofNorway extends React.Component   {
-    constructor(props)  {
-        super(props)
-    }
+// class SongofNorway extends React.Component   {
+//     constructor(props)  {
+//         super(props)
+//     }
 
-    render()    {
+//     render()    {
 
-        return  (
-            <React.Fragment>
-                <h2 className = "ship">Song of Norway</h2>
+//         return  (
+//             <React.Fragment>
+//                 <h2 className = "ship">Song of Norway</h2>
 
-                <h3>Contents</h3>
-                <Link className = "Contents" smooth to = {`/evolutionpart1/songofnorway/#${History}`}>
-                    History
-                </Link>
-                <br/>
+//                 <h3>Contents</h3>
+//                 <Link className = "Contents" smooth to = {`/evolutionpart1/songofnorway/#${History}`}>
+//                     History
+//                 </Link>
+//                 <br/>
 
-                <img src={"/images/image_manager__rex_thumbnail_images_song_of_norway_08.06.1994.jpg"}/>
+//                 <img src={"/images/image_manager__rex_thumbnail_images_song_of_norway_08.06.1994.jpg"}/>
 
-                <div className = "ShipDetails">
-                    <h3>Song of Norway</h3>
-                    <div className = "SongofNorway">
-                        {/* Original Specs */}
-                        <h3>Ship Specifications</h3>
+//                 <div className = "ShipDetails">
+//                     <h3>Song of Norway</h3>
+//                     <div className = "SongofNorway">
+                        /* Original Specs */
+                        /* <h3>Ship Specifications</h3>
                         <h4>Years in Service:               1970 - 2013</h4>
                         <h4>Passenger Capacity (Full):      724</h4>
                         <h4>Crew Capacity:                  400</h4>
@@ -39,9 +39,9 @@ class SongofNorway extends React.Component   {
                     </div>
 
                     <h3>Sundream</h3>
-                    <div className = "Sundream">
-                        {/* Changed Specs */}
-                        <h3>Ship Specifications</h3>
+                    <div className = "Sundream"> */
+                        /* Changed Specs */
+                        /* <h3>Ship Specifications</h3>
                         <h4>Years in Service:               1991 - 2013</h4>
                         <h4>Passenger Capacity (Full):      1024</h4>
                         <h4>Crew Capacity:                  600</h4>
@@ -75,16 +75,16 @@ class SongofNorway extends React.Component   {
                 <p>Here are the deck plans of Song of Norway below.
                 </p>
 
-                <br/>
+                <br/> */
 
-                {/* <imgr src = {""}/> */}
+                /* <imgr src = {""}/> */
 
-                <p>In  1991 she had a name change and was now called Sundream
-                </p>
+                /* <p>In  1991 she had a name change and was now called Sundream
+                </p> */
 
-                {/* <img src = {"/images/b5ac2c1fe37dee95a51c61cd713f42dc.jpg"}/> */}
+                /* <img src = {"/images/b5ac2c1fe37dee95a51c61cd713f42dc.jpg"}/> */
 
-                <br/><br/>
+                /* <br/><br/>
                 
                 <div id = "plans">    
                     <h3>Song of Norway Ship Plans</h3>  
@@ -92,9 +92,9 @@ class SongofNorway extends React.Component   {
 
                     <p></p>
                     <img src = {'/images/Evolution/Michelangelo/Michangelo_Side_View_Plan.jpeg'} />
-                    <img src = {'/images/Evolution/Michelangelo/Michelangelo_Full_Ship_Plans.jpg'} />
-                {/* <img src = {ship_plans_cont} />            */}
-                </div>
+                    <img src = {'/images/Evolution/Michelangelo/Michelangelo_Full_Ship_Plans.jpg'} /> */
+                /* <img src = {ship_plans_cont} />            */
+                /* </div>
 
                 <button>
                 <Link to="/evolutionpart1">Back to Evolution (Part 1)</Link>
@@ -105,4 +105,4 @@ class SongofNorway extends React.Component   {
     }    
 }
 
-export default SongofNorway
+export default SongofNorway */

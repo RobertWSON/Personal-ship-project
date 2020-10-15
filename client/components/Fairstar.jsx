@@ -1,30 +1,30 @@
-import React from 'react'
-import {HashLink as Link} from 'react-router-hash-link'
+// import React from 'react'
+// import {HashLink as Link} from 'react-router-hash-link'
 
-class Fairstar extends React.Component   {
-    constructor(props)  {
-        super(props)
-    }
+// class Fairstar extends React.Component   {
+//     constructor(props)  {
+//         super(props)
+//     }
 
-    render()    {
+//     render()    {
 
-        return  (
-            <React.Fragment>
-                <h2 className = "ship">Fairstar</h2>
+//         return  (
+//             <React.Fragment>
+//                 <h2 className = "ship">Fairstar</h2>
 
-                <h3>Contents</h3>
-                <Link className = "Contents" smooth to = {`/evolutionpart1/fairstar/#${History}`}>
-                    History
-                </Link>
-                <br/>
+//                 <h3>Contents</h3>
+//                 <Link className = "Contents" smooth to = {`/evolutionpart1/fairstar/#${History}`}>
+//                     History
+//                 </Link>
+//                 <br/>
 
-                <img src = {"/images/Evolution/Fairstar/Fairstar01.jpg"}/>
+//                 <img src = {"/images/Evolution/Fairstar/Fairstar01.jpg"}/>
 
-                <div className = "ShipDetails">
-                    <h3>Oxfordshire</h3>
-                    <div className = "Oxfordshire">
-                        {/* Original Specs */}
-                        <h3>Ship Specifications</h3>
+//                 <div className = "ShipDetails">
+//                     <h3>Oxfordshire</h3>
+//                     <div className = "Oxfordshire">
+                        /* Original Specs */
+                        /* <h3>Ship Specifications</h3>
                         <h4>Years in Service:               1957 - 1964</h4>
                         <h4>Passenger Capacity (Full):      1300</h4>
                         <h4>Crew Capacity:                  700</h4>
@@ -39,9 +39,9 @@ class Fairstar extends React.Component   {
                     </div>
                     
                     <h3>Fairstar</h3>
-                    <div className = "Fairstar">
-                        {/* Changed Specs */}
-                        <h3>Ship Specifications</h3>
+                    <div className = "Fairstar"> */
+                        /* Changed Specs */
+                        /* <h3>Ship Specifications</h3>
                         <h4>Years in Service:               1964 - 1997</h4>
                         <h4>Passenger Capacity (Full):      1300</h4>
                         <h4>Crew Capacity:                  700</h4>
@@ -97,9 +97,9 @@ class Fairstar extends React.Component   {
 
                     <p></p>
                     <img src = {'/images/Evolution/Michelangelo/Michangelo_Side_View_Plan.jpeg'} />
-                    <img src = {'/images/Evolution/Michelangelo/Michelangelo_Full_Ship_Plans.jpg'} />
-                {/* <img src = {ship_plans_cont} />            */}
-                </div>
+                    <img src = {'/images/Evolution/Michelangelo/Michelangelo_Full_Ship_Plans.jpg'} /> */
+                /* <img src = {ship_plans_cont} />            */
+                /* </div>
 
                 <button>
                 <Link to="/evolutionpart2">Back to Evolution (Part 2)</Link>
@@ -110,4 +110,4 @@ class Fairstar extends React.Component   {
     }    
 }
 
-export default Fairstar
+export default Fairstar */

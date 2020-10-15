@@ -1,6 +1,6 @@
 import React from 'react'
 import {getClassics} from '../api/api'
-import ClassicShips from './ClassicShips'
+import ClassicShips2 from './ClassicShips2'
 
 
 class EvoPart2 extends React.Component    {
@@ -84,4 +84,4 @@ class EvoPart2 extends React.Component    {
     }
 }
 
-export default evoPart2
+export default EvoPart2
