@@ -18,7 +18,7 @@ class MakeClassic extends React.Component   {
 
     render()   {
         const   {
-            ship_name, img, img_title, service_years, france_service_years, early_service_years, original_name, early_years,
+            classic_ship_name, img, img_title, service_years, france_service_years, early_service_years, original_name, early_years,
             pacific_princess_years, pacific_years, loveboat_final_year, build_yard, operator, registry_port, cost, imo, 
             passenger_capacity_full, crew_capacity, gross_tonnage, length, beam, draft, height, funnel_height, speed, deadweight, 
             lightship, loaded_displacement, power, power_rpm, fuel_type, fuel_capacity, fuel_consumption, fresh_water, propellors,
@@ -41,7 +41,7 @@ class MakeClassic extends React.Component   {
 
             {/* <div className = "classicContainer"> */}
 
-            <h2 className = "shipTitle">{ship_name}</h2>
+            <h2 className = "shipTitle">{classic_ship_name}</h2>
 
             <div className = "contents">
 
@@ -58,11 +58,11 @@ class MakeClassic extends React.Component   {
                     {/* Comment list className to try Natew way from slack */}
                     {/* <div className = "list">  */}
                         <ol> 
-                            <li><Link className = "early" smooth to = {`/evolutionpart1/${ship_name}/#early`}>Early Life</Link></li> 
-                            <li><Link className = "cruise" smooth to = {`/evolutionpart1/${ship_name}/#cruise`}>As a Cruise Ship</Link></li>
-                            <li><Link className = "mem" smooth to = {`/evolutionpart1/${ship_name}/#mem`}>Memorable Moments</Link></li>
-                            <li><Link className = "plans" smooth to = {`/evolutionpart1/${ship_name}/#plans`}>Ship Plans</Link></li>
-                            <li><Link className = "final" smooth to = {`/evolutionpart1/${ship_name}/#final`}>Final Years</Link></li> 
+                            <li><Link className = "early" smooth to = {`/evolutionpart1/${classic_ship_name}/#early`}>Early Life</Link></li> 
+                            <li><Link className = "cruise" smooth to = {`/evolutionpart1/${classic_ship_name}/#cruise`}>As a Cruise Ship</Link></li>
+                            <li><Link className = "mem" smooth to = {`/evolutionpart1/${classic_ship_name}/#mem`}>Memorable Moments</Link></li>
+                            <li><Link className = "plans" smooth to = {`/evolutionpart1/${classic_ship_name}/#plans`}>Ship Plans</Link></li>
+                            <li><Link className = "final" smooth to = {`/evolutionpart1/${classic_ship_name}/#final`}>Final Years</Link></li> 
                         </ol>
                     {/* </div> */}
                 </div>         
@@ -84,7 +84,7 @@ class MakeClassic extends React.Component   {
 
                 {/* Maybe have a div hear that handles inital specifications for the ship */}
               <div className = "initialDetails">
-                <h2>{ship_name} Ship Specifications</h2>
+                <h2>{classic_ship_name} Ship Specifications</h2>
                 {/* <h3>Ship Specifications</h3> */}
                 {service_years !== '' && <h4>Years in Service: {service_years}</h4>}
                 {france_service_years !== '' && <h4>Service Years as France: {france_service_years}</h4>}
@@ -263,7 +263,7 @@ class MakeClassic extends React.Component   {
             </div>
 
             <div id = "plans">    
-                <h3>{ship_name} Ship Plans</h3>  
+                <h3>{classic_ship_name} Ship Plans</h3>  
                 <br/><br/>
 
                 <p>{plans_para}</p>

@@ -17,8 +17,11 @@ class MakeClassicPt2 extends React.Component   {
             // second_name_change, third_name_change, fourth_name_change, fifth_name_change, sixth_name_change, seventh_name_change,
             // eighth_name_change, ninth_name_change, cruise_years  
             
+            // Ship Name used for web address, titles and Evolution Part 2 Ship Image (Official Name)
+            classic_ship_name,
+
             // Original Ship Data (intialDetails)
-            cruise_ship_name, img, img_title, original_ship_name, early_service_years, build_yard, original_operator,
+            img, img_title, original_ship_name, early_service_years, build_yard, original_operator,
             registry_port, cost, imo, passenger_capacity_full, crew_capacity, gross_tonnage, length, beam, draft, 
             height, funnel_height, speed, deadweight, lightship, loaded_displacement, power, power_rpm, fuel_capacity, 
             fuel_consumption, fresh_water, propellors, propellor_size, rudder, rudder_size, decks, accessible_decks,   
@@ -27,17 +30,18 @@ class MakeClassicPt2 extends React.Component   {
             // Data for when it was a Cruise Ship (cruiseDetails)
             cruise_ship_name, cruise_years, cruise_operator, cruise_reg_port, conversion_cost, cruise_passengers_max,
             cruise_crew_max, cruise_gt, cruise_funnel_hgt, cruise_speed, cruise_deadweight, cruise_lightship,
-            cruise_displacement, cruise_power, cruise_power_rpm, cruise_fuel_capacity, cruise_fuel_capacity,
-            cruise_fuel_consumption, cruise_fresh_water, cruise_propellors, cruise_propellor_size, cruise_rudder, 
-            cruise_rudder_size, cruise_decks, cruise_passenger_decks, cruise_bridge_height, cruise_bridge_water,
-            cruise_shelter_deck, cruise_bow_bridge, cruise_bow_height,   
+            cruise_displacement, cruise_power, cruise_power_rpm, cruise_fuel_capacity, cruise_fuel_consumption, 
+            cruise_fresh_water, cruise_propellors, cruise_propellor_size, cruise_rudder, cruise_rudder_size, 
+            cruise_decks, cruise_passenger_decks, cruise_bridge_height, cruise_bridge_water,cruise_shelter_deck, 
+            cruise_bow_bridge, cruise_bow_height,   
             
             // Data for when the cruise ship was lengthened
             name_after_lengthening, first_name_change, second_name_change, third_name_change, fourth_name_change,
             fifth_name_change, sixth_name_change, seventh_name_change, eighth_name_change, ninth_name_change, 
-            lengthened_service_yrs, lengthened_passengers, lengthened_crew, lengthened_gt, lengthened_length, 
-            lengthened_beam, lengthened_draft, lengthened_deadweight, lengthened_lightship, lengthened_displacement,
-            lengthened_funnel_hgt, lengthened_speed, lengthened_power, lengthened_power_rpm, lengthened_fuel_capacity,     
+            lengthened_service_yrs, lengthened_operator, lengthened_reg_port, lengthened_cost, lengthened_passengers, 
+            lengthened_crew, lengthened_gt, lengthened_length, lengthened_beam, lengthened_draft, 
+            lengthened_deadweight, lengthened_lightship, lengthened_displacement, lengthened_funnel_hgt, 
+            lengthened_speed, lengthened_power, lengthened_power_rpm, lengthened_fuel_capacity,
             lengthened_fuel_consumption, lengthened_propellors, lengthened_propellor_size, lengthened_rudder, 
             lengthened_rudder_size, lengthened_decks, lengthened_passenger_decks, lengthened_bridge_height, 
             lengthened_bridge_water, lengthened_shelter_deck, lengthened_bow_bridge, lengthened_bow_height,
@@ -62,7 +66,8 @@ class MakeClassicPt2 extends React.Component   {
     return  (
         <React.Fragment>
 
-            <h2 className = "shipTitle">{cruise_ship_name}</h2>
+            {/* <h2 className = "shipTitle">{cruise_ship_name}</h2> */}
+            <h2 className = "shipTitle">{classic_ship_name}</h2>
 
             <div className = "contents">
 
@@ -73,11 +78,11 @@ class MakeClassicPt2 extends React.Component   {
                 <div className = "contentsMenu">
         
                     <ol> 
-                        <li><Link className = "early" smooth to = {`/evolutionpart1/${ship_name}/#early`}>Early Life</Link></li> 
-                        <li><Link className = "cruise" smooth to = {`/evolutionpart1/${ship_name}/#cruise`}>As a Cruise Ship</Link></li>
-                        <li><Link className = "mem" smooth to = {`/evolutionpart1/${ship_name}/#mem`}>Memorable Moments</Link></li>
-                        <li><Link className = "plans" smooth to = {`/evolutionpart1/${ship_name}/#plans`}>Ship Plans</Link></li>
-                        <li><Link className = "final" smooth to = {`/evolutionpart1/${ship_name}/#final`}>Final Years</Link></li> 
+                        <li><Link className = "early" smooth to = {`/evolutionpart1/${classic_ship_name}/#early`}>Early Life</Link></li> 
+                        <li><Link className = "cruise" smooth to = {`/evolutionpart1/${classic_ship_name}/#cruise`}>As a Cruise Ship</Link></li>
+                        <li><Link className = "mem" smooth to = {`/evolutionpart1/${classic_ship_name}/#mem`}>Memorable Moments</Link></li>
+                        <li><Link className = "plans" smooth to = {`/evolutionpart1/${classic_ship_name}/#plans`}>Ship Plans</Link></li>
+                        <li><Link className = "final" smooth to = {`/evolutionpart1/${classic_ship_name}/#final`}>Final Years</Link></li> 
                     </ol>
 
                 </div>         
@@ -99,11 +104,11 @@ class MakeClassicPt2 extends React.Component   {
                 {/* Maybe have a div hear that handles inital specifications for the ship */}
               <div className = "initialDetails">
                   {/* Ship Specifications Title for every Ship */}
-                <h2>{cruise_ship_name} Ship Specifications</h2>
+                <h2>{classic_ship_name} Ship Specifications</h2>
 
                 {/* Cruise Ship Original below only appears if there is information in the seeds.
                 Also this only needs to appears if the ship has been lengthend or it go converted completely to a cruise ship eg Fairstar.  */}
-                {cruise_ship_name !== '' && <h4>{cruise_ship_name} Original</h4>}
+                {classic_ship_name !== '' && <h4>{classic_ship_name} Original</h4>}
                 {/* Original Name for specs that are needed when the ship started differently or got lengthened 
                 eg Fairstar, Song of Norway and Royal Viking Sky */}
                 {original_ship_name !== '' && <h3>Original Ship Name: {original_ship_name}</h3>}
@@ -160,7 +165,7 @@ class MakeClassicPt2 extends React.Component   {
               {/* A div for when it was operating as a cruise ship */}
               <div className = "cruiseDetails">    
             
-                {cruise_ship_name !== '' && <h2>{cruise_ship__name} as a Cruise Ship</h2>}
+                {cruise_ship_name !== '' && <h2>{cruise_ship_name} as a Cruise Ship</h2>}
 
                 {/* Probably don't need all the specs below because they are in initialDetails for the original
                 Maybe I should have cruise and variable name eg cruise_service_yrs */}
@@ -235,8 +240,11 @@ class MakeClassicPt2 extends React.Component   {
                 {ninth_name_change !== '' && <h2 class = "NameChange">{ninth_name_change} </h2>}
 
                 {lengthened_service_yrs !== '' && <h2>Years in Service:{lengthened_service_yrs} </h2>}
-                {operator !== '' && <h4>Operator: {operator}</h4>}
                 
+                {lengthened_operator !== '' && <h4>Cruise Operators: {lengthened_operator}</h4>}
+                {lengthened_reg_port !== '' && <h4>Port of Registry: {lengthened_reg_port}</h4>}
+                {lengthened_cost !== '' && <h4>Cost to Lengthen: {lengthened_cost}</h4>}
+
                 {lengthened_passengers !== '' && <h2>Passengers (Maximum):{lengthened_passengers} </h2>}
                 {lengthened_crew !== '' && <h2>Crew (Maximum): {lengthened_crew}</h2>}
                 {lengthened_gt !== '' && <h2>Gross Tonnage: {lengthened_gt}</h2>}
@@ -260,7 +268,7 @@ class MakeClassicPt2 extends React.Component   {
                 {lengthened_propellors !== '' && <h4>Propellor Type:{lengthened_propellors}</h4>}
                 {lengthened_propellor_size !== '' && <h4>Propellor Size:{lengthened_propellor_size}</h4>}
                 {lengthened_rudder !== '' && <h4>Rudder Type:{lengthened_rudder}</h4>}
-                {lengthenedrudder_size !== '' && <h4>Rudder Size:{lengthened_rudder_size}</h4>}
+                {lengthened_rudder_size !== '' && <h4>Rudder Size:{lengthened_rudder_size}</h4>}
                 {lengthened_decks !== '' && <h4>Total Number of Decks:{lengthened_decks}</h4>}
                 {lengthened_passenger_decks !== '' && <h4>Passenger Decks:{lengthened_passenger_decks}</h4>}
                 {lengthened_bridge_height !== '' && <h4>Bridge Height:{lengthened_bridge_height}</h4>}
@@ -346,7 +354,7 @@ class MakeClassicPt2 extends React.Component   {
 
             <div id = "plans">    
                 {/* <h3>{ship_name} Ship Plans</h3> */}
-                <h3>{cruise_ship_name} Ship Plans</h3>  
+                <h3>{classic_ship_name} Ship Plans</h3>  
                 <br/><br/>
 
                 <p>{plans_para}</p>

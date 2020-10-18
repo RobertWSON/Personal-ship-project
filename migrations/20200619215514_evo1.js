@@ -2,7 +2,8 @@
 exports.up = function(knex, Promise) {
     return knex.schema.createTable('Evo1', table => {
         table.increments('id').primary()
-        table.string('ship_name')
+        table.string('classic_ship_name')
+        // table.string('ship_name')
         table.string('img')
         table.string('img_title')
         table.string('service_years')

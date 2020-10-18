@@ -1,12 +1,19 @@
 
 exports.seed = function(knex, Promise) {
   // Deletes ALL existing entries
-  return knex('table_name').del()
+  //I have no table name below, so that is why I have problem
+  // return knex('table_name').del()
+  // I have given table a name below
+  return knex('Evo2').del()
     .then(function () {
       // Inserts seed entries
-      return knex('table_name').insert([
+      //I have no table name below, so that is why I have problem
+      // return knex('table_name').insert([
+      // I have given table a name below
+      return knex('Evo2').insert([
+        
         {id: 1, 
-          cruise_ship_name: 'Fairstar',
+          classic_ship_name: 'Fairstar',
 
           // Original Ship Data 
           original_ship_name: 'Oxfordshire',
@@ -54,6 +61,7 @@ exports.seed = function(knex, Promise) {
           bow_height: '',
 
           // Cruise Ship Information when it was a cruise ship
+          cruise_ship_name: 'Fairstar',
           cruise_years: '1964 to 1997',
           cruise_operator: '1964 to 1997: Sitmar | 1989 to 1997: P & O Australia',
           cruise_reg_port: '',
@@ -105,8 +113,12 @@ exports.seed = function(knex, Promise) {
           seventh_name_change: '',
           eighth_name_change: '',
           ninth_name_change: '',
-
           lengthened_service_yrs: '',
+          // 3 new variables needed below
+          lengthened_operator: '',
+          lengthened_reg_port: '',
+          lengthened_cost: '',
+
           lengthened_passengers: '',
           lengthened_crew: '',
           lengthened_gt: '',
@@ -164,7 +176,7 @@ exports.seed = function(knex, Promise) {
         },
 
         {id: 2,
-          cruise_ship_name: 'Michelangelo',
+          classic_ship_name: 'Michelangelo',
 
           // Original Ship Data
           original_ship_name: '',
@@ -211,6 +223,7 @@ exports.seed = function(knex, Promise) {
           bow_height: '',
 
           // Cruise Ship Information when it was a cruise ship
+          cruise_ship_name: 'Michelangelo',
           cruise_years: '',
           cruise_operator: '',
           cruise_reg_port: '',
@@ -253,8 +266,12 @@ exports.seed = function(knex, Promise) {
           seventh_name_change: '',
           eighth_name_change: '',
           ninth_name_change: '',
-
           lengthened_service_yrs: '',
+          // 3 new variables needed below
+          lengthened_operator: '',
+          lengthened_reg_port: '',
+          lengthened_cost: '',
+
           lengthened_passengers: '',
           lengthened_crew: '',
           lengthened_gt: '',
@@ -312,7 +329,7 @@ exports.seed = function(knex, Promise) {
         },  
 
         {id: 3, 
-          cruise_ship_name: 'Queen Elizabeth 2',
+          classic_ship_name: 'Queen Elizabeth 2',
           // Queen Elizabeth 2 (1969 to present)
 
           // Original Ship Data
@@ -360,6 +377,7 @@ exports.seed = function(knex, Promise) {
           bow_height: '',
 
           // Cruise Ship Information when it was a cruise ship
+          cruise_ship_name: 'Queen Elizabeth 2',
           cruise_years: '',
           cruise_operator: '',
           cruise_reg_port: '',
@@ -402,8 +420,12 @@ exports.seed = function(knex, Promise) {
           seventh_name_change: '',
           eighth_name_change: '',
           ninth_name_change: '',
-
           lengthened_service_yrs: '',
+          // 3 new variables needed below
+          lengthened_operator: '',
+          lengthened_reg_port: '',
+          lengthened_cost: '',
+
           lengthened_passengers: '',
           lengthened_crew: '',
           lengthened_gt: '',
@@ -460,7 +482,7 @@ exports.seed = function(knex, Promise) {
         },
         
         {id: 4,
-          cruise_ship_name: 'Song of Norway', 
+          classic_ship_name: 'Song of Norway', 
 
           // Original Ship Data
           original_ship_name: 'Song of Norway (1970 to 1997)',
@@ -507,6 +529,7 @@ exports.seed = function(knex, Promise) {
           bow_height: '',
 
           // Cruise Ship Information when it was a cruise ship
+          cruise_ship_name: 'Song of Norway',
           cruise_years: '',
           cruise_operator: '',
           cruise_reg_port: '',
@@ -539,7 +562,7 @@ exports.seed = function(knex, Promise) {
 
           // Ship Specifications after lengthening
           // Ship Names after lengthening
-          name_after_lengthening: 'Song of Norway (1978 tpo 1997)',
+          name_after_lengthening: 'Song of Norway (1978 to 1997)',
           first_name_change: 'Sundream (1997 to 2004)',
           second_name_change: 'Dream Princess (2004 to 2006)',
           third_name_change: 'Dream (2006 to 2007)',
@@ -549,8 +572,12 @@ exports.seed = function(knex, Promise) {
           seventh_name_change: 'Ocean Pearl (2010 to 2011)',
           eighth_name_change: 'Formosa Queen (2012 to 2013)',
           ninth_name_change: '',
-
           lengthened_service_yrs: '1978 to present',
+          // 3 new variables needed below
+          lengthened_operator: '',
+          lengthened_reg_port: '',
+          lengthened_cost: '',
+
           lengthened_passengers: '1196',
           lengthened_crew: '423',
           lengthened_gt: '22945',
@@ -608,7 +635,9 @@ exports.seed = function(knex, Promise) {
         }, 
 
         {id: 5,
-          cruise_ship_name: 'Royal Viking Sky',
+          classic_ship_name: 'Fairstar',
+
+          // Original Ship Data
           original_ship_name: 'Royal Viking Sky (1973 to 1991)',
           img: '/images/1757063.jpg"',
           img_title: "Royal Viking Sky in Picton, New Zealand, March 1982",
@@ -653,6 +682,7 @@ exports.seed = function(knex, Promise) {
           bow_height: '',
 
           // Cruise Ship Information when it was a cruise ship
+          cruise_ship_name: 'Royal Viking Sky',
           cruise_years: '',
           cruise_operator: '',
           cruise_reg_port: '',
@@ -695,8 +725,12 @@ exports.seed = function(knex, Promise) {
           seventh_name_change: 'Superstar Capricorn (2001 to 2004)',
           eighth_name_change: 'Grand Latino (2004 to 2005)',
           ninth_name_change: 'Boudicca (2005 to present)',
-        
           lengthened_service_yrs: '1982 to present',
+          // 3 new variables needed below
+          lengthened_operator: '',
+          lengthened_reg_port: '',
+          lengthened_cost: '',
+
           lengthened_passengers: '900',
           lengthened_crew: '320',
           lengthened_gt: '28372',
@@ -753,7 +787,7 @@ exports.seed = function(knex, Promise) {
         },  
 
         {id: 6, 
-          cruise_ship_name: 'Allure of the Seas',
+          classic_ship_name: 'Allure of the Seas',
 
           // Original Ship Data
           original_ship_name: '',
@@ -802,6 +836,7 @@ exports.seed = function(knex, Promise) {
           bow_height: '',
 
           // Cruise Ship Information when it was a cruise ship
+          cruise_ship_name: 'Allure of the Seas',
           cruise_years: '',
           cruise_operator: '',
           cruise_reg_port: '',
@@ -844,8 +879,12 @@ exports.seed = function(knex, Promise) {
           seventh_name_change: '',
           eighth_name_change: '',
           ninth_name_change: '', 
-
           lengthened_service_yrs: '',
+          // 3 new variables needed below
+          lengthened_operator: '',
+          lengthened_reg_port: '',
+          lengthened_cost: '',
+
           lengthened_passengers: '',
           lengthened_crew: '',
           lengthened_gt: '',

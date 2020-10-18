@@ -26,19 +26,23 @@
 //                             <img src={"/images/Evolution/Fairstar/Fairstar01.jpg"}
 //                             title = "Fairstar cruising off Pacific Islands in early 90's"/>
 //                         </Link>
-                        /* <br/> */
-                        /* <p> */
+
+                        /* <br/> 
+                        <p>  */
+
                         // <h4>Find out more on Fairstar, Click on Image</h4>
-                        /* </p> */
-                        /* <br/> */
+
+                        /* </p> 
+                        <br/>  */
+
                     //     <p>Fairstar Ship Horn</p>
                     //     <br/>
                     // </div>    
 
                     // <div className = "evoShips">
-                    //     <h3>Michelangelo</h3>
-                    //     <Link to = "evolutionpart2/michelangelo">
-                    //         <img src={"/images/Evolution/Michelangelo/michelangelo_1965_1.jpg"}
+                    //      <h3>Michelangelo</h3>
+                    //      <Link to = "evolutionpart2/michelangelo">
+                    //          <img src={"/images/Evolution/Michelangelo/michelangelo_1965_1.jpg"}
                     //         title = "Michelangelo cruising off Canary Islands in 1965"/>
                     //     </Link>                        
                     //     <p>Find out more on Michelangelo, Click on Image</p>                    
@@ -53,12 +57,12 @@
                     //     </Link>                   
                     //     <p>Find out more on Qe2, Click on Image</p>                        
                     //     <p>Qe2 Ship Horn</p>
-                    // </div>
+                    //  </div>
 
-                    // <div className = "evoShips">    
-                    //     <h3>Song of Norway</h3>
-                    //     <Link to = "evolutionpart2/songofnorway">
-                    //         <img src={"/images/image_manager__rex_thumbnail_images_song_of_norway_08.06.1994.jpg"}
+                    //  <div className = "evoShips">    
+                    //      <h3>Song of Norway</h3>
+                    //      <Link to = "evolutionpart2/songofnorway">
+                    //          <img src={"/images/image_manager__rex_thumbnail_images_song_of_norway_08.06.1994.jpg"}
                     //         title = "Song of Norway in Panama Canal 1994"/>
                     //     </Link>
                     //     <p>Find out more on Song of Norway, Click on Image</p>
@@ -86,7 +90,9 @@
                     // </div>
 
                     // <div className = "evoIntro">
-                    /* <h3 className = "Endings">History (Last of the Classics)</h3> */
+
+                    /* <h3 className = "Endings">History (Last of the Classics)</h3>  */
+
 //                         <h3>Last of the Classics</h3>
 //                         <p>The start of this <b>evolution (Part 2)</b> treats you to a real classic Fairstar, that was originally 
 //                         operated as a troopship and got converted completely to a cruise ship. <br/>I am fortunate enough to have been on this ship during the 90's, when I was a young lad.

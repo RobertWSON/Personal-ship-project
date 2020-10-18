@@ -21,7 +21,7 @@ class FindClassic extends React.Component   {
             this.setState({ classicship: this.props.location.state})
             //This else part matches the state property in the Link with ship_name and this is what helps display a ship page.  
         }   else    {
-            this.setUpClassic(this.props.match.params.ship_name)
+            this.setUpClassic(this.props.match.params.classic_ship_name)
         }
     }
 

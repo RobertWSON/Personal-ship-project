@@ -62,10 +62,12 @@ export function getClassics()   {
 }
 
 // This api is for going to a classic ship page when you click on image on Evolution Part 1 page. 
-export function getClassic(ship_name)   {
+export function getClassic(classic_ship_name)   {
+// export function getClassic(ship_name)   {
     console.log('client/api/api.js getClassic called')
 
-    return request.get(`/v1/classicship/${ship_name}`)
+    return request.get(`/v1/classicship/${classic_ship_name}`)
+    // return request.get(`/v1/classicship/${ship_name}`)
         .then(res =>  {
             const classicship = res.body
             //ship
@@ -73,6 +75,7 @@ export function getClassic(ship_name)   {
             return classicship
         })
         .catch (error =>  {
-            console.log('Caught error in client/api/api.js', classicship)
+            // console.log('Caught error in client/api/api.js', classicship)
+            console.log('Caught error in client/api/api.js getClassic', error)
         })
 }

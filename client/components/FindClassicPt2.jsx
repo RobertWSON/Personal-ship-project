@@ -21,7 +21,7 @@ class FindClassicPt2 extends React.Component   {
             this.setState({ classicship: this.props.location.state})
             //This else part matches the state property in the Link with ship_name and this is what helps display a ship page.  
         }   else    {
-            this.setUpClassic(this.props.match.params.cruise_ship_name)
+            this.setUpClassic(this.props.match.params.classic_ship_name)
         }
     }
 
@@ -41,7 +41,7 @@ class FindClassicPt2 extends React.Component   {
     render()    {
         // Line below allows for classicships being null or having no data appearing, so it says Loading... in browser.
         if (this.state.classicship === null) return <div>Loading...</div>
-        // We do not need to map for a ship because we have already picked up the ship by a key id in Evolution Part 1.
+        // We do not need to map for a ship because we have already picked up the ship by a key id in Evolution Part 2.
         // We now have the correct ship, so we can Create our own loading component.
         return <MakeClassicPt2 {...this.state.classicship} />
 

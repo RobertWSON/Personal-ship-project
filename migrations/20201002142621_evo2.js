@@ -2,7 +2,8 @@
 exports.up = function(knex, Promise) {
     return knex.schema.createTable('Evo2', table => {
         table.increments('id').primary()
-
+        // Ship Name used for web address, titles and Evolution Part 2 Ship Image (Official Name)
+        table.string('classic_ship_name')
         // This can be original ship data, like for example Fairstar started off as Oxfordshire (a troop ship)
         // It can also be a for a ship that has had the same name throughout it's career eg Queen Elizabeth 2
         table.string('original_ship_name')
@@ -14,8 +15,8 @@ exports.up = function(knex, Promise) {
         table.string('registry_port')
         table.string('cost')
         table.integer('imo')
-          //original_passengers_max:
-        table.strings('passenger_capacity_full')
+        //original_passengers_max:
+        table.string('passenger_capacity_full')
         table.integer('crew_capacity')
         table.integer('gross_tonnage')
         table.string('length')
@@ -95,6 +96,11 @@ exports.up = function(knex, Promise) {
         table.string('eighth_name_change')
         table.string('ninth_name_change')
         table.string('lengthened_service_yrs')
+        // 3 new variables needed below
+        table.string('lengthened_operator')
+        table.string('lengthened_reg_port')
+        table.string('lengthened_cost')
+
         table.integer('lengthened_passengers')
         table.integer('lengthened_crew')
         table.integer('lengthened_gt')

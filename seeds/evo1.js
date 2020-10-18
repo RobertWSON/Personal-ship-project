@@ -6,7 +6,8 @@ exports.seed = function(knex, Promise) {
       return knex('Evo1').insert([
         {
           id: 1,
-          ship_name: 'Titanic',
+          classic_ship_name: 'Titanic',
+          // ship_name: 'Titanic',
           img: '/images/titaniccover.jpg',
           img_title: "Titanic in Southampton",
           img_trials: '/images/Evolution/Titanic/sea-trials.jpg',
@@ -135,7 +136,8 @@ exports.seed = function(knex, Promise) {
         },
         {
           id: 2, 
-          ship_name: 'Oriana',
+          classic_ship_name: 'Oriana',
+          // ship_name: 'Oriana',
           img: '/images/oriana15.jpg',
           img_title: "Oriana in Panama Canal during 1960's",
           img_trials: '',
@@ -254,7 +256,8 @@ exports.seed = function(knex, Promise) {
         },
         {
           id: 3,
-          ship_name: 'Canberra',
+          classic_ship_name: 'Canberra',
+          // ship_name: 'Canberra',
           img: '/images/ss-canberra.jpg',
           img_title: "Canberra at sea during the good times",
           img_trials: '',
@@ -373,7 +376,8 @@ exports.seed = function(knex, Promise) {
         },
         {
           id: 4,
-          ship_name: 'France',
+          classic_ship_name: 'France',
+          // ship_name: 'France',
           img: '/images/Evolution/France/france_1961_1.jpg',
           img_title: "France in Home port for the first time in 1961",
           img_trials: '',
@@ -495,7 +499,8 @@ exports.seed = function(knex, Promise) {
         },
         {
           id: 5,
-          ship_name: 'Galileo Galilei',
+          classic_ship_name: 'Galileo Galilei',
+          // ship_name: 'Galileo Galilei',
           img: '/images/Evolution/Galileo Galilei/Galileo03.jpg',
           img_title: "Original Galileo Galilei at sea",
           img_trials: '',
@@ -618,7 +623,8 @@ exports.seed = function(knex, Promise) {
         },
         {
           id: 6,
-          ship_name: 'Pacific Princess',
+          classic_ship_name: 'Pacific Princess',
+          // ship_name: 'Pacific Princess',
           img: '/images/003410.jpg',
           img_title: "Love Boat Pacific Princess at sea",
           img_trials: '',

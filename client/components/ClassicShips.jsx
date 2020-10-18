@@ -20,7 +20,8 @@ class ClassicShips extends React.Component  {
 
     render() {
         const  {
-            ship_name,
+            // ship_name,
+            classic_ship_name,
             img, 
             img_title, 
             ship_horn
@@ -28,12 +29,13 @@ class ClassicShips extends React.Component  {
 
     return  (
         <React.Fragment>
-            <h3>{ship_name}</h3> 
-            {/* Please note, we have pass this.props as state into the Link individually for ship_name, because 
+            <h3>{classic_ship_name}</h3> 
+            {/* Please note, we have pass this.props as state into the Link individually for classic_ship_name, because 
             it is a property of the Link.*/}
             <Link 
                 to={{ 
-                    pathname: `/evolutionpart1/${ship_name}`,
+                    // pathname: `/evolutionpart1/${ship_name}`,
+                    pathname: `/evolutionpart1/${classic_ship_name}`,
                     state: this.props
                 }}>                    
                 <img src = {img} title = {img_title} />
@@ -44,10 +46,10 @@ class ClassicShips extends React.Component  {
                 fontSize: '1em',
                 color: 'darkred'
             }}>
-                <div>Find out more on {ship_name} , Click on Image</div>
+                <div>Find out more on {classic_ship_name} , Click on Image</div>
            
                 <div style={{display: 'flex', alignItems: 'center', marginTop: '.3em'}}>
-                    <div style={{marginRight: '1em', height: '100%'}}>Experience {ship_name} </div> 
+                    <div style={{marginRight: '1em', height: '100%'}}>Experience {classic_ship_name} </div> 
                     <button 
                         style={{
                             backgroundColor: 'moccasin',
