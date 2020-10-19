@@ -635,7 +635,7 @@ exports.seed = function(knex, Promise) {
         }, 
 
         {id: 5,
-          classic_ship_name: 'Fairstar',
+          classic_ship_name: 'Royal Viking Sky',
 
           // Original Ship Data
           original_ship_name: 'Royal Viking Sky (1973 to 1991)',
@@ -797,8 +797,9 @@ exports.seed = function(knex, Promise) {
           img_trials_title: '',
           img_early: '',
           img_early_title: '',
-          early_service_years: '',
-          service_years: '2010 to Present',
+          early_service_years: '2010 to present',
+          // May not need service_years below
+          // service_years: '2010 to Present',
           build_yard: 'STX Europe Turku Shipyard, Finland',
           original_operator: '',
           cruise_operator: 'Royal Caribbean',

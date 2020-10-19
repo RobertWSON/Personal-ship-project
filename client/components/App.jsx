@@ -9,7 +9,7 @@ import EvolutionPart1 from './EvolutionPart1'
 import FindClassic from './FindClassic'
 
 // Evolution pages (Part2)
-import EvolutionPart2 from './EvolutionPart2'
+import EvoPart2 from './EvoPart2'
 import FindClassicPt2 from './FindClassicPt2'
 // import Michelangelo from './Michelangelo'
 // import Qe2 from './Qe2'
@@ -40,7 +40,7 @@ class App extends React.Component {
               <Route exact path='/evolutionpart1' component={EvolutionPart1}/>
               <Route path = '/evolutionpart1/:classic_ship_name' component={FindClassic}/>
 
-              <Route exact path='/evolutionpart2' component={EvolutionPart2}/>
+              <Route exact path='/evolutionpart2' component={EvoPart2}/>
               <Route path = '/evolutionpart2/:classic_ship_name' component={FindClassicPt2}/>
               {/* <Route exact path='/evolutionpart2/michelangelo' component={Michelangelo}/> */}
               {/* <Route exact path='/evolutionpart2/qe2' component={Qe2}/> */}
