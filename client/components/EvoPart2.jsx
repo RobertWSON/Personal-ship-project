@@ -31,7 +31,7 @@ class EvoPart2 extends React.Component    {
 
             this.setState({
                 // Returns response from api
-                classicShips: res
+                classicShips: res.evo2
             })
         })
     }

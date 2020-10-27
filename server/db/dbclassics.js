@@ -16,9 +16,9 @@ function getClassics(testConn)  {
         .select()
         //Line below displays classic ships in id order.
         .orderBy('id')
-        .then((EvooneResults) => {
-            console.log('dbclassics.js - GOT CLASSIC SHIPS:', EvooneResults)
-        Evo1 = EvooneResults
+        .then((EvoOneResults) => {
+            console.log('dbclassics.js - GOT CLASSIC SHIPS:', EvoOneResults)
+        evo1 = EvoOneResults
 
     // Line below connects to Evo2 Table for Evolution Part 2        
     return conn('Evo2')

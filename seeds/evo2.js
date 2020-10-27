@@ -639,7 +639,7 @@ exports.seed = function(knex, Promise) {
 
           // Original Ship Data
           original_ship_name: 'Royal Viking Sky (1973 to 1991)',
-          img: '/images/1757063.jpg"',
+          img: '/images/1757063.jpg',
           img_title: "Royal Viking Sky in Picton, New Zealand, March 1982",
           img_trials: '',
           img_trials_title: '',
@@ -791,7 +791,7 @@ exports.seed = function(knex, Promise) {
 
           // Original Ship Data
           original_ship_name: '',
-          img: '/images/UFRPU.jpg"',
+          img: '/images/UFRPU.jpg',
           img_title: "Allure of the Seas maiden voyage celebration",
           img_trials: '',
           img_trials_title: '',

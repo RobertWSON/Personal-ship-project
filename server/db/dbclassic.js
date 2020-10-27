@@ -29,9 +29,9 @@ function getClassic(classic_ship_name, testConn)    {
         //     console.log('dbclassic.js - GOT CLASSIC SHIP:', dbResult)
         //     return dbResult
         // })
-        .then((EvooneResults) => {
-            console.log('dbclassic.js - GOT CLASSIC SHIP:', EvooneResults)
-        Evo1 = EvooneResults
+        .then((EvoOneResults) => {
+            console.log('dbclassic.js - GOT CLASSIC SHIP:', EvoOneResults)
+        evo1 = EvoOneResults
     
     // Line below connects to Evo2 Table for Evolution Part 2        
     return conn('Evo2')

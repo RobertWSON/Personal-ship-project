@@ -117,7 +117,7 @@ class MakeClassicPt2 extends React.Component   {
                 {/*  Maybe I put ship that has same name throughout career in cruiseDetails div
                 Now we can go with below data for original ship */}
                 {/* {service_years !== '' && <h4>Years in Service: {service_years}</h4>} */}
-                {early_service_years !== '' && <h4>Years in Service: {service_years}</h4>}
+                {early_service_years !== '' && <h4>Years in Service: {early_service_years}</h4>}
                 {build_yard !== '' && <h4>Builder: {build_yard}</h4>}
                 {original_operator !== '' && <h4>Operator: {original_operator}</h4>}
                 {/* {operator !== '' && <h4>Operator: {operator}</h4>} */}
