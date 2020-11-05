@@ -457,7 +457,7 @@ exports.seed = function(knex, Promise) {
 
           // Ship Horn and section contents for each classic ship
           // Ship Page Contents like images, ship plans, paragraphs 
-          ship_horn: '',
+          ship_horn: '/videos/classics/QE2/QE2 Queen Elizabeth 2 Leaving Quebec City for Her last Time.mp4',
           early_1st_para: '',
           early_video: '',
           img_trials: '',
@@ -917,7 +917,7 @@ exports.seed = function(knex, Promise) {
 
           // Ship Horn and section contents for each classic ship
           // Ship Page Contents like images, ship plans, paragraphs 
-          ship_horn: '',
+          ship_horn: '/videos/classics/Allure of the Seas/Allure of the Seas Departing Port Everglades with Horn Blasts.mp4',
           early_1st_para: '',
           early_video: '',
           img_trials: '',
