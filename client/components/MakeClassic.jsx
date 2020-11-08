@@ -1,8 +1,9 @@
 import React from 'react'
 // Show More Text commented for now, because not working
 // import ShowMoreText from 'react-show-more-text'
+import HoverContents from './HoverContents'
 // HashLink commented because it is in HoverContents component
-import {HashLink as Link} from 'react-router-hash-Link'
+// import {HashLink as Link} from 'react-router-hash-Link'
 
 
 class MakeClassic extends React.Component   {
@@ -43,29 +44,11 @@ class MakeClassic extends React.Component   {
 
             <h2 className = "shipTitle">{classic_ship_name}</h2>
 
+            {/* We need Contents div here to pass prop to HoverContents component */}
             <div className = "contents">
 
-                {/* Hover Component does not work yet, so commented */}
-                {/* <HoverContents classicName = {ship_name} /> */}
-                {/* <HoverContents classicPage = {ship_name} /> */}
-
-                <div className = "contentsHead">
-                    <h3>Contents</h3>
-                </div> 
-
-                <div className = "contentsMenu">
-                    
-                    {/* Comment list className to try Natew way from slack */}
-                    {/* <div className = "list">  */}
-                        <ol> 
-                            <li><Link className = "early" smooth to = {`/evolutionpart1/${classic_ship_name}/#early`}>Early Life</Link></li> 
-                            <li><Link className = "cruise" smooth to = {`/evolutionpart1/${classic_ship_name}/#cruise`}>As a Cruise Ship</Link></li>
-                            <li><Link className = "mem" smooth to = {`/evolutionpart1/${classic_ship_name}/#mem`}>Memorable Moments</Link></li>
-                            <li><Link className = "plans" smooth to = {`/evolutionpart1/${classic_ship_name}/#plans`}>Ship Plans</Link></li>
-                            <li><Link className = "final" smooth to = {`/evolutionpart1/${classic_ship_name}/#final`}>Final Years</Link></li> 
-                        </ol>
-                    {/* </div> */}
-                </div>         
+                {/* Code below passes prop to HoverContents component */}
+                <HoverContents classicShipName={classic_ship_name}/>               
 
             </div>
 
