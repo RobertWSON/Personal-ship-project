@@ -2,8 +2,6 @@ import React from 'react'
 // Show More Text commented for now, because not working
 // import ShowMoreText from 'react-show-more-text'
 import HoverContents from './HoverContents'
-// HashLink commented because it is in HoverContents component
-// import {HashLink as Link} from 'react-router-hash-Link'
 
 
 class MakeClassic extends React.Component   {
@@ -44,7 +42,7 @@ class MakeClassic extends React.Component   {
 
             <h2 className = "shipTitle">{classic_ship_name}</h2>
 
-            {/* All the divs (including the contents div) are put in the HoverContents component.
+            {/* All the divs (including contents) are put in the HoverContents component.
             This is because the hover events need to be controlled by the outer contents div here. */}
 
             {/* Code below passes classic ship prop to HoverContents component */}
