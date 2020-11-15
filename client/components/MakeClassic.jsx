@@ -44,13 +44,11 @@ class MakeClassic extends React.Component   {
 
             <h2 className = "shipTitle">{classic_ship_name}</h2>
 
-            {/* We need Contents div here to pass prop to HoverContents component */}
-            <div className = "contents">
+            {/* All the divs (including the contents div) are put in the HoverContents component.
+            This is because the hover events need to be controlled by the outer contents div here. */}
 
-                {/* Code below passes prop to HoverContents component */}
-                <HoverContents classicShipName={classic_ship_name}/>               
-
-            </div>
+            {/* Code below passes classic ship prop to HoverContents component */}
+            <HoverContents classicName={classic_ship_name}/>               
 
             <div className = "classicContainer"> 
 

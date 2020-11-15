@@ -29,26 +29,31 @@ class HoverContents extends React.Component {
         return  (
             <React.Fragment>
 
-                <div className = "contentsHead"
-                    onMouseEnter = {this.handleMouseHover}
-                    onMouseLeave = {this.handleMouseHover}
+            {/* We need to put the hover events in the overall contents div, so that it controls both the 
+            contents heading and contents menu when a user hovers. */}
+
+            <div className = "contents"    
+                onMouseEnter = {this.handleMouseHover}
+                onMouseLeave = {this.handleMouseHover}
                 >
+                <div className = "contentsHead">
                     <h3>Contents</h3>
-                </div>
+                </div>   
+
                 {this.state.isHovering && 
+        
                     <div className = "contentsMenu">
                         <ol> 
-                        <li><Link className = "early" smooth to = {`/evolutionpart1/${classic_ship_name}/#early`}>Early Life</Link></li> 
-                        <li><Link className = "cruise" smooth to = {`/evolutionpart1/${classic_ship_name}/#cruise`}>As a Cruise Ship</Link></li>
-                        <li><Link className = "mem" smooth to = {`/evolutionpart1/${classic_ship_name}/#mem`}>Memorable Moments</Link></li>
-                        <li><Link className = "plans" smooth to = {`/evolutionpart1/${classic_ship_name}/#plans`}>Ship Plans</Link></li>
-                        <li><Link className = "final" smooth to = {`/evolutionpart1/${classic_ship_name}/#final`}>Final Years</Link></li> 
+                        <li><Link className = "early" smooth to = {`/evolutionpart1/${this.props.classic_ship_name}/#early`}>Early Life</Link></li> 
+                        <li><Link className = "cruise" smooth to = {`/evolutionpart1/${this.props.classic_ship_name}/#cruise`}>As a Cruise Ship</Link></li>
+                        <li><Link className = "mem" smooth to = {`/evolutionpart1/${this.props.classic_ship_name}/#mem`}>Memorable Moments</Link></li>
+                        <li><Link className = "plans" smooth to = {`/evolutionpart1/${this.props.classic_ship_name}/#plans`}>Ship Plans</Link></li>
+                        <li><Link className = "final" smooth to = {`/evolutionpart1/${this.props.classic_ship_name}/#final`}>Final Years</Link></li> 
                     </ol>
-                </div>         
-                
-                }
-
-
+                    </div> 
+    }    
+                </div>     
+            
             </React.Fragment>
         )
     }
