@@ -1,5 +1,5 @@
 import React from 'react'
-import {HashLink as Link} from 'react-router-hash-Link'
+import HoverContents from './HoverContents'
 
 
 class MakeClassicPt2 extends React.Component   {
@@ -69,25 +69,11 @@ class MakeClassicPt2 extends React.Component   {
             {/* <h2 className = "shipTitle">{cruise_ship_name}</h2> */}
             <h2 className = "shipTitle">{classic_ship_name}</h2>
 
-            <div className = "contents">
+            {/* All the divs (including contents) are put in the HoverContents component.
+            This is because the hover events need to be controlled by the outer contents div here. */}
 
-                <div className = "contentsHead">
-                    <h3>Contents</h3>
-                </div> 
-
-                <div className = "contentsMenu">
-        
-                    <ol> 
-                        <li><Link className = "early" smooth to = {`/evolutionpart1/${classic_ship_name}/#early`}>Early Life</Link></li> 
-                        <li><Link className = "cruise" smooth to = {`/evolutionpart1/${classic_ship_name}/#cruise`}>As a Cruise Ship</Link></li>
-                        <li><Link className = "mem" smooth to = {`/evolutionpart1/${classic_ship_name}/#mem`}>Memorable Moments</Link></li>
-                        <li><Link className = "plans" smooth to = {`/evolutionpart1/${classic_ship_name}/#plans`}>Ship Plans</Link></li>
-                        <li><Link className = "final" smooth to = {`/evolutionpart1/${classic_ship_name}/#final`}>Final Years</Link></li> 
-                    </ol>
-
-                </div>         
-
-            </div> 
+            {/* Code below passes classic ship prop to HoverContents component */}
+            <HoverContents classicName={classic_ship_name}/>                
 
             <div className = "classicContainer"> 
 
