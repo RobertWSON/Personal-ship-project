@@ -458,7 +458,7 @@ exports.seed = function(knex, Promise) {
           // Ship Horn and section contents for each classic ship
           // Ship Page Contents like images, ship plans, paragraphs 
           ship_horn: '/videos/classics/QE2/QE2 Queen Elizabeth 2 Leaving Quebec City for Her last Time.mp4',
-          early_1st_para: '',
+          early_1st_para: 'This is one of the famous well known ships here, as she was named after the most famous Queen of all time Queen Elizabeth 2 with her having the privilege of naming it and hit the champagne on the ship. Queen Elizabeth 2 ship began her maiden voyage on 2nd May 1969 from here home port Southampton to sail to New York City. She sailed under the UK flag being registered in Southampton and was with Cunard line. ',
           early_video: '',
           img_trials: '',
           img_trials_title: '',
@@ -474,9 +474,9 @@ exports.seed = function(knex, Promise) {
           mem_video: '',
           mem_2nd_para: '',
           plans_para: '',
-          ship_plans: '',
+          ship_plans: '/images/Evolution/Qe2/QE2CutawayQ.jpg',
           ship_plans_cont: '',
-          final_1st_para: '',
+          final_1st_para: 'The Queen Elizabeth 2 was taken out of service in 2018 as a cruise ship, but instead of being scrapped she was now used as a floating hotel. She has been operating as a floating hotel in Port Rashid, Dubai, United Arab Emirates since 18th April 2018. ',
           final_2nd_para:'',
 
         },

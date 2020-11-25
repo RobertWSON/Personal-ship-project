@@ -1,6 +1,6 @@
 import React from 'react'
 // Show More Text commented for now, because not working
-// import ShowMoreText from 'react-show-more-text'
+import ShowMoreText from 'react-show-more-text'
 import HoverContents from './HoverContents'
 
 
@@ -9,11 +9,10 @@ class MakeClassic extends React.Component   {
         super(props)
     }
 
-    // functions for Show More Text commented for now, because not working
-    // executeOnClick(isExpanded) {
-    //     console.log(isExpanded);
-    // }
-
+    // Function for expand when Show more or Show less is clicked
+    executeOnClick(isExpanded) {
+        console.log(isExpanded)
+    }
 
     render()   {
         const   {
@@ -89,16 +88,17 @@ class MakeClassic extends React.Component   {
                 {/* This space is where I have show more text, for when user wants to see more */}
                 
                 {/* To start with I am going to do show more text within classicDetails div  */}
-                {/* <ShowMoreText
-                       Default options 
-                   l  lines={48}
+                <ShowMoreText
+                    //Default options 
+                    // lines={48}
+                    line={21}
                     more='Show more'
                     less='Show less'
-                    anchorClass=''
+                    anchorClass='my-anchor-css-class'
                     onClick={this.executeOnClick}
                     expanded={false}
                     width={480}
-                >  */}
+                > 
 
                 {speed !== '' && <h4>Speed: {speed}</h4>}
                 {/* <h4>Maximum speed: {newResult[0]}</h4>}
@@ -123,11 +123,27 @@ class MakeClassic extends React.Component   {
                 {shelter_deck !== '' && <h4>Shelter Deck: {shelter_deck}</h4>}
                 {bow_bridge !== '' && <h4>Bow to Bridge Length: {bow_bridge}</h4>}
                 {bow_height !== '' && <h4>Bow Height: {bow_height}</h4>}
+
+                </ShowMoreText>
+
               </div>    
                 {/* Maybe end of div that handles inital specifications for the ship */}
 
                 {/* Possibly a div hear that handles changed names for the ship, maybe have different background colour  */}
               <div className = "norwayDetails">
+
+                <ShowMoreText
+                    //Default options 
+                    // lines={48}
+                    line={16}
+                    more='Show more'
+                    less='Show less'
+                    anchorClass='my-anchor-css-class'
+                    onClick={this.executeOnClick}
+                    expanded={false}
+                    width={480}
+                >
+
                 {/* {ship_name !== '' && <h2>{ship_name} as a Cruise Ship</h2>} */}
                 {cruise_ship_name !== '' && <h2>{cruise_ship_name} as a Cruise Ship</h2>}
                 {/* <h2>France as a Cruise Ship</h2> */}
@@ -148,10 +164,25 @@ class MakeClassic extends React.Component   {
                 {norway_last_name !== '' && <h4>France's Last Name: {norway_last_name}</h4>}
                 {norway_final_year !== '' && <h4>France's Final Year: {norway_final_year}</h4>}
                 {norway_final_gt !== '' && <h4>France's Final Gross Tonnage:{norway_final_gt}</h4>}
+                </ShowMoreText>
+
               </div>
 
               {/* A div for Galileo Galilei as a cruise ship    */}
-              <div className = "galileoDetails">    
+              <div className = "galileoDetails"> 
+
+                <ShowMoreText
+                    //Default options 
+                    // lines={48}
+                    line={13}
+                    more='Show more'
+                    less='Show less'
+                    anchorClass='my-anchor-css-class'
+                    onClick={this.executeOnClick}
+                    expanded={false}
+                    width={480}
+                >
+
                 {/* {ship_name !== '' && <h2>{ship_name} as a Cruise Ship</h2>} */}
                 {galileo_name !== '' && <h2>{galileo_name} as a Cruise Ship</h2>}
                 {/* <h2>Galileo Galilei as a Cruise Ship</h2> */}
@@ -169,6 +200,8 @@ class MakeClassic extends React.Component   {
                 {sunvista_years !== '' &&<h4>Years as Sun Vista: {sunvista_years}</h4>}
                 {sunvista_gt !== '' && <h4>Sun Vista Gross Tonnage: {sunvista_gt}</h4>}
                 {sunvista_passenger_capacity !== '' && <h4>Sun Vista Maximum Passengers: {sunvista_passenger_capacity}</h4>}
+
+                </ShowMoreText>
 
               </div>    
                 {/* </ShowMoreText> */}
