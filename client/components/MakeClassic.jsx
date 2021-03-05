@@ -1,5 +1,4 @@
 import React from 'react'
-// Show More Text commented for now, because not working
 import ShowMoreText from 'react-show-more-text'
 import HoverContents from './HoverContents'
 

@@ -264,8 +264,8 @@ exports.seed = function(knex, Promise) {
           img_trials_title: '',
           img_early: '',
           img_early_title: '',
-          img_1stcruise: '',
-          img_1stcruise_title: '',
+          img_1stcruise: "/images/Evolution/Canberra/Canberra - Aerial Photo in mid 1970's.jpg",
+          img_1stcruise_title: "Canberra - Aerial Photo in mid 1970's",
           service_years: '1961 to 1997',
 
           // To make this work I have to have all the same variables for each id. 

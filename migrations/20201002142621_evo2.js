@@ -60,6 +60,7 @@ exports.up = function(knex, Promise) {
         table.string('cruise_gt')
 
         {/* These below are extras may not need all of them */}
+        table.string('cruise_height')
         table.string('cruise_funnel_hgt')
         table.string('cruise_speed')
         table.string('cruise_deadweight')
@@ -130,7 +131,9 @@ exports.up = function(knex, Promise) {
         table.string('lengthened_bow_height')
 
         // Ship Page Contents like images, ship plans, paragraphs
+        // Ship Horns for Evolution Part 2 page
         table.string('ship_horn')
+        // paragraphs and Images for Early Life and start of "As a Cruise Ship"
         table.string('early_1st_para')
         table.string('early_video')
         table.string('img_trials')
@@ -141,8 +144,57 @@ exports.up = function(knex, Promise) {
         table.string('cruise_1st_para')
         table.string('img_1stcruise')
         table.string('img_1stcruise_title')
+        
+        // Paragraph and Photo of lengthened cruise ship
+        // We may probably want an image of it cruising after just being lengthened or a photo of it during lengthening process.
+        table.string('name_before_lengthening'),
+        table.string('lengthened_para'),
+        table.string('img_lengthened')
+        table.string('img_lengthened_title')
+
+        // Maybe have a paragraph with a photo talking about the lengthening of the cruise ship
+        table.string('afterlengthen_para')
+        table.string('img_afterlengthen')
+        table.string('img_afterlengthen_title')
+        // maybe this img_1stcruise can show it cruising after it's been lengthened.
+        // No I think this comes before talking about ship lengthening
+        // table.string('img_1stcruise')
+        // table.string('img_1stcruise_title')
+        // table.string('cruise_2nd_para')
+
+        // Now we try having paragrah and image for each of the times the cruise ship changed cruise operators
         table.string('cruise_2nd_para')
+        table.string('img_2ndcruise')
+        table.string('img_2ndcruise_title')
+        table.string('cruise_3rd_para')
+        table.string('img_3rdcruise')
+        table.string('img_3rdcruise_title')
+        table.string('cruise_4th_para')
+        table.string('img_4thcruise')
+        table.string('img_4thcruise_title')         
+        table.string('cruise_5th_para')
+        table.string('img_5thcruise')
+        table.string('img_5thcruise_title')
+        table.string('cruise_6th_para')
+        table.string('img_6thcruise')
+        table.string('img_6thcruise_title')
+        table.string('cruise_7th_para')
+        table.string('img_7thcruise')
+        table.string('img_7thcruise_title')
+        table.string('cruise_8th_para')
+        table.string('img_8thcruise')
+        table.string('img_8thcruise_title')
+        table.string('cruise_9th_para')
+        table.string('img_9thcruise')
+        table.string('img_9thcruise_title')
+        table.string('cruise_10th_para')
+        table.string('img_10thcruise')
+        table.string('img_10thcruise_title')
         table.string('cruise_video')
+        // End of Cruise Ship section with paragraphs and images
+
+
+        // table.string('cruise_video')
         table.string('mem_1st_para')
         table.string('mem_video')
         table.string('mem_2nd_para')
@@ -151,7 +203,8 @@ exports.up = function(knex, Promise) {
         table.string('ship_plans_cont')
         table.string('final_1st_para')
         table.string('final_2nd_para')
-         
+        table.string('img_final')
+        table.string('img_final_title')
     })
 };
 

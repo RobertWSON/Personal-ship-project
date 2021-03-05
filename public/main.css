@@ -1173,6 +1173,31 @@ worked on text for Links when hovering on it. When you hover on background-color
 /* End of Trying using this method of having className for <img/> */
 
 /* Trying overall div with separate ones for cruise ship like France and Galileo Galilei */
+
+/* Comment .classicDetails for now because trying it as overall div for ones inside */
+/* .classicDetails {
+    display: flex;
+    flex-direction: column;
+    float: right;  */
+    
+    /* align-content: left; 
+    justify-content: left */
+    /* position: absolute; */
+    /* max-width: 500px; */
+
+    /* max-width: 480px;
+    position: relative; 
+    padding: 1.5em;
+    border: solid;
+    border-width: 2px;
+    border-color: darkblue;
+    border-radius: 10px;
+    background-color: aliceblue;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+} */
 .classicDetails {
     /* display: flex;
     flex-direction: column; */
@@ -1285,30 +1310,73 @@ worked on text for Links when hovering on it. When you hover on background-color
 
 /* End of Trying overall div with separate ones for cruise ship like France and Galileo Galilei */
 
-/* Comment .classicDetails for now because trying it as overall div for ones inside */
-/* .classicDetails {
-    display: flex;
-    flex-direction: column;
-    float: right;  */
-    
-    /* align-content: left; 
-    justify-content: left */
-    /* position: absolute; */
-    /* max-width: 500px; */
+/* cruiseDetails div, for when it was a changed to a Cruise Ship within overall classicDetails div  */
 
-    /* max-width: 480px;
-    position: relative; 
-    padding: 1.5em;
-    border: solid;
-    border-width: 2px;
-    border-color: darkblue;
-    border-radius: 10px;
-    background-color: aliceblue;
+.classicDetails >  .cruiseDetails  {
+    /* display: flex;
+    flex-direction: column; */
+    max-width: 480px;
+    position: relative;
+    border-bottom-width: 2px;
+    border-color: aliceblue;
+    background-color: aqua;
+
+    padding: 2.6em;  
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 20px;
     margin-right: 20px;
-} */
+}
+
+.classicDetails  >  .cruiseDetails  h2  {
+    font-size: 1.5em;
+    text-align: center;
+    color: darkblue;
+}
+
+.classicDetails >   .cruiseDetails  h4  {
+    font-size: 1em;
+    text-align: left;
+    color: blue;
+}
+
+/* Styling for when it was a Lengthened Cruise Ship */
+.classicDetails >  .lengthenedDetails  {
+    /* display: flex;
+    flex-direction: column; */
+    max-width: 480px;
+    position: relative;
+    border-bottom-width: 2px;
+    border-color: aliceblue;
+    background-color: mediumaquamarine;
+
+    padding: 2.6em;  
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.classicDetails  >  .lengthenedDetails  h2  {
+    font-size: 1.4em;
+    text-align: center;
+    color: crimson;
+}
+
+.classicDetails >   .lengthenedDetails  h4.NameChange  {
+    font-size: 1.1em;
+    text-align: left;
+    color: sienna;
+}
+
+.classicDetails >   .lengthenedDetails  h4  {
+    font-size: 1.1em;
+    text-align: left;
+    color: saddlebrown;
+}
+
+
+/* End of all Ship Specifications */
 
 #early  { 
     float: left;

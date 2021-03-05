@@ -7,7 +7,7 @@ class MakeClassicPt2 extends React.Component   {
         super(props)
     }
 
-    render()   {
+    render()    {
         const   {
             // Original props before more added
             // original_ship_name, img, img_title, img_trials, img_trials_title, img_early, img_early_title, early_service_years, 
@@ -52,6 +52,25 @@ class MakeClassicPt2 extends React.Component   {
             // div id = cruise
             cruise_1st_para, img_1stcruise, img_1stcruise_title, cruise_2nd_para, cruise_video,
             
+            // Paragraph and Photo of lengthened cruise ship
+            name_before_lengthening, lengthened_para, img_lengthened, img_lengthened_title,
+            afterlengthen_para, img_afterlengthen, img_afterlengthen_title,  
+            // May not need this img_after_lengthened because img_1stcruise could be use instead
+            // img_after_lengthened: '',
+
+            // Now we try having paragrah and image for each of the times the cruise ship changed cruise operators
+            img_2ndcruise, img_2ndcruise_title,
+            cruise_3rd_para, img_3rdcruise, img_3rdcruise_title,
+            cruise_4th_para, img_4thcruise, img_4thcruise_title,         
+            cruise_5th_para, img_5thcruise, img_5thcruise_title,
+            cruise_6th_para, img_6thcruise, img_6thcruise_title,
+            cruise_7th_para, img_7thcruise, img_7thcruise_title,
+            cruise_8th_para,img_8thcruise, img_8thcruise_title,
+            cruise_9th_para, img_9thcruise, img_9thcruise_title,
+            cruise_10th_para, img_10thcruise, img_10thcruise_title,
+            // End of Cruise Ship section with paragraphs and images
+
+
             // div id = mem
             mem_1st_para, mem_video, mem_2nd_para,
             
@@ -59,7 +78,7 @@ class MakeClassicPt2 extends React.Component   {
             plans_para, ship_plans, ship_plans_cont,  
 
             // div id = final
-            final_1st_para, final_2nd_para 
+            final_1st_para, final_2nd_para, img_final, img_final_title 
 
         } = this.props
 
@@ -214,38 +233,38 @@ class MakeClassicPt2 extends React.Component   {
                 
                 <h2>{cruise_ship_name} after Lengthening</h2>
                 
-                {name_after_lengthening !== '' && <h2>Ship Name Changes:{name_after_lengthening} </h2>}
-                {first_name_change !== '' && <h2 class = "NameChange">{first_name_change} </h2>}    
-                {second_name_change !== '' && <h2 class = "NameChange">{second_name_change} </h2>}
-                {third_name_change !== '' && <h2 class = "NameChange">{third_name_change} </h2>}
-                {fourth_name_change !== '' && <h2 class = "NameChange">{fourth_name_change} </h2>}
-                {fifth_name_change !== '' && <h2 class = "NameChange">{fifth_name_change} </h2>}
-                {sixth_name_change !== '' && <h2 class = "NameChange">{sixth_name_change} </h2>}
-                {seventh_name_change !== '' && <h2 class = "NameChange">{seventh_name_change} </h2>}
-                {eighth_name_change !== '' && <h2 class = "NameChange">{eighth_name_change} </h2>}
-                {ninth_name_change !== '' && <h2 class = "NameChange">{ninth_name_change} </h2>}
+                {name_after_lengthening !== '' && <h4 class = "NameChange">Ship Name Changes: {name_after_lengthening} </h4>}
+                {first_name_change !== '' && <h4 class = "NameChange">{first_name_change} </h4>}    
+                {second_name_change !== '' && <h4 class = "NameChange">{second_name_change} </h4>}
+                {third_name_change !== '' && <h4 class = "NameChange">{third_name_change} </h4>}
+                {fourth_name_change !== '' && <h4 class = "NameChange">{fourth_name_change} </h4>}
+                {fifth_name_change !== '' && <h4 class = "NameChange">{fifth_name_change} </h4>}
+                {sixth_name_change !== '' && <h4 class = "NameChange">{sixth_name_change} </h4>}
+                {seventh_name_change !== '' && <h4 class = "NameChange">{seventh_name_change} </h4>}
+                {eighth_name_change !== '' && <h4 class = "NameChange">{eighth_name_change} </h4>}
+                {ninth_name_change !== '' && <h4 class = "NameChange">{ninth_name_change} </h4>}
 
-                {lengthened_service_yrs !== '' && <h2>Years in Service:{lengthened_service_yrs} </h2>}
+                {lengthened_service_yrs !== '' && <h4>Years in Service:{lengthened_service_yrs} </h4>}
                 
                 {lengthened_operator !== '' && <h4>Cruise Operators: {lengthened_operator}</h4>}
                 {lengthened_reg_port !== '' && <h4>Port of Registry: {lengthened_reg_port}</h4>}
                 {lengthened_cost !== '' && <h4>Cost to Lengthen: {lengthened_cost}</h4>}
 
-                {lengthened_passengers !== '' && <h2>Passengers (Maximum):{lengthened_passengers} </h2>}
-                {lengthened_crew !== '' && <h2>Crew (Maximum): {lengthened_crew}</h2>}
-                {lengthened_gt !== '' && <h2>Gross Tonnage: {lengthened_gt}</h2>}
-                {lengthened_length !== '' && <h2>Length: {lengthened_length}</h2>}
-                {lengthened_beam !== '' && <h2>Beam: {lengthened_beam}</h2>}
-                {lengthened_draft !== '' && <h2>Draft (Maximum): {lengthened_draft}</h2>}
-                {lengthened_deadweight !== '' && <h2>Deadweight (Maximum): {lengthened_deadweight}</h2>}
-                {lengthened_lightship !== '' && <h2>Lightship Displacement: {lengthened_lightship}</h2>}
-                {lengthened_displacement !== '' && <h2>Loaded Displacement (Maximum):{lengthened_displacement}</h2>}
+                {lengthened_passengers !== '' && <h4>Passengers (Maximum):{lengthened_passengers} </h4>}
+                {lengthened_crew !== '' && <h4>Crew (Maximum): {lengthened_crew}</h4>}
+                {lengthened_gt !== '' && <h4>Gross Tonnage: {lengthened_gt}</h4>}
+                {lengthened_length !== '' && <h4>Length: {lengthened_length}</h4>}
+                {lengthened_beam !== '' && <h4>Beam: {lengthened_beam}</h4>}
+                {lengthened_draft !== '' && <h4>Draft (Maximum): {lengthened_draft}</h4>}
+                {lengthened_deadweight !== '' && <h4>Deadweight (Maximum): {lengthened_deadweight}</h4>}
+                {lengthened_lightship !== '' && <h4>Lightship Displacement: {lengthened_lightship}</h4>}
+                {lengthened_displacement !== '' && <h4>Loaded Displacement (Maximum):{lengthened_displacement}</h4>}
 
                 {/* These below are extras may not need all of them */}
                 {lengthened_funnel_hgt !== '' && <h4>Funnel Height: {lengthened_funnel_hgt}</h4>}
                 {lengthened_speed !== '' && <h4>Speed: {lengthened_speed}</h4>}
                 {lengthened_deadweight !== '' && <h4>Deadweight:{lengthened_deadweight}</h4>}
-                {lengthened_lightship !== '' && <h4>lightship{lengthened_lightship}</h4>}
+                {lengthened_lightship !== '' && <h4>Lightship: {lengthened_lightship}</h4>}
                 {lengthened_displacement !== '' && <h4>Displacement (Maximum):{lengthened_displacement}</h4>}
                 {lengthened_power !== '' && <h4>Power:{lengthened_power}</h4>}
                 {lengthened_power_rpm !== '' && <h4>Propellor RPM:{lengthened_power_rpm}</h4>}
@@ -275,7 +294,7 @@ class MakeClassicPt2 extends React.Component   {
             <div id = "early">     
                 <h3>Early Life</h3>    
                 <br/><br/>
-                <p>{early_1st_para}</p>
+                <p>{early_1st_para}</p>      
 
                 <video controls width = "500">
                     <source
@@ -298,6 +317,11 @@ class MakeClassicPt2 extends React.Component   {
                         type = "video/mp4"
                     />    
                 </video>      */}
+ 
+                <br/>
+                <br/>
+                <p>Contents:    Previous       Next        Top</p>
+
             </div>
 
             <div id = "cruise">
@@ -305,13 +329,86 @@ class MakeClassicPt2 extends React.Component   {
                 <br/><br/>
                 <p>{cruise_1st_para}</p>
 
-                <img src = {img_1stcruise}
-                    title = {img_1stcruise_title}/>
+                <img src = {img_1stcruise} title = {img_1stcruise_title}/>
 
                 {/* Heading for Lengthening     */}
-                {/* Paragraph talking about lengthening of ship    */}
+                {/* <h4>{classic_ship_name} Cruise Ship Lengthening</h4> */}
+                {name_before_lengthening !== '' && <h4>{name_before_lengthening} Cruise Ship Lengthening</h4>}
+                {/* Paragraph talking about lengthening  of ship and an image  */}
+                {lengthened_para !== '' && <p>{lengthened_para}</p>}
+                <img src = {img_lengthened} title = {img_lengthened_title}/>
+
+                {/* <h4>{classic_ship_name} After Ship Lengthening</h4> */}
+                {/* Paragraph and Photo after lengthening when Ship had same name and did not change cruise line. */}
+                {name_after_lengthening !== '' && <h4>{name_after_lengthening} After Ship Lengthening</h4>}
+                
+                {afterlengthen_para !== '' && <p>{afterlengthen_para}</p>}
+
+                <img src = {img_afterlengthen} title = {img_afterlengthen_title}/>
+                <br/><br/>
+                
+                {first_name_change !== '' && <h4>{first_name_change}</h4>}
 
                 <p>{cruise_2nd_para}</p>
+
+                <img src = {img_2ndcruise} title = {img_2ndcruise_title}/> 
+                <br/><br/>
+
+                {second_name_change !== '' && <h4>{second_name_change}</h4>}
+
+                <p>{cruise_3rd_para}</p>
+
+                <img src = {img_3rdcruise} title = {img_3rdcruise_title}/>
+                <br/><br/>
+
+                {third_name_change !== '' && <h4>{third_name_change}</h4>}
+
+                <p>{cruise_4th_para}</p>
+
+                <img src = {img_4thcruise} title = {img_4thcruise_title}/>
+                <br/><br/>
+
+                {fourth_name_change !== '' && <h4>{fourth_name_change}</h4>}
+
+                <p>{cruise_5th_para}</p>
+
+                <img src = {img_5thcruise} title = {img_5thcruise_title}/>
+                <br/><br/>
+
+                {fifth_name_change !== '' && <h4>{fifth_name_change}</h4>}
+
+                <p>{cruise_6th_para}</p>
+
+                <img src = {img_6thcruise} title = {img_6thcruise_title}/>
+                <br/><br/>
+
+                {sixth_name_change !== '' && <h4>{sixth_name_change}</h4>}
+
+                <p>{cruise_7th_para}</p>
+
+                <img src = {img_7thcruise} title = {img_7thcruise_title}/>
+                <br/><br/>
+
+                {seventh_name_change !== '' && <h4>{seventh_name_change}</h4>}
+
+                <p>{cruise_8th_para}</p>
+
+                <img src = {img_8thcruise} title = {img_8thcruise_title}/>
+                <br/><br/>
+
+                {eighth_name_change !== '' && <h4>{eighth_name_change}</h4>}
+
+                <p>{cruise_9th_para}</p>
+
+                <img src = {img_9thcruise} title = {img_9thcruise_title}/>
+                <br/><br/>
+
+                {ninth_name_change !== '' && <h4>{ninth_name_change}</h4>}
+
+                <p>{cruise_10th_para}</p>
+
+                <img src = {img_10thcruise} title = {img_10thcruise_title}/>
+                <br/><br/>
 
                  <video controls width = "500">
                     <source
@@ -353,6 +450,7 @@ class MakeClassicPt2 extends React.Component   {
 
                 <p>{final_1st_para}</p>
                 <p>{final_2nd_para}</p>
+                <img src = {img_final} title = {img_final_title} />
 
             </div>
 

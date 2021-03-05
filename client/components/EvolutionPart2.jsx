@@ -73,6 +73,7 @@ class EvolutionPart2 extends React.Component    {
                         <br/><br/>Song of Norway goes down as the first of the classic liners ever to be lengthend to allow more passengers.
                         Song of Norway has had lots of differents name during it's career, is scrapped now, but will be rememembered as a great cruise ship. 
                         <br/><br/>Royal Viking Sky is another classic cruise ship that got lengthened, but it is still in operation today and can be seen on my Cruise Lines page for Fred Olsen cruises.
+                        <br/><br/>Sovereign of the Seas is a 1980's cruise ship that was the largest afloat at the time it was built. It was originally owned by Royal Caribbean and had a major influence on the mega class cruise ships of today, due to its increase in size from previous ships and its styling. Sadly though it has stopped cruising in 2020 and was scrapped, due to being caught up in the covid situation. It will be remembered as a cruise ship that is responsible for Royal Caribbean Cruise Line success and the development of the modern cruise industry.
                         <br/><br/>Lastly Allure of the Seas is a different type of cruise ship from the other classic ones I have in the evolution pages.
                         Being the box shape it is, it is designed to carry more passengers and is a lot larger than the other ships.
                         It is also available for cruises on my Cruise Lines page for Royal Caribbean cruises. 
