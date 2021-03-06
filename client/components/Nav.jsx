@@ -13,8 +13,8 @@ const Nav = () => {
                 <nav  className = "navmenu"> 
          
                     <Link className = "home" to = {"/"}>Home</Link>
-                    <Link className = "evo1" to = {"/evolutionpart1"}>Evolution (Part 1)</Link>
-                    <Link className = "evo2" to = {"/evolutionpart2"}>Evolution (Part 2)</Link>
+                    <Link className = "evo1" to = {"/evolution-part1"}>Evolution (Part 1)</Link>
+                    <Link className = "evo2" to = {"/evolution-part2"}>Evolution (Part 2)</Link>
                     <Link className = "cruises" to = {"/cruiselines"}>Cruise Lines</Link>
          
                 </nav>    
