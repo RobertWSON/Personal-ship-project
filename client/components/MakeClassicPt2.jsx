@@ -1,5 +1,5 @@
 import React from 'react'
-import HoverContents from './HoverContents'
+import HoverContents2 from './HoverContents2'
 
 
 class MakeClassicPt2 extends React.Component   {
@@ -92,7 +92,7 @@ class MakeClassicPt2 extends React.Component   {
             This is because the hover events need to be controlled by the outer contents div here. */}
 
             {/* Code below passes classic ship prop to HoverContents component */}
-            <HoverContents classicName={classic_ship_name}/>                
+            <HoverContents2 classicName={classic_ship_name}/>                
 
             <div className = "classicContainer"> 
 
@@ -233,16 +233,16 @@ class MakeClassicPt2 extends React.Component   {
                 
                 <h2>{cruise_ship_name} after Lengthening</h2>
                 
-                {name_after_lengthening !== '' && <h4 class = "NameChange">Ship Name Changes: {name_after_lengthening} </h4>}
-                {first_name_change !== '' && <h4 class = "NameChange">{first_name_change} </h4>}    
-                {second_name_change !== '' && <h4 class = "NameChange">{second_name_change} </h4>}
-                {third_name_change !== '' && <h4 class = "NameChange">{third_name_change} </h4>}
-                {fourth_name_change !== '' && <h4 class = "NameChange">{fourth_name_change} </h4>}
-                {fifth_name_change !== '' && <h4 class = "NameChange">{fifth_name_change} </h4>}
-                {sixth_name_change !== '' && <h4 class = "NameChange">{sixth_name_change} </h4>}
-                {seventh_name_change !== '' && <h4 class = "NameChange">{seventh_name_change} </h4>}
-                {eighth_name_change !== '' && <h4 class = "NameChange">{eighth_name_change} </h4>}
-                {ninth_name_change !== '' && <h4 class = "NameChange">{ninth_name_change} </h4>}
+                {name_after_lengthening !== '' && <h4 className = "NameChange">Ship Name Changes: {name_after_lengthening} </h4>}
+                {first_name_change !== '' && <h4 className = "NameChange">{first_name_change} </h4>}    
+                {second_name_change !== '' && <h4 className = "NameChange">{second_name_change} </h4>}
+                {third_name_change !== '' && <h4 className = "NameChange">{third_name_change} </h4>}
+                {fourth_name_change !== '' && <h4 className = "NameChange">{fourth_name_change} </h4>}
+                {fifth_name_change !== '' && <h4 className = "NameChange">{fifth_name_change} </h4>}
+                {sixth_name_change !== '' && <h4 className = "NameChange">{sixth_name_change} </h4>}
+                {seventh_name_change !== '' && <h4 className = "NameChange">{seventh_name_change} </h4>}
+                {eighth_name_change !== '' && <h4 className = "NameChange">{eighth_name_change} </h4>}
+                {ninth_name_change !== '' && <h4 className = "NameChange">{ninth_name_change} </h4>}
 
                 {lengthened_service_yrs !== '' && <h4>Years in Service:{lengthened_service_yrs} </h4>}
                 
@@ -279,7 +279,7 @@ class MakeClassicPt2 extends React.Component   {
                 {lengthened_bridge_height !== '' && <h4>Bridge Height:{lengthened_bridge_height}</h4>}
                 {lengthened_bridge_water !== '' && <h4>Bridge Height Above Water:{lengthened_bridge_water}</h4>}
                 {lengthened_shelter_deck !== '' && <h4>Shelter Deck:{lengthened_shelter_deck}</h4>}
-                {lengthened_bow_bridge !== '' && <h4>Bow to Bridge Length:{lengthenedbow_bridge}</h4>}
+                {lengthened_bow_bridge !== '' && <h4>Bow to Bridge Length:{lengthened_bow_bridge}</h4>}
                 {lengthened_bow_height !== '' && <h4>Bow Height:{lengthened_bow_height}</h4>}
 
               </div>
