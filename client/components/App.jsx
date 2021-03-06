@@ -34,10 +34,10 @@ class App extends React.Component {
               <Route exact path='/' component={Home}/>
 
               {/* Routes for Evolution pages and associated ships  */}
-              <Route exact path='/evolutionpart1' component={EvolutionPart1}/>
-              <Route path = '/evolutionpart1/:classic_ship_name' component={FindClassic}/>
-              <Route exact path='/evolutionpart2' component={EvolutionPart2}/>
-              <Route path = '/evolutionpart2/:classic_ship_name' component={FindClassicPt2}/>
+              <Route exact path='/evolution-part1' component={EvolutionPart1}/>
+              <Route path = '/evolution-part1/:classic_ship_name' component={FindClassic}/>
+              <Route exact path='/evolution-part2' component={EvolutionPart2}/>
+              <Route path = '/evolution-part2/:classic_ship_name' component={FindClassicPt2}/>
 
               {/* Route for Cruise Lines page */}
               <Route exact path='/cruiselines' component={CruiseLines}/>
