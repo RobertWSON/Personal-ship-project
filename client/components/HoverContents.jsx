@@ -42,11 +42,11 @@ class HoverContents extends React.Component {
         
                 <div className = "contentsMenu">
                     <ol> 
-                        <li><Link className = "early" smooth to = {`/evolutionpart1/${this.props.classic_ship_name}/#early`}>Early Life</Link></li> 
-                        <li><Link className = "cruise" smooth to = {`/evolutionpart1/${this.props.classic_ship_name}/#cruise`}>As a Cruise Ship</Link></li>
-                        <li><Link className = "mem" smooth to = {`/evolutionpart1/${this.props.classic_ship_name}/#mem`}>Memorable Moments</Link></li>
-                        <li><Link className = "plans" smooth to = {`/evolutionpart1/${this.props.classic_ship_name}/#plans`}>Ship Plans</Link></li>
-                        <li><Link className = "final" smooth to = {`/evolutionpart1/${this.props.classic_ship_name}/#final`}>Final Years</Link></li> 
+                        <li><Link className = "early" smooth to = {`/evolution-part1/${this.props.classic_ship_name}/#early`}>Early Life</Link></li> 
+                        <li><Link className = "cruise" smooth to = {`/evolution-part1/${this.props.classic_ship_name}/#cruise`}>As a Cruise Ship</Link></li>
+                        <li><Link className = "mem" smooth to = {`/evolution-part1/${this.props.classic_ship_name}/#mem`}>Memorable Moments</Link></li>
+                        <li><Link className = "plans" smooth to = {`/evolution-part1/${this.props.classic_ship_name}/#plans`}>Ship Plans</Link></li>
+                        <li><Link className = "final" smooth to = {`/evolution-part1/${this.props.classic_ship_name}/#final`}>Final Years</Link></li> 
                     </ol>
                 </div> 
                 }    
