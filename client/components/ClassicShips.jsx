@@ -35,7 +35,7 @@ class ClassicShips extends React.Component  {
             <Link 
                 to={{ 
                     // pathname: `/evolutionpart1/${ship_name}`,
-                    pathname: `/evolutionpart1/${classic_ship_name}`,
+                    pathname: `/evolution-part1/${classic_ship_name}`,
                     state: this.props
                 }}>                    
                 <img src = {img} title = {img_title} />

@@ -33,7 +33,7 @@ class ClassicShips2 extends React.Component  {
             it is a property of the Link.*/}
             <Link 
                 to={{ 
-                    pathname: `/evolutionpart2/${classic_ship_name}`,
+                    pathname: `/evolution-part2/${classic_ship_name}`,
                     state: this.props
                 }}>                    
                 <img src = {img} title = {img_title} />
