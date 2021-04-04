@@ -18,6 +18,11 @@ exports.up = function(knex, Promise) {
         table.integer('Deadweight')
         table.string('Review')
         table.string('Booking')
+
+        // Below is all the properties I need for each Review (either initial or added) on a Review Page.
+        // table.integer('Star_Rating')
+        // table.string('Review_User_Name')
+        // 
     })
 };
 

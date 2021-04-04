@@ -1,8 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-// import{ExternalLink} from 'react-external-link'
-// import AddReview from './AddReview'
-import InitialReview from './InitialReview'
+
+// import FindReview from './FindReview'
 
 
 class Ship extends React.Component  {
@@ -88,22 +87,31 @@ class Ship extends React.Component  {
                 </button>
             </div>    
 
+
             <div className = "Review">
-                <h3>Reviews:</h3>
+                <h3>{ship_name} Reviews:</h3>
                 <br/> 
 
-                
-                <textarea className = "initial">
-                    {Boolean(Review) && <InitialReview/>}
-                </textarea>
-            
-                {/* <div className ="makeReview">    
-                    <AddReview/>
-                </div>  */}
+
 
                 <button className = "addReview">
                     Make a Review
-                </button>   
+                </button>
+
+                {/* I think rather than a button it should be a Link disguised as a button.
+                <Link className = "addReview" to = >
+                
+                </Link> */}
+
+            {/* This goes to the FindReview component where it finds if an Initial Review exists for the ship.
+            If initial review does exist from ships seeds file, then it will be displayed.
+
+            If an initial Review does not exist, then user can click on Make a Review button to make a Review.
+            When user makes a Review, a new page opens in a separate window allowing user to fill out a form and then submit it.
+            The Users new Review gets diplayed on a ships Review page 
+            eg http://localhost:3000/cruiselines/Celestyal_Cruises#Celestyal_Crystal
+
+            <FindReview/> */}
                 
             </div>
 
