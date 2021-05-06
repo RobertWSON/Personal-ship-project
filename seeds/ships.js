@@ -22,14 +22,12 @@ exports.seed = function(knex, Promise) {
           Height: 72.5,
           Loaded_Displacement: 120000,
           Deadweight: 18095,
+          Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/royal-caribbean-international/symphony-of-the-seas',
 
-          // Below is all the properties I need for each Review (either initial or added) on a Review Page.
-          // Star_Rating: '4.0',
-          // Review_User_Name: 'Robert Wilkinson',
-          // 
-          Review: 'Amazingly big ship, so it was difficult to get to know everyone on board, like it is on the smaller ships. The activities however were excellent as there was a lot to choose from, like rock climbing, indoor cricket, tennis and touch rugby. The shows had lots of variety, ranging from argentinian and salsa dancing and singing from opera to songs with a comical side to them. I would recommend this ship to all variety of ages, as the passengers range from families, group of friends or loved ones on a trip.',
-          
-          Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/royal-caribbean-international/symphony-of-the-seas' 
+          //Foreign Key to get Review data for Symphony of the Seas Ship, if it exists.
+          // If no Review data Exists, then user has option of Making a Review.  
+          review_id: 1
+           
         },
         {
           id: 2,
@@ -46,13 +44,12 @@ exports.seed = function(knex, Promise) {
           Height: 46,
           Loaded_Displacement: 21000,
           Deadweight: 4243,
+          Booking: 'https://cruisearabiaonline.com/2020/04/29/marella-celebration-to-be-sold-dubai-cruise-season-cancelled/',
 
-          // Below is all the properties I need for each Review (either initial or added) on a Review Page.
-          // Star_Rating: '4.0',
-          // Review_User_Name: 'Robert Wilkinson',
-          // 
-          Review: 'This ship has been sailing for Marella Cruises owned by UK company TUI. Since covid it is in retirement and is looking for a company to be sold to, so that it can continue cruising. When you click make a boking for this ship, the website tells you about what is happening with this ship.',
-          Booking: 'https://cruisearabiaonline.com/2020/04/29/marella-celebration-to-be-sold-dubai-cruise-season-cancelled/'
+          //Foreign Key to get Review data for Marella Celebration, if it exists.
+          // If no Review data Exists, then user has option of Making a Review.
+          review_id: 2
+
         },
         {
           id: 3,
@@ -69,13 +66,11 @@ exports.seed = function(knex, Promise) {
           Height: 72.0,
           Loaded_Displacement: 79287,
           Deadweight: "19189",
+          Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/cunard/queen-mary-2',
 
-          // Below is all the properties I need for each Review (either initial or added) on a Review Page.
-          // Star_Rating: '',
-          // Review_User_Name: '',
-          // 
-          Review: '',
-          Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/cunard/queen-mary-2'
+          //Foreign Key to get Review data for Queen Mary 2, if it exists.
+          // If no Review data Exists, then user has option of Making a Review.
+          review_id: 3
         },
         {
           id: 4,
@@ -92,13 +87,12 @@ exports.seed = function(knex, Promise) {
           Height: 61.26,
           Loaded_Displacement: 57000,
           Deadweight: 10852,
-
-          // Below is all the properties I need for each Review (either initial or added) on a Review Page.
-          // Star_Rating: '4.0','
-          // Review_User_Name: 'Robert Wilkinson',
-          // 
-          Review: 'I did a recent cruise on Star Princess from Los Angeles to Santiago. I found that the Staff were very friendly and looked after you well. When I was on the cruise and forgot to get some water when I was eating from the buffet, this was absolutely no problem, as staff would approach me straight away to ask if I wanted some water and a coffee. The only exception, which we were not happy about was the room attendant, who frequently did not update our room with things like toilet paper, soap and making beds, so we had to tell another room attendant to get it sorted. Great range of activities to do on board at sea with lots of shows, quizzes, learning spanish and basketball free throw competition to name a few. The Italian captain is one of the funniest captains I have every seen and had a great sense of humour every time he talked on the mic. The ports of call were very unique and different with mostly great tours. The only tours I found disappointing were the day time tour in Lima, as we did not get to see much of the coast and did mostly a market tour. Also the tour in La Serena was a bit disappointing as it was scheduled to go to a Museum, but that never happened and instead we took a view from a Library to look out to La Serena. So choose your tours wisely or just do your own thing. Overall a great cruise and good value for money.',
-          Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/princess-cruises/star-princess' 
+          Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/princess-cruises/star-princess',
+          
+          //Foreign Key to get Review data for Star Princess, if it exists.
+          // If no Review data Exists, then user has option of Making a Review.
+          review_id: 4          
+          
         },
         {
           id: 5,
@@ -115,13 +109,11 @@ exports.seed = function(knex, Promise) {
           Height: 45,
           Loaded_Displacement: 21156,
           Deadweight: 5956,
-
-          // Below is all the properties I need for each Review (either initial or added) on a Review Page.
-          // Star_Rating: '4.0','
-          // Review_User_Name: 'Robert Wilkinson',
-          // 
-          Review: '',
-          Booking: 'https://www.fredolsencruises.com/our-ships/boudicca/cruises' 
+          Booking: 'https://www.fredolsencruises.com/our-ships/boudicca/cruises',
+          
+          //Foreign Key to get Review data for Boudicca, if it exists.
+          // If no Review data Exists, then user has option of Making a Review.
+          review_id: 5          
         },
         {
           id: 6,
@@ -138,13 +130,11 @@ exports.seed = function(knex, Promise) {
           Height: 45,
           Loaded_Displacement: 20704,
           Deadweight: 5656,
-
-          // Below is all the properties I need for each Review (either initial or added) on a Review Page.
-          // Star_Rating: '4.0','
-          // Review_User_Name: 'Robert Wilkinson',
-          // 
-          Review: '',
-          Booking: 'https://www.fredolsencruises.com/our-ships/black-watch/cruises'       
+          Booking: 'https://www.fredolsencruises.com/our-ships/black-watch/cruises',
+          
+          //Foreign Key to get Review data for Black Watch, if it exists.
+          // If no Review data Exists, then user has option of Making a Review.
+          review_id: 6
         },
         {
           id: 7,
@@ -161,13 +151,11 @@ exports.seed = function(knex, Promise) {
           Height: 46.25,
           Loaded_Displacement: 17200,
           Deadweight: 3938,
-
-          // Below is all the properties I need for each Review (either initial or added) on a Review Page.
-          // Star_Rating: '4.0','
-          // Review_User_Name: 'Robert Wilkinson',
-          // 
-          Review: '',
-          Booking: 'https://www.seascanner.com/cruises-amadea'    
+          Booking: 'https://www.seascanner.com/cruises-amadea', 
+          
+          //Foreign Key to get Review data for Phoenix Reisen, if it exists.
+          // If no Review data Exists, then user has option of Making a Review.
+          review_id: 7          
         },
         {
           id: 8,
@@ -184,13 +172,11 @@ exports.seed = function(knex, Promise) {
           Height: 68.3,
           Loaded_Displacement: 71000,
           Deadweight: 11000,
-
-          // Below is all the properties I need for each Review (either initial or added) on a Review Page.
-          // Star_Rating: '4.0','
-          // Review_User_Name: 'Robert Wilkinson',
-          // 
-          Review: '',
-          Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/princess-cruises/majestic-princess' 
+          Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/princess-cruises/majestic-princess',
+          
+          //Foreign Key to get Review data for Majestic Princess, if it exists.
+          // If no Review data Exists, then user has option of Making a Review.
+          review_id: 8
         },
         {
           id: 9,
@@ -207,13 +193,11 @@ exports.seed = function(knex, Promise) {
           Height: 47.35,
           Loaded_Displacement: 24320,
           Deadweight: 4797,
-
-          // Below is all the properties I need for each Review (either initial or added) on a Review Page.
-          // Star_Rating: '4.0','
-          // Review_User_Name: 'Robert Wilkinson',
-          // 
-          Review: 'Pretty much a brand new cruise, you will love this one.',
-          Booking: 'https://www.vikingcruises.com.au/oceans/ships/viking-sun.html' 
+          Booking: 'https://www.vikingcruises.com.au/oceans/ships/viking-sun.html', 
+          
+          //Foreign Key to get Review data for Viking Sun, if it exists.
+          // If no Review data Exists, then user has option of Making a Review.
+          review_id: 9          
         },
         {
           id: 10,
@@ -229,14 +213,12 @@ exports.seed = function(knex, Promise) {
           Draft: 8.626,
           Height: 63,
           Loaded_Displacement: 45989,
-          Deadweight: 10759,
-
-          // Below is all the properties I need for each Review (either initial or added) on a Review Page.
-          // Star_Rating: '4.0','
-          // Review_User_Name: 'Robert Wilkinson',
-          // 
-          Review: '', 
-          Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/royal-caribbean-international/radiance-of-the-seas'
+          Deadweight: 10759, 
+          Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/royal-caribbean-international/radiance-of-the-seas',
+                  
+          //Foreign Key to get Review data for Radiance of The Seas, if it exists.
+          // If no Review data Exists, then user has option of Making a Review.
+          review_id: 10
         },
         {
           id: 11,
@@ -253,13 +235,11 @@ exports.seed = function(knex, Promise) {
           Height: 58.068,
           Loaded_Displacement: 39026,
           Deadweight: 5200,
-
-          // Below is all the properties I need for each Review (either initial or added) on a Review Page.
-          // Star_Rating: '4.0','
-          // Review_User_Name: 'Robert Wilkinson',
-          // 
-          Review: 'Enjoyed the range of activities on this ship. This classic liner from the 90s that used to be called Legend of The Seas, has a good range of activities for its size. It has a tennis court that was always available to use.',
-          Booking: 'https://www.tui.co.uk/cruise/ships/marella-discovery-2/itineraries' 
+          Booking: 'https://www.tui.co.uk/cruise/ships/marella-discovery-2/itineraries',
+                  
+          //Foreign Key to get Review data for Marella Discovery 2, if it exists.
+          // If no Review data Exists, then user has option of Making a Review.
+          review_id: 11
         },
         {
           id: 12,
@@ -276,13 +256,11 @@ exports.seed = function(knex, Promise) {
           Height: 32,
           Loaded_Displacement: 5636,
           Deadweight: 1305,
-
-          // Below is all the properties I need for each Review (either initial or added) on a Review Page.
-          // Star_Rating: '4.0','
-          // Review_User_Name: 'Robert Wilkinson',
-          // 
-          Review: '', 
-          Booking: 'https://en.ponant.com/cruises/on-board/vessel-le-laperouse'
+          Booking: 'https://en.ponant.com/cruises/on-board/vessel-le-laperouse',
+                  
+          //Foreign Key to get Review data for Le Laperouse, if it exists.
+          // If no Review data Exists, then user has option of Making a Review.
+          review_id: 12          
         },
         {
           id: 13,
@@ -299,13 +277,11 @@ exports.seed = function(knex, Promise) {
           Height: 59,
           Loaded_Displacement: 43014,
           Deadweight: 7089,
-
-          // Below is all the properties I need for each Review (either initial or added) on a Review Page.
-          // Star_Rating: '4.0','
-          // Review_User_Name: 'Robert Wilkinson',
-          // 
-          Review: '', 
-          Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/carnival-cruise-lines/carnival-legend'
+          Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/carnival-cruise-lines/carnival-legend',
+                  
+          //Foreign Key to get Review data for Carnival Legend, if it exists.
+          // If no Review data Exists, then user has option of Making a Review.
+          review_id: 13          
         },
         {
           id: 14,
@@ -321,14 +297,12 @@ exports.seed = function(knex, Promise) {
           Draft: 8,
           Height: 66,
           Loaded_Displacement: 67000,
-          Deadweight: 9000,
-
-          // Below is all the properties I need for each Review (either initial or added) on a Review Page.
-          // Star_Rating: '4.0','
-          // Review_User_Name: 'Robert Wilkinson',
-          // 
-          Review: '', 
-          Booking: 'https://cruiseweb.com/cruise-lines/carnival-cruise-line/ship-carnival-vista'
+          Deadweight: 9000, 
+          Booking: 'https://cruiseweb.com/cruise-lines/carnival-cruise-line/ship-carnival-vista',
+                  
+          //Foreign Key to get Review data for Carnival Vista, if it exists.
+          // If no Review data Exists, then user has option of Making a Review.
+          review_id: 14          
         },
         {
           id: 15,
@@ -344,14 +318,12 @@ exports.seed = function(knex, Promise) {
           Draft: 9.322,
           Height: 72.1,
           Loaded_Displacement: 120000,
-          Deadweight: 18095,
-
-          // Below is all the properties I need for each Review (either initial or added) on a Review Page.
-          // Star_Rating: '4.0','
-          // Review_User_Name: 'Robert Wilkinson',
-          // 
-          Review: '', 
-          Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/royal-caribbean-international/allure-of-the-seas'
+          Deadweight: 18095, 
+          Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/royal-caribbean-international/allure-of-the-seas',
+                            
+          //Foreign Key to get Review data for Allure of The Seas, if it exists.
+          // If no Review data Exists, then user has option of Making a Review.
+          review_id: 15
         },
         {
           id: 16,
@@ -367,14 +339,12 @@ exports.seed = function(knex, Promise) {
           Draft: 8.80,
           Height: 70,
           Loaded_Displacement: 76000,
-          Deadweight: 12000,
-
-          // Below is all the properties I need for each Review (either initial or added) on a Review Page.
-          // Star_Rating: '4.0','
-          // Review_User_Name: 'Robert Wilkinson',
-          // 
-          Review: '', 
-          Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/royal-caribbean-international/anthem-of-the-seas'
+          Deadweight: 12000, 
+          Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/royal-caribbean-international/anthem-of-the-seas',
+                                      
+          //Foreign Key to get Review data for Anthem of The Seas, if it exists.
+          // If no Review data Exists, then user has option of Making a Review.
+          review_id: 16
         },
         {
           id: 17,
@@ -390,14 +360,12 @@ exports.seed = function(knex, Promise) {
           Draft: 8,
           Height: 52.50,
           Loaded_Displacement: 36220,
-          Deadweight: 6430,
-
-          // Below is all the properties I need for each Review (either initial or added) on a Review Page.
-          // Star_Rating: '4.0','
-          // Review_User_Name: 'Robert Wilkinson',
-          // 
-          Review: '', 
-          Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/crystal-cruises/crystal-serenity'
+          Deadweight: 6430, 
+          Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/crystal-cruises/crystal-serenity',
+                                      
+          //Foreign Key to get Review data for Crystal Serenity, if it exists.
+          // If no Review data Exists, then user has option of Making a Review.
+          review_id: 17
         },
         {
           id: 18,
@@ -414,13 +382,11 @@ exports.seed = function(knex, Promise) {
           Height: 50,
           Loaded_Displacement: 34000,
           Deadweight: 4500,
-
-          // Below is all the properties I need for each Review (either initial or added) on a Review Page.
-          // Star_Rating: '4.0','
-          // Review_User_Name: 'Robert Wilkinson',
-          // 
-          Review: '', 
-          Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/crystal-cruises/crystal-symphony'
+          Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/crystal-cruises/crystal-symphony',
+                                      
+          //Foreign Key to get Review data for Crystal Symphony, if it exists.
+          // If no Review data Exists, then user has option of Making a Review.
+          review_id: 18          
         },
         {
           id: 19,
@@ -437,13 +403,11 @@ exports.seed = function(knex, Promise) {
           Height: 44,
           Loaded_Displacement: 17013,
           Deadweight: 3460,
-
-          // Below is all the properties I need for each Review (either initial or added) on a Review Page.
-          // Star_Rating: '4.0','
-          // Review_User_Name: 'Robert Wilkinson',
-          // 
-          Review: 'Operates world cruises of a different kind. It is serves as a travelling home and campus for students wanting to learn about different places.',
-          Booking: 'https://www.semesteratsea.org/life-at-sea/our-ship/' 
+          Booking: 'https://www.semesteratsea.org/life-at-sea/our-ship/',
+                                      
+          //Foreign Key to get Review data for World Odyssey, if it exists.
+          // If no Review data Exists, then user has option of Making a Review.
+          review_id: 19           
         },
         {
           id: 20,
@@ -460,13 +424,12 @@ exports.seed = function(knex, Promise) {
           Height: 38,
           Loaded_Displacement: 13300,
           Deadweight: 1703,
-
-          // Below is all the properties I need for each Review (either initial or added) on a Review Page.
-          // Star_Rating: '4.0','
-          // Review_User_Name: 'Robert Wilkinson',
-          // 
-          Review: 'I have been on this ship on my Contiki tour, when it was cruising for Louis Cruise Lines. It visited some lovely destinations of Greece like Mykonos and highly recommended for younger travellers who want to have a good time.',
-          Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/celestyal-cruises/celestyal-crystal' 
+          Review: '',
+          Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/celestyal-cruises/celestyal-crystal',
+                                                
+          //Foreign Key to get Review data for Celestyal Crystal, if it exists.
+          // If no Review data Exists, then user has option of Making a Review.
+          review_id: 20 
         },
         {
           id: 21,
@@ -483,13 +446,11 @@ exports.seed = function(knex, Promise) {
           Height: 45,
           Loaded_Displacement: 21536,
           Deadweight: 5000,
+          Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/celestyal-cruises/celestyal-olympia',
 
-          // Below is all the properties I need for each Review (either initial or added) on a Review Page.
-          // Star_Rating: '4.0','
-          // Review_User_Name: 'Robert Wilkinson',
-          // 
-          Review: 'I have not been on this ship, but just like the one I have been on it used to operate under Louis Cruise Lines.',
-          Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/celestyal-cruises/celestyal-olympia'
+          //Foreign Key to get Review data for Celestyal Olympia, if it exists.
+          // If no Review data Exists, then user has option of Making a Review.
+          review_id: 21
         },
         {
           id: 22,
@@ -506,13 +467,11 @@ exports.seed = function(knex, Promise) {
           Height: 57.50,
           Loaded_Displacement: 42036,
           Deadweight: 8530,
+          Booking: 'https://www.cruiseindustrynews.com/cruise-news/22670-dream-cruises-cancels-2020-2021-australia-program.html',
 
-          // Below is all the properties I need for each Review (either initial or added) on a Review Page.
-          // Star_Rating: '4.0','
-          // Review_User_Name: 'Robert Wilkinson',
-          // 
-          Review: 'This ship has kept the same name and cruise line ever since it has been in service up until this year (2019). It used to be called Superstar Virgo and operated for Star Cruises. It has a beautiful asian feeling to it, as it sails a lot of Asian ports, but also most importantly this means that you will be well looked after at sea in terms of the hospitality. Meals were of top quality and the staff were very approachable. Unfortunately at the moment if you go t book, you will notice that all cruises for the 2020-21 season have been cancelled. Their will be an opportunity to travel in the future though when the situation is better.',
-          Booking: 'https://www.cruiseindustrynews.com/cruise-news/22670-dream-cruises-cancels-2020-2021-australia-program.html'
+          //Foreign Key to get Review data for Explorer Dream, if it exists.
+          // If no Review data Exists, then user has option of Making a Review.
+          review_id: 22       
         },
         {
           id: 23,
@@ -529,13 +488,11 @@ exports.seed = function(knex, Promise) {
           Height: 57.60,
           Loaded_Displacement: 42036,
           Deadweight: 8530,
+          Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/norwegian-cruise-line/norwegian-spirit',
 
-          // Below is all the properties I need for each Review (either initial or added) on a Review Page.
-          // Star_Rating: '4.0','
-          // Review_User_Name: 'Robert Wilkinson',
-          // 
-          Review: '',
-          Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/norwegian-cruise-line/norwegian-spirit'
+          //Foreign Key to get Review data for Norwegian Spirit, if it exists.
+          // If no Review data Exists, then user has option of Making a Review.
+          review_id: 23        
         },
         {
           id: 24,
@@ -552,13 +509,11 @@ exports.seed = function(knex, Promise) {
           Height: 60.5,
           Loaded_Displacement: 45612,
           Deadweight: 7500,
+          Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/norwegian-cruise-line/norwegian-jewel',
 
-          // Below is all the properties I need for each Review (either initial or added) on a Review Page.
-          // Star_Rating: '4.0','
-          // Review_User_Name: 'Robert Wilkinson',
-          // 
-          Review: '',
-          Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/norwegian-cruise-line/norwegian-jewel'
+          //Foreign Key to get Review data for Norwegian Jewel, if it exists.
+          // If no Review data Exists, then user has option of Making a Review.
+          review_id: 24        
         },
         {
           id: 25,
@@ -575,13 +530,11 @@ exports.seed = function(knex, Promise) {
           Height: 59.50,
           Loaded_Displacement: 48200,
           Deadweight: 7500,
+          Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/norwegian-cruise-line/norwegian-dawn',
 
-          // Below is all the properties I need for each Review (either initial or added) on a Review Page.
-          // Star_Rating: '4.0','
-          // Review_User_Name: 'Robert Wilkinson',
-          // 
-          Review: 'I did a cruise on Norwegian Dawn in November 2019. The main great part of the cruise was that there was 9 ports calls on a 15 day cruise, so it was great to see that many beautiful places. The highlights were Curaco and Aruba. The main negative part of the cruise was that smoking was allowed in one of the lounges inside the ship and also in the casino, so for non smokers, the smoke smell was there when you were close to these parts of the ship. Food wise, the meat was very tender during dinner meals, so we were happy with that, but sometimes there not enough fruit.',
-          Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/norwegian-cruise-line/norwegian-dawn'
+          //Foreign Key to get Review data for Norwegian Dawn, if it exists.
+          // If no Review data Exists, then user has option of Making a Review.
+          review_id: 25          
         },
         {
           id: 26,
@@ -598,13 +551,11 @@ exports.seed = function(knex, Promise) {
           Height: 51.50,
           Loaded_Displacement: 24906,
           Deadweight: 5709,
+          Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/po-australia/pacific-aria',
 
-          // Below is all the properties I need for each Review (either initial or added) on a Review Page.
-          // Star_Rating: '4.0','
-          // Review_User_Name: 'Robert Wilkinson',
-          // 
-          Review: '',
-          Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/po-australia/pacific-aria'
+          //Foreign Key to get Review data for Pacific Aria, if it exists.
+          // If no Review data Exists, then user has option of Making a Review.
+          review_id: 26        
         },
         {
           id: 27,
@@ -621,13 +572,11 @@ exports.seed = function(knex, Promise) {
           Height: 56.00,
           Loaded_Displacement: 36275,
           Deadweight: 6715,
+          Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/po-australia/pacific-dawn',
 
-          // Below is all the properties I need for each Review (either initial or added) on a Review Page.
-          // Star_Rating: '4.0','
-          // Review_User_Name: 'Robert Wilkinson',
-          // 
-          Review: '',
-          Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/po-australia/pacific-dawn'
+          //Foreign Key to get Review data for Pacific Dawn, if it exists.
+          // If no Review data Exists, then user has option of Making a Review.
+          review_id: 27        
         },
         {
           id: 28,
@@ -644,13 +593,11 @@ exports.seed = function(knex, Promise) {
           Height: 59.70,
           Loaded_Displacement: 39997,
           Deadweight: 8293,
+          Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/po-australia/pacific-encounter',
 
-          // Below is all the properties I need for each Review (either initial or added) on a Review Page.
-          // Star_Rating: '4.0','
-          // Review_User_Name: 'Robert Wilkinson',
-          // 
-          Review: '',
-          Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/po-australia/pacific-encounter'
+          //Foreign Key to get Review data for Pacific Explorer, if it exists.
+          // If no Review data Exists, then user has option of Making a Review.
+          review_id: 28        
         }
       ]);
     });
