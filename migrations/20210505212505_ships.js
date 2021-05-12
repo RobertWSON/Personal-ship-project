@@ -1,5 +1,3 @@
-
-exports.up = function(knex, Promise) {
   
     exports.up = function(knex, Promise) {
         return knex.schema.createTable('Ships', table =>  {
@@ -18,7 +16,11 @@ exports.up = function(knex, Promise) {
             table.integer('Loaded_Displacement')
             table.integer('Deadweight')
             table.string('Booking')
-            table.integer('review_id')
+
+            // I was told by Phoenix, that it should be the other way around 
+            // with ship_id as the foreign key in reviews table, instead of review_id in ships table.   
+            // There can be many reviews for 1 ship.
+            // table.integer('review_id')
 
         })
     };
