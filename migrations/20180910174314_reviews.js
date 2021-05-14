@@ -20,10 +20,7 @@ exports.up = function(knex, Promise) {
         table.string('Number_of_Cruises')
         table.string('Travel_Party')
 
-        // I was told by Phoenix, that it should be the other way around 
-        // with ship_id as the foreign key in reviews table, instead of review_id in ships table.
-        // There can be many reviews for 1 ship.
-        table.integer('ship_id')
+        // I am using api in this branch to get Reviews data, so I don't need ship_id for join
     })
 };
 

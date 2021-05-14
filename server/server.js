@@ -4,6 +4,8 @@ const cruiselines = require('./routes/cruises')
 const shipslist = require('./routes/ships')
 const classicships = require('./routes/classics')
 const classicship = require('./routes/classic')
+const reviews = require('./routes/reviews')
+const newreview = require('./routes/newreview')
 
 const server = express()
 
@@ -11,7 +13,15 @@ server.use(express.json())
 server.use(express.static(path.join(__dirname, '../public')))
 
 //Lines below sorts out, which v1 express route will handle, which request
-//and is also used for helping display the Review Page
+//and is also used for helping display the Review Page.
+
+// Line below displays initial (existing) reviews taken from my Reviews Table. 
+server.use(`/v1/reviews`, reviews)
+
+// Line below is used for displaying a new review on a cruise ship review page.
+// I think the adding a new review form part is handled in FindReview Component and maybe in App Component.   
+server.use('/v1/newreview', newreview)
+
 server.use('/v1/cruiselines', cruiselines)
 server.use('/v1/shipslist', shipslist)
 

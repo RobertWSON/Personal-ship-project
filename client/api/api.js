@@ -1,5 +1,47 @@
 import request from 'superagent'
 
+// This is api for when a new review is added in the form page.  
+// This form page has a url http://localhost:3000/cruiselines/Celestyal_Cruises#Celestyal_Crystal/add-review for example.
+// The new review appears in the cruise ship review page http://localhost:3000/cruiselines/Celestyal_Cruises#Celestyal_Crystal
+// I am trying to pass cruise_line through this function because it is part of url
+// and I will let components in front-end get the ship id and review id from there.
+export function getNewReview(cruise_line)  {
+    // Tried getNewReview(add-review), but that is not valid, thought about trying (Review_User_Name), 
+    // but I don't want that in the url, so I think nothing gets passed and add-review 
+    // is handled in FindReview component or route in App Component.
+     
+    console.log('client/api/api.js getNewReview called')
+    
+    return request.get(`/v1/newreview/${cruise_line}`)
+        .then(res =>  {
+            const newreview = res.body
+            console.log('Got newreview! client/api/api.js', newreview)
+            return newreview
+        })
+        .catch(error =>  {
+            // This logs any errors caught, while debugging.
+            console.log('caught error in client/api/api.js getNewReview', error)
+        })
+} 
+
+// This is api for for existing reviews taken from my reviews table are displayed on a cruise ship page
+// for example http://localhost:3000/cruiselines/Celestyal_Cruises#Celestyal_Crystal 
+// I am trying to pass cruise_line through this function because it is part of url
+// and I will let components in front-end get the ship id and review id from there.
+export function getReviews(cruise_line)    {
+    console.log('client/api/api.js getReviews called')
+
+    return request.get(`/v1/reviews/${cruise_line}`)
+        .then(res => {
+            const reviews = res.body
+            console.log('Got reviews! client/api/api.js', reviews)
+            return reviews
+        })
+        .catch(error => {
+            // This logs any errors caught, while debugging.
+            console.log('caught error in client/api/api.js getReviews', error)    
+        })
+}
 
 //This is api for when Cruise Line Headings appear on Cruise Lines Page.
 export function getCruiseLines()  {
