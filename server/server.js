@@ -5,7 +5,7 @@ const shipslist = require('./routes/ships')
 const classicships = require('./routes/classics')
 const classicship = require('./routes/classic')
 const reviews = require('./routes/reviews')
-const newreview = require('./routes/newreview')
+const newreview = require('./routes/review')
 
 const server = express()
 

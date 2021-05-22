@@ -5,7 +5,7 @@ const db = require('knex')(config)
 
 function getReview(cruise_line)   {
     const db = testConn || db
-    console.log('server/db/dbreviews.js getReviews called!')
+    console.log('server/db/dbreviews.js getNewReview called!')
 
     // We have already connected to Ships Table through Ships route,
     // so now Line below connects to Reviews Table.
@@ -16,7 +16,7 @@ function getReview(cruise_line)   {
     .where('cruise_line', cruise_line)
     // return the result from the reviews database on the review page for a particular ship from its cruise line.
     .then(dbResult =>   {
-        console.log('dbreviews.js - GOT Reviews', dbResult)
+        console.log('dbreview.js - GOT New Review', dbResult)
             return dbResult
     })
 }

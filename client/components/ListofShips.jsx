@@ -125,7 +125,7 @@ class ListofShips extends React.Component {
       console.log('cdm')
       this.setUpShips()
     }
-
+ 
     setUpShips() {
       console.log('getShipsList')
       //Line below gets the Ships List function and CruiseLine parameter passed as a property from the api. 
