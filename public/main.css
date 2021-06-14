@@ -689,13 +689,62 @@ div.ShipTermsIntro  {
     color: cadetblue;
 }
 
-
 /* .evoShips  p  { */
     /* align-self: center; */
     /* font-size: 1.05em;
     color: darkred;
 } */
 
+/* CSS for evoTextbox, used to style ShipHorn Button and the text around it. */
+.evoShips   >   .evoTextbox {
+    margin-top: 1em;
+    font-size: 1em;
+    color: darkred;
+}
+
+.evoShips   >   .evoTextbox  >  .div    {
+    display: flex;
+    align-items: center;
+    margin-top: 0.3em;
+}
+
+/* .evoShips   >   .evoTextbox   >   .div  > .evoFlex    { */
+.div  > .evoFlex    {    
+    display: flex; 
+    align-items: center;
+    margin-top: 0.3em;
+}
+
+.evosShips  >  .evoTextbox   >   .div  >  .evoFlex  >   .evoMargins    { 
+/* .evoTextbox     >   .evoFlex    { */
+    margin-right: 1em; 
+    height: 100%;
+} 
+
+.evoTextbox   >   .div  >  .evoFlex  >   .evoMargins  >  .hornbutton {
+    background-color: moccasin;
+    color: brown;
+    font-size: 1em;
+    border-radius: 5;
+    border-width: 2;
+    border-color: darkslateblue;
+    padding: 0.3em;
+} 
+
+/* .hornbutton {
+    background-color: moccasin;
+    color: brown;
+    font-size: 1em;
+    border-radius: 5;
+    border-width: 2;
+    border-color: darkslateblue;
+    padding: 0.3em;
+} */
+
+/* End of CSS for evoTextbox, used to style ShipHorn Button and the text around it.  */
+
+
+/* NOT USED */
 /* Trying a container for ship horn  */
 .evoShips  >  .hornContainer  {
     display: flex;
@@ -744,7 +793,8 @@ div.ShipTermsIntro  {
     padding: 0.3em;    
 }
 
-/* End of styling for Ship Horn */
+/* End of styling for Ship Horn 
+NOT USED*/
 
 .evoIntro   {
     justify-content: center;

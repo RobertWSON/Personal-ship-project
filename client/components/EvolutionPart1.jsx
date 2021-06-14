@@ -43,20 +43,29 @@ class EvolutionPart1 extends React.Component    {
         if(!this.state.classicShips) return <div>Loading...</div>
         //Else display the following elements below on the page.
         return  (
-            <div>
+
+            <React.Fragment>
+
+            {/* <div> */}
                 <div className = "header">
                     <h1>Evolution of Cruise Ships</h1> 
                 </div>
 
                 <div className = "evoContainer">
                     {/* Map classicships in state to find a ship */}
+                    
                     {this.state.classicShips.map (ship =>  {
                         // Console for testing if a ship (classic one) is being mapped for the correct one
                         console.log(ship)
-                        return  (
 
+                        //cont encodedClassicShipName= ship.classic_ship_name.replace(/\s/g, '_')
+
+                        return  (
+                            
                             // Returning a div for each classic ship based on id and in id order
-                            <div key = {ship.id} className = "evoShips">     
+                            <div key = {ship.id} className = "evoShips">  
+
+   
                                 <ClassicShips {...ship} />
                             </div>
                         )
@@ -85,7 +94,9 @@ class EvolutionPart1 extends React.Component    {
                         </p>
                     </div>
                 </div>
-            </div>     
+            {/* </div> */}
+
+            </React.Fragment>     
         )
     }
 }

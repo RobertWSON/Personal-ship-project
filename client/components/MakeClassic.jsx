@@ -31,7 +31,8 @@ class MakeClassic extends React.Component   {
 
         // const newResult = speed.split('|')
         // newResult = ['Maximum 23 knots (43 km/ hr, 26 mph)', '21 knots (39 km/ hr, 24 mph)']
-      
+
+        // const encodedClassicShipName = classic_ship_name.replace(/\s/g, '_')
 
     return  (
         <React.Fragment>
