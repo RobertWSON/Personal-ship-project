@@ -22,13 +22,7 @@ exports.seed = function(knex, Promise) {
           Height: 72.5,
           Loaded_Displacement: 120000,
           Deadweight: 18095,
-          Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/royal-caribbean-international/symphony-of-the-seas',
-
-          //Foreign Key to get Review data for Symphony of the Seas Ship, if it exists.
-          // If no Review data Exists, then user has option of Making a Review. 
-          // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
-          // because there can be many reviews for 1 ship 
-          // review_id: 1    
+          Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/royal-caribbean-international/symphony-of-the-seas'
         },
         {
           id: 2,
@@ -46,12 +40,6 @@ exports.seed = function(knex, Promise) {
           Loaded_Displacement: 21000,
           Deadweight: 4243,
           Booking: 'https://cruisearabiaonline.com/2020/04/29/marella-celebration-to-be-sold-dubai-cruise-season-cancelled/'
-
-          //Foreign Key to get Review data for Marella Celebration, if it exists.
-          // If no Review data Exists, then user has option of Making a Review.
-          // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
-          // because there can be many reviews for 1 ship 
-          // review_id: 2
         },
         {
           id: 3,
@@ -69,12 +57,6 @@ exports.seed = function(knex, Promise) {
           Loaded_Displacement: 79287,
           Deadweight: "19189",
           Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/cunard/queen-mary-2'
-
-          //Foreign Key to get Review data for Queen Mary 2, if it exists.
-          // If no Review data Exists, then user has option of Making a Review.
-          // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
-          // because there can be many reviews for 1 ship 
-          // review_id: 3
         },
         {
           id: 4,
@@ -91,13 +73,7 @@ exports.seed = function(knex, Promise) {
           Height: 61.26,
           Loaded_Displacement: 57000,
           Deadweight: 10852,
-          Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/princess-cruises/star-princess'
-          
-          //Foreign Key to get Review data for Star Princess, if it exists.
-          // If no Review data Exists, then user has option of Making a Review.
-          // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
-          // because there can be many reviews for 1 ship 
-          // review_id: 4                    
+          Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/princess-cruises/star-princess'                   
         },
         {
           id: 5,
@@ -114,13 +90,7 @@ exports.seed = function(knex, Promise) {
           Height: 45,
           Loaded_Displacement: 21156,
           Deadweight: 5956,
-          Booking: 'https://www.fredolsencruises.com/our-ships/boudicca/cruises'
-          
-          //Foreign Key to get Review data for Boudicca, if it exists.
-          // If no Review data Exists, then user has option of Making a Review.
-          // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
-          // because there can be many reviews for 1 ship 
-          // review_id: 5          
+          Booking: 'https://www.fredolsencruises.com/our-ships/boudicca/cruises'        
         },
         {
           id: 6,
@@ -138,12 +108,6 @@ exports.seed = function(knex, Promise) {
           Loaded_Displacement: 20704,
           Deadweight: 5656,
           Booking: 'https://www.fredolsencruises.com/our-ships/black-watch/cruises'
-          
-          //Foreign Key to get Review data for Black Watch, if it exists.
-          // If no Review data Exists, then user has option of Making a Review.
-          // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
-          // because there can be many reviews for 1 ship 
-          // review_id: 6
         },
         {
           id: 7,
@@ -160,13 +124,7 @@ exports.seed = function(knex, Promise) {
           Height: 46.25,
           Loaded_Displacement: 17200,
           Deadweight: 3938,
-          Booking: 'https://www.seascanner.com/cruises-amadea'
-          
-          //Foreign Key to get Review data for Phoenix Reisen, if it exists.
-          // If no Review data Exists, then user has option of Making a Review.
-          // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
-          // because there can be many reviews for 1 ship 
-          // review_id: 7          
+          Booking: 'https://www.seascanner.com/cruises-amadea'         
         },
         {
           id: 8,
@@ -184,12 +142,6 @@ exports.seed = function(knex, Promise) {
           Loaded_Displacement: 71000,
           Deadweight: 11000,
           Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/princess-cruises/majestic-princess'
-          
-          //Foreign Key to get Review data for Majestic Princess, if it exists.
-          // If no Review data Exists, then user has option of Making a Review.
-          // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
-          // because there can be many reviews for 1 ship 
-          // review_id: 8
         },
         {
           id: 9,
@@ -206,13 +158,7 @@ exports.seed = function(knex, Promise) {
           Height: 47.35,
           Loaded_Displacement: 24320,
           Deadweight: 4797,
-          Booking: 'https://www.vikingcruises.com.au/oceans/ships/viking-sun.html'
-          
-          //Foreign Key to get Review data for Viking Sun, if it exists.
-          // If no Review data Exists, then user has option of Making a Review.
-          // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
-          // because there can be many reviews for 1 ship 
-          // review_id: 9          
+          Booking: 'https://www.vikingcruises.com.au/oceans/ships/viking-sun.html'         
         },
         {
           id: 10,
@@ -230,12 +176,6 @@ exports.seed = function(knex, Promise) {
           Loaded_Displacement: 45989,
           Deadweight: 10759, 
           Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/royal-caribbean-international/radiance-of-the-seas'
-                  
-          //Foreign Key to get Review data for Radiance of The Seas, if it exists.
-          // If no Review data Exists, then user has option of Making a Review.
-          // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
-          // because there can be many reviews for 1 ship 
-          // review_id: 10
         },
         {
           id: 11,
@@ -253,12 +193,6 @@ exports.seed = function(knex, Promise) {
           Loaded_Displacement: 39026,
           Deadweight: 5200,
           Booking: 'https://www.tui.co.uk/cruise/ships/marella-discovery-2/itineraries'
-                  
-          //Foreign Key to get Review data for Marella Discovery 2, if it exists.
-          // If no Review data Exists, then user has option of Making a Review.
-          // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
-          // because there can be many reviews for 1 ship 
-          // review_id: 11
         },
         {
           id: 12,
@@ -275,13 +209,7 @@ exports.seed = function(knex, Promise) {
           Height: 32,
           Loaded_Displacement: 5636,
           Deadweight: 1305,
-          Booking: 'https://en.ponant.com/cruises/on-board/vessel-le-laperouse'
-                  
-          //Foreign Key to get Review data for Le Laperouse, if it exists.
-          // If no Review data Exists, then user has option of Making a Review.
-          // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
-          // because there can be many reviews for 1 ship 
-          // review_id: 12          
+          Booking: 'https://en.ponant.com/cruises/on-board/vessel-le-laperouse'       
         },
         {
           id: 13,
@@ -298,13 +226,7 @@ exports.seed = function(knex, Promise) {
           Height: 59,
           Loaded_Displacement: 43014,
           Deadweight: 7089,
-          Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/carnival-cruise-lines/carnival-legend'
-                  
-          //Foreign Key to get Review data for Carnival Legend, if it exists.
-          // If no Review data Exists, then user has option of Making a Review.
-          // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
-          // because there can be many reviews for 1 ship 
-          // review_id: 13          
+          Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/carnival-cruise-lines/carnival-legend'         
         },
         {
           id: 14,
@@ -321,13 +243,7 @@ exports.seed = function(knex, Promise) {
           Height: 66,
           Loaded_Displacement: 67000,
           Deadweight: 9000, 
-          Booking: 'https://cruiseweb.com/cruise-lines/carnival-cruise-line/ship-carnival-vista'
-                  
-          //Foreign Key to get Review data for Carnival Vista, if it exists.
-          // If no Review data Exists, then user has option of Making a Review.
-          // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
-          // because there can be many reviews for 1 ship 
-          // review_id: 14          
+          Booking: 'https://cruiseweb.com/cruise-lines/carnival-cruise-line/ship-carnival-vista'                     
         },
         {
           id: 15,
@@ -345,12 +261,6 @@ exports.seed = function(knex, Promise) {
           Loaded_Displacement: 120000,
           Deadweight: 18095, 
           Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/royal-caribbean-international/allure-of-the-seas'
-                            
-          //Foreign Key to get Review data for Allure of The Seas, if it exists.
-          // If no Review data Exists, then user has option of Making a Review.
-          // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
-          // because there can be many reviews for 1 ship 
-          // review_id: 15
         },
         {
           id: 16,
@@ -368,12 +278,6 @@ exports.seed = function(knex, Promise) {
           Loaded_Displacement: 76000,
           Deadweight: 12000, 
           Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/royal-caribbean-international/anthem-of-the-seas'
-                                      
-          //Foreign Key to get Review data for Anthem of The Seas, if it exists.
-          // If no Review data Exists, then user has option of Making a Review.
-          // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
-          // because there can be many reviews for 1 ship 
-          // review_id: 16
         },
         {
           id: 17,
@@ -391,12 +295,6 @@ exports.seed = function(knex, Promise) {
           Loaded_Displacement: 36220,
           Deadweight: 6430, 
           Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/crystal-cruises/crystal-serenity'
-                                      
-          //Foreign Key to get Review data for Crystal Serenity, if it exists.
-          // If no Review data Exists, then user has option of Making a Review.
-          // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
-          // because there can be many reviews for 1 ship 
-          // review_id: 17
         },
         {
           id: 18,
@@ -413,13 +311,7 @@ exports.seed = function(knex, Promise) {
           Height: 50,
           Loaded_Displacement: 34000,
           Deadweight: 4500,
-          Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/crystal-cruises/crystal-symphony'
-                                      
-          //Foreign Key to get Review data for Crystal Symphony, if it exists.
-          // If no Review data Exists, then user has option of Making a Review.
-          // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
-          // because there can be many reviews for 1 ship 
-          // review_id: 18          
+          Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/crystal-cruises/crystal-symphony'        
         },
         {
           id: 19,
@@ -436,13 +328,7 @@ exports.seed = function(knex, Promise) {
           Height: 44,
           Loaded_Displacement: 17013,
           Deadweight: 3460,
-          Booking: 'https://www.semesteratsea.org/life-at-sea/our-ship/'
-                                      
-          //Foreign Key to get Review data for World Odyssey, if it exists.
-          // If no Review data Exists, then user has option of Making a Review.
-          // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
-          // because there can be many reviews for 1 ship 
-          // review_id: 19           
+          Booking: 'https://www.semesteratsea.org/life-at-sea/our-ship/'        
         },
         {
           id: 20,
@@ -459,14 +345,7 @@ exports.seed = function(knex, Promise) {
           Height: 38,
           Loaded_Displacement: 13300,
           Deadweight: 1703,
-          Review: '',
           Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/celestyal-cruises/celestyal-crystal'
-                                                
-          //Foreign Key to get Review data for Celestyal Crystal, if it exists.
-          // If no Review data Exists, then user has option of Making a Review.
-          // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
-          // because there can be many reviews for 1 ship 
-          // review_id: 20 
         },
         {
           id: 21,
@@ -484,12 +363,6 @@ exports.seed = function(knex, Promise) {
           Loaded_Displacement: 21536,
           Deadweight: 5000,
           Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/celestyal-cruises/celestyal-olympia'
-
-          //Foreign Key to get Review data for Celestyal Olympia, if it exists.
-          // If no Review data Exists, then user has option of Making a Review.
-          // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
-          // because there can be many reviews for 1 ship 
-          // review_id: 21
         },
         {
           id: 22,
@@ -506,13 +379,7 @@ exports.seed = function(knex, Promise) {
           Height: 57.50,
           Loaded_Displacement: 42036,
           Deadweight: 8530,
-          Booking: 'https://www.cruiseindustrynews.com/cruise-news/22670-dream-cruises-cancels-2020-2021-australia-program.html'
-
-          //Foreign Key to get Review data for Explorer Dream, if it exists.
-          // If no Review data Exists, then user has option of Making a Review.
-          // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
-          // because there can be many reviews for 1 ship 
-          // review_id: 22       
+          Booking: 'https://www.cruiseindustrynews.com/cruise-news/22670-dream-cruises-cancels-2020-2021-australia-program.html'    
         },
         {
           id: 23,
@@ -530,13 +397,6 @@ exports.seed = function(knex, Promise) {
           Loaded_Displacement: 42036,
           Deadweight: 8530,
           Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/norwegian-cruise-line/norwegian-spirit'
-
-          //Foreign Key to get Review data for Norwegian Spirit, if it exists.
-          // If no Review data Exists, then user has option of Making a Review.
-          // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
-          // because there can be many reviews for 1 ship 
-          // review_id: 23
-
         },
         {
           id: 24,
@@ -553,13 +413,7 @@ exports.seed = function(knex, Promise) {
           Height: 60.5,
           Loaded_Displacement: 45612,
           Deadweight: 7500,
-          Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/norwegian-cruise-line/norwegian-jewel'
-
-          //Foreign Key to get Review data for Norwegian Jewel, if it exists.
-          // If no Review data Exists, then user has option of Making a Review.
-          // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
-          // because there can be many reviews for 1 ship 
-          // review_id: 24        
+          Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/norwegian-cruise-line/norwegian-jewel'      
         },
         {
           id: 25,
@@ -576,13 +430,7 @@ exports.seed = function(knex, Promise) {
           Height: 59.50,
           Loaded_Displacement: 48200,
           Deadweight: 7500,
-          Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/norwegian-cruise-line/norwegian-dawn'
-
-          //Foreign Key to get Review data for Norwegian Dawn, if it exists.
-          // If no Review data Exists, then user has option of Making a Review.
-          // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
-          // because there can be many reviews for 1 ship 
-          // review_id: 25          
+          Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/norwegian-cruise-line/norwegian-dawn'         
         },
         {
           id: 26,
@@ -599,13 +447,7 @@ exports.seed = function(knex, Promise) {
           Height: 51.50,
           Loaded_Displacement: 24906,
           Deadweight: 5709,
-          Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/po-australia/pacific-aria'
-
-          //Foreign Key to get Review data for Pacific Aria, if it exists.
-          // If no Review data Exists, then user has option of Making a Review.
-          // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
-          // because there can be many reviews for 1 ship 
-          // review_id: 26        
+          Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/po-australia/pacific-aria'      
         },
         {
           id: 27,
@@ -622,13 +464,7 @@ exports.seed = function(knex, Promise) {
           Height: 56.00,
           Loaded_Displacement: 36275,
           Deadweight: 6715,
-          Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/po-australia/pacific-dawn'
-
-          //Foreign Key to get Review data for Pacific Dawn, if it exists.
-          // If no Review data Exists, then user has option of Making a Review.
-          // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
-          // because there can be many reviews for 1 ship 
-          // review_id: 27        
+          Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/po-australia/pacific-dawn'      
         },
         {
           id: 28,
@@ -645,13 +481,7 @@ exports.seed = function(knex, Promise) {
           Height: 59.70,
           Loaded_Displacement: 39997,
           Deadweight: 8293,
-          Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/po-australia/pacific-encounter'
-
-          //Foreign Key to get Review data for Pacific Explorer, if it exists.
-          // If no Review data Exists, then user has option of Making a Review.
-          // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
-          // because there can be many reviews for 1 ship 
-          // review_id: 28        
+          Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/po-australia/pacific-encounter'       
         }
       ]);
     });

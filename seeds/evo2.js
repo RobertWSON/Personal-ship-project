@@ -930,7 +930,7 @@ exports.seed = function(knex, Promise) {
                 img_1stcruise: '/images/Evolution/Royal Viking Sky/RVS-04-Aune.jpg',
                 img_1stcruise_title: "Royal Viking Sky off the coast of Norway  during late 1970's",
                 // Cruise Ship Lengthening (Needed for Royal Viking Sky, as it was Lengthened)
-                name_before_lengthening: '',
+                name_before_lengthening: 'Royal Viking Sky',
                 lengthened_para: "In 1982 to keep the cruise line profitable and growing, under the leadership of CEO Torstein Hagen, Royal Viking Sky was lengthened in order to carry more passengers. Royal Viking Sky was lengthend by 27.77 m, from 177.70 m to 205.47 m and this increased the passenger capacity from 536 to 900. Interestingly though the crew capacity had pretty much stayed the same, so the opportunities to meet people improved. Here is a photo showing Royal Viking Sky during the lengthening process",
                 img_lengthened: '/images/Evolution/Royal Viking Sky/1187994- Lengthening.jpg',
                 img_lengthened_title: '',
@@ -975,7 +975,7 @@ exports.seed = function(knex, Promise) {
 
                 // Ship Plans
                 plans_para: "Here is an overall plan of Royal Viking Sky along with deck plans below this.",
-                ship_plans: '',
+                ship_plans: '/images/Evolution/Royal Viking Sky/file_Royal Viking Sky.png',
                 ship_plans_cont: '',
 
                 // Final Years

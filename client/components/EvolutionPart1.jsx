@@ -55,10 +55,11 @@ class EvolutionPart1 extends React.Component    {
                     {/* Map classicships in state to find a ship */}
                     
                     {this.state.classicShips.map (ship =>  {
+
                         // Console for testing if a ship (classic one) is being mapped for the correct one
                         console.log(ship)
 
-                        //cont encodedClassicShipName= ship.classic_ship_name.replace(/\s/g, '_')
+                        // cont encodedClassicShipName= ship.classic_ship_name.replace(/\s/g, '_')
 
                         return  (
                             

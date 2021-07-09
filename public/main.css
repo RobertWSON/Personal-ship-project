@@ -702,26 +702,27 @@ div.ShipTermsIntro  {
     color: darkred;
 }
 
-.evoShips   >   .evoTextbox  >  .div    {
+.evoShips   >   .evoTextbox  >  div    {
     display: flex;
     align-items: center;
     margin-top: 0.3em;
 }
 
 /* .evoShips   >   .evoTextbox   >   .div  > .evoFlex    { */
-.div  > .evoFlex    {    
+/* div  > .evoFlex    {     */
+.evoShips   >   .evoTextbox  >  div  >  .evoFlex    {    
     display: flex; 
     align-items: center;
     margin-top: 0.3em;
 }
 
-.evosShips  >  .evoTextbox   >   .div  >  .evoFlex  >   .evoMargins    { 
+.evosShips  >  .evoTextbox   >   div  >  .evoFlex  >   .evoMargins    { 
 /* .evoTextbox     >   .evoFlex    { */
     margin-right: 1em; 
     height: 100%;
 } 
 
-.evoTextbox   >   .div  >  .evoFlex  >   .evoMargins  >  .hornbutton {
+.evoTextbox   >   div  >  .evoFlex  >   .evoMargins  >  .hornbutton {
     background-color: moccasin;
     color: brown;
     font-size: 1em;

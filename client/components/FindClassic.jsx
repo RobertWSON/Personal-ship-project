@@ -43,6 +43,9 @@ class FindClassic extends React.Component   {
         if (this.state.classicship === null) return <div>Loading...</div>
         // We do not need to map for a ship because we have already picked up the ship by a key id in Evolution Part 1.
         // We now have the correct ship, so we can Create our own loading component.
+
+        // const encodedClassicShipName = ship.classic_ship_name.replace(/\s/g, '_')
+
         return <MakeClassic {...this.state.classicship} />
 
     }
