@@ -7,17 +7,8 @@ class AddReview extends React.Component    {
    constructor(props)  {
        super(props)
 
-       // replace function takes two arguments, first argument for matching pattern (what to replace) and 
-       // second argument is what to replace with. 
-       // In .replace(/\s/g, '')  we are replacing all spaces with '_'
-       // '\s'  is a regular expression for space, which needs to be inside /<regular expression>/ 
-       // and'g' denotes for global (that means all spaces), if you dont give 'g' there, 
-       // it will replace the first space (only one space) and will replaced by '_' 
-       // In review page .replace(/_/g, ' ') replaces all underscores with space
-       const encodedAddReview = addreview.replace(/\s/g, '-')
-
        this.state = {
-           newreview: true, encodedAddReview
+           newreview: true
        }
        this.setUpNewReview = this.setUpNewReview.bind(this)
    }
@@ -28,7 +19,8 @@ class AddReview extends React.Component    {
    }
  
    setUpNewReview()   {
-       getNewReview(this.state.newreview)
+      console.log('getNewReview')
+       getNewReview(this.props.cruiseline)
        .then(res =>    {
            this.setState({
                newreview: res
@@ -38,12 +30,25 @@ class AddReview extends React.Component    {
 
    render(){
        return(
-          
-        // <ReviewForm encodedAddReview = {newreview}/> 
-          <ReviewForm newreview = {encodedAddReview}/>  
-       )
-   }
-}
-/* <AddForm or ReviewForm /> in a separate component because the submitting process needs to be handled with state. */ 
+        <React.Fragment>
+
+        {/* Note: <ReviewForm /> is in a separate component because submitting process needs to be handled with state. */}
+
+        {this.state.reviews.map  (review =>  {
+
+            return  (
+              
+              <ReviewForm key={review.id} {...newreview}/>
+            )  
+            
+              } // end bracket for review =>  {
+            ) // end bracket for (ship
+          } {/* end bracket for {this.state.reviews.map  */}
+  
+        </React.Fragment>
+
+      ) // end bracket for return  (
+    } //end bracket for render 
+  } //end bracket for AddReview Component
 
 export default AddReview

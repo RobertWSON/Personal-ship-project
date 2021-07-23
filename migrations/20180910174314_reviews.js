@@ -4,17 +4,24 @@ exports.up = function(knex, Promise) {
         table.increments('id').primary()
 
         // Below is all the properties I need for each 
-        //Review (either initial or added) on a Review Page.
+        // Review (either initial or added) on a Review Page.
         table.string('Review_User_Name')
+        table.string('Review_Ship_Name')
+
+        // I may only need Review-img for AddReview part, because that comes up when user fills in Review Form
+        table.string('Review_img')
+
         table.string('Review')
         table.integer('Star_Rating')
         table.string('Cruise_Name')
         table.string('Sail_Date')
-        
-        //May or may not need the following 2 below
+
+        // May not need these 2 below, because Sail Date may cover this
+        table.integer('Cruise_Year')
+        table.string('Cruise_Month')
+
         table.string('Leaving_Port')
         table.string('Destination')
-
         table.string('Travel_Name')
         table.string('Review_Title')
         table.string('Number_of_Cruises')

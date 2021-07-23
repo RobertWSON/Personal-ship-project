@@ -1,15 +1,25 @@
 import request from 'superagent'
 
-// This is api for when a new review is added in the form page.  
-// This form page has a url http://localhost:3000/cruiselines/Celestyal_Cruises#Celestyal_Crystal/add-review for example.
-// The new review appears in the cruise ship review page http://localhost:3000/cruiselines/Celestyal_Cruises#Celestyal_Crystal
-// I am trying to pass cruise_line through this function because it is part of url
-// and I will let components in front-end get the ship id and review id from there.
-export function getNewReview(cruise_line)  {
-    // Tried getNewReview(add-review), but that is not valid, thought about trying (Review_User_Name), 
-    // but I don't want that in the url, so I think nothing gets passed and add-review 
-    // is handled in FindReview component or route in App Component.
-     
+// This is api for when a new review is added in the Review Form page.  
+// This form page has a url http://localhost:3000/cruiselines/Celestyal_Cruises/Celestyal_Crystal/add-review for example.
+// The newly created review appears in the 
+// cruise ship review page http://localhost:3000/cruiselines/Celestyal_Cruises#Celestyal_Crystal for example.
+
+// I am not completely sure if passing cruise_line through this function is the correct way to go for url.
+// This is because, cruise_line prop has been passed previously with getShipsList, so do I need to do it again ?
+
+// As we know Review Front-end component picks up ship.id and passes it into Ship Component.
+// From there ship_name prop gets passed into FindReview component (how is it done correctly) ? 
+
+// In FindReview component , AddReview Component notices that a review is false (does not exist)
+// , so it passes an empty Review_User_Name prop to create for Add Review component.
+
+// In AddReview component, the new review picked up by the empty user name goes through 
+// state based on a new review to be added (true), goes through mapping based on review.id .
+// From there it goes to ReviewForm Component where a new user fills out form 
+// and finally the new details get submitted to be displayed on a cruise ship review page.
+
+export function getNewReview(cruise_line)  { 
     console.log('client/api/api.js getNewReview called')
     
     return request.get(`/v1/newreview/${cruise_line}`)
@@ -24,10 +34,16 @@ export function getNewReview(cruise_line)  {
         })
 } 
 
-// This is api for for existing reviews taken from my reviews table are displayed on a cruise ship page
-// for example http://localhost:3000/cruiselines/Celestyal_Cruises#Celestyal_Crystal 
-// I am trying to pass cruise_line through this function because it is part of url
-// and I will let components in front-end get the ship id and review id from there.
+// This is api for an existing review displayed on a cruise ship reviews page and are taken from my reviews table. 
+// An example url could be  http://localhost:3000/cruiselines/Celestyal_Cruises#Celestyal_Crystal for a review.
+
+// I am not completely sure if passing cruise_line through this function is the correct way to go for url.
+// This is because, cruise_line prop has been passed previously with getShipsList, so do I need to do it again ?
+
+// As we know Review Front-end component picks up ship.id and passes it into Ship Component
+// and from there ship_name prop gets passed into FindReview component, where an InitialReview gets found
+// from review.id. 
+
 export function getReviews(cruise_line)    {
     console.log('client/api/api.js getReviews called')
 

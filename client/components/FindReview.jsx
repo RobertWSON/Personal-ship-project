@@ -11,7 +11,7 @@ class FindReview extends React.Component    {
         // const encodedAddReview = Add_Review(/\s/g, '-')
 
         this.state = {
-            Reviews: true
+            reviews: false
         }
         this.setUpReviews = this.setUpReviews.bind(this)
     }
@@ -46,22 +46,19 @@ class FindReview extends React.Component    {
                     } //end bracket for review =>   {        
                   )  // end bracket for (review  
                 } {/*end bracket for {this.state.reviews.map}*/}    
-
-            {/* return 
-                <AddReview/> */}
                 
             </React.Fragment> 
 
         ) // end bracket for return
-          
-        else
         
+        // If Review_User_Name does not have data in reviews table, then a new review 
+        // has to be added for that cruise Ship.        
+
         return  (    
 
-            <AddReview />
+            <AddReview reviews={Review_User_Name}/>
         ) 
     } // end bracket for render
-    
 } // end bracket for FindReview Component
 
 export default FindReview

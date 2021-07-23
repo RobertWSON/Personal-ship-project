@@ -1,14 +1,15 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import FindReview from './FindReview'
+// I don't think we need HashLink because I don't think it works for Adding a Review.  
 // import {HashLink as link} from 'react-router-hash-link'
-import {HashLink} from 'react-router-hash-link'
+// import {HashLink} from 'react-router-hash-link'
 
 
 class Ship extends React.Component  {
     constructor(props)  {
         super(props)
-    }
+    } 
     
     render()    {
 
@@ -37,8 +38,9 @@ class Ship extends React.Component  {
         // Below code controls getting cruise line encoding for Make a Review Link button
         const encodedCruiseline = cruise_line.replace(/\s/g, '_')
 
+        // Don't need addreview variable because I have add-review in routes
         // Creating a variable addreview for the end of the url, which can be encoded
-        const encodedAddReview = addreview.replace(/\s/g, '-')
+        // const encodedAddReview = addreview.replace(/\s/g, '-')
 
     return  (
         <React.Fragment>
@@ -85,58 +87,48 @@ class Ship extends React.Component  {
 
             <div className = "Review">
                 <h3>{ship_name} Reviews:</h3>
-                <br/> 
+                <br/>   
 
-                {/* <button className = "addReview">
-                    Make a Review
-                </button> */}    
+                {/* I think rather than a button below, it should be a Link disguised as a button.
+                for example <Link className = "addReview" to = > Make a Review </Link> */}
 
-                <HashLink className = "addReview" to = {`/cruiselines/${encodedCruiseline}#${encodedShipName}/${encodedAddReview}`}>
+                <Link className = "addReview" to = {`/cruiselines/${encodedCruiseline}/${encodedShipName}/add-review`}>
                     <div className= "reviewButton">
                         <span>Make a Review</span>
                     </div>
-                </HashLink>
+                </Link>
 
-                {/* I think rather than a button it should be a Link disguised as a button.
-                <Link className = "addReview" to = >
+                {/* How the Components Work for Review Process --- */}
+                {/* The FindReview component, I think could take ship_name prop.
+                    I was thinking about using key={ship.id} , but I may not need it because the key 
+                    for correct cruise ship has been picked up already, by ship.id in Review Component.  
+                */}
+
+                {/* In this Ship component, the FindReview component code below, picks up the correct 
+                cruise ship and then goes into FindReview component. 
+
+                In FindReview component it has to go through state, base on, if a review exists or not for that ship.
+                If a review from the reviews table does exist for the ship, then it takes that review id as a key 
+                and goes to InitialReview component.
                 
-                </Link> */}
+                If a review from the reviews table does not exist for the ship, then using an empty Review_User_Name prop, 
+                it goes to AddReview component, where it picks up the api.
+                Once AddReview component picks up an api through state, it uses a new review to be passed as a prop
+                into ReviewForm component.
+                In ReviewForm component the new review for a ship, gets all the details to fill out the form, 
+                it then gets submitted and the new review details are displayed on a ship review page,
+                eg http://localhost:3000/cruiselines/Celestyal_Cruises#Celestyal_Crystal. */}
 
-                {/* This goes to the FindReview component where it finds if an Initial Review exists for the ship.
-                If initial review does exist from ships seeds file, then it will be displayed.
+                {/* How Review Process Works --- */}
+                {/* Code below goes to a FindReview component where it finds if an Initial Review exists for the ship.
+                If an initial review does exist from ships reviews file, then it will be displayed.
 
                 If an initial Review does not exist, then user can click on Make a Review button to make a Review.
-                When user makes a Review, a new page opens in a separate window allowing user to fill out a form and then submit it.
-                The Users new Review gets diplayed on a ships Review page 
-                eg http://localhost:3000/cruiselines/Celestyal_Cruises#Celestyal_Crystal*/}
+                When user makes a Review, a new page opens in a separate window allowing user to fill out a form 
+                and then submit it. The Users new Review gets diplayed on a ships Review page 
+                */}
 
-                <FindReview/> 
-
-                <div className = "ReviewAdded">
-                    <article>
-
-                        <label>Star Rating</label>
-                        {/* <StarRating/>  */}
-
-                        {/* Maybe label for Review Title */}
-                        <p>{this.state.value}</p>
-
-                        {/* Maybe label for Cruise and User Name below */}
-                        <p>{this.state.value} by {this.state.value}   (Optional)</p>
-
-                        <label>Sail Date: {this.state.value}</label>   <label> / Travelled as: {this.state.value}</label>
-
-                        <label>Leaving Port: {this.state.value}</label> <label> / Destination: {this.state.value}</label>
-
-                        <Textbox>
-                            {this.state.value}
-
-                        </Textbox>
-
-                        <label>Number of Cruises Travelled: {this.state.value}</label>
-
-                    </article>
-                </div>
+                <FindReview encodedShipName={ship_name}/> 
 
             </div>
 

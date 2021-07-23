@@ -3,7 +3,7 @@ const config = require('../../knexfile')[environment]
 const db = require('knex')(config)
 
 
-function getReview(cruise_line)   {
+function getNewReview(cruise_line)   {
     const db = testConn || db
     console.log('server/db/dbreviews.js getNewReview called!')
 
@@ -22,5 +22,5 @@ function getReview(cruise_line)   {
 }
 
 module.exports = {
-    getReview
+    getNewReview
 }

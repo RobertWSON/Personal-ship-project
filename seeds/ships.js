@@ -22,7 +22,7 @@ exports.seed = function(knex, Promise) {
           Height: 72.5,
           Loaded_Displacement: 120000,
           Deadweight: 18095,
-          Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/royal-caribbean-international/symphony-of-the-seas',
+          Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/royal-caribbean-international/symphony-of-the-seas'
 
           //Foreign Key to get Review data for Symphony of the Seas Ship, if it exists.
           // If no Review data Exists, then user has option of Making a Review. 
@@ -459,7 +459,6 @@ exports.seed = function(knex, Promise) {
           Height: 38,
           Loaded_Displacement: 13300,
           Deadweight: 1703,
-          Review: '',
           Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/celestyal-cruises/celestyal-crystal'
                                                 
           //Foreign Key to get Review data for Celestyal Crystal, if it exists.

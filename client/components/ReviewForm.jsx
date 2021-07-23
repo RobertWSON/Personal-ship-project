@@ -22,20 +22,26 @@ class ReviewForm extends React.Component    {
       alert('{Review_User_Name' + this.state.value)
       event.preventDefault()
    }
- 
+
     render()    {
 
-   //    const   {
-   //       Review_User_Name,
-   //       Review,
-   //       Cruise_Name,
-   //       Sail_Date,
-   //       Leaving_Port,
-   //       Destination,
-   //       Review_Title,
-   //       Number_of_Cruises,
-   //       Travel_Party,
-   //   }
+      const   {
+         Review_User_Name,
+         Review_Ship_Name,
+         Review_img,
+         Review,
+         Cruise_Name,
+         Sail_Date,
+         Leaving_Port,
+         Destination,
+         Review_Title,
+         // Star_Rating,
+         Number_of_Cruises,
+         Travel_Party
+     } = this.props
+
+   //   Note: These props passed here should have no data from the reviews table, so this is where the 
+   //   user can add information in the Review Form. 
 
         return  (
 
@@ -43,26 +49,35 @@ class ReviewForm extends React.Component    {
 
                 <Form onSubmit = {this.handleSubmit}>
                   
+                  <label><b>Review Title: (Optional), but it does give an idea on the overall experience</b></label>
+                     <p>Sum up your cruise in a few words (for example Amazing Caribbean Cruise)</p>
+                  <textbox>{Review_Title}</textbox>
+
                   {/* Maybe don't need {ship_name} in h1 */}
-                  <h1>Review your {ship_name} cruise</h1>
+                  <h1>Review your 
+                     {Review_Ship_Name} 
+                  cruise</h1>
 
                   <div className = "yourCruise">
-                     <label>Your Cruise on {ship_name}</label>
-                     <img src ={img} />
+                     <label>Your Cruise on 
+                     {Review_Ship_Name} 
+                     {/* not ship_name  */}
+                     </label>
+                     
+                     <img src ={Review_img} />
                      {/* Maybe ship_name below can go after Your Cruise
                      <p>{ship_name}</p> */}
                   </div>
 
                     <label>Your Travelling Name:</label><p>(Optional) Don't have to give your Name if you don't want to</p>
                     {/* or maybe textarea */}
-                    <textbox></textbox>
+                    <textbox>{Review_User_Name}</textbox>
 
                     <label><b>Cruise Name:</b></label>
                     {/* or maybe textarea */}
-                    <textbox></textbox>
+                    <textbox>{Cruise_Name}</textbox>
 
-
-                    <h2>Sailing Date:</h2>
+                    <h2>Sailing Date: {Sail_Date}</h2>
 
                    <label><b>Year:</b></label>
                    <select id = "year">
@@ -91,9 +106,12 @@ class ReviewForm extends React.Component    {
                       <option value="12">December</option>                                                                                        
                    </select>
 
-                   <label><b>Review Title: (Optional), but it does give an idea on the overall experience</b></label>
-                   <p>Sum up your cruise in a few words (for example Amazing Caribbean Cruise)</p>
-                     
+                     <label><b>Cruise Leaving Port</b></label>
+                     <textbox>{Leaving_Port}</textbox>
+
+                     <label><b>Cruise Destination</b></label>
+                     <textbox>{Destination}</textbox>
+
                    <label><b>Star Rate your Cruise Experience</b></label>
 
                    {/* <StarRating/><button>Click to Rate</button> */}
@@ -101,13 +119,13 @@ class ReviewForm extends React.Component    {
                    <label><b>Add a Review</b></label>
                    <p>Give us a brief overview of your cruise</p>   
                    {/* or maybe textarea */}
-                   <textbox></textbox>
+                   <textbox>{Review}</textbox>
 
                    <label><b>Share about you</b></label>
                    <br/>
                    <p>How many cruises have you been on ?</p> 
                    <br/>  
-                   <label><b>Cruises:</b></label>
+                   <label><b>Cruises: {Number_of_Cruises}</b></label>
                    <select id = "cruises">
                       <option value>Select Number of Cruises</option>
                       <option value="1">1 (First Cruise)</option>
@@ -123,7 +141,7 @@ class ReviewForm extends React.Component    {
                    <br/>
                    <p>How did you travel on your Cruise ?</p> 
                    <br/>  
-                   <label><b>Travelling Party:</b></label>
+                   <label><b>Travelling Party:{Travel_Party}</b></label>
                    <select id = "cruises">
                       <option value>Select Travelling Party</option>
                       <option value="1">Single / Friends</option>
