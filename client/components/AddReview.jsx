@@ -29,6 +29,11 @@ class AddReview extends React.Component    {
    }
 
    render(){
+
+    // const {
+    //       Review_User_Name
+    //       } = this.props
+
        return(
         <React.Fragment>
 
@@ -38,7 +43,7 @@ class AddReview extends React.Component    {
 
             return  (
               
-              <ReviewForm key={review.id} {...newreview}/>
+              <ReviewForm key={review.id} {...review}/>
             )  
             
               } // end bracket for review =>  {

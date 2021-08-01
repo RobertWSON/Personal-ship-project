@@ -56,7 +56,7 @@ class FindReview extends React.Component    {
 
         return  (    
 
-            <AddReview reviews={Review_User_Name}/>
+            <AddReview reviews={this.props.Review_User_Name}/>
         ) 
     } // end bracket for render
 } // end bracket for FindReview Component
