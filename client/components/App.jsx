@@ -46,8 +46,10 @@ class App extends React.Component {
               Recommended by Ricky Sullivan from slack, as it passes a param. */}
               <Route path = '/cruiselines/:cruise_line' component={Review}/>
         
-              {/* Ship Term Route Added, but not going to a new page yet. */}
-              <Route path = '/cruiselines/:cruise_line/shipterms' component={ShipTerms}/>
+              {/* Ship Term Route Added, but not going to a new page yet.
+                  Code for Route below commented, because it does not work */}
+              {/* <Route path = '/cruiselines/:cruise_line/shipterms' component={ShipTerms}/> */}
+              <Route path = '/shipterms' component={ShipTerms}/>
 
           </div>  
 
