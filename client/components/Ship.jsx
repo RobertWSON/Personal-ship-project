@@ -82,7 +82,8 @@ class Ship extends React.Component  {
             </div> */}
 
             <div className = "backButton">
-                <button class = "Button">
+                {/* Should be className instead of class */}
+                <button className = "Button">
                     <Link className = "backLink" to="/cruiselines">Back to Cruise Lines</Link>
                 </button>
             </div>    
