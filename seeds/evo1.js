@@ -364,8 +364,8 @@ exports.seed = function(knex, Promise) {
           mem_1st_para: '',
           mem_2nd_para: '',
           plans_para: '',
-          final_1st_para: '',
-          final_2nd_para:'',
+          final_1st_para: "Sadly age caught up with SS Canberra and her high running costs meant that she had much higher fuel costs than modern cruise ship back in the 90's.",
+          final_2nd_para:'SS Canberra was taken out of service with P & O in September 1997 and sold to ship breakers for scrap at Gadani Ship breaking yard in Pakistan. The scrapping process did not go as smoothly as they would have liked because her deep draft meant that she could not be beached as far as most ships. The scrapping process took nearly a year instead of the normal 3 months because of her solid construction. She will be remembered for her efforts in the Falkslands war in 1982 and one of the most iconic ships for putting P & O cruise line on the map.',
           
           ship_plans: '/images/Evolution/Canberra/plan-ga-all.jpg',
           ship_plans_cont: '',
@@ -487,8 +487,8 @@ exports.seed = function(knex, Promise) {
           mem_1st_para: '',
           mem_2nd_para: '',
           plans_para: '',
-          final_1st_para: '',
-          final_2nd_para:'',
+          final_1st_para: 'The final years of Norway involved a very long decomissioning process of several different owners and a few challenges and controversy along the way. On 23 March 2004 the Chief Executive of Norwegian Cruise Lines Colin Veitch said the Norway will never sail again and the ships ownership was transferred to the parent Malaysian company Star Cruises. The controversy was over the large amount of asbestos (around 900 tonnes) in the ship, mostly in machine and bulkhead areas and she was at first not allowd to leave Bremerhaven, Germany where she was moored. Norway ship crew were eventually allowed to leave Bremerhaven, Germany under tow on 23 May 2005, because they convinced the German Authorities that they were going to Malaysia for ship repairs and further operation in Australia. Norway arrived in Port Klang, Malaysia on 10 August 2005. <br/> In December 2005 Norway was sold to an American naval demolition dealer for scrap value and after the sale to a scrapyard, the ship was towed to India for demolition. However there were protests from Greenpeace because of environment concerns mostly about the asbestos over the ship breakup. This problem along with fraudulent declaration charges to obtain leaving permission from Bremerhaven, meant that the sale contract was cancelled, purchase price refunded and Norway stayed in Port Klang, Malaysia.',
+          final_2nd_para:'In 2006 Norway was sold to Bridgend Shipping Limited of Monrovia, Liberia and finally renamed SS Blue Lady in preparation for scrapping.   Write a bit more here -----------   There was an initial problem leaving Malaysia. She stopped in United Arab Emirates for repairs and take on new crew and supplies and then sail to India. An environment activist Gopal Krishna filed an application to Indian Government about problem with the ships asbestos levels.  India law states that Ships must be decontaminated of hazardous substances such as PSBs and asbestos before scrapping. There was an issue that SS Blue Lady owners had not notified India when they were in Malaysia and Germany.         After all the lengthy process the scrapping begun a year later in Alang, India       On 12th July 2008 the tip of SS Blue Lady bow was returned as a catalogue auction piece removed from the ship before scrapping, to her country of origin France in Paris ',
 
           ship_plans: '/images/Evolution/France/Norway2002-1.gif',
           ship_plans_cont: '/images/Evolution/France/Norway2002-2.gif',
@@ -731,8 +731,8 @@ exports.seed = function(knex, Promise) {
           cruise_1st_para: "The Pacific Princess is unique because it operated as a cruise ship throughout her entire career. As I have already mentioned she started off as Sea Venture and then changed to Pacific Princess in 1975 operating under Princess Cruises. This was in time before the TV Show Love boat, which started in 1977. The Love Boat TV Show ran from 1977 to 1986 and the idea was that if you went on a cruise you could meet the love of your life. During her lifespan from 1971 to 2013, she was called Pacific Princess from 1975 to 2002 and was with Princess Cruises during that entire time having her port of registry in London, UK. You don't get many cruise ships that have stayed the same name and with the same cruise line for a length of time, so that is another factor that makes this her a legendary ship.",
           // originally second_para:
           cruise_2nd_para: 'In 2002 she as sold to a Brazil based company called Viagens CVC, was renamed Pacific and operated with Pullmantur Cruises. Pacific did cruises from to   with Pullmunter from 2002 to 2008.',
-          mem_1st_para: '',
-          mem_2nd_para: '',
+          mem_1st_para: "To relieve some pleasant memories of this classic cruise ship, watch this video below taken from the opening and closing segment of the Love Boat TV Show. Closing segment was in 1978 and opening looks to be in the early 1980's.",
+          mem_2nd_para: "In case you are wondering the Love Boat song was sung by Jack Jones in 1977. Jones's version was used in all seasons apart from the last, when it was replaced by Dionne Warwick's version.",
           plans_para: '',
           final_1st_para: 'In 2013 she ended her career as a cruise ship and was finally name Acif before she was scrapped.',
           final_2nd_para:'When Acif was being towed to Aliaga, Turkey for scrapping, she took on water and was a lean. However she did make it to Aliaga and sadly this great ship that has a lot of great memories got scrapped. ',
