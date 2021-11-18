@@ -1,5 +1,6 @@
 const path = require('path')
 const express = require('express')
+const reviews = require('./routes/reviews')
 const cruiselines = require('./routes/cruises')
 const shipslist = require('./routes/ships')
 const classicships = require('./routes/classics')
@@ -9,6 +10,9 @@ const server = express()
 
 server.use(express.json())
 server.use(express.static(path.join(__dirname, '../public')))
+
+//Line below is a v1 express route for showing intial reviews.
+server.use('/v1/reviews', reviews)
 
 //Lines below sorts out, which v1 express route will handle, which request
 //and is also used for helping display the Review Page

@@ -1,5 +1,5 @@
 import React from 'react'
-import StarRating from './StarRating'
+// Will sort out StarRating after I have Initial Reviews displayed
 
 // The idea of this component is if the seeds file already has my Initial Review,
 // then the Review is displayed or shown as an article with the seeds Review in a Textbox within the Review.
@@ -8,41 +8,58 @@ import StarRating from './StarRating'
 class InitialReview extends React.Component {
     constructor(props)  {
         super(props)
-
-        // this.state = {
-            
-        // }
-
     }    
 
-    render()    {        
+    render()    {
+    
+        const   {
+            Review_User_Name,
+            Review,
+            // Star_Rating,
+            Cruise_Name,
+            Cruise_Duration,
+            Sail_Date,
+            Leaving_Port,
+            Destination,
+            Disembark_Date,
+            Travel_Name,
+            Review_Title,
+            Number_of_Cruises,
+            Travel_Party
+
+        }   = this.props
+
+        
         return  (
 
         <React.Fragment>
 
+            {/* This article below will be displayed on a ships review page for an existing review taken from reviews table. */}
             <article>
 
-                <label>Star Rating</label><StarRating/> 
+                <label>Star Rating:</label>
+                {/* <StarRating Rating={Star_Rating} /> uncomment when this is working */}
 
-                {/* Maybe label for Review Title */}
-                <p>{Review_Title}</p>
+                <p><strong>{Review_Title}</strong>  by {Review_User_Name}</p>
 
                 {/* Maybe label for Cruise and User Name below */}
-                <p>{Cruise_Name} by {Review_user_name}   (Optional)</p>
+                <p><strong>{Cruise_Name}</strong> travelled under the name {Travel_Name}</p>
 
-                <label>Sail Date: {sail_date}</label>   <label> / Travelled as: {travel_party}</label>
+                <p>Cruise Duration: {Cruise_Duration}</p>
 
-                <label>Leaving Port: {starting_port}</label>   <label> / Destination: {destination}</label>
+                <label>Sail Date: {Sail_Date}   / Travelled as: {Travel_Party}</label> 
+
+                <label>Disembark Date: {Disembark_Date}</label>
+
+                <label>Leaving Port: {Leaving_Port}   /  Destination: {Destination}</label>
 
                 <Textbox>
                     {Review}
-
                 </Textbox>
 
-                <label>Number of Cruises Travelled: {number_cruises}</label>
+                <label>Number of Cruise Travelled: {Number_of_Cruises}</label>
 
             </article>
-            
 
         </React.Fragment>        
         

@@ -14,7 +14,7 @@ class Ship extends React.Component  {
         const   {
             ship_name,
             img,
-            Year,
+            Year, 
             Gross_Tonnage,
             Passenger_Full_Capacity,
             Double_Occupancy_Passenger_Capacity,
@@ -24,7 +24,7 @@ class Ship extends React.Component  {
             Height,
             Loaded_Displacement,
             Deadweight,
-            Review,
+            review_id,
             Booking
         } = this.props
         
@@ -69,20 +69,8 @@ class Ship extends React.Component  {
                 <h4>Deadweight: {Deadweight}</h4>
                 <h4>Loaded Displacement: {Loaded_Displacement}</h4>
             </div>
-            
-            {/* <div className="ShipTermsIntro">
-                <p>
-                    <b>Ship Terms</b>
-                    <br/>
-                    <br/>
-                    If you are interested and want to find out more about
-                    <br/>what these ship terms actually mean, then click {' '} 
-                    <Link to="/cruiselines/shipterms">Here</Link>
-                </p>
-            </div> */}
 
             <div className = "backButton">
-                {/* Should be className instead of class */}
                 <button className = "Button">
                     <Link className = "backLink" to="/cruiselines">Back to Cruise Lines</Link>
                 </button>
@@ -100,20 +88,25 @@ class Ship extends React.Component  {
                 </button>
 
                 {/* I think rather than a button it should be a Link disguised as a button.
-                <Link className = "addReview" to = >
-                
-                </Link> */}
+                <Link className = "addReview" to = ></Link> */}
+           
+                {/* The user can click on Make a Review button to add a review for a ships review page. 
+                It does not matter if a review exists or not for this to happen. 
+                When user makes a Review, a new page opens in a separate window allowing user to fill out a form 
+                and then submit a review. 
+                The Users new Review gets diplayed on a ships Review page 
+                eg http://localhost:3000/cruiselines/Celestyal_Cruises#Celestyal_Crystal  */}   
 
-            {/* This goes to the FindReview component where it finds if an Initial Review exists for the ship.
-            If initial review does exist from ships seeds file, then it will be displayed.
+                {/* <FindReview Find={review_id}/> */}
+                {/* At first I thought that review_id was involved to make connection from this ship component to FindReview.
+                On second reflection I think maybe no prop needs to be passed because joins are picked up through dbreviews database file. */}
+                <FindReview />    
 
-            If an initial Review does not exist, then user can click on Make a Review button to make a Review.
-            When user makes a Review, a new page opens in a separate window allowing user to fill out a form and then submit it.
-            The Users new Review gets diplayed on a ships Review page 
-            eg http://localhost:3000/cruiselines/Celestyal_Cruises#Celestyal_Crystal
+                {/* FindReview component helps finds a Review.
+                2 Conditions, 
+                If an Intial review exists from reviews seeds file, then it will be displayed here.
+                The user can add a review for a ships review page.  */}
 
-            <FindReview/> */}
-                
             </div>
 
             <div className="ShipTermsIntro">

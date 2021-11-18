@@ -1,5 +1,36 @@
 import request from 'superagent'
 
+// This api is for displaying an existing review on a cruise ship reviews page and is taken from my reviews table 
+// that has a ship_id join with ships table 
+// An example url could be http://localhost:3000/cruiselines/Celestyal_Cruises#Celestyal_Crystal for a review.
+
+// At first, I thought review_id was going to be the join 
+// export function getReviews(review_id or ship_id)    {
+//export function getReviews(review_id)   {  review_id I think should get taken from mapping process in component
+
+// export function getReview(cruise_line)  {
+// May not need cruise_line passed as prop because review details get picked up by review.id in FindReview 
+// and join in databse dbreviews file
+export function getReviews()    {
+
+    console.log('client/api/api.js getReviews API Endpoint Called')
+
+    // return request.get(`/v1/reviews/${review_id or ship_id}`)
+    // return request.get(`/v1/reviews/${review_id}`)   review_id not needed in v1 route
+    // return request.get(`/v1/reviews/${cruise_line}`) 
+
+    // may need to not use cruise_line as prop 
+    return request.get(`/v1/reviews`)
+        .then(res =>  {
+            const reviews = res.body
+            console.log('Got Existing Reviews! client/api/api.js', reviews)
+            return reviews
+        })
+        .catch(error => {
+            // This logs any errors caught, while debugging
+            console.log('caught error in client/api/api.js getReviews', error)
+        })
+}
 
 //This is api for when Cruise Line Headings appear on Cruise Lines Page.
 export function getCruiseLines()  {

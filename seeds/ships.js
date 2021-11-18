@@ -24,11 +24,11 @@ exports.seed = function(knex, Promise) {
           Deadweight: 18095,
           Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/royal-caribbean-international/symphony-of-the-seas',
 
-          //Foreign Key to get Review data for Symphony of the Seas Ship, if it exists.
+          // Foreign Key to get Review data for Symphony of the Seas Ship, if it exists.
           // If no Review data Exists, then user has option of Making a Review. 
+          // review_id: 1   Changing to ship_id as join in Reviews Table 
           // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
-          // because there can be many reviews for 1 ship 
-          review_id: 1    
+          // because there can be many reviews for 1 ship    
         },
         {
           id: 2,
@@ -48,10 +48,10 @@ exports.seed = function(knex, Promise) {
           Booking: 'https://cruisearabiaonline.com/2020/04/29/marella-celebration-to-be-sold-dubai-cruise-season-cancelled/',
 
           //Foreign Key to get Review data for Marella Celebration, if it exists.
-          // If no Review data Exists, then user has option of Making a Review.
+          // If no Review data Exists, then user has option of Making a Review. 
+          // review_id: 2   Changing to ship_id as join in Reviews Table
           // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
-          // because there can be many reviews for 1 ship 
-          review_id: 2
+          // because there can be many reviews for 1 ship
         },
         {
           id: 3,
@@ -71,10 +71,10 @@ exports.seed = function(knex, Promise) {
           Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/cunard/queen-mary-2',
 
           //Foreign Key to get Review data for Queen Mary 2, if it exists.
-          // If no Review data Exists, then user has option of Making a Review.
+          // If no Review data Exists, then user has option of Making a Review. 
+          // review_id: 3   Changing to ship_id as join in Reviews Table
           // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
-          // because there can be many reviews for 1 ship 
-          review_id: 3
+          // because there can be many reviews for 1 ship
         },
         {
           id: 4,
@@ -94,10 +94,10 @@ exports.seed = function(knex, Promise) {
           Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/princess-cruises/star-princess',
           
           //Foreign Key to get Review data for Star Princess, if it exists.
-          // If no Review data Exists, then user has option of Making a Review.
+          // If no Review data Exists, then user has option of Making a Review. 
+          // review_id: 4   Changing to ship_id as join in Reviews Table 
           // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
-          // because there can be many reviews for 1 ship 
-          review_id: 4                    
+          // because there can be many reviews for 1 ship                   
         },
         {
           id: 5,
@@ -117,10 +117,10 @@ exports.seed = function(knex, Promise) {
           Booking: 'https://www.fredolsencruises.com/our-ships/boudicca/cruises',
           
           //Foreign Key to get Review data for Boudicca, if it exists.
-          // If no Review data Exists, then user has option of Making a Review.
+          // If no Review data Exists, then user has option of Making a Review. 
+          // review_id: 5   Changing to ship_id as join in Reviews Table 
           // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
-          // because there can be many reviews for 1 ship 
-          review_id: 5          
+          // because there can be many reviews for 1 ship         
         },
         {
           id: 6,
@@ -140,10 +140,10 @@ exports.seed = function(knex, Promise) {
           Booking: 'https://www.fredolsencruises.com/our-ships/black-watch/cruises',
           
           //Foreign Key to get Review data for Black Watch, if it exists.
-          // If no Review data Exists, then user has option of Making a Review.
+          // If no Review data Exists, then user has option of Making a Review. 
+          // review_id: 6   Changing to ship_id as join in Reviews Table
           // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
-          // because there can be many reviews for 1 ship 
-          review_id: 6
+          // because there can be many reviews for 1 ship
         },
         {
           id: 7,
@@ -163,10 +163,10 @@ exports.seed = function(knex, Promise) {
           Booking: 'https://www.seascanner.com/cruises-amadea',
           
           //Foreign Key to get Review data for Phoenix Reisen, if it exists.
-          // If no Review data Exists, then user has option of Making a Review.
+          // If no Review data Exists, then user has option of Making a Review. 
+          // review_id: 7   Changing to ship_id as join in Reviews Table 
           // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
-          // because there can be many reviews for 1 ship 
-          review_id: 7          
+          // because there can be many reviews for 1 ship         
         },
         {
           id: 8,
@@ -186,10 +186,10 @@ exports.seed = function(knex, Promise) {
           Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/princess-cruises/majestic-princess',
           
           //Foreign Key to get Review data for Majestic Princess, if it exists.
-          // If no Review data Exists, then user has option of Making a Review.
+          // If no Review data Exists, then user has option of Making a Review. 
+          // review_id: 8   Changing to ship_id as join in Reviews Table
           // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
-          // because there can be many reviews for 1 ship 
-          review_id: 8
+          // because there can be many reviews for 1 ship
         },
         {
           id: 9,
@@ -209,10 +209,10 @@ exports.seed = function(knex, Promise) {
           Booking: 'https://www.vikingcruises.com.au/oceans/ships/viking-sun.html',
           
           //Foreign Key to get Review data for Viking Sun, if it exists.
-          // If no Review data Exists, then user has option of Making a Review.
+          // If no Review data Exists, then user has option of Making a Review. 
+          // review_id: 9   Changing to ship_id as join in Reviews Table 
           // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
-          // because there can be many reviews for 1 ship 
-          review_id: 9          
+          // because there can be many reviews for 1 ship         
         },
         {
           id: 10,
@@ -233,9 +233,9 @@ exports.seed = function(knex, Promise) {
                   
           //Foreign Key to get Review data for Radiance of The Seas, if it exists.
           // If no Review data Exists, then user has option of Making a Review.
+          // review_id: 10   Changing to ship_id as join in Reviews Table
           // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
-          // because there can be many reviews for 1 ship 
-          review_id: 10
+          // because there can be many reviews for 1 ship
         },
         {
           id: 11,
@@ -255,10 +255,10 @@ exports.seed = function(knex, Promise) {
           Booking: 'https://www.tui.co.uk/cruise/ships/marella-discovery-2/itineraries',
                   
           //Foreign Key to get Review data for Marella Discovery 2, if it exists.
-          // If no Review data Exists, then user has option of Making a Review.
+          // If no Review data Exists, then user has option of Making a Review. 
+          // review_id: 11   Changing to ship_id as join in Reviews Table
           // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
-          // because there can be many reviews for 1 ship 
-          review_id: 11
+          // because there can be many reviews for 1 ship
         },
         {
           id: 12,
@@ -279,9 +279,9 @@ exports.seed = function(knex, Promise) {
                   
           //Foreign Key to get Review data for Le Laperouse, if it exists.
           // If no Review data Exists, then user has option of Making a Review.
+          // review_id: 12   Changing to ship_id as join in Reviews Table 
           // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
-          // because there can be many reviews for 1 ship 
-          review_id: 12          
+          // because there can be many reviews for 1 ship         
         },
         {
           id: 13,
@@ -301,10 +301,10 @@ exports.seed = function(knex, Promise) {
           Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/carnival-cruise-lines/carnival-legend',
                   
           //Foreign Key to get Review data for Carnival Legend, if it exists.
-          // If no Review data Exists, then user has option of Making a Review.
+          // If no Review data Exists, then user has option of Making a Review. 
+          // review_id: 13   Changing to ship_id as join in Reviews Table     
           // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
-          // because there can be many reviews for 1 ship 
-          review_id: 13          
+          // because there can be many reviews for 1 ship     
         },
         {
           id: 14,
@@ -325,9 +325,9 @@ exports.seed = function(knex, Promise) {
                   
           //Foreign Key to get Review data for Carnival Vista, if it exists.
           // If no Review data Exists, then user has option of Making a Review.
+          // review_id: 14   Changing to ship_id as join in Reviews Table  
           // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
-          // because there can be many reviews for 1 ship 
-          review_id: 14          
+          // because there can be many reviews for 1 ship        
         },
         {
           id: 15,
@@ -347,10 +347,10 @@ exports.seed = function(knex, Promise) {
           Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/royal-caribbean-international/allure-of-the-seas',
                             
           //Foreign Key to get Review data for Allure of The Seas, if it exists.
-          // If no Review data Exists, then user has option of Making a Review.
+          // If no Review data Exists, then user has option of Making a Review. 
+          // review_id: 15   Changing to ship_id as join in Reviews Table
           // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
-          // because there can be many reviews for 1 ship 
-          review_id: 15
+          // because there can be many reviews for 1 ship
         },
         {
           id: 16,
@@ -370,10 +370,10 @@ exports.seed = function(knex, Promise) {
           Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/royal-caribbean-international/anthem-of-the-seas',
                                       
           //Foreign Key to get Review data for Anthem of The Seas, if it exists.
-          // If no Review data Exists, then user has option of Making a Review.
+          // If no Review data Exists, then user has option of Making a Review. 
+          // review_id: 16   Changing to ship_id as join in Reviews Table
           // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
-          // because there can be many reviews for 1 ship 
-          review_id: 16
+          // because there can be many reviews for 1 ship
         },
         {
           id: 17,
@@ -393,10 +393,10 @@ exports.seed = function(knex, Promise) {
           Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/crystal-cruises/crystal-serenity',
                                       
           //Foreign Key to get Review data for Crystal Serenity, if it exists.
-          // If no Review data Exists, then user has option of Making a Review.
+          // If no Review data Exists, then user has option of Making a Review. 
+          // review_id: 17   Changing to ship_id as join in Reviews Table
           // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
-          // because there can be many reviews for 1 ship 
-          review_id: 17
+          // because there can be many reviews for 1 ship
         },
         {
           id: 18,
@@ -416,10 +416,10 @@ exports.seed = function(knex, Promise) {
           Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/crystal-cruises/crystal-symphony',
                                       
           //Foreign Key to get Review data for Crystal Symphony, if it exists.
-          // If no Review data Exists, then user has option of Making a Review.
+          // If no Review data Exists, then user has option of Making a Review. 
+          // review_id: 18   Changing to ship_id as join in Reviews Table
           // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
-          // because there can be many reviews for 1 ship 
-          review_id: 18          
+          // because there can be many reviews for 1 ship          
         },
         {
           id: 19,
@@ -439,10 +439,10 @@ exports.seed = function(knex, Promise) {
           Booking: 'https://www.semesteratsea.org/life-at-sea/our-ship/',
                                       
           //Foreign Key to get Review data for World Odyssey, if it exists.
-          // If no Review data Exists, then user has option of Making a Review.
+          // If no Review data Exists, then user has option of Making a Review. 
+          // review_id: 19   Changing to ship_id as join in Reviews Table
           // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
-          // because there can be many reviews for 1 ship 
-          review_id: 19           
+          // because there can be many reviews for 1 ship           
         },
         {
           id: 20,
@@ -463,10 +463,10 @@ exports.seed = function(knex, Promise) {
           Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/celestyal-cruises/celestyal-crystal',
                                                 
           //Foreign Key to get Review data for Celestyal Crystal, if it exists.
-          // If no Review data Exists, then user has option of Making a Review.
+          // If no Review data Exists, then user has option of Making a Review. 
+          // review_id: 20   Changing to ship_id as join in Reviews Table 
           // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
-          // because there can be many reviews for 1 ship 
-          review_id: 20 
+          // because there can be many reviews for 1 ship
         },
         {
           id: 21,
@@ -486,10 +486,10 @@ exports.seed = function(knex, Promise) {
           Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/celestyal-cruises/celestyal-olympia',
 
           //Foreign Key to get Review data for Celestyal Olympia, if it exists.
-          // If no Review data Exists, then user has option of Making a Review.
+          // If no Review data Exists, then user has option of Making a Review. 
+          // review_id: 21   Changing to ship_id as join in Reviews Table
           // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
-          // because there can be many reviews for 1 ship 
-          review_id: 21
+          // because there can be many reviews for 1 ship
         },
         {
           id: 22,
@@ -509,10 +509,10 @@ exports.seed = function(knex, Promise) {
           Booking: 'https://www.cruiseindustrynews.com/cruise-news/22670-dream-cruises-cancels-2020-2021-australia-program.html',
 
           //Foreign Key to get Review data for Explorer Dream, if it exists.
-          // If no Review data Exists, then user has option of Making a Review.
+          // If no Review data Exists, then user has option of Making a Review. 
+          // review_id: 22   Changing to ship_id as join in Reviews Table 
           // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
-          // because there can be many reviews for 1 ship 
-          review_id: 22       
+          // because there can be many reviews for 1 ship      
         },
         {
           id: 23,
@@ -532,10 +532,10 @@ exports.seed = function(knex, Promise) {
           Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/norwegian-cruise-line/norwegian-spirit',
 
           //Foreign Key to get Review data for Norwegian Spirit, if it exists.
-          // If no Review data Exists, then user has option of Making a Review.
+          // If no Review data Exists, then user has option of Making a Review. 
+          // review_id: 23   Changing to ship_id as join in Reviews Table
           // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
-          // because there can be many reviews for 1 ship 
-          review_id: 23
+          // because there can be many reviews for 1 ship
 
         },
         {
@@ -556,10 +556,10 @@ exports.seed = function(knex, Promise) {
           Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/norwegian-cruise-line/norwegian-jewel',
 
           //Foreign Key to get Review data for Norwegian Jewel, if it exists.
-          // If no Review data Exists, then user has option of Making a Review.
+          // If no Review data Exists, then user has option of Making a Review. 
+          // review_id: 24   Changing to ship_id as join in Reviews Table  
           // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
-          // because there can be many reviews for 1 ship 
-          review_id: 24        
+          // because there can be many reviews for 1 ship      
         },
         {
           id: 25,
@@ -579,10 +579,10 @@ exports.seed = function(knex, Promise) {
           Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/norwegian-cruise-line/norwegian-dawn',
 
           //Foreign Key to get Review data for Norwegian Dawn, if it exists.
-          // If no Review data Exists, then user has option of Making a Review.
+          // If no Review data Exists, then user has option of Making a Review. 
+          // review_id: 25   Changing to ship_id as join in Reviews Table   
           // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
-          // because there can be many reviews for 1 ship 
-          review_id: 25          
+          // because there can be many reviews for 1 ship       
         },
         {
           id: 26,
@@ -603,9 +603,9 @@ exports.seed = function(knex, Promise) {
 
           //Foreign Key to get Review data for Pacific Aria, if it exists.
           // If no Review data Exists, then user has option of Making a Review.
+          // review_id: 26   Changing to ship_id as join in Reviews Table 
           // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
-          // because there can be many reviews for 1 ship 
-          review_id: 26        
+          // because there can be many reviews for 1 ship       
         },
         {
           id: 27,
@@ -625,10 +625,10 @@ exports.seed = function(knex, Promise) {
           Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/po-australia/pacific-dawn',
 
           //Foreign Key to get Review data for Pacific Dawn, if it exists.
-          // If no Review data Exists, then user has option of Making a Review.
+          // If no Review data Exists, then user has option of Making a Review. 
+          // review_id: 27   Changing to ship_id as join in Reviews Table 
           // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
-          // because there can be many reviews for 1 ship 
-          review_id: 27        
+          // because there can be many reviews for 1 ship       
         },
         {
           id: 28,
@@ -648,10 +648,10 @@ exports.seed = function(knex, Promise) {
           Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/po-australia/pacific-encounter',
 
           //Foreign Key to get Review data for Pacific Explorer, if it exists.
-          // If no Review data Exists, then user has option of Making a Review.
+          // If no Review data Exists, then user has option of Making a Review. 
+          // review_id: 28   Changing to ship_id as join in Reviews Table      
           // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
-          // because there can be many reviews for 1 ship 
-          review_id: 28        
+          // because there can be many reviews for 1 ship  
         }
       ]);
     });
