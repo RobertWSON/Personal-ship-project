@@ -15,7 +15,7 @@ function getReviews()   {
 
 //Trial new joins code 4th Nov 2021    
 // return db('ships') I think this should be "return conn" instead of "return db"
-    return connect('ships') 
+    return conn('ships') 
     .join('reviews','ships.id', 'reviews.ship_id')
     .where({ship_id:id})
     .select("*", "ships.id AS sid", "reviews.ship_id AS rid")
