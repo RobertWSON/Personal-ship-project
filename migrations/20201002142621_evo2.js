@@ -136,9 +136,10 @@ exports.up = function(knex, Promise) {
         // paragraphs and Images for Early Life and start of "As a Cruise Ship"
         table.string('early_1st_para')
         table.string('early_video')
+        table.string('early_2nd_para')
         table.string('img_trials')
         table.string('img_trials_title')
-        table.string('early_2nd_para')
+        table.string('early_3rd_para')
         table.string('img_early')
         table.string('img_early_title')
         table.string('cruise_1st_para')

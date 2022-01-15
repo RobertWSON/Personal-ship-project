@@ -627,12 +627,12 @@ exports.seed = function(knex, Promise) {
           // ship_name: 'Pacific Princess',
           img: '/images/003410.jpg',
           img_title: "Love Boat Pacific Princess at sea",
-          img_trials: '',
-          img_trials_title: '',
-          img_early: '',
-          img_early_title: '',
-          img_1stcruise: '',
-          img_1stcruise_title: '',
+          img_trials: '/images/Evolution/Pacific Princess/Pacific-Sea-Venture.jpeg',
+          img_trials_title: "Pacific Princess as Sea Venture on it's maiden voyage visting Hamilton, Bermuda in June 1971.",
+          img_early: '/images/Evolution/Pacific Princess/Sea-Venure-1-600-dpi.jpeg',
+          img_early_title: 'As Sea Venture with Flagship Cruises postcard sailing in the Caribbean Sea to Bermuda during that QE2 rescue operation in April 1974.',
+          img_1stcruise: '/images/Evolution/Pacific Princess/Pacific-Princess-PO-1.jpeg',
+          img_1stcruise_title: 'New Pacific Princess now with a yellow funnel and Princess Cruises, sailing under Sydney Harbour Bridge in 1975',
 
           //Service Years for other ships, no data her though because Pacific Princess has it's own.
           service_years: '',
@@ -724,16 +724,16 @@ exports.seed = function(knex, Promise) {
           ship_horn: '/videos/classics/Pacific Princess/Bermuda-PacificPrincess(ex-Love Boat)ShipsWhistle.mp4',
           // early_1st_para: "The Pacific Princess is one of the longest serving cruise ships from 1970's, having latest 43 years. <br/>She was originally built as Sea Venture and changed her name to Pacific Princess in 1975, in time before the TV show Love Boat, that aired in 1977.",
           // changing early_1st_para to this below
-          early_1st_para: "The Pacific Princess originally was built as Sea Venture in 1971 at the  shipyard in Emden, Germany for a cost of US$25 Million. During her early part of her career she operated under Flagship Cruises, which was a Norwegian cruise company from June 1971 to October 1974 and her registered port was Oslo, Norway. The cruises that she did back then was usually a week long cruise from New York City to Bermuda. Sea venture had an awesome moment in April 1974, when she had to perform a rescue operation. Queen Elizabeth 2 ship owned by Cunard, had lost all of her power about 250 miles off Bermuda coast. Sea Venture received QE2's Mayday call and left Hamilton, where she was docked during a cruise, to help out. She picked up all 1,650 passengers from the QE2 using her lifeboats, carried them back to Hamilton and the QE2 was towed to Bermuda for repairs. All ships including cruise ships have a prefix before the start of their name and this is to classify what type of ship it is and in the case of the Sea Venture it is ms Sea Venture. The ms part stands for motor ship and this is a ship that is propelled by an internal combustion engine. She had this ms prefix sthroughout her entire time of her service.",
+          early_1st_para: "The Pacific Princess originally was built as Sea Venture in 1971 at the Nordseewerke (North Sea Works) shipyard in Emden, Germany for a cost of US$25 Million. During her early part of her career she operated under Flagship Cruises, which was a Norwegian cruise company from June 1971 to October 1974 and her registered port was Oslo, Norway. The cruises that she did back then was usually a week long cruise from New York City to Bermuda. Here she can be seen below visting Hamilton, Bermuda on her maiden voyage in June 1971.",
           // originally first_para:
           //Newly added early_2nd_para
-          early_2nd_para: '',
-          cruise_1st_para: "The Pacific Princess is unique because it operated as a cruise ship throughout her entire career. As I have already mentioned she started off as Sea Venture and then changed to Pacific Princess in 1975 operating under Princess Cruises. This was in time before the TV Show Love boat, which started in 1977. The Love Boat TV Show ran from 1977 to 1986 and the idea was that if you went on a cruise you could meet the love of your life. During her lifespan from 1971 to 2013, she was called Pacific Princess from 1975 to 2002 and was with Princess Cruises during that entire time having her port of registry in London, UK. You don't get many cruise ships that have stayed the same name and with the same cruise line for a length of time, so that is another factor that makes this her a legendary ship.",
+          early_2nd_para: "Sea venture had an awesome moment in April 1974, when she had to perform a rescue operation. Queen Elizabeth 2 ship owned by Cunard, had lost all of her power about 250 miles off Bermuda coast. Sea Venture received QE2's Mayday call and left Hamilton, where she was docked during a cruise, to help out. She picked up all 1,650 passengers from the QE2 using her lifeboats, carried them back to Hamilton and the QE2 was towed to Bermuda for repairs. All ships including cruise ships have a prefix before the start of their name and this is to classify what type of ship it is and in the case of the Sea Venture it is ms Sea Venture. The ms part stands for motor ship and this is a ship that is propelled by an internal combustion engine. She had this ms prefix sthroughout her entire time of her service. This photo below shows Sea Venture carrying passengers to Bermuda when the QE2 broke down in April 1974.",
+          cruise_1st_para: "The Pacific Princess is unique because it operated as a cruise ship throughout her entire career. As I have already mentioned she started off as Sea Venture and then changed to Pacific Princess in 1975 operating under Princess Cruises. This was in time before the TV Show Love boat, which started in 1977. The Love Boat TV Show ran from 1977 to 1986 and the idea was that if you went on a cruise you could meet the love of your life. During her lifespan from 1971 to 2013, she was called Pacific Princess from 1975 to 2002 and was with Princess Cruises during that entire time having her port of registry in London, UK. You don't get many cruise ships that have stayed the same name and with the same cruise line for a length of time, so that is another factor that makes this her a legendary ship. Here is photo of Pacific Princess with her yellow funnel during her early times with Princess cruises in Sydney, Australia during summer of 1975.",
           // originally second_para:
           cruise_2nd_para: 'In 2002 she as sold to a Brazil based company called Viagens CVC, was renamed Pacific and operated with Pullmantur Cruises. Pacific did cruises from to   with Pullmunter from 2002 to 2008.',
           mem_1st_para: "To relieve some pleasant memories of this classic cruise ship, watch this video below taken from the opening and closing segment of the Love Boat TV Show. Closing segment was in 1978 and opening looks to be in the early 1980's.",
           mem_2nd_para: "In case you are wondering the Love Boat song was sung by Jack Jones in 1977. Jones's version was used in all seasons apart from the last, when it was replaced by Dionne Warwick's version.",
-          plans_para: '',
+          plans_para: "Here is the Plans of Pacific Princess during her Princess days in the 1990's",
           final_1st_para: 'In 2013 she ended her career as a cruise ship and was finally name Acif before she was scrapped.',
           final_2nd_para:'When Acif was being towed to Aliaga, Turkey for scrapping, she took on water and was a lean. However she did make it to Aliaga and sadly this great ship that has a lot of great memories got scrapped. ',
 

@@ -1304,9 +1304,13 @@ worked on text for Links when hovering on it. When you hover on background-color
     float: left;
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-left: 0px;
+    /* margin-left: 0px; */
+    /* Widen margin-left to try and allow sections below to move up */
+    margin-left: 80px;
     margin-right: 20px; 
-    max-width: 680px;
+    /* max-width: 680px; */
+    /* 680px width increased to 750px so that ship image lines up with sections below */
+    max-width: 750px;
     min-width: 50%;  
 }
 
@@ -1325,7 +1329,9 @@ worked on text for Links when hovering on it. When you hover on background-color
     display: flex;
     flex-direction: column;
     max-width: 100%;
-    width: 680px; 
+    /* width: 680px;  */
+    /* 680px width increased to 750px so that ship image lines up with sections below */
+    width: 750px;
     height: auto;  
 }
 /* End of my (Rob Wilkinson) Original Method */
@@ -1367,7 +1373,10 @@ worked on text for Links when hovering on it. When you hover on background-color
     float: right;
     /* max-width: 480px; */
     /* Maybe need to make wider because of Pacific Princess name */
-    max-width: 600px;
+
+    /* max-width: 600px; */  
+    /* 680px width increased to 750px so that ship image lines up with sections below */
+    max-width: 750px;
     position: relative;
     
     /* padding: 1.5em;  */
@@ -1386,13 +1395,14 @@ worked on text for Links when hovering on it. When you hover on background-color
 .classicDetails >  .initialDetails  {
     /* display: flex;
     flex-direction: column; */
-    max-width: 480px;
+    /* max-width: 480px; */
+    /* Widen ship details so it goes closer to classicContainer border */
+    max-width: 500px;
     position: relative;
     border-bottom-width: 2px;
     border-color: aliceblue;
     background-color: aliceblue;
-
-    padding: 2.6em;  
+    padding: 2.6em;
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 20px;
@@ -1543,7 +1553,7 @@ worked on text for Links when hovering on it. When you hover on background-color
 
 #early  { 
     float: left;
-    padding: 1.5em;
+    padding: 1.5em; 
     border: 2px solid burlywood;
     border-radius: 20px;
     background-color: ivory;
@@ -1560,7 +1570,7 @@ worked on text for Links when hovering on it. When you hover on background-color
 
 #early  h3  { 
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     align-items: center;
     text-align: center;
     font-size: 1.6em;

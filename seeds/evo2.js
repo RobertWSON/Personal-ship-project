@@ -150,9 +150,10 @@ exports.seed = function(knex, Promise) {
                 // Early Life
                 early_1st_para: "The Fairstar started it's life as Oxfordshire, a ship with a different purpose than a cruise ship. It was a a steam ship with initials HMT, which stands for Her Majesty Transport and it was used to carry troops as a troop ship. The ship was built by Fairfield Shipbuilding and Engineering Company in Govan Shipyard, Glasgow, Scotland. The keel of the ship (designed as Ship No 75) was laid down with 8,396 UK tons (8.531 Metric Tonnes) of steel for the hull of the ship. Oxfordshire was launched on 15th December 1955 by Lady Dorothea Head who was wife of Lord Head ( Minister for War ). It took over a year to fit out the whole ship and so her sea trials did not start until 29th January 1957. During her sea trials Oxfordshire attained a maximum speed of 20.79 knots and an average of 19.78 knot (36.63 kph), so she wasn't a fast classic ship, especially when you compare her to QE2. She can be seen in the photo below doing her sea trials off.",
                 early_video: '',
+                early_2nd_para: "Oxfordshire was owned by Bibbly Line on 14 February 1957, when she cruised with her steam turbine engines from the shipyard in Govan, Glasgow, Scotland to liverpool, England, UK to begin her role as a troop ship. Oxfordshire was able to carry 1000 troops, 500 passengers (who were usually families of the troops) and 409 crew.",
                 img_trials: '',
                 img_trials_title: '',
-                early_2nd_para: "Oxfordshire was owned by Bibbly Line on 14 February 1957, when she cruised with her steam turbine engines from the shipyard in Govan, Glasgow, Scotland to liverpool, England, UK to begin her role as a troop ship. Oxfordshire was able to carry 1000 troops, 500 passengers (who were usually families of the troops) and 409 crew. Oxfordshire's maiden voyage began on 28th February 1957, when she left Liverpool under command of Captain Norman Fitch and travelled to Hong Kong via Capetown, South Africa. During Oxfordshires time as a troop ship, she made an average of four trips per year between Great Britain and the Far East. She frequently called at the following ports of Ceylon (Now called Sri Lanka), Aden (Yemen) and Port Said and Suez in Egypt. By the early 60's transport through air by an aircraft become more popular and so trooping by sea was losing it's popularity. On 1962 Oxfordshire was taken out of service as a troop ship.",
+                early_3rd_para: "Oxfordshire's maiden voyage began on 28th February 1957, when she left Liverpool under command of Captain Norman Fitch and travelled to Hong Kong via Capetown, South Africa. During Oxfordshires time as a troop ship, she made an average of four trips per year between Great Britain and the Far East. She frequently called at the following ports of Ceylon (Now called Sri Lanka), Aden (Yemen) and Port Said and Suez in Egypt. By the early 60's transport through air by an aircraft become more popular and so trooping by sea was losing it's popularity. On 1962 Oxfordshire was taken out of service as a troop ship.",
                 img_early: '/images/Evolution/Fairstar/oxfordshire-troops.jpg',
                 img_early_title: 'Oxfordshire berthing, with troops ready to board',
 
@@ -344,9 +345,10 @@ exports.seed = function(knex, Promise) {
                 // Early Life
                 early_1st_para: "",
                 early_video: '',
-                img_trials: '',
-                img_trials_title: '',
                 early_2nd_para: "",
+                img_trials: '',
+                img_trials_title: '',      
+                early_3rd_para: "",
                 img_early: '',
                 img_early_title: '',
 
@@ -533,16 +535,18 @@ exports.seed = function(knex, Promise) {
 
                 // Each Ship Page Contents, excluding it's Specifications
                 // Early Life
-                early_1st_para: "This is one of the famous well known ships here, as she was named after the most famous Queen of all time Queen Elizabeth 2 with her having the privilege of naming it and hit the champagne on the ship. Queen Elizabeth 2 ship began her maiden voyage on 2nd May 1969 from here home port Southampton to sail to New York City. She sailed under the UK flag being registered in Southampton and was with Cunard line.",
-                early_video: '',
-                img_trials: '',
-                img_trials_title: '',
-                early_2nd_para: "",
-                img_early: '',
-                img_early_title: '',
+                early_1st_para: "Queen Elizabeth 2 is one of the famous well known ships here, as she was named after the most famous Queen of all time Queen Elizabeth 2 upon her launching on 20th September 1967 in Clydebank. The Queen had the privilege of naming her and hitting the champagne bottle on the side of the ship just before her launching into the Clyde River. Below is a video showing the Launching of QE2 with her Majesty Queen Elizabeth 2 present for the occasion on 20th September 1967.",
+                early_video: '/videos/classics/QE2/Launching Of The Q4 (1967).mp4',
+                early_2nd_para: "On 26th November 1968 QE2 started her trials in the Irish Sea. There was a problem with the water plant system feeding to the boilers during her initial trials because of a faulty oil valve allowing lubricant through to one of the main boilers, but she still easily achieved 29.5 knots (54.63 kph), so they had to do an extra trial and QE2 reached 34 knots (63 kph) without any problem. Below is a photo of QE2 in the Irish Sea on 26th November 1968 during her ship trials where she initially achieved 29.5 knots.",
+                
+                img_trials: '/images/Evolution/QE2/QE2_Trials.png',
+                img_trials_title: 'QE2 Speed Trials, Nov 1968 off Isle of Arran in the Firth of Clyde, Scotland.',
+                early_3rd_para: "At the time She was the fourth ship in the Cunard fleet, so she was also known as Q4 and she was more economical to run than the Cunard ships she was replacing. Queen Elizabeth 2 started her intial trip to Las Palmas from Southampton and back on 22nd April 1969, but her real maiden voyage was across the Atlantic on 2nd May 1969 from here home port Southampton to sail to New York City. She sailed under the UK flag, being registered in Southampton and was with Cunard Line. In her early days up until 1974 she was more of a liner than a cruise ship, that travelled across the Atlantic Ocean (hence the term transatlantic liner) and this can be reflected in her long bow that can handle the sea well cutting through it. As I mentioned before, QE2 was helped by Pacific Princess, as this ship had lost power in Bermuda in 1974. Here is a photo of QE2 during her early days in 1972 with her noticeable sloping deck, that gave her the most deck space of a cruise ship at that time. ",
+                img_early: '/images/Evolution/QE2/QE21972w.jpeg',
+                img_early_title: 'QE2 in 1972 showing off her beautifully stepped stern decking with her 1st class Sports Deck on top.',
 
                 // As a Cruise Ship
-                cruise_1st_para: "",
+                cruise_1st_para: "Queen Elizabeth 2 really started her proper cruising careeer in 1974, when she did ",
                 img_1stcruise: '',
                 img_1stcruise_title: '',
                 // Cruise Ship Lengthening (Does not apply for QE2)
@@ -558,12 +562,12 @@ exports.seed = function(knex, Promise) {
                 cruise_2nd_para: "",
                 img_2ndcruise: '',
                 img_2ndcruise_title: '',
-                cruise_3rd_para: "",
-                img_3rdcruise: '',
-                img_3rdcruise_title: "",
-                cruise_4th_para: "",
-                img_4thcruise: '',
-                img_4thcruise_title: '',
+                cruise_3rd_para: "In 1982 Queen Elizabeth was converted as a troopship for the Falklands war. She left Southampton Harbour on 12th May 1982 with 3000 troops for her mission. She returned to Southampton on 11th June 1982, where she was greeted by the Queen Mother on board HMY Britannia Yacht with an exchange of horns.",
+                img_3rdcruise: '/images/Evolution/QE2/114727_full.jpeg',
+                img_3rdcruise_title: "QE2 Leaving Southampton for Falkland Islands as a Troop Ship on 12th May 1982.",
+                cruise_4th_para: "After the Falklands war QE2 was converted back to a passenger ship for cruise service and the refurbishment took over 2 months in a Southampton shipyard. Her funnel was painted Cunard orange with black stripes and some alterations were made like an added Golden Door Spa at Sea. The most noticeable alteration from the outside was the hull painted in a light pebble grey colour. QE2 returned to service as a cruise ship on 7th August 1982. She operated world cruises to places like Canada, Spain and New Zealand. The new hull colour unfortunately was not very popular as it was very hard to maintain and in mid 1983 it was taken ouy of service to be repainted back to her original hull colour. Here is a lovely photo of her taken when she was in Wellington, New Zealand in early 1983.",
+                img_4thcruise: '/images/Evolution/QE2/2911161.jpeg',
+                img_4thcruise_title: 'QE2 with an unusual light pebble grey hull in Wellington, New Zealand on 16th February 1983.',
                 cruise_5th_para: "",
                 img_5thcruise: '',
                 img_5thcruise_title: '',
@@ -590,12 +594,12 @@ exports.seed = function(knex, Promise) {
                 mem_2nd_para: '',
 
                 // Ship Plans
-                plans_para: "",
+                plans_para: "Here is an overall plan of Queen Elizabeth 2 cruise ship, along with deck plans below this.",
                 ship_plans: '/images/Evolution/Qe2/QE2CutawayQ.jpg',
                 ship_plans_cont: '',
 
                 // Final Years
-                final_1st_para: "The Queen Elizabeth 2 was taken out of service in 2018 as a cruise ship, but instead of being scrapped she was now used as a floating hotel. She has been operating as a floating hotel in Port Rashid, Dubai, United Arab Emirates since 18th April 2018.",
+                final_1st_para: "The Queen Elizabeth 2 retired from her service as a cruise ship on 27th November 2008. During her lifetime as a liner and a cruise ship she had travelled more than 5.6 million miles, carried more than 2.5 million passengers and completed 806 transatlantic crossings. She was berthed at Port Rashid, Dubai and plans were in place to convert her into a floating hotel. The Queen Elizabeth 2 was taken out of service in 2018 as a cruise ship, but instead of being scrapped she is now used as a floating hotel. She has been operating as a floating hotel in Port Rashid, Dubai, United Arab Emirates since 18th April 2018. ",
                 final_2nd_para: "",
                 img_final: '',
                 img_final_title: ''
@@ -725,21 +729,22 @@ exports.seed = function(knex, Promise) {
 
                 // Each Ship Page Contents, excluding it's Specifications
                 // Early Life
-                early_1st_para: "",
+                early_1st_para: "Song of Norway was the very first ship ever built for Royal Caribbean cruise line and the first to ever be lengthened. It was built in Helsinki, Finland at Wartsila Meyer Turku shipyard. On December 2, 1969, Song of Norway was launched at Wartsila Helsinki Shipyard, but it wasn't until 7th November, 1970 that she left for her first maiden voyage cruise from Miami and intially took 724 passengers. In her early years she operated cruises out of Miami that were usually between 7 to 14 day cruises. She was a sleek and modern cruise ship at the time and proved to be very popular as a lot of passengers had the option of enjoying a panoramic view of the sea and ports from the Viking Crown Lounge located high in the funnel that was accessible through a set of stairs on the back side of the funnel. Crown Lounges were more popular on some of these classic liners than new ones and I guess that is what makes them so special. Here is a photo of here in the early years during 1976.",
                 early_video: '',
-                img_trials: '',
-                img_trials_title: '',
-                early_2nd_para: "",
-                img_early: '',
-                img_early_title: '',
+                early_2nd_para: "May not need to talk about lengthening here because maybe I should just let it be discussed later in the section As a Cruise Ship. In 1978, Song of Norway was lengthened by 85 feet (25.9 m) and this meant that it could initially carry 1052 passengers, later on in her career she increased to 1,192 passengers, which I will talk about later. Here is a photo of it during the lengthening inside the shipyard.   Maybe I could have the 1976 photo shown below here instead of the lengthening photo.",
+                img_trials: '/images/Evolution/Song of Norway/1R-Song-of-Norway_rev-scaled.jpeg',
+                img_trials_title: 'Song of Norway in her original form in 1976 (What a classic sleek beauty)',
+                early_3rd_para: "This 1976 Song of Norway photo was just over a year before the planning went into lengthening her and I will go into this in more detail in the cruise ship section.",
+                img_early: '/images/Evolution/Song of Norway/Song-of-Norway-Before-Lenghtening.jpg',
+                img_early_title: "Song of Norway cruising in 1970's before it was lengthened. ",
 
                 // As a Cruise Ship
-                cruise_1st_para: "",
-                img_1stcruise: '',
-                img_1stcruise_title: '',
+                cruise_1st_para: "Song of Norway as mentioned before is the first ever cruise ship built for Royal Caribbean cruise line and her sister ships also with the same cruise line followed with Nordic Prince in 1971 and Sun Viking in 1972. In her early years Song of norway operated 7 to 14 day cruises out of Miami to the Caribbean islands for 7 years. Here is a photo below of the original Song of Norway in Oslo, Norway in 1970 on her very first sailing from Helsinki to Miami.",
+                img_1stcruise: "/images/Evolution/Song of Norway/son_1970.jpeg",
+                img_1stcruise_title: "Song of Norway in Oslo, Norway on 5th October 1970, showing her beautiful original curves.",
                 // Cruise Ship Lengthening (Needed for Song of Norway as it was Lengthened)
-                name_before_lengthening: '',
-                lengthened_para: "",
+                name_before_lengthening: 'Song of Norway',
+                lengthened_para: "In the fall of 1977, as cruising was becoming popular with Royal Caribbean Cruise Line they looked for the easiest way to keep up with these demands. So in 1978 they lengthened this Song of Norway at the same Wartsila Meyer Turku shipyard in Helsinki, Finland it was built along with it's 2 other sister ships Nordic Prince and Sun Viking. The length increase of about 85 feet from 168.32 m (552 feet 2.75 inches) to 194.32 m (194.32 m (637 feet 6.4 inches). Here is a photo below showing her back half section separated from the front.",
                 img_lengthened: '/images/Evolution/Song of Norway/b5ac2c1fe37dee95a51c61cd713f42dc.jpg',
                 img_lengthened_title: 'Song of Norway stern section detached so that middle section for lengthening can be floated in place',
                 // After Cruise Ship Lengthening (Needed for Song of Norway as it was Lengthened)
@@ -747,15 +752,15 @@ exports.seed = function(knex, Promise) {
                 img_afterlengthen: '/images/Evolution/Song of Norway/song of norway.jpg',
                 img_afterlengthen_title: '',
                 // Other Cruise Ship Contents like Changing Cruise Operators
-                cruise_2nd_para: "In 1997 Song of Norway had a new name and was now called Sundream. She had now left Royal Caribbean with her logo removed from the Sky Lounge around the funnel and was operating with Airtours Sun Cruises until 2004. The cruises were from UK",
+                cruise_2nd_para: "In 1997 Song of Norway had a new name, was now called Sundream and could carry a maximum of 1257 passengers within 538 cabins. She had now left Royal Caribbean with her logo removed from the Sky Lounge around the funnel and was operating with Airtours Sun Cruises until 2004. Sundream operated in the Caribbean during winter from October to April with 7 to 14 night cruises and during these months she also did 16 night cruises near the Amazon and 7 night West Indies cruises. During the European summer from May to October she did 14 night round trips from Southampton to Western Europe and Africa and round trips from Harwich to Baltic States, Norwegian Fjords/ North Cape and Mediterranean from Southampton. Here is a photo of Sundream during her summer cruise while in Copenhagen, Denmark on July 1, 2003.",
                 img_2ndcruise: '/images/Evolution/Song of Norway/3104600.jpg',
-                img_2ndcruise_title: '',
-                cruise_3rd_para: "",
-                img_3rdcruise: '',
-                img_3rdcruise_title: "",
-                cruise_4th_para: "",
-                img_4thcruise: '',
-                img_4thcruise_title: '',
+                img_2ndcruise_title: 'Sundream during her summer cruising in Copenhagen, Denmark on July 1, 2003.',
+                cruise_3rd_para: "In 2004 Song of Norway now became Dream Princess and operated with the Israeli Caspi Cruises. She did cruises from Southampton to Europe . Here is a photo of Dream Princess with her initial white hull colour, leaving for a cruise in Southampton, England on October 6th, 2004.",
+                img_3rdcruise: '/images/Evolution/Song of Norway/1225767.jpeg',
+                img_3rdcruise_title: "Dream Princess with it's inital white hull colour, leaving for a European cruise from Southampton, England on October 6th, 2004",
+                cruise_4th_para: "In 2005 Dream Princess had a change of it's hull colour to black and now operated with .",
+                img_4thcruise: '/images/Evolution/Song of Norway/2825833.jpeg',
+                img_4thcruise_title: 'Dream Princess with her new black hull maybe in Limassol, Cyprus in October 2005',
                 cruise_5th_para: "",
                 img_5thcruise: '',
                 img_5thcruise_title: '',
@@ -919,9 +924,10 @@ exports.seed = function(knex, Promise) {
                 // Early Life
                 early_1st_para: "Royal Viking Sky was a beautiful ship that has served as a cruise ship through all her time at sea. She was built at Wartsila Helsinki Shipyard in Helsinki, Finland and was completed in July 1973. Royal Viking Sky operated with Royal Viking Line, which was a well known Norwegian Cruise Company at the time and she was one of 3 sister ships (the others being Royal Viking Star and Royal Viking Sea). Royal Viking Sky was used for luxury cruises around the world, so this included places like North America, Europe and New Zealand. The video below shows Royal Viking during her early times in the 1970's.",
                 early_video: '',
+                early_2nd_para: "",
                 img_trials: '/images/Evolution/Royal Viking Sky/RVSky-01-off.jpg',
                 img_trials_title: "Royal Viking Sky original - in Panama Canal during the 1970's",
-                early_2nd_para: "During the 1970's she could carry 536 passengers and crew from a 21891 Gross Tonnage vessel, so that was an excellent space for passengers. If you look on archived forums like everyone agrees that it was an excellent ship to cruise on. The photo below shows Royal Viking Sky I think in San Francisco Harbour during the 1970's.",
+                early_3rd_para: "During the 1970's she could carry 536 passengers and crew from a 21891 Gross Tonnage vessel, so that was an excellent space for passengers. If you look on archived forums like everyone agrees that it was an excellent ship to cruise on. The photo below shows Royal Viking Sky I think in San Francisco Harbour during the 1970's.",
                 img_early: '/images/Evolution/Royal Viking Sky/Royal Viking Sky Original - Maybe in San Francisco.jpg',
                 img_early_title: 'Royal Viking Sky as built - cruising with Royal Viking Line probably in San Francisco',
 
@@ -945,21 +951,21 @@ exports.seed = function(knex, Promise) {
                 cruise_3rd_para: "In 1992 she was now Birka Queen, operating with Birka Cruises in the Baltic Sea, but only for Northern Hemisphere 1992 summer cruises. Here is a Birka Queen photo of her in old Russia, now latvia.",
                 img_3rdcruise: '/images/Evolution/Royal Viking Sky/184703.jpg',
                 img_3rdcruise_title: "Royal Viking Sky as Birka Queen leaving Riga, Russia (Now Latvia) in August 1992",
-                cruise_4th_para: "In late 1992 she went back to Norwegian Cruise Line and was renamed Sunward. ",
-                img_4thcruise: '',
-                img_4thcruise_title: 'As Sunward in 1993',
+                cruise_4th_para: "In October 1992 she went back to Norwegian Cruise Line with the same colours as before and renamed Sunward. Again she did Caribeean cruises from Miami, but she had a short stay and her time with Norwegian Cruise line ended in June 1993. Here she is doing a cruise from Miami in 1993.",
+                img_4thcruise: '/images/Evolution/Royal Viking Sky/Sunward_Miami_1993.png',
+                img_4thcruise_title: 'As Sunward in Miami during 1993 once again.',
                 cruise_5th_para: "In June 1993 she was now Golden Princess, operating now with Princess Cruises (One of the most popular cruises lines of all time). On 13th June 1993, she did here first cruise from San Francisco to Alaska. Golden Princess also did cruises in the South Pacific Islands and parts of Asia reaching up to Hong Kong. Towards the end of her time with Princess, this was unfortunately not the best time for her because on 7th July 1996 her engine totally failed ecause ti caught fire. She was towed to Victoria, Canada, where passenger left the ship. A number of days later Golden Princess arrived in San Francisco were her engine was to be rebuilt.",
                 img_5thcruise: '/images/Evolution/Royal Viking Sky/golden_princess_1973_1.jpg',
                 img_5thcruise_title: 'Royal Viking Sky as Golden Princess anchored off the coast of Moorea, Tahiti in 1995',
                 cruise_6th_para: "With the engine being rebuilt, along with more cabins being created onboard, Golden Princess was sold to Star Cruises in January 1997 and renamed Superstar Capricorn.          In March 1998 until May of that year she was used just for Casino cruises departing from New York City, USA. However in May 1998 that schedule was now cancelled due to financial losses. ",
                 img_6thcruise: '/images/Evolution/Royal Viking Sky/sr_starcapricorn .jpg',
                 img_6thcruise_title: 'Royal Viking Sky as Superstar Capricorn in South China Sea in 1998',
-                cruise_7th_para: "In 1998 she was sold from Star Cruises to Hyundai Merchant Marine and renamed Hyundai Keumgang. She was used to transport pilgrim traffic between South and North Korea, as sea is much safer because you don't have to go over the North Korean border, which is a political problem.",
-                img_7thcruise: '',
-                img_7thcruise_title: 'Hyundai Keumgang in   on ',
-                cruise_8th_para: "In 2001, she was renamed back to Superstar Capricorn and sailed with her previous cruise operator Star Cruises.",
+                cruise_7th_para: "In 1998 she was sold from Star Cruises to Hyundai Merchant Marine and renamed Hyundai Keumgang. She was used to transport pilgrim traffic between South and North Korea, as sea is much safer because you don't have to go over the North Korean border, which is a political problem. These cruise tours lasted for 3 years between the main port Nampo in North Korea and Incheon port in South Korean.",
+                img_7thcruise: '/images/Evolution/Royal Viking Sky/ship18_imgloader.jpeg',
+                img_7thcruise_title: 'Hyundai Keumgang off the coast of Korea in 1998',
+                cruise_8th_para: "In 2001, she was renamed back to Superstar Capricorn and sailed with her previous cruise operator Star Cruises. She did cruises between.",
                 img_8thcruise: '',
-                img_8thcruise_title: '',
+                img_8thcruise_title: 'As Superstar Capricorn ',
                 cruise_9th_para: "In 2004 she was sold to a Spanish cruise line called Iberojet and renamed Grand Latino. She did cruises from Spain mainland and often did cruises to Spanish Ballearic and Canary Islands.",
                 img_9thcruise: '/images/Evolution/Royal Viking Sky/68619.jpg',
                 img_9thcruise_title: 'Grand Latino leaving Civitavecchia, Italy on 26th May, 2005',
@@ -1109,11 +1115,12 @@ exports.seed = function(knex, Promise) {
                 // Each Ship Page Contents, excluding it's Specifications
                 // Early Life
                 early_1st_para: "Sovereign of the Seas was a french ship that was built in Saint Nazaire, France between June 1986 to December 1987. At the time of leaving for her maiden voyage from Port Miami, Florida, USA on 16th January 1988, she was the largest cruise ship in terms of gross tonnage, but not the longest that was SS Norway. She was regarded as a mega cruise ship when she came into operation and the first of sovereign class cruise ships.",
-                early_video: '',
+                early_video: "/videos/classics/Sovereign of the Seas/Royal Caribbean's Sovereign of the Seas Inaugural Video.mp4",
                 // '/videos/classics/Sovereign of the Seas/Royal Caribbean s Sovereign of the Seas Inaugural Video(480p).mp4',
+                early_3rd_para: "",
                 img_trials: '',
                 img_trials_title: '',
-                early_2nd_para: "Sovereign of the Seas is the cruise ship that has contributed to the success of Royal Caribbean cruise line. It introduced larger swimming pools and more activities to keep a passengers stay at sea a memorable one.",
+                early_3rd_para: "Sovereign of the Seas is the cruise ship that has contributed to the success of Royal Caribbean cruise line. It introduced larger swimming pools and more activities to keep a passengers stay at sea a memorable one.",
                 img_early: '/images/Evolution/Sovereign of the Seas/130937839.sg0oX1Yh.012bb.jpg',
                 img_early_title: 'Royal Caribbeans, Sovereign of the Seas anchored off Labadee, Haiti in February 1990',
 
@@ -1301,9 +1308,10 @@ exports.seed = function(knex, Promise) {
                 // Early Life
                 early_1st_para: "Allure of the Seas was the second ship for the Oasis class ships (largest in the world) when she entered service in 2010. At the time she was just 50mm longer than her sister ship, Oasis of the Seas, but just a bit smaller in Gross Tonnage. Here steel hull alone weighed 54,000 Tonnes out of her 80,250 Tonnes lightship, so her displacement was as much as a large aircraft carrier. She did cruises from her home port Port Everglades. She was a ship that had very modern equipment and was equiped with telescoping funnels.",
                 early_video: '',
+                early_2nd_para: "",
                 img_trials: '',
                 img_trials_title: '',
-                early_2nd_para: "",
+                early_3rd_para: "",
                 img_early: '',
                 img_early_title: '',
 
