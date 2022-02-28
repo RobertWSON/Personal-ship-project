@@ -459,7 +459,6 @@ exports.seed = function(knex, Promise) {
           Height: 38,
           Loaded_Displacement: 13300,
           Deadweight: 1703,
-          Review: '',
           Booking: 'https://www.flightcentre.co.nz/cruises/cruise-lines/celestyal-cruises/celestyal-crystal',
                                                 
           //Foreign Key to get Review data for Celestyal Crystal, if it exists.

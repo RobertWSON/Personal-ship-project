@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
-// import FindReview from './FindReview'
+import FindReview from './FindReview'
 
 
 class Ship extends React.Component  {
@@ -24,7 +24,6 @@ class Ship extends React.Component  {
             Height,
             Loaded_Displacement,
             Deadweight,
-            review_id,
             Booking
         } = this.props
         
