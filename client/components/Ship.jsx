@@ -1,6 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
+
 import FindReview from './FindReview'
 
 
@@ -99,7 +100,10 @@ class Ship extends React.Component  {
                 {/* <FindReview Find={review_id}/> */}
                 {/* At first I thought that review_id was involved to make connection from this ship component to FindReview.
                 On second reflection I think maybe no prop needs to be passed because joins are picked up through dbreviews database file. */}
-                <FindReview />    
+                
+                {/* First tried ship_name.id key */}
+                <FindReview key={ship_name.id}/>
+                {/* <FindReview key={ship_id}/> */}
 
                 {/* FindReview component helps finds a Review.
                 2 Conditions, 

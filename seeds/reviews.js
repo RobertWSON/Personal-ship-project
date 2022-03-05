@@ -36,7 +36,7 @@ exports.seed = function(knex, Promise) {
                 ship_id: 'ships.id'
                 },
         {id: 8, Review_User_Name: '', Review:'', Star_Rating: '', Cruise_Name: '', Cruise_Duration: '', Sail_Date: '', Leaving_Port: '', Destination: '', Disembark_Date: '', Travel_Name: '', Review_Title: '', Number_of_Cruises: '', Travel_Party: '',
-                ship_id: 'ships.id'
+                ship_id: 'ship.id'
                 },
         {id: 9, Review_User_Name: 'Kelly Stone', 
                 Review: 'Pretty much a brand new cruise, you will love this one.', 
