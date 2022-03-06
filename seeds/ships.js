@@ -28,7 +28,10 @@ exports.seed = function(knex, Promise) {
           // If no Review data Exists, then user has option of Making a Review. 
           // review_id: 1   Changing to ship_id as join in Reviews Table 
           // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
-          // because there can be many reviews for 1 ship    
+          // because there can be many reviews for 1 ship 
+          
+          // I believe that join is from ships to reviews because the review can only be picked up from correct ship id
+          review_id: 'reviews.id'
         },
         {
           id: 2,
@@ -52,6 +55,9 @@ exports.seed = function(knex, Promise) {
           // review_id: 2   Changing to ship_id as join in Reviews Table
           // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
           // because there can be many reviews for 1 ship
+
+          // I believe that join is from ships to reviews because the review can only be picked up from correct ship id
+          review_id: 'reviews.id'
         },
         {
           id: 3,
@@ -75,6 +81,9 @@ exports.seed = function(knex, Promise) {
           // review_id: 3   Changing to ship_id as join in Reviews Table
           // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
           // because there can be many reviews for 1 ship
+
+          // I believe that join is from ships to reviews because the review can only be picked up from correct ship id
+          review_id: 'reviews.id'
         },
         {
           id: 4,
@@ -97,7 +106,10 @@ exports.seed = function(knex, Promise) {
           // If no Review data Exists, then user has option of Making a Review. 
           // review_id: 4   Changing to ship_id as join in Reviews Table 
           // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
-          // because there can be many reviews for 1 ship                   
+          // because there can be many reviews for 1 ship   
+          
+          // I believe that join is from ships to reviews because the review can only be picked up from correct ship id
+          review_id: 'reviews.id'
         },
         {
           id: 5,
@@ -120,7 +132,10 @@ exports.seed = function(knex, Promise) {
           // If no Review data Exists, then user has option of Making a Review. 
           // review_id: 5   Changing to ship_id as join in Reviews Table 
           // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
-          // because there can be many reviews for 1 ship         
+          // because there can be many reviews for 1 ship
+          
+          // I believe that join is from ships to reviews because the review can only be picked up from correct ship id
+          review_id: 'reviews.id'
         },
         {
           id: 6,
@@ -144,6 +159,9 @@ exports.seed = function(knex, Promise) {
           // review_id: 6   Changing to ship_id as join in Reviews Table
           // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
           // because there can be many reviews for 1 ship
+
+          // I believe that join is from ships to reviews because the review can only be picked up from correct ship id
+          review_id: 'reviews.id'
         },
         {
           id: 7,
@@ -166,7 +184,10 @@ exports.seed = function(knex, Promise) {
           // If no Review data Exists, then user has option of Making a Review. 
           // review_id: 7   Changing to ship_id as join in Reviews Table 
           // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
-          // because there can be many reviews for 1 ship         
+          // because there can be many reviews for 1 ship
+          
+          // I believe that join is from ships to reviews because the review can only be picked up from correct ship id
+          review_id: 'reviews.id'
         },
         {
           id: 8,
@@ -190,6 +211,9 @@ exports.seed = function(knex, Promise) {
           // review_id: 8   Changing to ship_id as join in Reviews Table
           // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
           // because there can be many reviews for 1 ship
+
+          // I believe that join is from ships to reviews because the review can only be picked up from correct ship id
+          review_id: 'reviews.id'
         },
         {
           id: 9,
@@ -212,7 +236,10 @@ exports.seed = function(knex, Promise) {
           // If no Review data Exists, then user has option of Making a Review. 
           // review_id: 9   Changing to ship_id as join in Reviews Table 
           // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
-          // because there can be many reviews for 1 ship         
+          // because there can be many reviews for 1 ship
+          
+          // I believe that join is from ships to reviews because the review can only be picked up from correct ship id
+          review_id: 'reviews.id'
         },
         {
           id: 10,
@@ -236,6 +263,9 @@ exports.seed = function(knex, Promise) {
           // review_id: 10   Changing to ship_id as join in Reviews Table
           // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
           // because there can be many reviews for 1 ship
+
+          // I believe that join is from ships to reviews because the review can only be picked up from correct ship id
+          review_id: 'reviews.id'
         },
         {
           id: 11,
@@ -259,6 +289,9 @@ exports.seed = function(knex, Promise) {
           // review_id: 11   Changing to ship_id as join in Reviews Table
           // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
           // because there can be many reviews for 1 ship
+
+          // I believe that join is from ships to reviews because the review can only be picked up from correct ship id
+          review_id: 'reviews.id'
         },
         {
           id: 12,
@@ -281,7 +314,10 @@ exports.seed = function(knex, Promise) {
           // If no Review data Exists, then user has option of Making a Review.
           // review_id: 12   Changing to ship_id as join in Reviews Table 
           // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
-          // because there can be many reviews for 1 ship         
+          // because there can be many reviews for 1 ship
+          
+          // I believe that join is from ships to reviews because the review can only be picked up from correct ship id
+          review_id: 'reviews.id'
         },
         {
           id: 13,
@@ -304,7 +340,10 @@ exports.seed = function(knex, Promise) {
           // If no Review data Exists, then user has option of Making a Review. 
           // review_id: 13   Changing to ship_id as join in Reviews Table     
           // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
-          // because there can be many reviews for 1 ship     
+          // because there can be many reviews for 1 ship
+          
+          // I believe that join is from ships to reviews because the review can only be picked up from correct ship id
+          review_id: 'reviews.id'
         },
         {
           id: 14,
@@ -327,7 +366,10 @@ exports.seed = function(knex, Promise) {
           // If no Review data Exists, then user has option of Making a Review.
           // review_id: 14   Changing to ship_id as join in Reviews Table  
           // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
-          // because there can be many reviews for 1 ship        
+          // because there can be many reviews for 1 ship
+          
+          // I believe that join is from ships to reviews because the review can only be picked up from correct ship id
+          review_id: 'reviews.id'
         },
         {
           id: 15,
@@ -351,6 +393,9 @@ exports.seed = function(knex, Promise) {
           // review_id: 15   Changing to ship_id as join in Reviews Table
           // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
           // because there can be many reviews for 1 ship
+
+          // I believe that join is from ships to reviews because the review can only be picked up from correct ship id
+          review_id: 'reviews.id'
         },
         {
           id: 16,
@@ -374,6 +419,9 @@ exports.seed = function(knex, Promise) {
           // review_id: 16   Changing to ship_id as join in Reviews Table
           // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
           // because there can be many reviews for 1 ship
+
+          // I believe that join is from ships to reviews because the review can only be picked up from correct ship id
+          review_id: 'reviews.id'
         },
         {
           id: 17,
@@ -397,6 +445,9 @@ exports.seed = function(knex, Promise) {
           // review_id: 17   Changing to ship_id as join in Reviews Table
           // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
           // because there can be many reviews for 1 ship
+
+          // I believe that join is from ships to reviews because the review can only be picked up from correct ship id
+          review_id: 'reviews.id'
         },
         {
           id: 18,
@@ -419,7 +470,10 @@ exports.seed = function(knex, Promise) {
           // If no Review data Exists, then user has option of Making a Review. 
           // review_id: 18   Changing to ship_id as join in Reviews Table
           // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
-          // because there can be many reviews for 1 ship          
+          // because there can be many reviews for 1 ship
+          
+          // I believe that join is from ships to reviews because the review can only be picked up from correct ship id
+          review_id: 'reviews.id'
         },
         {
           id: 19,
@@ -442,7 +496,10 @@ exports.seed = function(knex, Promise) {
           // If no Review data Exists, then user has option of Making a Review. 
           // review_id: 19   Changing to ship_id as join in Reviews Table
           // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
-          // because there can be many reviews for 1 ship           
+          // because there can be many reviews for 1 ship
+          
+          // I believe that join is from ships to reviews because the review can only be picked up from correct ship id
+          review_id: 'reviews.id'
         },
         {
           id: 20,
@@ -466,6 +523,9 @@ exports.seed = function(knex, Promise) {
           // review_id: 20   Changing to ship_id as join in Reviews Table 
           // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
           // because there can be many reviews for 1 ship
+
+          // I believe that join is from ships to reviews because the review can only be picked up from correct ship id
+          review_id: 'reviews.id'
         },
         {
           id: 21,
@@ -489,6 +549,9 @@ exports.seed = function(knex, Promise) {
           // review_id: 21   Changing to ship_id as join in Reviews Table
           // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
           // because there can be many reviews for 1 ship
+
+          // I believe that join is from ships to reviews because the review can only be picked up from correct ship id
+          review_id: 'reviews.id'
         },
         {
           id: 22,
@@ -511,7 +574,10 @@ exports.seed = function(knex, Promise) {
           // If no Review data Exists, then user has option of Making a Review. 
           // review_id: 22   Changing to ship_id as join in Reviews Table 
           // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
-          // because there can be many reviews for 1 ship      
+          // because there can be many reviews for 1 ship
+          
+          // I believe that join is from ships to reviews because the review can only be picked up from correct ship id
+          review_id: 'reviews.id'
         },
         {
           id: 23,
@@ -536,6 +602,8 @@ exports.seed = function(knex, Promise) {
           // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
           // because there can be many reviews for 1 ship
 
+          // I believe that join is from ships to reviews because the review can only be picked up from correct ship id
+          review_id: 'reviews.id'
         },
         {
           id: 24,
@@ -558,7 +626,10 @@ exports.seed = function(knex, Promise) {
           // If no Review data Exists, then user has option of Making a Review. 
           // review_id: 24   Changing to ship_id as join in Reviews Table  
           // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
-          // because there can be many reviews for 1 ship      
+          // because there can be many reviews for 1 ship
+          
+          // I believe that join is from ships to reviews because the review can only be picked up from correct ship id
+          review_id: 'reviews.id'
         },
         {
           id: 25,
@@ -581,7 +652,10 @@ exports.seed = function(knex, Promise) {
           // If no Review data Exists, then user has option of Making a Review. 
           // review_id: 25   Changing to ship_id as join in Reviews Table   
           // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
-          // because there can be many reviews for 1 ship       
+          // because there can be many reviews for 1 ship
+          
+          // I believe that join is from ships to reviews because the review can only be picked up from correct ship id
+          review_id: 'reviews.id'
         },
         {
           id: 26,
@@ -604,7 +678,10 @@ exports.seed = function(knex, Promise) {
           // If no Review data Exists, then user has option of Making a Review.
           // review_id: 26   Changing to ship_id as join in Reviews Table 
           // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
-          // because there can be many reviews for 1 ship       
+          // because there can be many reviews for 1 ship
+          
+          // I believe that join is from ships to reviews because the review can only be picked up from correct ship id
+          review_id: 'reviews.id'
         },
         {
           id: 27,
@@ -627,7 +704,10 @@ exports.seed = function(knex, Promise) {
           // If no Review data Exists, then user has option of Making a Review. 
           // review_id: 27   Changing to ship_id as join in Reviews Table 
           // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
-          // because there can be many reviews for 1 ship       
+          // because there can be many reviews for 1 ship
+          
+          // I believe that join is from ships to reviews because the review can only be picked up from correct ship id
+          review_id: 'reviews.id'
         },
         {
           id: 28,
@@ -650,7 +730,10 @@ exports.seed = function(knex, Promise) {
           // If no Review data Exists, then user has option of Making a Review. 
           // review_id: 28   Changing to ship_id as join in Reviews Table      
           // review_id in ship table, is now replaced with ship_id as foreign key, in reviews table
-          // because there can be many reviews for 1 ship  
+          // because there can be many reviews for 1 ship
+          
+          // I believe that join is from ships to reviews because the review can only be picked up from correct ship id
+          review_id: 'reviews.id'
         }
       ]);
     });

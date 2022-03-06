@@ -22,6 +22,9 @@
             // There can be many reviews for 1 ship.
             // table.integer('review_id')
 
+            // Change for joins from ships to reviews table instead of what is used above .
+            // I think join can only happen this way because the correct ship is picked from it's cruise line before the join process.
+            table.integer('review_id')
         })
     };
     

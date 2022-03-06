@@ -27,7 +27,8 @@ exports.up = function(knex, Promise) {
         // With initial review, there is only one review per ship. 
         // However, there can be many reviews for 1 ship and this only comes into play when adding reviews.
         // However, because of this, I think ship_id in reviews table should be the join, not review_id in ships table.
-        table.integer('ship_id')
+        // table.integer('ship_id')
+        //Remove join from Reviews to Ships Table, because Join is now in Ships table. 
 
     })
 };

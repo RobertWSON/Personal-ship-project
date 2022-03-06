@@ -25,7 +25,8 @@ class Ship extends React.Component  {
             Height,
             Loaded_Displacement,
             Deadweight,
-            Booking
+            Booking,
+            review_id
         } = this.props
         
         // The ShipName constant is used to reference to a Ship Name Heading on the Cruise Line Review Page. 
@@ -102,7 +103,7 @@ class Ship extends React.Component  {
                 On second reflection I think maybe no prop needs to be passed because joins are picked up through dbreviews database file. */}
                 
                 {/* First tried ship_name.id key */}
-                <FindReview key={ship_name.id}/>
+                <FindReview key={review_id}/>
                 {/* <FindReview key={ship_id}/> */}
 
                 {/* FindReview component helps finds a Review.
