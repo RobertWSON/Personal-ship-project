@@ -1,7 +1,5 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-
-
 import FindReview from './FindReview'
 
 
@@ -26,6 +24,7 @@ class Ship extends React.Component  {
             Loaded_Displacement,
             Deadweight,
             Booking,
+            // Destructure id prop for reviews
             review_id
         } = this.props
         
@@ -83,7 +82,6 @@ class Ship extends React.Component  {
                 <br/> 
 
 
-
                 <button className = "addReview">
                     Make a Review
                 </button>
@@ -103,7 +101,9 @@ class Ship extends React.Component  {
                 On second reflection I think maybe no prop needs to be passed because joins are picked up through dbreviews database file. */}
                 
                 {/* First tried ship_name.id key */}
-                <FindReview key={review_id}/>
+
+                {/* Passing shipId prop to FindReview component */}
+                <FindReview shipId={review_id}/>  
                 {/* <FindReview key={ship_id}/> */}
 
                 {/* FindReview component helps finds a Review.

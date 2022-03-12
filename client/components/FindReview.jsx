@@ -9,7 +9,8 @@ class FindReview extends React.Component    {
         super(props)
 
         this.state = {
-            reviews: false
+            // Initialize reviews as an empty Array. 
+            reviews: []
         }
         this.setUpReviews = this.setUpReviews.bind(this)
     }
@@ -22,7 +23,7 @@ class FindReview extends React.Component    {
     setUpReviews()   {
         console.log('getReviews')
         // Line below gets the getReviews function from api.
-        getReviews()
+        getReviews(this.props.review_id)
         //.then get a response from finding reviews from database.
         .then(res   =>  {
             this.setState({
@@ -35,7 +36,8 @@ class FindReview extends React.Component    {
     }
 
     render()    {
-        if (this.state.reviews == true)
+
+        // if (this.state.reviews == null)
         
         return  (
 

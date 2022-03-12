@@ -31,7 +31,7 @@ exports.seed = function(knex, Promise) {
           // because there can be many reviews for 1 ship 
           
           // I believe that join is from ships to reviews because the review can only be picked up from correct ship id
-          review_id: 'reviews.id'
+          review_id: '1'
         },
         {
           id: 2,
@@ -57,7 +57,7 @@ exports.seed = function(knex, Promise) {
           // because there can be many reviews for 1 ship
 
           // I believe that join is from ships to reviews because the review can only be picked up from correct ship id
-          review_id: 'reviews.id'
+          review_id: '2'
         },
         {
           id: 3,
@@ -83,7 +83,7 @@ exports.seed = function(knex, Promise) {
           // because there can be many reviews for 1 ship
 
           // I believe that join is from ships to reviews because the review can only be picked up from correct ship id
-          review_id: 'reviews.id'
+          review_id: '3'
         },
         {
           id: 4,
@@ -109,7 +109,7 @@ exports.seed = function(knex, Promise) {
           // because there can be many reviews for 1 ship   
           
           // I believe that join is from ships to reviews because the review can only be picked up from correct ship id
-          review_id: 'reviews.id'
+          review_id: '4'
         },
         {
           id: 5,
@@ -135,7 +135,7 @@ exports.seed = function(knex, Promise) {
           // because there can be many reviews for 1 ship
           
           // I believe that join is from ships to reviews because the review can only be picked up from correct ship id
-          review_id: 'reviews.id'
+          review_id: '5'
         },
         {
           id: 6,
@@ -161,7 +161,7 @@ exports.seed = function(knex, Promise) {
           // because there can be many reviews for 1 ship
 
           // I believe that join is from ships to reviews because the review can only be picked up from correct ship id
-          review_id: 'reviews.id'
+          review_id: '6'
         },
         {
           id: 7,
@@ -187,7 +187,7 @@ exports.seed = function(knex, Promise) {
           // because there can be many reviews for 1 ship
           
           // I believe that join is from ships to reviews because the review can only be picked up from correct ship id
-          review_id: 'reviews.id'
+          review_id: '7'
         },
         {
           id: 8,
@@ -213,7 +213,7 @@ exports.seed = function(knex, Promise) {
           // because there can be many reviews for 1 ship
 
           // I believe that join is from ships to reviews because the review can only be picked up from correct ship id
-          review_id: 'reviews.id'
+          review_id: '8'
         },
         {
           id: 9,
@@ -239,7 +239,7 @@ exports.seed = function(knex, Promise) {
           // because there can be many reviews for 1 ship
           
           // I believe that join is from ships to reviews because the review can only be picked up from correct ship id
-          review_id: 'reviews.id'
+          review_id: '9'
         },
         {
           id: 10,
@@ -265,7 +265,7 @@ exports.seed = function(knex, Promise) {
           // because there can be many reviews for 1 ship
 
           // I believe that join is from ships to reviews because the review can only be picked up from correct ship id
-          review_id: 'reviews.id'
+          review_id: '10'
         },
         {
           id: 11,
@@ -291,7 +291,7 @@ exports.seed = function(knex, Promise) {
           // because there can be many reviews for 1 ship
 
           // I believe that join is from ships to reviews because the review can only be picked up from correct ship id
-          review_id: 'reviews.id'
+          review_id: '11'
         },
         {
           id: 12,
@@ -317,7 +317,7 @@ exports.seed = function(knex, Promise) {
           // because there can be many reviews for 1 ship
           
           // I believe that join is from ships to reviews because the review can only be picked up from correct ship id
-          review_id: 'reviews.id'
+          review_id: '12'
         },
         {
           id: 13,
@@ -343,7 +343,7 @@ exports.seed = function(knex, Promise) {
           // because there can be many reviews for 1 ship
           
           // I believe that join is from ships to reviews because the review can only be picked up from correct ship id
-          review_id: 'reviews.id'
+          review_id: '13'
         },
         {
           id: 14,
@@ -369,7 +369,7 @@ exports.seed = function(knex, Promise) {
           // because there can be many reviews for 1 ship
           
           // I believe that join is from ships to reviews because the review can only be picked up from correct ship id
-          review_id: 'reviews.id'
+          review_id: '14'
         },
         {
           id: 15,
@@ -395,7 +395,7 @@ exports.seed = function(knex, Promise) {
           // because there can be many reviews for 1 ship
 
           // I believe that join is from ships to reviews because the review can only be picked up from correct ship id
-          review_id: 'reviews.id'
+          review_id: '15'
         },
         {
           id: 16,
@@ -421,7 +421,7 @@ exports.seed = function(knex, Promise) {
           // because there can be many reviews for 1 ship
 
           // I believe that join is from ships to reviews because the review can only be picked up from correct ship id
-          review_id: 'reviews.id'
+          review_id: '16'
         },
         {
           id: 17,
@@ -447,7 +447,7 @@ exports.seed = function(knex, Promise) {
           // because there can be many reviews for 1 ship
 
           // I believe that join is from ships to reviews because the review can only be picked up from correct ship id
-          review_id: 'reviews.id'
+          review_id: '17'
         },
         {
           id: 18,
@@ -473,7 +473,7 @@ exports.seed = function(knex, Promise) {
           // because there can be many reviews for 1 ship
           
           // I believe that join is from ships to reviews because the review can only be picked up from correct ship id
-          review_id: 'reviews.id'
+          review_id: '18'
         },
         {
           id: 19,
@@ -499,7 +499,7 @@ exports.seed = function(knex, Promise) {
           // because there can be many reviews for 1 ship
           
           // I believe that join is from ships to reviews because the review can only be picked up from correct ship id
-          review_id: 'reviews.id'
+          review_id: '19'
         },
         {
           id: 20,
@@ -525,7 +525,7 @@ exports.seed = function(knex, Promise) {
           // because there can be many reviews for 1 ship
 
           // I believe that join is from ships to reviews because the review can only be picked up from correct ship id
-          review_id: 'reviews.id'
+          review_id: '20'
         },
         {
           id: 21,
@@ -551,7 +551,7 @@ exports.seed = function(knex, Promise) {
           // because there can be many reviews for 1 ship
 
           // I believe that join is from ships to reviews because the review can only be picked up from correct ship id
-          review_id: 'reviews.id'
+          review_id: '21'
         },
         {
           id: 22,
@@ -577,7 +577,7 @@ exports.seed = function(knex, Promise) {
           // because there can be many reviews for 1 ship
           
           // I believe that join is from ships to reviews because the review can only be picked up from correct ship id
-          review_id: 'reviews.id'
+          review_id: '22'
         },
         {
           id: 23,
@@ -603,7 +603,7 @@ exports.seed = function(knex, Promise) {
           // because there can be many reviews for 1 ship
 
           // I believe that join is from ships to reviews because the review can only be picked up from correct ship id
-          review_id: 'reviews.id'
+          review_id: '23'
         },
         {
           id: 24,
@@ -629,7 +629,7 @@ exports.seed = function(knex, Promise) {
           // because there can be many reviews for 1 ship
           
           // I believe that join is from ships to reviews because the review can only be picked up from correct ship id
-          review_id: 'reviews.id'
+          review_id: '24'
         },
         {
           id: 25,
@@ -655,7 +655,7 @@ exports.seed = function(knex, Promise) {
           // because there can be many reviews for 1 ship
           
           // I believe that join is from ships to reviews because the review can only be picked up from correct ship id
-          review_id: 'reviews.id'
+          review_id: '25'
         },
         {
           id: 26,
@@ -681,7 +681,7 @@ exports.seed = function(knex, Promise) {
           // because there can be many reviews for 1 ship
           
           // I believe that join is from ships to reviews because the review can only be picked up from correct ship id
-          review_id: 'reviews.id'
+          review_id: '26'
         },
         {
           id: 27,
@@ -707,7 +707,7 @@ exports.seed = function(knex, Promise) {
           // because there can be many reviews for 1 ship
           
           // I believe that join is from ships to reviews because the review can only be picked up from correct ship id
-          review_id: 'reviews.id'
+          review_id: '27'
         },
         {
           id: 28,
@@ -733,7 +733,7 @@ exports.seed = function(knex, Promise) {
           // because there can be many reviews for 1 ship
           
           // I believe that join is from ships to reviews because the review can only be picked up from correct ship id
-          review_id: 'reviews.id'
+          review_id: '28'
         }
       ]);
     });
