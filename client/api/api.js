@@ -11,26 +11,30 @@ import request from 'superagent'
 // export function getReview(cruise_line)  {
 // May not need cruise_line passed as prop because review details get picked up by review.id in FindReview 
 // and join in databse dbreviews file
-export function getReviews()    {
 
-    console.log('client/api/api.js getReviews API Endpoint Called')
+// Code that is not commented below
+// export function getReviews()    {
 
+//     console.log('client/api/api.js getReviews API Endpoint Called')
+
+    // Commented code below
     // return request.get(`/v1/reviews/${review_id or ship_id}`)
     // return request.get(`/v1/reviews/${review_id}`)   review_id not needed in v1 route
     // return request.get(`/v1/reviews/${cruise_line}`) 
 
     // may need to not use cruise_line as prop 
-    return request.get(`/v1/reviews`)
-        .then(res =>  {
-            const reviews = res.body
-            console.log('Got Existing Reviews! client/api/api.js', reviews)
-            return reviews
-        })
-        .catch(error => {
-            // This logs any errors caught, while debugging
-            console.log('caught error in client/api/api.js getReviews', error)
-        })
-}
+// Code that is not commented    
+//     return request.get(`/v1/reviews`)
+//         .then(res =>  {
+//             const reviews = res.body
+//             console.log('Got Existing Reviews! client/api/api.js', reviews)
+//             return reviews
+//         })
+//         .catch(error => {
+//             This logs any errors caught, while debugging (this is commented code)
+//             console.log('caught error in client/api/api.js getReviews', error)
+//         })
+// }
 
 //This is api for when Cruise Line Headings appear on Cruise Lines Page.
 export function getCruiseLines()  {

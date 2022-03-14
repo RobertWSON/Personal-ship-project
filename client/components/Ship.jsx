@@ -1,6 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import FindReview from './FindReview'
+// import ReviewButton from './ReviewButton'
+// import FindReview from './FindReview'
 
 
 class Ship extends React.Component  {
@@ -25,7 +26,7 @@ class Ship extends React.Component  {
             Deadweight,
             Booking,
             // Destructure id prop for reviews
-            review_id
+            // review_id
         } = this.props
         
         // The ShipName constant is used to reference to a Ship Name Heading on the Cruise Line Review Page. 
@@ -86,30 +87,19 @@ class Ship extends React.Component  {
                     Make a Review
                 </button>
 
-                {/* I think rather than a button it should be a Link disguised as a button.
-                <Link className = "addReview" to = ></Link> */}
-           
-                {/* The user can click on Make a Review button to add a review for a ships review page. 
-                It does not matter if a review exists or not for this to happen. 
-                When user makes a Review, a new page opens in a separate window allowing user to fill out a form 
-                and then submit a review. 
-                The Users new Review gets diplayed on a ships Review page 
-                eg http://localhost:3000/cruiselines/Celestyal_Cruises#Celestyal_Crystal  */}   
+                {/* Go to ReviewButton Component , so that state is controlled when a user clicks Make a Review button */}
 
-                {/* <FindReview Find={review_id}/> */}
-                {/* At first I thought that review_id was involved to make connection from this ship component to FindReview.
-                On second reflection I think maybe no prop needs to be passed because joins are picked up through dbreviews database file. */}
-                
-                {/* First tried ship_name.id key */}
+                {/* Comment below for now, as it is not working */}
+                {/* <div key = {this.props} className="addReview"   
+                    <ReviewButton></ReviewButton>
+                </div>
 
-                {/* Passing shipId prop to FindReview component */}
-                <FindReview shipId={review_id}/>  
-                {/* <FindReview key={ship_id}/> */}
+                <FindReview shipId={review_id}/>   */}
 
                 {/* FindReview component helps finds a Review.
                 2 Conditions, 
                 If an Intial review exists from reviews seeds file, then it will be displayed here.
-                The user can add a review for a ships review page.  */}
+                or after user has made a new review, it gets added here  */}
 
             </div>
 
