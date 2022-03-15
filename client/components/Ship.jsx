@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-// import ReviewButton from './ReviewButton'
+import ReviewButton from './ReviewButton'
 // import FindReview from './FindReview'
 
 
@@ -83,9 +83,23 @@ class Ship extends React.Component  {
                 <br/> 
 
 
-                <button className = "addReview">
+                <button className = "addReview"
+                    component={ReviewButton} 
+                    to= {{
+                        pathname: `/cruiselines/${encodedCruiseline}${encodedShipName}/addreview`,
+                        state: this.props}}
+                    >
                     Make a Review
-                </button>
+                </button> 
+
+                {/* <ReviewButtton key = {props}><button className = "addReview">
+                    <Link to= {{
+                            pathname: `/cruiselines/${encodedCruiseline}${encodedShipName}/addreview`,
+                            state: this.props}}>
+                            Make a Review
+                    </Link>
+                    </button>
+                </ReviewButtton> */}
 
                 {/* Go to ReviewButton Component , so that state is controlled when a user clicks Make a Review button */}
 
