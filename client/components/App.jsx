@@ -16,6 +16,9 @@ import FindClassicPt2 from './FindClassicPt2'
 import CruiseLines from './CruiseLines'
 // Cruise Ship Review page
 import Review from './Review'
+// Route to Form page for adding a review
+import ReviewButton  from './ReviewButton'
+
 // A Ship Terms page to help understand all ship terms
 import ShipTerms from './ShipTerms'
 
@@ -45,7 +48,10 @@ class App extends React.Component {
               {/* Route for the Review of each ship on it's Cruise Line page.  
               Recommended by Ricky Sullivan from slack, as it passes a param. */}
               <Route path = '/cruiselines/:cruise_line' component={Review}/>
-        
+              
+              {/* Route for displaying Review Form for user to fill out information that will be displayed. */}
+              <Route path = '/cruiselines/:cruise_line/ship_name/addreview' component={ReviewButton}/>
+
               {/* Ship Term Route Added, but not going to a new page yet. */}
               <Route path = '/cruiselines/:cruise_line/shipterms' component={ShipTerms}/>
 

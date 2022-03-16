@@ -12,6 +12,7 @@ class Ship extends React.Component  {
     render()    {
 
         const   {
+            cruise_line,
             ship_name,
             img,
             Year, 
@@ -26,12 +27,16 @@ class Ship extends React.Component  {
             Deadweight,
             Booking,
             // Destructure id prop for reviews
-            // review_id
+            //review_id
         } = this.props
         
         // The ShipName constant is used to reference to a Ship Name Heading on the Cruise Line Review Page. 
         // Please note: It is not used to replace all spaces in the url with an underscore "_"
         const encodedShipName = ship_name.replace(/\s/g, '_')
+
+        // The Cruiseline constant is used in the link for Review Button. This is the link for the form page and 
+        // it is used to replace all spaces in cruiseline part of url with an underscore "_"
+        const encodedCruiseline = cruise_line.replace(/\s/g, '_')
 
 
 
@@ -82,33 +87,12 @@ class Ship extends React.Component  {
                 <h3>{ship_name} Reviews:</h3>
                 <br/> 
 
+                <ReviewButton  
+                    destination=`/cruiselines/${encodedCruiseline}/${encodedShipName}/addreview}`
+                    label="Make a Review"
+                /> 
 
-                <button className = "addReview"
-                    component={ReviewButton} 
-                    to= {{
-                        pathname: `/cruiselines/${encodedCruiseline}${encodedShipName}/addreview`,
-                        state: this.props}}
-                    >
-                    Make a Review
-                </button> 
-
-                {/* <ReviewButtton key = {props}><button className = "addReview">
-                    <Link to= {{
-                            pathname: `/cruiselines/${encodedCruiseline}${encodedShipName}/addreview`,
-                            state: this.props}}>
-                            Make a Review
-                    </Link>
-                    </button>
-                </ReviewButtton> */}
-
-                {/* Go to ReviewButton Component , so that state is controlled when a user clicks Make a Review button */}
-
-                {/* Comment below for now, as it is not working */}
-                {/* <div key = {this.props} className="addReview"   
-                    <ReviewButton></ReviewButton>
-                </div>
-
-                <FindReview shipId={review_id}/>   */}
+                {/* <FindReview shipId={review_id}/>  */}
 
                 {/* FindReview component helps finds a Review.
                 2 Conditions, 
