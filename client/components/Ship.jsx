@@ -88,8 +88,8 @@ class Ship extends React.Component  {
                 <br/> 
 
                 <ReviewButton  
-                    destination=`/cruiselines/${encodedCruiseline}/${encodedShipName}/addreview}`
-                    label="Make a Review"
+                    destination={`/cruiselines/${encodedCruiseline}/${encodedShipName}/addreview`}
+                    label={"Make a Review"}
                 /> 
 
                 {/* <FindReview shipId={review_id}/>  */}
