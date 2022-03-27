@@ -15,7 +15,10 @@ class ReviewButton extends React.Component  {
      return  (
          <React.Fragment>
 
-             <Link to={this.props.destination}>{this.props.label}</Link>
+            <div className="makeReview">
+                <Link className="addReview" to={this.props.destination}>{this.props.label}</Link>
+            </div>
+            
 
          </React.Fragment>
         )
