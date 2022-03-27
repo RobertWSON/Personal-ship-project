@@ -507,8 +507,22 @@ div.header h1 {
 } */
 
 .Review {
+    display: flex;
+    /* flex-direction: column; */
+    flex-direction: row;
+    align-content: flex-start;
     align-self: auto;
-    /* float: left; */
+    border: 2px solid darkblue;
+    border-radius: 25px;
+    max-width: 900px;
+    min-width: 40%;
+    height: auto;
+}
+
+.Review >   h3   {
+    color: blue;
+    text-align: center;
+    size: 1em;
 }
 
 
@@ -553,6 +567,25 @@ div.ShipTermsIntro  {
     padding: 1em;
 }
 
+.makeReview {
+    /* display: flex; */
+    /* flex-direction: column; */
+    display: inline-block;
+    box-sizing: border-box;
+    /* float: right; */
+    border: solid;
+    border-width: 1px;
+    border-color: midnightblue;
+    padding: 0.4em;
+    border-radius: 6px;
+    background-color: deepskyblue;
+}
+
+.makeReview >   .addReview  {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 1.1em;
+}
 /* .makeReview  >  .addReview  {
     float: right;
     background-color: deepskyblue;
@@ -560,17 +593,21 @@ div.ShipTermsIntro  {
     /* max-width: 400px */
 /* } */
 
-.addReview  {
+/* .addReview  {
     float: right;
     background-color: deepskyblue;
-    color: whitesmoke;
-    font-size: 1.1em;
+    color: whitesmoke; */
+    /* Take away underlining of text link */
+    /* Comment 2 Lines of code below 
+    text-decoration: none;
+    font-size: 1.1em; */
     /* max-width: 250px; */
+    /* Comment code below
     padding: 0.4em;
     border-radius: 6px;
     border-width: 2px;
     border-color: midnightblue;
-}
+} */
 
 .backButton > .Button {
     float: left;
@@ -587,10 +624,6 @@ div.ShipTermsIntro  {
     /* font-size: 1.2em; */
     font-size: 1.5em;
     text-decoration: none;
-}
-
-.Review {
-    align-content: flex-start;
 }
 
 /* CSS for Booking Button */
@@ -1553,7 +1586,8 @@ worked on text for Links when hovering on it. When you hover on background-color
 
 
 /* Back button to Evolution (Part 1) page */
-.evo1Button > .Button {
+/* Comment Evolution Part 1 Back Button as it not used yet */
+/* .evo1Button > .Button {
     float: left;
     background-color: bisque;
     border-radius: 6px;
@@ -1567,7 +1601,7 @@ worked on text for Links when hovering on it. When you hover on background-color
     color: darkred;
     font-size: 1.5em;
     text-decoration: none;
-}
+} */
 
 /* Back button to Evolution (Part 1) page */
 
@@ -1583,7 +1617,8 @@ worked on text for Links when hovering on it. When you hover on background-color
     max-width: 200px;
 } */
 
-.review > .initial  {
+/* Comment Initial Review area and Review Button for now because not used yet */
+/* .review > .initial  {
     height: 400px;
     max-width: 400px;
 }
@@ -1591,4 +1626,4 @@ worked on text for Links when hovering on it. When you hover on background-color
 .makeReview  >  .writeReview    {
     height: 200px;
     max-width: 200px;
-}
+} */
