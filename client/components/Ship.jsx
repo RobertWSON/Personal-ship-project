@@ -43,7 +43,6 @@ class Ship extends React.Component  {
     return  (
         <React.Fragment>
 
-
           <div className = "reviewContainer">
 
             <div className = "cruiseShip">  
@@ -76,20 +75,22 @@ class Ship extends React.Component  {
                 <h4>Loaded Displacement: {Loaded_Displacement}</h4>
             </div>
 
+            {/* CSS for Cruise Lines Back Button on ./public/main.css (Line 575 to 590)     */}
             <div className = "backButton">
                 <button className = "Button">
                     <Link className = "backLink" to="/cruiselines">Back to Cruise Lines</Link>
                 </button>
-            </div>    
-
-
+            </div>      
+                
+            {/* CSS for Review part on ./public/main.css (Line 592 to 594) 
+            I think this needs improving, align-content: flex-start; maybe not correct   */}
             <div className = "Review">
                 <h3>{ship_name} Reviews:</h3>
                 <br/> 
 
-                <ReviewButton  
+                <ReviewButton 
                     destination={`/cruiselines/${encodedCruiseline}/${encodedShipName}/addreview`}
-                    label={"Make a Review"}
+                    label ={"Make a Review"}
                 /> 
 
                 {/* <FindReview shipId={review_id}/>  */}
@@ -99,8 +100,12 @@ class Ship extends React.Component  {
                 If an Intial review exists from reviews seeds file, then it will be displayed here.
                 or after user has made a new review, it gets added here  */}
 
-            </div>
+                {/* css not used at very end of ./public/main.css for initial review and Make a Review Button.
+                This is Lines 1586 to 1594 and I think I was experimenting on a different branch.  */}
 
+            </div>   
+
+            {/* CSS for Ship Terms Introduction and Link on ./public/main.css (Line 544 to 554)     */}
             <div className="ShipTermsIntro">
                 <p>
                     <b>Ship Terms</b>
@@ -121,14 +126,14 @@ class Ship extends React.Component  {
                     Make a Booking
                 {/* </button> */}
             </a>  
-            </div>    
-            {/* <div className = "bookButton">
+            </div> 
+
+            {/* CSS for Cruise Lines Back Button on ./public/main.css (Line 575 to 590)     */}
+            {/* <div className = "backButton">
                 <button className = "Button">
-                    <a href = {Booking} className = "bookLink" rel = "noopener noreferrer">Make a Booking</a> */}
-                    {/* <Link className = "bookLink" to = {`${Booking}`}>Make a Booking</Link> */}
-                    {/* <ExternalLink className = "bookLink" to = {`${Booking}`}>Make a Booking</ExternalLink>  */}
-                {/* </button>
-            </div> */}
+                    <Link className = "backLink" to="/cruiselines">Back to Cruise Lines</Link>
+                </button>
+            </div>         */}
 
         </div>     
             
