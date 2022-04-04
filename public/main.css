@@ -421,7 +421,9 @@ div.header h1 {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    flex-shrink: inherit;
+
+    /* flex-shrink: inherit; */
+
     /* align-items: flex-start;
     align-items: flex-end; */
     max-width: 1350px;
@@ -506,32 +508,15 @@ div.header h1 {
     float: left;
 } */
 
-.Review {
-    display: flex;
-    /* flex-direction: column; */
-    flex-direction: row;
-    align-content: flex-start;
-    align-self: auto;
-    border: 2px solid darkblue;
-    border-radius: 25px;
-    max-width: 900px;
-    min-width: 40%;
-    height: auto;
-}
-
-.Review >   h3   {
-    color: blue;
-    text-align: center;
-    size: 1em;
-}
-
-
-div.ShipDetails {
+.ShipDetails {
     float: right;
+
     /* align-content: left; 
     justify-content: left */
     /* position: absolute; */
-    max-width: 500px;
+
+    /* max-width: 700px; */
+    max-width: 880px;
     position: relative; 
     padding: 1.5em;
     border: solid;
@@ -541,47 +526,56 @@ div.ShipDetails {
     background-color: aliceblue;
 }
 
-div.ShipDetails h4  {
+.ShipDetails h4  {
     color: black
 
 }
 
-div.ShipDetails p   {
+.ShipDetails p   {
     color: slategrey
 }
 
-div.ShipTerms   {
-    float: right;
-    text-align: left
+
+.Review {
+    display: flex;
+    /* flex-direction: column; */
+    flex-direction: row;
+    /* align-content: flex-start;
+    align-self: auto; */
+    flex-wrap: wrap;
+    border: 2px solid darkblue;
+    border-radius: 25px;
+    max-width: 900px;
+    min-width: 40%;
+    height: auto;
 }
 
-div.ShipTermsIntro  {
-    /* last Elements ends the flexing for the flexbox */
-    /* align-items: flex-end; */
-    float: right;
-    border: solid;
-    border-width: 2px;
-    border-color: peru;
-    border-radius: 10px;
-    background-color: beige;
-    padding: 1em;
+/* .Review >   h3   { */
+    .Review >   .shipReview {
+    color: blue;
+    text-align: center;
+    max-width: 600px;
+    size: 1em;
 }
-
-.makeReview {
+.Review >   .makeReview {
     /* display: flex; */
     /* flex-direction: column; */
-    display: inline-block;
-    box-sizing: border-box;
+
+    /* display: inline-block; */
+    /* box-sizing: border-box; */
+
     /* float: right; */
+    flex-wrap: wrap;
     border: solid;
-    border-width: 1px;
     border-color: midnightblue;
     padding: 0.4em;
+    border-width: 2px;
     border-radius: 6px;
     background-color: deepskyblue;
+
 }
 
-.makeReview >   .addReview  {
+.Review >   .makeReview >   .addReview  {
     color: whitesmoke;
     text-decoration: none;
     font-size: 1.1em;
@@ -609,8 +603,27 @@ div.ShipTermsIntro  {
     border-color: midnightblue;
 } */
 
-.backButton > .Button {
-    float: left;
+/* Experimental div where Reviews are found and displayed */
+.Review >   .reviewFind {
+    background-color: cornsilk;
+    max-width: 500px;
+    position: relative; 
+    padding: 1.5em;
+    border: 1px solid;
+    border-width: 2px;
+    border-color: lightgoldenrodyellow;
+    border-radius: 2px;
+    background-color: beige;
+}
+
+.reviewHead {
+    color: brown;
+}
+
+
+/* CSS for Back to Cruise Lines Button */
+.Review >   .backButton > .Button {
+    /* float: left; */
     background-color: yellow;
     border-radius: 6px;
     border-width: 2px;
@@ -618,13 +631,46 @@ div.ShipTermsIntro  {
     padding: 0.4em;
 }
 
-.backButton > .Button > .backLink {
-    float: left;
+.Review >   .backButton > .Button > .backLink {
+    /* float: left; */
     color: peru;
     /* font-size: 1.2em; */
     font-size: 1.5em;
     text-decoration: none;
 }
+
+/* CSS for bookiing info and Ship Terms Intro with Link */
+.Booking    {
+    background-color: lightyellow;
+    border-radius: 6px;
+    border-width: 2px;
+    border-color: firebrick;
+    padding: 0.4em;
+}
+
+.Booking    >   .bookLink   {
+    color: goldenrod;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+.ShipTerms   {
+    float: right;
+    text-align: left
+}
+
+.ShipTermsIntro  {
+    /* last Elements ends the flexing for the flexbox */
+    /* align-items: flex-end; */
+    float: right;
+    border: solid;
+    border-width: 2px;
+    border-color: peru;
+    border-radius: 10px;
+    background-color: beige;
+    padding: 1em;
+}
+
 
 /* CSS for Booking Button */
 /* .bookButton  >  .Button   {
