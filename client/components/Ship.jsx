@@ -63,35 +63,32 @@ class Ship extends React.Component  {
                 <h4>Year: {Year}</h4>
                 <h4>Passenger Capacity (Full): {Passenger_Full_Capacity}</h4>
                 <h4>
-                    Passenger Capacity (Double Occupancy):
-                    {Double_Occupancy_Passenger_Capacity}
+                    Passenger Capacity (Double Occupancy): {Double_Occupancy_Passenger_Capacity}
                 </h4>
                 <h4>Gross Tonnage: {Gross_Tonnage}</h4>
-                <h4>Length: {Length}</h4>
-                <h4>Beam: {Beam}</h4>
-                <h4>Draft: {Draft}</h4>
-                <h4>Height: {Height}</h4>
-                <h4>Deadweight: {Deadweight}</h4>
-                <h4>Loaded Displacement: {Loaded_Displacement}</h4>
+                <h4>Length: {Length} m</h4>
+                <h4>Beam: {Beam} m</h4>
+                <h4>Draft: {Draft} m</h4>
+                <h4>Height: {Height} m</h4>
+                <h4>Deadweight: {Deadweight} Tonnes</h4>
+                <h4>Loaded Displacement: {Loaded_Displacement} Tonnes</h4>
             </div>
 
-            {/* CSS for Cruise Lines Back Button on ./public/main.css (Line 575 to 590)     */}
-            <div className = "backButton">
-                <button className = "Button">
-                    <Link className = "backLink" to="/cruiselines">Back to Cruise Lines</Link>
-                </button>
-            </div>      
                 
             {/* CSS for Review part on ./public/main.css (Line 592 to 594) 
             I think this needs improving, align-content: flex-start; maybe not correct   */}
             <div className = "Review">
-                <h3>{ship_name} Reviews:</h3>
+                <h3 className = "shipReview">{ship_name} Reviews:</h3>
                 <br/> 
 
                 <ReviewButton 
                     destination={`/cruiselines/${encodedCruiseline}/${encodedShipName}/addreview`}
                     label ={"Make a Review"}
                 /> 
+
+                <div className = "reviewFind">
+                    <h4 className = "reviewHead">Finding a Review</h4>
+                </div>
 
                 {/* <FindReview shipId={review_id}/>  */}
 
@@ -103,7 +100,34 @@ class Ship extends React.Component  {
                 {/* css not used at very end of ./public/main.css for initial review and Make a Review Button.
                 This is Lines 1586 to 1594 and I think I was experimenting on a different branch.  */}
 
+                {/* CSS for Cruise Lines Back Button on ./public/main.css (Line 575 to 590)     */}
+                <div className = "backButton">
+                    <button className = "Button">
+                        <Link className = "backLink" to="/cruiselines">Back to Cruise Lines</Link>
+                    </button>
+                </div> 
+
             </div>   
+
+
+            {/* CSS for Booking button Link on line 637     */}
+            <div className = "Booking">    
+                <a href = {Booking} 
+                    className = "bookLink" 
+                    rel = "noopener noreferrer"
+                    target= "_blank">
+                    {/* <button className = "Button"> */}
+                    Make a Booking
+                    {/* </button> */}
+                </a>  
+            </div> 
+
+            {/* CSS for Cruise Lines Back Button on ./public/main.css (Line 575 to 590)     */}
+            {/* <div className = "backButton">
+                <button className = "Button">
+                    <Link className = "backLink" to="/cruiselines">Back to Cruise Lines</Link>
+                </button>
+            </div>         */}
 
             {/* CSS for Ship Terms Introduction and Link on ./public/main.css (Line 544 to 554)     */}
             <div className="ShipTermsIntro">
@@ -116,24 +140,6 @@ class Ship extends React.Component  {
                     <Link to="/cruiselines/shipterms">Here</Link>
                 </p>
             </div>
-
-            <div className = "Booking">    
-            <a href = {Booking} 
-                className = "bookLink" 
-                rel = "noopener noreferrer"
-                target= "_blank">
-                {/* <button className = "Button"> */}
-                    Make a Booking
-                {/* </button> */}
-            </a>  
-            </div> 
-
-            {/* CSS for Cruise Lines Back Button on ./public/main.css (Line 575 to 590)     */}
-            {/* <div className = "backButton">
-                <button className = "Button">
-                    <Link className = "backLink" to="/cruiselines">Back to Cruise Lines</Link>
-                </button>
-            </div>         */}
 
         </div>     
             
