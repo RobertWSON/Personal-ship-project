@@ -1,8 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import ReviewButton from './ReviewButton'
+import ReviewButton from './ReviewButton' //not needed
 // import FindReview from './FindReview'
-
 
 class Ship extends React.Component  {
     constructor(props)  {
@@ -43,70 +42,47 @@ class Ship extends React.Component  {
     return  (
         <React.Fragment>
 
-          <div className = "reviewContainer">
-
-            <div className = "cruiseShip">  
-                {/* The id in the Ship Name Heading is used as a reference to the url for a specific ship name that a 
-                user is reviewing.   */}
-                <h2 className = "ship" id ={encodedShipName}>{ship_name}</h2>
-
-                <div className = "cruiseImage">
-                    <img src ={img} title = {ship_name}/>
+          <div className="reviewContainer">
+            <div className="cruiseShip">  
+                <h2 id={encodedShipName}>{ship_name}</h2>
+                <div className='wrapper'>
+                    <img src={img} title={ship_name}/>
                 </div>
-
             </div>
 
-            <div className="ShipDetails">
-                
+            <div className="shipDetails">
                 <h3>Ship Details</h3>
-
-                <h4>Year: {Year}</h4>
-                <h4>Passenger Capacity (Full): {Passenger_Full_Capacity}</h4>
-                <h4>
-                    Passenger Capacity (Double Occupancy): {Double_Occupancy_Passenger_Capacity}
-                </h4>
-                <h4>Gross Tonnage: {Gross_Tonnage}</h4>
-                <h4>Length: {Length} m</h4>
-                <h4>Beam: {Beam} m</h4>
-                <h4>Draft: {Draft} m</h4>
-                <h4>Height: {Height} m</h4>
-                <h4>Deadweight: {Deadweight} Tonnes</h4>
-                <h4>Loaded Displacement: {Loaded_Displacement} Tonnes</h4>
+                <ul>
+                    <li>Year: {Year}</li>
+                    <li>Passenger Capacity (Full): {Passenger_Full_Capacity}</li>
+                    <li>Passenger Capacity (Double Occupancy): {Double_Occupancy_Passenger_Capacity}</li>
+                    <li>Gross Tonnage: {Gross_Tonnage}</li>
+                    <li>Length: {Length} m</li>
+                    <li>Beam: {Beam} m</li>
+                    <li>Draft: {Draft} m</li>
+                    <li>Height: {Height} m</li>
+                    <li>Deadweight: {Deadweight} Tonnes</li>
+                    <li>Loaded Displacement: {Loaded_Displacement} Tonnes</li>
+                </ul>
             </div>
 
                 
             {/* CSS for Review part on ./public/main.css (Line 592 to 594) 
             I think this needs improving, align-content: flex-start; maybe not correct   */}
-            <div className = "Review">
-                <h3 className = "shipReview">{ship_name} Reviews:</h3>
-                <br/> 
-
-                <ReviewButton 
-                    destination={`/cruiselines/${encodedCruiseline}/${encodedShipName}/addreview`}
-                    label ={"Make a Review"}
-                /> 
-
-                <div className = "reviewFind">
-                    <h4 className = "reviewHead">Finding a Review</h4>
+            <div className="review">
+                <div className="wrapper">
+                    <h3 wdith={100}>{ship_name} Reviews:</h3>
+                    <button>
+                        <Link className="addReview" to={`/cruiselines/${encodedCruiseline}/${encodedShipName}/addreview`}>Make a Review</Link>
+                    </button>
                 </div>
 
-                {/* <FindReview shipId={review_id}/>  */}
-
-                {/* FindReview component helps finds a Review.
-                2 Conditions, 
-                If an Intial review exists from reviews seeds file, then it will be displayed here.
-                or after user has made a new review, it gets added here  */}
-
-                {/* css not used at very end of ./public/main.css for initial review and Make a Review Button.
-                This is Lines 1586 to 1594 and I think I was experimenting on a different branch.  */}
-
-                {/* CSS for Cruise Lines Back Button on ./public/main.css (Line 575 to 590)     */}
-                <div className = "backButton">
-                    <button className = "Button">
+                <div className="wrapper">
+                    <h3>Finding a Review:</h3>
+                    <button>
                         <Link className = "backLink" to="/cruiselines">Back to Cruise Lines</Link>
                     </button>
-                </div> 
-
+                </div>
             </div>   
 
 

@@ -8,7 +8,15 @@ This is a starter project that uses webpack to transpile and bundle ES6 React co
 ```sh
 git clone https://github.com/[your-account]/[your-app].git
 cd [your-app] && yarn
+npm i
+npm 
+npm run db
+npm run dev
 ```
+
+### Tailwind
+ - (How to install)[https://dev.to/saviomartin/set-up-tailwind-in-react-the-fastest-way-2a4d]
+ - 
 
 To start the development server with a watcher that rebuilds your code, run `yarn dev`. The assets built by webpack are placed in `server/public`. This folder is defined as a static folder in an Express.js server that can be started with `npm run server`.
 
