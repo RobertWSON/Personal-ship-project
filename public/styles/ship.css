@@ -51,6 +51,7 @@
 }
 
 .review{
+  grid-column: 1 / span 3;
   background-color: lightgreen;
   border: black 2px solid;
   border-radius: 15px;

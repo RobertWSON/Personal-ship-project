@@ -1,16 +1,24 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import ReviewButton from './ReviewButton' //not needed
+// import ReviewButton from './ReviewButton' //not needed
 // import FindReview from './FindReview'
+import Reviews from './Reviews'
+import ReviewForm from './ReviewForm'
+
 
 class Ship extends React.Component  {
     constructor(props)  {
         super(props)
     }
+
+    state = {
+        toggleReviews: false, 
+        toggleReviewForm: false, 
+    }
     
     render()    {
-
         const   {
+            id,
             cruise_line,
             ship_name,
             img,
@@ -43,13 +51,17 @@ class Ship extends React.Component  {
         <React.Fragment>
 
           <div className="reviewContainer">
+
+
+            {/* Ship Name & Image */}
             <div className="cruiseShip">  
                 <h2 id={encodedShipName}>{ship_name}</h2>
                 <div className='wrapper'>
                     <img src={img} title={ship_name}/>
                 </div>
             </div>
-
+            
+            {/* Ship Details */}
             <div className="shipDetails">
                 <h3>Ship Details</h3>
                 <ul>
@@ -66,26 +78,25 @@ class Ship extends React.Component  {
                 </ul>
             </div>
 
-                
-            {/* CSS for Review part on ./public/main.css (Line 592 to 594) 
-            I think this needs improving, align-content: flex-start; maybe not correct   */}
+            {/* Reviews */}
             <div className="review">
                 <div className="wrapper">
                     <h3 wdith={100}>{ship_name} Reviews:</h3>
-                    <button>
-                        <Link className="addReview" to={`/cruiselines/${encodedCruiseline}/${encodedShipName}/addreview`}>Make a Review</Link>
-                    </button>
+                    <button onClick={() => this.setState({ toggleReviews: !this.state.toggleReviews })}>Show Reviews</button>
+                    <button onClick={() => this.setState({ toggleReviewForm: !this.state.toggleReviewForm })}>Add a Review</button>
                 </div>
 
                 <div className="wrapper">
-                    <h3>Finding a Review:</h3>
-                    <button>
-                        <Link className = "backLink" to="/cruiselines">Back to Cruise Lines</Link>
-                    </button>
+                    {this.state.toggleReviews ? <Reviews shipId={id}/> : ""}
+                </div>
+
+                <div className="wrapper">
+                    {this.state.toggleReviewForm ? <ReviewForm shipId={id}/> : ""}
                 </div>
             </div>   
 
 
+            {/* Make a Booking    */}
             {/* CSS for Booking button Link on line 637     */}
             <div className = "Booking">    
                 <a href = {Booking} 
