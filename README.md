@@ -9,7 +9,6 @@ This is a starter project that uses webpack to transpile and bundle ES6 React co
 git clone https://github.com/[your-account]/[your-app].git
 cd [your-app] && yarn
 npm i
-npm 
 npm run db
 npm run dev
 ```
