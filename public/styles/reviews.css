@@ -66,7 +66,7 @@
     border-radius: 15px;
   }
   
-  .review h3{
+  .review  h3{
     background-color: aqua;
     width: 100%;
   }
@@ -97,12 +97,7 @@
     text-decoration: none;
   }
 
-/* Ship Terms Intro with Link */
-  .ShipTerms   {
-    float: right;
-    text-align: left
-  }
-  
+/* Ship Terms Intro with Link */  
   .ShipTermsIntro  {
     background: fuchsia;
     float: right;
@@ -112,3 +107,9 @@
     border-radius: 10px;
     padding: 1em;
   }
+
+  /* I don't think I need shipTerms class here as it is used in the Ship Terms page */
+  /* .ShipTerms   {
+    float: right;
+    text-align: left
+  } */
