@@ -114,7 +114,7 @@ class Ship extends React.Component  {
                     <br/>
                     If you are interested and want to find out more about
                     <br/>what these ship terms actually mean, then click 
-                    <Link to="/cruiselines/shipterms">Here</Link>
+                    <Link to="/shipterms">Here</Link>
                 </p>
             </div>
         </div>         

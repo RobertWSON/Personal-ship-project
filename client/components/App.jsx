@@ -52,8 +52,8 @@ class App extends React.Component {
               {/* Route for displaying Review Form for user to fill out information that will be displayed. */}
               <Route path = '/cruiselines/:cruise_line/ship_name/addreview' component={ReviewButton}/>
 
-              {/* Ship Term Route Added, but not going to a new page yet. */}
-              <Route path = '/cruiselines/:cruise_line/shipterms' component={ShipTerms}/>
+              {/* Ship Term Route, it just needs to go to it's own separate page. */}
+              <Route path = '/shipterms' component={ShipTerms}/>
 
           </div>  
 
