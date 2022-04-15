@@ -4,7 +4,7 @@ import Ship from './Ship'
 import {getShipsList} from '../api/api'
 
 
-class Review extends React.Component  {
+class ShipList extends React.Component  {
   constructor(props){
     super(props)
 
@@ -63,4 +63,4 @@ class Review extends React.Component  {
 } //end bracket for Review Component
 
 
-export default Review
+export default ShipList
