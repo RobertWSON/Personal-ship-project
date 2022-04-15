@@ -17,7 +17,7 @@ import CruiseLines from './CruiseLines'
 // Cruise Ship Review page
 import ShipList from './ShipList'
 // Route to Form page for adding a review
-import ReviewButton  from './ReviewButton'
+import ReviewForm  from './ReviewForm'
 
 // A Ship Terms page to help understand all ship terms
 import ShipTerms from './ShipTerms'
@@ -50,7 +50,7 @@ class App extends React.Component {
               <Route path = '/cruiselines/:cruise_line' component={ShipList}/>
               
               {/* Route for displaying Review Form for user to fill out information that will be displayed. */}
-              <Route path = '/cruiselines/:cruise_line/ship_name/addreview' component={ReviewButton}/>
+              <Route path = '/cruiselines/:cruise_line/ship_name/addreview' component={ReviewForm}/>
 
               {/* Ship Term Route, it just needs to go to it's own separate page. */}
               <Route path = '/shipterms' component={ShipTerms}/>

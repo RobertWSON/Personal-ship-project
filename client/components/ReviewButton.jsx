@@ -1,28 +1,30 @@
-import React from 'react'
-import {Link} from 'react-router-dom'
+// import React from 'react'
+// import {Link} from 'react-router-dom'
+
+// Will try this not using ReviewButton component for now 
 // import AddReview from './AddReview'
 // import ReviewForm from './ReviewForm'
 
 
-class ReviewButton extends React.Component  {
-    constructor(props)  {
-        super(props)
+// class ReviewButton extends React.Component  {
+//     constructor(props)  {
+//         super(props)
 
-    }
+//     }
 
-    render()  {
+//     render()  {
 
-     return  (
-         <React.Fragment>
+//      return  (
+//          <React.Fragment>
 
-            <button>
-                <Link className="addReview" to={this.props.destination}>{this.props.label}</Link>
-            </button>
+//             <button>
+//                 <Link className="addReview" to={this.props.destination}>{this.props.label}</Link>
+//             </button>
             
 
-         </React.Fragment>
-        )
-    }
-}
+//          </React.Fragment>
+//         )
+//     }
+// }
 
-export default ReviewButton
+// export default ReviewButton
