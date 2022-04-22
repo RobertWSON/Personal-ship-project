@@ -1,3 +1,18 @@
+import React from 'react'
+
+
+function ReviewForm ({shipId, shipName})    {
+
+    return  (
+        <React.Fragment>
+            <p>Write a review for shipId: {shipId}</p>
+            <input type = "text" placeholder = "write your review here"/>
+        </React.Fragment>
+    )
+}
+
+export default ReviewForm
+
 // import React from 'react'
 
 // class ReviewForm extends React.Component    {

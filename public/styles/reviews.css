@@ -60,7 +60,8 @@
   
   /* Review Section 
   (Reviews, Make a Review and Back to Cruise Lines Button) */
-  .review{
+  .review {
+    grid-column: 1 / span 3;
     background-color: lightgreen;
     border: black 2px solid;
     border-radius: 15px;

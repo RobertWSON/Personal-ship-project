@@ -8,6 +8,11 @@ class Ship extends React.Component  {
     constructor(props)  {
         super(props)
     }
+
+    state = {
+        toggleReviews: false,
+        toggleReviewForm: false,
+    }
     
     render()    {
 
@@ -80,19 +85,34 @@ class Ship extends React.Component  {
                 <div className = "wrapper">
                     <h3 width = {100}>{ship_name} Reviews:</h3>
                 
-                    <button> 
-                        <Link to ={`/cruiselines/${encodedCruiseline}/${encodedShipName}/addreview`}>
-                        Make a Review</Link>
+                    <button onClick={() => this.setState({ toggleReviews: !this.state.toggleReviews })}>
+                    Show Reviews
                     </button>
+
+                    <button onClick={() => this.setState({ toggleReviewForm: !this.state.toggleReviewForm })}>    
+                        <Link to ={`/cruiselines/${encodedCruiseline}/${encodedShipName}/addreview`}>
+                        Make a Review
+                        </Link>
+                    </button>
+
                 </div>
 
                 <div className = "wrapper">
+                    {this.state.toggleReviews ? <Reviews shipId={id}/> : ""}
+                </div>
+
+                <div className = "wrapper">
+                    {this.state.toggleReviewForm ? <ReviewForm shipId={id}/> : ""}
+                </div>
+
+                {/* Comment this below and see how it looks */}
+                {/* <div className = "wrapper">
                     <h3>Finding a Review</h3>
 
                     <button>
                         <Link className = "backLink" to="/cruiselines">Back to Cruise Lines</Link>
                     </button>
-                </div> 
+                </div>   */}
             </div>   
 
 
