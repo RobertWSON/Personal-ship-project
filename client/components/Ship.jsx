@@ -2,6 +2,8 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 // import ReviewButton from './ReviewButton' //Maybe not needed
 // import FindReview from './FindReview'
+import Reviews from './Reviews'
+import ReviewForm from './ReviewForm'
 
 
 class Ship extends React.Component  {
