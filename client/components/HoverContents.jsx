@@ -1,5 +1,5 @@
 import React from 'react'
-import {HashLink as Link} from 'react-router-hash-Link'
+import {HashLink as Link} from 'react-router-hash-link'
 
 
 class HoverContents extends React.Component {
