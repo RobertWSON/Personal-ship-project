@@ -1,0 +1,28 @@
+
+/* Page styles */
+.body {
+    display: flex;
+    background-color: antiquewhite; 
+    font-family: 'Work Sans', sans-serif;
+    }
+    
+/* Page Main Headings */
+div.header h1 {
+    text-align: center;
+    color:blue
+}
+
+div.title-image img{
+    width: 400px;    
+}
+
+div.slide img {
+   margin: 0 auto;
+   max-height: 450px
+}
+
+/* Img Code below may not need to be necessary */
+img {
+    max-height: auto;
+    max-width: 800px;
+}

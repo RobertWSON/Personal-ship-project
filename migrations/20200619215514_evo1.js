@@ -3,11 +3,17 @@ exports.up = function(knex, Promise) {
     return knex.schema.createTable('Evo1', table => {
         table.increments('id').primary()
         table.string('classic_ship_name')
-        // table.string('ship_name')
         table.string('img')
         table.string('img_title')
+        table.string('original_ship_name')
+        table.string('early_service_years')
         table.string('service_years')
+        table.string('france_service_years')
+        table.string('pacific_princess_years')
+        table.string('pacific_years')
+        table.string('loveboat_final_year')
         table.string('build_yard')
+        table.string('original_operator')
         table.string('operator')
         table.string('registry_port')
         table.string('cost')
@@ -19,6 +25,7 @@ exports.up = function(knex, Promise) {
         table.string('beam')
         table.string('draft')
         table.string('height')
+        table.string('height_funnel_top') // Used to be called funnel_height
         table.string('speed')
         table.string('deadweight')
         table.string('lightship')
@@ -34,79 +41,77 @@ exports.up = function(knex, Promise) {
         table.string('rudder')
         table.string('rudder_size')
         table.integer('decks')
-        table.string('accessible_decks')
+        table.integer('accessible_decks')
         table.string('bridge_height')
         table.string('bridge_water')
-        table.string('shelter_deck')
+        //Shelter Deck from Titanic, need it here with nothing as a variable for some ships to make this work.
+        table.string('shelter_deck') 
         table.string('bow_bridge')
         table.string('bow_height')
 
-        //France liner details. In 1980 she changed her name to Norway and has a few new details because of this.
-        table.string('france_service_years')
-        table.string('cruise_ship_name')
-        table.string('norway_years')
-        table.string('norway_operator')
-        table.string('conversion_cost')
-        table.string('norway_passengers')
-        table.integer('norway_crew')
-        table.string('norway_gt')
-        table.string('norway_fuel_capacity')
-        table.string('norway_fuel_consume')
-        table.string('norway_fresh_water')
-        table.string('norway_speed')
-        table.string('norway_passenger_decks')
-        table.string('norway_last_name')
-        table.integer('norway_final_year')
-        table.integer('norway_final_gt')
+        // Foreign key for France as Norway cruise ship    
+        // norway_id: '2',
+        // Foreign key for Galileo Galilei as a cruise ship
+        // galileo_id: '2',
+        // Foreign Key Link to these classic ships, for their details when they were a cruise ship
+        // classic_cruise_id: '2', 
+        // Foreign Key Link for when these classic cruise ships were Lengthened to carry more cruise passengers
+        // lengthened_id: '2',
+        // Foreign Key for when a classic cruise ship had a name change during it's time as a Cruise Ship
+        // name_changes_id: '2',
 
-        //Galileo Galilei details. She changed her name several times and has a few new details because of this.
-        table.string('early_service_years')
-        table.string('funnel_height')
-        table.string('galileo_name')
-        table.string('galileo_years')
-        table.string('galileo_gt')
-        table.integer('galileo_passenger_capacity')
-        //Galielo Galilei as Meridian
-        table.string('meridian_name')
-        table.string('meridian_years')
-        table.string('meridian_gt')
-        table.integer('meridian_passenger_capacity')
-        //Galielo Galilei as Sun Vista
-        table.string('gg_last_name')
-        table.string('sunvista_years')
-        table.string('sunvista_gt')
-        table.integer('sunvista_passenger_capacity')
-
-        //Pacific Princess Love boat
-        table.string('original_name')
-        table.string('early_years')
-        table.string('pacific_princess_years')
-        table.string('pacific_years')
-        table.integer('loveboat_final_year')
+        // For each ships horn on either Evolution Part 1 and Evolution Part 2 Pages
         table.string('ship_horn')
-        // table.string("first_para")
-        // table.string("second_para")
-        table.string('early_1st_para')
-        table.string('early_2nd_para')
-        table.string('cruise_1st_para')
-        table.string('cruise_2nd_para')
-        table.string('mem_1st_para')
-        table.string('mem_2nd_para')
-        table.string('plans_para')
-        table.string('final_1st_para')
-        table.string('final_2nd_para')
 
-        table.string('ship_plans')
-        table.string('ship_plans_cont')
+        // Early Div Section for early life of a classic ship (has section id)
+        table.string('early_1st_para')
+        table.string('early_video')
+        table.string('early_2nd_para')    
         table.string('img_trials')
         table.string('img_trials_title')
+        table.string('early_3rd_para')
         table.string('img_early')
         table.string('img_early_title')
+
+        // Cruise Div Section for cruise life of a classic ship (has section id)
+        table.string('cruise_1st_para')
         table.string('img_1stcruise')
         table.string('img_1stcruise_title')
-        table.string('early_video')
+
+        // This part only applies to Evolution Part 2, where some ships there have been lengthened. 
+        // name_before_lengthened: '', lengthened_para: '', img_lengthened: '', img_lengthened_title: '', 
+        // name_after_lengthening: '', afterlengthen_para: '', img_afterlengthened: '', img_afterlengthened_title: '',
+
+        table.string('cruise_2nd_para')
+        table.string('img_2ndcruise')
+        table.string('img_2ndcruise_title')
+        table.string('cruise_3rd_para')
+        table.string('img_3rdcruise')
+        table.string('img_3rdcruise_title')
+        table.string('cruise_4th_para')
+        table.string('img_4thcruise')
+        table.string('img_4thcruise_title')
+        table.string('cruise_5th_para')
+        table.string('img_5thcruise')
+        table.string('img_5thcruise_title')
         table.string('cruise_video')
+
+        // This is the Memorable Moments Div (id = mem)
+        table.string('mem_1st_para')
         table.string('mem_video')
+        table.string('mem_2nd_para')
+
+        // This is the Plans Div (id = plans)
+        table.string('plans_para')
+        table.string('ship_plans')
+        table.string('ship_plans_cont')
+
+        // This is the Final Div (id = final)
+        table.string('final_1st_para')
+        table.string('final_2nd_para')
+        table.string('img_final'), 
+        table.string('img_final_title')
+       
     })
 };
 

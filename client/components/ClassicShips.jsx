@@ -45,7 +45,8 @@ class ClassicShips extends React.Component  {
                 <img src = {img} title = {img_title} />
             </Link> 
 
-            <div className = "evoTextbox">
+             {/* It does not work well with this, so comment for now    */}
+            {/* <div className = "evoTextbox">
                 <div>Find out more on {classic_ship_name} , Click on Image</div>
 
                 <div className = "evoFlex">
@@ -64,9 +65,10 @@ class ClassicShips extends React.Component  {
                     </video>
                 )}    
                 </div>
-            </div>     
+            </div>      */}
 
-            {/* <div style={{
+            {/* Uncomment below        */}
+            <div style={{
                 marginTop: '1em',
                 fontSize: '1em',
                 color: 'darkred'
@@ -102,7 +104,7 @@ class ClassicShips extends React.Component  {
                 )}    
                 </div>       
                
-            </div>          */}
+            </div>         
 
         </React.Fragment>                
     )

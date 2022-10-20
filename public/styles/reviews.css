@@ -1,0 +1,110 @@
+/* Reviews Page CSS */
+
+/* Reviews Page Cruise Line Heading eg Celestyal Cruises */
+.cruiseLine {
+    text-align: center;
+    color: blue;
+}
+
+/* Overall container for each ship */
+.reviewContainer    {
+    background: blanchedalmond;
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    gap: 1%;
+    width: 100%;
+    max-width: 1350px;
+    padding: 1em;
+    margin: 15px auto 0;
+    border: 2px solid burlywood;
+    border-radius: 20px;
+}
+
+/* Cruise Ship heading and image */
+.cruiseShip {
+    grid-column: 1 / span 2;
+    background: lightblue;
+    padding: 1em;
+    border: 2px solid lightseagreen;
+    border-radius: 25px;
+  }
+  
+  .cruiseShip h2{
+    width: 100%;
+    font-size: 30px;
+  }
+  
+  .cruiseShip .wrapper{
+    background-color: red;
+    width: 100%; 
+  }
+  
+  .cruiseShip img{
+    width: 100%; 
+    height: auto;
+    border: 2px solid lightseagreen;
+    border-radius: 25px;
+  }
+  
+  .shipDetails {
+    background: lightgoldenrodyellow; 
+    padding: 1em;
+    border: 2px solid gold;
+    border-radius: 25px;
+  }
+  
+  .shipDetails li{
+    list-style: none;
+    font-weight: 600;
+  }
+  
+  /* Review Section 
+  (Reviews, Make a Review and Back to Cruise Lines Button) */
+  .review {
+    grid-column: 1 / span 3;
+    background-color: lightgreen;
+    border: black 2px solid;
+    border-radius: 15px;
+  }
+  
+  .review  h3{
+    background-color: aqua;
+    width: 100%;
+  }
+  
+  .review .wrapper{
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .review button{
+    background-color: red;
+    width: 20%;
+    height: 100%;
+  }
+  
+  /* CSS for booking info with it's Link */
+  .Booking    {
+    background: orange;
+    border-radius: 6px;
+    border-width: 2px;
+    border-color: firebrick;
+    padding: 0.4em;
+  }
+  
+  .Booking    >   .bookLink   {
+    font-size: 1em;
+    text-decoration: none;
+  }
+
+/* Ship Terms Intro with Link */  
+  .ShipTermsIntro  {
+    background: fuchsia;
+    float: right;
+    border: solid;
+    border-width: 2px;
+    border-color: peru;
+    border-radius: 10px;
+    padding: 1em;
+  }
