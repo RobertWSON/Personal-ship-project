@@ -1262,7 +1262,7 @@ worked on text for Links when hovering on it. When you hover on background-color
     margin: auto 0; 
     border: 1px solid burlywood;
     border-radius: 20px;
-    padding: 20px;
+    padding: 0px;
 }    
 
 /* Anthony McGrath Method */
@@ -1306,12 +1306,22 @@ worked on text for Links when hovering on it. When you hover on background-color
     margin-bottom: 20px;
     /* margin-left: 0px; */
     /* Widen margin-left to try and allow sections below to move up */
-    margin-left: 80px;
-    margin-right: 20px; 
+    /* margin-left: 80px; */
+    /* Try narrowing margin */
+    margin-left: 40px;
+
+    /* margin_right: 20px; Make right margin more, so separates ship specs from ship image */
+    margin-right: 70px; 
     /* max-width: 680px; */
     /* 680px width increased to 750px so that ship image lines up with sections below */
-    max-width: 750px;
-    min-width: 50%;  
+    /* max-width: 750px; */
+    /* Too wide make this 680px */
+    max-width: 680px;
+
+    min-width: 50%;
+    
+    /* Try height auto, so there is no white space between image and padding */
+    /* height: auto; Didn't work */
 }
 
 .classicShip    >   .shipImage  {
@@ -1331,7 +1341,10 @@ worked on text for Links when hovering on it. When you hover on background-color
     max-width: 100%;
     /* width: 680px;  */
     /* 680px width increased to 750px so that ship image lines up with sections below */
-    width: 750px;
+    /* width: 750px; */
+    /* Too wide make this 680px */
+    /* max-width: 680px; this maybe clashes specs with ship image */
+    width: 680px;
     height: auto;  
 }
 /* End of my (Rob Wilkinson) Original Method */
@@ -1376,20 +1389,27 @@ worked on text for Links when hovering on it. When you hover on background-color
 
     /* max-width: 600px; */  
     /* 680px width increased to 750px so that ship image lines up with sections below */
-    max-width: 750px;
+    /* max-width: 750px; Maybe make this narrower at 640px */
+    max-width: 640px;
+
     position: relative;
     
     /* padding: 1.5em;  */
     border: solid;
     border-width: 2px;
-    border-color: aliceblue;
-    border-radius: 10px;
+    /* border-color: aliceblue; try a medium blue that shows up more */
+    border-color: mediumblue;
+
+    /* border-radius: 10px;  May need larger border radius  */
+    border-radius: 20px;
 
     /* Commented on Fiday 28th Aug 2020 and this made it float to the right */
     /* margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 20px;
     margin-right: 20px; */
+    /* need margin-top, so that top is level with image */
+    margin-top: 20px;
 } 
 
 .classicDetails >  .initialDetails  {
@@ -1397,16 +1417,20 @@ worked on text for Links when hovering on it. When you hover on background-color
     flex-direction: column; */
     /* max-width: 480px; */
     /* Widen ship details so it goes closer to classicContainer border */
-    max-width: 500px;
+    /* max-width: 500px; Make this 480px, same for all spec details */
+    max-width: 480px;
+
     position: relative;
     border-bottom-width: 2px;
     border-color: aliceblue;
     background-color: aliceblue;
     padding: 2.6em;
-    margin-top: 20px;
+
+    /* I don't think I need these margins */
+    /* margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 20px;
-    margin-right: 20px;
+    margin-right: 20px; */
 }
 
 .classicDetails  >  .initialDetails  h2 {
@@ -1433,14 +1457,16 @@ worked on text for Links when hovering on it. When you hover on background-color
     max-width: 480px;
     position: relative;
     border-bottom-width: 2px;
-    border-color: aliceblue;
+    /* border-color: aliceblue; Try darker colour */
+    border-color: mediumblue;
     background-color: lightblue;
     /* padding: 2.6em;  */
 
-    margin-top: 20px;
+    /* I don't think I need these margins */
+    /* margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 20px;
-    margin-right: 20px;
+    margin-right: 20px; */
 }
 
 .classicDetails  >  .norwayDetails  h2 {
@@ -1464,10 +1490,11 @@ worked on text for Links when hovering on it. When you hover on background-color
     background-color: lightyellow;
     /* padding: 1.8em; */
 
-    margin-top: 20px;
+    /* I don't think I need these margins */
+    /* margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 20px;
-    margin-right: 20px;
+    margin-right: 20px; */
 }
 
 .classicDetails  >  .galileoDetails  h2 {
@@ -1494,11 +1521,13 @@ worked on text for Links when hovering on it. When you hover on background-color
     border-color: aliceblue;
     background-color: aqua;
 
-    padding: 2.6em;  
-    margin-top: 20px;
+    padding: 2.6em;   
+
+    /* I don't think I need these margins */
+    /* margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 20px;
-    margin-right: 20px;
+    margin-right: 20px; */
 }
 
 .classicDetails  >  .cruiseDetails  h2  {
@@ -1523,11 +1552,13 @@ worked on text for Links when hovering on it. When you hover on background-color
     border-color: aliceblue;
     background-color: mediumaquamarine;
 
-    padding: 2.6em;  
-    margin-top: 20px;
+    padding: 2.6em; 
+    
+    /* I don't think I need these margins */
+    /* margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 20px;
-    margin-right: 20px;
+    margin-right: 20px; */
 }
 
 .classicDetails  >  .lengthenedDetails  h2  {

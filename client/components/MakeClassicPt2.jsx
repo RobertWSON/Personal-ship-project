@@ -1,4 +1,6 @@
 import React from 'react'
+// Add in ShowMoreText to use it for the different additional ship specs
+import ShowMoreText from 'react-show-more-text'
 import HoverContents2 from './HoverContents2'
 
 
@@ -139,6 +141,15 @@ class MakeClassicPt2 extends React.Component   {
                         {/* This space is where I have show more text, for when user wants to see more */}
                         {/* To start with I am going to do show more text within classicDetails div  */}
 
+                        <ShowMoreText
+                            line={21}
+                            more='Show more'
+                            less='Show less'
+                            anchorClass='my-anchor-css-class'
+                            onClick={this.executeOnClick}
+                            expanded={false}
+                            width={480}>
+
                         {speed !== '' && <h4>Speed: {speed}</h4>}
                         {/* <h4>Maximum speed: {newResult[0]}</h4>}
                         <h4>Cruising speed: {newResult[1]}</h4>} */}    
@@ -163,6 +174,9 @@ class MakeClassicPt2 extends React.Component   {
                         {shelter_deck !== '' && <h4>Shelter Deck: {shelter_deck}</h4>}
                         {bow_bridge !== '' && <h4>Bow to Bridge Length: {bow_bridge}</h4>}
                         {bow_height !== '' && <h4>Bow Height: {bow_height}</h4>}
+                        
+                        </ShowMoreText>
+
                     </div>    
                     {/* Maybe end of div that handles inital specifications for the ship */}
 
@@ -172,6 +186,15 @@ class MakeClassicPt2 extends React.Component   {
                         {cruise_ship_name !== '' && <h2>{cruise_ship_name} as a Cruise Ship</h2>}
                         {/* Probably don't need all the specs below because they are in initialDetails for the original
                         Maybe I should have cruise and variable name eg cruise_service_yrs */}
+
+                        <ShowMoreText
+                            line={30}
+                            more='Show more'
+                            less='Show less'
+                            anchorClass='my-anchor-css-class'
+                            onClick={this.executeOnClick}
+                            expanded={false}
+                            width={480}>
 
                         {/* Maybe have cruise_years instead of service_years */}    
                         {cruise_years !== '' && <h4>Years as a CruiseShip: {cruise_years}</h4>}
@@ -223,12 +246,24 @@ class MakeClassicPt2 extends React.Component   {
                         {cruise_shelter_deck !== '' && <h4>Shelter Deck:{cruise_shelter_deck}</h4>}
                         {cruise_bow_bridge !== '' && <h4>Bow to Bridge Length:{cruise_bow_bridge}</h4>}
                         {cruise_bow_height !== '' && <h4>Bow Height:{cruise_bow_height}</h4>}
+
+                        </ShowMoreText>
+
                     </div>
 
                     {/* Possibly a div hear that handles changed names for the ship, maybe have different background colour  */}
                     <div className = "lengthenedDetails">
 
                         <h2>{cruise_ship_name} after Lengthening</h2>
+
+                        <ShowMoreText
+                            line={45}
+                            more='Show more'
+                            less='Show less'
+                            anchorClass='my-anchor-css-class'
+                            onClick={this.executeOnClick}
+                            expanded={false}
+                            width={480}>
 
                         {name_after_lengthening !== '' && <h4 className = "NameChange">Ship Name Changes: {name_after_lengthening} </h4>}
                         {first_name_change !== '' && <h4 className = "NameChange">{first_name_change} </h4>}    
@@ -278,6 +313,9 @@ class MakeClassicPt2 extends React.Component   {
                         {lengthened_shelter_deck !== '' && <h4>Shelter Deck:{lengthened_shelter_deck}</h4>}
                         {lengthened_bow_bridge !== '' && <h4>Bow to Bridge Length:{lengthened_bow_bridge}</h4>}
                         {lengthened_bow_height !== '' && <h4>Bow Height:{lengthened_bow_height}</h4>}
+                    
+                        </ShowMoreText>
+                    
                     </div>
                     {/* </ShowMoreText> */}
                     {/* End of show more text within classicDetails div */}

@@ -251,19 +251,27 @@ div.contentsMenu  a::before   {
     margin: auto 0; 
     border: 1px solid burlywood;
     border-radius: 20px;
-    padding: 20px;
+    /* padding: 20px;
+    try using 0px; */
+    padding: 0px;
 }    
 
 .classicShip    {
     display: flex;
     flex-direction: column;
     float: left;
-    margin-top: 20px;
+    /* margin-top: 20px;
+    change to margin-top of 30px, as I think it needs a bit more */
+    margin-top: 30px;
     margin-bottom: 20px;
-    margin-left: 0px;
-    margin-right: 20px; 
+    /* margin-left: 0px; 
+    change this to 30px below to increase left margin between Ship Image border and classicContainer border */
+    margin-left: 30px; 
+    /* margin-right: 20px; 
+    change this to 40px below to separate ship image from ship specs */
+    margin-right: 40px;
     max-width: 680px;
-    min-width: 50%;  
+    min-width: 50%; 
 }
 
 .classicShip    >   .shipImage  {
@@ -272,7 +280,9 @@ div.contentsMenu  a::before   {
     align-self: center;
     background-color: azure;
     padding: 1.5em;
-    border: 1px solid burlywood;
+    /* border: 1px solid burlywood;
+    Make padded border around ship image a darker colour and a bit wider */
+    border: 2px solid mediumseagreen;
     border-radius: 20px; 
 }
 
@@ -286,12 +296,22 @@ div.contentsMenu  a::before   {
 
 .classicDetails {
     float: right;
-    max-width: 600px;
+    /* max-width: 600px;
+    increase this to 640px below to widen ship specs a bit  */
+    max-width: 640px;
     position: relative;
     border: solid;
     border-width: 2px;
-    border-color: aliceblue;
-    border-radius: 10px;
+    /* border-color: aliceblue;
+    try a medium blue border so it show up more */
+    border-color: mediumblue;
+    /* border-radius: 10px;
+    increase border radius to 20px so that the border corners show up more */
+    border-radius: 20px;
+    /* Add margin-top like I had in public main css file */
+    margin-top: 30px;
+    /* Overflow Hidden solves the problem of border corners being cut off */
+    overflow: hidden; 
 } 
 
 .classicDetails >  .initialDetails  {
@@ -300,11 +320,12 @@ div.contentsMenu  a::before   {
     border-bottom-width: 2px;
     border-color: aliceblue;
     background-color: aliceblue;
-    padding: 2.6em;  
+    padding: 2.6em; 
+    /* I don't think I need these margins 
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 20px;
-    margin-right: 20px;
+    margin-right: 20px; */
 }
 
 .classicDetails  >  .initialDetails  h2 {
@@ -322,12 +343,15 @@ div.contentsMenu  a::before   {
     max-width: 480px;
     position: relative;
     border-bottom-width: 2px;
-    border-color: aliceblue;
+    /* border-color: aliceblue;
+    try a medium blue border so it show up more */ 
+    border-color: mediumblue;
     background-color: lightblue;
+    /* I don't think I need these margins
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 20px;
-    margin-right: 20px;
+    margin-right: 20px; */
 }
 
 .classicDetails  >  .norwayDetails  h2 {
@@ -347,10 +371,11 @@ div.contentsMenu  a::before   {
     border-bottom-width: 2px;
     border-color: aliceblue;
     background-color: lightyellow;
+    /* I don't think I need these margins
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 20px;
-    margin-right: 20px;
+    margin-right: 20px; */
 }
 
 .classicDetails  >  .galileoDetails  h2 {
@@ -372,11 +397,12 @@ div.contentsMenu  a::before   {
     border-bottom-width: 2px;
     border-color: aliceblue;
     background-color: aqua;
-    padding: 2.6em;  
+    padding: 2.6em;      
+    /* I don't think I need these margins
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 20px;
-    margin-right: 20px;
+    margin-right: 20px; */
 }
 
 .classicDetails  >  .cruiseDetails  h2  {
@@ -399,10 +425,11 @@ div.contentsMenu  a::before   {
     border-color: aliceblue;
     background-color: mediumaquamarine;
     padding: 2.6em;  
-    margin-top: 20px;
+    /* I don't think I need these margins */
+    /* margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 20px;
-    margin-right: 20px;
+    margin-right: 20px; */
 }
 
 .classicDetails  >  .lengthenedDetails  h2  {

@@ -150,8 +150,7 @@ class MakeClassic extends React.Component   {
                     anchorClass='my-anchor-css-class'
                     onClick={this.executeOnClick}
                     expanded={false}
-                    width={480}
-                > 
+                    width={480}> 
 
                 {speed !== '' && <h4>Speed: {speed}</h4>}
                 {/* <h4>Maximum speed: {newResult[0]}</h4>}
@@ -195,8 +194,7 @@ class MakeClassic extends React.Component   {
                     anchorClass='my-anchor-css-class'
                     onClick={this.executeOnClick}
                     expanded={false}
-                    width={480}
-                >
+                    width={480}>
  
                 {/* Comment below for now until I get this working
                 This will be used later when I have the joins with the extra tables in place */}
@@ -236,8 +234,7 @@ class MakeClassic extends React.Component   {
                     anchorClass='my-anchor-css-class'
                     onClick={this.executeOnClick}
                     expanded={false}
-                    width={480}
-                >
+                    width={480}>
                    
                 {/* Comment below for now until I get this working
                 This will be used later when I have the joins with the extra tables in place */}
