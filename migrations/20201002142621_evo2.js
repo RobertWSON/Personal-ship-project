@@ -49,86 +49,25 @@ exports.up = function(knex, Promise) {
         table.string('bow_height')
 
         // Data for when it was a cruise ship
-        // This cruise ship name is commonly used to pickup the pages and Heading for the ship
-        table.string('cruise_ship_name')
-        table.string('cruise_years')
-        table.string('cruise_operator')
-        table.string('cruise_reg_port')
-        table.string('conversion_cost')
-        table.integer('cruise_passengers_max')
-        table.string('cruise_crew_max')
-        table.string('cruise_gt')
 
-        {/* These below are extras may not need all of them */}
-        table.string('cruise_height')
-        table.string('cruise_funnel_hgt')
-        table.string('cruise_speed')
-        table.string('cruise_deadweight')
-        table.string('cruise_lightship')
-        table.string('cruise_displacement')
-        table.string('cruise_power')
-        table.string('cruise_power_rpm')
-        table.string('cruise_fuel_capacity')
-        table.string('cruise_fuel_consumption')
-        table.string('cruise_fresh_water')
-        table.string('cruise_propellors') 
-        table.string('cruise_propellor_size')
-        table.string('cruise_rudder')
-        table.string('cruise_rudder_size')
-        table.integer('cruise_decks')
-        table.integer('cruise_passenger_decks')
-        table.string('cruise_bridge_height')
-        table.string('cruise_bridge_water')
-        table.string('cruise_shelter_deck')
-        table.string('cruise_bow_bridge')
-        table.string('cruise_bow_height')
+        // Foreign Key Link for when these classic ships were operating as cruise ships for Part 2
+        // These are details when they were a cruise ship. Some operated as passenger ships before 
+        // cruise ships and others operated as a cruise ship throughout there whole time at sea
+        table.integer('classic_cruising_id')
+        table.foreign('classic_cruising_id').references('classic_cruising.id')
 
         // Ship Specifications after lengthening
         // Data for when the cruise ship was lengthened
         // Ship Names after lengthening
-        table.string('name_after_lengthening')
-        table.string('first_name_change')
-        table.string('second_name_change')
-        table.string('third_name_change')
-        table.string('fourth_name_change')
-        table.string('fifth_name_change')
-        table.string('sixth_name_change')
-        table.string('seventh_name_change')
-        table.string('eighth_name_change')
-        table.string('ninth_name_change')
-        table.string('lengthened_service_yrs')
-        // 3 new variables needed below
-        table.string('lengthened_operator')
-        table.string('lengthened_reg_port')
-        table.string('lengthened_cost')
 
-        table.integer('lengthened_passengers')
-        table.integer('lengthened_crew')
-        table.integer('lengthened_gt')
-        table.string('lengthened_length')
-        table.string('lengthened_beam')
-        table.string('lengthened_draft')
-        table.string('lengthened_deadweight')
-        table.string('lengthened_lightship')
-        table.string('lengthened_displacement')
-        /* These below are extras may not need all of them */
-        table.string('lengthened_funnel_hgt') 
-        table.string('lengthened_speed') 
-        table.string('lengthened_power')
-        table.string('lengthened_power_rpm')
-        table.string('lengthened_fuel_capacity')
-        table.string('lengthened_fuel_consumption')
-        table.string('lengthened_propellors')
-        table.string('lengthened_propellor_size')
-        table.string('lengthened_rudder')
-        table.string('lengthened_rudder_size')
-        table.integer('lengthened_decks')
-        table.integer('lengthened_passenger_decks')
-        table.string('lengthened_bridge_height')
-        table.string('lengthened_bridge_water')
-        table.string('lengthened_shelter_deck')
-        table.string('lengthened_bow_bridge')
-        table.string('lengthened_bow_height')
+         // Foreign Key Link for when these classic cruise ships were lengthened for Part 2
+         table.integer('classic_lengthened_id')
+         table.foreign('classic_lengthened_id').references('classic_lengthened.id')
+
+        // Name changes for Part 2, I think should be put in a different table
+        // Foreign Key Link for these classic cruise ships name changes for Part 1
+        table.integer('name_change_pt2_id')
+        table.foreign('name_change_pt2_id').references('name_changes_pt2.id')
 
         // Ship Page Contents like images, ship plans, paragraphs
         // Ship Horns for Evolution Part 2 page
@@ -161,7 +100,6 @@ exports.up = function(knex, Promise) {
         // No I think this comes before talking about ship lengthening
         // table.string('img_1stcruise')
         // table.string('img_1stcruise_title')
-        // table.string('cruise_2nd_para')
 
         // Now we try having paragrah and image for each of the times the cruise ship changed cruise operators
         table.string('cruise_2nd_para')
@@ -193,7 +131,6 @@ exports.up = function(knex, Promise) {
         table.string('img_10thcruise_title')
         table.string('cruise_video')
         // End of Cruise Ship section with paragraphs and images
-
 
         // table.string('cruise_video')
         table.string('mem_1st_para')

@@ -8,9 +8,10 @@ exports.up = function(knex, Promise) {
         table.string('original_ship_name')
         table.string('early_service_years')
         table.string('service_years')
-        table.string('france_service_years')
-        table.string('pacific_princess_years')
-        table.string('pacific_years')
+        // May not need these 3, as they can be handled in Name Changes Part 1 Table
+        // table.string('france_service_years')
+        // table.string('pacific_princess_years')
+        // table.string('pacific_years')
         table.string('loveboat_final_year')
         table.string('build_yard')
         table.string('original_operator')
@@ -49,16 +50,23 @@ exports.up = function(knex, Promise) {
         table.string('bow_bridge')
         table.string('bow_height')
 
+        // I have decided to get rid of Norway and Galileo as Seperated from the rest
         // Foreign key for France as Norway cruise ship    
         // norway_id: '2',
         // Foreign key for Galileo Galilei as a cruise ship
         // galileo_id: '2',
-        // Foreign Key Link to these classic ships, for their details when they were a cruise ship
-        // classic_cruise_id: '2', 
+
+        // Foreign Key Link to these classic cruise ships for Part 1, for their details when they were a cruise ship
+        table.integer('cruise_convert_id')
+        table.foreign('cruise_convert_id').references('cruise_convert.id') 
+        
+        // Lengthened cruise ships does not apply for Part 1
         // Foreign Key Link for when these classic cruise ships were Lengthened to carry more cruise passengers
         // lengthened_id: '2',
-        // Foreign Key for when a classic cruise ship had a name change during it's time as a Cruise Ship
-        // name_changes_id: '2',
+
+        // Foreign Key Link for these classic cruise ships name changes for Part 1
+        table.integer('name_change_pt1_id')
+        table.foreign('name_change_pt1_id').references('name_changes_pt1.id')
 
         // For each ships horn on either Evolution Part 1 and Evolution Part 2 Pages
         table.string('ship_horn')

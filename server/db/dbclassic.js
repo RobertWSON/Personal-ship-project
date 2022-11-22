@@ -15,6 +15,11 @@ function getClassic(classic_ship_name, testConn)    {
     // Line below connects to Evo1 Table for Evolution Part 1 
     return conn('Evo1')
 
+        // Use a Join here to connect evo1 table with other tables
+        .join('cruise_convert', 'cruise_convert.id', 'evo1.cruise_convert_id')
+        .join('name_changes_pt1', 'name_changes_pt1.id', 'evo1.name_changes_pt1_id')
+        
+
         // I am going to give where a try, it may work
         // I think where is the appropriate method to use here
         .where('classic_ship_name', classic_ship_name)
@@ -33,6 +38,12 @@ function getClassic(classic_ship_name, testConn)    {
     // Line below connects to Evo2 Table for Evolution Part 2         
     return conn('Evo2')
     
+        // Use a Join here to connect evo2 table with other tables
+        .join('classic_cruising', 'classic_cruising.id', 'evo2.classic_cruising_id')
+        .join('classic_lengthened', 'classic_lengthened.id', 'evo2.classic_lengthened_id')
+        .join('name_changes_pt2', 'name_changes_pt2.id', 'evo2.name_changes_pt2_id')
+
+
         .where('classic_ship_name', classic_ship_name)
         .orderBy('id') 
         .first()

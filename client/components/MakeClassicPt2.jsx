@@ -9,44 +9,82 @@ class MakeClassicPt2 extends React.Component   {
         super(props)
     }
 
+    // Need to add this to make ShowMoreText actually work on all ships
+    // Function for expand when Show more or Show less is clicked
+    executeOnClick(isExpanded) {
+        console.log(isExpanded)
+    }
+
     render()    {
         const   {
-            // Original props before more added
-            // original_ship_name, img, img_title, img_trials, img_trials_title, img_early, img_early_title, early_service_years, 
-            // build_yard, original_operator, registry_port, cost, imo, passenger_capacity_full, crew_capacity, gross_tonnage,
-            // length, beam, draft, height, funnel_height, speed, deadweight, lightship, loaded_displacement, power,power_rpm, 
-            // fuel_consumption, fresh_water, propellors, cruise_ship_name, name_after_lengthening, first_name_change, 
-            // second_name_change, third_name_change, fourth_name_change, fifth_name_change, sixth_name_change, seventh_name_change,
-            // eighth_name_change, ninth_name_change, cruise_years  
             
             // Ship Name used for web address, titles and Evolution Part 2 Ship Image (Official Name)
             classic_ship_name,
 
+            // ClassicContainer contains ClassicShip and ClassicDetails Div below
+            // ClassicShip Div with shipImage inside it for the photo
+            img, img_title,
+
+            // ClassciDetails Div
             // Original Ship Data (intialDetails)
-            img, img_title, original_ship_name, early_service_years, build_yard, original_operator,
+            original_ship_name, early_service_years, build_yard, original_operator,
             registry_port, cost, imo, passenger_capacity_full, crew_capacity, gross_tonnage, length, beam, draft, 
             height, funnel_height, speed, deadweight, lightship, loaded_displacement, power, power_rpm, fuel_capacity, 
             fuel_consumption, fresh_water, propellors, propellor_size, rudder, rudder_size, decks, accessible_decks,   
             bridge_height, bridge_water, shelter_deck, bow_bridge, bow_height,   
 
             // Data for when it was a Cruise Ship (cruiseDetails)
-            cruise_ship_name, cruise_years, cruise_operator, cruise_reg_port, conversion_cost, cruise_passengers_max,
-            cruise_crew_max, cruise_gt, cruise_funnel_hgt, cruise_speed, cruise_deadweight, cruise_lightship,
-            cruise_displacement, cruise_power, cruise_power_rpm, cruise_fuel_capacity, cruise_fuel_consumption, 
-            cruise_fresh_water, cruise_propellors, cruise_propellor_size, cruise_rudder, cruise_rudder_size, 
-            cruise_decks, cruise_passenger_decks, cruise_bridge_height, cruise_bridge_water,cruise_shelter_deck, 
+            cruise_ship_name, cruise_years, 
+            // I think it is good to show name changes when it was a Cruise Ship in the Cruise Details Specs 
+            second_ship_name, 
+            // second_name_years,
+            third_ship_name, 
+            // third_name_years,
+            fourth_ship_name, 
+            // fourth_name_years,
+            fifth_ship_name, 
+            // fifth_name_years, 
+            sixth_ship_name, 
+            // sixth_name_years,
+            seventh_ship_name, 
+            // seventh_name_years,
+            eighth_ship_name, 
+            // eighth_name_years,
+            ninth_ship_name, 
+            // ninth_name_years,
+            last_ship_name, last_name_years,
+            // Continue with rest of necessary Cruise Ship Information
+            cruise_operator, cruise_reg_port, conversion_cost, cruise_passengers_max,
+            cruise_crew_max, cruise_gt, cruise_height, cruise_funnel_hgt, cruise_speed, cruise_deadweight, 
+            cruise_lightship, cruise_displacement, cruise_power, cruise_power_rpm, cruise_fuel_capacity, 
+            cruise_fuel_consumption, cruise_fresh_water, cruise_propellors, cruise_propellor_size, cruise_rudder,
+            cruise_rudder_size, cruise_decks, cruise_passenger_decks, cruise_bridge_height, cruise_bridge_water,
+            // May not need cruise_shelter_deck as it is only used for Titanic ship in Part 1
+            // cruise_shelter_deck,   
             cruise_bow_bridge, cruise_bow_height,   
             
             // Data for when the cruise ship was lengthened
-            name_after_lengthening, first_name_change, second_name_change, third_name_change, fourth_name_change,
-            fifth_name_change, sixth_name_change, seventh_name_change, eighth_name_change, ninth_name_change, 
+            name_after_lengthening, 
+            // Name changes after it was lengthened
+            // Comment below for now because it I need to figure out how to get code to work below
+            // second_lengthen_name, second_lengthen_name_yrs,  
+            // third_lengthen_name, third_lengthen_name_yrs,
+            // fourth_lengthen_name, fourth_lengthen_name_yrs,
+            // fifth_lengthen_name, fifth_lengthen_name_yrs,
+            // sixth_lengthen_name, sixth_lengthen_name_yrs,
+            // seventh_lengthen_name, seventh_lengthen_name_yrs,
+            // eighth_lengthen_name, eighth_lengthen_name_yrs,
+            // ninth_lengthen_name, ninth_lengthen_name_yrs,
+            // last_lengthen_name, last_lengthen_name_yrs,
+
+            // Cruise Ship Lengthened Details continued
             lengthened_service_yrs, lengthened_operator, lengthened_reg_port, lengthened_cost, lengthened_passengers, 
             lengthened_crew, lengthened_gt, lengthened_length, lengthened_beam, lengthened_draft, 
             lengthened_deadweight, lengthened_lightship, lengthened_displacement, lengthened_funnel_hgt, 
             lengthened_speed, lengthened_power, lengthened_power_rpm, lengthened_fuel_capacity,
             lengthened_fuel_consumption, lengthened_propellors, lengthened_propellor_size, lengthened_rudder, 
             lengthened_rudder_size, lengthened_decks, lengthened_passenger_decks, lengthened_bridge_height, 
-            lengthened_bridge_water, lengthened_shelter_deck, lengthened_bow_bridge, lengthened_bow_height,
+            lengthened_bridge_water, lengthened_bow_bridge, lengthened_bow_height,
 
             // div id = early
             early_1st_para, early_video, early_2nd_para, img_trials, img_trials_title, early_3rd_para, img_early, img_early_title,
@@ -118,7 +156,7 @@ class MakeClassicPt2 extends React.Component   {
                         {classic_ship_name !== '' && <h4>{classic_ship_name} Original</h4>}
                         {/* Original Name for specs that are needed when the ship started differently or got lengthened 
                         eg Fairstar, Song of Norway and Royal Viking Sky */}
-                        {original_ship_name !== '' && <h3>Original Ship Name: {original_ship_name}</h3>}
+                        {original_ship_name !== '' && <h4>Original Ship Name: {original_ship_name}</h4>}
 
                         {/*  Maybe I put ship that has same name throughout career in cruiseDetails div
                         Now we can go with below data for original ship */}
@@ -136,19 +174,20 @@ class MakeClassicPt2 extends React.Component   {
                         {length !== '' && <h4>Length: {length}</h4>}
                         {beam !== '' && <h4>Beam: {beam}</h4>}
                         {draft !== '' && <h4>Draft: {draft}</h4>}
-                        {height !== '' && <h4>Ship Height: {height}</h4>}
-                        {funnel_height !== '' && <h4>Ship Height to Funnel Top: {funnel_height}</h4>}
+                        {height !== '' && <h4>Ship Height to top of Mast: {height}</h4>}
+                        {funnel_height !== '' && <h4>Ship Height to Funnel Top from Keel bottom: {funnel_height}</h4>}
                         {/* This space is where I have show more text, for when user wants to see more */}
                         {/* To start with I am going to do show more text within classicDetails div  */}
 
+                        {/* Comment ShowMoreText as it is not yet working
                         <ShowMoreText
-                            line={21}
+                            lines={20}
                             more='Show more'
                             less='Show less'
                             anchorClass='my-anchor-css-class'
                             onClick={this.executeOnClick}
                             expanded={false}
-                            width={480}>
+                            width={480}> */}
 
                         {speed !== '' && <h4>Speed: {speed}</h4>}
                         {/* <h4>Maximum speed: {newResult[0]}</h4>}
@@ -175,7 +214,8 @@ class MakeClassicPt2 extends React.Component   {
                         {bow_bridge !== '' && <h4>Bow to Bridge Length: {bow_bridge}</h4>}
                         {bow_height !== '' && <h4>Bow Height: {bow_height}</h4>}
                         
-                        </ShowMoreText>
+                        {/* Comment ShowMoreText as it is not yet working */}
+                        {/* </ShowMoreText> */}
 
                     </div>    
                     {/* Maybe end of div that handles inital specifications for the ship */}
@@ -199,6 +239,18 @@ class MakeClassicPt2 extends React.Component   {
                         {/* Maybe have cruise_years instead of service_years */}    
                         {cruise_years !== '' && <h4>Years as a CruiseShip: {cruise_years}</h4>}
                         {/* {service_years !== '' && <h4>Years in Service: {service_years}</h4>} */}
+
+                        {/* I think it is good to include names canges that the ship had while it was a Cruise Ship */}
+                        {/* Not working with 2 variables below, so comment for now */}
+                        {/* {second_ship_name, second_name_years !== '' && <h4>{second_ship_name} : {second_name_years}</h4>}
+                        {third_ship_name, third_name_years !== '' && <h4>{third_ship_name} : {third_name_years}</h4>}
+                        {fourth_ship_name, fourth_name_years !== '' && <h4>{fourth_ship_name} : {fourth_name_years}</h4>}
+                        {fifth_ship_name, fifth_name_years !== '' && <h4>{fifth_ship_name} : {fifth_name_years}</h4>}
+                        {sixth_ship_name, sixth_name_years !== '' && <h4>{sixth_ship_name} : {sixth_name_years}</h4>}
+                        {seventh_ship_name, seventh_name_years !== '' && <h4>{seventh_ship_name} : {seventh_name_years}</h4>}
+                        {eighth_ship_name, eighth_name_years !== '' && <h4>{eighth_ship_name} : {eighth_name_years}</h4>}
+                        {ninth_ship_name, ninth_name_years !== '' && <h4>{ninth_ship_name} : {ninth_name_years}</h4>}
+                        {last_ship_name, last_name_years !== '' && <h4>{last_ship_name} : {last_name_years}</h4> */}
 
                         {/* Maybe have cruise_operator instead of operator */}
                         {cruise_operator !== '' && <h4>Cruise Operator: {cruise_operator}</h4>}
@@ -225,10 +277,11 @@ class MakeClassicPt2 extends React.Component   {
                         {/* {gross_tonnage !== '' && <h4>Gross Tonnage: {gross_tonnage}</h4>} */}
 
                         {/* These below are extras may not need all of them */}
-                        {cruise_funnel_hgt !== '' && <h4>Funnel Height: {cruise_funnel_hgt}</h4>}
+                        {cruise_height !== '' && <h4>Cruise Ship Height to top of Mast: {cruise_height}</h4>}
+                        {cruise_funnel_hgt !== '' && <h4>Cruise Ship Height to top of Funnel: {cruise_funnel_hgt}</h4>}
                         {cruise_speed !== '' && <h4>Speed: {cruise_speed}</h4>}
                         {cruise_deadweight !== '' && <h4>Deadweight:{cruise_deadweight}</h4>}
-                        {cruise_lightship !== '' && <h4>lightship{cruise_lightship}</h4>}
+                        {cruise_lightship !== '' && <h4>Lightship{cruise_lightship}</h4>}
                         {cruise_displacement !== '' && <h4>Displacement (Maximum):{cruise_displacement}</h4>}
                         {cruise_power !== '' && <h4>Power:{cruise_power}</h4>}
                         {cruise_power_rpm !== '' && <h4>Propellor RPM:{cruise_power_rpm}</h4>}
@@ -243,7 +296,8 @@ class MakeClassicPt2 extends React.Component   {
                         {cruise_passenger_decks !== '' && <h4>Passenger Decks:{cruise_passenger_decks}</h4>}
                         {cruise_bridge_height !== '' && <h4>Bridge Height:{cruise_bridge_height}</h4>}
                         {cruise_bridge_water !== '' && <h4>Bridge Height Above Water:{cruise_bridge_water}</h4>}
-                        {cruise_shelter_deck !== '' && <h4>Shelter Deck:{cruise_shelter_deck}</h4>}
+                        {/* I think that I do not need cruise_shelter_deck because that was only used with titanic */}
+                        {/* {cruise_shelter_deck !== '' && <h4>Shelter Deck:{cruise_shelter_deck}</h4>} */}
                         {cruise_bow_bridge !== '' && <h4>Bow to Bridge Length:{cruise_bow_bridge}</h4>}
                         {cruise_bow_height !== '' && <h4>Bow Height:{cruise_bow_height}</h4>}
 
@@ -265,23 +319,24 @@ class MakeClassicPt2 extends React.Component   {
                             expanded={false}
                             width={480}>
 
-                        {name_after_lengthening !== '' && <h4 className = "NameChange">Ship Name Changes: {name_after_lengthening} </h4>}
-                        {first_name_change !== '' && <h4 className = "NameChange">{first_name_change} </h4>}    
-                        {second_name_change !== '' && <h4 className = "NameChange">{second_name_change} </h4>}
-                        {third_name_change !== '' && <h4 className = "NameChange">{third_name_change} </h4>}
-                        {fourth_name_change !== '' && <h4 className = "NameChange">{fourth_name_change} </h4>}
-                        {fifth_name_change !== '' && <h4 className = "NameChange">{fifth_name_change} </h4>}
-                        {sixth_name_change !== '' && <h4 className = "NameChange">{sixth_name_change} </h4>}
-                        {seventh_name_change !== '' && <h4 className = "NameChange">{seventh_name_change} </h4>}
-                        {eighth_name_change !== '' && <h4 className = "NameChange">{eighth_name_change} </h4>}
-                        {ninth_name_change !== '' && <h4 className = "NameChange">{ninth_name_change} </h4>}
+                        {/* I need these different ship names to show in lengthened details section for when it was lengthened */}
+                        {/* Not working with 2 variables below, so comment for now */}
+                        {/* {name_after_lengthening !== '' && <h4 className = "NameChange">{name_after_lengthening} Ship Name Changes</h4>}  
+                        {second_lengthen_name, second_lengthen_name_yrs !== '' && <h4 className = "NameChange">{second_lengthen_name} : {second_lengthen_name_yrs}</h4>}
+                        {third_lengthen_name, third_lengthen_name_yrs !== '' && <h4 className = "NameChange">{third_lengthen_name} : {third_lengthen_name_yrs}</h4>} 
+                        {fourth_lengthen_name, fourth_lengthen_name_yrs !== '' && <h4 className = "NameChange">{fourth_lengthen_name} : {fourth_lengthen_name_yrs}</h4>}
+                        {fifth_lengthen_name, fifth_lengthen_name_yrs !== '' && <h4 className = "NameChange">{fifth_lengthen_name} : {fifth_lengthen_name_yrs}</h4>}
+                        {sixth_lengthen_name, sixth_lengthen_name_yrs !== '' && <h4 className = "NameChange">{sixth_lengthen_name} : {sixth_lengthen_name_yrs}</h4>}
+                        {seventh_lengthen_name, seventh_lengthen_name_yrs !== '' && <h4 className = "NameChange">{seventh_lengthen_name} : {seventh_lengthen_name_yrs}</h4>}
+                        {eighth_lengthen_name, eighth_lengthen_name_yrs !== '' && <h4 className = "NameChange">{eighth_lengthen_name} : {eighth_lengthen_name_yrs}</h4>}
+                        {ninth_lengthen_name, ninth_lengthen_name_yrs !== '' && <h4 className = "NameChange">{ninth_lengthen_name} : {ninth_lengthen_name_yrs}</h4>}
+                        {last_lengthen_name, last_lengthen_name_yrs !== '' && <h4 className = "NameChange">{last_lengthen_name} : {last_lengthen_name_yrs}</h4>} */}
 
+                        {/* Lengthend Ship Details continued */}
                         {lengthened_service_yrs !== '' && <h4>Years in Service:{lengthened_service_yrs} </h4>}
-
                         {lengthened_operator !== '' && <h4>Cruise Operators: {lengthened_operator}</h4>}
                         {lengthened_reg_port !== '' && <h4>Port of Registry: {lengthened_reg_port}</h4>}
                         {lengthened_cost !== '' && <h4>Cost to Lengthen: {lengthened_cost}</h4>}
-
                         {lengthened_passengers !== '' && <h4>Passengers (Maximum):{lengthened_passengers} </h4>}
                         {lengthened_crew !== '' && <h4>Crew (Maximum): {lengthened_crew}</h4>}
                         {lengthened_gt !== '' && <h4>Gross Tonnage: {lengthened_gt}</h4>}
@@ -291,7 +346,6 @@ class MakeClassicPt2 extends React.Component   {
                         {lengthened_deadweight !== '' && <h4>Deadweight (Maximum): {lengthened_deadweight}</h4>}
                         {lengthened_lightship !== '' && <h4>Lightship Displacement: {lengthened_lightship}</h4>}
                         {lengthened_displacement !== '' && <h4>Loaded Displacement (Maximum):{lengthened_displacement}</h4>}
-
                         {/* These below are extras may not need all of them */}
                         {lengthened_funnel_hgt !== '' && <h4>Funnel Height: {lengthened_funnel_hgt}</h4>}
                         {lengthened_speed !== '' && <h4>Speed: {lengthened_speed}</h4>}
@@ -310,7 +364,8 @@ class MakeClassicPt2 extends React.Component   {
                         {lengthened_passenger_decks !== '' && <h4>Passenger Decks:{lengthened_passenger_decks}</h4>}
                         {lengthened_bridge_height !== '' && <h4>Bridge Height:{lengthened_bridge_height}</h4>}
                         {lengthened_bridge_water !== '' && <h4>Bridge Height Above Water:{lengthened_bridge_water}</h4>}
-                        {lengthened_shelter_deck !== '' && <h4>Shelter Deck:{lengthened_shelter_deck}</h4>}
+                        {/* I think that I do not need cruise_shelter_deck because that was only used with titanic */}
+                        {/* {lengthened_shelter_deck !== '' && <h4>Shelter Deck:{lengthened_shelter_deck}</h4>} */}
                         {lengthened_bow_bridge !== '' && <h4>Bow to Bridge Length:{lengthened_bow_bridge}</h4>}
                         {lengthened_bow_height !== '' && <h4>Bow Height:{lengthened_bow_height}</h4>}
                     
@@ -378,63 +433,70 @@ class MakeClassicPt2 extends React.Component   {
                     <img src = {img_afterlengthen} title = {img_afterlengthen_title}/>
                     <br/><br/>
                 
-                    {first_name_change !== '' && <h4>{first_name_change}</h4>}
+                    {/* {first_name_change !== '' && <h4>{first_name_change}</h4>} do not need this */}
+                    {second_ship_name !== '' && <h4>{second_ship_name}</h4>}
 
                     <p>{cruise_2nd_para}</p>
 
                     <img src = {img_2ndcruise} title = {img_2ndcruise_title}/> 
                     <br/><br/>
 
-                    {second_name_change !== '' && <h4>{second_name_change}</h4>}
+                    {/* {second_name_change !== '' && <h4>{second_name_change}</h4>}do not need this */} 
+                    {third_ship_name !== '' && <h4>{third_ship_name}</h4>}
 
                     <p>{cruise_3rd_para}</p>
 
                     <img src = {img_3rdcruise} title = {img_3rdcruise_title}/>
                     <br/><br/>
 
-                    {third_name_change !== '' && <h4>{third_name_change}</h4>}
+                    {/* {third_name_change !== '' && <h4>{third_name_change}</h4>} */}
+                    {fourth_ship_name !== '' && <h4>{fourth_ship_name}</h4>}
 
                     <p>{cruise_4th_para}</p>
 
                     <img src = {img_4thcruise} title = {img_4thcruise_title}/>
                     <br/><br/>
 
-                    {fourth_name_change !== '' && <h4>{fourth_name_change}</h4>}
+                    {/* {fourth_name_change !== '' && <h4>{fourth_name_change}</h4>} */}
+                    {fifth_ship_name !== '' && <h4>{fifth_ship_name}</h4>}
 
                     <p>{cruise_5th_para}</p>
 
                     <img src = {img_5thcruise} title = {img_5thcruise_title}/>
                     <br/><br/>
 
-                    {fifth_name_change !== '' && <h4>{fifth_name_change}</h4>}
+                    {/* {fifth_name_change !== '' && <h4>{fifth_name_change}</h4>} */}
+                    {sixth_ship_name !== '' && <h4>{sixth_ship_name}</h4>}    
 
                     <p>{cruise_6th_para}</p>
 
                     <img src = {img_6thcruise} title = {img_6thcruise_title}/>
                     <br/><br/>
 
-                    {sixth_name_change !== '' && <h4>{sixth_name_change}</h4>}
+                    {/* {sixth_name_change !== '' && <h4>{sixth_name_change}</h4>} */}
+                    {seventh_ship_name !== '' && <h4>{seventh_ship_name}</h4>}    
 
                     <p>{cruise_7th_para}</p>
 
                     <img src = {img_7thcruise} title = {img_7thcruise_title}/>
                     <br/><br/>
 
-                    {seventh_name_change !== '' && <h4>{seventh_name_change}</h4>}
+                    {/* {seventh_name_change !== '' && <h4>{seventh_name_change}</h4>} */}
+                    {eighth_ship_name !== '' && <h4>{eighth_ship_name}</h4>}    
 
                     <p>{cruise_8th_para}</p>
 
                     <img src = {img_8thcruise} title = {img_8thcruise_title}/>
                     <br/><br/>
 
-                    {eighth_name_change !== '' && <h4>{eighth_name_change}</h4>}
+                    {ninth_ship_name !== '' && <h4>{ninth_ship_name}</h4>}
 
                     <p>{cruise_9th_para}</p>
 
                     <img src = {img_9thcruise} title = {img_9thcruise_title}/>
                     <br/><br/>
 
-                    {ninth_name_change !== '' && <h4>{ninth_name_change}</h4>}
+                    {last_ship_name !== '' && <h4>{last_name_years}</h4>}
 
                     <p>{cruise_10th_para}</p>
 

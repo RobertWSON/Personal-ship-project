@@ -1,0 +1,62 @@
+
+exports.up = function(knex, Promise)    {
+    return knex.schema.createTable('classic_lengthened', table =>   {
+        table.increments('id').primary()
+        // Originally called name_after_lengthening
+        table.string('name_after_lengthened')
+        // I need these ship names to show in lengthened details section for when it was lengthened
+        table.string('second_lengthen_name')
+        table.string('second_lengthen_name_yrs')
+        table.string('third_lengthen_name')
+        table.string('third_lengthen_name_yrs')
+        table.string('fourth_lengthen_name')
+        table.string('fourth_lengthen_name_yrs')
+        table.string('fifth_lengthen_name')
+        table.string('fifth_lengthen_name_yrs')
+        table.string('sixth_lengthen_name')
+        table.string('sixth_lengthen_name_yrs')
+        table.string('seventh_lengthen_name')
+        table.string('seventh_lengthen_name_yrs')
+        table.string('eighth_lengthen_name')
+        table.string('eighth_lengthen_name_yrs')
+        table.string('ninth_lengthen_name')
+        table.string('ninth_lengthen_name_yrs')
+        table.string('last_lengthen_name')
+        table.string('last_lengthen_name_yrs')
+        // Lengthend Ship Details continued
+        table.string('lengthened_service_yrs')
+        table.string('lengthened_operator')
+        table.integer('lengthened_reg_port')
+        table.string('lengthened_cost')
+        table.string('lengthened_passengers')
+        table.string('lengthened_crew')
+        table.integer('lengthened_gt')
+        table.string('lengthened_length')
+        table.integer('lengthened_beam')
+        table.string('lengthened_draft')
+        table.string('lengthened_deadweight')    
+        table.string('lengthened_lightship')
+        table.integer('lengthened_displacement')
+        /* These below are extras may not need all of them */
+        table.integer('lengthened_funnel_hgt')
+        table.string('lengthened_speed')
+        table.string('lengthened_power')
+        table.string('lengthened_power_rpm')
+        table.string('lengthened_fuel_capacity')
+        table.string('lengthened_fuel_consumption')
+        table.string('lengthened_propellors')
+        table.string('lengthened_propellor_size')
+        table.string('lengthened_rudder')
+        table.string('lengthened_rudder_size')
+        table.integer('lengthened_decks')
+        table.integer('lengthened_passenger_decks') 
+        table.string('lengthened_bridge_height')
+        table.string('lengthened_bridge_water')
+        table.string('lengthened_bow_bridge')
+        table.string('lengthened_bow_height')
+    })
+};
+
+exports.down = function(knex, Promise) {
+    return knex.schema.dropTable('classic_lengthened')
+};

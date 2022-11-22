@@ -15,44 +15,30 @@ class MakeClassic extends React.Component   {
 
     render()   {
         const   {
-            // Comment this below, as this is from original classic-cruiseships branch
-            // classic_ship_name, img, img_title, service_years, france_service_years, early_service_years, original_name, early_years,
-            // pacific_princess_years, pacific_years, loveboat_final_year, build_yard, operator, registry_port, cost, imo, 
-            // passenger_capacity_full, crew_capacity, gross_tonnage, length, beam, draft, height, funnel_height, speed, deadweight, 
-            // lightship, loaded_displacement, power, power_rpm, fuel_type, fuel_capacity, fuel_consumption, fresh_water, propellors,
-            // propellor_size, rudder, rudder_size, decks, accessible_decks, bridge_height, bridge_water, shelter_deck, 
-            // bow_bridge, bow_height, cruise_ship_name, norway_years, norway_operator, conversion_cost, norway_passengers, 
-            // norway_crew, norway_gt, norway_fuel_capacity, norway_fuel_consume, norway_fresh_water, norway_speed, 
-            // norway_passenger_decks, norway_last_name, norway_final_year, norway_final_gt, galileo_name, galileo_years, galileo_gt, 
-            // galileo_passenger_capacity, meridian_name, meridian_years, meridian_gt, meridian_passenger_capacity, gg_last_name,
-            // sunvista_years, sunvista_gt, sunvista_passenger_capacity, early_1st_para, early_2nd_para, cruise_1st_para, ship_plans, 
-            // ship_plans_cont, img_trials, img_trials_title, img_early, img_early_title, img_1stcruise, img_1stcruise_title, 
-            // early_video, cruise_video, mem_video, cruise_2nd_para, mem_1st_para, mem_2nd_para, plans_para, final_1st_para, final_2nd_para
+            
+            // classic_ship_name is used at top of page with h2 shipTitle and Link to HoverContents component 
+            
+            // ClassicContainer contains ClassicShip and ClassicDetails Div below
+            // ClassicShip Div with shipImage inside it for the photo
+            img, img_title,
 
-
-            classic_ship_name, img, img_title, original_ship_name, early_service_years, service_years, 
-            france_service_years, pacific_princess_years, pacific_years, loveboat_final_year, build_yard, 
-            original_operator, operator, registry_port, cost, imo, passenger_capacity_full, crew_capacity, gross_tonnage, 
+            // ClassicDetails for Ship Specs
+            // InitialDetails Div Props
+            classic_ship_name, service_years, original_ship_name, early_service_years, build_yard, original_operator, 
+            operator, registry_port, cost, imo, passenger_capacity_full, crew_capacity, gross_tonnage, 
             length, beam, draft, height, height_funnel_top, speed, deadweight, lightship, loaded_displacement, power, 
             power_rpm, fuel_type, fuel_capacity, fuel_consumption, fresh_water, propellors, propellor_size, rudder,
             rudder_size, decks, accessible_decks, bridge_height, bridge_water, 
-            //Shelter Deck from Titanic, need it here with nothing as a variable for some ships to make this work.
-            shelter_deck, bow_bridge, bow_height, 
-
-            // Foreign key for France as Norway cruise ship    
-            // norway_id: '2',
-            // Foreign key for Galileo Galilei as a cruise ship
-            // galileo_id: '2',
-            // Foreign Key Link to these classic ships, for their details when they were a cruise ship
-            // classic_cruise_id: '2', 
-            // Foreign Key Link for when these classic cruise ships were Lengthened to carry more cruise passengers
-            // lengthened_id: '2',
-            // Foreign Key for when a classic cruise ship had a name change during it's time as a Cruise Ship
-            // name_changes_id: '2',
-
-            // For each ships horn on either Evolution Part 1 and Evolution Part 2 Pages
-            // ship_horn is handled in EvolutionPart1 and Part2 components 
-
+            // shelter deck only used with Titanic passenger ship
+            shelter_deck, bow_bridge, bow_height,
+            
+            // CruiseDetails Div Props
+            cruise_ship_name, cruise_years, second_ship_name, second_name_years, third_ship_name, third_name_years,  
+            last_ship_name, last_name_years, loveboat_final_year, cruise_gt, cruise_operator, cruise_reg_port, conversion_cost,   
+            cruise_passengers_max, cruise_crew_max, cruise_funnel_hgt, cruise_speed, cruise_deadweight,
+            cruise_lightship, cruise_displacement, cruise_power, cruise_power_rpm, cruise_fuel_capacity,
+            cruise_fuel_consumption, cruise_fresh_water, cruise_decks, cruise_passenger_decks,            
+ 
             // Early Div Section for early life of a classic ship (has section id)
             early_1st_para, early_video, early_2nd_para, img_trials, img_trials_title, early_3rd_para, img_early, 
             img_early_title, 
@@ -74,7 +60,8 @@ class MakeClassic extends React.Component   {
 
             // This is the Final Div (id = final)
             final_1st_para, final_2nd_para, img_final, img_final_title
-
+ 
+            
         } = this.props
 
         // const newResult = speed.split('|')
@@ -116,13 +103,28 @@ class MakeClassic extends React.Component   {
                 {/* <h3>Ship Specifications</h3> */}
 
                 {service_years !== '' && <h4>Years in Service: {service_years}</h4>}
-                {france_service_years !== '' && <h4>Service Years as France: {france_service_years}</h4>}
+
+                {/* I don't think I need france_service_years  */}
+                {/* Get rid of these 4 below */}
+                {/* {france_service_years !== '' && <h4>Service Years as France: {france_service_years}</h4>}
                 {early_service_years !== '' && <h4>Service Years as Galileo Galilei: {early_service_years}</h4>}
                 {original_ship_name !== '' && <h4>Pacific Princess Original Name: {original_ship_name}</h4>}
-                {early_service_years !== '' && <h4>Years as Sea Venture: {early_service_years}</h4>}
-                {pacific_princess_years !== '' && <h4>Years as Pacific Princess: {pacific_princess_years}</h4>}
-                {pacific_years !== '' && <h4>Years as Pacific: {pacific_years}</h4>}
-                {loveboat_final_year !== '' && <h4>Love Boat's Final Year: {loveboat_final_year}</h4>}
+                {early_service_years !== '' && <h4>Years as Sea Venture: {early_service_years}</h4>} */}
+
+                {/* Change these 4 above to this below */}
+                {/* original_ship_name, early_service_years, c*/}
+                {original_ship_name !== '' && <h4>{classic_ship_name} Original Name: {original_ship_name}</h4>}
+                {early_service_years != '' && <h4>Service Years as {original_ship_name}: {early_service_years}</h4>}
+
+                {/* <h4>Final Year: {last_name_years}</h4> */}
+
+                {/* Include these 2 lines below in cruiseDetails section */}
+                {/* {pacific_princess_years !== '' && <h4>Years as Pacific Princess: {pacific_princess_years}</h4>}
+                {pacific_years !== '' && <h4>Years as Pacific: {pacific_years}</h4>} */}
+                
+                {/* I think loveboat_final_year maybe should go in cruiseDetails Div */}
+                {/* {loveboat_final_year !== '' && <h4>Love Boat's Final Year: {loveboat_final_year}</h4>} */}
+
                 {build_yard !== '' && <h4>Builder: {build_yard}</h4>}
                 {original_operator !== '' && <h4>Original Operator: {original_operator}</h4>}
                 {operator !== '' && <h4>Operator: {operator}</h4>}
@@ -135,8 +137,8 @@ class MakeClassic extends React.Component   {
                 {length !== '' && <h4>Length: {length}</h4>}
                 {beam !== '' && <h4>Beam: {beam}</h4>}
                 {draft !== '' && <h4>Draft: {draft}</h4>}
-                {height !== '' && <h4>Ship Height: {height}</h4>}
-                {height_funnel_top !== '' && <h4>Ship Height to Funnel Top: {height_funnel_top}</h4>} 
+                {height !== '' && <h4>Ship Height overall to top of mast: {height}</h4>}
+                {height_funnel_top !== '' && <h4>Ship Height from Keel bottom to Funnel Top: {height_funnel_top}</h4>} 
 
                 {/* This space is where I have show more text, for when user wants to see more
                 
@@ -182,82 +184,68 @@ class MakeClassic extends React.Component   {
               </div>    
                 {/* Maybe end of div that handles inital specifications for the ship */}
 
-                {/* Possibly a div hear that handles changed names for the ship, maybe have different background colour  */}
-              <div className = "norwayDetails">
+                {/* I have removed original norwayDetails followed by galileoDetails Div, 
+                because I think you can just use cruiseDetails instead for all of the ships.
+                Originally I thought Norway and Galileo could have different div colours,
+                but maybe it is better just to have the one colour under a cruiseDetails Div.  */}
+
+              <div className = "cruiseDetails">
+                
+                {cruise_ship_name !== '' && <h2>{cruise_ship_name} as a Cruise Ship</h2>}
+
+                {/* Could have ShowMoreText used here */}
+
+                {cruise_years !== '' && <h4>Years as a CruiseShip: {cruise_years}</h4>}
+                {/* Add in here the different name changes it had when it was a cruise ship for part 1 */}
+                {second_ship_name !== '' && <h4>Second Name as a Cruise Ship: {second_ship_name}</h4>}
+                {second_name_years !== '' && <h4>Cruise Ship Years with this Second Name: {second_name_years}</h4>}
+                {third_ship_name !== '' && <h4>Second Name as a Cruise Ship: {third_ship_name}</h4>}
+                {third_name_years !== '' && <h4>Cruise Ship Years with this Second Name: {third_name_years}</h4>}
+                {last_ship_name !== '' && <h4>Last Name of {classic_ship_name}: {last_ship_name}</h4>}
+                {last_name_years !== '' && <h4>Final Years of {classic_ship_name}: {last_name_years}</h4>}
+
+                {/* Also include loveboat_final_year Only for Pacific Princess Cruise Ship as an extra */}
+                {loveboat_final_year !== '' && <h4>Love Boat's Final Year: {loveboat_final_year}</h4>}
 
                 <ShowMoreText
                     //Default options 
                     // lines={48}
-                    line={16}
+                    line={20}
                     more='Show more'
                     less='Show less'
                     anchorClass='my-anchor-css-class'
                     onClick={this.executeOnClick}
                     expanded={false}
                     width={480}>
- 
-                {/* Comment below for now until I get this working
-                This will be used later when I have the joins with the extra tables in place */}
-                    
-                {/* Originally commented {ship_name !== '' && <h2>{ship_name} as a Cruise Ship</h2>} */}
-                {/* {cruise_ship_name !== '' && <h2>{cruise_ship_name} as a Cruise Ship</h2>} */}
-                {/* Originally commented <h2>France as a Cruise Ship</h2> */}
-                {/* Originally commented {cruise_ship_name !== '' && <h4>{cruise_ship_name} as a Cruise Ship</h4>} */}
-                {/* {cruise_ship_name !== '' && <h4>France Liner New Name: {cruise_ship_name}</h4>}
-                {norway_years !== '' && <h4>Years as Norway: {norway_years}</h4>}
-                {norway_operator !== '' && <h4>Operator: {norway_operator}</h4>}
-                {conversion_cost !== '' && <h4>France to Norway Conversion Cost:{conversion_cost}</h4>}
-                {norway_passengers !== '' && <h4>Norway Maximum Passenger: {norway_passengers}</h4>}
-                {norway_crew !== '' && <h4>Norway Maximum Crew: {norway_crew}</h4>}
-                {norway_gt !== '' && <h4>Norway Gross Tonnage: {norway_gt}</h4>}
-                {norway_fuel_capacity !== '' && <h4>Norway Fuel Capacity: {norway_fuel_capacity}</h4>}
-                {norway_fuel_consume !== '' && <h4>Norway Fuel Consumption: {norway_fuel_consume}</h4>}
-                {norway_fresh_water !== '' && <h4>Norway Fresh Water Capacity: {norway_fresh_water}</h4>}
-                {norway_speed !== '' && <h4>Norway Speed: {norway_speed}</h4>}
-                {norway_passenger_decks !== '' && <h4>Norway Passenger Decks: {norway_passenger_decks}</h4>}
-                {norway_last_name !== '' && <h4>France's Last Name: {norway_last_name}</h4>}
-                {norway_final_year !== '' && <h4>France's Final Year: {norway_final_year}</h4>}
-                {norway_final_gt !== '' && <h4>France's Final Gross Tonnage:{norway_final_gt}</h4>} */}
-                </ShowMoreText>
 
-              </div>
-
-              {/* A div for Galileo Galilei as a cruise ship    */}
-              <div className = "galileoDetails"> 
-
-                <ShowMoreText
-                    //Default options 
-                    // lines={48}
-                    line={13}
-                    more='Show more'
-                    less='Show less'
-                    anchorClass='my-anchor-css-class'
-                    onClick={this.executeOnClick}
-                    expanded={false}
-                    width={480}>
-                   
-                {/* Comment below for now until I get this working
-                This will be used later when I have the joins with the extra tables in place */}
-                {/* Originally commented  {ship_name !== '' && <h2>{ship_name} as a Cruise Ship</h2>} */}
-                {/* Not a comment {galileo_name !== '' && <h2>{galileo_name} as a Cruise Ship</h2>} */}
-                {/* Orignally Commented <h2>Galileo Galilei as a Cruise Ship</h2> */}
-                {/* Originally Commented {galileo_name !== '' && <h4>{galileo_name} as a Cruise Ship</h4>}  */}
-                {/* {galileo_name !== '' && <h4>Galileo Galilei's 1st New Name: {galileo_name}</h4>}
-                {galileo_years !== '' && <h4>Years as Galileo: {galileo_years}</h4>}
-                {galileo_gt !== '' && <h4>Galileo Gross Tonnage: {galileo_gt}</h4>}
-                {galileo_passenger_capacity !== '' && <h4>Galileo Maximum Passengers: {galileo_passenger_capacity}</h4>}
-                {meridian_name !== '' && <h4>Galileo Galilei's 2nd New Name: {meridian_name}</h4>}
-                {meridian_years !== '' && <h4>Years as Meridian: {meridian_years}</h4>}
-                {meridian_gt !== '' && <h4>Meridian Gross Tonnage: {meridian_gt}</h4>}
-                {meridian_passenger_capacity !== '' && <h4>Meridian Maximum Passengers: {meridian_passenger_capacity}</h4>}
-                {gg_last_name !== '' && <h4>Galileo Galilei's Last Name: {gg_last_name}</h4>} 
-                {sunvista_years !== '' &&<h4>Years as Sun Vista: {sunvista_years}</h4>}
-                {sunvista_gt !== '' && <h4>Sun Vista Gross Tonnage: {sunvista_gt}</h4>}
-                {sunvista_passenger_capacity !== '' && <h4>Sun Vista Maximum Passengers: {sunvista_passenger_capacity}</h4>} */}
+                {/* Cruise Ship Specs continued below */}
+                {cruise_gt !== '' && <h4>Gross Tonnage: {cruise_gt}</h4>}
+                {cruise_operator !== '' && <h4>Cruise Operator: {cruise_operator}</h4>}
+                {cruise_reg_port !== '' && <h4>Port of Registry: {cruise_reg_port}</h4>}
+                {conversion_cost !== '' && <h4>Conversion Cost: {conversion_cost}</h4>}
+                {cruise_passengers_max !== '' && <h4>Maximum Cruise Passengers: {cruise_passengers_max}</h4>}
+                {cruise_crew_max !== '' && <h4>Maximum Cruise Crew: {cruise_crew_max}</h4>}
+                {cruise_funnel_hgt !== '' && <h4>Ship Height from Keel bottom to Funnel Top: {cruise_funnel_hgt}</h4>}
+                {cruise_speed !== '' && <h4>Speed: {cruise_speed}</h4>}
+                {cruise_deadweight !== '' && <h4>Deadweight:{cruise_deadweight}</h4>}
+                {cruise_lightship !== '' && <h4>Lightship{cruise_lightship}</h4>}
+                {cruise_displacement !== '' && <h4>Displacement (Maximum):{cruise_displacement}</h4>}
+                {cruise_power !== '' && <h4>Power:{cruise_power}</h4>}
+                {cruise_power_rpm !== '' && <h4>Propellor RPM:{cruise_power_rpm}</h4>}
+                {cruise_fuel_capacity !== '' && <h4>Fuel Capacity:{cruise_fuel_capacity}</h4>}
+                {cruise_fuel_consumption !== '' && <h4>Fuel Consumption:{cruise_fuel_consumption}</h4>}
+                {cruise_fresh_water !== '' && <h4>Fresh Water Capacity:{cruise_fresh_water}</h4>}
+                {cruise_decks !== '' && <h4>Total Number of Decks:{cruise_decks}</h4>}
+                {cruise_passenger_decks !== '' && <h4>Passenger Decks:{cruise_passenger_decks}</h4>}
+                {/* With norwayDetails Div, I Originally had these
+                norway_last_name
+                norway_final_year
+                norway_final_gt */}
 
                 </ShowMoreText>
 
-              </div>    
+              </div>      
+
                 {/* </ShowMoreText> */}
                 {/* End of show more text within classicDetails div */}
 
@@ -289,7 +277,6 @@ class MakeClassic extends React.Component   {
                 <p>Contents:    Previous       Next        Top</p>        
 
             </div>    
-
 
             <div id = "cruise">
                 <h3>As a Cruise Ship</h3>    

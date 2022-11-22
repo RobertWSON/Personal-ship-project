@@ -17,10 +17,16 @@ exports.seed = function(knex, Promise) {
           // early_years: '', I think early years is not used in most recent cruise-ships repo
           early_service_years: '',
           service_years: '1912',
-          france_service_years: '',
-          pacific_princess_years: '',
-          pacific_years: '', 
+
+          // May not need these 3 below, as they can be handled in Name Changes Part 1 Table
+          // france_service_years: '',
+          // pacific_princess_years: '',
+          // pacific_years: '',
+          
+          // Use this join to Name Changes Part 1 Table
+          name_change_pt1_id: '1', 
           loveboat_final_year: '',
+
           // Titanic info continued 
           build_yard: 'Harland and Wolff, Belfast, Northern Ireland, UK',
           original_operator: '',
@@ -118,6 +124,9 @@ exports.seed = function(knex, Promise) {
           // fifth_name_change: '', sixth_name_change: '', seventh_name_change: '', eighth_name_change: '', 
           // ninth_name_change,
 
+          // Use this join to Cruise Convert Table for Evolution Part 1 when the ship changed to a Cruise Ship
+          cruise_convert_id: '1',
+
           // For each ships horn on either Evolution Part 1 and Evolution Part 2 Pages
           ship_horn: '/videos/classics/Titanic/Titanic_horn.mp4',
 
@@ -182,10 +191,16 @@ exports.seed = function(knex, Promise) {
           // early_years: '', I think early years is not used in most recent cruise-ships repo
           early_service_years: '',
           service_years: '1959 to 2005',
-          france_service_years: '',
-          pacific_princess_years: '',
-          pacific_years: '',
+
+          // May not need these 3 below, as they can be handled in Name Changes Part 1 Table
+          // france_service_years: '',
+          // pacific_princess_years: '',
+          // pacific_years: '',
+
+          // Use this join to Name Changes Part 1 Table
+          name_change_pt1_id: '2',
           loveboat_final_year: '',
+
           //Oriana info continued
           build_yard: 'Vickers-Armstrongs, Barrow-in-Furness, Cumbria, England',
           original_operator: '',
@@ -237,6 +252,9 @@ exports.seed = function(knex, Promise) {
           // lengthened_id: '2',
           // Foreign Key for when a classic cruise ship had a name change during it's time as a Cruise Ship
           // name_changes_id: '2',
+
+          // Use this join to Cruise Convert Table for Evolution Part 1 when the ship changed to a Cruise Ship
+          cruise_convert_id: '2',
 
           // For each ships horn on either Evolution Part 1 and Evolution Part 2 Pages
           ship_horn: '/videos/classics/Oriana/Oriana_last_cruise_departure_from_Sydney_Harbour_Bridge.mp4',    
@@ -302,10 +320,16 @@ exports.seed = function(knex, Promise) {
           // early_years: '', I think early years is not used in most recent cruise-ships repo
           early_service_years: '',
           service_years: '1961 to 1997',
-          france_service_years: '',
-          pacific_princess_years: '',
-          pacific_years: '', 
+
+          // May not need these 3 below, as they can be handled in Name Changes Part 1 Table
+          // france_service_years: '',
+          // pacific_princess_years: '',
+          // pacific_years: '', 
+
+          // Use this join to Name Changes Part 1 Table
+          name_change_pt1_id: '3',
           loveboat_final_year: '',
+
           // Canberra info continued
           build_yard: 'Harland and Wolff, Belfast, Northern Ireland, UK', 
           original_operator: '',
@@ -357,6 +381,9 @@ exports.seed = function(knex, Promise) {
           // lengthened_id: '3',
           // Foreign Key for when a classic cruise ship had a name change during it's time as a Cruise Ship
           // name_changes_id: '3',
+
+          // Use this join to Cruise Convert Table for Evolution Part 1 when the ship changed to a Cruise Ship
+          cruise_convert_id: '3',
 
           // For each ships horn on either Evolution Part 1 and Evolution Part 2 Pages
           ship_horn: '/videos/classics/Canberra/Canberra_Leaving_Southampton.mp4',
@@ -422,10 +449,16 @@ exports.seed = function(knex, Promise) {
           // early_years: '', I think early years is not used in most recent cruise-ships repo
           early_service_years: '',
           service_years: '',
-          france_service_years: '1961 to 1974 | (laid up 1974 to 1979)',
-          pacific_princess_years: '',
-          pacific_years: '',
-          loveboat_final_year: '',    
+
+          // May not need these 3 below, as they can be handled in Name Changes Part 1 Table
+          // france_service_years: '1961 to 1974 | (laid up 1974 to 1979)',
+          // pacific_princess_years: '',
+          // pacific_years: '',
+
+          // Use this join to Name Changes Part 1 Table
+          name_change_pt1_id: '4',
+          loveboat_final_year: '',
+
           // France info continued
           build_yard: 'Chantiers de l Atlantique, Saint-Nazaire, France', 
           original_operator: '',
@@ -477,6 +510,9 @@ exports.seed = function(knex, Promise) {
           // lengthened_id: '4',
           // Foreign Key for when a classic cruise ship had a name change during it's time as a Cruise Ship
           // name_changes_id: '4',
+
+          // Use this join to Cruise Convert Table for Evolution Part 1 when the ship changed to a Cruise Ship
+          cruise_convert_id: '4',
 
           // For each ships horn on either Evolution Part 1 and Evolution Part 2 Pages
           ship_horn: '/videos/classics/France/SS_Norway_horns.mp4',
@@ -544,10 +580,16 @@ exports.seed = function(knex, Promise) {
           // early_years: '', I think early years is not used in most recent cruise-ships repo
           early_service_years: '1963 to 1984',
           service_years: '1963 to 1999',
-          france_service_years: '',
-          pacific_princess_years: '',
-          pacific_years: '',
+
+          // May not need these 3 below, as they can be handled in Name Changes Part 1 Table
+          // france_service_years: '',
+          // pacific_princess_years: '',
+          // pacific_years: '',
+
+          // Use this join to Name Changes Part 1 Table
+          name_change_pt1_id: '5',
           loveboat_final_year: '',
+
           // Galileo Galilei info continued
           build_yard: 'Cantieri Riuniti dell Adriatico, Monfalcone, Italy',
           original_operator: '',
@@ -599,6 +641,9 @@ exports.seed = function(knex, Promise) {
           // lengthened_id: '4',
           // Foreign Key for when a classic cruise ship had a name change during it's time as a Cruise Ship
           // name_changes_id: '4',
+
+          // Use this join to Cruise Convert Table for Evolution Part 1 when the ship changed to a Cruise Ship
+          cruise_convert_id: '5',
 
           // For each ships horn on either Evolution Part 1 and Evolution Part 2 Pages
           ship_horn: '/videos/classics/Galileo Galilei/MERIDIAN.mp4',
@@ -664,10 +709,16 @@ exports.seed = function(knex, Promise) {
           // early_years: '', I think early years is not used in most recent cruise-ships repo
           early_service_years: '1971 to 1975',
           service_years: '1971 to 2013',
-          france_service_years: '',
-          pacific_princess_years: '1975 to 2002',
-          pacific_years: '2002 to 2013',
+
+          // May not need these 3 below, as they can be handled in Name Changes Part 1 Table
+          // france_service_years: '',
+          // pacific_princess_years: '1975 to 2002',
+          // pacific_years: '2002 to 2013',
+
+          // Use this join to Name Changes Part 1 Table
+          name_change_pt1_id: '6',
           loveboat_final_year: '2013',
+
           // Pacific Princess info continued
           build_yard: 'Nordseewerke, emden, West Germany',
           original_operator: '',   
@@ -718,6 +769,9 @@ exports.seed = function(knex, Promise) {
           // lengthened_id: '3',
           // Foreign Key for when a classic cruise ship had a name change during it's time as a Cruise Ship
           // name_changes_id: '3',
+
+          // Use this join to Cruise Convert Table for Evolution Part 1 when the ship changed to a Cruise Ship
+          cruise_convert_id: '6',
 
           // For each ships horn on either Evolution Part 1 and Evolution Part 2 Pages
           ship_horn: '/videos/classics/Pacific Princess/Bermuda-PacificPrincess(ex-Love Boat)ShipsWhistle.mp4',
