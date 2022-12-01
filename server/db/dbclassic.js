@@ -17,7 +17,7 @@ function getClassic(classic_ship_name, testConn)    {
 
         // Use a Join here to connect evo1 table with other tables
         .join('cruise_convert', 'cruise_convert.id', 'evo1.cruise_convert_id')
-        .join('name_changes_pt1', 'name_changes_pt1.id', 'evo1.name_changes_pt1_id')
+        .join('name_changes_pt1', 'name_changes_pt1.id', 'evo1.name_change_pt1_id')
         
 
         // I am going to give where a try, it may work
@@ -41,7 +41,7 @@ function getClassic(classic_ship_name, testConn)    {
         // Use a Join here to connect evo2 table with other tables
         .join('classic_cruising', 'classic_cruising.id', 'evo2.classic_cruising_id')
         .join('classic_lengthened', 'classic_lengthened.id', 'evo2.classic_lengthened_id')
-        .join('name_changes_pt2', 'name_changes_pt2.id', 'evo2.name_changes_pt2_id')
+        .join('name_changes_pt2', 'name_changes_pt2.id', 'evo2.name_change_pt2_id')
 
 
         .where('classic_ship_name', classic_ship_name)
