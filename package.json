@@ -28,7 +28,7 @@
   "dependencies": {
     "adds": "^1.2.2",
     "dependencies": "^0.0.1",
-    "express": "^4.16.3",
+    "express": "^4.17.3",
     "knex": "^0.15.2",
     "react-slick": "^0.23.1",
     "sqlite3": "^4.0.2",
