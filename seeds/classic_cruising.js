@@ -5,7 +5,81 @@ exports.seed = function(knex, Promise) {
     .then(function () {
       // Inserts seed entries
       return knex('classic_cruising').insert([
-        { id: 1,
+
+        // Evolution Part 1 is from id: 1 to id: 6
+
+        {id: 1, 
+                // Titanic was a passenger ship and was not a cruise ship
+                // Cruise Ships were not around in 1912, only passenger ships were 
+                cruise_ship_name: '', cruise_years: '', cruise_operator: '', cruise_reg_port: '',
+                conversion_cost: '', cruise_passengers_max: '', cruise_crew_max: '', cruise_gt: '',
+                // Added cruise_height, that was not here in Evolution Part 1 before 
+                cruise_height: '', 
+                cruise_funnel_hgt: '', cruise_speed: '', cruise_deadweight: '', cruise_lightship: '', 
+                cruise_displacement: '', cruise_power: '', cruise_power_rpm: '', cruise_fuel_capacity: '',
+                cruise_fuel_consumption: '', cruise_fresh_water: '', cruise_decks: '', cruise_passenger_decks: '',
+                // Added these below to use for Evolution Part 1
+                cruise_bridge_height: '', cruise_bridge_water: '', cruise_bow_bridge: '', cruise_bow_height: ''  
+        },
+        {id: 2, cruise_ship_name: 'Oriana', 
+                cruise_years: '', cruise_operator: '', cruise_reg_port: '',
+                conversion_cost: '', cruise_passengers_max: '', cruise_crew_max: '', cruise_gt: '',
+                // Added cruise_height, that was not here in Evolution Part 1 before 
+                cruise_height: '',
+                cruise_funnel_hgt: '', cruise_speed: '', cruise_deadweight: '', cruise_lightship: '', 
+                cruise_displacement: '', cruise_power: '', cruise_power_rpm: '', cruise_fuel_capacity: '',
+                cruise_fuel_consumption: '', cruise_fresh_water: '', cruise_decks: '', cruise_passenger_decks: '',
+                // Added these below to use for Evolution Part 1
+                cruise_bridge_height: '', cruise_bridge_water: '', cruise_bow_bridge: '', cruise_bow_height: ''
+        },
+        {id: 3, cruise_ship_name: 'Canberra', 
+                cruise_years: '', cruise_operator: '', cruise_reg_port: '',
+                conversion_cost: '', cruise_passengers_max: '', cruise_crew_max: '', cruise_gt: '',
+                // Added cruise_height, that was not here in Evolution Part 1 before 
+                cruise_height: '',
+                cruise_funnel_hgt: '', cruise_speed: '', cruise_deadweight: '', cruise_lightship: '', 
+                cruise_displacement: '', cruise_power: '', cruise_power_rpm: '', cruise_fuel_capacity: '',
+                cruise_fuel_consumption: '', cruise_fresh_water: '', cruise_decks: '', cruise_passenger_decks: '',
+                // Added these below to use for Evolution Part 1
+                cruise_bridge_height: '', cruise_bridge_water: '', cruise_bow_bridge: '', cruise_bow_height: ''
+        },
+        {id: 4, cruise_ship_name: 'Norway',
+                cruise_years: '', cruise_operator: '', cruise_reg_port: '',
+                conversion_cost: '', cruise_passengers_max: '', cruise_crew_max: '', cruise_gt: '',
+                // Added cruise_height, that was not here in Evolution Part 1 before 
+                cruise_height: '',
+                cruise_funnel_hgt: '', cruise_speed: '', cruise_deadweight: '', cruise_lightship: '', 
+                cruise_displacement: '', cruise_power: '', cruise_power_rpm: '', cruise_fuel_capacity: '',
+                cruise_fuel_consumption: '', cruise_fresh_water: '', cruise_decks: '', cruise_passenger_decks: '',
+                // Added these below to use for Evolution Part 1
+                cruise_bridge_height: '', cruise_bridge_water: '', cruise_bow_bridge: '', cruise_bow_height: ''
+        },
+        {id: 5, cruise_ship_name: 'Galileo Galilei',
+                cruise_years: '', cruise_operator: '', cruise_reg_port: '',
+                conversion_cost: '', cruise_passengers_max: '', cruise_crew_max: '', cruise_gt: '',
+                // Added cruise_height, that was not here in Evolution Part 1 before 
+                cruise_height: '', 
+                cruise_funnel_hgt: '', cruise_speed: '', cruise_deadweight: '', cruise_lightship: '', 
+                cruise_displacement: '', cruise_power: '', cruise_power_rpm: '', cruise_fuel_capacity: '',
+                cruise_fuel_consumption: '', cruise_fresh_water: '', cruise_decks: '', cruise_passenger_decks: '',
+                // Added these below to use for Evolution Part 1
+                cruise_bridge_height: '', cruise_bridge_water: '', cruise_bow_bridge: '', cruise_bow_height: ''
+        },
+        {id: 6, cruise_ship_name: 'Pacific Princess',
+                cruise_years: '1971 to 2013', cruise_operator: '', cruise_reg_port: '',
+                conversion_cost: '', cruise_passengers_max: '', cruise_crew_max: '', cruise_gt: '',
+                // Added cruise_height, that was not here in Evolution Part 1 before 
+                cruise_height: '',
+                cruise_funnel_hgt: '', cruise_speed: '', cruise_deadweight: '', cruise_lightship: '', 
+                cruise_displacement: '', cruise_power: '', cruise_power_rpm: '', cruise_fuel_capacity: '',
+                cruise_fuel_consumption: '', cruise_fresh_water: '', cruise_decks: '', cruise_passenger_decks: '',
+                // Added these below to use for Evolution Part 1
+                cruise_bridge_height: '', cruise_bridge_water: '', cruise_bow_bridge: '', cruise_bow_height: ''
+        },
+
+        // Evolution Part 2 is from id: 7 to id: 12
+
+        { id: 7,
           // Ship Specifications when it was a Cruise Ship 
           cruise_ship_name: 'Fairstar',
           cruise_years: '1964 to 1997', 
@@ -44,7 +118,7 @@ exports.seed = function(knex, Promise) {
           // Bow to Keel Height estimated from photo in Fairstar Funship Cruise Brochure (7.5/90 * 185.76) + 8.41
           cruise_bow_height: '23.89 m (78 feet 4.55 inches)' 
         },
-        { id: 2, 
+        { id: 8, 
 
           cruise_ship_name: 'Sea Princess',
           cruise_years: '1975 to 2010', cruise_operator: '', cruise_reg_port: '', conversion_cost: '', 
@@ -57,7 +131,7 @@ exports.seed = function(knex, Promise) {
           // cruise_shelter_deck: '', 
           cruise_bow_bridge: '', cruise_bow_height: ''
         },
-        { id: 3,
+        { id: 9,
           // Cruise Ship Ship Specifications (Doesn't apply here because Queen Elizabeth 2 was not converted to a Cruise Ship) 
           cruise_ship_name: '',
           cruise_years: '', cruise_operator: '', cruise_reg_port: '', conversion_cost: '', cruise_passengers_max: '', 
@@ -70,10 +144,10 @@ exports.seed = function(knex, Promise) {
           // cruise_shelter_deck: '', 
           cruise_bow_bridge: '', cruise_bow_height: ''
         },
-        { id: 4,
+        { id: 10,
           // Cruise Ship Ship Specifications: Needed for Song of Norway as we show Lengthened cost 
           cruise_ship_name: 'Song of Norway',
-          cruise_years: '', cruise_operator: '', cruise_reg_port: '', conversion_cost: '$US 12 Million: Ship Lengthening', 
+          cruise_years: '1970 to 2013', cruise_operator: '', cruise_reg_port: '', conversion_cost: '$US 12 Million: Ship Lengthening', 
           cruise_passengers_max: '', cruise_crew_max: '', cruise_gt: '', cruise_height: '', cruise_funnel_hgt: '', 
           cruise_speed: '', cruise_deadweight: '', cruise_lightship: '', cruise_displacement: '', cruise_power: '', 
           cruise_power_rpm: '', cruise_fuel_capacity: '', cruise_fuel_consumption: '', cruise_fresh_water: '', cruise_propellors: '', 
@@ -83,7 +157,7 @@ exports.seed = function(knex, Promise) {
           // cruise_shelter_deck: '', 
           cruise_bow_bridge: '', cruise_bow_height: ''
         },
-        { id: 5,
+        { id: 11,
            // Cruise Ship Ship Specifications: Needed for Royal Viking Sky, as we show Lengthened cost 
           cruise_ship_name: 'Royal Viking Sky',
           cruise_years: '', cruise_operator: '', cruise_reg_port: '', conversion_cost: '$US  Million: Ship Lengthening', 
@@ -96,7 +170,7 @@ exports.seed = function(knex, Promise) {
           // cruise_shelter_deck: '', 
           cruise_bow_bridge: '', cruise_bow_height: ''
         },
-        { id: 6, 
+        { id: 12, 
           // Cruise Ship Specifications (Doesn't apply because Sovereign of the Seas was not converted to a Cruise Ship)
           cruise_ship_name: '',
           cruise_years: '', cruise_operator: '', cruise_reg_port: '', conversion_cost: '', cruise_passengers_max: '', 

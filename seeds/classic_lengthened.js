@@ -5,7 +5,135 @@ exports.seed = function(knex, Promise) {
     .then(function () {
       // Inserts seed entries
       return knex('classic_lengthened').insert([
-        {id: 1, 
+
+        // Evolution Part 2 is from id: 7 to id: 12 
+        // Lengthened details are not used at all here for any ships
+
+        {id: 1,
+                name_after_lengthened: '', second_lengthen_name: '', second_lengthen_name_yrs: '',
+                third_lengthen_name: '', third_lengthen_name_yrs: '', 
+                fourth_lengthen_name: '', fourth_lengthen_name_yrs: '',
+                fifth_lengthen_name: '', fifth_lengthen_name_yrs: '',
+                sixth_lengthen_name: '', sixth_lengthen_name_yrs: '',
+                seventh_lengthen_name: '', seventh_lengthen_name_yrs: '',
+                eighth_lengthen_name: '', eighth_lengthen_name_yrs: '',
+                ninth_lengthen_name: '', ninth_lengthen_name_yrs: '',
+                last_lengthen_name: '', last_lengthen_name_yrs: '', 
+                lengthened_service_yrs: '', lengthened_operator: '', lengthened_reg_port: '', 
+                lengthened_cost: '', lengthened_passengers: '', lengthened_crew: '', lengthened_gt: '', 
+                lengthened_length: '', lengthened_beam: '', lengthened_draft: '', lengthened_deadweight: '', 
+                lengthened_lightship: '', lengthened_displacement: '', lengthened_funnel_hgt: '', 
+                lengthened_speed: '', lengthened_power: '', lengthened_power_rpm: '', 
+                lengthened_fuel_capacity: '', lengthened_fuel_consumption: '', lengthened_propellors: '', 
+                lengthened_propellor_size: '', lengthened_rudder: '', lengthened_rudder_size: '', 
+                lengthened_decks: '', lengthened_passenger_decks: '', lengthened_bridge_height: '', 
+                lengthened_bridge_water: '', lengthened_bow_bridge: '', lengthened_bow_height: ''     
+        },
+        {id: 2,
+                name_after_lengthened: '', second_lengthen_name: '', second_lengthen_name_yrs: '',
+                third_lengthen_name: '', third_lengthen_name_yrs: '', 
+                fourth_lengthen_name: '', fourth_lengthen_name_yrs: '',
+                fifth_lengthen_name: '', fifth_lengthen_name_yrs: '',
+                sixth_lengthen_name: '', sixth_lengthen_name_yrs: '',
+                seventh_lengthen_name: '', seventh_lengthen_name_yrs: '',
+                eighth_lengthen_name: '', eighth_lengthen_name_yrs: '',
+                ninth_lengthen_name: '', ninth_lengthen_name_yrs: '',
+                last_lengthen_name: '', last_lengthen_name_yrs: '', 
+                lengthened_service_yrs: '', lengthened_operator: '', lengthened_reg_port: '', 
+                lengthened_cost: '', lengthened_passengers: '', lengthened_crew: '', lengthened_gt: '', 
+                lengthened_length: '', lengthened_beam: '', lengthened_draft: '', lengthened_deadweight: '', 
+                lengthened_lightship: '', lengthened_displacement: '', lengthened_funnel_hgt: '', 
+                lengthened_speed: '', lengthened_power: '', lengthened_power_rpm: '', 
+                lengthened_fuel_capacity: '', lengthened_fuel_consumption: '', lengthened_propellors: '', 
+                lengthened_propellor_size: '', lengthened_rudder: '', lengthened_rudder_size: '', 
+                lengthened_decks: '', lengthened_passenger_decks: '', lengthened_bridge_height: '', 
+                lengthened_bridge_water: '', lengthened_bow_bridge: '', lengthened_bow_height: ''
+        },
+        {id: 3,
+                name_after_lengthened: '', second_lengthen_name: '', second_lengthen_name_yrs: '',
+                third_lengthen_name: '', third_lengthen_name_yrs: '', 
+                fourth_lengthen_name: '', fourth_lengthen_name_yrs: '',
+                fifth_lengthen_name: '', fifth_lengthen_name_yrs: '',
+                sixth_lengthen_name: '', sixth_lengthen_name_yrs: '',
+                seventh_lengthen_name: '', seventh_lengthen_name_yrs: '',
+                eighth_lengthen_name: '', eighth_lengthen_name_yrs: '',
+                ninth_lengthen_name: '', ninth_lengthen_name_yrs: '',
+                last_lengthen_name: '', last_lengthen_name_yrs: '', 
+                lengthened_service_yrs: '', lengthened_operator: '', lengthened_reg_port: '', 
+                lengthened_cost: '', lengthened_passengers: '', lengthened_crew: '', lengthened_gt: '', 
+                lengthened_length: '', lengthened_beam: '', lengthened_draft: '', lengthened_deadweight: '', 
+                lengthened_lightship: '', lengthened_displacement: '', lengthened_funnel_hgt: '', 
+                lengthened_speed: '', lengthened_power: '', lengthened_power_rpm: '', 
+                lengthened_fuel_capacity: '', lengthened_fuel_consumption: '', lengthened_propellors: '', 
+                lengthened_propellor_size: '', lengthened_rudder: '', lengthened_rudder_size: '', 
+                lengthened_decks: '', lengthened_passenger_decks: '', lengthened_bridge_height: '', 
+                lengthened_bridge_water: '', lengthened_bow_bridge: '', lengthened_bow_height: ''
+        },
+        {id: 4,
+                name_after_lengthened: '', second_lengthen_name: '', second_lengthen_name_yrs: '',
+                third_lengthen_name: '', third_lengthen_name_yrs: '', 
+                fourth_lengthen_name: '', fourth_lengthen_name_yrs: '',
+                fifth_lengthen_name: '', fifth_lengthen_name_yrs: '',
+                sixth_lengthen_name: '', sixth_lengthen_name_yrs: '',
+                seventh_lengthen_name: '', seventh_lengthen_name_yrs: '',
+                eighth_lengthen_name: '', eighth_lengthen_name_yrs: '',
+                ninth_lengthen_name: '', ninth_lengthen_name_yrs: '',
+                last_lengthen_name: '', last_lengthen_name_yrs: '', 
+                lengthened_service_yrs: '', lengthened_operator: '', lengthened_reg_port: '', 
+                lengthened_cost: '', lengthened_passengers: '', lengthened_crew: '', lengthened_gt: '', 
+                lengthened_length: '', lengthened_beam: '', lengthened_draft: '', lengthened_deadweight: '', 
+                lengthened_lightship: '', lengthened_displacement: '', lengthened_funnel_hgt: '', 
+                lengthened_speed: '', lengthened_power: '', lengthened_power_rpm: '', 
+                lengthened_fuel_capacity: '', lengthened_fuel_consumption: '', lengthened_propellors: '', 
+                lengthened_propellor_size: '', lengthened_rudder: '', lengthened_rudder_size: '', 
+                lengthened_decks: '', lengthened_passenger_decks: '', lengthened_bridge_height: '', 
+                lengthened_bridge_water: '', lengthened_bow_bridge: '', lengthened_bow_height: ''
+        },
+        {id: 5,
+                name_after_lengthened: '', second_lengthen_name: '', second_lengthen_name_yrs: '',
+                third_lengthen_name: '', third_lengthen_name_yrs: '', 
+                fourth_lengthen_name: '', fourth_lengthen_name_yrs: '',
+                fifth_lengthen_name: '', fifth_lengthen_name_yrs: '',
+                sixth_lengthen_name: '', sixth_lengthen_name_yrs: '',
+                seventh_lengthen_name: '', seventh_lengthen_name_yrs: '',
+                eighth_lengthen_name: '', eighth_lengthen_name_yrs: '',
+                ninth_lengthen_name: '', ninth_lengthen_name_yrs: '',
+                last_lengthen_name: '', last_lengthen_name_yrs: '', 
+                lengthened_service_yrs: '', lengthened_operator: '', lengthened_reg_port: '', 
+                lengthened_cost: '', lengthened_passengers: '', lengthened_crew: '', lengthened_gt: '', 
+                lengthened_length: '', lengthened_beam: '', lengthened_draft: '', lengthened_deadweight: '', 
+                lengthened_lightship: '', lengthened_displacement: '', lengthened_funnel_hgt: '', 
+                lengthened_speed: '', lengthened_power: '', lengthened_power_rpm: '', 
+                lengthened_fuel_capacity: '', lengthened_fuel_consumption: '', lengthened_propellors: '', 
+                lengthened_propellor_size: '', lengthened_rudder: '', lengthened_rudder_size: '', 
+                lengthened_decks: '', lengthened_passenger_decks: '', lengthened_bridge_height: '', 
+                lengthened_bridge_water: '', lengthened_bow_bridge: '', lengthened_bow_height: ''
+        },
+        {id: 6,
+                name_after_lengthened: '', second_lengthen_name: '', second_lengthen_name_yrs: '',
+                third_lengthen_name: '', third_lengthen_name_yrs: '', 
+                fourth_lengthen_name: '', fourth_lengthen_name_yrs: '',
+                fifth_lengthen_name: '', fifth_lengthen_name_yrs: '',
+                sixth_lengthen_name: '', sixth_lengthen_name_yrs: '',
+                seventh_lengthen_name: '', seventh_lengthen_name_yrs: '',
+                eighth_lengthen_name: '', eighth_lengthen_name_yrs: '',
+                ninth_lengthen_name: '', ninth_lengthen_name_yrs: '',
+                last_lengthen_name: '', last_lengthen_name_yrs: '', 
+                lengthened_service_yrs: '', lengthened_operator: '', lengthened_reg_port: '', 
+                lengthened_cost: '', lengthened_passengers: '', lengthened_crew: '', lengthened_gt: '', 
+                lengthened_length: '', lengthened_beam: '', lengthened_draft: '', lengthened_deadweight: '', 
+                lengthened_lightship: '', lengthened_displacement: '', lengthened_funnel_hgt: '', 
+                lengthened_speed: '', lengthened_power: '', lengthened_power_rpm: '', 
+                lengthened_fuel_capacity: '', lengthened_fuel_consumption: '', lengthened_propellors: '', 
+                lengthened_propellor_size: '', lengthened_rudder: '', lengthened_rudder_size: '', 
+                lengthened_decks: '', lengthened_passenger_decks: '', lengthened_bridge_height: '', 
+                lengthened_bridge_water: '', lengthened_bow_bridge: '', lengthened_bow_height: ''
+        },
+
+        // Evolution Part 2 is from id: 7 to id: 12 
+        // and this is only where lengthened details are used for id 10 and 11
+
+        {id: 7, 
                 // Ship Specifications after Lengthening (Does not apply for Fairstar Ship)
                 // Originally called name_after_lengthening: '',
                 name_after_lengthened: '', 
@@ -30,7 +158,7 @@ exports.seed = function(knex, Promise) {
                 lengthened_bridge_height: '', lengthened_bridge_water: '', lengthened_bow_bridge: '', 
                 lengthened_bow_height: ''
         },
-        {id: 2, 
+        {id: 8, 
                 // Ship Specifications after Lengthening (Does not apply for Sea Princess Ship)
                 name_after_lengthened: '',
                 // I need these ship names to show in lengthened details section for when it was lengthened  
@@ -54,7 +182,7 @@ exports.seed = function(knex, Promise) {
                 lengthened_bridge_height: '', lengthened_bridge_water: '', lengthened_bow_bridge: '', 
                 lengthened_bow_height: ''
         },
-        {id: 3, 
+        {id: 9, 
                 // Ship Specifications after Lengthening (Does not apply for Queen Elizabeth 2 Ship)
                 name_after_lengthened: '',
                 // I need these ship names to show in lengthened details section for when it was lengthened  
@@ -78,9 +206,9 @@ exports.seed = function(knex, Promise) {
                 lengthened_passenger_decks: '', lengthened_bridge_height: '', lengthened_bridge_water: '', 
                 lengthened_bow_bridge: '', lengthened_bow_height: ''
         },
-        {id: 4, 
+        {id: 10, 
                 // Song of Norway was Lengthened as a Cruise Ship, so it needs Ship Specs on this 
-                // It was first Royal Caribbean's first cruise ship and the first cruise ship ever to be 
+                // It was Royal Caribbean's first cruise ship and the first cruise ship ever to be 
                 // lengthened. 
                 name_after_lengthened: 'Song of Norway (1978 to 1997',
                 // I need these ship names to show in lengthened details section for when it was lengthened  
@@ -94,7 +222,9 @@ exports.seed = function(knex, Promise) {
                 ninth_lengthen_name: '', ninth_lengthen_name_yrs: '',
                 last_lengthen_name: 'Formosa Queen', last_lengthen_name_yrs: '2012 to 2013',
                 // Lengthend Ship Details continued
-                lengthened_service_yrs: '1978 to 2013', lengthened_operator: '', lengthened_reg_port: '', 
+                lengthened_service_yrs: '1978 to 2013', 
+                lengthened_operator: 'Royal Caribbean - 1978 to 1997 | Airtours Sun Cruises - 1997 to 2004 | Caspi Cruises - 2004 to 2007 and 2009 | Peace Boat - 2008 |  Quail Travel Group - 2010 to 2011 | Asia Star Cruises - 2012 to 2013', 
+                lengthened_reg_port: 'Oslo, Norway - 1978 to 1997 | Nassau, Bahamas - 1997 to 2004 | Limassol, Cyprus - 2004 to 2006 | Nassau, Bahamas - 2006 to 2009 | Majuro, Marshall Islands - 2009 to 2012 | Panama City, Panama - 2012 to 2013', 
                 lengthened_cost: '', lengthened_passengers: '1196', lengthened_crew: '423', lengthened_gt: '22945', 
                 lengthened_length: '194.32 m (637 feet 6.4 inches)', lengthened_beam: '24 m (78 feet 8.8 inches)', 
                 lengthened_draft: 'Maybe now 7 m (22 feet 11.6 inches)', lengthened_deadweight: '4,525 Tonnes', 
@@ -105,22 +235,24 @@ exports.seed = function(knex, Promise) {
                 lengthened_decks: '', lengthened_passenger_decks: '', lengthened_bridge_height: '', 
                 lengthened_bridge_water: '', lengthened_bow_bridge: '', lengthened_bow_height: ''
         },
-        {id: 5, 
+        {id: 11, 
                 // Royal Viking Sky was lengthened in 1982, so it needs ship specs on this
                 // At the time of lengthening it was with Royal Vikng Line (a Norwegian Cruise Line)
                 name_after_lengthened: 'Royal Viking Sky (1982 to 1991)', 
                 // I need these ship names to show in lengthened details section for when it was lengthened  
-                second_lengthen_name: '', second_lengthen_name_yrs: '',
-                third_lengthen_name: '', third_lengthen_name_yrs: '', 
-                fourth_lengthen_name: '', fourth_lengthen_name_yrs: '',
-                fifth_lengthen_name: '', fifth_lengthen_name_yrs: '',
-                sixth_lengthen_name: '', sixth_lengthen_name_yrs: '',
-                seventh_lengthen_name: '', seventh_lengthen_name_yrs: '',
-                eighth_lengthen_name: '', eighth_lengthen_name_yrs: '',
-                ninth_lengthen_name: '', ninth_lengthen_name_yrs: '',
-                last_lengthen_name: '', last_lengthen_name_yrs: '',
+                second_lengthen_name: 'Sunward', second_lengthen_name_yrs: '1991 to 1992',
+                third_lengthen_name: 'Birka Queen', third_lengthen_name_yrs: '1992 to 1992', 
+                fourth_lengthen_name: 'Sunward', fourth_lengthen_name_yrs: '1992 to 1993',
+                fifth_lengthen_name: 'Golden Princess', fifth_lengthen_name_yrs: '1993 to 1997',
+                sixth_lengthen_name: 'Superstar Capricorn', sixth_lengthen_name_yrs: '1997 to 1998',
+                seventh_lengthen_name: 'Hyundai Keumgang', seventh_lengthen_name_yrs: '1998 to 2001',
+                eighth_lengthen_name: 'Superstar Capricorn', eighth_lengthen_name_yrs: '2001 to 2004',
+                ninth_lengthen_name: 'Grand Latino', ninth_lengthen_name_yrs: '2004 to 2005',
+                last_lengthen_name: 'Boudicca', last_lengthen_name_yrs: '2005 to 2021',
                 // Lengthend Ship Details continued
-                lengthened_service_yrs: '1982 to 2021', lengthened_operator: '', lengthened_reg_port: '', 
+                lengthened_service_yrs: '1982 to 2021', 
+                lengthened_operator: 'Royal Viking Line - 1982 to 1991 | Norwegian Cruise Line - 1991 to 1992 and 1992 to 1993 | Birka Cruises - 1992 | Princess Cruises 1993 to 1997 | Star Cruises - 1997 to 1998 and 2001 to 2004 | Hyundai Merchant Merchant Marine - 1998 to 2001 | Iberocruceros Cruises - 2004 to 2005 | Fred Olsen Cruises - 2005 to 2020 | Miray International - 2020 to 2021', 
+                lengthened_reg_port: 'Bergen, Norway - 1982 to 1987 | Nassau, Bahamas - 1987 to 1992 | 1992 - Mariehamn, Finland | Nassau, Bahamas - 1992 to 1997 | Singapore - 1997 to 1998 | Panama City, Panama - 1997 to 2005 | Nassau, Bahamas - 2005 to 2020', 
                 lengthened_cost: '', lengthened_passengers: '900', lengthened_crew: '320', lengthened_gt: '28372', 
                 lengthened_length: '205.47 m (674 feet 1.37 inches)', lengthened_beam: '25.19 m (82 feet 7.73 inches)', 
                 lengthened_draft: '7.55 m (24 feet 9.25 inches)', lengthened_deadweight: '5956 Tonnes', 
@@ -134,7 +266,7 @@ exports.seed = function(knex, Promise) {
                 lengthened_bridge_height: '', lengthened_bridge_water: '', lengthened_bow_bridge: '', 
                 lengthened_bow_height: ''
         },
-        {id: 6, 
+        {id: 12, 
                 // Ship Specifications after Lengthening (Doesn't apply as Sovereign of the Seas was not lengthened)
                 name_after_lengthened: '',
                 // I need these ship names to show in lengthened details section for when it was lengthened  

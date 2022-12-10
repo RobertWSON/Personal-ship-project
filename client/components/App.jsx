@@ -6,11 +6,14 @@ import Nav from './Nav'
 import Home from './Home'
 
 // Evolution pages (Part1)
-import EvolutionPart1 from './EvolutionPart1'
+import Evolution from './Evolution'
 import FindClassic from './FindClassic'
+
+
 // Evolution pages (Part2)
-import EvolutionPart2 from './EvolutionPart2'
-import FindClassicPt2 from './FindClassicPt2'
+{/* At the moment I will comment Evolution Part 2, so that I can just get Part 1 working as a whole */}
+// import EvolutionPart2 from './EvolutionPart2'
+// import FindClassicPt2 from './FindClassicPt2'
 
 // Cruise Lines page
 import CruiseLines from './CruiseLines'
@@ -34,10 +37,13 @@ class App extends React.Component {
               <Route exact path='/' component={Home}/>
 
               {/* Routes for Evolution pages and associated ships  */}
-              <Route exact path='/evolution-part1' component={EvolutionPart1}/>
+              <Route exact path='/evolution-part1' component={Evolution}/>
               <Route path = '/evolution-part1/:classic_ship_name' component={FindClassic}/>
-              <Route exact path='/evolution-part2' component={EvolutionPart2}/>
-              <Route path = '/evolution-part2/:classic_ship_name' component={FindClassicPt2}/>
+
+              {/* At the moment I will comment Evolution Part 2, so that I can just get Part 1 
+              working as a whole */}
+              {/* <Route exact path='/evolution-part2' component={EvolutionPart2}/>
+              <Route path = '/evolution-part2/:classic_ship_name' component={FindClassicPt2}/> */}
 
               {/* Route for Cruise Lines page */}
               <Route exact path='/cruiselines' component={CruiseLines}/>

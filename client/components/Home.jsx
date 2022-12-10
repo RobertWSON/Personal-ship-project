@@ -101,7 +101,6 @@ class Home extends React.Component  {
                         controls="true"
                         muted="false"
                         />
-                        {/* <Link to="/https://www.youtube.com/watch?v=O0ulkoTuE3Is">Berlina V8 - 2019 Mt Vic Hill Climb</Link> */}
                 </div>
 
                 

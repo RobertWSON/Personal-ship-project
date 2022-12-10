@@ -8,41 +8,29 @@ function getClassics(testConn)  {
     const conn = testConn || db
     console.log('server/db/dbclassics.js getClassics called!')
 
-    // I may not need let evo1 because it seems like it doesn't make a difference with localhost
-    // Initialize evo1 table as a starting point for displaying data
-    let evo1
+    // Initialize evo table as a starting point for displaying data
+    let evo
 
-    // Line below connects to Evo1 Table for Evolution Part 1  
-    return conn('Evo1')
+    // Line below connects to Evo Table, which has ships for both Evolution Part 1 and Part 2 
+    return conn('Evo')
         // Line below picks out ships to display from Evo1 Table.
         .select()
         //Line below displays Classic Ships in id order.
         .orderBy('id')
         
         //This picks up the information for all Classic Ships on Evolution Part 1 Page
-        .then((EvoOneResults) => {
-            console.log('dbclassics.js - GOT CLASSIC SHIPS:', EvoOneResults)
-        evo1 = EvoOneResults
+        .then((EvoResults) => {
+            console.log('dbclassics.js - GOT CLASSIC SHIPS:', EvoResults)
 
-    // Line below connects to Evo2 Table for Evolution Part 2        
-    return conn('Evo2')
-        // Line below picks out ships to display from Evo2 Table.        
-        .select()
-        //Line below displays classic ships in id order.             
-        .orderBy('id')    
-    })
-        //This picks up the information for all Classic Ships on Evolution Part 2 Page
-        .then((EvoTwoResults) => {
-            console.log('dbclassics.js - GOT CLASSIC SHIPS:', EvoTwoResults)
-
-    // This displays information for the Classic Ships, taken from either evo1 or evo2 seeds        
+        
+    // This displays information for the Classic Ships, taken from either evo1 or evo2 seeds 
+    // It is info to be displayed for each of the ships on either Evolution Part 1 page eg Titanic
+    // or Evolution Part 2 page eg Fairstar       
     return  {        
-        evo1,
-        evo2: EvoTwoResults
+        evo: EvoResults
         }    
     })
 }
-
 
 module.exports = {
     getClassics

@@ -55,7 +55,9 @@
     background-color: coral;
 }
 
-.navmenu  >  .evo2  {
+/* Temporarily not using Evolution Part 2 as a link
+until I can get the ships coming through on 2 separate Evolution Part 1 and Part 2 Pages */
+/* .navmenu  >  .evo2  {
     padding-right: 15px;
     padding-left: 15px;
     font-size: 30px;
@@ -70,7 +72,7 @@
 .navmenu  >  .evo2:hover  {
     color: teal;
     background-color: wheat;
-}
+} */
 
 .navmenu   >  .cruises   {
     padding-right: 15px;

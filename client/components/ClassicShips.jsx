@@ -37,37 +37,15 @@ class ClassicShips extends React.Component  {
             it is a property of the Link.*/}
             <Link 
                 to={{ 
-                    // pathname: `/evolutionpart1/${ship_name}`,
                     pathname: `/evolution-part1/${classic_ship_name}`,
+                    // or a conditional operation : maybe for Evolution Part 2 
+                    // pathname: `/evolution-part1/${classic_ship_name}`,
                     state: this.props,
                     encoding: classic_ship_name
                 }}>                    
                 <img src = {img} title = {img_title} />
             </Link> 
 
-             {/* It does not work well with this, so comment for now    */}
-            {/* <div className = "evoTextbox">
-                <div>Find out more on {classic_ship_name} , Click on Image</div>
-
-                <div className = "evoFlex">
-                    <div className = "evoMargins">Experience {classic_ship_name}</div>
-
-                    <button className = "hornButton" type = "button" onClick = {this.toggleVideo}>
-                        Ship Horn
-                    </button>
-                </div>
-                <br />
-
-                <div>
-                {this.state.showVideo &&    (
-                    <video controls width = "250">
-                        <source src = {ship_horn} type = "video/mp4"/>
-                    </video>
-                )}    
-                </div>
-            </div>      */}
-
-            {/* Uncomment below        */}
             <div style={{
                 marginTop: '1em',
                 fontSize: '1em',
@@ -112,3 +90,4 @@ class ClassicShips extends React.Component  {
 }
 
 export default ClassicShips
+   

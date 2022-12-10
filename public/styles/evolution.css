@@ -452,6 +452,15 @@ div.contentsMenu  a::before   {
     font-size: 1.6em;
     color: steelblue;
 }
+/* Add h4 heading for the cruise ship name changes */
+#cruise  h4   {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 1.1em;
+    color: cornflowerblue;
+}
 
 #cruise p   {
     font-size: 1.15em;
