@@ -32,6 +32,6 @@
 - Refine use of components for retrieving ships and their data. 
 
 ## Repository Goals
-- Complete section paragraphs for and data for ships. 
+- Complete section paragraphs and data for ships. 
 - Consider refining this Cruise Ship Project on a separate repository using TypeScript with React.
 
