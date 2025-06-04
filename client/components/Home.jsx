@@ -7,7 +7,7 @@ export const home = () => {
             <div className = 'container'>
                 <h1>Cruise Shipin</h1>
             </div>
-            <div>s
+            <div>
                 <Link className="navmenu" to="/Nav" >Home</Link>
                 <Link className="navmenu" to="/Nav" >Evolution (Part 1)</Link>
                 <Link className="navmenu" to="/Nav" >Evolution (Part 2)</Link>

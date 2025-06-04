@@ -5,8 +5,8 @@ import Home from './Home'
 import EvolutionPart1 from './EvolutionPart1'
 import EvolutionPart2 from './EvolutionPart2' 
 import CruiseLines from './CruiseLines'
-import MovingShip from './MovingShip'
-import Porthole from './Porthole'
+//import MovingShip from './MovingShip'
+//import Porthole from './Porthole'
 
 
 const App = () => {
@@ -17,7 +17,7 @@ const App = () => {
         <Route path='/' component={Nav}/>
         <Route exact path='/' component={Home}/>
         
-        <Route exact path='/' component={MovingShip}/>
+        {/*<Route exact path='/' component={MovingShip}/>*/}
         <Route exact path='/evolutionpart1' component={EvolutionPart1}/>
         <Route exact path='/evolutionpart2' component={EvolutionPart2}/>
         <Route exact path='/cruiselines' component={CruiseLines}/>

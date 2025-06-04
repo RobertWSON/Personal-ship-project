@@ -1,5 +1,6 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+//import {Link} from 'react-router-dom'   // Link not used
+
 
 // TODO Make this a stateful component
 
@@ -22,7 +23,7 @@ const MovingShip = () => {
 export default MovingShip
 
 
-{/* <img src=""/>
+/* <img src=""/>
     style = ((
         top: 20;
         left: ship-position
@@ -36,4 +37,4 @@ ComponentDidMount() (
         ))
     )   
 )
-) */}
+) */

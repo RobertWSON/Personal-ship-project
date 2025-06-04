@@ -8,7 +8,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 1,
           ship_name: "Symphony of the Seas",
-          img: ,
+          img: "",
           Gross_Tonnage: 228081,
           Passenger_Full_Capacity: 6680,
           Double_Occupancy_Passenger_Capacity: 5518,
@@ -23,9 +23,9 @@ exports.seed = function(knex, Promise) {
         {
           id: 2,
           ship_name: 'Marella Celebration' ,
-          img: ,
-          Gross_Tonnage: ,
-          Passenger_Full_Capacity: ,
+          img: "",
+          Gross_Tonnage: 28000,
+          Passenger_Full_Capacity: 950,
           Double_Occupancy_Passenger_Capacity: 5518,
           Length: 362.1,
           Beam: 47.448,
@@ -38,181 +38,181 @@ exports.seed = function(knex, Promise) {
         {
           id: 3,
           ship_name: 'Queen Mary 2',
-          img:   ,
+          img: "",
           Gross_Tonnage: 228081,
           Passenger_Full_Capacity: 6680,
           Double_Occupancy_Passenger_Capacity: 5518,
           Length: 362.1,
-          Beam: 47.448
-          Draft: 9.322
-          Height: 72.1
-          Loaded_Displacement: 120,000
-          Deadweight: 18095
+          Beam: 47.448,
+          Draft: 9.322,
+          Height: 72.1,
+          Loaded_Displacement: 120000,
+          Deadweight: 18095,
           Review: ''
         },
         {
           id: 4,
-          ship_name: Symphony of the Seas,
-          img:   ,
+          ship_name: "Symphony of the Seas",
+          img: "",
           Gross_Tonnage: 228081,
           Passenger_Full_Capacity: 6680,
           Double_Occupancy_Passenger_Capacity: 5518,
           Length: 362.1,
-          Beam: 47.448
-          Draft: 9.322
-          Height: 72.1
-          Loaded_Displacement: 120,000
-          Deadweight: 18095
+          Beam: 47.448,
+          Draft: 9.322,
+          Height: 72.1,
+          Loaded_Displacement: 120000,
+          Deadweight: 18095,
           Review: ''
         },
         {
           id: 5,
-          ship_name: Symphony of the Seas,
-          img:   ,
+          ship_name: "Symphony of the Seas",
+          img: "",
           Gross_Tonnage: 228081,
           Passenger_Full_Capacity: 6680,
           Double_Occupancy_Passenger_Capacity: 5518,
           Length: 362.1,
-          Beam: 47.448
-          Draft: 9.322
-          Height: 72.1
-          Loaded_Displacement: 120,000
-          Deadweight: 18095
+          Beam: 47.448,
+          Draft: 9.322,
+          Height: 72.1,
+          Loaded_Displacement: 120000,
+          Deadweight: 18095,
           Review: '' 
         },
         {
           id: 6,
-          ship_name: Symphony of the Seas,
-          img:   ,
+          ship_name: "Symphony of the Seas",
+          img: "",
           Gross_Tonnage: 228081,
           Passenger_Full_Capacity: 6680,
           Double_Occupancy_Passenger_Capacity: 5518,
           Length: 362.1,
-          Beam: 47.448
-          Draft: 9.322
-          Height: 72.1
-          Loaded_Displacement: 120,000
-          Deadweight: 18095
+          Beam: 47.448,
+          Draft: 9.322,
+          Height: 72.1,
+          Loaded_Displacement: 120000,
+          Deadweight: 18095,
           Review: ''       
         },
         {
           id: 7,
-          ship_name: Symphony of the Seas,
+          ship_name: "Symphony of the Seas",
           img: '',
           Gross_Tonnage: 228081,
           Passenger_Full_Capacity: 6680,
           Double_Occupancy_Passenger_Capacity: 5518,
           Length: 362.1,
-          Beam: 47.448
-          Draft: 9.322
-          Height: 72.1
-          Loaded_Displacement: 120,000
-          Deadweight: 18095
+          Beam: 47.448,
+          Draft: 9.322,
+          Height: 72.1,
+          Loaded_Displacement: 120000,
+          Deadweight: 18095,
           Review: ''    
         },
         {
           id: 8,
-          ship_name: Symphony of the Seas,
-          img:    ,
+          ship_name: "Symphony of the Seas",
+          img: "",
           Gross_Tonnage: 228081,
           Passenger_Full_Capacity: 6680,
           Double_Occupancy_Passenger_Capacity: 5518,
           Length: 362.1,
-          Beam: 47.448
-          Draft: 9.322
-          Height: 72.1
-          Loaded_Displacement: 120,000
-          Deadweight: 18095
+          Beam: 47.448,
+          Draft: 9.322,
+          Height: 72.1,
+          Loaded_Displacement: 120000,
+          Deadweight: 18095,
           Review: '' 
         },
         {
           id: 9,
-          ship_name: Symphony of the Seas,
-          img:    ,
+          ship_name: "Symphony of the Seas",
+          img: "",
           Gross_Tonnage: 228081,
           Passenger_Full_Capacity: 6680,
           Double_Occupancy_Passenger_Capacity: 5518,
           Length: 362.1,
-          Beam: 47.448
-          Draft: 9.322
-          Height: 72.1
-          Loaded_Displacement: 120,000
-          Deadweight: 18095
+          Beam: 47.448,
+          Draft: 9.322,
+          Height: 72.1,
+          Loaded_Displacement: 120000,
+          Deadweight: 18095,
           Review: '' 
         },
         {
           id: 10,
-          ship_name: Symphony of the Seas,
-          img:    ,
+          ship_name: "Symphony of the Seas",
+          img: "",
           Gross_Tonnage: 228081,
           Passenger_Full_Capacity: 6680,
           Double_Occupancy_Passenger_Capacity: 5518,
           Length: 362.1,
-          Beam: 47.448
-          Draft: 9.322
-          Height: 72.1
-          Loaded_Displacement: 120,000
-          Deadweight: 18095
+          Beam: 47.448,
+          Draft: 9.322,
+          Height: 72.1,
+          Loaded_Displacement: 120000,
+          Deadweight: 18095,
           Review: '' 
         },
         {
           id: 11,
-          ship_name: Symphony of the Seas,
+          ship_name: "Symphony of the Seas",
           img: '',
           Gross_Tonnage: 228081,
           Passenger_Full_Capacity: 6680,
           Double_Occupancy_Passenger_Capacity: 5518,
           Length: 362.1,
-          Beam: 47.448
-          Draft: 9.322
-          Height: 72.1
-          Loaded_Displacement: 120,000
-          Deadweight: 18095
+          Beam: 47.448,
+          Draft: 9.322,
+          Height: 72.1,
+          Loaded_Displacement: 120000,
+          Deadweight: 18095,
           Review: '' 
         },
         {
           id: 12,
-          ship_name: ,
-          img: ''
-          Gross_Tonnage: ,
-          Passenger_Full_Capacity: ,
+          ship_name: "",
+          img: "",
+          Gross_Tonnage: 21394,
+          Passenger_Full_Capacity: 780,
           Double_Occupancy_Passenger_Capacity: 5518,
           Length: 362.1,
-          Beam: 47.448
-          Draft: 9.322
-          Height: 72.1
-          Loaded_Displacement: 120,000
-          Deadweight: 18095
+          Beam: 47.448,
+          Draft: 9.322,
+          Height: 72.1,
+          Loaded_Displacement: 120000,
+          Deadweight: 18095,
           Review: '' 
         },
         {
           id: 13,
-          ship_name: Symphony of the Seas,
+          ship_name: "Symphony of the Seas",
           img: '',
           Gross_Tonnage: 228081,
           Passenger_Full_Capacity: 6680,
           Double_Occupancy_Passenger_Capacity: 5518,
           Length: 362.1,
-          Beam: 47.448
-          Draft: 9.322
-          Height: 72.1
-          Loaded_Displacement: 120,000
-          Deadweight: 18095
+          Beam: 47.448,
+          Draft: 9.322,
+          Height: 72.1,
+          Loaded_Displacement: 120000,
+          Deadweight: 18095,
           Review: '', 
         },
         {
           id: 14,
-          ship_name: Symphony of the Seas,
+          ship_name: "Symphony of the Seas",
           img: '',
           Gross_Tonnage: 228081,
           Passenger_Full_Capacity: 6680,
           Double_Occupancy_Passenger_Capacity: 5518,
           Length: 362.1,
-          Beam: 47.448
-          Draft: 9.322
-          Height: 72.1
-          Loaded_Displacement: 120,000
-          Deadweight: 18095
+          Beam: 47.448,
+          Draft: 9.322,
+          Height: 72.1,
+          Loaded_Displacement: 120000,
+          Deadweight: 18095,
           Review: '', 
         },
         {
@@ -223,86 +223,86 @@ exports.seed = function(knex, Promise) {
           Passenger_Full_Capacity: 6680,
           Double_Occupancy_Passenger_Capacity: 5518,
           Length: 362.1,
-          Beam: 47.448
-          Draft: 9.322
-          Height: 72.1
-          Loaded_Displacement: 120,000
-          Deadweight: 18095
+          Beam: 47.448,
+          Draft: 9.322,
+          Height: 72.1,
+          Loaded_Displacement: 120000,
+          Deadweight: 18095,
           Review: '', 
         },
         {
           id: 16,
-          ship_name: Symphony of the Seas,
+          ship_name: "Symphony of the Seas",
           img: '',
           Gross_Tonnage: 228081,
           Passenger_Full_Capacity: 6680,
           Double_Occupancy_Passenger_Capacity: 5518,
           Length: 362.1,
-          Beam: 47.448
-          Draft: 9.322
-          Height: 72.1
-          Loaded_Displacement: 120,000
-          Deadweight: 18095
+          Beam: 47.448,
+          Draft: 9.322,
+          Height: 72.1,
+          Loaded_Displacement: 120000,
+          Deadweight: 18095,
           Review: '', 
         },
         {
           id: 17,
-          ship_name: Symphony of the Seas,
+          ship_name: "Symphony of the Seas",
           img: '',
           Gross_Tonnage: 228081,
           Passenger_Full_Capacity: 6680,
           Double_Occupancy_Passenger_Capacity: 5518,
           Length: 362.1,
-          Beam: 47.448
-          Draft: 9.322
-          Height: 72.1
-          Loaded_Displacement: 120,000
-          Deadweight: 18095
+          Beam: 47.448,
+          Draft: 9.322,
+          Height: 72.1,
+          Loaded_Displacement: 120000,
+          Deadweight: 18095,
           Review: '', 
         },
         {
           id: 18,
-          ship_name: Symphony of the Seas,
+          ship_name: "Symphony of the Seas",
           img: '',
           Gross_Tonnage: 228081,
           Passenger_Full_Capacity: 6680,
           Double_Occupancy_Passenger_Capacity: 5518,
           Length: 362.1,
-          Beam: 47.448
-          Draft: 9.322
-          Height: 72.1
-          Loaded_Displacement: 120,000
-          Deadweight: 18095
+          Beam: 47.448,
+          Draft: 9.322,
+          Height: 72.1,
+          Loaded_Displacement: 120000,
+          Deadweight: 18095,
           Review: '', 
         },
         {
           id: 19,
-          ship_name: Symphony of the Seas,
+          ship_name: "Symphony of the Seas",
           img: '',
           Gross_Tonnage: 228081,
           Passenger_Full_Capacity: 6680,
           Double_Occupancy_Passenger_Capacity: 5518,
           Length: 362.1,
-          Beam: 47.448
-          Draft: 9.322
-          Height: 72.1
-          Loaded_Displacement: 120,000
-          Deadweight: 18095
+          Beam: 47.448,
+          Draft: 9.322,
+          Height: 72.1,
+          Loaded_Displacement: 120000,
+          Deadweight: 18095,
           Review: '', 
         },
         {
           id: 20,
-          ship_name: Symphony of the Seas,
+          ship_name: "Symphony of the Seas",
           img: '',
           Gross_Tonnage: 228081,
           Passenger_Full_Capacity: 6680,
           Double_Occupancy_Passenger_Capacity: 5518,
           Length: 362.1,
-          Beam: 47.448
-          Draft: 9.322
-          Height: 72.1
-          Loaded_Displacement: 120,000
-          Deadweight: 18095
+          Beam: 47.448,
+          Draft: 9.322,
+          Height: 72.1,
+          Loaded_Displacement: 120000,
+          Deadweight: 18095,
           Review: '', 
         }
       ]);

@@ -1,7 +1,9 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
-export const EvolutionPart1 = () => {
+//export const EvolutionPart1 = () => {  // Should be export const CruiseLines
+export const CruiseLines = () => {     
+
     return (
         <div>
             <div className = 'container'>
