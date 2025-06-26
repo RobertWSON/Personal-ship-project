@@ -1,0 +1,110 @@
+/* Ship Terms Page CSS */
+
+/* Ship Terms overall div container */
+.ShipTerms  {
+    display: flex;
+    flex-direction: column;                                          
+    padding: 10px;
+    border: burlywood;
+    max-width: 1300px;
+}
+
+/* Tonnage terms, like Gross Tonnage */
+.ShipTerms  >   .tonnage    {
+    border: 3px;
+    max-width: 1300px;
+    position: relative;
+}
+
+.ShipTerms  > .tonnage   h4  {
+    color: blue;
+    font-size: 1.25em;
+}
+
+.ShipTerms  >  .tonnage   p   {
+    color: black;
+    font-size: 1em;
+}
+
+.ShipTerms  >  .tonnage  hr   {
+    color: aqua;
+
+    /* color does not work, so I will try background-color */
+    /* background-color: aqua; this unfortunately does not work either */
+
+}
+
+/* Measurement terms, like Length */
+.ShipTerms  >   .measurements   {
+    border: 3px;
+    max-width: 1300px;
+    position: relative;
+}
+
+.ShipTerms  >   .measurements   h2   {
+    color: olive;
+}
+
+.ShipTerms  >   .measurements   h4  {
+    color: maroon;
+    font-size: 1.25em;
+}
+
+.ShipTerms  >   .measurements   p  {
+    color: mediumblue;
+    font-size: 1em;
+}
+
+.ShipTerms  >   .measurements   hr  {
+    color: cadetblue;
+}
+
+/* Capacity terms, like Fuel Capacity */
+.ShipTerms  >   .capacities   {
+    border: 3px;
+    max-width: 1300px;
+    position: relative;
+}
+
+.ShipTerms  >   .capacities   h2   {
+    color: teal;
+}
+
+.ShipTerms  >   .capacities   h4  {
+    color: darkslateblue;
+    font-size: 1.25em;
+}
+
+.ShipTerms  >   .capacities   p  {
+    color: brown;
+    font-size: 1em;
+}
+
+.ShipTerms  >   .capacities   hr  {
+    color: dodgerblue;
+}
+
+/* Other Ship terms, like bow, stern etc */
+.ShipTerms  >   .other-terms   {
+    border: 3px;
+    max-width: 1300px;
+    position: relative;
+}
+
+.ShipTerms  >   .other-terms   h2   {
+    color: darkgreen;
+}
+
+.ShipTerms  >   .other-terms   h4  {
+    color: crimson;
+    font-size: 1.25em;
+}
+
+.ShipTerms  >   .other-terms   p  {
+    color: midnightblue;
+    font-size: 1em;
+}
+
+.ShipTerms  >   .other-terms   hr  {
+    color: green;
+}

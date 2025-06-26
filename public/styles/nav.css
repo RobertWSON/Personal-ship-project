@@ -1,0 +1,89 @@
+/* Main Page Navigation*/
+
+/* Using nav tag for Main Page Navigation   */
+.navContainer   {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 35px;
+    padding-bottom: 20px;
+}
+
+.navmenu     {
+    max-height: 100px;
+    max-width: 832px;  
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: solid;
+    border-width: 2px;
+    border-color: darkblue;
+    border-radius: 10px;
+}
+
+.navmenu  >  .home  {
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: 30px;
+    text-decoration: none;
+    color: chocolate;
+    background-color: azure;
+    border-right: solid; 
+    border-width: 2px;
+    border-color: darkblue; 
+    border-radius: inherit; 
+}
+
+.navmenu  >  .home:hover  {
+    color: cadetblue;
+    background-color: aliceblue;
+}    
+
+.navmenu   >  .evo1  {
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: 30px;
+    text-decoration: none;
+    color: brown;
+    background-color: beige;
+    border-right: solid; 
+    border-width: 2px;
+    border-color: darkblue;  
+}
+
+.navmenu   >  .evo1:hover  { 
+    color: yellow;
+    background-color: coral;
+}
+
+.navmenu  >  .evo2  {
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+    background-color: cornsilk;
+    border-right: solid; 
+    border-width: 2px;
+    border-color: darkblue;
+}
+
+.navmenu  >  .evo2:hover  {
+    color: teal;
+    background-color: wheat;
+}
+
+.navmenu   >  .cruises   {
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: 30px; 
+    text-decoration: none;
+    color: crimson;
+    background-color: bisque;
+    border-radius: inherit; 
+}
+
+.navmenu   >  .cruises:hover  {
+    color: ghostwhite;
+    background-color: gold;
+}
+/* End of Using nav tag for Main Page Navigation   */

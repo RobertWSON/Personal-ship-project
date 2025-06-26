@@ -1,45 +1,66 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
-import {getShip} from '../api/api'
+//import {Link} from 'react-router-dom'
+import Ship from './Ship'
+import {getShipsList} from '../api/api'
 
-class Review extends React.Component {
+
+class Review extends React.Component  {
   constructor(props){
     super(props)
-    
+
+      // constant below is used to replace all underscores in Cruise Line Heading at top of page 
+      // , with a space, using .replace(/_/g, ' ')'. So it's decoding url underscore to a space.
+      // The constant also matches the correct cruise line through using props and parameters.
+      const decodeCruiseline = props.match.params.cruise_line.replace(/_/g, ' ') 
+
     this.state = {
-      room:{}
+
+      // The relevant cruiseline in state, should be set to the decoded constant. 
+      cruiseline: decodeCruiseline,
+      ships: []
     }
-    this.setUpShip = this.setUpShip.bind(this)
-  }
-  
-  componentDidMount(){
-    this.setUpShip()
+    this.setUpShips = this.setUpShips.bind(this)
   }
 
-  setUpShip(){
-    getShip(this.props.match.params.id)
-    .then(res =>{
+  componentDidMount() {
+    console.log('cdm')
+    this.setUpShips()
+  }
+
+  setUpShips()  {
+    getShipsList(this.state.cruiseline)
+    .then(res =>  {
       this.setState({
-        room: res
+        ships: res
       })
     })
   }
 
-render(){
-  return(
-   <React.Fragment>
-   {console.log(this.state.ship)}
-      <h2>{this.state.room.room_name}</h2>
-      <p>{this.state.room.description}</p>
-      <h5>Capacity: {this.state.room.capacity}</h5>
-      <button onClick={()=> alert('Well done, good booking, proud of you')}>BOOK</button>
-      <button><Link to='/'>Back to home</Link></button>
-      <p></p>
-      <img src={this.state.room.img} />
-    </React.Fragment>
-  )
-}
+  render()  {
 
-  
-}
-export default Home
+    return  (
+      <React.Fragment>
+
+        {/* <div className = "reviewContainer"> */}
+
+        <h1 className = "cruiseLine">{this.state.cruiseline}</h1>
+        {this.state.ships.map  (ship =>  {
+          return  (
+            
+            <Ship key={ship.id} {...ship}/>
+          )  
+          
+            } // end bracket for ship =>  {
+          ) // end bracket for (ship
+        } {/* end bracket for {this.state.ship.map  */}
+
+        {/* </div> */}
+
+      </React.Fragment>
+    ) // end bracket for return  (
+
+  } //end bracket for render 
+} //end bracket for Review Component
+
+
+export default Review

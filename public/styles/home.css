@@ -1,0 +1,86 @@
+/* Home page styles */
+
+/* React Slick Slider CSS */
+.home-slider    {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 20px;
+    /* background color for padding around image and before outside border */
+    background-color: lightskyblue;
+    border: 2px solid darkblue;
+    border-radius: 20px; 
+    max-height: 500px;
+    min-height: 220px;
+    width: 100%;   
+    max-width: auto;
+    min-width: 660px
+}    
+
+.home-slider    >   .slide  {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 50%;
+    max-height: 480px;
+    min-height: 200px;
+}
+
+.home-slider   .slide    img   {
+    width: auto;
+    height: 480px;
+}
+/* End of Styling for React Slick Slider */
+
+.siteIntro  {
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 780px; 
+    background-color: lightblue;
+    border: 2px solid darkblue;
+    border-radius: 20px;
+    margin: 0   30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 15px; 
+    padding: 10px;
+}
+
+.siteIntro  >   .Intro   {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: brown;
+    font-size: 1.8em;
+}
+
+.siteIntro  p   {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    align-items: left;
+    font-size: 1.15em;   
+    color: black;
+    padding: 20px;
+}
+
+.player-wrapper {
+    float: right;
+    background-color: lightblue;
+    width: 500px;
+    border: 2px solid   darkblue;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.react-player   {
+    align-self: center;
+    position: relative;
+    top: 15px;
+    left: 0;
+}
+/* End of Home page Styles */
